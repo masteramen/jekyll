@@ -195,7 +195,7 @@ Anyway our next function will also follow the factory pattern we have been using
 
     }
 
-tupian 
+tupian
 
 As you can see, we are assembling all of the pieces and the stacking them together to build our document edit. The fully constructed edit will contain all of the instructions VS Code needs to modify the selected document. This will be useful as we construct our next object to interact with.
 如您所见，我们正在组装所有部件并将它们堆叠在一起以构建我们的文档编辑。完全构造的编辑将包含 VS Code 修改所选文档所需的所有指令。当我们构造下一个要与之交互的对象时，这将非常有用。(zh_CN)
