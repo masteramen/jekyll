@@ -40,4 +40,6 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
-permalink: /:year/:title.html
+permalink: /:year/:title/index.html
+#permalink_custom_vars: ["fileName"]
+#permalink: /article/:fileName.html
