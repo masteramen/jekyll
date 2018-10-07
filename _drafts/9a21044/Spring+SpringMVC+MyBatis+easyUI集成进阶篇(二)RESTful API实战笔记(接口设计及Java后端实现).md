@@ -10,7 +10,6 @@ published: true
 ---
 
 {% raw %}
-By - Last updated: 星期四, 八月 10, 2017
 
 原计划这部分代码的更新也是上传到 ssm-demo 仓库中，因为如下原因并没有这么做：
 
