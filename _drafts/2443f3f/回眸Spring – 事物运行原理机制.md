@@ -77,7 +77,7 @@ Serivce.java
 **先看 spring 事物的执行过程,再看初始化过程**
 
 1. debug 断点打在 demoService.testTransactional(); 这块,然后 F5 进去
-   ![](4c65d5d.png)
+   ![](http://www.jfox.info/wp-content/uploads/2017/08/1502376394.png)
    image
 
 进入到的是一个 CglibAopProxy 内部类**DynamicAdvisedInterceptor**的**intercept**方法,从这里看的话,其实这个类就是一个责任链类型的处理类
@@ -87,7 +87,7 @@ Serivce.java
           // 这一段代码表示获取到你将要执行最终方法前要经过的一系列拦截类的处理,也就是责任链类的中的核心集合
         List<Object> chain = this.advised.getInterceptorsAndDynamicInterceptionAdvice(method, targetClass);
 
-![](c2c8a47.png)
+![](http://www.jfox.info/wp-content/uploads/2017/08/1502376395.png)
 
 image
 
@@ -95,7 +95,7 @@ image
 
 我们来看到执行到目标方法的执行轨迹:
 
-![](e7ce0f9.png)
+![](http://www.jfox.info/wp-content/uploads/2017/08/15023763951.png)
 
 image
 
@@ -105,7 +105,7 @@ image
 
 下面代码是不是似曾相识,这都是开启事物的操作和异常情况下,回滚和提交操作
 
-![](0058398.png)
+![](http://www.jfox.info/wp-content/uploads/2017/08/1502376396.png)
 
 image
 
@@ -117,19 +117,19 @@ image
 
 果然,初始化的方法断点被触发了…
 
-![](a52da6b.png)
+![](http://www.jfox.info/wp-content/uploads/2017/08/1502376397.png)
 
 image
 
 这时候我们可以看断点的运行轨迹
 
-![](f31168b.png)
+![](http://www.jfox.info/wp-content/uploads/2017/08/15023763971.png)
 
 image
 
 我们发现,触发到这个断点的时候,会经过一系列的方法执行,这些执行的方法链都是创建 bean 的时候必须经过的过程,也就是说每个 bean 创建的时候,都会经过这一系列的链路的检查(applyBeanPostProcessorsAfterInitialization 方法里面的 getBeanPostProcessors()方法),才会生成最终的 bean,这时候我们需要定位到执行这个 CglibAopProxy 初始化的方法这块,**在什么情况下**,会执行这个创建代理的类
 
-![](3ef958b.png)
+![](http://www.jfox.info/wp-content/uploads/2017/08/15023763972.png)
 
 image
 
@@ -647,5 +647,5 @@ Spring 提供了一个事物管理器,这个事物管理器专门扫描所有方
 
 由于 spring 里面代码层次划分很细,导致贴出来的代码特别多,可能会影响你们阅读,不过 Spring 里面的很多东西封装的都是很完善的,几乎全部都是组件化,导致很多方法很深,不过我们只要了解它大概的原理就行了,至少能够在我们遇到问题时能够推断出从哪个步骤进行下手.可能这篇文章代码和图片比较凌乱,最好是大家有 spring 的一些基本原理基础,比如 bean 的实例化啊等等,不然有的地方会看不懂,好了就说这么多了… 希望对大家有帮助.. 也非常欢迎大家提意见!!! 谢谢
 
-[![](6bf2383.png)](https://itunes.apple.com/cn/app/学英语听新闻/id1368539116?mt=8)
+[![](http://www.jfox.info/wp-content/uploads/2018/06/ewm2.png)](https://itunes.apple.com/cn/app/学英语听新闻/id1368539116?mt=8)
 {% endraw %}
