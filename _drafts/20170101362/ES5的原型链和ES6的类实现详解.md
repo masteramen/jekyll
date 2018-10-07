@@ -1,0 +1,73 @@
+---
+layout: post
+title:  "ES5的原型链和ES6的类实现详解"
+title2:  "ES5的原型链和ES6的类实现详解"
+date:   2017-01-01 23:57:42  +0800
+source:  "http://www.jfox.info/es5%e7%9a%84%e5%8e%9f%e5%9e%8b%e9%93%be%e5%92%8ces6%e7%9a%84%e7%b1%bb%e5%ae%9e%e7%8e%b0%e8%af%a6%e8%a7%a3.html"
+fileName:  "20170101362"
+lang:  "zh_CN"
+published: true
+permalink: "es5%e7%9a%84%e5%8e%9f%e5%9e%8b%e9%93%be%e5%92%8ces6%e7%9a%84%e7%b1%bb%e5%ae%9e%e7%8e%b0%e8%af%a6%e8%a7%a3.html"
+---
+{% raw %}
+JavaScript最初设计时受到了**面相对象编程**的影响，从而引入了**new关键字**，来**实例化对象**。而在ES5中new后面跟着的是**构造函数**（也是函数），而到了ES6则改成了**clas**了，而一开始new创建对象都是**独立的对象**，并不能像java那样拥有**继承**的概念，去**共享变量和方法**，为了解决这个问题，JavaScript就又给构造函数设计了一个**prototype**属性，这样所有**私有的方法和变量**就放到**构造函数**里面定义，而所有的**公共的变量和方法**就放到**prototype对象**里面，这样当构造函数创建一个实例化的对象的时候，就即拥有自己的私有变量和方法，也有公有的变量和方法了，实例化出来的对象的私有方法和变量修改都不会互相有影响，只有在修改公有的变量和方法的时候是对所有实例生效的。
+
+### ES5原型链
+
+**Example**
+
+    function Person(name){
+        this.name = name;
+    }
+    (function ($Person){
+        $Person.prototype = {
+            welcome: "hello",
+            introduce: function(){
+                return this.welcome + ",I am " + this.name;
+            }
+        }
+    })(Person)
+    
+    var person1 = new Person("arvin");
+    var person2 = new Person("peter");
+    console.log(person1.introduce());   // hello,I am arvin
+    console.log(person2.introduce());   // hello,I am peter
+    
+    person1.__proto__.welcome = "hi";
+    console.log(person1.introduce());   // hi,I am arvin
+    console.log(person2.introduce());   // hi,I am peter
+
+***代码解读：***以上是本人推荐在使用ES5时，写原型链的方法，目的是为了代码简洁，方便复用，仅供参考。代码中在原型链上定义了一个welcome**公共变量**，这里要注意的是如果有同样名称的**私有变量**welcome时，原型方法introduce里面的this.welcome会**首先查找私有变量welcome并使用**，这个其实就和面相对象的**覆写**类似了。另外可以看出，ES5的构造函数（一般首字母大写以区分普通函数）在new的时候确实是**创建了不同的区块**来存放其**私有变量**name的值的，而对于原型链的变量welcome和方法introduce也确实是各个Person实例**共用了同一块内存区域**的，只要其中**一个**修改了原型链上的变量**其他所有的对象实例**再调用的时候从公共内存取出来的也就是被修改过只有的值了，这里要注意的是，构造函数new出来的实例对象，创建出来的指向原型链prototype的是其__proto__属性，也就是说**person1.__proto__ === Person.prototype === person2.__proto__**，这也从实际上证明了**原型链对象在内存中只存了一份，是共用的**。
+
+### ES6类
+
+**Example**
+
+    class Person {
+        constructor(name) {
+            this.name = name;
+        }
+        welcome = 'hello';  // S7才支持实例属性
+        introduce(){
+            return this.welcome + ",I am " + this.name;
+        }
+    }
+    
+    var person1 = new Person("arvin");
+    var person2 = new Person("peter");
+    console.log(person1.introduce());   // hello,I am arvin
+    console.log(person2.introduce());   // hello,I am peter
+    
+    person1.__proto__.welcome = "hi";
+    console.log(person1.introduce());   // hi,I am arvin
+    console.log(person2.introduce());   // hi,I am peter
+    
+
+***代码解读：***上面暂时只是概念性的写法，事实上，ES6的类只是一个ES5原型链的语法糖而已，主要是从写法上更接近于面相对象的类而已，另外一个作用就是区分ES5的构造函数和函数之间的区分。
+
+### 小结：对于ES5和ES6的类似面相对象和非面向对象的原因，以java为例提出以下几点个人见解：
+
+1、java在继承（extend）的时候，子类是会复制一遍所有父类的方法和属性（除已覆写的除外）到一个独立的内存空间中的，即所有子类之间不存在任何的关系；而这点其实就和ES5的原型继承prototype和ES6的extend有很大的不同了。
+
+2、java在new创建一个实例的时候同样是会开辟一个独立的属于该实例的内存空间，同一个类的实例之间互不影响；而ES5和ES6的创建实例的时候实例仍然是和类是存在关联的，而且是可以直接影响到类以及其他子类的公共状态和方法的。
+{% endraw %}

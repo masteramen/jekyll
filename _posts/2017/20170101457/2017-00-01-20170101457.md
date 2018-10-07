@@ -1,0 +1,16 @@
+---
+layout: post
+title:  "【Java深入研究】4、fail-fast机制"
+title2:  "【Java深入研究】4、fail-fast机制"
+date:   2017-01-01 23:59:17  +0800
+source:  "http://www.jfox.info/java%e6%b7%b1%e5%85%a5%e7%a0%94%e7%a9%b64failfast%e6%9c%ba%e5%88%b6.html"
+fileName:  "20170101457"
+lang:  "zh_CN"
+published: true
+permalink: "java%e6%b7%b1%e5%85%a5%e7%a0%94%e7%a9%b64failfast%e6%9c%ba%e5%88%b6.html"
+---
+{% raw %}
+# 【Java深入研究】4、fail-fast机制 
+
+By  - Last updated: 星期四, 八月 3, 2017
+{% endraw %}

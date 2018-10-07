@@ -1,0 +1,162 @@
+---
+layout: post
+title:  "PHP 程序员如何快速进行 Java 开发"
+title2:  "PHP 程序员如何快速进行 Java 开发"
+date:   2017-01-01 23:58:13  +0800
+source:  "http://www.jfox.info/php%e7%a8%8b%e5%ba%8f%e5%91%98%e5%a6%82%e4%bd%95%e5%bf%ab%e9%80%9f%e8%bf%9b%e8%a1%8cjava%e5%bc%80%e5%8f%91.html"
+fileName:  "20170101393"
+lang:  "zh_CN"
+published: true
+permalink: "php%e7%a8%8b%e5%ba%8f%e5%91%98%e5%a6%82%e4%bd%95%e5%bf%ab%e9%80%9f%e8%bf%9b%e8%a1%8cjava%e5%bc%80%e5%8f%91.html"
+---
+{% raw %}
+## 入门不要拿着放大镜去学
+
+就像盲人摸象一样，他要想弄清楚大象的真实面貌可能要摸很久，就好比我们拿着放大镜在学习 java 一样，java 经过这么多年的发展，可以说非常庞大。如果我们要知道大象长什么样，就应该放下手中的放大镜，向后退远点，反而能够非常清晰的看到它的全貌。学习一门新的语言也一样，有很多很多网上的教程，非常的大而全，一般得系统的学习30~60小时之后才能正式的接触项目开发。基础很重要，但是学习了太多的基础会让大家失去学习的乐趣和自信心。很多知识点其实可以项目之后再补。按需去学，反而是自我驱动着去学习的最佳方式。
+![](/wp-content/uploads/2017/07/1500991888.png)
+
+比如 hashmap 的哈希分布、哈希碰撞、动态扩容，这些都是我们后期深入提高需要理解的内容，初期，我们只需要知道能拿 hashmap 做什么就行。
+
+## 以实现自己熟悉的东西为导向
+
+比如我们做 Web 后端 api 开发，首先是常用的循环/迭代、条件判断、增删改成。那么能不能快速用 java 实现一遍这些我们用 php 做起来非常顺手的事呢？
+这样有助于我们快速提升自信心。
+
+## 使用类比的学习方法
+
+PHP 里如何实现，重新用 java 实现一遍就行了。
+
+## 最后深入系统的学习
+
+当自己实现了一些小 demo 再去参考别人的项目。如果一开始就直接看别人的项目，可能完全不知道别人在干嘛。比如别人用了`ConcurrentHashMap`，就再去思考为什么我用`HashMap`他却用`ConcurrentHashMap`，带着问题，带着思考去看开源代码。
+
+完成了一些简单的项目了之后就可以再回过头来系统的学习了。这时候就会有不一样的收获。
+
+最后就是当项目需要调优，性能提升的时候，再各个击破，深入学习，更有针对性，更有目标性。
+
+## 实战开始
+
+我们用 netty 来提供高性能的 web 服务服务。使用简单方便（netty 并不简单），不依赖其他软件。然后思考完成一个简单的 web api 服务器需要哪些必不可少的组成部分。（其实在思考这的时候，你必须要要对做简单的架构必须熟记于心）。
+我简单概括了下：
+
+1. 
+java 基础数据类型（php 也有，不怕）
+
+2. 
+java 集合框架（php 有数组，很强大）
+
+3. 
+初识 maven（php 有 composer）
+
+4. 
+反射 （框架路由等地方要用到，php 也有）
+
+5. 
+序列化（数据传输要用到，php 没有复杂的数据结构要简单 N 倍）
+
+6. 
+jdbc （数据库操作要用到，php 有 pdo）
+
+7. 
+大概认识泛型、注解等语法 （可选）
+
+8. 
+使用 netty 实战开发一个 web api 服务（php 有 swoole）
+
+### Java 基本的数据结构、各种基本数据类型包装类
+
+![](/wp-content/uploads/2017/07/1500991890.png)
+
+### Java – Collections Framework 高频类举例
+
+![](/wp-content/uploads/2017/07/1500991891.png)
+
+HashSet 是一个没有重复元素的集合。它是由HashMap实现的，不保证元素的顺序，也就是说所说元素插入的顺序与输出的顺序不一致。
+
+**这其实是我的老朋友了，redis 里经常用，比如咱们可以它来实现一个黑名单，这样查找的速度就非常快，也不用去远程查询 redis 了，直接在当前内存中查询。**
+
+ArrayList 基于数组来实现集合的功能，其内部维护了一个可变长的对象数组，集合内所有对象存储于这个数组中，并实现该数组长度的动态伸缩。
+
+**这不就是我们的 PHP 里面常用的索引数组么？**
+
+HashMap 以哈希表数据结构实现，查找对象时通过哈希函数计算其位置，它是为快速查询而设计的。特点就是快，非线程安全。
+
+**这不就是我们的 PHP 里面常用的关联数组么？**
+
+[http://www.cnblogs.com/ITtang…](http://www.jfox.info/go.php?url=http://www.cnblogs.com/ITtangtang/p/3948786.html)
+[http://www.jianshu.com/p/b54f…](http://www.jfox.info/go.php?url=http://www.jianshu.com/p/b54f1df33f84)
+[http://www.cnblogs.com/xiaoxi…](http://www.jfox.info/go.php?url=http://www.cnblogs.com/xiaoxi/p/6089984.html)
+
+### 初识 maven
+
+Maven的基本原理很简单，采用远程仓库和本地仓库以及一个核心的配置文件pom.xml，pom.xml中定义的jar文件从远程仓库下载到本地仓库，各个项目使用同一个本地仓库的jar，同一个版本的jar只需下载一次，而且避免每个应用都去拷贝jar。
+
+这和 php 的包管理工具 composer 很像，或者是 composer 是参考着 maven 而设计的。maven 的功能更强大，composer 需要每个项目都要导入一遍，maven 却像 git 一样，有一个本地仓库，第三方包也不会直接引用到项目中，而是在编译的时候才会引入（是不是很方便）。另一方面，maven 不仅仅是包管理工具，而且是一个项目管理工具，集成了编译、打包、单元测试等功能。
+
+下面是最简单的一个演示，依赖了 netty 、junit 两个包。然后使用`maven-compiler-plugin`指定了编译时候的版本规则。
+
+    <?xml version="1.0" encoding="UTF-8"?>
+    <project xmlns="http://maven.apache.org/POM/4.0.0"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+        <modelVersion>4.0.0</modelVersion>
+    
+        <groupId>mengkang.net</groupId>
+        <artifactId>demo</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    
+        <dependencies>
+            <dependency>
+                <groupId>io.netty</groupId>
+                <artifactId>netty-all</artifactId>
+                <version>5.0.0.Alpha2</version>
+            </dependency>
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>4.7</version>
+                <scope>test</scope>
+            </dependency>
+        </dependencies>
+    
+        <build>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>2.3.2</version>
+                    <configuration>
+                        <source>1.8</source>
+                        <target>1.8</target>
+                        <encoding>UTF-8</encoding>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </build>
+    
+    </project>
+
+### 使用 netty 构建一个 http web 服务器
+
+我复制了 netty 官方的 demo 地址如下：
+
+    https://github.com/zhoumengkang/netty-http-demo/tree/web-server-init
+
+当我们运行`api.mengkang.net.netty.HttpServer.main`方法，服务器就跑起来了，当在浏览器里访问 [http://localhost:9009/](http://www.jfox.info/go.php?url=http://localhost:9009/) 就会返回`Hello World`。
+
+这是第一步，netty 这里就充当了一个 web server 的角色。而我们就可以直接在 netty 提供的接口的基础上做编程，而不需要想 nginx + php-fpm 还需要一次反向代理，性能高了许多。（swoole 的方式就很像 netty 了）。
+
+### 实现控制器的访问
+
+具体需求：提供一个 api 可以用户指定用户的信息
+定义接口：
+
+    http://localhost:10000/users/{id}
+    http://localhost:10000/?method=user.get&id={id}
+
+可能现在大家早已习惯了前者 restful 的 api 接口。
+因为这里需要一次路由的映射和 http method 的匹配，考虑到学习的成本呢，我没有选择这种方式。
+我们今天的目标是以最简单有效的方式实现我们的功能。
+我们首先从最简单的方式来实现（其实没有路由的 api 反而是最快的，毕竟需要做的判断少嘛）。
+后面大家有兴趣可以参考我写的一个 restful api 的 demo [https://github.com/zhoumengka…](http://www.jfox.info/go.php?url=https://github.com/zhoumengkang/netty-restful-server)
+{% endraw %}

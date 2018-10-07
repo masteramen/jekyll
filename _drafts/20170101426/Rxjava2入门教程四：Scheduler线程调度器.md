@@ -1,0 +1,305 @@
+---
+layout: post
+title:  "Rxjava2入门教程四：Scheduler线程调度器"
+title2:  "Rxjava2入门教程四：Scheduler线程调度器"
+date:   2017-01-01 23:58:46  +0800
+source:  "http://www.jfox.info/rxjava2%e5%85%a5%e9%97%a8%e6%95%99%e7%a8%8b%e5%9b%9bscheduler%e7%ba%bf%e7%a8%8b%e8%b0%83%e5%ba%a6%e5%99%a8.html"
+fileName:  "20170101426"
+lang:  "zh_CN"
+published: true
+permalink: "rxjava2%e5%85%a5%e9%97%a8%e6%95%99%e7%a8%8b%e5%9b%9bscheduler%e7%ba%bf%e7%a8%8b%e8%b0%83%e5%ba%a6%e5%99%a8.html"
+---
+{% raw %}
+作者[冯丰枫](/u/f7176d6d53d2)2017.07.30 13:16字数 1678
+Scheduler(线程调度器)赋予RxJava简洁明了的异步操作,可以说是RxJava中最值得称道的地方。
+在之前的代码中，Observable发射数据流，Observer接收响应数据流，以及Operators加工数据流均是在同一个线程中，实现出来的是一个同步的函数响应式。但是函数响应式的实际应用却不是这样的，大部分都是后台处理，前台响应的一个过程。Observable生成发射数据流，以及Operators加工数据流都是在后台线程中进行，而Observable在前台线程中接受并相应数据。
+Scheduler(线程调度器)可以让RxJava的线程切换变得简单明了，即使程序逻辑变得十分复杂，他依然能够保持简单明了。
+
+### subscribeOn
+
+    Observable<T> subscribeOn(Scheduler scheduler) 
+    
+
+subscribeOn通过接收一个Scheduler参数，来指定对数据的处理运行在特定的线程调度器Scheduler上。
+若多次设定，则只有一次起作用。
+
+### observeOn
+
+    Observable<T> observeOn(Scheduler scheduler)
+    
+
+observeOn同样接收一个Scheduler参数，来指定下游操作运行在特定的线程调度器Scheduler上。
+若多次设定，每次均起作用。
+ 
+ Schedulers.io( )： 
+ 
+用于IO密集型的操作，例如读写SD卡文件，查询数据库，访问网络等，具有线程缓存机制，在此调度器接收到任务后，先检查线程缓存池中，是否有空闲的线程，如果有，则复用，如果没有则创建新的线程，并加入到线程池中，如果每次都没有空闲线程使用，可以无上限的创建新线程。
+ 
+ Schedulers.newThread( )： 
+ 
+在每执行一个任务时创建一个新的线程，不具有线程缓存机制，因为创建一个新的线程比复用一个线程更耗时耗力，虽然使用Schedulers.io( )的地方，都可以使用Schedulers.newThread( )，但是，Schedulers.newThread( )的效率没有Schedulers.io( )高。
+ 
+ Schedulers.computation()： 
+ 
+用于CPU 密集型计算任务，即不会被 I/O 等操作限制性能的耗时操作，例如xml,json文件的解析，Bitmap图片的压缩取样等，具有固定的线程池，大小为CPU的核数。不可以用于I/O操作，因为I/O操作的等待时间会浪费CPU。
+ 
+ Schedulers.trampoline()： 
+ 
+在当前线程立即执行任务，如果当前线程有任务在执行，则会将其暂停，等插入进来的任务执行完之后，再将未完成的任务接着执行。
+ 
+ Schedulers.single()： 
+ 
+拥有一个线程单例，所有的任务都在这一个线程中执行，当此线程中有任务执行时，其他任务将会按照先进先出的顺序依次执行。
+ 
+ Scheduler.from(@NonNull Executor executor)： 
+ 
+指定一个线程调度器，由此调度器来控制任务的执行策略。
+ 
+ AndroidSchedulers.mainThread()： 
+ 
+在Android UI线程中执行任务，为Android开发定制。
+ 
+ 注： 
+ 
+在RxJava2中，废弃了RxJava1中的Schedulers.immediate( )
+在RxJava1中，Schedulers.immediate( )的作用为在当前线程立即执行任务，功能等同于RxJava2中的Schedulers.trampoline( )。
+而Schedulers.trampoline( )在RxJava1中的作用是当其它排队的任务完成后，在当前线程排队开始执行接到的任务，有点像RxJava2中的Schedulers.single()，但也不完全相同，因为Schedulers.single()不是在当前线程而是在一个线程单例中排队执行任务。
+
+#### 示例一：使用一次subscribeOn和一次observeOn
+
+    public void schedulerDemo1() {
+        Observable
+                .create(new ObservableOnSubscribe<Integer>() {
+                    @Override
+                    public void subscribe(ObservableEmitter<Integer> e) throws Exception {
+                        for (int i = 0; i < 5; i++) {
+                            System.out.println("发射线程:"  + Thread.currentThread().getName()+ "---->" + "发射:" + i);
+                            Thread.sleep(1000);
+                            e.onNext(i);
+                        }
+                        e.onComplete();
+                    }
+                })
+                .subscribeOn(Schedulers.io())   //设置可观察对象在Schedulers.io()的线程中发射数据
+                .observeOn(AndroidSchedulers.mainThread())//设置观察者在AndroidSchedulers.mainThread()的线程中处理数据
+                .subscribe(new Consumer<Integer>() {
+                    @Override
+                    public void accept(@NonNull Integer i) throws Exception {
+                        System.out.println("接收线程:"  + Thread.currentThread().getName()+ "---->" + "接收:" + i);
+                    }
+                });
+    }
+    
+
+运行代码后，控制台打印如下：
+
+    System.out: 发射线程:RxCachedThreadScheduler-1---->发射:0
+    System.out: 发射线程:RxCachedThreadScheduler-1---->发射:1
+    System.out: 接收线程:main---->接收:0
+    System.out: 发射线程:RxCachedThreadScheduler-1---->发射:2
+    System.out: 接收线程:main---->接收:1
+    System.out: 发射线程:RxCachedThreadScheduler-1---->发射:3
+    System.out: 接收线程:main---->接收:2
+    System.out: 发射线程:RxCachedThreadScheduler-1---->发射:4
+    System.out: 接收线程:main---->接收:3
+    System.out: 接收线程:main---->接收:4
+    
+
+通过subscribeOn(Schedulers.io())指定Observable在Schedulers.io( )调度器的线程中，每隔1秒发射一次数据，通过observeOn(AndroidSchedulers.mainThread())指定Observer在Android UI线程中接收数据。
+
+#### 示例二：使用两次subscribeOn和一次observeOn
+
+    public void schedulerDemo2() {
+        Observable
+                .create(new ObservableOnSubscribe<Integer>() {
+                    @Override
+                    public void subscribe(ObservableEmitter<Integer> e) throws Exception {
+                        for (int i = 0; i < 5; i++) {
+                            System.out.println("发射线程:" + Thread.currentThread().getName() + "---->" + "发射:" + i);
+                            Thread.sleep(1000);
+                            e.onNext(i);
+                        }
+                        e.onComplete();
+                    }
+                })
+                .subscribeOn(Schedulers.io())//设置可观察对象在Schedulers.io()的线程中发射数据
+                .map(new Function<Integer, Integer>() {
+                    @Override
+                    public Integer apply(@NonNull Integer i) throws Exception {
+                        System.out.println("处理线程:" + Thread.currentThread().getName() + "---->" + "处理:" + i);
+                        return i;
+                    }
+                })
+                .subscribeOn(Schedulers.newThread())//指定map操作符在Schedulers.newThread()的线程中处理数据
+                .observeOn(AndroidSchedulers.mainThread())//设置观察者在AndroidSchedulers.mainThread()的线程中处理数据
+                .subscribe(new Consumer<Integer>() {
+                    @Override
+                    public void accept(@NonNull Integer i) throws Exception {
+                        System.out.println("接收线程:" + Thread.currentThread().getName() + "---->" + "接收:" + i);
+                    }
+                });
+    }
+    
+
+通过subscribeOn(Schedulers.io())指定Observable在Schedulers.io( )调度器的线程中，每隔1秒发射一次数据，通过subscribeOn(Schedulers.newThread())指定map操作符在Schedulers.newThread()的调度器线程中处理数据，通过observeOn(AndroidSchedulers.mainThread())指定Observer在Android UI线程中接收数据。
+运行结果如下：
+
+    System.out: 发射线程:RxCachedThreadScheduler-1---->发射:0
+    System.out: 处理线程:RxCachedThreadScheduler-1---->处理:0
+    System.out: 发射线程:RxCachedThreadScheduler-1---->发射:1
+    System.out: 接收线程:main---->接收:0
+    System.out: 处理线程:RxCachedThreadScheduler-1---->处理:1
+    System.out: 接收线程:main---->接收:1
+    
+
+我们发现发射和处理数据均是在RxCachedThreadScheduler线程中，第二次通过subscribeOn指定的线程不起作用。
+
+#### 示例三：使用一次subscribeOn和两次observeOn
+
+    public void schedulerDemo3() {
+        Observable
+                .create(new ObservableOnSubscribe<Integer>() {
+                    @Override
+                    public void subscribe(ObservableEmitter<Integer> e) throws Exception {
+                        for (int i = 0; i < 2; i++) {
+                            System.out.println("发射线程:" + Thread.currentThread().getName() + "---->" + "发射:" + i);
+                            Thread.sleep(1000);
+                            e.onNext(i);
+                        }
+                        e.onComplete();
+                    }
+                })
+                .subscribeOn(Schedulers.io())//设置可观察对象在Schedulers.io()的线程中发射数据
+                .observeOn(Schedulers.newThread())//指定map操作符在Schedulers.newThread()的线程中处理数据
+                .map(new Function<Integer, Integer>() {
+                    @Override
+                    public Integer apply(@NonNull Integer i) throws Exception {
+                        System.out.println("处理线程:" + Thread.currentThread().getName() + "---->" + "处理:" + i);
+                        return i;
+                    }
+                })
+                .observeOn(AndroidSchedulers.mainThread())//设置观察者在AndroidSchedulers.mainThread()的线程中处理数据
+                .subscribe(new Consumer<Integer>() {
+                    @Override
+                    public void accept(@NonNull Integer i) throws Exception {
+                        System.out.println("接收线程:" + Thread.currentThread().getName() + "---->" + "接收:" + i);
+                    }
+                });
+    }
+    
+
+通过subscribeOn(Schedulers.io())指定Observable在Schedulers.io( )调度器的线程中，每隔1秒发射一次数据，通过observeOn(Schedulers.newThread())指定map操作符在Schedulers.newThread()的调度器线程中处理数据，通过observeOn(AndroidSchedulers.mainThread())指定Observer在Android UI线程中接收数据。
+运行结果如下：
+
+    System.out: 发射线程:RxCachedThreadScheduler-1---->发射:0
+    System.out: 发射线程:RxCachedThreadScheduler-1---->发射:1
+    System.out: 处理线程:RxNewThreadScheduler-1---->处理:0
+    System.out: 接收线程:main---->接收:0
+    System.out: 处理线程:RxNewThreadScheduler-1---->处理:1
+    System.out: 接收线程:main---->接收:1
+    
+
+与我们的预期结果一致
+ 
+ 通过示例一二三，我们可以总结subscribeOn和observeOn的用法如下: 
+ 
+subscribeOn来指定对数据的处理运行在特定的线程调度器Scheduler上，直到遇到observeOn改变线程调度器若多次设定，则只有一次起作用。observeOn指定下游操作运行在特定的线程调度器Scheduler上。若多次设定，每次均起作用。
+
+#### 示例四：Schedulers.trampoline()
+
+通过示例一二三我们可以发现，Observer处理数据相比于Observable发射的数据存在滞后的现象，Observable发射了两个数据，Observer才处理了一个，并不是Observable没发射一个，Observer就处理一个。
+运行：
+
+    public void schedulerDemo4() {
+        Observable
+                .create(new ObservableOnSubscribe<Integer>() {
+                    @Override
+                    public void subscribe(ObservableEmitter<Integer> e) throws Exception {
+                        for (int i = 0; i < 5; i++) {
+                            System.out.println("发射线程:" + Thread.currentThread().getName() + "---->" + "发射:" + i);
+                            Thread.sleep(1000);
+                            e.onNext(i);
+                        }
+                        e.onComplete();
+                    }
+                })
+                .subscribeOn(Schedulers.io())//设置可观察对象在Schedulers.io()的线程中发射数据
+                .observeOn(Schedulers.trampoline())//设置观察者在当前线程中j接收数据
+                .subscribe(new Consumer<Integer>() {
+                    @Override
+                    public void accept(@NonNull Integer i) throws Exception {
+                        Thread.sleep(2000);//休息2s后再处理数据
+                        System.out.println("接收线程:" + Thread.currentThread().getName() + "---->" + "接收:" + i);
+                    }
+                });
+    }
+    
+
+通过Schedulers.trampoline()/设置观察者在当前线程中处理数据，并且故意延迟两秒后在处理
+控制台打印如下：
+
+    System.out: 发射线程:RxCachedThreadScheduler-1---->发射:0
+    System.out: 接收线程:RxCachedThreadScheduler-1---->接收:0
+    System.out: 发射线程:RxCachedThreadScheduler-1---->发射:1
+    System.out: 接收线程:RxCachedThreadScheduler-1---->接收:1
+    System.out: 发射线程:RxCachedThreadScheduler-1---->发射:2
+    System.out: 接收线程:RxCachedThreadScheduler-1---->接收:2
+    System.out: 发射线程:RxCachedThreadScheduler-1---->发射:3
+    System.out: 接收线程:RxCachedThreadScheduler-1---->接收:3
+    System.out: 发射线程:RxCachedThreadScheduler-1---->发射:4
+    System.out: 接收线程:RxCachedThreadScheduler-1---->接收:4
+    
+
+我们可以发现虽然Observer在接收到数据后，延迟了两秒才处理，但是Observable依然在Observer将数据处理完之后才开始发射下一条。Schedulers.trampoline()的作用在当前线程立即执行任务，如果当前线程有任务在执行，则会将其暂停，等插入进来的任务执行完之后，再将未完成的任务接着执行。
+
+#### 示例五：Schedulers.single()
+
+    public void schedulerDemo5() {
+        Observable
+                .create(new ObservableOnSubscribe<Integer>() {
+                    @Override
+                    public void subscribe(ObservableEmitter<Integer> e) throws Exception {
+                        for (int i = 0; i < 3; i++) {
+                            System.out.println("发射线程:" + Thread.currentThread().getName() + "---->" + "发射:" + i);
+                            Thread.sleep(1000);
+                            e.onNext(i);
+                        }
+                        e.onComplete();
+                    }
+                })
+                .subscribeOn(Schedulers.single())//设置可观察对象在Schedulers.single()的线程中发射数据
+                .observeOn(Schedulers.single())//指定map操作符在Schedulers.single()的线程中处理数据
+                .map(new Function<Integer, Integer>() {
+                    @Override
+                    public Integer apply(@NonNull Integer i) throws Exception {
+                        System.out.println("处理线程:" + Thread.currentThread().getName() + "---->" + "处理:" + i);
+                        return i;
+                    }
+                })
+                .observeOn(Schedulers.single())//设置观察者在Schedulers.single()的线程中j接收数据
+                .subscribe(new Consumer<Integer>() {
+                    @Override
+                    public void accept(@NonNull Integer i) throws Exception {
+                        System.out.println("接收线程:" + Thread.currentThread().getName() + "---->" + "接收:" + i);
+                    }
+                });
+    }
+    
+
+运行结果如下：
+
+    System.out: 发射线程:RxSingleScheduler-1---->发射:0
+    System.out: 发射线程:RxSingleScheduler-1---->发射:1
+    System.out: 发射线程:RxSingleScheduler-1---->发射:2
+    
+    System.out: 处理线程:RxSingleScheduler-1---->处理:0
+    System.out: 处理线程:RxSingleScheduler-1---->处理:1
+    System.out: 处理线程:RxSingleScheduler-1---->处理:2
+    
+    System.out: 接收线程:RxSingleScheduler-1---->接收:0
+    System.out: 接收线程:RxSingleScheduler-1---->接收:1
+    System.out: 接收线程:RxSingleScheduler-1---->接收:2
+    
+
+通过Schedulers.single()将数据的发射，处理，接收在Schedulers.single()的线程单例中排队执行，当此线程中有任务执行时，其他任务将会按照先进先出的顺序依次执行。
+{% endraw %}

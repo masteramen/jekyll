@@ -1,0 +1,587 @@
+---
+layout: post
+title:  "【jOOQ中文】2. jOOQ与Spring和Druid集成"
+title2:  "【jOOQ中文】2. jOOQ与Spring和Druid集成"
+date:   2017-01-01 23:59:25  +0800
+source:  "http://www.jfox.info/jooq%e4%b8%ad%e6%96%872jooq%e4%b8%8espring%e5%92%8cdruid%e9%9b%86%e6%88%90.html"
+fileName:  "20170101465"
+lang:  "zh_CN"
+published: true
+permalink: "jooq%e4%b8%ad%e6%96%872jooq%e4%b8%8espring%e5%92%8cdruid%e9%9b%86%e6%88%90.html"
+---
+{% raw %}
+jOOQ和Spring很容易整合。 在这个例子中，我们将整合：
+
+- 
+Alibaba Druid（但您也可以使用其他连接池，如BoneCP，C3P0，DBCP等）。
+
+- 
+Spring TX作为事物管理library。
+
+- 
+jOOQ作为SQL构建和执行library。
+
+## 一、准备数据库
+
+    DROP TABLE IF EXISTS `author`;
+    CREATE TABLE `author` (
+      `id` int(11) NOT NULL,
+      `first_name` varchar(50) DEFAULT NULL,
+      `last_name` varchar(50) NOT NULL,
+      `date_of_birth` date DEFAULT NULL,
+      `year_of_birth` int(11) DEFAULT NULL,
+      `distinguished` int(1) DEFAULT NULL
+    ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+    
+    DROP TABLE IF EXISTS `book`;
+    CREATE TABLE `book` (
+      `id` int(11) NOT NULL,
+      `author_id` int(11) NOT NULL,
+      `title` varchar(400) NOT NULL,
+      `published_in` int(11) NOT NULL,
+      `language_id` int(11) NOT NULL
+    ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+    
+    DROP TABLE IF EXISTS `book_store`;
+    CREATE TABLE `book_store` (
+      `name` varchar(400) NOT NULL
+    ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+    
+    DROP TABLE IF EXISTS `book_to_book_store`;
+    CREATE TABLE `book_to_book_store` (
+      `name` varchar(400) NOT NULL,
+      `book_id` int(11) NOT NULL,
+      `stock` int(11) DEFAULT NULL
+    ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+    
+    DROP TABLE IF EXISTS `language`;
+    CREATE TABLE `language` (
+      `id` int(11) NOT NULL,
+      `cd` char(2) NOT NULL,
+      `description` varchar(50) DEFAULT NULL
+    ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+    
+    
+    ALTER TABLE `author`
+      ADD PRIMARY KEY (`id`);
+    
+    ALTER TABLE `book`
+      ADD PRIMARY KEY (`id`),
+      ADD KEY `fk_book_author` (`author_id`),
+      ADD KEY `fk_book_language` (`language_id`);
+    
+    ALTER TABLE `book_store`
+      ADD UNIQUE KEY `name` (`name`);
+    
+    ALTER TABLE `book_to_book_store`
+      ADD PRIMARY KEY (`name`,`book_id`),
+      ADD KEY `fk_b2bs_book` (`book_id`);
+    
+    ALTER TABLE `language`
+      ADD PRIMARY KEY (`id`);
+
+## 二、添加所需的Maven依赖项
+
+在这个例子中，我们将创建以下Maven依赖项：
+
+    <?xml version="1.0" encoding="UTF-8"?>
+    <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+        <modelVersion>4.0.0</modelVersion>
+        <groupId>com.jsyso</groupId>
+          <artifactId>jooq-tutorials-2</artifactId>
+          <packaging>jar</packaging>
+        <name>jooq-tutorials-2</name>
+        <version>1.0.0</version>
+        
+        <properties>
+            <!-- spring -->
+            <spring.version>4.1.9.RELEASE</spring.version>
+            <!-- /spring -->
+    
+            <!-- environment -->
+            <jdk.version>1.8</jdk.version>
+            <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+            <downloadSources>true</downloadSources>
+            <slf4j.version>1.7.7</slf4j.version>
+            <!-- /environment -->
+            
+            <!-- jdbc -->
+            <mysql.driver.version>5.1.30</mysql.driver.version>
+            <druid.version>1.0.18</druid.version>
+            <!-- /jdbc -->
+            
+            <!-- jooq -->
+            <jooq.version>3.9.5</jooq.version>
+            <!-- /jooq -->
+            
+        </properties>
+        
+        <repositories>
+            <repository>
+                <id>aliyun-repos</id>
+                <name>Aliyun Repository</name>
+                <url>http://maven.aliyun.com/nexus/content/groups/public</url>
+            </repository>
+        </repositories>
+    
+        <pluginRepositories> 
+            <pluginRepository>
+                <id>aliyun-repos</id>
+                <name>Aliyun Repository</name>
+                <url>http://maven.aliyun.com/nexus/content/groups/public</url>
+            </pluginRepository>
+        </pluginRepositories>
+        
+        <dependencies>
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>${mysql.driver.version}</version>
+            </dependency>
+            
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>4.11</version>
+                <scope>test</scope>
+            </dependency>
+            
+            <dependency>
+              <groupId>org.jooq</groupId>
+              <artifactId>jooq</artifactId>
+              <version>${jooq.version}</version>
+            </dependency>
+            <dependency>
+              <groupId>org.jooq</groupId>
+              <artifactId>jooq-meta</artifactId>
+              <version>${jooq.version}</version>
+            </dependency>
+            <dependency>
+              <groupId>org.jooq</groupId>
+              <artifactId>jooq-codegen</artifactId>
+              <version>${jooq.version}</version>
+            </dependency>
+    
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid</artifactId>
+                <version>${druid.version}</version>
+            </dependency>
+    
+            <!-- spring -->
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-core</artifactId>
+                <version>${spring.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>commons-logging</groupId>
+                        <artifactId>commons-logging</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-beans</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-context</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-context-support</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-aop</artifactId>
+                <version>${spring.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>commons-logging</groupId>
+                        <artifactId>commons-logging</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-tx</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-orm</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-jdbc</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+    
+            <!-- TEST begin -->
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>4.11</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-test</artifactId>
+                <version>${spring.version}</version>
+                <scope>test</scope>
+            </dependency>
+            <!-- TEST end -->
+    
+            <!-- LOGGING begin -->
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-api</artifactId>
+                <version>${slf4j.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-log4j12</artifactId>
+                <version>${slf4j.version}</version>
+            </dependency>
+            <!-- common-logging 实际调用slf4j -->
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>jcl-over-slf4j</artifactId>
+                <version>${slf4j.version}</version>
+            </dependency>
+            <!-- java.util.logging 实际调用slf4j -->
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>jul-to-slf4j</artifactId>
+                <version>${slf4j.version}</version>
+            </dependency>
+            <!-- LOGGING end -->
+    
+        </dependencies>
+        
+        <build>
+            <plugins>
+                <!-- Compiler 插件, 设定JDK版本 -->
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>3.5.1</version>
+                    <configuration>
+                        <source>${jdk.version}</source>
+                        <target>${jdk.version}</target>
+                        <showWarnings>true</showWarnings>
+                    </configuration>
+                </plugin>
+                
+                <!-- 打包jar文件时，配置manifest文件，加入lib包的jar依赖 -->
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-jar-plugin</artifactId>
+                    <version>2.4</version>
+                </plugin>
+    
+                <!-- resource插件 -->
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-resources-plugin</artifactId>
+                    <version>2.7</version>
+                </plugin>
+                
+                <!-- install插件 -->
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-install-plugin</artifactId>
+                    <version>2.5.2</version>
+                </plugin>
+                
+                <!-- clean插件 -->
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-clean-plugin</artifactId>
+                    <version>2.6.1</version>
+                </plugin>
+                
+                <!-- dependency插件 -->
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-dependency-plugin</artifactId>
+                    <version>2.10</version>
+                </plugin>
+                
+                <!-- 打包时跳过不执行测试用例 -->
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-surefire-plugin</artifactId>
+                    <version>2.5</version>
+                    <configuration>
+                        <skipTests>true</skipTests>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </build>
+        
+        <developers>  
+            <developer>
+                <id>com.jsyso</id>
+                <name>Jan</name>
+                <email>xujian_jason@163.com</email>
+                <timezone>+8</timezone>
+            </developer>
+        </developers>
+        
+    </project>
+
+## 三、Spring配置文件
+
+    <?xml version="1.0" encoding="UTF-8"?>
+    <beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:context="http://www.springframework.org/schema/context" xmlns:jdbc="http://www.springframework.org/schema/jdbc"  
+        xmlns:jee="http://www.springframework.org/schema/jee" xmlns:tx="http://www.springframework.org/schema/tx"
+        xmlns:util="http://www.springframework.org/schema/util" xmlns:task="http://www.springframework.org/schema/task" xsi:schemaLocation="
+            http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.1.xsd
+            http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.1.xsd
+            http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc-4.1.xsd
+            http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-4.1.xsd
+            http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.1.xsd
+            http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.1.xsd
+            http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task-4.1.xsd"
+        default-lazy-init="true">
+        <description>Spring Configuration</description>
+    
+        <!-- 加载配置属性文件 -->
+        <context:property-placeholder ignore-unresolvable="true" location="classpath:config.properties" />
+    
+        <!-- 数据源配置 -->
+        <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource" init-method="init" destroy-method="close">
+            <!-- 数据源驱动类可不写，Druid默认会自动根据URL识别DriverClass -->
+            <property name="driverClassName" value="${jdbc.driver}" />
+    
+            <!-- 基本属性 url、user、password -->
+            <property name="url" value="${jdbc.url}" />
+            <property name="username" value="${jdbc.username}" />
+            <property name="password" value="${jdbc.password}" />
+    
+            <!-- 配置初始化大小、最小、最大 -->
+            <property name="initialSize" value="${jdbc.pool.init}" />
+            <property name="minIdle" value="${jdbc.pool.minIdle}" />
+            <property name="maxActive" value="${jdbc.pool.maxActive}" />
+    
+            <!-- 配置获取连接等待超时的时间 -->
+            <property name="maxWait" value="60000" />
+    
+            <!-- 配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒 -->
+            <property name="timeBetweenEvictionRunsMillis" value="60000" />
+    
+            <!-- 配置一个连接在池中最小生存的时间，单位是毫秒 -->
+            <property name="minEvictableIdleTimeMillis" value="300000" />
+    
+            <property name="validationQuery" value="${jdbc.testSql}" />
+            <property name="testWhileIdle" value="true" />
+            <property name="testOnBorrow" value="false" />
+            <property name="testOnReturn" value="false" />
+    
+            <!-- 配置监控统计拦截的filters -->
+            <property name="filters" value="stat" />
+        </bean>
+    
+        <!-- 定义事务 -->
+        <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+            <property name="dataSource" ref="dataSource" />
+        </bean>
+        <!-- 配置 Annotation 驱动，扫描@Transactional注解的类定义事务  -->
+        <tx:annotation-driven transaction-manager="transactionManager" proxy-target-class="true"/>
+        <!-- 配置jOOQ的ConnectionProvider使用Spring的TransactionAwareDataSourceProx -->
+        <bean id="transactionAwareDataSource"
+              class="org.springframework.jdbc.datasource.TransactionAwareDataSourceProxy">
+            <constructor-arg ref="dataSource" />
+        </bean>
+        <bean class="org.jooq.impl.DataSourceConnectionProvider" name="connectionProvider">
+            <constructor-arg ref="transactionAwareDataSource" />
+        </bean>
+        <!-- 可选，重写jOOQ异常，抛出Spring Exception -->
+        <bean id="exceptionTranslator" class="test.generated.exception.ExceptionTranslator" />
+    
+        <bean class="org.jooq.impl.DefaultConfiguration" name="config">
+            <property name="SQLDialect"><value type="org.jooq.SQLDialect">MYSQL</value></property>
+            <property name="connectionProvider" ref="connectionProvider" />
+            <property name="executeListenerProvider">
+                <array>
+                    <bean class="org.jooq.impl.DefaultExecuteListenerProvider">
+                        <constructor-arg index="0" ref="exceptionTranslator"/>
+                    </bean>
+                </array>
+            </property>
+        </bean>
+    
+        <!-- 配置jOOQ的dsl对象 -->
+        <bean id="dsl" class="org.jooq.impl.DefaultDSLContext">
+            <constructor-arg ref="config" />
+        </bean>
+    
+    </beans>
+
+## 四、Spring Test + JUnit集成测试
+
+**查询测试：**
+
+    package test.generated.service;
+    
+    import static java.util.Arrays.asList;
+    import static org.jooq.impl.DSL.countDistinct;
+    import static org.junit.Assert.assertEquals;
+    import static test.generated.Tables.*;
+    
+    import org.jooq.DSLContext;
+    import org.jooq.Record3;
+    import org.jooq.Result;
+    
+    import org.junit.Test;
+    import org.junit.runner.RunWith;
+    import org.springframework.beans.factory.annotation.Autowired;
+    import org.springframework.test.context.ContextConfiguration;
+    import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+    import test.generated.tables.Author;
+    import test.generated.tables.Book;
+    import test.generated.tables.BookStore;
+    import test.generated.tables.BookToBookStore;
+    import test.generated.tables.records.BookRecord;
+    
+    /**
+     * @author Lukas Eder
+     */
+    @RunWith(SpringJUnit4ClassRunner.class)
+    @ContextConfiguration(locations = {"/jooq-spring.xml"})
+    public class QueryTest {
+        @Autowired
+        DSLContext create;
+    
+        @Test
+        public void testJoin() throws Exception {
+            // All of these tables were generated by jOOQ's Maven plugin
+            Book b = BOOK.as("b");
+            Author a = AUTHOR.as("a");
+            BookStore s = BOOK_STORE.as("s");
+            BookToBookStore t = BOOK_TO_BOOK_STORE.as("t");
+    
+            Result<Record3<String, String, Integer>> result =
+                    create.select(a.FIRST_NAME, a.LAST_NAME, countDistinct(s.NAME))
+                            .from(a)
+                            .join(b).on(b.AUTHOR_ID.eq(a.ID))
+                            .join(t).on(t.BOOK_ID.eq(b.ID))
+                            .join(s).on(t.NAME.eq(s.NAME))
+                            .groupBy(a.FIRST_NAME, a.LAST_NAME)
+                            .orderBy(countDistinct(s.NAME).desc())
+                            .fetch();
+    
+            assertEquals(2, result.size());
+            assertEquals("Paulo", result.getValue(0, a.FIRST_NAME));
+            assertEquals("George", result.getValue(1, a.FIRST_NAME));
+    
+            assertEquals("Coelho", result.getValue(0, a.LAST_NAME));
+            assertEquals("Orwell", result.getValue(1, a.LAST_NAME));
+    
+            assertEquals(Integer.valueOf(3), result.getValue(0, countDistinct(s.NAME)));
+            assertEquals(Integer.valueOf(2), result.getValue(1, countDistinct(s.NAME)));
+        }
+    
+    }
+
+**数据插入，使用Spring的TransactionManager来显式处理事务：**
+
+    package test.generated.service;
+    
+    import static org.junit.Assert.assertEquals;
+    import static org.junit.Assert.assertTrue;
+    import static test.generated.Tables.BOOK;
+    
+    import java.util.concurrent.atomic.AtomicBoolean;
+    
+    import org.jooq.DSLContext;
+    
+    import org.junit.After;
+    import org.junit.Assert;
+    import org.junit.Test;
+    import org.junit.runner.RunWith;
+    import org.springframework.beans.factory.annotation.Autowired;
+    import org.springframework.dao.DataAccessException;
+    import org.springframework.jdbc.datasource.DataSourceTransactionManager;
+    import org.springframework.test.context.ContextConfiguration;
+    import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+    import org.springframework.test.context.transaction.TransactionConfiguration;
+    import org.springframework.transaction.TransactionStatus;
+    import org.springframework.transaction.support.DefaultTransactionDefinition;
+    
+    /**
+     * @author Petri Kainulainen
+     * @author Lukas Eder
+     *
+     * @see <a
+     *      href="http://www.petrikainulainen.net/programming/jooq/using-jooq-with-spring-configuration/">http://www.petrikainulainen.net/programming/jooq/using-jooq-with-spring-configuration/</a>
+     */
+    @RunWith(SpringJUnit4ClassRunner.class)
+    @ContextConfiguration(locations = {"/jooq-spring.xml"})
+    @TransactionConfiguration(transactionManager="transactionManager")
+    public class TransactionTest {
+    
+        @Autowired DSLContext                   dsl;
+        @Autowired DataSourceTransactionManager txMgr;
+    
+        @Test
+        public void testDelBooks() {
+    
+            // Delete all books that were created in any test
+            dsl.delete(BOOK).where(BOOK.ID.gt(4)).execute();
+        }
+    
+        @Test
+        public void testAddBooks() {
+            TransactionStatus tx = txMgr.getTransaction(new DefaultTransactionDefinition());
+            for (int i = 1; i <= 6; i++)
+                dsl.insertInto(BOOK)
+                        .set(BOOK.ID, i)
+                        .set(BOOK.PUBLISHED_IN, 1)
+                        .set(BOOK.LANGUAGE_ID, 1)
+                        .set(BOOK.AUTHOR_ID, 1)
+                        .set(BOOK.TITLE, "Book " + i)
+                        .execute();
+            txMgr.commit(tx);
+        }
+    
+        @Test
+        public void testExplicitTransactions() {
+            boolean rollback = false;
+    
+            TransactionStatus tx = txMgr.getTransaction(new DefaultTransactionDefinition());
+            try {
+    
+                // This is a "bug". The same book is created twice, resulting in a
+                // constraint violation exception
+                for (int i = 7; i <=9; i++)
+                    dsl.insertInto(BOOK)
+                            .set(BOOK.ID, i)
+                            .set(BOOK.AUTHOR_ID, 1)
+                            .set(BOOK.TITLE, "Book " + i)
+                            .execute();
+    
+                Assert.fail();
+            }
+    
+            // Upon the constraint violation, we explicitly roll back the transaction.
+            catch (DataAccessException e) {
+                txMgr.rollback(tx);
+                rollback = true;
+            }
+    
+            assertEquals(4, dsl.fetchCount(BOOK));
+            assertTrue(rollback);
+        }
+    }
+
+【jOOQ中文】教程代码都会放在码云，希望多多宣传给Star(^_−)☆。
+{% endraw %}

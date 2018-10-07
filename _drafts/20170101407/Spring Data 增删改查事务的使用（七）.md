@@ -1,0 +1,172 @@
+---
+layout: post
+title:  "Spring Data 增删改查事务的使用（七）"
+title2:  "Spring Data 增删改查事务的使用（七）"
+date:   2017-01-01 23:58:27  +0800
+source:  "http://www.jfox.info/springdata%e5%a2%9e%e5%88%a0%e6%94%b9%e6%9f%a5%e4%ba%8b%e5%8a%a1%e7%9a%84%e4%bd%bf%e7%94%a8%e4%b8%83.html"
+fileName:  "20170101407"
+lang:  "zh_CN"
+published: true
+permalink: "springdata%e5%a2%9e%e5%88%a0%e6%94%b9%e6%9f%a5%e4%ba%8b%e5%8a%a1%e7%9a%84%e4%bd%bf%e7%94%a8%e4%b8%83.html"
+---
+{% raw %}
+@Modifying 注解使用
+
+@Modifying 结合 @Query注解进行更新操作
+
+咱们单单的一个查询注解是没有办法完成事务的操作的
+
+我们还要结合一点就是@Transaction 在springdata的使用
+
+话不多说 我们开始
+
+　　开始之前我先讲下上篇文章的 漏了一个 查询总记录数的  本来想给大家写个例子   今天在这里补上
+
+　　还是在 EmployeeRepository.java 该类增加新的方法
+
+    //获取总记录数
+        //nativeQuery =true  表示支持本地sql查询
+        @Query(nativeQuery = true,value = "select count(*) from employee")
+        publiclong getCount();
+
+    编写一个测试方法
+
+     @Test
+        publicvoid tesquerayParams(){
+            List<Employee> employees = employeeRepository.querayParams("wangwu",12);
+            for (Employee employee: employees) {
+                System.out.println("id:" + employee.getId()
+                        + " , name:" + employee.getName()
+                        + " ,age:" + employee.getAge());
+            }
+        }
+
+ 执行结果
+
+![](/wp-content/uploads/2017/07/1501336641.png)
+
+**进入正题  咱们讲下事务的操作**
+
+　　还是一样 通过例子给大家展示
+
+　　还是在EmployeeRepository.java  ———->update方法
+
+    package org.springdata.repository;
+    
+    import org.springdata.domain.Employee;
+    import org.springframework.data.jpa.repository.Modifying;
+    import org.springframework.data.jpa.repository.Query;
+    import org.springframework.data.repository.Repository;
+    import org.springframework.data.repository.RepositoryDefinition;
+    import org.springframework.data.repository.query.Param;
+    
+    import java.util.List;
+    
+    /***
+     *
+     */
+    @RepositoryDefinition(domainClass = Employee.class, idClass = Integer.class)
+    publicinterface EmployeeRepository /*extends Repository<Employee,Integer>*/ {
+        /**
+         * 根据名字找员工
+         * desc  大家可以发现  我只声明了一个方法  并没有写任何的实现类   哦了  就这样  咱们写个实现类
+         * @param name
+         * @return*/public Employee findByName(String name);
+    
+    
+        // name 根据模糊查询  并且 年龄<多少岁的员工public List<Employee> findByNameIsStartingWithAndAgeLessThan(String name, Integer gae);
+    
+    
+        // names in ('','','') 年龄小于多少public List<Employee> findByNameInOrAgeLessThan(List<String> names,Integer age);
+    
+    
+        //获取年龄最大的信息
+        @Query(" select o  from  Employee o where o.age=(select max(age) from Employee t1)")
+        public Employee getEmployeeByAge();
+    
+        //获取name包含 哪些 并且年龄等于多少岁
+        @Query("select o from Employee o where o.name like %?1% and o.age = ?2")
+        public List<Employee> querayParams(String name,Integer age);
+    
+    
+        //获取总记录数
+        //nativeQuery =true  表示支持本地sql查询
+        @Query(nativeQuery = true,value = "select count(*) from employee")
+        publiclong getCount();
+    
+    
+        //根据id修改年龄
+        @Modifying //该注解表示允许修改
+        @Query("update Employee o set o.age=:age where o.id = :id")
+        publicvoid update(@Param("id")Integer id, @Param("age")Integer age);
+    }
+
+写完之后是不是可以马上测试呢？  不是的
+
+　　咱们做过javaee开发的同学都知道  我们事务都是放在service 里面控制的 所以这次也是一样  咱们新建一个service包  见一个EmployeeService类
+
+所以咱们新建一个EmployeeService.java 进行事务控制
+
+![](/wp-content/uploads/2017/07/1501336642.png)
+
+编写一下代码：
+
+    package org.springdata.service;
+    
+    import org.springdata.repository.EmployeeRepository;
+    import org.springframework.beans.factory.annotation.Autowired;
+    import org.springframework.stereotype.Service;
+    
+    import javax.transaction.Transactional;
+    
+    /**
+     * Employee 事务的控制
+     */
+    @Service
+    publicclass EmployeeService {
+        @Autowired
+        private EmployeeRepository employeeRepository;
+    
+    
+        @Transactional //事务注解publicvoid update(Integer id,Integer age){
+            employeeRepository.update(id,age);
+        }
+    }
+
+ 编写测试类———–testupdate
+
+    package org.springdata.service;
+    
+    import org.junit.After;
+    import org.junit.Before;
+    import org.junit.Test;
+    import org.springdata.repository.EmployeeRepository;
+    import org.springframework.context.ApplicationContext;
+    import org.springframework.context.support.ClassPathXmlApplicationContext;
+    
+    /***/publicclass SpringDataTransaction {
+    
+    
+        private ApplicationContext ctx = null;
+    
+        private EmployeeService employeeService = null;
+    
+        @Before
+        publicvoid setup(){
+            ctx = new ClassPathXmlApplicationContext("beans_news.xml");
+            employeeService = ctx.getBean(EmployeeService.class);
+            System.out.println("setup");
+        }
+    
+        @After
+        publicvoid tearDown(){
+            ctx = null;
+            System.out.println("tearDown");
+        }
+    
+        @Test
+        publicvoid testUpdate(){
+            employeeService.update(1,52);
+        }
+    }
+{% endraw %}

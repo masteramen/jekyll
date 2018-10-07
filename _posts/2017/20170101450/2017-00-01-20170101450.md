@@ -1,0 +1,18 @@
+---
+layout: post
+title:  "SpringBoot开发案例之日志管理"
+title2:  "SpringBoot开发案例之日志管理"
+date:   2017-01-01 23:59:10  +0800
+source:  "http://www.jfox.info/springboot%e5%bc%80%e5%8f%91%e6%a1%88%e4%be%8b%e4%b9%8b%e6%97%a5%e5%bf%97%e7%ae%a1%e7%90%86.html"
+fileName:  "20170101450"
+lang:  "zh_CN"
+published: true
+permalink: "springboot%e5%bc%80%e5%8f%91%e6%a1%88%e4%be%8b%e4%b9%8b%e6%97%a5%e5%bf%97%e7%ae%a1%e7%90%86.html"
+---
+{% raw %}
+顺便引用以下原文，当然看不明白也没关系，我们有-有道翻译，如果翻译的不准确，后面会提供配置分享于大家。
+
+Spring Boot uses Commons Logging for all internal logging, but leaves the underlying log implementation open. Default configurations are provided for Java Util Logging, Log4J2 and Logback. In each case loggers are pre-configured to use console output with optional file output also available. By default, If you use the ‘Starters’, Logback will be used for logging. Appropriate Logback routing is also included to ensure that dependent libraries that use Java Util Logging, Commons Logging, Log4J or SLF4J will all work correctly.
+
+简单概述以下spring-boot日志管理默认使用Logback，当然 Log4j2、Log4j也是支持的。
+{% endraw %}
