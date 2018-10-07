@@ -1,0 +1,129 @@
+---
+layout: post
+title:  "面试系列（七）：Spring（框架）"
+title2:  "面试系列（七）：Spring（框架）"
+date:   2017-01-01 23:49:08  +0800
+source:  "http://www.jfox.info/mian-shi-xi-lie-qi-spring-kuang-jia.html"
+fileName:  "20170100848"
+lang:  "zh_CN"
+published: true
+permalink: "mian-shi-xi-lie-qi-spring-kuang-jia.html"
+---
+{% raw %}
+终于到最后一个比较常问的点了。基本上问你对于Spring的理解。把它的核心概念：IOC和AOP答好，以及Spring的工作原理，Spring里用到的一些设计模式答好就差不多了……
+
+**1、Spring的工作原理和机制**
+
+Spring是一个容器，凡是在容器里的对象才会有Spring所提供的这些服务和功能。
+
+Spring目的：就是让对象与对象（模块与模块）之间的关系没有通过代码来关联，都是通过配置类说明管理的（Spring根据这些配置 内部通过反射去动态的组装对象） 
+
+Spring内部最核心的就是IOC了–动态注入，让一个对象的创建不用new了，可以自动的生产，这其实就是利用java里的反射，反射其实就是在运行时动态的去创建、调用对象，Spring就是在运行时，跟xml Spring的配置文件来动态的创建对象，和调用对象里的方法的 。 
+
+Spring还有一个核心就是AOP这个就是面向切面编程，可以为某一类对象 进行监督和控制（也就是 在调用这类对象的具体方法的前后去调用你指定的 模块）从而达到对一个模块扩充的功能。这些都是通过 配置类达到的。
+
+2、**AOP与IOC**
+
+依赖注入三种方式：
+
+setter– 设值注入
+
+interface– 接口注入
+
+constructor– 构造注入
+
+2）AOP
+
+AOP（Aspect Oriented Programming），即面向切面编程，可以说是OOP（Object Oriented Programming，面向对象编程）的补充和完善。OOP引入封装、继承、多态等概念来建立一种对象层次结构，用于模拟公共行为的一个集合。不过OOP允许开发者定义纵向的关系，但并不适合定义横向的关系，例如日志功能。日志代码往往横向地散布在所有对象层次中，而与它对应的对象的核心功能毫无关系对于其他类型的代码，如安全性、异常处理和透明的持续性也都是如此，这种散布在各处的无关的代码被称为横切（cross cutting），在OOP设计中，它导致了大量代码的重复，而不利于各个模块的重用。
+
+AOP技术恰恰相反，它利用一种称为”横切”的技术，剖解开封装的对象内部，并将那些影响了多个类的公共行为封装到一个可重用模块，并将其命名为”Aspect”，即切面。所谓”切面”，简单说就是那些与业务无关，却为业务模块所共同调用的逻辑或责任封装起来，便于减少系统的重复代码，降低模块之间的耦合度，并有利于未来的可操作性和可维护性。
+
+**3、Spring的核心模块**
+
+![](/wp-content/uploads/2017/06/163f3c8e-c561-37a5-b763-b01dd9f95ab5.jpg)
+Spring 框架是一个分层架构，由 7 个定义良好的模块组成。Spring 模块构建在核心容器之上，核心容器定义了创建、配置和管理 bean 的方式，组成 Spring 框架的每个模块（或组件）都可以单独存在，或者与其他一个或多个模块联合实现。每个模块的功能如下：
+
+ 核心容器：核心容器提供 Spring 框架的基本功能。核心容器的主要组件是 BeanFactory，它是工厂模式的实现。BeanFactory 使用控制反转 （IOC）模式将应用程序的配置和依赖性规范与实际的应用程序代码分开。
+
+ Spring 上下文：Spring 上下文是一个配置文件，向 Spring 框架提供上下文信息。Spring 上下文包括企业服务，例如 JNDI、EJB、电子邮件、国际化、校验和调度功能。
+
+ Spring AOP：通过配置管理特性，Spring AOP 模块直接将面向方面的编程功能集成到了 Spring 框架中。所以，可以很容易地使 Spring 框架管理的任何对象支持 AOP。Spring AOP 模块为基于 Spring 的应用程序中的对象提供了事务管理服务。通过使用 Spring AOP，不用依赖 EJB 组件，就可以将声明性事务管理集成到应用程序中。
+
+ Spring DAO：JDBC DAO 抽象层提供了有意义的异常层次结构，可用该结构来管理异常处理和不同数据库供应商抛出的错误消息。异常层次结构简化了错误处理，并且极大地降低了需要编写的异常代码数量（例如打开和关闭连接）。Spring DAO 的面向 JDBC 的异常遵从通用的 DAO 异常层次结构。
+
+ Spring ORM：Spring 框架插入了若干个 ORM 框架，从而提供了 ORM 的对象关系工具，其中包括 JDO、Hibernate 和 iBatis SQL Map。所有这些都遵从 Spring 的通用事务和 DAO 异常层次结构。
+
+ Spring Web 模块：Web 上下文模块建立在应用程序上下文模块之上，为基于 Web 的应用程序提供了上下文。所以，Spring 框架支持与 Jakarta Struts 的集成。Web 模块还简化了处理多部分请求以及将请求参数绑定到域对象的工作。
+
+ Spring MVC 框架：MVC 框架是一个全功能的构建 Web 应用程序的 MVC 实现。通过策略接口，MVC 框架变成为高度可配置的，MVC 容纳了大量视图技术，其中包括 JSP、Velocity、Tiles、iText 和 POI。
+
+**4、Spring用到的设计模式**
+
+1）简单工厂 
+
+又叫做静态工厂方法（StaticFactory Method）模式，但不属于23种GOF设计模式之一。 
+
+简单工厂模式的实质是由一个工厂类根据传入的参数，动态决定应该创建哪一个产品类。 如构造注入或设置注入不同的bean或一般参数，bean实例也不同
+
+spring中的BeanFactory就是简单工厂模式的体现，根据传入一个唯一的标识来获得bean对象，但是否是在传入参数后创建还是传入参数前创建这个要根据具体情况来定。 
+
+2）工厂方法（Factory Method） 
+
+定义一个用于创建对象的接口，让子类决定实例化哪一个类。Factory Method使一个类的实例化延迟到其子类。 
+
+spring中的FactoryBean就是典型的工厂方法模式。 
+
+3）单例（Singleton） 
+
+保证一个类仅有一个实例，并提供一个访问它的全局访问点。 bean默认是Singleton的
+
+spring中的单例模式完成了后半句话，即提供了全局的访问点BeanFactory。但没有从构造器级别去控制单例，这是因为spring管理的是是任意的java对象。
+
+4）适配器（Adapter） 
+
+将一个类的接口转换成客户希望的另外一个接口。Adapter模式使得原本由于接口不兼容而不能一起工作的那些类可以一起工作。 
+
+spring中在对于aop的处理中有Adapter模式的例子。 
+
+由于Advisor链需要的是MethodInterceptor对象，所以每一个Advisor中的Advice都要适配成对应的MethodInterceptor对象。 
+
+5）包装器（Decorator） 
+
+动态地给一个对象添加一些额外的职责。就增加功能来说，Decorator模式相比生成子类更为灵活。 
+
+spring中用到的包装器模式在类名上有两种表现：一种是类名中含有Wrapper，另一种是类名中含有Decorator。基本上都是动态地给一个对象添加一些额外的职责。
+
+6）代理（Proxy） 
+
+为其他对象提供一种代理以控制对这个对象的访问。 
+
+从结构上来看和Decorator模式类似，但Proxy是控制，更像是一种对功能的限制，而Decorator是增加职责。
+
+spring的Proxy模式在aop中有体现，比如JdkDynamicAopProxy和Cglib2AopProxy。 
+
+7）观察者（Observer） 
+
+定义对象间的一种一对多的依赖关系，当一个对象的状态发生改变时，所有依赖于它的对象都得到通知并被自动更新。
+
+spring中Observer模式常用的地方是listener的实现。如ApplicationListener。 
+
+8）策略（Strategy） 
+
+定义一系列的算法，把它们一个个封装起来，并且使它们可相互替换。本模式使得算法可独立于使用它的客户而变化。 
+
+spring中在实例化对象的时候用到Strategy模式
+
+在SimpleInstantiationStrategy中有如下代码说明了策略模式的使用情况 
+
+9）模板方法（Template Method） 
+
+定义一个操作中的算法的骨架，而将一些步骤延迟到子类中。Template Method使得子类可以不改变一个算法的结构即可重定义该算法的某些特定步骤。
+
+Template Method模式一般是需要继承的。这里想要探讨另一种对Template Method的理解。spring中的JdbcTemplate，在用这个类时并不想去继承这个类，因为这个类的方法太多，
+
+但是我们还是想用到 JdbcTemplate已有的稳定的、公用的数据库连接，那么我们怎么办呢？我们可以把变化的东西抽出来作为一个参数传入JdbcTemplate的方 法中。
+
+但是变化的东西是一段代码，而且这段代码会用到JdbcTemplate中的变量。怎么办？那我们就用回调对象吧。在这个回调对象中定义一个操纵 JdbcTemplate中变量的方法，我们去实现这个方法，
+
+就把变化的东西集中到这里了。然后我们再传入这个回调对象到JdbcTemplate，从而 完成了调用。这可能是Template Method不需要继承的另一种实现方式吧。
+{% endraw %}

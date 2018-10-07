@@ -479,4 +479,400 @@ ChannelOutboundInvoker也有点Mina过滤器的意味，只不过不像ChannelIn
          在操作完成时，关闭通道任务关联的通道
          */
         ChannelFutureListener CLOSE = new ChannelFutureListener() {
+            @Override
+            public void operationComplete(ChannelFuture future) {
+                future.channel().close();
+            }
+        };
+    
+        /**
+         * A {@link ChannelFutureListener} that closes the {@link Channel} when the
+         * operation ended up with a failure or cancellation rather than a success.
+         当IO操作失败时，关闭通道任务关联的通道
+         */
+        ChannelFutureListener CLOSE_ON_FAILURE = new ChannelFutureListener() {
+            @Override
+            public void operationComplete(ChannelFuture future) {
+                if (!future.isSuccess()) {
+                    future.channel().close();
+                }
+            }
+        };
+    
+        /**
+         * A {@link ChannelFutureListener} that forwards the {@link Throwable} of the {@link ChannelFuture} into the
+         * {@link ChannelPipeline}. This mimics the old behavior of Netty 3.
+         转发通道任务异常到Channel管道。默认Netty3的行为。
+         */
+        ChannelFutureListener FIRE_EXCEPTION_ON_FAILURE = new ChannelFutureListener() {
+            @Override
+            public void operationComplete(ChannelFuture future) {
+                if (!future.isSuccess()) {
+                    future.channel().pipeline().fireExceptionCaught(future.cause());
+                }
+            }
+        };
+    
+        // Just a type alias
+    }
+
+从上面来看，通道结果监听器内部有3个监听器，分别为在操作完成时，关闭通道任务关联的通道的监听器CLOSE；当IO操作失败时，关闭通道任务关联的通道的监听器CLOSE_ON_FAILURE；转发通道任务异常到Channel管道的监听器FIRE_EXCEPTION_ON_FAILURE。 
+
+来看一下可写的通道结果ChannelPromise 
+
+    /**
+     * Special {@link ChannelFuture} which is writable.
+     */
+    public interface ChannelPromise extends ChannelFuture, Promise<Void> {
+    在往下看之前，来看Promise接口定义：
+    /**
+     * Special {@link Future} which is writable.
+     可写的Future
+     */
+    public interface Promise<V> extends Future<V> {
+    
+        /**
+         * Marks this future as a success and notifies all
+         * listeners.
+         标记任务成功，通知所有监听器
+         *
+         * If it is success or failed already it will throw an {@link IllegalStateException}.
+         如果任务已经成功完成或失败，则抛出非法状态异常
+         */
+        Promise<V> setSuccess(V result);
+    
+        /**
+         * Marks this future as a success and notifies all
+         * listeners.
+         *标记任务成功，通知所有监听器
+         * @return {@code true} if and only if successfully marked this future as
+         *         a success. Otherwise {@code false} because this future is
+         *         already marked as either a success or a failure.
+         成功标记Future为成功完成，则返回true，如果任务已经标记成功完成或失败，则返回false
+         */
+        boolean trySuccess(V result);
+    
+        /**
+         * Marks this future as a failure and notifies all
+         * listeners.
+         *标记任务失败，通知所有监听器
+         * If it is success or failed already it will throw an {@link IllegalStateException}.
+         如果任务已经成功完成或失败，则抛出非法状态异常
+         */
+        Promise<V> setFailure(Throwable cause);
+    
+        /**
+         * Marks this future as a failure and notifies all
+         * listeners.
+         *标记任务失败，通知所有监听器
+         * @return {@code true} if and only if successfully marked this future as
+         *         a failure. Otherwise {@code false} because this future is
+         *         already marked as either a success or a failure.
+          成功标记Future为失败完成，则返回true，如果任务已经标记成功完成或失败，则返回false
+         */
+        boolean tryFailure(Throwable cause);
+    
+        /**
+         * Make this future impossible to cancel.
+         *标记任务不可能取消
+         * @return {@code true} if and only if successfully marked this future as uncancellable or it is already done
+         *         without being cancelled.  {@code false} if this future has been cancelled already.
+         如果成功标记不可取消，或在没有取消的情况下已经标记，则返回true，如果任务已经取消，返回false
+         */
+        boolean setUncancellable();
+        //下面方法与Future相同
+    
+        @Override
+        Promise<V> addListener(GenericFutureListener<? extends Future<? super V>> listener);
+    
+        @Override
+        Promise<V> addListeners(GenericFutureListener<? extends Future<? super V>>... listeners);
+    
+        @Override
+        Promise<V> removeListener(GenericFutureListener<? extends Future<? super V>> listener);
+    
+        @Override
+        Promise<V> removeListeners(GenericFutureListener<? extends Future<? super V>>... listeners);
+    
+        @Override
+        Promise<V> await() throws InterruptedException;
+    
+        @Override
+        Promise<V> awaitUninterruptibly();
+    
+        @Override
+        Promise<V> sync() throws InterruptedException;
+    
+        @Override
+        Promise<V> syncUninterruptibly();
+    }
+
+从Promise任务定义可以看出，继承了任务Future，但多了以便标记成功、失败和不可取消的方法。 
+
+再来看一下 
+
+    import io.netty.util.concurrent.Future;
+    import io.netty.util.concurrent.GenericFutureListener;
+    import io.netty.util.concurrent.Promise;
+    
+    /**
+     * Special {@link ChannelFuture} which is writable.
+     */
+    public interface ChannelPromise extends ChannelFuture, Promise<Void> {
+    
+        @Override
+        Channel channel();
+    
+        @Override
+        ChannelPromise setSuccess(Void result);
+    
+        ChannelPromise setSuccess();
+    
+        boolean trySuccess();
+    
+        @Override
+        ChannelPromise setFailure(Throwable cause);
+    
+        @Override
+        ChannelPromise addListener(GenericFutureListener<? extends Future<? super Void>> listener);
+    
+        @Override
+        ChannelPromise addListeners(GenericFutureListener<? extends Future<? super Void>>... listeners);
+    
+        @Override
+        ChannelPromise removeListener(GenericFutureListener<? extends Future<? super Void>> listener);
+    
+        @Override
+        ChannelPromise removeListeners(GenericFutureListener<? extends Future<? super Void>>... listeners);
+    
+        @Override
+        ChannelPromise sync() throws InterruptedException;
+    
+        @Override
+        ChannelPromise syncUninterruptibly();
+    
+        @Override
+        ChannelPromise await() throws InterruptedException;
+    
+        @Override
+        ChannelPromise awaitUninterruptibly();
+    
+        /**
+         * Returns a new {@link ChannelPromise} if {@link #isVoid()} returns {@code true} otherwise itself.
+         如果isVoid返回true，而不它自己，则返回一个新的ChannelPromise
+         */
+        ChannelPromise unvoid();
+    }
+
+从上可以看出，ChannelPromise与ChannelFuture的不同在于ChannelPromise可以标记任务结果。 
+
+**
+总结：**
+      netty的异步结果Future继承于JUC的Future，可以异步获取IO操作的结果信息，比如IO操作是否成功完成，如果失败，可以获取失败的原因，是否取消，同时可以使用cancel方法取消IO操作，添加异步结果监听器，、监听IO操作是否完成，并可以移除结果监听器，除这些之外我们还可以异步、同步等待或超时等待IO操作结果。 
+
+      异步结果监听器GenericFutureListener，主要监听一个IO操作是否完成，在异步结果有返回值时，通知监听器。 
+
+      ChannelFuture继承于空异步结果，即没有返回值，所以添加移除监听器，同步异步等待方法为空体。netty所有的IO操作都是异步的，当一个IO操作开始时，不管操作是否完成，一个新的异步操作结果将会被创建。如果因为IO操作没有完成，同时既没有成功，失败，也没有取消，新创建的那么，异步结果并没有完成初始化。如果IO操作完成，不论操作结果成功，失败或取消，异步结果将会标记为完成，同时携带更多的精确信息，比如失败的原因。需要注意的时，失败或取消也属于完成状态。强烈建议使用添加监听器的方式等待IO操作结果，而不await方法，因为监听器模式时非阻塞的，有更好的性能和资源利用率。 
+
+      通道结果监听器ChannelFutureListener内部有3个监听器，分别为在操作完成时，关闭通道任务关联的通道的监听器CLOSE；当IO操作失败时，关闭通道任务关联的通道的监听器CLOSE_ON_FAILURE；转发通道任务异常到Channel管道的监听器FIRE_EXCEPTION_ON_FAILURE。 
+
+       Promise任务继承了任务Future，但多了以便标记成功、失败和不可取消的方法。 
+
+ChannelPromise与ChannelFuture的不同在于ChannelPromise可以标记任务结果。 
+
+ChannelProgressivePromise与ProgressivePromise，ChannelProgressiveFuture的关系与ChannelPromise与Promise，ChannelFuture的关系类似，只不过ChannelPromise表示异步操作任务，ChannelProgressivePromise表示异步任务的进度，同时Promise类型异步任务都是可写的。 
+
+附： 
+
+ChannelProgressivePromise接口，简单看一下： 
+
+//ChannelProgressivePromise 
+
+    package io.netty.channel;
+    
+    import io.netty.util.concurrent.Future;
+    import io.netty.util.concurrent.GenericFutureListener;
+    import io.netty.util.concurrent.ProgressivePromise;
+    
+    /**
+     * Special {@link ChannelPromise} which will be notified once the associated bytes is transferring.
+     当关联的字节数据正在传输时，ChannelProgressivePromise将会被通知
+     */
+    public interface ChannelProgressivePromise extends ProgressivePromise<Void>, ChannelProgressiveFuture, ChannelPromise {
+    
+        @Override
+        ChannelProgressivePromise addListener(GenericFutureListener<? extends Future<? super Void>> listener);
+    
+        @Override
+        ChannelProgressivePromise addListeners(GenericFutureListener<? extends Future<? super Void>>... listeners);
+    
+        @Override
+        ChannelProgressivePromise removeListener(GenericFutureListener<? extends Future<? super Void>> listener);
+    
+        @Override
+        ChannelProgressivePromise removeListeners(GenericFutureListener<? extends Future<? super Void>>... listeners);
+    
+        @Override
+        ChannelProgressivePromise sync() throws InterruptedException;
+    
+        @Override
+        ChannelProgressivePromise syncUninterruptibly();
+    
+        @Override
+        ChannelProgressivePromise await() throws InterruptedException;
+    
+        @Override
+        ChannelProgressivePromise awaitUninterruptibly();
+    
+        @Override
+        ChannelProgressivePromise setSuccess(Void result);
+    
+        @Override
+        ChannelProgressivePromise setSuccess();
+    
+        @Override
+        ChannelProgressivePromise setFailure(Throwable cause);
+    
+        @Override
+        ChannelProgressivePromise setProgress(long progress, long total);
+    
+        @Override
+        ChannelProgressivePromise unvoid();
+    }
+
+//ProgressivePromise 
+
+    /**
+     * Special {@link ProgressiveFuture} which is writable.
+     可写的过程任务。
+     */
+    public interface ProgressivePromise<V> extends Promise<V>, ProgressiveFuture<V> {
+    
+        /**
+         * Sets the current progress of the operation and notifies the listeners that implement
+         * {@link GenericProgressiveFutureListener}.
+         设置当前操作进程，并通知监听器GenericProgressiveFutureListener
+         */
+        ProgressivePromise<V> setProgress(long progress, long total);
+    
+        /**
+         * Tries to set the current progress of the operation and notifies the listeners that implement
+         * {@link GenericProgressiveFutureListener}.  If the operation is already complete or the progress is out of range,
+         * this method does nothing but returning {@code false}.
+         设置当前操作进程，并通知监听器GenericProgressiveFutureListener。如果此操作已经完成，进度已经超过范围，
+         此方法不会做任何事情，仅仅返回false。
+         */
+        boolean tryProgress(long progress, long total);
+    
+        @Override
+        ProgressivePromise<V> setSuccess(V result);
+    
+        @Override
+        ProgressivePromise<V> setFailure(Throwable cause);
+    
+        @Override
+        ProgressivePromise<V> addListener(GenericFutureListener<? extends Future<? super V>> listener);
+    
+        @Override
+        ProgressivePromise<V> addListeners(GenericFutureListener<? extends Future<? super V>>... listeners);
+    
+        @Override
+        ProgressivePromise<V> removeListener(GenericFutureListener<? extends Future<? super V>> listener);
+    
+        @Override
+        ProgressivePromise<V> removeListeners(GenericFutureListener<? extends Future<? super V>>... listeners);
+    
+        @Override
+        ProgressivePromise<V> await() throws InterruptedException;
+    
+        @Override
+        ProgressivePromise<V> awaitUninterruptibly();
+    
+        @Override
+        ProgressivePromise<V> sync() throws InterruptedException;
+    
+        @Override
+        ProgressivePromise<V> syncUninterruptibly();
+    }
+
+//GenericProgressiveFutureListener 
+
+    package io.netty.util.concurrent;
+    
+    public interface GenericProgressiveFutureListener<F extends ProgressiveFuture<?>> extends GenericFutureListener<F> {
+        /**
+         * Invoked when the operation has progressed.
+         *操作已经达到所设的进度
+         * @param progress the progress of the operation so far (cumulative)，操作当前进度
+         * @param total the number that signifies the end of the operation when {@code progress} reaches at it.
+         *              {@code -1} if the end of operation is unknown.
+         total，当操作完成时达到的进度，如果操作的结束点不确定，则为-1
+         */
+        void operationProgressed(F future, long progress, long total) throws Exception;
+    }
+
+//ProgressiveFuture 
+
+    **
+     * A {@link Future} which is used to indicate the progress of an operation.
+     表示一个操作的进度
+     */
+    public interface ProgressiveFuture<V> extends Future<V> {
+    
+        @Override
+        ProgressiveFuture<V> addListener(GenericFutureListener<? extends Future<? super V>> listener);
+    
+        @Override
+        ProgressiveFuture<V> addListeners(GenericFutureListener<? extends Future<? super V>>... listeners);
+    
+        @Override
+        ProgressiveFuture<V> removeListener(GenericFutureListener<? extends Future<? super V>> listener);
+    
+        @Override
+        ProgressiveFuture<V> removeListeners(GenericFutureListener<? extends Future<? super V>>... listeners);
+    
+        @Override
+        ProgressiveFuture<V> sync() throws InterruptedException;
+    
+        @Override
+        ProgressiveFuture<V> syncUninterruptibly();
+    
+        @Override
+        ProgressiveFuture<V> await() throws InterruptedException;
+    
+        @Override
+        ProgressiveFuture<V> awaitUninterruptibly();
+    }
+
+//ChannelProgressiveFuture 
+
+    /**
+     * An special {@link ChannelFuture} which is used to indicate the {@link FileRegion} transfer progress
+     表示一个文件region的传输进度
+     */
+    public interface ChannelProgressiveFuture extends ChannelFuture, ProgressiveFuture<Void> {
+        @Override
+        ChannelProgressiveFuture addListener(GenericFutureListener<? extends Future<? super Void>> listener);
+    
+        @Override
+        ChannelProgressiveFuture addListeners(GenericFutureListener<? extends Future<? super Void>>... listeners);
+    
+        @Override
+        ChannelProgressiveFuture removeListener(GenericFutureListener<? extends Future<? super Void>> listener);
+    
+        @Override
+        ChannelProgressiveFuture removeListeners(GenericFutureListener<? extends Future<? super Void>>... listeners);
+    
+        @Override
+        ChannelProgressiveFuture sync() throws InterruptedException;
+    
+        @Override
+        ChannelProgressiveFuture syncUninterruptibly();
+    
+        @Override
+        ChannelProgressiveFuture await() throws InterruptedException;
+    
+        @Override
+        ChannelProgressiveFuture awaitUninterruptibly();
+    }
 {% endraw %}

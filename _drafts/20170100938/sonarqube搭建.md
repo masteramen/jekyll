@@ -1,0 +1,49 @@
+---
+layout: post
+title:  "sonarqube搭建"
+title2:  "sonarqube搭建"
+date:   2017-01-01 23:50:38  +0800
+source:  "http://www.jfox.info/sonarqube%e6%90%ad%e5%bb%ba.html"
+fileName:  "20170100938"
+lang:  "zh_CN"
+published: true
+permalink: "sonarqube%e6%90%ad%e5%bb%ba.html"
+---
+{% raw %}
+sonar.jdbc.username=root
+    sonar.jdbc.password=passw0rd
+    
+
+ 打开数据库连接url,默认的有Oracle/MySQL/postgresql等,把注释打开即可
+
+    sonar.jdbc.url=jdbc:mysql://localhost:3306/sonar?useUnicode=true&characterEncoding=utf8&rewriteBatchedStatements=true&useConfigs=maxPerformance
+
+ 配置web
+
+    sonar.web.host=0.0.0.0
+    sonar.web.context=/sonarqube
+    sonar.web.port=9000
+    
+
+启动sonarqube web环境
+
+进入到bin目录,下面有中环境,进入合适的环境
+
+本例的环境是Linux-x86-64
+
+cd bin/linux-x86-64
+
+./sonar.sh start
+
+启动后,在浏览器中输入访问URL:http://localhost:9000/sonarqube
+
+默认管理员用户名/密码为:admin/admin
+
+登录后,安装本地插件
+
+点击配置->系统->更新中心,可以查看已安装的插件,点击”available”查看可安装的插件
+
+先安装中文语言包,点击Chinese pack后的install按钮,安装完提示要重启
+
+web界面的重启命令重启后语言可能并不生效,用命令重启后会生效
+{% endraw %}

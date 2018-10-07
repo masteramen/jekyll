@@ -337,5 +337,38 @@ Java官方文档给出的注解处理过程的定义：注解处理过程是一�
            writer.write("    }\n\n");
            writer.write("}\n");
        } catch (IOException e) {
-           throw new RuntimeException("Could not write
+           throw new RuntimeException("Could not write source for " + path, e);
+       } finally {
+           if (writer != null) {
+               try {
+                   writer.close();
+               } catch (IOException e) {
+                   //Silent
+               }
+           }
+       }
+    }
+    
+    private void writeMethodLines(BufferedWriter writer) throws IOException {
+       for (int i = 0; i < result.size(); i++) {
+           writer.write("        ANNOTATIONS.add(\"" + result.get(i) + "\");\n");
+       }
+    }
+    
+
+编译输出：
+
+    Note: round 1 process over false
+    Note: name is CustomAnnotation
+    Note: round 2 process over false
+    Note: round 3 process over true
+    
+
+获取完整代码：[https://github.com/yuweiguocn/CustomAnnotation](http://www.jfox.info/go.php?url=https://github.com/yuweiguocn/CustomAnnotation)
+
+关于上传自定义注解处理器到jcenter中，请查看[上传类库到jcenter](http://www.jfox.info/go.php?url=http://yuweiguocn.github.io/publishing-lib-to-jcenter/)。
+
+很高兴你能阅读到这里，此时再去看EventBus 3.0中的注解处理器的源码，相信你可以很轻松地理解它的原理。
+
+注意：如果你clone了工程代码，你可能会发现**注解和注解处理器是单独的module**。有一点可以肯定的是我们的注解处理器只需要在编译的时候使用，并不需要打包到APK中。因此为了用户考虑，我们需要将注解处理器分离为单独的module。
 {% endraw %}

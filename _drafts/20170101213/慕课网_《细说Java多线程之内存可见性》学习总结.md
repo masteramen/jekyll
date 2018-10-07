@@ -1,0 +1,409 @@
+---
+layout: post
+title:  "慕课网_《细说Java多线程之内存可见性》学习总结"
+title2:  "慕课网_《细说Java多线程之内存可见性》学习总结"
+date:   2017-01-01 23:55:13  +0800
+source:  "http://www.jfox.info/%e6%85%95%e8%af%be%e7%bd%91%e7%bb%86%e8%af%b4java%e5%a4%9a%e7%ba%bf%e7%a8%8b%e4%b9%8b%e5%86%85%e5%ad%98%e5%8f%af%e8%a7%81%e6%80%a7%e5%ad%a6%e4%b9%a0%e6%80%bb%e7%bb%93.html"
+fileName:  "20170101213"
+lang:  "zh_CN"
+published: true
+permalink: "%e6%85%95%e8%af%be%e7%bd%91%e7%bb%86%e8%af%b4java%e5%a4%9a%e7%ba%bf%e7%a8%8b%e4%b9%8b%e5%86%85%e5%ad%98%e5%8f%af%e8%a7%81%e6%80%a7%e5%ad%a6%e4%b9%a0%e6%80%bb%e7%bb%93.html"
+---
+{% raw %}
+# 慕课网_《细说Java多线程之内存可见性》学习总结 
+
+
+课程目标和学习内容
+
+    共享变量在线程间的可见性
+    synchronized实现可见性
+    volatile实现可见性
+        指令重排序
+        as-if-serial语义
+        volatile使用注意事项
+    synchronized和volatile比较
+    
+
+# 第二章：可见性介绍
+
+## 2-1 可见性介绍
+
+可见性
+
+    一个线程对共享变量值的修改，能够及时地被其他线程看到
+
+共享变量
+
+    如果一个变量在多个线程的工作内存中都存在副本，那么这个变量就是这几个线程的共享变量
+
+Java内存模型（JMM）
+
+    Java内存模型（Java Memory Model）描述了Java程序中各种变量（线程共享变量）的访问规则，以及在JVM中将变量存储到内存和从内存中读取出变量这样的底层细节
+
+Java内存模型
+
+    所有的变量都存储在主内存中
+    每个线程都有自己独立的工作内存，里面保存该线程使用到的变量的副本
+    （主内存中该变量的一份拷贝）
+
+Java内存模型示意图
+
+Java内存模型中的两条规定
+
+    线程对共享变量的所有操作都必须在自己的工作内存中进行，不能直接从主内存中读写
+    不同线程之间无法直接访问其他线程工作内存中的变量，线程间变量值的传递需要通过主内存来完成
+
+共享变量可见性实现的原理。如线程1对共享变量的修改要想被线程2及时看到，必须要经过如下2个步骤
+
+    把工作内存1中更新过的共享变量刷新到主内存中
+    将主内存中最新的共享变量的值更新到工作内存2中
+
+共享变量可见性实现的原理示意图
+
+# 第三章：synchronized实现可见性
+
+## 3-1 synchronized实现可见性原理
+
+要实现共享变量的可见性，必须保证两点
+
+    线程修改后的共享变量能够及时从工作内存刷新到主内存中
+    其他线程能够及时把共享变量的最新值从主内存更新到自己的工作内存中
+
+Java语言层面支持的可见性实现方式
+
+    synchronized
+    volatile
+
+synchronized能够实现
+
+    原子性（同步）
+    可见性
+
+JMM关于synchronized的两条规定
+
+    线程解锁前，必须把共享变量的最新值刷新到主内存中
+    线程加锁时，将清空工作内存中共享变量的值，从而使用共享变量时需要从主内存中重新读取最新的值
+    （注意：加锁与解锁需要时同一把锁）
+    
+
+线程解锁前对共享变量的修改在下次加锁时对其他线程可见
+
+线程执行互斥代码的过程
+
+    1.获得互斥锁
+    2.清空工作内存
+    3.从主内存拷贝变量的最新副本到工作内存
+    4.执行代码
+    5.将更改后的共享变量的值刷新到主内存
+    6.释放互斥锁
+
+重排序
+
+    代码书写的顺序与实际执行的顺序不同，指令重排序是编译器或处理器为了提高程序性能而做的优化
+
+当前的三种重排序
+
+    编译器优化的重排序（编译器优化）
+    指令级并行重排序（处理器优化）
+    内存系统的重排序（处理器优化）
+
+重排序示意图：有可能出现下面情况
+
+as-if-serial
+
+    无论如何重排序，程序执行的结果应该与代码顺序执行的结果一致（Java编译器、运行时和处理器都会保证Java在单线程下遵循as-if-serial语义）
+    
+
+## 3-2 synchronized实现可见性（上）
+
+代码演示：
+
+    package com.myimooc.synchronizeddemo.my;
+    
+    /**
+     * 程序主类
+     * @author ZhangCheng on 2017-07-09
+     *
+     */
+    public class SynchronizedDemo {
+        
+        //共享变量
+        private boolean ready = false;
+        private int result = 0;
+        private int number = 1;   
+        //写操作
+        public synchronized void write(){
+            ready = true;                           //1.1                
+            number = 2;                            //1.2                
+        }
+        //读操作
+        public synchronized void read(){                    
+            if(ready){                             //2.1
+                result = number*3;         //2.2
+            }       
+            System.out.println("result的值为：" + result);
+        }
+    
+        //内部线程类
+        private class ReadWriteThread extends Thread {
+            //根据构造方法中传入的flag参数，确定线程执行读操作还是写操作
+            private boolean flag;
+            public ReadWriteThread(boolean flag){
+                this.flag = flag;
+            }
+            @Override                                                                    
+            public void run() {
+                if(flag){
+                    //构造方法中传入true，执行写操作
+                    write();
+                }else{
+                    //构造方法中传入false，执行读操作
+                    read();
+                }
+            }
+        }
+    
+        public static void main(String[] args)  {
+            SynchronizedDemo synDemo = new SynchronizedDemo();
+            //启动线程执行写操作
+            synDemo.new ReadWriteThread(true).start();
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            //启动线程执行读操作
+            synDemo.new ReadWriteThread(false).start();
+        }
+        
+    }
+    
+
+## 3-3 synchronized实现可见性（中）
+
+导致共享变量在线程间不可见的原因
+
+    线程的交叉执行
+    重排序结合线程交叉执行
+    共享变量更新后的值没有在工作内存与主内存间及时更新
+
+安全的代码
+
+## 3-4 synchronized实现可见性（下）
+
+# 第四章：volatile实现可见性
+
+## 4-1 volatile能够保证可见性
+
+volatile关键字
+
+    能够保证volatile变量的可见性
+    不能保证volatile变量复合操作的原子性
+
+volatile如何实现内存可见性
+
+    深入来说：通过加入内存屏障和禁止重排序优化来实现的
+        对volatile变量执行写操作时，会在写操作后加入一个store屏障指令
+        对volatile变量执行读操作时，会在读操作前加入一条load屏障指令
+    通俗地讲：volatile变量在每次被线程访问时，都强迫从主内存中重读该变量的值，
+        而当该变量发生变化时，又会强迫线程将最新的值刷新到主内存。
+        这样任何时刻，不同的线程总能看到该变量的最新值
+
+线程写volatile变量的过程
+
+    改变线程工作内存中volatile变量副本的值
+    将改变后的副本的值从工作内存刷新到主内存
+
+线程读volatile变量的过程
+
+    从主内存中读取volatile变量的最新值到线程的工作内存中
+    从工作内存中读取volatile变量的副本
+    
+
+## 4-2 volatile不能保证原子性（上）
+
+代码演示：
+
+    package com.myimooc.volatiledemo.my;
+    
+    import java.util.concurrent.locks.Lock;
+    import java.util.concurrent.locks.ReentrantLock;
+    
+    /**
+     * 程序主类
+     * @author ZhangCheng on 2017-07-09
+     *
+     */
+    public class VolatileDemo {
+        
+        private int number = 0;
+        
+        public int getNumber(){
+            return this.number;
+        }
+        
+        public void increase(){
+            try {
+                Thread.sleep(100);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            
+            this.number++;
+        }
+        
+        public static void main(String[] args) {
+            final VolatileDemo volDemo = new VolatileDemo();
+            for(int i = 0 ; i < 500 ; i++){
+                new Thread(new Runnable() {
+                    @Override
+                    public void run() {
+                        volDemo.increase();
+                    }
+                }).start();
+            }
+            
+            //如果还有子线程在运行，主线程就让出CPU资源，
+            //直到所有的子线程都运行完了，主线程再继续往下执行
+            while(Thread.activeCount() > 1){
+                Thread.yield();
+            }
+            
+            System.out.println("number : " + volDemo.getNumber());
+        }
+        
+    }
+    
+
+## 4-3 volatile不能保证原子性（中）
+
+程序分析
+
+解决方案：保证number自增操作的原子性
+
+    使用synchronized关键字
+    使用ReentrantLock（java.util.concurrent.locks包下）
+    使用AtomicInterger（java.util.concurrent.atomic包下）
+    
+
+## 4-4 volatile不能保证原子性（下）
+
+代码演示：
+
+    package com.myimooc.volatiledemo.my;
+    
+    import java.util.concurrent.locks.Lock;
+    import java.util.concurrent.locks.ReentrantLock;
+    
+    /**
+     * 程序主类
+     * @author ZhangCheng on 2017-07-09
+     *
+     */
+    public class VolatileDemo {
+        
+        private int number = 0;
+        private Lock lock = new ReentrantLock();
+        
+        public int getNumber(){
+            return this.number;
+        }
+        
+        public void increase(){
+            try {
+                Thread.sleep(100);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            
+            // 方案一
+            /*
+            synchronized(this){
+                this.number++;
+            }
+            */
+            // 方案二
+            lock.lock();// 获取锁
+            try {
+                this.number++;
+            } finally {
+                lock.unlock();// 释放锁
+            }
+            
+        }
+        
+        public static void main(String[] args) {
+            final VolatileDemo volDemo = new VolatileDemo();
+            for(int i = 0 ; i < 500 ; i++){
+                new Thread(new Runnable() {
+                    @Override
+                    public void run() {
+                        volDemo.increase();
+                    }
+                }).start();
+            }
+            
+            //如果还有子线程在运行，主线程就让出CPU资源，
+            //直到所有的子线程都运行完了，主线程再继续往下执行
+            while(Thread.activeCount() > 1){
+                Thread.yield();
+            }
+            
+            System.out.println("number : " + volDemo.getNumber());
+        }
+        
+    }
+    
+
+## 4-5 volatile使用注意事项
+
+volatile适用场合：要在多线程中安全的使用volatile变量，必须同时满足
+
+    对变量的写入操作不依赖其当前值
+        不满足：number++、count = count * 5等
+        满足：boolean变量、记录温度变化的变量等
+    该变量没有包含在具有其他变量的不变式中
+        不满足：不变式low < up
+    
+
+## 4-6 synchronized和volatile比较
+
+synchronized和volatile比较
+
+    volatile不需要加锁，比synchronized更轻量级，不会阻塞线程
+    从内存可见性角度讲，volatile读相当于加锁，volatile写相当于解锁
+    synchronized既能保证可见性，又能保证原子性，而volatile只能保证可见性，无法保证原子性
+    
+
+# 第五章：课程总结
+
+## 5-1 课程总结
+
+课程总结
+
+    什么是内存可见性
+    Java内存模型（JMM）
+    实现可见性的方式：synchronized和volatile
+        final也可以保证内存可见性
+    synchronized和volatile实现内存可见性的原理
+    synchronized实现可见性
+        指令重排序
+        as-if-serial语义
+    volatile实现可见性
+        volatile能够保证可见性
+        volatile不能保证原子性
+        volatile使用注意事项
+    synchronized和volatile比较
+        volatile比synchronized更轻量级
+        volatile没有synchronized使用的广泛
+
+问：即使没有保证可见性的措施，很多时候共享变量依然能够在主内存和工作内存见得到及时地更新？
+
+答：一般只有在短时间内高并发的情况下才会出现变量得不到及时更新的情况，因为CPU在执行时会很快的刷新缓存，所以一般情况下很难看到这种情况。
+
+对64位（long、double）变量的读写可能不是原子操作
+
+    Java内存模型允许JVM将没有被volatile修饰的64位数据类型的读写操作划分为两次32位的读写操作来进行
+    导致问题：有可能会出现读取到“半个变量”的情况
+    解决办法：加volatile关键字
+{% endraw %}

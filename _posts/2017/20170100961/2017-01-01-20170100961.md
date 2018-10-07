@@ -1,0 +1,208 @@
+---
+layout: post
+title:  "Java入门——（2）面对对象（上）"
+title2:  "Java入门——（2）面对对象（上）"
+date:   2017-01-01 23:51:01  +0800
+source:  "http://www.jfox.info/java%e5%85%a5%e9%97%a8-2-%e9%9d%a2%e5%af%b9%e5%af%b9%e8%b1%a1-%e4%b8%8a.html"
+fileName:  "20170100961"
+lang:  "zh_CN"
+published: true
+permalink: "java%e5%85%a5%e9%97%a8-2-%e9%9d%a2%e5%af%b9%e5%af%b9%e8%b1%a1-%e4%b8%8a.html"
+---
+{% raw %}
+一、面对对象的概念：把解决的问题安装一定规则划分为多个独立的对象，然后通过调用对象的方法来解决问题。其特点可概括为封装性、继承性、多态性。 
+
+  1、封装性：面对对象的核心，将对象的属性和行为封装起来，不需要让外界知道具体实现细节，这就是封装思想。 
+ 
+
+  2、继承性：主要描述的是类与类之间的关系，通过继承，可以在无需重新编写原有类的情况下，对原有类的功能进行扩展。 
+ 
+
+  3、多态性：是在程序中允许出现重名现象，它指在一个类中定义的属性和方法被其他类继承后，他们可以具有不同的数据类型或表现出不同的行为，这使得同一个属性和方法在不同的类中具有不同的语义。 
+ 
+
+  二、类与对象 
+ 
+
+  1、类是对象的抽象，它用于描述一组对象的共同特征和行为。类中可以定义成员变量和成员方法，其中成员变量用于描述对象的特征，也称作属性，成员方法用于描述对象的行为，可简称方法。 
+ 
+
+  如何创建类： 
+  
+  
+    1 class Person{
+    2      //定义int 类型的变量
+    3       int age; 4 //定义speak（）方法 5 void speak （）{ 6 System.out.println(“***”) 7  } 8 } //Person 类名，age 是成员变量，speak（）成员方法
+
+ 
+  
+ 
+
+  2、对象的创建与使用： 
+ 
+
+  创建：类名 对象名= new 类名（）；//实例对象 
+ 
+
+  使用： 对象引用.对象成员； 
+ 
+
+  实例化对象时，Java虚拟机会自动为成员变量进行初始化，针对不同类型的成员变量，赋予不同的初始值。 
+  
+  
+    表：成员变量的初始值 
+   
+   
+   成员变量类初始值成员变量类初始值 byte 　0double0.0Dshort0char空字符，‘u0000′int0booleanfalselong 0L引用数据类型nullfloat0.0F 
+ 
+
+  在Java中，null是一种特殊的常量，当一个变量的值为null时，则表示该变量不指向任何一个对象，变成垃圾被回收。 
+ 
+
+  3、所谓的类的封装是指定义一个类时，将类中的属性私有化，即利用private 关键字来修饰，私有属性只能在它所在类中被访问。为了能让外界访问私有属性，需要提供一些使用public 修饰的公用方法，其中包括用于获得属性值得getXXX（）方法和设置属性值得setXXX（）方法。 
+ 
+ 
+  
+  
+     1 class Student{
+     2     private String name;    //将name属性私有化
+     3     private int age;        //将age属性私有化
+     4     //下面是公有的getXXX（）和setXXX（）方法
+     5     public String getName (){ 6 return name; 7  } 8 public void setName(String stuName){ 9 name = stuName ; 10  } 11 public int getAge (){ 12 return age ; 13  } 14 public void setAge(int stuAge){ 15 //下面是对传入的参数进行检查 16 if(stuAge<=0){ 17 System.out.println("年龄不合法"); 18 }else { 19 age = stuAge ; //对属性赋值 20  } 21  } 22 public void introduce(){ 23 System.out.println("大家好，我叫"+name+",我今年"+age+"岁!"); 24  } 25 } 26 public class Example01{ 27 public static void main(String[] args){ 28 Student stu = new Student(); 29 stu.setAge(-30); 30 stu.setName("李芳"); 31  stu.introduce(); 32  } 33 }
+
+ 
+  
+ 
+
+  三、构造方法 
+ 
+
+  1、构造方法：构造方法是类中一个特殊成员，它会在实例化对象时被自动调用。 
+ 
+
+  2、构造方法的特点： 
+ 
+
+  ①方法名与类名相同； 
+ 
+
+ ②在方法名前面没有返回值类型的声明；
+
+ ③在方法中不能使用return语句返回一个值；
+
+     1 class Person{
+     2       //构造方法
+     3      public Person(){ 4 //无参构造方法 5  } 6 public Person(int age){ 7 age = a; //有参构造方法 8  } 9 public void speak(){ 10 System.out.println(“I am” +age+”years old !"); 11  } 12 } 13 public class Example{ 14 public static void main (String [] args){ 15 Person p = new Person(20); //实例化Person对象 16  p.speak(); 17  } 18 }
+
+ 
+ 
+
+  3、构造方法的重载：与普通方法一样，方法名相同，只需要参数类型或参数个数不同即可。 
+ 
+
+  一般情况下，构造方法通常会使用public来修饰。 
+ 
+
+  四、this 关键字 
+ 
+
+  1、this关键字三种常用方法： 
+ 
+
+①通过this关键字可以明确地访问一个类的成员变量，解决与局部变量名称冲突问题。
+
+     1 class Person{
+     2      int age ; 3 public Person(int age){ 4 this.age = age ; //访问成员变量 5 } 6 public int getAge(){ 7 return this .age; 8 } 9 }
+
+②通过this关键字调用成员方法。
+
+③构造方法是在实例化对象时被Java虚拟机自动调用的，在程序中不能像调用其他方法一样去调用构造方法，但可以在一个构造方法中使用“this（【参数1，参数2……】）”的形式来调用其他的构造方法。
+ 
+
+  注意点： 
+ 
+
+①只能在构造方法中使用this 调用其他的构造方法，不能在成员方法中使用。
+
+②在构造方法中，使用this 调用构造方法的语句必须位于第一行，且只能出现一次。
+
+③不能在一个类的两个构造方法中使用this互相调用。
+ 
+
+  五、static关键字 
+ 
+
+  1、使用static关键字来修饰成员变量，该变量被作静态变量。静态变量被所有实例共享，可以使用“类名.变量”的形式来访问。 
+ 
+
+  注意：static关键字只能用于修饰成员变量，不能用于修饰局部变量。 
+ 
+
+  2、静态方法：在类中定义的方法前加上static关键字，可在不创建对象的情况下调用某方法。可使用“类名.方法名”的形式访问。 
+ 
+
+  注意：在一个静态方法中只能访问static修饰的成员，静态方法在被调用时可以创建任何对象。 
+ 
+
+  3、静态代码块：用static关键字修饰的代码块称为静态代码块，当类被加载时，静态代码块会被执行，由于类只加载异常，因此静态代码块只能执行一次。 
+ 
+
+  4、单例模式： 
+ 
+ 
+  
+  
+     1 class Single{
+     2      private static Single INSTANCE = new Single(); 3 private Single(){} 4 public static Single getInstance(){ 5 return INSTANCE ; 6 } 7 } 8 //上面单例又可写成以下形式 9 class Single{ 10 private Single(){} 11 public static final Single INSTANCE = new Single()；
+    /*变量名INSTANCE的前面有三个修饰符，其中，public的作用是允许外部直接访问该变量，static 的作用是 让外部可以使用
+    “类名.变量名“的方式来访问变量，final的作用是禁止外部对该变量进行修改。*/ 12 } 13 14 class Example { 15 public static void main(String[] args){ 16 Single s = Single.getInstance(); // getInstance()方法是获得Single类实例对象的唯一途径，Single 类是一个单例的类 17 } 18 }
+
+ 
+  
+ 
+
+  被关键字final修饰的变量为常量,其值不可变。 
+ 
+
+  六、内部类：根据内部类的位置、修饰符和定义的方式可分为成员内部类、静态内部类、方法内部类。 
+ 
+
+  1、创建内部类对象的具体语法格式： 
+ 
+
+  外部类名.内部类名 变量名 = new 外部类名（）.new 内部类（）； 
+ 
+ 
+  
+  
+     1 class Outer{
+     2     private int num = 4;              //定义类的成员变量
+     3     //下面的代码定义了一个成员方法，方法中访问内部类
+     4     public void test(){ 5 Inner inner = new Inner(); 6  inner.show(); 7  } 8 //下面的代码定义了一个成员内部类 9 class Inner{ 10 void show(){ 11 //在成员内部类的方法中访问外部类的成员变量 12 System.out.println("num = "+num); 13  } 14  } 15 } 16 public class Example16 { 17 public static void main(String[] args){ 18 Outer outer = new Outer(); //创建外部类对象 19 outer.test(); //调用test（）方法 20  } 21 } 22 //直接创建内部类对象示例 23 public class Example16 { 24 public static void main(String[] args){ 25 Outer.Inner inner = new Outer().Inner() ; //创建内部类对象 26 inner.show(); //调用show（）方法 27  } 28 } 29 //当内部类被声明为私有，外界将无法访问。
+
+ 
+  
+ 
+
+  2、创建静态内部类对象的具体语法格式： 
+ 
+
+  外部类名.内部类名 变量名 = new 外部类名.内部类名（）； 
+ 
+ 
+  
+  
+     1 class Outer{
+     2     private static int num = 6;              //定义类的成员变量
+     3     //下面的代码定义了一个静态内部类
+     4     static class Inner{ 5 void show(){ 6 System.out.println("num = "+num); 7 } 8 } 9 } 10 public class Example16 { 11 public static void main(String[] args){ 12 Out.Inner inner = new Out.Inner(); //创建内部类对象 13 inner.show(); //调用内部类的方法 14 } 15 }
+
+ 注意：①在静态内部类中只能访问外部类的静态成员。
+ 
+ 
+
+  ②在静态内部类中可以定义静态成员，而在非静态的内部类中不允许定义静态的成员。 
+ 
+
+  3、方法内部类：是指在成员方法中定义的类，它只能在当前方法中被使用。方法内部类可以访问外部类的成员变量。
+{% endraw %}

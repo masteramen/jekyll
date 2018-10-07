@@ -1,0 +1,542 @@
+---
+layout: post
+title:  "学习mysql语法–基础篇（二）"
+title2:  "学习mysql语法–基础篇（二）"
+date:   2017-01-01 23:50:37  +0800
+source:  "http://www.jfox.info/%e5%ad%a6%e4%b9%a0mysql%e8%af%ad%e6%b3%95-%e5%9f%ba%e7%a1%80%e7%af%87-%e4%ba%8c.html"
+fileName:  "20170100937"
+lang:  "zh_CN"
+published: true
+permalink: "%e5%ad%a6%e4%b9%a0mysql%e8%af%ad%e6%b3%95-%e5%9f%ba%e7%a1%80%e7%af%87-%e4%ba%8c.html"
+---
+{% raw %}
+** 前 言**
+
+** mysql 
+**
+
+　mysql语法–本篇学习都是通过使用Navicat Premium（数据库管理工具），连接mysql数据.
+
+本篇学习主要有两个部分：
+
+ 【SQL语句的组成】 
+
+　　 DML 数据操作语言(插入、删除和修改数据库中的数据)INSERT UPDATE DELETE 
+
+　　 DQL 数据查询语言(用来查询数据库中的数据)SELECT 
+
+　　 DCL 数据控制语言(用来控制存取许可、存取权限等)CREATE 
+
+　　 DDL 数据定义语言(用来建立数据库、数据库对象和定义表的列)CREATE DROP 
+
+【常用的函数】 
+
+　　数学函数 
+
+　　字符串函数 
+
+　　常用日期函数 
+
+　　系统信息函数 
+
+　　加密函数 
+
+　　多行函数 
+
+【综合操作】 
+
+　　分组操作 
+
+　　限制行数 
+
+　　内连接 
+
+　　自连接 
+
+以下所有代码全部在新建查询表里面使用mysql语法编辑。
+**1、DML 数据操作语言（INSERT UPDATE DELETE）
+**① 数据插入语句 insert 
+　　　　 INSERT [INTO] 表明 [列名] VALUES (列值)[,(列值),……]; 
+ 
+
+　　　　 ① 如果省略列名，则后面的列值必须为所有的列复制，包括自增列和默认列； 
+ 
+
+　　　　 ② 如果不省略列名，则后面的列值需要与前面的列名一一对应；并且需要给虽有非null列复制 
+ 
+② 数据更新语句 update
+　　　　update 表明 set 列名=列值[,列名=列值,……] [where 条件] 
+ 
+
+　　　　where 条件可以省略，但是表示修改表中所有的行 
+ 
+③ 删除表中数据 delete 
+　　　　delete [FROM] 表名 [where 条件] 
+ 
+
+    -- 选中mydb数据库USE mydb;
+    -- 在mydb中建立一个名字为tb1表单
+    -- 内有三个属性，分别为id,username,age,sexCREATETABLEIFNOTEXISTS tb1(
+        id INT UNSIGNED PRIMARYKEY AUTO_INCREMENT,
+        username VARCHAR(255) NOTNULL,
+        age INTDEFAULT0,
+      sex enum("男","女") DEFAULT "男"
+    );
+    --  ↓给表tb1添加一行数据INSERTINTO tb1 (username,age,sex) VALUES ("张三","122","女");
+    --  ↓给表tb1添加一行数据 age和sex 没有数据INSERTINTO tb1 (username) VALUES ("李四");
+    --  ↓给表tb1添加一行数据id为7的行中添加数据，如果有id7,依然在表后部添加insert tb1 VALUES (7,"王二",12,"女");
+    -- 添加多行数据INSERTINTO tb1 (username,age,sex) VALUES ("张四",12,"女"),("张五",12,"女"),("张六",12,"女");
+    -- 更新 where 后面的条件的 行内数据UPDATE tb1 SET username="帅哥",age=18,sex="男" where id=8;
+    UPDATE tb1 SET username="王五",age=18,sex="男" where id=7;
+    -- 删除ID为10 的那行数据deletefrom tb1 WHERE id=10;
+    
+
+数据查询语言 select：
+　　　　　　– select 列名[,列名,……] from 表名 where 条件 order by 排序的列名 asc/desc 
+ 
+
+　　　　　　– ① select * 表示查询所有字段； 
+ 
+
+　　　　　　– ② order by 表示对查出的数据进行排序，必须在where后面； 
+ 
+
+　　　　　　– asc 表示升序排列 desc 表示降序排列 
+ 
+
+ 　　 　　 — 列表达式 
+ 
+
+　　　　　　– 根据已有的列查询出来的结果，我们使用case结构虚拟出来的列，称为列表达式 
+ 
+
+　　　　　　– as 关键字 
+ 
+
+　　　　　　– 用于给列名其别名，as关键字还可以省略。 
+ 
+
+    -- 显示表格的全部内容SELECT*FROM tb1;
+    -- 显示表格的age列 不为null的内容SELECT*from tb1 wherenotISNULL(age);
+    -- 查询tb表中的所有数据 按id 降序排流select*from tb1 orderby id desc ;
+    -- 查询tb表中的所有数据 按id 升序排流select*from tb1 orderby id asc ;
+    -- 列表达式
+    -- 根据已有的列查询出来的结果，我们使用case结构虚拟出来的列，称为列表达式-- as 关键字
+    -- 用于给列名其别名，as关键字还可以省略。select username as "姓名",sex "性别",age,( -- 给username列起别名"名字",sex起别名"性别"CASE-- case 表示判断的开始when sex="男" then1-- 如果查询出sex 是男，则虚拟的列表达式的值就是1when sex="女" then2else3-- 上面所有的wen都不成立时，列表达式的值为3END-- END 表示判断的结束
+    ) as sexno    -- 给细腻出的这一列，起别名叫 sexno from tb1;
+    -- DISTINCT 对查询之后的结果去重。selectdistinct age from tb1;
+
+**3、数据控制语言/数据定义语言（CREATE DROP）
+** 【CREATE】：
+
+　　　　– 创建用户：CREATE USER ‘用户名’@’主机名’ IDENTIFIED BY ‘密码’; 
+ 
+
+　　　　– 主机名可以为空，为空默认为%权限，表示所有主机可连接。 
+ 
+
+　　　　– 给用户分配权限： GRANT 权限名 ON 数据库名.表明 TO 用户名@主机名 
+ 
+
+　　　　– 给用户分配权限： GRANT 权限名 ON 数据库名.表明 TO 用户名@主机名 
+ 
+
+　　　　– 创建数据库： CREATE DATABASE [IF NOT EXISTS] 数据库名[CHARACTER SET[=] ‘UTF8’]; 
+ 
+
+　　　　– 如果省略 [IF NOT EXISTS] 在重复创建数据库时，会报错！ 
+ 
+ 【DROP】：
+　　　　– 关闭数据库 DROP DATABASE [IF EXISTS] 数据库 
+ 
+
+　　　　– 如果省略 [IF EXISTS] 在不存在关闭数据库时，会报错！ 
+ 
+
+    CREATETABLEIFNOTEXISTS tb1( 
+    -- IF NOT EXISTS 可以省略，省略后重复创建报错.如果不省略，则创建时会检测表是否已存在，如果表存在则不再执行创建语句
+        id INT(3),
+        `name` VARCHAR(255) NOTnull, -- name是系统关键字，所以使用反引号``包裹
+        age SMALLINT(3) AUTO_INCREMENT PRIMARYKEY,
+        lalala INTUNIQUE,
+     height DOUBLE(3,2) DEFAULT1.2-- 设置默认值约束：默认值为1.2
+    -- PRIMARY KEY(age));
+    createtableifnotexists classes(
+     id INT UNSIGNED AUTO_INCREMENT PRIMARYKEY,
+      classname VARCHAR(255) NOTNULL 
+    );
+    CREATEtableifnotEXISTS `user`(
+        id INT UNSIGNED AUTO_INCREMENT PRIMARYKEY,
+        clsId INT UNSIGNED,
+        `name` VARCHAR(255) NOTNULL,
+     CONSTRAINT user_fk_classes FOREIGNKEY (clsid) REFERENCES classes(id) ONDELETESETNULLonupdateCASCADE
+    )
+    -- auto_increment-- 显示表结构SHOW TABLES;
+    -- 显示表内容结构
+    SHOW COLUMNS FROM TB1;
+    -- 现实表的建表语句
+    show createTABLE tb1;
+    -- 删除表DROPTABLEIFEXISTS TB1;
+    DROPTABLEIFEXISTS classes;
+    DROPTABLEIFEXISTS `user`;
+    -- 修改表名 ALTERtable tb1 rename tb2;
+    -- 修改字段 列
+    -- alter table 表名 change 旧列名 新列名 列定义 [first|after某一列]
+    -- first 将这个字段调整为表格第一列； after某一列： 将这个字段放到某一列后面altertable tb1 change height width VARCHAR(200) notNULL FIRST; 
+    -- 删除表中某一列altertable tb1 drop name;
+    -- 新增一列：必选部分：alter table tb1 add haha DOUBLE(8,2)altertable tb1 add haha DOUBLE(8,2) DEFAULT1.2 after age;
+    -- 新增多列：不能调整列的位置，只能插在最后。altertable tb1 add (
+        ha1 DOUBLE(3,2) UNSIGNED,
+        ha2 VARCHAR(255)
+    );
+    -- 同时修改多表明  rename table tb3 to tb1[,`USER`to user1];
+    rename table tb2 to tb1,`USER`to user1;
+    -- 增加主键约束altertable tb1 addPRIMARYKEY(id);
+    -- 删除主键约束altertable tb1 dropPRIMARYKEY;
+    -- 新增唯一性约束ALTERtable tb1 adduniquekey(ha1);
+    -- 删除唯一性约束：由于创建唯一性约束会默认创建索引，所以删除时，需删除索引ALTERtable tb1 dropindex ha1;
+    -- 设置默认值约束：前提必须设置default 属性ALTERtable tb1 alter ha1 setdefault20;
+    -- 删除默认值约束ALTERtable tb1 alter haha dropdefault;
+    -- 设置外键约束 必选部分  alter table tb1 add  foreign key (clsid)REFERENCES classes(id)altertable tb1 addconstraint waijianming foreignkey (clsid)REFERENCES classes(id) ONDELETESETNULLonupdateCASCADE;
+    -- 删除外键约束，由于常见外键时会生成索引，所以删除外键后，需要删索引。altertable tb1 dropforeignkey waijianming;
+    altertable tb1 dropINDEX waijianming;
+    SHOW COLUMNS FROM TB1;
+
+① 数学函数
+　　ABS(X) 返回 绝对值 
+ 
+
+　　CELL(X) 向上取整 1.5–>2 -1.5–>-1 
+ 
+
+　　FLOOR(X) 向下取整 1.5–>1 -1.5–>-2 
+ 
+
+　　ROUND(X) 四舍五入取整 1.4–>1 1.5–>2 
+ 
+
+　　ROUND(X,D) 将X保留D位小数，进行四舍五入 
+ 
+
+`　　TRUNCATE`(X,D) 将X保留D位小数，不进行四舍五入 
+ 
+
+　　sign(X) X为负数返回-1 0返回0 正数返回1 
+ 
+
+　　pow(X,D) 返回X的D次方 
+ 
+② 字符串函数
+　　LENGTH(str) 返回字符串的长度。其中一个中文占三个字符； 
+ 
+
+　　CHAR_LENGTH(str) 返回字符串的字符数。其中一个中文只占一个字符； 
+ 
+
+　　CONCAT(str1,str2,…) 拼接多个字符串； 
+ 
+
+　　UPPER(str) 将字符串全部转为大写； 
+ 
+
+　　LOWER(str) 将字符串全部转为小写； 
+ 
+
+　　left(str,n) 返回字符串的前N个字符； 
+ 
+
+　　right(str,n) 返回字符串的后N个字符； 
+ 
+
+　　TRIM(str) 去掉str两端的空格； 
+ 
+
+　　REPLACE(str,s1,s2) 将str中所有的s1换为s2； 
+ 
+
+　　substring(str,pos[,Len]) 截取字符串str，从第pos个字符开始，截取len个。如果省略len，则从第pos个字符截取到最后； 
+ 
+　　INSTR(str,s1) 返回s1在str的下标 INSTR(“12-23″,”-“)–>3 下标从1开始。 
+ 
+ 
+  
+  
+    SELECT LENGTH("哈哈哈哈");
+    SELECT CHAR_LENGTH("哈哈哈哈");
+    SELECT concat("123","456","789");
+    SELECTUPPER("hahahaha");
+    SELECTLEFT ("abcdefg",5);
+    SELECT trim ("  hahahaha    ");
+    SELECT substr("abcdefghigklmn",3,5);
+    SELECTsubstring("abcdefghigklmn",3,5);
+
+③ 常用日期函数
+　　CURDATE() 返回当前日期。 2017-06-20 
+ 
+
+　　CURTIME() 返回当前时间。 09:57:51 
+ 
+
+　　 返回当前的日期和时间。 
+ 
+
+　　DATEDIFF(expr1,expr2) 返回从expr1天到expr2天的天数。 
+ 
+
+　　ADDDATE(expr1,len) 返回从expr1当天到len天数。 
+ 
+
+　　YEAR(date) 返回日期中的年份 
+ 
+
+　　MONTH(date) 返回日期中的月份 
+ 
+
+　　DAY(date) 返回日期中一个的中的第几天 
+ 
+
+　　WEEKDAY(date) 返回一周中的第几天 0->周一 
+ 
+
+　　HOUR(time) 返回小时数 
+ 
+
+　　MINUTE(time) 返回分钟数 
+ 
+
+　　SECOND() 返回秒数 
+ 
+
+　　DATE_FORMAT(date1,format): 将date1使用format要求的格式显示。 
+ 
+
+　　format中可用的占位符格式： 
+ 
+
+　　%Y年份, 数字形式,4位数 
+ 
+
+　　%y年份, 数字形式 (2位数) 
+ 
+
+　　%M月份名称 (January..December) 
+ 
+
+　　%m月份, 数字形式 (00..12) 
+ 
+
+　　%b月份的缩写名称 (Jan..Dec) 
+ 
+
+　　%c月份，数字形式(0..12) 
+ 
+
+　　%D带有英语后缀的该月日期 (0th, 1st, 2nd, 3rd, …) 
+ 
+
+　　%d该月日期, 数字形式 (00..31) 
+ 
+
+　　%e该月日期, 数字形式(0..31) 
+ 
+
+　　%H小时(00..23) 
+ 
+
+　　%h小时(01..12) 
+ 
+
+　　%k小时(0..23) 
+ 
+
+　　%l小时(1..12) 
+ 
+
+　　%i分钟,数字形式 (00..59) 
+ 
+
+　　%S秒 (00..59) 
+ 
+
+　　%s秒 (00..59) 
+ 
+
+　　%W工作日名称 (周日..周六) 
+ 
+　　%w一周中的每日 (0=周日..6=周六) 
+ 
+ 
+  
+  
+    SELECT CURDATE();
+    SELECT CURTIME();
+    SELECT NOW();
+    SELECTDATEDIFF(NOW(),"1996-06-03");
+    SELECT ADDDATE(NOW(),100);
+    SELECTYEAR("1996-06-03");
+    SELECT WEEKDAY("2017-06-18");
+    SELECT HOUR(CURTIME());
+    SELECT MINUTE(CURTIME());
+    SELECT SECOND(CURTIME());
+    SELECTDAY(NOW());
+
+④ 系统信息函数
+　　VERSION(); 取到当前数据库的版本号 
+ 
+
+　　DATABASE(); 返回当前数据库的名字 
+ 
+
+　　USER(); 返回当前数据库的用户 
+ 
+
+　　CHARSET(str); 返回字符串的字符集 
+ 
+
+　　LAST_INSERT_ID(); 返回最后一个auto_increment 的值 
+ 
+ 
+ 
+⑤ 加密函数
+　　1、PASSWORD(str) 对字符串进行加密，常用于加密密码 
+ 
+
+　　2、MD5(str) 对字符串进行MD5散列加密，常用语不需要解密数据 
+ 
+
+　　3、ENCODE(str,pwd_str) 使用加密密码pwd对字符串str进行加密; 
+ 
+
+　　 加密之后的结果是二进制，该字段需要使用BLOB类型保存 
+ 
+ 　　 DECODE(mistr,pwd_str) 将ENCODE加密的二进制进行解密，解密密码需与ENCODE的加密密码一致。 
+ 
+ 
+  
+  
+    SELECT PASSWORD("哈哈哈");
+    SELECT MD5("哈哈哈");
+    SELECT ENCODE("neirong","mima");
+    SELECT DECODE(ENCODE("neirong","mima"),"mima");
+    UPDATE `Card` SET `PASSWORD` =REPLACE(REPLACE(`PASSWORD`,"O","0"),"i","1");
+
+⑥ 多行函数
+　　sum():求和 
+ 
+
+　　avg():求均值 
+ 
+
+　　min():求最小值 
+ 
+
+　　max():求最大值 
+ 
+
+　　count():求总个数 select count(username) from tb2 
+ 
+
+    SELECT*FROM cusinfo;
+    -- 要求统计客户信用度为3的客户数量SELECTCOUNT(*) FROM cusinfo WHERE cuscredit=3;
+    -- 要求统计本月度客户订单的总和以及最高最高的客户订单额度SELECTSUM(ordmoney)"总和",MAX(ordmoney)"最大值" from cusorder;
+
+select …… FROM <表名> 
+ 
+
+where …… 
+ 
+
+GROUP BY …… 
+ 
+
+HAVING …… 
+ 
+
+上述代码执行流程： 
+ 
+
+① 先select……from…… 查询所有数据 
+ 
+
+② 使用where 将数据进行筛选 
+ 
+
+③ 对where筛选后的数据，使用group by 进行分组； 
+ 
+
+— 分为N组后，使用聚合函数时，将会产生N条数据。 
+ 
+
+④ HAVING 字句对产生的多条聚合数据，进行处理操作。 
+ 
+
+注意事项： 
+ 
+
+① 代码顺序必须是： where -> GROUP BY -> HAVING 
+ 
+
+② 有having字句，必须有group by;有group by并不一定有HAVING 
+ 
+
+③ where和having区别？ 
+ 
+
+ where是在分组之前先筛选数据；having是对分组之后的数据，进行筛选； 
+ 
+
+ where语句中一定不能包含聚合函数。 
+ 
+
+ having是专门用来过滤聚合函数的， 
+ 
+
+>>> 求出，平均薪资大于1万的部门的平均薪资？ 
+ 
+
+ 注：各部门出勤记录大于15天的员工的平均薪资。 
+ 
+
+SELECT avg(薪资) from 公司表 where 出勤率>15 group by 部门 having avg(薪资)>10000　　 
+ 
+
+    use mydb;
+    SELECT*FROM cusinfo;
+    -- 需要对客户构成进行分析，要求按照客户等级显示客户数量set@count=0;
+    SELECT (@count :=@count+1)"序号",cuslevel"客户等级",COUNT(*)"客户数量" 
+    FROM cusinfo GROUPBY cuslevel
+    ORDERBY@count;
+    -- 需要对客户构成进行分析，要求计算不同区域客户的数量在5个以上的统计报表SELECT cusregion"客户地区",COUNT(1)"客户数量" FROM cusinfo 
+    GROUPBY cusregion HAVINGCOUNT(1)>5-- 需要对客户贡献进行分析，要求统计本年度每个客户订单的总额set@count=0;
+    SELECT (@count :=@count+1)"序号",i.cusname"客户编号",o.ordmoney"订单金额" -- 多表关联，字段前必须有表名FROM cusorder as o,cusinfo as i -- 为了方便书写，给表起别名WHERE o.cusno=i.cusno; --  两张表通过哪个键连接-- (内连接)需要对客户贡献进行分析，要求统计本年度每个客户订单的总额set@count=0;
+    SELECT (@count :=@count+1)"序号",i.cusname"客户编号",o.ordmoney"订单金额" -- 多表关联，字段前必须有表名FROM cusorder as o INNERJOIN cusinfo as i -- 为了方便书写，给表起别名on o.cusno=i.cusno; --  两张表通过哪个键连接-- 内连接 INNER JOIN
+    -- 特点：相关联的两张表，总是以数据少的为准。
+    -- 另一张表中，没有被匹配的表，会被删除不显示。-- 左外连接 left JOIN 
+    -- 特点： 以左边的表为准
+    -- 把左表的全部数据显示，右表多的删除不显示，右表少的补null。-- 右外连接 left JOIN 
+    -- 特点： 以右边的表为准
+    -- 把右表的全部数据显示，左表多的删除不显示，左表少的补null。/*[自连接]同一张表与自己链接
+    SELECT e1.ename"雇员",e2.ename"领导"
+    FROM emp e1 LEFT JOIN emp e2
+    ON e1.mgr=e2.empno
+    */-- 订单明细（产品编号、产品数量、产品单价）及订单(订单编号，订购日期)信息SELECT od.*,o.orddate
+    FROM cusorderdetail od,cusorder o
+    WHERE o.ordno=od.ordno;
+    /*[限制行数]
+    LIMIT n 前n条数据     相当于LIMIT 0,n
+    LIMTT n,m 第n+1 到 第M条 
+    */SELECT*from tb1 LIMIT 5;
+    SET@page=1; -- 第几页SET@rows=5; -- 每页几条
+    -- 分页语句SELECT*FROM cusorder LIMIT @rows*(@page-1),@rows*@page;
+    /*
+    各种限制语句的顺序
+    */select*,sum(ordmoney) FROM cusorder
+    WHERENOTISNULL(ordno)
+    GROUPBY ordno
+    havingSUM(ordmoney)>0ORDERBY ordmoney DESC
+    LIMIT 0,10
+
+学习时候的笔记，可能会有一些错误的地方，欢迎各位的批评指点。
+
+反思，复盘，每天收获一点———————期待更好的自己
+{% endraw %}

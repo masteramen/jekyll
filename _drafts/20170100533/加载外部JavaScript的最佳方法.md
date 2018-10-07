@@ -1,0 +1,30 @@
+---
+layout: post
+title:  "加载外部JavaScript的最佳方法"
+title2:  "加载外部JavaScript的最佳方法"
+date:   2017-01-01 23:43:53  +0800
+source:  "http://www.jfox.info/%e5%8a%a0%e8%bd%bd%e5%a4%96%e9%83%a8javascript%e7%9a%84%e6%9c%80%e4%bd%b3%e6%96%b9%e6%b3%95.html"
+fileName:  "20170100533"
+lang:  "zh_CN"
+published: true
+permalink: "%e5%8a%a0%e8%bd%bd%e5%a4%96%e9%83%a8javascript%e7%9a%84%e6%9c%80%e4%bd%b3%e6%96%b9%e6%b3%95.html"
+---
+{% raw %}
+By Lee - Last updated: 星期六, 二月 8, 2014
+
+不久前，我写了一篇关于JavaScript的加载不受阻塞地创建动态<script>标签。当<script>标记是一个HTML文档流，浏览器必须停止渲染并等待脚本文件下载并执行，然后再继续（例子）。通过JavaScript创建一个新的<script>标签可以避免这个问题，因为它是出了文档流，所以脚本文件被下载并执行，无需等待。其结果是：动态加载JavaScript文件可以让你的网页渲染速度更快，从而提高性能。
+
+**最好的方法**
+史蒂夫在他的博客和他的书已探讨几种不同的方式来加载JavaScript而不阻塞。在思考它和试验之后，我得出的结论是，用一个为JavaScript的加载而不阻塞只是一个最佳实践方法：创建两个JavaScript文件。第一只包含必要的动态加载JavaScript代码，第二个包含其他一切必要的交互性对page.Include的第一个JavaScript文件与<script>标签在页面的底部，只是里面的初始水平</ BODY>。创建调用该函数来加载第二个JavaScript文件，并包含任何额外的初始化code.That的是第二<script>标签！真的没有必要做任何事情。关键外卖是仅具有两个JavaScript和使第一个尽可能小。例如，第一个文件只包含一个函数：
+
+    function loadScript(url, callback){
+    
+        var script = document.createElement("script")
+        script.type = "text/javascript";
+    
+        if (script.readyState){  //IE
+            script.onreadystatechange = function(){
+                if (script.readyState == "loaded" ||
+                        script.readyState == "complete"){
+                    script.onreadystatechange = null;
+{% endraw %}

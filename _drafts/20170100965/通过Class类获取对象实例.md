@@ -1,0 +1,76 @@
+---
+layout: post
+title:  "通过Class类获取对象实例"
+title2:  "通过Class类获取对象实例"
+date:   2017-01-01 23:51:05  +0800
+source:  "http://www.jfox.info/%e9%80%9a%e8%bf%87class%e7%b1%bb%e8%8e%b7%e5%8f%96%e5%af%b9%e8%b1%a1%e5%ae%9e%e4%be%8b.html"
+fileName:  "20170100965"
+lang:  "zh_CN"
+published: true
+permalink: "%e9%80%9a%e8%bf%87class%e7%b1%bb%e8%8e%b7%e5%8f%96%e5%af%b9%e8%b1%a1%e5%ae%9e%e4%be%8b.html"
+---
+{% raw %}
+通过Class对象获取对象的方式是通过class.newInstance()方式获取，通过调用默认构造参数实例化一个对象。
+
+     1/** 2 * Created by hunt on 2017/6/27.
+     3 * 测试的实体类
+     4 * @Data 编译后会自动生成set、get、无惨构造、equals、canEqual、hashCode、toString方法
+     5*/ 6@Data
+     7publicclass Person {
+     8private String name;
+     9privateint age;
+    10 }
+
+     1/** 2 * Created by hunt on 2017/6/27.
+     3*/ 4publicclass NewInstanceTest {
+     5publicstaticvoid main(String[] args) {
+     6         Class<Person> personClass = Person.class;//获取Class实例 7try {
+     8             Person p = personClass.newInstance();//通过Class获得Person实例 9             p.setAge(28);
+    10             p.setName("hunt");
+    11            System.out.println(p);
+    12         } catch (InstantiationException e) {
+    13            e.printStackTrace();
+    14         } catch (IllegalAccessException e) {
+    15            e.printStackTrace();
+    16        }
+    17    }
+    18 }
+
+提示：class.newInstance()是通过无参构造函数实例化的，一个对象默认是有一个无参构造函数，如果有一个有参构造函数，无参构造函数就不存在了，在通过反射获得对象会抛出 java.lang.InstantiationException 异常。
+
+     1/** 2 * Created by hunt on 2017/6/27.
+     3 * 测试的实体类
+     4*/ 5 6publicclass Person {
+     7private String name;
+     8privateint age;
+     910public String getName() {
+    11return name;
+    12    }
+    1314publicint getAge() {
+    15return age;
+    16    }
+    1718publicvoid setName(String name) {
+    19this.name = name;
+    20    }
+    2122publicvoid setAge(int age) {
+    23this.age = age;
+    24    }
+    2526public Person(String name,int age){}//有参数构造函数27 }
+
+     1/** 2 * Created by hunt on 2017/6/27.
+     3*/ 4publicclass NewInstanceTest {
+     5publicstaticvoid main(String[] args) {
+     6         Class<Person> personClass = Person.class;//获取Class实例 7try {
+     8             Person p = personClass.newInstance();//通过Class获得Person实例 9             p.setAge(28);
+    10             p.setName("hunt");
+    11             System.out.println(p.getAge()+"----"+p.getName());
+    12         } catch (InstantiationException e) {
+    13            e.printStackTrace();
+    14         } catch (IllegalAccessException e) {
+    15            e.printStackTrace();
+    16        }
+    17    }
+    18 }
+
+总结：以后创建实体类的时候一定要带上无参构造函数，以便以后使用反射的时候实例化对象不抛出异常。
+{% endraw %}

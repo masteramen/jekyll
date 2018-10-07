@@ -1,0 +1,170 @@
+---
+layout: post
+title:  "Spring学习之编程序事务管理"
+title2:  "Spring学习之编程序事务管理"
+date:   2017-01-01 23:57:30  +0800
+source:  "http://www.jfox.info/spring%e5%ad%a6%e4%b9%a0%e4%b9%8b%e7%bc%96%e7%a8%8b%e5%ba%8f%e4%ba%8b%e5%8a%a1%e7%ae%a1%e7%90%86.html"
+fileName:  "20170101350"
+lang:  "zh_CN"
+published: true
+permalink: "spring%e5%ad%a6%e4%b9%a0%e4%b9%8b%e7%bc%96%e7%a8%8b%e5%ba%8f%e4%ba%8b%e5%8a%a1%e7%ae%a1%e7%90%86.html"
+---
+{% raw %}
+# Spring学习之编程序事务管理 
+
+
+作者[颜洛滨](/u/b1a604b2eaed)2017.07.15 16:38字数 907
+# Spring学习之编程序事务管理
+
+## 前言
+
+在前面的内容，基本已经学习了事务的基本概念以及事务隔离级别等，接下来的几个小节，将学习怎么使用Spring进行事务管理，在Spring中，对事务进行管理有多种方法，主要分别编程序和声明式，本小节主要学习编程序事务管理，后面讲学习Spring的声明式事务管理
+
+## 编程序事务管理
+
+所谓的编程序事务管理，其实就是通过编写代码的方式来进行事务管理，也就是通过将事务管理的代码硬编码在代码中从而达到事务管理的作用，不过Spring的事务管理不同于JDBC原始的事务管理，在JDBC中，对事务进行管理首先要关闭自动提交，然后采用手动配置的方式来控制提交以及异常时回滚，而在Spring中，主要是使用Spring的接口来管理，具体如下代码所示
+
+这里模拟银行转账的业务，正如我们所知道的，转账其实就是从一个账号减去金额并且给另外一个账号增加对应的金额
+
+Spring配置文件
+
+    <?xml version="1.0" encoding="UTF-8"?>
+    <beans xmlns="http://www.springframework.org/schema/beans"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    
+         <!--开启自动扫描-->
+        <context:component-scan base-package="cn.xuhuanfeng.transaction"/>
+    
+        <!--配置数据源，这里采用dbcp-->
+        <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
+            <property name="url" value="jdbc:mysql://localhost:3306/spring"/>
+            <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+            <property name="username" value="root"/>
+            <property name="password" value="huanfeng"/>
+        </bean>
+    
+        <!--配置JdbcTemplate-->
+        <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+            <!--注入数据源-->
+            <property name="dataSource" ref="dataSource"/>
+        </bean>
+    
+        <!--配置事务管理-->
+        <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+            <!--注入数据源-->
+            <property name="dataSource" ref="dataSource"/>
+        </bean>
+        <!--配置事务管理操作类-->
+        <bean id="transactionTemplate" class="org.springframework.transaction.support.TransactionTemplate">
+            <!--注入事务管理-->
+            <property name="transactionManager" ref="transactionManager"/>
+            <!--定义事务隔离级别，这里-1代表默认-->
+            <property name="isolationLevel" value="-1"/>
+            <!--配置传播行为，0代表PROPAGATION_REQUIRED-->
+            <property name="propagationBehavior" value="0"/>
+            <!--由于进行读写操作，所以这里的只读设置为false，默认也是false，所以可以不用设置-->
+            <property name="readOnly" value="false"/>
+        </bean>
+    </beans>
+
+在配置事务隔离级别的时候，由于这里是采用整数的形式，而不是字符串，一开始在配置的时候有点摸不着头脑，后来查看了对应的源代码之后，发现了对应的常量，将其记录如下
+
+        // 事务传播行为
+        int PROPAGATION_REQUIRED = 0;
+        int PROPAGATION_SUPPORTS = 1;
+        int PROPAGATION_MANDATORY = 2;
+        int PROPAGATION_REQUIRES_NEW = 3;
+        int PROPAGATION_NOT_SUPPORTED = 4;
+        int PROPAGATION_NEVER = 5;
+        int PROPAGATION_NESTED = 6;
+    
+        // 事务隔离级别
+        int ISOLATION_DEFAULT = -1;
+        int ISOLATION_READ_UNCOMMITTED = 1;
+        int ISOLATION_READ_COMMITTED = 2;
+        int ISOLATION_REPEATABLE_READ = 4;
+        int ISOLATION_SERIALIZABLE = 8;
+        int TIMEOUT_DEFAULT = -1;
+
+持久层代码如下所示
+
+    @Repository
+    public class AccountDao {
+    
+        @Autowired
+        private JdbcTemplate jdbcTemplate;
+    
+        public void transferIn(String name, double money){
+            String sql = "update account set money = money + ? where name = ?";
+    
+            jdbcTemplate.update(sql, money, name);
+        }
+    
+        public void transferOut(String name, double money){
+            String sql = "update account set money = money - ? where name = ?";
+    
+            jdbcTemplate.update(sql, money, name);
+        }
+    }
+
+业务层代码如下所示
+
+    @Service
+    public class AccountService {
+    
+        @Autowired
+        private AccountDao accountDao;
+    
+        // 转账
+        public void transfer(String fromName, String toName, double money){
+    
+            accountDao.transferOut(fromName, money);
+            accountDao.transferIn(toName, money);
+        }
+    }
+
+对业务层代码进行检查测试，可以看到，结果是没有问题的，也就是转账是成功的
+
+如果此时在业务代码执行过程中发生错误或者异常，那么结果会是如何呢
+
+比如说，通过修改transfer代码，手动模拟异常，如下所示
+
+        accountDao.transferOut(fromName, money);
+        int d = 1/0; // 除0异常
+        accountDao.transferIn(toName, money);
+
+此时运行测试代码，可以发现，数据出现了不一致，金额已经转出了，但是由于在转入之前发生了异常，所以无法转入，导致了有一部分金额莫名其妙丢失了，这也就是为什么需要进行事务管理了。
+
+对业务层代码添加事务管理，如下所示
+
+    @Service
+    public class AccountService {
+    
+        @Autowired
+        private AccountDao accountDao;
+    
+        // 配置事务管理操作类
+        @Autowired
+        private TransactionTemplate transactionTemplate;
+    
+    
+        public void transfer(final String fromName,final String toName,final double money){
+    
+            // 通过transactionTemplate进行事务的管理
+            transactionTemplate.execute(new TransactionCallbackWithoutResult() {
+                @Override
+                protected void doInTransactionWithoutResult(TransactionStatus transactionStatus) {
+                    accountDao.transferOut(fromName, money);
+                    int d = 1/0; // 除0异常
+                    accountDao.transferIn(toName, money);
+                }
+            });
+    
+        }
+    }
+
+此时再运行代码，可以发现，不管是有没有异常，数据的一致性都得到了保证，这也就是说，事务管理起了作用
+
+上面的内容就是使用Spring进行事务管理的一种方式，不过这种方式是不太方便的，因为除了要配置事务管理操作类，也就是TransactionTemplate之外，当需要进行事务管理的时候，还需要在对应的代码中为其编写相应的管理代码，如上所示，所以这种方式在日常�
+{% endraw %}

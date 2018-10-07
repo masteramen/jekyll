@@ -1,0 +1,470 @@
+---
+layout: post
+title:  "Redis客户端简单封装"
+title2:  "Redis客户端简单封装"
+date:   2017-01-01 23:51:16  +0800
+source:  "http://www.jfox.info/redis%e5%ae%a2%e6%88%b7%e7%ab%af%e7%ae%80%e5%8d%95%e5%b0%81%e8%a3%85.html"
+fileName:  "20170100976"
+lang:  "zh_CN"
+published: true
+permalink: "redis%e5%ae%a2%e6%88%b7%e7%ab%af%e7%ae%80%e5%8d%95%e5%b0%81%e8%a3%85.html"
+---
+{% raw %}
+Redis客户端简单封装并集成spring. spring-data-redis对redis有过度封装的嫌疑，而且也没有提供sharding模式，本文遂简单封装jedis。
+
+    <?xml version="1.0" encoding="UTF-8"?>
+    <beans xmlns="http://www.springframework.org/schema/beans"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://www.springframework.org/schema/beans
+                               http://www.springframework.org/schema/beans/spring-beans-3.2.xsd"
+           default-autowire="byName">
+        <!-- 单个实例 -->
+        <bean id="singletonRedisClient" class="com.itlong.whatsmars.redis.client.singleton.SingletonRedisClient">
+            <property name="host" value="127.0.0.1"/>
+            <property name="port" value="6379" />
+            <property name="maxTotal" value="256"/>
+            <property name="maxIdle" value="8" />
+            <property name="maxWait" value="3000" />
+            <property name="timeout" value="3000" />
+            <property name="minIdle" value="2" />
+        </bean>
+        <!-- M-S读写分离 -->
+        <bean id="readWriteRedisClient" class="com.itlong.whatsmars.redis.client.readwrite.ReadWriteRedisClient">
+            <property name="hosts" value="127.0.0.1:6379,127.0.0.1:7379"/>
+            <property name="maxTotal" value="256"/>
+            <property name="maxIdle" value="8" />
+            <property name="maxWait" value="3000" />
+            <property name="timeout" value="3000" />
+            <property name="minIdle" value="2" />
+        </bean>
+        <!-- Cluster模式 -->
+        <bean id="redisClusterClient" class="com.itlong.whatsmars.redis.client.cluster.RedisClusterClient">
+            <property name="addresses" value="127.0.0.1:6379,127.0.01:7379,127.0.0.1:8379"/>
+            <property name="maxTotal" value="256"/>
+            <property name="maxIdle" value="8" />
+            <property name="maxWait" value="3000" />
+            <property name="timeout" value="3000" />
+            <property name="minIdle" value="2" />
+        </bean>
+        <!-- 客户端sharding模式，待进行 -->
+    </beans>
+
+    package com.itlong.whatsmars.redis.client.singleton;
+    import org.springframework.beans.factory.FactoryBean;
+    import org.springframework.beans.factory.InitializingBean;
+    import redis.clients.jedis.JedisPool;
+    import redis.clients.jedis.JedisPoolConfig;
+    /**
+     * Created by javahongxi on 2017/6/22.
+     */
+    public class SingletonRedisClient implements FactoryBean<JedisPool>,InitializingBean {
+        private JedisPool jedisPool;
+        private int maxTotal = 128;
+        //最大空闲连接数
+        private int maxIdle = 2;
+        //最小空闲连接数
+        private int minIdle = 1;
+        //如果连接池耗尽，最大阻塞的时间，默认为3秒
+        private long maxWait = 3000;//单位毫秒
+        private String host;
+        private int port;
+        private int database = 0;//选择数据库，默认为0
+        private int timeout = 3000;//connectionTimeout，soTimeout，默认为3秒
+        private boolean testOnBorrow = true;
+        private boolean testOnReturn = true;
+        private String password;
+        public void setMaxTotal(int maxTotal) {
+            this.maxTotal = maxTotal;
+        }
+        public void setMaxIdle(int maxIdle) {
+            this.maxIdle = maxIdle;
+        }
+        public void setMinIdle(int minIdle) {
+            this.minIdle = minIdle;
+        }
+        public void setMaxWait(long maxWait) {
+            this.maxWait = maxWait;
+        }
+        public void setHost(String host) {
+            this.host = host;
+        }
+        public void setPort(int port) {
+            this.port = port;
+        }
+        public void setDatabase(int database) {
+            this.database = database;
+        }
+        public void setTimeout(int timeout) {
+            this.timeout = timeout;
+        }
+        public void setTestOnBorrow(boolean testOnBorrow) {
+            this.testOnBorrow = testOnBorrow;
+        }
+        public void setTestOnReturn(boolean testOnReturn) {
+            this.testOnReturn = testOnReturn;
+        }
+        public void setPassword(String password) {
+            this.password = password;
+        }
+        protected JedisPoolConfig buildConfig() {
+            JedisPoolConfig config = new JedisPoolConfig();
+            config.setMinIdle(minIdle);
+            config.setMaxIdle(maxIdle);
+            config.setMaxTotal(maxTotal);
+            config.setTestOnBorrow(testOnBorrow);
+            config.setTestOnReturn(testOnReturn);
+            config.setBlockWhenExhausted(true);
+            config.setMaxWaitMillis(maxWait);
+            config.setFairness(false);
+            return config;
+        }
+        @Override
+        public void afterPropertiesSet() throws Exception {
+            JedisPoolConfig config = buildConfig();
+            jedisPool = new JedisPool(config,host,port,timeout, password, database,null);
+        }
+        @Override
+        public JedisPool getObject() throws Exception {
+            return jedisPool;
+        }
+        @Override
+        public Class<?> getObjectType() {
+            return JedisPool.class;
+        }
+        @Override
+        public boolean isSingleton() {
+            return true;
+        }
+    }
+
+    package com.itlong.whatsmars.redis.client.readwrite;
+    import org.springframework.beans.factory.InitializingBean;
+    import redis.clients.jedis.Jedis;
+    import redis.clients.jedis.JedisPool;
+    import redis.clients.jedis.JedisPoolConfig;
+    import java.util.ArrayList;
+    import java.util.List;
+    import java.util.Random;
+    /**
+     * Created by javahongxi on 2017/6/22.
+     */
+    public class ReadWriteRedisClient implements InitializingBean {
+        //master:port,slave:port,slave:port...
+        //master first
+        private String hosts;
+        private JedisPool master;
+        private List<JedisPool> slaves = new ArrayList<JedisPool>();
+        private int maxTotal = 128;
+        //最大空闲连接数
+        private int maxIdle = 2;
+        //最小空闲连接数
+        private int minIdle = 1;
+        //如果连接池耗尽，最大阻塞的时间，默认为3秒
+        private long maxWait = 3000;//单位毫秒
+        private int database = 0;//选择数据库，默认为0
+        private int timeout = 3000;//connectionTimeout，soTimeout，默认为3秒
+        private boolean testOnBorrow = true;
+        private boolean testOnReturn = true;
+        private String password;
+        private Random random = new Random();
+        public void setMaxTotal(int maxTotal) {
+            this.maxTotal = maxTotal;
+        }
+        public void setMaxIdle(int maxIdle) {
+            this.maxIdle = maxIdle;
+        }
+        public void setMinIdle(int minIdle) {
+            this.minIdle = minIdle;
+        }
+        public void setMaxWait(long maxWait) {
+            this.maxWait = maxWait;
+        }
+        public void setDatabase(int database) {
+            this.database = database;
+        }
+        public void setTimeout(int timeout) {
+            this.timeout = timeout;
+        }
+        public void setTestOnBorrow(boolean testOnBorrow) {
+            this.testOnBorrow = testOnBorrow;
+        }
+        public void setTestOnReturn(boolean testOnReturn) {
+            this.testOnReturn = testOnReturn;
+        }
+        public void setPassword(String password) {
+            this.password = password;
+        }
+        public void setHosts(String hosts) {
+            this.hosts = hosts;
+        }
+        protected JedisPoolConfig buildConfig() {
+            JedisPoolConfig config = new JedisPoolConfig();
+            config.setMinIdle(minIdle);
+            config.setMaxIdle(maxIdle);
+            config.setMaxTotal(maxTotal);
+            config.setTestOnBorrow(testOnBorrow);
+            config.setTestOnReturn(testOnReturn);
+            config.setBlockWhenExhausted(true);
+            config.setMaxWaitMillis(maxWait);
+            config.setFairness(false);
+            return config;
+        }
+        @Override
+        public void afterPropertiesSet() throws Exception {
+            JedisPoolConfig config = buildConfig();
+            String[] hostAndPorts = hosts.split(",");
+            String masterHP = hostAndPorts[0];
+            String[] ms = masterHP.split(":");
+            master = new JedisPool(config,ms[0],Integer.valueOf(ms[1]),timeout, password, database,null);
+            if(hostAndPorts.length > 1) {
+                for(int i = 1; i < hostAndPorts.length; i++) {
+                    String[] ss = hostAndPorts[i].split(":");
+                    JedisPool slave = new JedisPool(config,ss[0],Integer.valueOf(ss[1]),timeout, password, database,null);
+                    slaves.add(slave);
+                }
+            }
+            slaves.add(master);
+        }
+        public String get(String key) {
+            Jedis jedis = fetchResource(true);
+            try {
+                return jedis.get(key);
+            } finally {
+                jedis.close();
+            }
+        }
+        public List<String> mget(String... keys) {
+            Jedis jedis = fetchResource(true);
+            try {
+                return jedis.mget(keys);
+            } finally {
+                jedis.close();
+            }
+        }
+        public String setex(String key,int seconds,String value) {
+            Jedis jedis = fetchResource(false);
+            try {
+                return jedis.setex(key,seconds,value);
+            } finally {
+                jedis.close();
+            }
+        }
+        public Long setnx(String key,String value) {
+            Jedis jedis = fetchResource(false);
+            try {
+                return jedis.setnx(key,value);
+            } finally {
+                jedis.close();
+            }
+        }
+        public String set(String key,String value) {
+            Jedis jedis = fetchResource(false);
+            try {
+                return jedis.set(key,value);
+            } finally {
+                jedis.close();
+            }
+        }
+        public Long del(String key) {
+            Jedis jedis = fetchResource(false);
+            try {
+                return jedis.del(key);
+            } finally {
+                jedis.close();
+            }
+        }
+        public Long expire(String key,int seconds) {
+            Jedis jedis = fetchResource(false);
+            try {
+                return jedis.expire(key,seconds);
+            } finally {
+                jedis.close();
+            }
+        }
+        public Boolean exists(String key) {
+            Jedis jedis = fetchResource(false);
+            try {
+                return jedis.exists(key);
+            } finally {
+                jedis.close();
+            }
+        }
+        public Long exists(String... keys) {
+            Jedis jedis = fetchResource(false);
+            try {
+                return jedis.exists(keys);
+            } finally {
+                jedis.close();
+            }
+        }
+        private Jedis fetchResource(boolean read) {
+            if(slaves.isEmpty() || !read) {
+                return master.getResource();
+            }
+            int size = slaves.size();
+            int i = random.nextInt(size);
+            return slaves.get(i).getResource();
+        }
+        public static void main(String[] args) throws Exception {
+            String prefix = "_test_";
+            ReadWriteRedisClient client = new ReadWriteRedisClient();
+            client.setHosts("127.0.0.1:6379,127.0.0.1:6379");
+            client.afterPropertiesSet();
+            client.set(prefix + "10001","test");
+            System.out.println(client.get(prefix + "10001"));
+        }
+    }
+    
+
+    package com.itlong.whatsmars.redis.client.cluster;
+    import org.springframework.beans.factory.FactoryBean;
+    import org.springframework.beans.factory.InitializingBean;
+    import redis.clients.jedis.HostAndPort;
+    import redis.clients.jedis.JedisCluster;
+    import redis.clients.jedis.JedisPoolConfig;
+    import java.util.HashSet;
+    import java.util.Set;
+    /**
+     * Created by javahongxi on 2017/6/22.
+     */
+    public class RedisClusterClient implements FactoryBean<JedisCluster>,InitializingBean {
+        private JedisCluster jedisCluster;
+        private int maxTotal = 128;
+        //最大空闲连接数
+        private int maxIdle = 6;
+        //最小空闲连接数
+        private int minIdle = 1;
+        //如果连接池耗尽，最大阻塞的时间，默认为3秒
+        private long maxWait = 3000;//单位毫秒
+        private int timeout = 3000;//connectionTimeout，soTimeout，默认为3秒
+        private boolean testOnBorrow = true;
+        private boolean testOnReturn = true;
+        private String addresses;//ip:port,ip:port
+        public void setMaxTotal(int maxTotal) {
+            this.maxTotal = maxTotal;
+        }
+        public void setMaxIdle(int maxIdle) {
+            this.maxIdle = maxIdle;
+        }
+        public void setMinIdle(int minIdle) {
+            this.minIdle = minIdle;
+        }
+        public void setMaxWait(long maxWait) {
+            this.maxWait = maxWait;
+        }
+        public void setTimeout(int timeout) {
+            this.timeout = timeout;
+        }
+        public void setTestOnBorrow(boolean testOnBorrow) {
+            this.testOnBorrow = testOnBorrow;
+        }
+        public void setTestOnReturn(boolean testOnReturn) {
+            this.testOnReturn = testOnReturn;
+        }
+        public void setAddresses(String addresses) {
+            this.addresses = addresses;
+        }
+        protected JedisPoolConfig buildConfig() {
+            JedisPoolConfig config = new JedisPoolConfig();
+            config.setMinIdle(minIdle);
+            config.setMaxIdle(maxIdle);
+            config.setMaxTotal(maxTotal);
+            config.setTestOnBorrow(testOnBorrow);
+            config.setTestOnReturn(testOnReturn);
+            config.setBlockWhenExhausted(true);
+            config.setMaxWaitMillis(maxWait);
+            config.setFairness(false);
+            return config;
+        }
+        private Set<HostAndPort> buildHostAndPorts() {
+            String[] hostPorts = addresses.split(",");
+            Set<HostAndPort> hostAndPorts = new HashSet<HostAndPort>();
+            for(String item : hostPorts) {
+                String[] hostPort = item.split(":");
+                HostAndPort hostAndPort = new HostAndPort(hostPort[0],Integer.valueOf(hostPort[1]));
+                hostAndPorts.add(hostAndPort);
+            }
+            return hostAndPorts;
+        }
+        @Override
+        public void afterPropertiesSet() throws Exception {
+            JedisPoolConfig config = buildConfig();
+            Set<HostAndPort> hostAndPorts = buildHostAndPorts();
+            jedisCluster = new JedisCluster(hostAndPorts,timeout,config);
+        }
+        @Override
+        public JedisCluster getObject() throws Exception {
+            return jedisCluster;
+        }
+        @Override
+        public Class<?> getObjectType() {
+            return JedisCluster.class;
+        }
+        @Override
+        public boolean isSingleton() {
+            return true;
+        }
+    }
+    
+
+    /**
+     * Created by javahongxi on 2017/6/23.
+     */
+    @RunWith(SpringJUnit4ClassRunner.class)
+    @ContextConfiguration(locations = "classpath:spring-redis.xml")
+    public class Demo {
+        @Autowired
+        @Qualifier("singletonRedisClient")
+        private JedisPool singletonRedisClient;
+        @Autowired
+        private ReadWriteRedisClient readWriteRedisClient;
+        @Autowired
+        @Qualifier("redisClusterClient")
+        private JedisCluster jedisCluster;
+        @Test
+        public void testSingleton() {
+            Jedis jedis = singletonRedisClient.getResource();
+            String cacheContent = null;
+            try {
+                cacheContent = jedis.get("hello_world");
+            }finally {
+                singletonRedisClient.close();
+            }
+            // 获取redis数据之后，立即释放连接，然后开始进行业务处理
+            if(cacheContent == null) {
+                // DB operation
+            }
+            // ..
+        }
+        @Test
+        public void testReadWrite() {
+            String cacheContent = null;
+            try {
+                cacheContent = readWriteRedisClient.get("hello_world");
+            } catch (Exception e) {
+                //如果异常，你可以决定是否忽略
+            }
+            if(cacheContent == null) {
+                //如果cache中不存在，或者redis异常
+            }
+        }
+        @Test
+        public void testCluster() {
+            String cacheContent = null;
+            try {
+                cacheContent = jedisCluster.get("hello_world");
+            } catch (Exception e) {
+                //如果异常，你可以决定是否忽略
+            }
+            if(cacheContent == null) {
+                //如果cache中不存在，或者redis异常
+            }
+        }
+    }
+
+**@基于M-S模式下读写分离**
+
+通常情况下，Slave只是作为数据备份，不提供read操作，这种考虑是为了避免slave提供stale数据而导致一些问题。 不过在很多场景下，即使slave数据有一定的延迟，我们仍然可以兼容或者正常处理，此时我们可以将slave提供read 服务，并在M-S集群中将read操作分流，此时我们的Redis集群将可以支撑更高的QPS。本实例中，仅仅提供了“读写分 离”的样板，尚未对所有的redis方法进行重写和封装，请开发者后续继续补充即可。此外，slave节点如果异常，我们 应该支持failover，这一部分特性后续再扩展。 
+
+    代码 https://github.com/javahongxi/whatsmars/tree/master/whatsmars-redis
+{% endraw %}

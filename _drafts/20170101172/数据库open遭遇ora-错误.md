@@ -1,0 +1,266 @@
+---
+layout: post
+title:  "数据库open遭遇ora-错误"
+title2:  "数据库open遭遇ora-错误"
+date:   2017-01-01 23:54:32  +0800
+source:  "http://www.jfox.info/%e6%95%b0%e6%8d%ae%e5%ba%93open%e9%81%ad%e9%81%87ora%e9%94%99%e8%af%af.html"
+fileName:  "20170101172"
+lang:  "zh_CN"
+published: true
+permalink: "%e6%95%b0%e6%8d%ae%e5%ba%93open%e9%81%ad%e9%81%87ora%e9%94%99%e8%af%af.html"
+---
+{% raw %}
+前几天我们的一位准客户的其中一套较为重要的数据库出现了故障。我们这里先姑且不去分析原因，来将数据库打开提供业务恢复再说。首先我们来看下一线工程师现场发回的报道： 
+
+ ORA-01555 caused by SQL statement below (SQL ID: 4krwuz0ctqxdt, SCN: 0x0e0a.938dbd1d): 
+
+ select ctime, mtime, stime from obj$ where obj# = :1 
+
+ Errors in file /data/oracle/app/diag/rdbms/orcl/orcl/trace/orcl_ora_42419.trc: 
+
+ ORA-00704: bootstrap process failure 
+
+ ORA-00704: bootstrap process failure 
+
+ ORA-00604: error occurred at recursive SQL level 1 
+
+ ORA-01555: snapshot too old: rollback segment number 37 with name “_SYSSMU37_383198352$” too small 
+
+ Errors in file /data/oracle/app/diag/rdbms/orcl/orcl/trace/orcl_ora_42419.trc: 
+
+ ORA-00704: bootstrap process failure 
+
+ ORA-00704: bootstrap process failure 
+
+ ORA-00604: error occurred at recursive SQL level 1 
+
+ ORA-01555: snapshot too old: rollback segment number 37 with name “_SYSSMU37_383198352$” too small 
+
+ Error 704 happened during db open, shutting down database 
+
+ USER (ospid: 42419): terminating the instance due to error 704 
+
+ Instance terminated by USER, pid = 42419 
+
+ ORA-1092 signalled during: alter database open resetlogs… 
+
+ opiodr aborting process unknown ospid (42419) as a result of ORA-1092 
+
+ Mon Jul 03 10:47:32 2017 
+
+ ORA-1092 : opitsk aborting process 
+
+ 从上述的错误来看。数据库在open时，其中一个递归SQL语句执行失败，该递归SQL执行失败的原因是出现了ora-01555错误，即大家所熟知的快照过旧；同时日志中也明确提到了需要访问的回滚段编号，即第37号回滚段。 
+
+ 根据我们一般的处理思路，需要进行10046 trace跟踪，确认这里的递归SQL是不是访问了一些存在活动事务的Block。 
+
+ PARSING IN CURSOR #5 len=52 dep=1 uid=0 oct=3 lid=0 tim=1499247077576035 hv=429618617 ad=’37bf8fe40′ sqlid=’4krwuz0ctqxdt’ 
+
+ select ctime, mtime, stime from obj$ where obj# = :1 
+
+ END OF STMT 
+
+ PARSE #5:c=0,e=346,p=0,cr=0,cu=0,mis=1,r=0,dep=1,og=4,plh=0,tim=1499247077576034 
+
+ BINDS #5: 
+
+ Bind#0 
+
+ oacdty=02 mxl=22(22) mxlc=00 mal=00 scl=00 pre=00 
+
+ oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0 
+
+ kxsbbbfp=7ff28b33fff8  bln=22  avl=02  flg=05 
+
+ value=20 
+
+ EXEC #5:c=999,e=724,p=0,cr=0,cu=0,mis=1,r=0,dep=1,og=4,plh=1218588913,tim=1499247077576860 
+
+ WAIT #5: nam=’db file sequential read’ ela= 31 file#=1 block#=337 blocks=1 obj#=36 tim=1499247077577083 
+
+ ===================== 
+
+ PARSING IN CURSOR #6 len=142 dep=2 uid=0 oct=3 lid=0 tim=1499247077577673 hv=361892850 ad=’377f8c780′ sqlid=’7bd391hat42zk’ 
+
+ select /*+ rule */ name,file#,block#,status$,user#,undosqn,xactsqn,scnbas,scnwrp,DECODE(inst#,0,NULL,inst#),ts#,spare1 from undo$ where us#=:1 
+
+ END OF STMT 
+
+ PARSE #6:c=1000,e=472,p=0,cr=0,cu=0,mis=1,r=0,dep=2,og=3,plh=0,tim=1499247077577672 
+
+ BINDS #6: 
+
+ Bind#0 
+
+ oacdty=02 mxl=22(22) mxlc=00 mal=00 scl=00 pre=00 
+
+ oacflg=08 fl2=0001 frm=00 csi=00 siz=24 off=0 
+
+ kxsbbbfp=7ff28b33e398  bln=22  avl=02  flg=05 
+
+ value=37 
+
+ EXEC #6:c=0,e=705,p=0,cr=0,cu=0,mis=1,r=0,dep=2,og=3,plh=906473769,tim=1499247077578470 
+
+ WAIT #6: nam=’db file sequential read’ ela= 19 file#=1 block#=321 blocks=1 obj#=34 tim=1499247077578588 
+
+ WAIT #6: nam=’db file sequential read’ ela= 18 file#=1 block#=225 blocks=1 obj#=15 tim=1499247077578756 
+
+ FETCH #6:c=1000,e=313,p=2,cr=2,cu=0,mis=0,r=1,dep=2,og=3,plh=906473769,tim=1499247077578814 
+
+ STAT #6 id=1 cnt=1 pid=0 pos=1 obj=15 op=’TABLE ACCESS BY INDEX ROWID UNDO$ (cr=2 pr=2 pw=0 time=0 us)’ 
+
+ STAT #6 id=2 cnt=1 pid=1 pos=1 obj=34 op=’INDEX UNIQUE SCAN I_UNDO1 (cr=1 pr=1 pw=0 time=0 us)’ 
+
+ CLOSE #6:c=0,e=9,dep=2,type=0,tim=1499247077578910 
+
+ WAIT #5: nam=’db file sequential read’ ela= 39 file#=157 block#=164013 blocks=1 obj#=0 tim=1499247077579013 
+
+ FETCH #5:c=2000,e=2852,p=4,cr=4,cu=0,mis=0,r=0,dep=1,og=4,plh=1218588913,tim=1499247077579747 
+
+ STAT #5 id=1 cnt=0 pid=0 pos=1 obj=18 op=’TABLE ACCESS BY INDEX ROWID OBJ$ (cr=0 pr=0 pw=0 time=0 us)’ 
+
+ STAT #5 id=2 cnt=0 pid=1 pos=1 obj=36 op=’INDEX RANGE SCAN I_OBJ1 (cr=0 pr=0 pw=0 time=0 us)’ 
+
+ ORA-00704: bootstrap process failure 
+
+ ORA-00704: bootstrap process failure 
+
+ ORA-00604: error occurred at recursive SQL level 1 
+
+ ORA-01555: snapshot too old: rollback segment number 37 with name “_SYSSMU37_383198352$” too small 
+
+ ORA-00704: bootstrap process failure 
+
+ ORA-00704: bootstrap process failure 
+
+ ORA-00604: error occurred at recursive SQL level 1 
+
+ ORA-01555: snapshot too old: rollback segment number 37 with name “_SYSSMU37_383198352$” too small 
+
+ 从10046 跟踪来看，报错的SQL 语句访问了2个block；分别是file 1 block 337和file 157 block 164013. 很明显第一个数据块应该是数据字典的block，而157号文件的这个block应该是undo block，因为这里的obj#=0. 
+
+ 接着我们来看看file 1 block 337 的blockdump情况： 
+
+ Dump all the blocks in range: 
+
+ buffer tsn: 0 rdba: 0x00400151 (1/337) 
+
+ scn: 0x0e15.00a27c49 seq: 0x01 flg: 0x04 tail: 0x7c490601 
+
+ frmt: 0x02 chkval: 0xfa69 type: 0x06=trans data 
+
+ Hex dump of block: st=0, typ_found=1 
+
+ …… 
+
+ Block header dump:  0x00400151 
+
+ Object id on Block? Y 
+
+ seg/obj: 0x24  csc: 0xe15a27c49  itc: 1  flg: –  typ: 2 – INDEX 
+
+ fsl: 0  fnx: 0x0 ver: 0x01 
+
+ Itl           Xid                  Uba         Flag  Lck        Scn/Fsc 
+
+ 0x01   0x0025.020.0002c57b  0x274280ad.1eae.02  C—    0  scn 0x0e15.00a26a0c 
+
+ Branch block dump 
+
+ ================= 
+
+ header address 139957081160260=0x7f4a4c1b3a44 
+
+ kdxcolev 1 
+
+ KDXCOLEV Flags = – – – 
+
+ kdxcolok 0 
+
+ kdxcoopc 0x80: opcode=0: iot flags=— is converted=Y 
+
+ kdxconco 3 
+
+ kdxcosdc 1 
+
+ kdxconro 235 
+
+ kdxcofbo 498=0x1f2 
+
+ kdxcofeo 5520=0x1590 
+
+ kdxcoavs 5239 
+
+ kdxbrlmc 4194642=0x400152 
+
+ kdxbrsno 234 
+
+ kdxbrbksz 8056 
+
+ kdxbr2urrc 0 
+
+ row#0[8047] dba: 4194643=0x400153 
+
+ 从block dump来看,这是一个Index Block。从ITL的信息来看，这个Index Block没有任何活动事务。同时，根据前面的10046 trace来看，报错的递归SQL访问的obj#=20，换成为16进制为c1 15，然而这个Index block 中并没有这个键值；同时我们dump了下一个index block 找到了对应的键值。 
+
+ Object id on Block? Y seg/obj: 0x24 csc: 0x00.81e7 itc: 2 flg: – typ: 2 – INDEX fsl: 0 fnx: 0x0 ver: 0x01 
+
+ Itl Xid Uba Flag Lck Scn/Fsc 0x01 0x0007.000.00000005 0x00c0017f.0002.01 CBU- 0 scn 0x0000.00006faf 0x02 0x000a.005.00001049 0x00c0fdc3.00e8.3c –U- 5 fsc 0x005f.000ba658 Leaf block dump =============== header address 139973835614812=0x7f4e32bfea5c kdxcolev 0 KDXCOLEV Flags = – – – kdxcolok 0 kdxcoopc 0x80: opcode=0: iot flags=— is converted=Y kdxconco 3 kdxcosdc 1 kdxconro 426 kdxcofbo 888=0x378 kdxcofeo 889=0x379 kdxcoavs 1 kdxlespl 0 kdxlende 5 kdxlenxt 4194643=0x400153 kdxleprv 0=0x0 kdxledsz 6 kdxlebksz 8032 …… row#19[1192] flag: ——, lock: 0, len=16, data:(6): 00 40 00 f1 00 00 col 0; len 2; (2): c1 15 col 1; len 1; (1): 80 col 2; len 2; (2): c1 03 
+
+ 我们可以看出，这个index是一个复合索引，其中col 0的c1 15就是表示20. 该行数据对应的数据块地址是004000f100,转换为10进制是：4194545。 
+
+ 我们回到前面的这个问题，为什么递归SQL访问file block 337 然后接着需要去访问undo block呢？ 而且从10046 trace来看fetch r=0，表明并没有获取到数据。说明问题仍然出在这个block的访问上。 
+
+ 这里我们进一步该block的dump来看，发现其scn如下： 
+
+ SQL> select to_number(‘e1500a26a0c’,’xxxxxxxxxxxxxxxxx’) CTM from dual; 
+
+ CTM 
+
+ ——————— 
+
+ 15483367746060 
+
+ 当通过dump控制文件的scn来看，明显要小的多,如下： 
+
+ Redo Version: compatible=0xb200000 #Data files = 85, #Online files = 85 Database checkpoint: Thread=1 scn: 0x0e0a.9399087a Threads: #Enabled=1, #Open=1, Head=1, Tail=1 
+
+ 我们将上述的database checkpoint进行转换： 
+
+ www.killdb.com@select to_number(‘e0a9399087a’,’xxxxxxxxxxxxxxxxxxxxx’) db_scn from dual; 
+
+ DB_SCN ————————— 15438588741754 
+
+ 很明显数据库的checkpoint 明显要比这个Index Block的scn小的多，也就势必导致数据库在启动的时候需要去访问Undo Block。所以这里经过单次的修改undo$  将对应的37号回滚段标记为offline都无法解决这个问题。这里我们首先尝试清除了file 1 block 377的ITL信息之后，启动数据库发现错误发生了改变，如下： 
+
+ Errors in file /data/oracle/app/diag/rdbms/orcl/orcl/trace/orcl_ora_46250.trc (incident=90909): 
+
+ ORA-00600: internal error code, arguments: [2662], [3605], [10648650], [3605], [48684112], [4194545], [], [], [], [], [], [] 
+
+ Incident details in: /data/oracle/app/diag/rdbms/orcl/orcl/incident/incdir_90909/orcl_ora_46250_i90909.trc 
+
+ Errors in file /data/oracle/app/diag/rdbms/orcl/orcl/trace/orcl_ora_46250.trc: 
+
+ ORA-00704: bootstrap process failure 
+
+ ORA-00704: bootstrap process failure 
+
+ ORA-00600: internal error code, arguments: [2662], [3605], [10648650], [3605], [48684112], [4194545], [], [], [], [], [], [] 
+
+ Errors in file /data/oracle/app/diag/rdbms/orcl/orcl/trace/orcl_ora_46250.trc: 
+
+ ORA-00704: bootstrap process failure 
+
+ ORA-00704: bootstrap process failure 
+
+ ORA-00600: internal error code, arguments: [2662], [3605], [10648650], [3605], [48684112], [4194545], [], [], [], [], [], [] 
+
+ Error 704 happened during db open, shutting down database 
+
+ 这个错误就非常明白了，就是block scn的问题。而报错的数据块地址为：4194545，这就是我们前面提到的4000f1这个数块，即file 1 block 241 这个数据块。 
+
+ 看起来这个错误本质上来说，可以直接推进scn解决问题。这里我们通过设置*._minimum_giga_scn参数来解决问题。通过设置了该参数之后，成功打开了数据库。 
+
+ 虽然数据库alert log后续还有一些ora-00600 [4097],ora-08102等错误，但是处理都相对简单了。通过重建undo、重建Index即可解决。
+{% endraw %}

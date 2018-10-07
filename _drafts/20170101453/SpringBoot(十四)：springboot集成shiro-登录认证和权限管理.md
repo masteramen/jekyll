@@ -340,4 +340,77 @@ doGetAuthenticationInfo的重写
                 ByteSource.Util.bytes(userInfo.getCredentialsSalt()),//salt=username+salt
                 getName()  //realm name
         );
+        return authenticationInfo;
+    }
+
+**链接权限的实现**
+
+shiro的权限授权是通过继承AuthorizingRealm抽象类，重载doGetAuthorizationInfo();当访问到页面的时候，链接配置了相应的权限或者shiro标签才会执行此方法否则不会执行，所以如果只是简单的身份认证没有权限的控制的话，那么这个方法可以不进行实现，直接返回null即可。在这个方法中主要是使用类：SimpleAuthorizationInfo进行角色的添加和权限的添加。
+
+    @Override
+    protected AuthorizationInfo doGetAuthorizationInfo(PrincipalCollection principals) {
+        System.out.println("权限配置-->MyShiroRealm.doGetAuthorizationInfo()");
+        SimpleAuthorizationInfo authorizationInfo = new SimpleAuthorizationInfo();
+        UserInfo userInfo  = (UserInfo)principals.getPrimaryPrincipal();
+        for(SysRole role:userInfo.getRoleList()){
+            authorizationInfo.addRole(role.getRole());
+            for(SysPermission p:role.getPermissions()){
+                authorizationInfo.addStringPermission(p.getPermission());
+            }
+        }
+        return authorizationInfo;
+    }
+
+当然也可以添加set集合：roles是从数据库查询的当前用户的角色，stringPermissions是从数据库查询的当前用户对应的权限
+
+    authorizationInfo.setRoles(roles);
+    authorizationInfo.setStringPermissions(stringPermissions);
+
+就是说如果在shiro配置文件中添加了filterChainDefinitionMap.put(“/add”, “perms[权限添加]”);就说明访问/add这个链接必须要有“权限添加”这个权限才可以访问，如果在shiro配置文件中添加了filterChainDefinitionMap.put(“/add”, “roles[100002]，perms[权限添加]”);就说明访问/add这个链接必须要有“权限添加”这个权限和具有“100002”这个角色才可以访问。
+
+**登录实现**
+
+登录过程其实只是处理异常的相关信息，具体的登录验证交给shiro来处理
+
+    @RequestMapping("/login")
+    public String login(HttpServletRequest request, Map<String, Object> map) throws Exception{
+        System.out.println("HomeController.login()");
+        // 登录失败从request中获取shiro处理的异常信息。
+        // shiroLoginFailure:就是shiro异常类的全类名.
+        String exception = (String) request.getAttribute("shiroLoginFailure");
+        System.out.println("exception=" + exception);
+        String msg = "";
+        if (exception != null) {
+            if (UnknownAccountException.class.getName().equals(exception)) {
+                System.out.println("UnknownAccountException -- > 账号不存在：");
+                msg = "UnknownAccountException -- > 账号不存在：";
+            } else if (IncorrectCredentialsException.class.getName().equals(exception)) {
+                System.out.println("IncorrectCredentialsException -- > 密码不正确：");
+                msg = "IncorrectCredentialsException -- > 密码不正确：";
+            } else if ("kaptchaValidateFailed".equals(exception)) {
+                System.out.println("kaptchaValidateFailed -- > 验证码错误");
+                msg = "kaptchaValidateFailed -- > 验证码错误";
+            } else {
+                msg = "else >> "+exception;
+                System.out.println("else -- >" + exception);
+            }
+        }
+        map.put("msg", msg);
+        // 此方法不处理登录成功,由shiro进行处理
+        return "/login";
+    }
+
+其它dao层和service的代码就不贴出来了大家直接看代码。
+
+### 测试
+
+1、编写好后就可以启动程序，访问index页面，由于没有登录就会跳转到login页面。登录之后就会跳转到index页面，登录后，有直接在浏览器中输入index页面访问，又会跳转到login页面。上面这些操作时候触发MyShiroRealm.doGetAuthenticationInfo()这个方法，也就是登录认证的方法。
+
+2、登录admin账户，访问：http://127.0.0.1:8080/userInfo/userAdd显示用户添加界面，访问http://127.0.0.1:8080/userInfo/userDel显示403没有权限。上面这些操作时候触发MyShiroRealm.doGetAuthorizationInfo()这个方面，也就是权限校验的方法。
+
+3、修改admin不同的权限进行测试
+
+shiro很强大，这仅仅是完成了登录认证和权限管理这两个功能，更多内容以后有时间再做探讨。
+
+[示例代码](http://www.jfox.info/go.php?url=https://github.com/ityouknow/spring-boot-examples)
 {% endraw %}

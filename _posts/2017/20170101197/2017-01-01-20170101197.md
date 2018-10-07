@@ -1,0 +1,72 @@
+---
+layout: post
+title:  "Incorrect column count: expected 1, actual 5，JdbcTemplate queryForList 出错"
+title2:  "Incorrect column count expected 1, actual 5，JdbcTemplate queryForList 出错"
+date:   2017-01-01 23:54:57  +0800
+source:  "http://www.jfox.info/incorrectcolumncountexpected1actual5jdbctemplatequeryforlist%e5%87%ba%e9%94%99.html"
+fileName:  "20170101197"
+lang:  "zh_CN"
+published: true
+permalink: "incorrectcolumncountexpected1actual5jdbctemplatequeryforlist%e5%87%ba%e9%94%99.html"
+---
+{% raw %}
+**spring JdbcTemplate  queryForList 出错**
+
+**Incorrect column count: expected 1, actual 5**
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+©Copyright 蕃薯耀 2017年7月10日
+
+http://fanshuyao.iteye.com/
+
+**一、问题描述：**
+
+查询时使用JdbcTemplate 中的queryForList发生错误，如下：
+
+查询方法如下：
+
+    jdbcTemplate.queryForList(selectSql.toString(), entityClass)
+
+查询sql如下：
+
+    select * from test where 1=1 order by create_time desc limit 0,10
+
+错误如下：
+
+    Incorrect column count: expected 1, actual 5
+
+**二、解决方案：**
+
+1、上面错误的原因是，查询返回的结果列期望为1，但实际返回的是5列，因为test表中有5个字段，故返回5列。而这个方法参数的解释是这样的：
+
+    Parameters:
+    sql SQL query to execute
+    elementType the required type of element in the result list (for example, Integer.class)
+
+ 就是第2个参数在网上说只能是简单类型String或Integer。
+
+2、使用query查询
+
+    jdbcTemplate.query(selectSql.toString(), rowMapper)
+
+ 但多了一个参数rowMapper，这个参数需要定义为：
+
+    @SuppressWarnings("unused")
+    	private BeanPropertyRowMapper<T> rowMapper = new BeanPropertyRowMapper<T>(entityClass){  
+            @Override  
+            protected void initBeanWrapper(BeanWrapper bw) {  
+                super.initBeanWrapper(bw);  
+            }  
+        }; 
+
+具体的作用就是进入查询结果转换成实体。
+
+**到这步也就解决问题了。**
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+©Copyright 蕃薯耀 2017年7月10日
+
+http://fanshuyao.iteye.com/
+{% endraw %}

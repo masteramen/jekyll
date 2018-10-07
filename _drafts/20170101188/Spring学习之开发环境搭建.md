@@ -1,0 +1,106 @@
+---
+layout: post
+title:  "Spring学习之开发环境搭建"
+title2:  "Spring学习之开发环境搭建"
+date:   2017-01-01 23:54:48  +0800
+source:  "http://www.jfox.info/spring%e5%ad%a6%e4%b9%a0%e4%b9%8b%e5%bc%80%e5%8f%91%e7%8e%af%e5%a2%83%e6%90%ad%e5%bb%ba.html"
+fileName:  "20170101188"
+lang:  "zh_CN"
+published: true
+permalink: "spring%e5%ad%a6%e4%b9%a0%e4%b9%8b%e5%bc%80%e5%8f%91%e7%8e%af%e5%a2%83%e6%90%ad%e5%bb%ba.html"
+---
+{% raw %}
+其中最重要的Spring的核心容器，是整个Spring的核心基础，其他模块或多或少都是对核心模块的扩展
+
+上面提到了Spring的核心容器是Spring的核心基础，这也就是说，配置Spring的开发环境，其实就是配置Spring的核心容器，也就是上面提到的Spring核心容器的组成部分，接下来来搭建一个可运行的，简单的Spring环境
+
+这里使用Maven对项目进行管理，导入对应的依赖，如下所示
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-beans</artifactId>
+            <version>4.3.7.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>4.3.7.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
+            <version>4.3.7.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-expression</artifactId>
+            <version>4.3.7.RELEASE</version>
+        </dependency>
+
+导入依赖之后，接下来通过一个简单的小案例来查看Spring是否配置成功
+
+在类路径下新建一个资源配置文件`beanConfig.xml`，内容如下所示
+
+    <?xml version="1.0" encoding="UTF-8"?>
+    <beans xmlns="http://www.springframework.org/schema/beans"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+           xsi:schemaLocation="http://www.springframework.org/schema/beans 
+           http://www.springframework.org/schema/beans/spring-beans.xsd">
+    
+           <!--编写对应的配置信息-->
+    
+    </beans>
+
+然后新建一POJO对象，`Car.java`，具体内容如下所示
+
+    public class Car {
+    
+        private String name;
+    
+        public String getName() {
+            return name;
+        }
+    
+        public void setName(String name) {
+            this.name = name;
+        }
+    
+        @Override
+        public String toString() {
+            return "Car{" +
+                    "name='" + name + ''' +
+                    '}';
+        }
+    }
+
+新建完成之后，在上面的配置文件中补充响应的信息
+
+     <bean id="car" class="cn.xuhuanfeng.domain.Car"/>
+     <!--id是所创建对象的名字，class是所创建对象的类对应的全限定名-->
+
+接下来就可以开始测试我们所配置的环境是否正确了，新建一个简单的测试类，如下所示
+
+    public class SpringTest{
+    
+        @Test
+        public void testSpring(){
+            // 加载对应的Spring配置信息
+            ApplicationContext context = new ClassPathXmlApplicationContext("beanConfig.xml");
+            // 从容器中获取对象
+            Car car = (Car) context.getBean("car");
+            System.out.println(car);
+        }
+    }
+
+如何依赖正确导入，并且配置文件没有填写错误的话，可以看到下面的输出内容
+
+    七月 08, 2017 8:33:14 上午 org.springframework.context.support.ClassPathXmlApplicationContext prepareRefresh
+    信息: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@68fb2c38: startup date [Sat Jul 08 08:33:14 CST 2017]; root of context hierarchy
+    七月 08, 2017 8:33:15 上午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+    信息: Loading XML bean definitions from class path resource [beanConfig.xml]
+    Car{name='null'}
+
+至此，一个最简单的Spring开发环境就搭建完成了。
+
+接下来将完成Spring的学习，努力中…
+{% endraw %}

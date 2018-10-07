@@ -210,5 +210,106 @@ Server、Service、Connector、Context等容器都实现了Lifecycle接口，同
     }
     
 
-可以看到，上面两段代码中，如果用户线程进入同步代码块后（此时会导致线程缓存区的刷新），started变为false跳过了更新jarFiles或者此时jarFiles[0]还未被置空，等到从openJARs返回后，stop正好执行过jarFiles[0]
+可以看到，上面两段代码中，如果用户线程进入同步代码块后（此时会导致线程缓存区的刷新），started变为false跳过了更新jarFiles或者此时jarFiles[0]还未被置空，等到从openJARs返回后，stop正好执行过jarFiles[0] = null， 便会触发NullPointerException。
+
+这个异常非常难以理解，原因就是为什么会触发loadClass操作，尤其是在代码中并没有new一个类的时候。事实上有很多时候都会触发对一个类的初始化检查。
+
+*（注意是类的初始化，不是类实例的初始化 两者天差地别）*
+
+如下情况将会触发类的初始化检查，（如果此时类已经初始化完毕，将直接返回，如果此时类还没有初始化，将执行类的初始化操作）：
+
+- 当前线程中第一次创建此类的实例
+- 当前线程中第一次调用类的静态方法
+- 当前线程中第一次使用类的静态成员
+- 当前线程中第一次为类静态成员赋值
+
+当在一个线程中发生上面这些情况时就会触发初始化检查，（一个线程中最多检查一次），检查这个类的初始化情况之前必然需要获得这个类，此时需要调用loadClass方法。
+
+一般有如下模式的代码容易触发上述异常：
+
+    try{
+        /**do something **/
+    }catch(Exception e){
+        //ExceptionUtil has never used in the current thread before
+        String = ExceptionUtil.getExceptionTrace(e);
+        //or this, ExceptionTracer never appears in the current thread before
+        System.out.println(new ExceptionTracer(e));
+        //or other statement that triggers a call of loadClass
+        /**do other thing**/
+    }
+    
+
+## 一些建议的处理办法 
+
+根据上面的分析，造成异常的主要原因就是线程没有及时终止。所以解决办法的关键就在如何在容器终止之前优雅地终止用户启动的线程上。
+
+### 创建自己的Listener作为终止线程的通知者 
+
+根据分析，项目中主要用到的用户创建的线程包括四种：
+
+- Thread
+- Executors
+- Timer
+- Scheduler
+
+所以最直接的想法就是建立一种对这些组件的管理模块，具体做法分为两种：
+
+1. 对于具体Thread类，为使用者提供一个父类，所有创建的线程均为这个父类的子类。父类重写isInterrupted方法。使用者使用时需要检测线程当前终止状态。
+
+    while(!isInterrupted()){
+        /**do some thing**/
+    }
+    
+
+1. 对于Executors等组件，使用专门定制的注册器，使用者保证在创建一个对应组件后立即将组件注册到对应注册器上。在Listener监听到容器销毁事件时调用注册器上的停止方法。
+
+创建自己的Listener的优点是可以主动在监听到事件时阻塞销毁进程，为用户线程做清理工作争取些时间，因为此时Spring还没有销毁，程序的状态一切正常。
+
+缺点就是对代码侵入性大，并且依赖于使用者的编码。
+
+### 使用Spring提供的TaskExecutor 
+
+ 为了应对在webapp中管理自己的线程的目的，Spring提供了一套TaskExcutor的工具。其中的ThreadPoolTaskExecutor与Java5中的ThreadPoolExecutor非常类似，只是生命周期会被Spring管理，Spring框架停止时，Executor也会被停止，用户线程会收到中断异常。同时Spring还提供了ScheduledThreadPoolExecutor，对于定时任务或者要创建自己线程的需求可以用这个类。对于线程管理，Spring提供了非常丰富的支持， [具体可以看这里](http://www.jfox.info/go.php?url=https://docs.spring.io/spring/docs/current/spring-framework-reference/html/scheduling.html) 。 
+
+使用Spring框架的优点是对代码侵入性小，对代码依赖性也相对较小。
+
+缺点是Spring框架不保证线程中断与Bean销毁的时间先后顺序，也即是说如果一个线程在捕获InterruptException后，再通过Spring去getBean时依然会触发IllegalSateException。同时使用者依然需要检查线程状态或者在Sleep中触发中断，否则线程依然不会终止。
+
+### 其他需要提醒的 
+
+在上面的解决方法中，无论是在Listener中阻塞主线程的停止操作还是在Spring框架中不响应interrupt状态都能为线程继续做一些事情争取些时间。但是这个时间不是无限的。在catalina.sh中，stop部分的脚本中我们可以看到：（删繁就简 体现一下）
+
+    #Tomcat停机脚本摘录
+    #第一次正常停止
+    eval "\"$_RUNJAVA\"" $LOGGING_MANAGER $JAVA_OPTS \
+        -Djava.endorsed.dirs="\"$JAVA_ENDORSED_DIRS\"" -classpath "\"$CLASSPATH\"" \
+        -Dcatalina.base="\"$CATALINA_BASE\"" \
+        -Dcatalina.home="\"$CATALINA_HOME\"" \
+        -Djava.io.tmpdir="\"$CATALINA_TMPDIR\"" \
+        org.apache.catalina.startup.Bootstrap "$@" stop
+    #如果终止失败 使用kill -15
+    if [ $? != 0 ]; then
+        kill -15 `cat "$CATALINA_PID"` >/dev/null 2>&1
+    #设置等待时间
+    SLEEP=5
+    if [ "$1" = "-force" ]; then
+        shift
+        #如果参数中有-force 将强制停止
+        FORCE=1
+    fi
+    while [ $SLEEP -gt 0 ]; do
+        sleep 1
+        SLEEP=`expr $SLEEP - 1 `
+    done
+    #如果需要强制终止 kill -9
+    if [ $FORCE -eq 1 ]; then
+        kill -9 $PID
+    fi
+    
+
+从上面的停止脚本中可以看到，如果配置了强制终止（我们服务器默认配置了），你阻塞终止进程去做自己的事的时间只有5秒钟。这期间还有其他线程在做一些任务以及线程真正开始终止到发现终止的时间（比如从当前到下一次调用isInterrupted的时间），考虑到这些的话，最大阻塞时间应该更短。
+
+从上面的分析中也可以看到，如果服务中有比较重要又耗时的任务，又希望保证一致性的话，最好的办法就是在阻塞的宝贵的5秒钟时间里记录当前执行进度，等到服务重启的时候检测上次执行进度，然后从上次的进度中恢复。
+
+建议：每个任务的执行粒度（两个isInterrupted的检测间隔）至少要控制在最大阻塞时间以内以留出足够时间做终止以后的记录工作。
 {% endraw %}

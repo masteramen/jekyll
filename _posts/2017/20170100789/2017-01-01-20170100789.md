@@ -1,0 +1,14 @@
+---
+layout: post
+title:  "Java两个日期之间相差秒数函数"
+title2:  "Java两个日期之间相差秒数函数"
+date:   2017-01-01 23:48:09  +0800
+source:  "http://www.jfox.info/java-liang-ge-ri-qi-zhi-jian-xiang-cha-miao-shu-han-shu.html"
+fileName:  "20170100789"
+lang:  "zh_CN"
+published: true
+permalink: "java-liang-ge-ri-qi-zhi-jian-xiang-cha-miao-shu-han-shu.html"
+---
+{% raw %}
+By  - Last updated: 星期二, 七月 28, 2015
+{% endraw %}

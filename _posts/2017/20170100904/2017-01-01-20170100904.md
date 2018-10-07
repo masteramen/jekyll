@@ -1,0 +1,79 @@
+---
+layout: post
+title:  "spring整合cxf框架"
+title2:  "spring整合cxf框架"
+date:   2017-01-01 23:50:04  +0800
+source:  "http://www.jfox.info/spring%e6%95%b4%e5%90%88cxf%e6%a1%86%e6%9e%b6.html"
+fileName:  "20170100904"
+lang:  "zh_CN"
+published: true
+permalink: "spring%e6%95%b4%e5%90%88cxf%e6%a1%86%e6%9e%b6.html"
+---
+{% raw %}
+CXF是webService的框架,能够和spring无缝整合
+
+##服务端编写
+
+1.创建动态web项目
+
+2.导入cxf和spring相关jar包(CXF核心包:cxf-2.4.2.jar)
+
+3.在web.xml中配置CXF框架的核心Servlet
+
+     1<servlet> 2<servlet-name>cxf</servlet-name> 3<servlet-class>org.apache.cxf.transport.servlet.CXFServlet</servlet-class> 4<init-param> 5<param-name>config-location</param-name> 6<param-value>classpath:applicationContext.xml</param-value> 7</init-param> 8</servlet> 9<servlet-mapping>10<servlet-name>cxf</servlet-name>11<url-pattern>/webservice/*</url-pattern>12</servlet-mapping>
+
+4.提供spring框架的配置文件applicationContext.xml
+
+　　applicationContext.xml的约束:
+
+    <beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:jaxws="http://cxf.apache.org/jaxws"
+    xmlns:soap="http://cxf.apache.org/bindings/soap"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans 
+                        http://www.springframework.org/schema/beans/spring-beans.xsd
+                        http://cxf.apache.org/bindings/soap 
+                        http://cxf.apache.org/schemas/configuration/soap.xsd
+                        http://cxf.apache.org/jaxws 
+                        http://cxf.apache.org/schemas/jaxws.xsd">
+
+5.开发一个服务类
+
+　　注:服务类必须加注解 @WebService
+
+6.在spring中配置文件中注册服务
+
+    <jaxws:endpoint id="" address="/hello" implementor=""></jaxws:endpoint><!-- id为服务的id,任意填写 address 为访问地址  implementor为服务类的全类名-->
+
+启动web工程,浏览器访问
+
+###客户端
+
+　　　　(用wsdl2java命令生成本地代码调用)
+
+1,在wsdl2java.bat命令所在的文件夹下打开命令窗口,输入:wsdl2java -d . 路径
+
+(路径为service发布后页面的wsdl的全路径,service访问的路径名加?wsdl),回车后会在当前文件夹下生成文件夹
+
+2.把文件夹复制到项目中
+
+　　　　(用spring文件注册代理对象调用)
+
+1.创建项目,可以不是web项目,导入jar包
+
+2.将生成的接口复制到项目中,
+
+3.创建applicationContext.xml文件中配置代理对象
+
+    <jaxws:client id="" address = "" serviceClass =""></jaxws:client><!-- id值随意, adress的值为wsdl的路径值,当不在本机是,须要修改ip serviceClass为接口的全路径-->
+
+4.编写实现类(如下为例子)
+
+    publicstaticvoid main(String[] args) {
+            //创建工厂对象
+            ClassPathXmlApplicationContext cts = new ClassPathXmlApplicationContext("applicationContext.xml");
+            Fun1 proxy = (Fun1) cts.getBean("myclient");
+            String string = proxy.sayHello("呵呵", 12);
+            System.out.println(string);
+        }
+{% endraw %}

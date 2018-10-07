@@ -1,0 +1,195 @@
+---
+layout: post
+title:  "Java参数传递之值传递"
+title2:  "Java参数传递之值传递"
+date:   2017-01-01 23:57:22  +0800
+source:  "http://www.jfox.info/java%e5%8f%82%e6%95%b0%e4%bc%a0%e9%80%92%e4%b9%8b%e5%80%bc%e4%bc%a0%e9%80%92.html"
+fileName:  "20170101342"
+lang:  "zh_CN"
+published: true
+permalink: "java%e5%8f%82%e6%95%b0%e4%bc%a0%e9%80%92%e4%b9%8b%e5%80%bc%e4%bc%a0%e9%80%92.html"
+---
+{% raw %}
+## 一 概述
+
+### 1.什么是参数传递？
+
+调用方法时向形参传递数据的过程叫做参数传递。在编程语言中有两种传递方式：值传递与引用传递。必须强调的是，这里提到的两种传递方式不是仅限于Java使用到的传递方式，而是出现在包括Java在内的多种编程语言中的传递方式。
+
+### 2.变量类型
+
+在Java中，我们将指向基本类型数据的变量称为原始变量，将指向对象的变量称为引用变量。
+
+## 二 值传递
+
+### 1.什么是值传递？
+
+将变量的副本传入方法，方法内外操作隔离，在方法内对变量的操作不会反映到方法外的变量中。
+
+### 2.原始变量
+
+        public void change(int b) {
+            b = 7;
+        }
+    
+        @Test
+        public void testBasic() {
+            int a = 9;
+            change(a);
+            System.out.println(a);
+        }
+
+实际输出：9
+
+在参数传递时，按照值传递的规则，变量b接收一个a的副本，同样指向字面值“9”：
+
+![](/wp-content/uploads/2017/07/1500115525.png)
+
+接下来，在方法内部，为b赋值7，这样b指向7，由于a与b是两个相互独立的变量，两者之间没有引用与被引用的关系，a依然指向9：
+
+![](/wp-content/uploads/2017/07/1500115528.png)
+
+### 3.String
+
+    public void change(String str01) {
+            str01 = "baidu";
+        }
+    
+        @Test
+        public void testString() {
+            String str = new String("www.baidu.com");
+            change(str);
+            System.out.println(str);
+        }
+
+实际输出：www.baidu.com
+
+在参数传递时，str将自身的一个副本传递给str01，这样str01也指向堆中存放“www.baidu.com”的对象：
+
+![](/wp-content/uploads/2017/07/1500115529.png)
+
+在方法内部为str01赋值，这样str01就指向方法区字符串常量池中的”baidu”，str依然指向堆中的“www.baidu.com”，str与str01指向不同的对象，相互之间不影响：
+
+![](/wp-content/uploads/2017/07/1500115530.png)
+
+这里需要注意一点：java将String设计成不可改变的对象，即一旦String对象包含的字面值发生改变，java就会新建一个对象，并将变量指向新的对象。
+
+### 4.StringBuilder
+
+    public void change(StringBuilder builder01) {
+            builder01.append(" World!");
+        }
+    
+        @Test
+        public void testStringBuilder() {
+            StringBuilder builder = new StringBuilder("Hello");
+            change(builder);
+            System.out.println(builder);
+        }
+
+实际输出：Hello World!
+
+在参数传递完成以后，builder01变量获得builder变量的一个副本，副本与原始变量指向堆中同一个对象：
+
+![](/wp-content/uploads/2017/07/1500115531.png)
+
+在方法内部，变量builder没有指向新的对象，依然与builder指向同一对象，所以当builder访问堆中同一对象时，数据发生改变：
+
+![](/wp-content/uploads/2017/07/15001155311.png)
+
+### 5.自定义类型
+
+    public class MyInner {
+        public int a;
+    }
+    
+    public class Test{
+    
+        public void change(MyInner in01) {
+            in01.a = 1;
+        }
+    
+        @Test
+        public void testDemain() {
+            MyInner in = new MyInner();
+            in.a = 9;
+            change(in);
+            System.out.println(in.a);
+        }
+    
+    }
+
+实际输出：1
+
+执行过程同StringBuilder执行过程相同，这里不再赘述。下面对上面的代码做一点改动，如下：
+
+    public class MyInner {
+        public int a;
+    }
+    
+    public class Test{
+    
+        public void change(MyInner in01) {
+            in01=new MyInner();//使in01指向一个新的对象
+            in01.a = 1;
+        }
+    
+        @Test
+        public void testDemain() {
+            MyInner in = new MyInner();
+            in.a = 9;
+            change(in);
+            System.out.println(in.a);
+        }
+    
+    }
+
+实际输出：9
+
+参数传递完成时，in01与in指向同一个对象，in01对对象的操作等同于in对对象的操作，接着在方法内部执行”in01=new MyInner();”，这样in01就指向了一个新的对象，in01所有的操作都与in无关了：
+
+![](/wp-content/uploads/2017/07/15001155312.png)
+
+综合以上的运行结果与分析，可知java参数传递方式符合值传递。
+
+## 三 引用传递
+
+### 1.什么是引用传递？
+
+将变量自身的内存地址传入方法中，方法中的变量指向方法外的变量，在方法中对变量的操作就是对方法外变量 的操作 *。*
+
+### 2.自定义类型
+
+    public class MyInner {
+        public int a;
+    }
+    
+    public class Test{
+    
+        public void change(MyInner in01) {
+            in01=new MyInner();//使in01指向一个新的对象
+            in01.a = 1;
+        }
+    
+        @Test
+        public void testDemain() {
+            MyInner in = new MyInner();
+            in.a = 9;
+            change(in);
+            System.out.println(in.a);
+        }
+    
+    }
+
+实际输出：9
+
+ 如果采用引用传递，传递完成以后，in01指向in，对in01的操作就是对in的操作，in01指向对象2，那么in也指向对象2，输出1，与实际不符，所以 **不是采用引用传递** 。 
+
+![](/wp-content/uploads/2017/07/1500115532.png)
+
+不再一一分析其他变量类型，分析后可以发现，java在传递参数时采用的**不是引用传递，而是值传递。**
+
+#### 简单讲，值传递时方法内外是两个拥有同一指向的变量，引用传递时方法内外是同一个变量。
+
+**本文永久更新链接地址** ： [http://www.linuxidc.com/Linux/2017-07/145711.htm](http://www.jfox.info/go.php?url=http://www.linuxidc.com/Linux/2017-07/../../Linux/2017-07/145711.htm)
+{% endraw %}

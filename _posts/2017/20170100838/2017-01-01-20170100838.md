@@ -1,0 +1,183 @@
+---
+layout: post
+title:  "SpringMvc接收参数"
+title2:  "SpringMvc接收参数"
+date:   2017-01-01 23:48:58  +0800
+source:  "http://www.jfox.info/springmvc-jie-shou-can-shu.html"
+fileName:  "20170100838"
+lang:  "zh_CN"
+published: true
+permalink: "springmvc-jie-shou-can-shu.html"
+---
+{% raw %}
+public ModelAndView test1(HttpServletRequest req){ 
+ 
+
+  String userName = req.getParameter(“userName”); 
+ 
+
+  String password = req.getParameter(“password”); 
+ 
+
+  System.out.println(userName); 
+ 
+
+  System.out.println(password); 
+ 
+
+  return new ModelAndView(“jsp/hello”); 
+ 
+
+  } 
+ 
+
+  2.@RequestParam方式 
+ 
+
+  public ModelAndView test2(String userName, 
+ 
+
+  @RequestParam(“password”) String pwd){ 
+ 
+
+  System.out.println(userName+”,”+pwd); 
+ 
+
+  return new ModelAndView(“jsp/hello”); 
+ 
+
+  } 
+ 
+ 
+ 
+   3.对象的方式接收 
+  
+ 
+   public ModelAndView test3(User user){ 
+  
+ 
+   System.out.println(user); 
+  
+ 
+   return new ModelAndView(“jsp/hello”); 
+  
+ 
+   } 
+  
+ 
+   4. 
+  
+ 
+   /** 
+  
+ 
+   * 使用ModelAndView传出参数 内部 HttpServletRequest的Attribute传递 到jsp页面 
+  
+ 
+   　　　* ModelAndView(String viewName,Map data)data是处理结果 
+  
+ 
+   */ 
+  
+ 
+   @RequestMapping(“action”) 
+  
+ 
+   public ModelAndView test4(User user){ 
+  
+ 
+   Map data = new HashMap(); 
+  
+ 
+   data.put(“user”, user); 
+  
+ 
+   return new ModelAndView(“jsp/hello”,data); 
+  
+ 
+   } 
+  
+ 
+   5. Session的方式 
+  
+ 
+   /** 
+  
+ 
+   * session存储 可以使用HttpServletRequest的getSession方法访问 
+  
+ 
+   */ 
+  
+ 
+   @RequestMapping(“action”) 
+  
+ 
+   public ModelAndView test7(HttpServletRequest req){ 
+  
+ 
+   HttpSession session = req.getSession(); 
+  
+ 
+   session.setAttribute(“salary”, 6000.0); 
+  
+ 
+   return new ModelAndView(“jsp/hello”); 
+  
+ 
+   } 
+  
+ 
+   6.重定向: 
+  
+ 
+   @RequestMapping(“/updateitem”) 
+  
+ 
+   //spirngMvc可以直接接收pojo类型:要求页面上input框的name属性名称必须等于pojo的属性名称 
+  
+ 
+   public ModelAndView updateitem(Items items){ 
+  
+ 
+   itemsService.updateitems(items); 
+  
+ 
+   //不可以加斜杠 解析不了 itemList.action 
+  
+ 
+   return new ModelAndView(new RedirectView(“itemList.action”)); 
+  
+ 
+   } 
+  
+ 
+   7.重定向 
+  
+ 
+   @RequestMapping(“/updateitem”) 
+  
+ 
+   //spirngMvc可以直接接收pojo类型:要求页面上input框的name属性名称必须等于pojo的属性名称 
+  
+ 
+   public String updateitem(Items items){ 
+  
+ 
+   itemsService.updateitems(items); 
+  
+ 
+   //重定向到action 可以加斜杠 redirect:/itemList.action 解析的了 
+  
+ 
+   return “redirect:itemList.action”; 
+  
+ 
+   } 
+  
+  
+  
+使用Model和ModelMap的效果一样，如果直接使用Model，springmvc会实例化ModelMap。
+
+如果使用Model则可以不使用ModelAndView对象，Model对象可以向页面传递数据，View对象则可以使用String返回值替代。不管是Model还是ModelAndView，其本质都是使用Request对象向jsp传递数据。
+{% endraw %}

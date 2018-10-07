@@ -174,5 +174,159 @@ Service Consumer本质上也是一个Eureka Client（它也会向Eureka Server�
 
 实际开发Eureka的过程中，有时会遇见Service Consumer获取到Server Provider的信息有延迟，在Eureka Wiki中有这么一段话:
 
-All operations from Eureka client may take s
+All operations from Eureka client may take some time to reflect in the Eureka servers and subsequently in other Eureka clients. This is because of the caching of the payload on the eureka server which is refreshed periodically to reflect new information. Eureka clients also fetch deltas periodically. Hence, it may take up to 2 mins for changes to propagate to all Eureka clients.
+
+最后一句话提到，服务端的更改可能需要2分钟才能传播到所有客户端，至于原因并没有介绍。这是因为Eureka有三处缓存和一处延迟造成的。
+
+Eureka Server对注册列表进行缓存，默认时间为30s。
+
+Eureka Client对获取到的注册信息进行缓存，默认时间为30s。
+
+Ribbon会从上面提到的Eureka Client获取服务列表，将负载均衡后的结果缓存30s。
+
+如果不是在Spring Cloud环境下使用这些组件(Eureka, Ribbon)，服务启动后并不会马上向Eureka注册，而是需要等到第一次发送心跳请求时才会注册。心跳请求的发送间隔默认是30s。Spring Cloud对此做了修改，服务启动后会马上注册。
+
+基于Service Consumer获取到的服务实例信息，我们就可以进行服务调用了。而Spring Cloud也为Service Consumer提供了丰富的服务调用工具：
+
+Ribbon，实现客户端的负载均衡。
+
+Hystrix，断路器。
+
+Feign，RESTful Web Service客户端，整合了Ribbon和Hystrix。
+
+接下来我们就一一介绍。
+
+3.2 服务调用端负载均衡——Ribbon
+
+Ribbon是Netflix发布的开源项目，主要功能是为REST客户端实现负载均衡。它主要包括六个组件：
+
+ServerList，负载均衡使用的服务器列表。这个列表会缓存在负载均衡器中，并定期更新。当Ribbon与Eureka结合使用时，ServerList的实现类就是DiscoveryEnabledNIWSServerList，它会保存Eureka Server中注册的服务实例表。
+
+ServerListFilter，服务器列表过滤器。这是一个接口，主要用于对Service Consumer获取到的服务器列表进行预过滤，过滤的结果也是ServerList。Ribbon提供了多种过滤器的实现。
+
+IPing，探测服务实例是否存活的策略。
+
+IRule，负载均衡策略，其实现类表述的策略包括：轮询、随机、根据响应时间加权等。
+
+我们也可以自己定义负载均衡策略，比如我们就利用自己实现的策略，实现了服务的版本控制和直连配置。实现好之后，将实现类重新注入到Ribbon中即可。
+
+ILoadBalancer，负载均衡器。这也是一个接口，Ribbon为其提供了多个实现，比如ZoneAwareLoadBalancer。而上层代码通过调用其API进行服务调用的负载均衡选择。一般ILoadBalancer的实现类中会引用一个IRule。
+
+RestClient，服务调用器。顾名思义，这就是负载均衡后，Ribbon向Service Provider发起REST请求的工具。
+
+Ribbon工作时会做四件事情：
+
+优先选择在同一个Zone且负载较少的Eureka Server；
+
+定期从Eureka更新并过滤服务实例列表；
+
+根据用户指定的策略，在从Server取到的服务注册列表中选择一个实例的地址；
+
+通过RestClient进行服务调用。
+
+3.3 服务调用端熔断——Hystrix
+
+Netflix创建了一个名为Hystrix的库,实现了断路器的模式。“断路器”本身是一种开关装置，当某个服务单元发生故障之后，通过断路器的故障监控（类似熔断保险丝），向调用方返回一个符合预期的、可处理的备选响应（FallBack），而不是长时间的等待或者抛出调用方无法处理的异常，这样就保证了服务调用方的线程不会被长时间、不必要地占用，从而避免了故障在分布式系统中的蔓延，乃至雪崩。
+
+![](/wp-content/uploads/2017/08/1501770388.png)
+
+当然，在请求失败频率较低的情况下，Hystrix还是会直接把故障返回给客户端。只有当失败次数达到阈值（默认在20秒内失败5次）时，断路器打开并且不进行后续通信，而是直接返回备选响应。当然，Hystrix的备选响应也是可以由开发者定制的。HystrixFallback.png
+
+![](/wp-content/uploads/2017/08/1501770390.png)
+
+除了隔离依赖服务的调用以外，Hystrix还提供了准实时的调用监控（Hystrix Dashboard），Hystrix会持续地记录所有通过Hystrix发起的请求的执行信息，并以统计报表和图形的形式展示给用户，包括每秒执行多少请求多少成功，多少失败等。Netflix通过hystrix-metrics-event-stream项目实现了对以上指标的监控。Spring Cloud也提供了Hystrix Dashboard的整合，对监控内容转化成可视化界面，Hystrix Dashboard Wiki上详细说明了图上每个指标的含义。
+
+![](/wp-content/uploads/2017/08/15017703901.png)
+
+3.4 服务调用端代码抽象和封装——Feign
+
+Feign是一个声明式的Web Service客户端，它的目的就是让Web Service调用更加简单。它整合了Ribbon和Hystrix，从而让我们不再需要显式地使用这两个组件。Feign还提供了HTTP请求的模板，通过编写简单的接口和插入注解，我们就可以定义好HTTP请求的参数、格式、地址等信息。接下来，Feign会完全代理HTTP的请求，我们只需要像调用方法一样调用它就可以完成服务请求。
+
+Feign具有如下特性：
+
+可插拔的注解支持，包括Feign注解和JAX-RS注解
+
+支持可插拔的HTTP编码器和解码器
+
+支持Hystrix和它的Fallback
+
+支持Ribbon的负载均衡
+
+支持HTTP请求和响应的压缩
+
+以下是一个Feign的简单示例：
+
+@SpringBootApplication
+
+@EnableDiscoveryClient //启用Feign
+
+@EnableFeignClients
+
+public class Application
+
+{
+
+public static void main(String[] args)
+
+{
+
+SpringApplication.run(Application.class, args);
+
+}
+
+}
+
+@FeignClient(name = “elements”, fallback = ElementsFallback.class) //指定feign调用的服务和Hystrix Fallback（name即eureka的application name）
+
+public interface Elements
+
+{
+
+@RequestMapping(value = “/index”)
+
+String index();
+
+}
+
+//Hystrix Fallback
+
+@Component
+
+public class ElementsFallback implements Elements
+
+{
+
+@Override
+
+public String index()
+
+{
+
+return “**************”;
+
+}
+
+}
+
+//测试类
+
+@Component
+
+public class TestController {
+
+@Autowired
+
+Elements elements;
+
+@RequestMapping(value = “/testEureka”, method = RequestMethod.GET)
+
+public String testeureka()
+
+{
+
+return elements.index();
+
+}
+
+}
 {% endraw %}

@@ -1,0 +1,136 @@
+---
+layout: post
+title:  "Java的Fork/Join任务"
+title2:  "Java的ForkJoin任务"
+date:   2017-01-01 23:57:06  +0800
+source:  "http://www.jfox.info/java%e7%9a%84forkjoin%e4%bb%bb%e5%8a%a1.html"
+fileName:  "20170101326"
+lang:  "zh_CN"
+published: true
+permalink: "java%e7%9a%84forkjoin%e4%bb%bb%e5%8a%a1.html"
+---
+{% raw %}
+H2M_LI_HEADER 
+a . Fork/Join为JKD1.7引入，适用于对大量数据进行拆分成多个小任务进行计算的框架，最后把所有小任务的结果汇总合并得到最终的结果
+
+H2M_LI_HEADER 
+b . 相关类
+
+    public abstract class RecursiveTask<V> extends ForkJoinTask<V>;
+    public abstract class RecursiveAction extends ForkJoinTask<Void>;
+
+H2M_LI_HEADER 
+c . 其中RecursiveTask在执行有返回值的任务时使用，RecursiveAction在执行没有返回值的任务时使用
+
+H2M_LI_HEADER 
+## 2 . 示例代码
+
+    package com.evans;
+    
+    import com.sun.istack.internal.NotNull;
+    
+    import java.util.ArrayList;
+    import java.util.List;
+    import java.util.concurrent.*;
+    
+    /**
+     * Created by Evans
+     */
+    public class SumTask extends RecursiveTask <Long> {
+        //默认任务计算限制
+        private int taskSize=100;
+        //局部变量
+        private List<Integer> sumList;
+    
+        public SumTask(@NotNull List<Integer> list) {
+            this.sumList=list;
+        }
+    
+        public SumTask(@NotNull int taskSize,@NotNull List<Integer> list) {
+            this.taskSize = taskSize;
+            this.sumList=list;
+        }
+    
+        @Override
+        protected Long compute() {
+            if(this.sumList.size()<=this.taskSize){
+                //若集合数量小于限制值则直接计算
+                long sum = 0;
+                for(Integer item :this.sumList){
+                    sum += item;
+                }
+                System.out.println(String.format("Sum List[%d] = %d", this.sumList.size(), sum));
+                return sum;
+            }
+            // 任务大于限制值,则一分为二:
+            int middle = (this.sumList.size()) / 2;
+            System.out.println(String.format("Split Task List[%d] ==> List[%d], List[%d]", this.sumList.size(), this.sumList.size()-middle,middle));
+            SumTask subTask1 = new SumTask(this.taskSize,this.sumList.subList(0,middle));
+            SumTask subTask2 = new SumTask(this.taskSize,this.sumList.subList(middle,this.sumList.size()));
+            invokeAll(subTask1, subTask2);
+            Long subResult1 = subTask1.join();
+            Long subResult2 = subTask2.join();
+            Long result = subResult1 + subResult2;
+            System.out.println("Sum Split Task Result = " + subResult1 + " + " + subResult2 + " ==> " + result);
+            return result;
+        }
+    
+        public static void main(String[] args) {
+            //获取当前系统CPU核数
+            int coreNumber = Runtime.getRuntime().availableProcessors();
+            List<Integer> originalList = new ArrayList<>();
+            for(int i=0;i<100;i++){
+                originalList.add(i);
+            }
+            ForkJoinPool forkJoinPool = new ForkJoinPool(coreNumber);
+            ForkJoinTask<Long> task = new SumTask(10, originalList);
+            long startTime = System.currentTimeMillis();
+            Long result = 0L;
+            //等待结果返回
+            result=forkJoinPool.invoke(task);
+            //使用Future 获取结果
+    //        Future<Long> future = forkJoinPool.submit(task);
+    //        try {
+    //            result= future.get();
+    //        } catch (InterruptedException e) {
+    //            e.printStackTrace();
+    //        } catch (ExecutionException e) {
+    //            e.printStackTrace();
+    //        }
+            long endTime = System.currentTimeMillis();
+            System.out.println("Sum Task Result : " + result + " Cost Time : " + (endTime - startTime) + " ms.");
+            forkJoinPool.shutdown();
+        }
+    }
+
+控制台输出
+
+    Split Task List[100] ==> List[50], List[50]
+    Sum List[50] = 3725
+    Sum List[50] = 1225
+    Sum Split Task Result = 1225 + 3725 ==> 4950
+    Sum Task Result : 4950 Cost Time : 18 ms.
+
+H2M_LI_HEADER 
+## 3 . 备注
+
+- 
+a .在有大量计算任务时，此框架方法可进行并行计算效率高，以上示例，可以根据具体的业务需求更改属性及相关方法用于匹配自己的业务逻辑
+
+- 
+b .JDK1.8后由于加入Stream流的操作,集合框架可以使用Collection<E> default Stream<E> parallelStream()的方法转换成并行流进行计算，此时效果与Fork/Join任务同效。
+
+- 
+c .ForkJoinPool中的多种方法
+
+    public <T> ForkJoinTask<T> submit(ForkJoinTask<T> task);//等待获取结果
+    public void execute(ForkJoinTask<?> task);//异步执行
+    public <T> T invoke(ForkJoinTask<T> task);//执行,获取Future
+
+- 
+d .ForkJoinTask在执行的时候可能会抛出异常，但是没办法在主线程里直接捕获异常，所以ForkJoinTask提供了isCompletedAbnormally()方法来检查任务是否已经抛出异常或已经被取消了，并且可以通过ForkJoinTask的getException方法获取异常。getException方法返回Throwable对象，如果任务被取消了则返回CancellationException。如果任务没有完成或者没有抛出异常则返回null。
+
+    if(task.isCompletedAbnormally()) {
+        System.out.println(task.getException());
+    }
+{% endraw %}

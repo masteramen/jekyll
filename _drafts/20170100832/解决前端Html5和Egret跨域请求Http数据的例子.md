@@ -1,0 +1,224 @@
+---
+layout: post
+title:  "解决前端Html5和Egret跨域请求Http数据的例子"
+title2:  "解决前端Html5和Egret跨域请求Http数据的例子"
+date:   2017-01-01 23:48:52  +0800
+source:  "http://www.jfox.info/jie-jue-qian-duan-html5-he-egret-kua-yu-qing-qiu-http-shu-ju-de-li-zi.html"
+fileName:  "20170100832"
+lang:  "zh_CN"
+published: true
+permalink: "jie-jue-qian-duan-html5-he-egret-kua-yu-qing-qiu-http-shu-ju-de-li-zi.html"
+---
+{% raw %}
+By Lee - Last updated: 星期五, 六月 9, 2017
+
+最近在做平台的接入，需要做一些像其他web服务器请求相关数据的功能。那么就遇到了一个跨域请求网络数据的问题了。这里记录一下相关的解决方案。
+
+1. 最主要是服务端支持服，返回的时候必须增加一个Header
+
+    AddHeader("Access-Control-Allow-Origin","*");
+
+实际部署的时候，* 应该修改为指定的域名 
+2. 客户端使用XMLHttpRequest，但是也要增加一个Header
+
+    setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=UTF-8");
+
+后面看具体的使用例子了。
+
+## 二、使用XMLHttpRequest
+
+    var XMLHttp = new XMLHttpRequest();
+    XMLHttp.withCredentials = false;  //不用认证 
+    XMLHttp.onreadystatechange = function() {if(XMLHttp.readyState === 4)  //4表示准备完成
+        {
+            if(XMLHttp.status === 200)  //200表示回调成功
+            {
+                console.log(XMLHttp.responseText);
+                //返回的数据,这里返回的是json格式数据var result = JSON.parse(XMLHttp.responseText); 
+                if(result.errorCode == 0)
+                {   
+                    //处理实际的返回数据
+                }
+                else
+                {
+                    alert(result.errorMessage);
+                }
+            }   
+            else 
+            {   
+                alert("Request was failure: " + XMLHttp.status);
+            }
+        }
+    };
+    //测试urlvar url = 'http://192.168.0.166:8080/game/cmgeLogin';
+    XMLHttp.open('POST', url, true); //post传递//使用 XMLHttp 来模仿表单提交，加一个请求头部。
+    XMLHttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=UTF-8");
+    XMLHttp.send();  //发送数据
+
+如果是老版本的ID，还得做兼容的检测
+
+    getXmlHttpRequest = function() {if (window.XMLHttpRequest) 
+        {           
+            //主流浏览器提供了XMLHttpRequest对象returnnew XMLHttpRequest();   
+        } 
+        elseif (window.ActiveXObject) 
+        {   
+            //低版本的IE浏览器没有提供XMLHttpRequest对象//所以必须使用IE浏览器的特定实现ActiveXObjectreturnnew ActiveXObject("Microsoft.XMLHttpRequest");
+        }
+    };  
+
+## 三、使用白鹭的API
+
+使用Egret自己封装的RES就非常简洁了，普通页面返回文本
+
+    RES.getResByUrl(url,function(data:string):void {
+        console.log(data);
+    },this,RES.ResourceItem.TYPE_TEXT);
+
+处理返回json格式的结果
+
+    RES.getResByUrl(url,function(data:Object):void {
+        console.log(data);
+    },this,RES.ResourceItem.TYPE_JSON);
+    
+
+使用egret.URLLoader
+
+    var url:string = this.config.loginUrl;
+    //请求登录服务器this.loginLoader = new egret.URLLoader();
+    this.loginLoader.dataFormat = egret.URLLoaderDataFormat.TEXT;
+    var request:egret.URLRequest = new egret.URLRequest();
+    request.requestHeaders = [new egret.URLRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=UTF-8")];
+    request.url = this.config.loginUrl + "?gameUID=sword&channelUID=cmge&cmgePlayerId=lgl123321&loginTime=1496741695&sign=23456789";
+    this.loginLoader.addEventListener(egret.Event.COMPLETE,function(evt:egret.Event):void {var data:string = this.loginLoader.data;
+        console.log(data);
+    },this);
+    this.loginLoader.load(request);
+
+也可以使用白鹭的HttpRequest
+
+    var httpRequest:egret.HttpRequest = new egret.HttpRequest();
+    httpRequest.responseType = egret.HttpResponseType.TEXT;
+    httpRequest.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=UTF-8");
+    httpRequest.addEventListener(egret.Event.COMPLETE,function(evt:egret.Event):void {var data:string = httpRequest.response;
+         console.log(data);
+    },this);
+    httpRequest.open("http://192.168.0.166:8080/game/cmgeLogin",egret.HttpMethod.POST);
+    httpRequest.send();
+
+这里要注意的是，必须增加一个RequestHeader，也就是
+
+    "Content-Type", "application/x-www-form-urlencoded;charset=UTF-8"
+
+否则会提示下面的错误的:
+
+    XMLHttpRequest cannot loadhttp://192.168.0.166:8080/game/cmgeLogin. No 'Access-Control-Allow-Origin' header is present ontherequestedresource. Origin'http://localhost:63342'isthereforenotallowedaccess. TheresponsehadHTTPstatuscode400.
+    Uncaught Error: #1011: 流错误。URL: http://192.168.0.166:8080/game/cmgeLogin_error    
+      (anonymous function) 
+
+基本上，Egret所封装的api足够使用得我们去从其他的web服务器获取所需要的数据了。最近在做平台的接入，需要做一些像其他web服务器请求相关数据的功能。那么就遇到了一个跨域请求网络数据的问题了。这里记录一下相关的解决方案。
+
+1. 最主要是服务端支持服，返回的时候必须增加一个Header
+
+    AddHeader("Access-Control-Allow-Origin","*");
+
+实际部署的时候，* 应该修改为指定的域名 
+2. 客户端使用XMLHttpRequest，但是也要增加一个Header
+
+    setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=UTF-8");
+
+后面看具体的使用例子了。
+
+## 二、使用XMLHttpRequest
+
+    var XMLHttp = new XMLHttpRequest();
+    XMLHttp.withCredentials = false;  //不用认证 
+    XMLHttp.onreadystatechange = function() {if(XMLHttp.readyState === 4)  //4表示准备完成
+        {
+            if(XMLHttp.status === 200)  //200表示回调成功
+            {
+                console.log(XMLHttp.responseText);
+                //返回的数据,这里返回的是json格式数据var result = JSON.parse(XMLHttp.responseText); 
+                if(result.errorCode == 0)
+                {   
+                    //处理实际的返回数据
+                }
+                else
+                {
+                    alert(result.errorMessage);
+                }
+            }   
+            else 
+            {   
+                alert("Request was failure: " + XMLHttp.status);
+            }
+        }
+    };
+    //测试urlvar url = 'http://192.168.0.166:8080/game/cmgeLogin';
+    XMLHttp.open('POST', url, true); //post传递//使用 XMLHttp 来模仿表单提交，加一个请求头部。
+    XMLHttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=UTF-8");
+    XMLHttp.send();  //发送数据
+
+如果是老版本的ID，还得做兼容的检测
+
+    getXmlHttpRequest = function() {if (window.XMLHttpRequest) 
+        {           
+            //主流浏览器提供了XMLHttpRequest对象returnnew XMLHttpRequest();   
+        } 
+        elseif (window.ActiveXObject) 
+        {   
+            //低版本的IE浏览器没有提供XMLHttpRequest对象//所以必须使用IE浏览器的特定实现ActiveXObjectreturnnew ActiveXObject("Microsoft.XMLHttpRequest");
+        }
+    };  
+
+## 三、使用白鹭的API
+
+使用Egret自己封装的RES就非常简洁了，普通页面返回文本
+
+    RES.getResByUrl(url,function(data:string):void {
+        console.log(data);
+    },this,RES.ResourceItem.TYPE_TEXT);
+
+处理返回json格式的结果
+
+    RES.getResByUrl(url,function(data:Object):void {
+        console.log(data);
+    },this,RES.ResourceItem.TYPE_JSON);
+    
+
+使用egret.URLLoader
+
+    var url:string = this.config.loginUrl;
+    //请求登录服务器this.loginLoader = new egret.URLLoader();
+    this.loginLoader.dataFormat = egret.URLLoaderDataFormat.TEXT;
+    var request:egret.URLRequest = new egret.URLRequest();
+    request.requestHeaders = [new egret.URLRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=UTF-8")];
+    request.url = this.config.loginUrl + "?gameUID=sword&channelUID=cmge&cmgePlayerId=lgl123321&loginTime=1496741695&sign=23456789";
+    this.loginLoader.addEventListener(egret.Event.COMPLETE,function(evt:egret.Event):void {var data:string = this.loginLoader.data;
+        console.log(data);
+    },this);
+    this.loginLoader.load(request);
+
+也可以使用白鹭的HttpRequest
+
+    var httpRequest:egret.HttpRequest = new egret.HttpRequest();
+    httpRequest.responseType = egret.HttpResponseType.TEXT;
+    httpRequest.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=UTF-8");
+    httpRequest.addEventListener(egret.Event.COMPLETE,function(evt:egret.Event):void {var data:string = httpRequest.response;
+         console.log(data);
+    },this);
+    httpRequest.open("http://192.168.0.166:8080/game/cmgeLogin",egret.HttpMethod.POST);
+    httpRequest.send();
+
+这里要注意的是，必须增加一个RequestHeader，也就是
+
+    "Content-Type", "application/x-www-form-urlencoded;charset=UTF-8"
+
+否则会提示下面的错误的:
+
+    XMLHttpRequest cannot loadhttp://192.168.0.166:8080/game/cmgeLogin. No 'Access-Control-Allow-Origin' header is present ontherequestedresource. Origin'http://localhost:63342'isthereforenotallowedaccess. TheresponsehadHTTPstatuscode400.
+    Uncaught Error: #1011: 流错误。URL: http://192.168.0.166:8080/game/cmgeLogin_error    
+      (anonymous function) 
+
+基本上，Egret所封装的api足够使用得我们去从其他的web服务器获取所需要的数据了。
+{% endraw %}

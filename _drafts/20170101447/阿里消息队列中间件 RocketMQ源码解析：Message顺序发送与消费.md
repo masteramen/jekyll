@@ -638,5 +638,144 @@ permalink: "%e9%98%bf%e9%87%8c%e6%b6%88%e6%81%af%e9%98%9f%e5%88%97%e4%b8%ad%e9%9
     142:         MessageAccessor.setProperties(newMsg, msg.getProperties());
     143:         MessageAccessor.putProperty(newMsg, MessageConst.PROPERTY_RETRY_TOPIC, msg.getTopic());
     144:         MessageAccessor.setReconsumeTime(newMsg, String.valueOf(msg.getReconsumeTimes()));
-    1
+    145:         MessageAccessor.setMaxReconsumeTimes(newMsg, String.valueOf(getMaxReconsumeTimes()));
+    146:         newMsg.setDelayTimeLevel(3 + msg.getReconsumeTimes());
+    147: 
+    148:         this.defaultMQPushConsumer.getDefaultMQPushConsumerImpl().getmQClientFactory().getDefaultMQProducer().send(newMsg);
+    149:         return true;
+    150:     } catch (Exception e) {
+    151:         log.error("sendMessageBack exception, group: " + this.consumerGroup + " msg: " + msg.toString(), e);
+    152:     }
+    153: 
+    154:     return false;
+    155: }
+
+- ⬆️⬆️⬆️
+- 第 21 至 29 行 ：消费成功。在自动提交进度( `AutoCommit` )的情况下，`COMMIT`、`ROLLBACK`、`SUCCESS` 逻辑**已经统一**。
+- 第 30 至 45 行 ：消费失败。当消息重试次数超过上限（默认 ：16次）时，将消息发送到 `Broker` 死信队列，跳过这些消息。此时，消息队列无需挂起，继续消费后面的消息。
+- 第 85 至 88 行 ：提交消费进度。
+
+### 3.13 消息处理队列核心方法
+
+😈涉及到的四个核心方法的源码：
+
+      1: // ⬇️⬇️⬇️【ProcessQueue.java】
+      2: /**
+      3:  * 消息映射
+      4:  * key：消息队列位置
+      5:  */
+      6: private final TreeMap<Long, MessageExt> msgTreeMap = new TreeMap<>();    /**
+      7:  * 消息映射临时存储（消费中的消息）
+      8:  */
+      9: private final TreeMap<Long, MessageExt> msgTreeMapTemp = new TreeMap<>();
+     10: 
+     11: /**
+     12:  * 回滚消费中的消息
+     13:  * 逻辑类似于{@link #makeMessageToCosumeAgain(List)}
+     14:  */
+     15: public void rollback() {
+     16:     try {
+     17:         this.lockTreeMap.writeLock().lockInterruptibly();
+     18:         try {
+     19:             this.msgTreeMap.putAll(this.msgTreeMapTemp);
+     20:             this.msgTreeMapTemp.clear();
+     21:         } finally {
+     22:             this.lockTreeMap.writeLock().unlock();
+     23:         }
+     24:     } catch (InterruptedException e) {
+     25:         log.error("rollback exception", e);
+     26:     }
+     27: }
+     28: 
+     29: /**
+     30:  * 提交消费中的消息已消费成功，返回消费进度
+     31:  *
+     32:  * @return 消费进度
+     33:  */
+     34: public long commit() {
+     35:     try {
+     36:         this.lockTreeMap.writeLock().lockInterruptibly();
+     37:         try {
+     38:             // 消费进度
+     39:             Long offset = this.msgTreeMapTemp.lastKey();
+     40: 
+     41:             //
+     42:             msgCount.addAndGet(this.msgTreeMapTemp.size() * (-1));
+     43: 
+     44:             //
+     45:             this.msgTreeMapTemp.clear();
+     46: 
+     47:             // 返回消费进度
+     48:             if (offset != null) {
+     49:                 return offset + 1;
+     50:             }
+     51:         } finally {
+     52:             this.lockTreeMap.writeLock().unlock();
+     53:         }
+     54:     } catch (InterruptedException e) {
+     55:         log.error("commit exception", e);
+     56:     }
+     57: 
+     58:     return -1;
+     59: }
+     60: 
+     61: /**
+     62:  * 指定消息重新消费
+     63:  * 逻辑类似于{@link #rollback()}
+     64:  *
+     65:  * @param msgs 消息
+     66:  */
+     67: public void makeMessageToCosumeAgain(List<MessageExt> msgs) {
+     68:     try {
+     69:         this.lockTreeMap.writeLock().lockInterruptibly();
+     70:         try {
+     71:             for (MessageExt msg : msgs) {
+     72:                 this.msgTreeMapTemp.remove(msg.getQueueOffset());
+     73:                 this.msgTreeMap.put(msg.getQueueOffset(), msg);
+     74:             }
+     75:         } finally {
+     76:             this.lockTreeMap.writeLock().unlock();
+     77:         }
+     78:     } catch (InterruptedException e) {
+     79:         log.error("makeMessageToCosumeAgain exception", e);
+     80:     }
+     81: }
+     82: 
+     83: /**
+     84:  * 获得持有消息前N条
+     85:  *
+     86:  * @param batchSize 条数
+     87:  * @return 消息
+     88:  */
+     89: public List<MessageExt> takeMessags(final int batchSize) {
+     90:     List<MessageExt> result = new ArrayList<>(batchSize);
+     91:     final long now = System.currentTimeMillis();
+     92:     try {
+     93:         this.lockTreeMap.writeLock().lockInterruptibly();
+     94:         this.lastConsumeTimestamp = now;
+     95:         try {
+     96:             if (!this.msgTreeMap.isEmpty()) {
+     97:                 for (int i = 0; i < batchSize; i++) {
+     98:                     Map.Entry<Long, MessageExt> entry = this.msgTreeMap.pollFirstEntry();
+     99:                     if (entry != null) {
+    100:                         result.add(entry.getValue());
+    101:                         msgTreeMapTemp.put(entry.getKey(), entry.getValue());
+    102:                     } else {
+    103:                         break;
+    104:                     }
+    105:                 }
+    106:             }
+    107: 
+    108:             if (result.isEmpty()) {
+    109:                 consuming = false;
+    110:             }
+    111:         } finally {
+    112:             this.lockTreeMap.writeLock().unlock();
+    113:         }
+    114:     } catch (InterruptedException e) {
+    115:         log.error("take Messages exception", e);
+    116:     }
+    117: 
+    118:     return result;
+    119: }
 {% endraw %}

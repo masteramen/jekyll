@@ -1,0 +1,191 @@
+---
+layout: post
+title:  "Java的三大特性总结"
+title2:  "Java的三大特性总结"
+date:   2017-01-01 23:52:16  +0800
+source:  "http://www.jfox.info/java%e7%9a%84%e4%b8%89%e5%a4%a7%e7%89%b9%e6%80%a7%e6%80%bb%e7%bb%93.html"
+fileName:  "20170101036"
+lang:  "zh_CN"
+published: true
+permalink: "java%e7%9a%84%e4%b8%89%e5%a4%a7%e7%89%b9%e6%80%a7%e6%80%bb%e7%bb%93.html"
+---
+{% raw %}
+在Java中，面向对象编程有三大特性：**封装**、**继承**、**多态**。
+
+先来说说封装。
+
+**封装**，顾名思义，就是通过抽象数据类型（即ADT，一种为了将数据类型和可能在该数据类型上进行操作而定义的）将数据以及基于数据的操作封装在一起，使之成为独立的“实体”。
+
+首先先来看一个Person类：
+
+     1publicclass Person implements Comparable<Person> {
+     2private String firstname;
+     3private String lastname;
+     4 5public String getFirstname() {
+     6return firstname;
+     7    }
+     8 9publicvoid setFirstname(String firstname) {
+    10this.firstname = firstname;
+    11    }
+    1213public String getLastname() {
+    14return lastname;
+    15    }
+    1617publicvoid setLastname(String lastname) {
+    18this.lastname = lastname;
+    19    }
+    2021    @Override
+    22publicint hashCode() {
+    23int hash = 7;
+    24         hash = 83 * hash + Objects.hashCode(this.firstname);
+    25         hash = 83 * hash + Objects.hashCode(this.lastname);
+    26return hash;
+    27    }
+    2829    @Override
+    30publicboolean equals(Object obj) {
+    31//检查参数是否是这个对象的引用32if (this == obj) {
+    33returntrue;
+    34        }
+    35//检查参数是否是正确的类型36if (!(obj instanceof chapter5_reflect.Person)) {
+    37returnfalse;
+    38        }
+    39//将参数转换成正确的类型40         Person person = (Person) obj;
+    41//对实体域进行匹配42return Objects.equals(this.firstname, person.firstname)
+    43                 && Objects.equals(this.lastname, person.lastname);
+    44    }
+    4546    @Override
+    47publicint compareTo(Person o) {
+    48if (this == o) {
+    49return 0;
+    50        }
+    51if (null == o) {
+    52return 1;
+    53        }
+    54//先判断姓氏是否相同55int comparison = this.firstname.compareTo(o.firstname);
+    56if (comparison != 0) {
+    57return comparison;
+    58        }
+    59//姓氏相同则比较名60         comparison = this.lastname.compareTo(o.lastname);
+    61return comparison;
+    62    }
+    63 }
+
+对于封装的思想，我们需要尽可能的隐藏内部细节，只保留一些对外操作。
+
+例如在Person类中，我简单的定义了两个成员变量firstname和lastname，在setter方法里我们可以设置姓和名的一些格式，如首字母大写，其余小写来进行“格式化”，对外开放getter来获取变量的值。
+
+现来总结一下封装的优点：
+
+1.能够更好的把控成员变量，甚至是管理类的内部结构；
+
+2.良好的封装能够减少耦合，使得代码更加健壮；
+
+3.外部程序通过对外接口即可进行访问，无需关注实现细节。
+
+再谈**继承**。
+
+继承描述的是is-a的关系，它是复用代码的一种方式，思想就在于定义和实现了一个类的时候，可以在一个已存在的类上进行扩展，把已存在的类的内容作为自己的内容，同时可以加入新的内容或者修改原来的方法来适应不同的需求。
+
+下面来看两个例子：
+
+     1publicclass Person {
+     2 3private String name;
+     4private String sex;
+     5privateint age;
+     6 7     Person(String name, String sex, int age) {
+     8this.name = name;
+     9this.sex = sex;
+    10this.age = age;
+    11    }
+    1213//省略setter和getter方法...1437 }
+
+     1publicclass Yang extends Person {
+     2 3     Yang(String name, String sex, int age) {
+     4super(name, sex, age);
+     5    }
+     6 7public String getName() {
+     8returnsuper.getName() + " is " + "genius";
+     9    }
+    1011 }
+
+    1publicstaticvoid main(String... argc) {
+    2//        Yang yang = new Yang("yang", "male", 23);3         Person person = new Yang("yang", "male", 23);
+    4        out.print(person.getName());
+    5     }
+
+输出： yang is genius
+
+注意，如果父类没有默认的构造器，子类构造函数中需要指定父类的构造器，否则编译将会失败！
+
+从上面的代码中不得不引出关于继承的三大重要的东西，即**构造器**，**protected关键字**以及**向上转型**。
+
+我们知道，**构造器**是不能被继承的，只许被调用！需要注意的是，子类是依赖于父类的（这也说明了一个弊端，即继承是一种强耦合关系），子类拥有父类的非private属性和方法（弊端二：破坏了封装），所以父类应先于子类被创建。
+
+所以当父类没有默认构造器时，子类需要指定一个父类的构造器，并且写于子类构造器的第一行！当然父类有默认构造器，子类就无需super了，Java会自动调用。
+
+再说**protected关键字**。插一句，只有合理使用访问修饰符，程序才能更好的为我们服务！！
+
+对于子类，为了使用父类的方法，我们可以修改它的访问修饰符为protected，而不是一股脑儿的写上public！一劳永逸的做法可能会带来更大的危害！
+
+而对于类的成员变量，保持它的private！
+
+最后是**向上转型**了，它是一个重要的方面。从上面的的代码中，我写上了Person person = new Yang(“yang”, “male”, 23); 这样结果是将Yang向上转型为Person，带来的影响可能就是属性和方法的丢失，但是它将是安全的。
+
+同时它最大的作用是…..子类能够提供父类更加强大的功能以适用于不同的场合，完成不同的操作。
+
+不太清楚可以看看这两个： List<String> arrayList = new ArrayList<>(); 和 List<String> linkedList = new LinkedList<>();
+
+我们知道ArrayList是数组实现，查找更快；而LinkedList是链表实现，添加元素和删除元素效率更好！
+
+但是向上转型有一个弊端，指向子类的父类引用因为向上转型了，它将只拥有父类的属性和方法，同时子类拥有而父类没有的方法，是无法使用了的！
+
+所以，继承实现了软件的可重用性和可拓展性。但是Java是单继承的，并且继承也有多个弊端（上面有提），其实还有一个弊端是父类一旦改变，子类可能也得进行改变！所以慎用吧。
+
+最后一个特性是**多态**了。多态性就是不同的子类型可以对同一个请求做出不同的操作。同时多态性分为**编译时多态性**和**运行时多态性**，对应着**方法重载**overload和**方法重写**override！
+
+对于方法重写，存在在继承中。它作为运行时多态性的表现，首先需要子类继承和实现父类的方法，然后向上转型，父类引用子类对象，对同一件事作出不同的响应。
+
+方法重写时，需要注意的是子类的访问修饰符的访问范围不能小于父类，如父类的一个方法修饰符为protected，那么子类继承时，只能选用public或者protected。除了访问修饰符，其余完全相同于父类！
+
+对于方法重载，出现在同一个类中，它是编译时多态性的表现。定义为：同名的方法如果有不同的参数列表便视为重载。
+
+最后有一道经典的题目作为结尾，我也不知道出自哪….Look and think!
+
+     1publicclass A {
+     2 3public String show(D obj) {
+     4return ("Father and D");
+     5    }
+     6 7public String show(A obj) {
+     8return ("Father and Father");
+     9    }
+    10}
+    1112class B extends A {
+    1314public String show(B obj) {
+    15return ("Child and Child");
+    16    }
+    1718public String show(A obj) {
+    19return ("Child and Father");
+    20    }
+    21}
+    2223class C extends B {
+    24}
+    2526class D extends B {
+    27}
+    2829class Test {
+    30publicstaticvoid main(String[] args) {
+    31         A a1 = new A();
+    32         A a2 = new B();
+    33         B b = new B();
+    34         C c = new C();
+    35         D d = new D();
+    3637         System.out.println("1--" + a1.show(b));
+    38         System.out.println("2--" + a1.show(c));
+    39         System.out.println("3--" + a1.show(d));
+    40         System.out.println("4--" + a2.show(b));
+    41         System.out.println("5--" + a2.show(c));
+    42         System.out.println("6--" + a2.show(d));
+    43         System.out.println("7--" + b.show(b));
+    44         System.out.println("8--" + b.show(c));
+    45         System.out.println("9--" + b.show(d));
+    46    }
+    47 }
+{% endraw %}

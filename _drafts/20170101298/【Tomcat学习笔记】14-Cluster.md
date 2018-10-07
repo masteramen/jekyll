@@ -1,0 +1,42 @@
+---
+layout: post
+title:  "【Tomcat学习笔记】14-Cluster"
+title2:  "【Tomcat学习笔记】14-Cluster"
+date:   2017-01-01 23:56:38  +0800
+source:  "http://www.jfox.info/tomcat%e5%ad%a6%e4%b9%a0%e7%ac%94%e8%ae%b014cluster.html"
+fileName:  "20170101298"
+lang:  "zh_CN"
+published: true
+permalink: "tomcat%e5%ad%a6%e4%b9%a0%e7%ac%94%e8%ae%b014cluster.html"
+---
+{% raw %}
+Tomcat Cluster 这块代码较多，就不贴代码一步步看了，这里从更宏观的视角分析和总结一下。代码主要在 org.apache.catalina.ha 和 org.apache.catalina.tribes 两个package. ha这个package主要做了两件事，或者说Tomcat cluster 主要就做了这两件事：集群间 Session 同步 和 集群War部署。tribes 则是Tomcat 集群通讯模块。
+
+![](/wp-content/uploads/2017/07/1499954735.png)
+
+###  Tomcat集群搭建 
+
+可以采用Apacha或Ngnix + Tomcat的方式在自己机器上搭建一个简单的集群，这里不做详细介绍，只列一下Tomcat的配置，方便后面分析Tomcat源码。在本机配两个Tomcat实例的话，端口要改一下，两个不一样即可。 
+
+    <ClusterclassName="org.apache.catalina.ha.tcp.SimpleTcpCluster"channelSendOptions="8">  
+        <ManagerclassName="org.apache.catalina.ha.session.DeltaManager"expireSessionsOnShutdown="false"notifyListenersOnReplication="true"/>  
+            <ChannelclassName="org.apache.catalina.tribes.group.GroupChannel">  
+                <MembershipclassName="org.apache.catalina.tribes.membership.McastService"address="228.0.0.4"port="45564"frequency="500"dropTime="3000"/>  
+                <ReceiverclassName="org.apache.catalina.tribes.transport.nio.NioReceiver"address="auto"port="4000"autoBind="100"selectorTimeout="5000"maxThreads="6"/>  
+                <SenderclassName="org.apache.catalina.tribes.transport.ReplicationTransmitter">  
+                  <TransportclassName="org.apache.catalina.tribes.transport.nio.PooledParallelSender"/>  
+                </Sender>  
+                <InterceptorclassName="org.apache.catalina.tribes.group.interceptors.TcpFailureDetector"/>  
+                <InterceptorclassName="org.apache.catalina.tribes.group.interceptors.MessageDispatch15Interceptor"/>  
+            </Channel>  
+            <ValveclassName="org.apache.catalina.ha.tcp.ReplicationValve"filter=""/>  
+            <ValveclassName="org.apache.catalina.ha.session.JvmRouteBinderValve"/>  
+            <DeployerclassName="org.apache.catalina.ha.deploy.FarmWarDeployer"tempDir="/tmp/war-temp/"deployDir="/tmp/war-deploy/"watchDir="/tmp/war-listen/"watchEnabled="false"/>  
+            <ClusterListenerclassName="org.apache.catalina.ha.session.ClusterSessionListener"/>  
+    </Cluster>
+    
+
+ Cluster标签里面所有这些配置都是默认的，如果没有特殊要求，其实也可以不用配，在SimpleTcpCluster启动的时候，回去check，如果没有配置，就用默认的。 
+
+    protected void
+{% endraw %}

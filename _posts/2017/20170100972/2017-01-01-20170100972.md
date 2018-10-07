@@ -1,0 +1,277 @@
+---
+layout: post
+title:  "CNN压缩：为反向传播添加mask（caffe代码修改）"
+title2:  "CNN压缩：为反向传播添加mask（caffe代码修改）"
+date:   2017-01-01 23:51:12  +0800
+source:  "http://www.jfox.info/cnn%e5%8e%8b%e7%bc%a9%ef%bc%9a%e4%b8%ba%e5%8f%8d%e5%90%91%e4%bc%a0%e6%92%ad%e6%b7%bb%e5%8a%a0mask%ef%bc%88caffe%e4%bb%a3%e7%a0%81%e4%bf%ae%e6%94%b9%ef%bc%89.html"
+fileName:  "20170100972"
+lang:  "zh_CN"
+published: true
+permalink: "cnn%e5%8e%8b%e7%bc%a9%ef%bc%9a%e4%b8%ba%e5%8f%8d%e5%90%91%e4%bc%a0%e6%92%ad%e6%b7%bb%e5%8a%a0mask%ef%bc%88caffe%e4%bb%a3%e7%a0%81%e4%bf%ae%e6%94%b9%ef%bc%89.html"
+---
+{% raw %}
+1void InnerProductLayer<Dtype>::LayerSetUp(const vector<Blob<Dtype>*>& bottom,
+    2const vector<Blob<Dtype>*>& top) {
+    3    ...
+    4this->blobs_[0].reset(new Blob<Dtype>(weight_shape));
+    5this->blobs_[0]->Addmask();
+    6     ...}
+
+base_conv.cpp:
+
+    1 template <typename Dtype>
+    2void BaseConvolutionLayer<Dtype>::LayerSetUp(const vector<Blob<Dtype>*>& bottom,
+    3const vector<Blob<Dtype>*>& top) {
+    4    ...
+    5this->blobs_[0].reset(new Blob<Dtype>(weight_shape));
+    6this->blobs_[0]->Addmask();
+    7     ...}
+
+修改blob.hpp和blob.cpp，添加成员mask_和相关的方法，在[1]文章的评论里作者已给出源代码。
+
+[2]中使用layer结构定义mask，layer是相当于数据的一系列操作，或者说是blob的组合方法。
+
+但是，想要实现在gpu上的操作，数据需要有gpu有关的操作。故此处采用[1]中的方法，**将mask_添加到blob class中，实现mask_属性**。
+
+**mask的初始化？**
+
+在Caffe框架下，网络的初始化有两种方式，一种是调用filler，按照模型中定义的初始化方式进行初始化，第二种是从已有的caffemodel或者snapshot中读取相应参数矩阵进行初始化[1]。
+
+1、filler的方法
+
+在程序开始时，网络使用net.cpp中的Init()进行初始化，由输入至输出，依次调用各个层的layersetup，建立网络结构。如下所示是caffe中使用xavier方法进行填充的操作。
+
+     1virtualvoid Fill(Blob<Dtype>* blob) {
+     2     CHECK(blob->count());
+     3int fan_in = blob->count() / blob->num();
+     4int fan_out = blob->count() / blob->channels();
+     5     Dtype n = fan_in;  // default to fan_in 6if (this->filler_param_.variance_norm() ==
+     7        FillerParameter_VarianceNorm_AVERAGE) {
+     8       n = (fan_in + fan_out) / Dtype(2);
+     9     } elseif (this->filler_param_.variance_norm() ==
+    10        FillerParameter_VarianceNorm_FAN_OUT) {
+    11       n = fan_out;
+    12    }
+    13     Dtype scale = sqrt(Dtype(3) / n);
+    14     caffe_rng_uniform<Dtype>(blob->count(), -scale, scale,
+    15         blob->mutable_cpu_data());
+    16//Filler<Dtype>:: FillMask(blob);17     CHECK_EQ(this->filler_param_.sparse(), -1)
+    18          << "Sparsity not supported by this Filler.";
+    19   }
+
+filler的作用是，为建立的网络结构产生随机初始化值。
+
+即使是从snapshot或caffemodel中读入数据，也执行随机填充操作。
+
+2、从snapshot或caffemodel中读入数据
+
+tools/caffe.cpp 中的phase:train可以从snapshot或caffemodel中提取参数，进行finetune。phase:test则可以从提取的参数中建立网络，进行预测过程。
+
+这里笔者的网络结构是在pycaffe中进行稀疏化的，因此读入网络的proto文件是一个连接数不变、存在部分连接权值为零的网络。需要在读入参数的同时初始化mask_。因此修改blob.cpp中的fromproto函数：
+
+     1 template <typename Dtype>
+     2void Blob<Dtype>::FromProto(const BlobProto& proto, bool reshape) {
+     3if (reshape) {
+     4     vector<int> shape;
+     5if (proto.has_num() || proto.has_channels() ||
+     6         proto.has_height() || proto.has_width()) {
+     7// Using deprecated 4D Blob dimensions --
+     8// shape is (num, channels, height, width). 9       shape.resize(4);
+    10       shape[0] = proto.num();
+    11       shape[1] = proto.channels();
+    12       shape[2] = proto.height();
+    13       shape[3] = proto.width();
+    14     } else {
+    15      shape.resize(proto.shape().dim_size());
+    16for (int i = 0; i < proto.shape().dim_size(); ++i) {
+    17         shape[i] = proto.shape().dim(i);
+    18      }
+    19    }
+    20    Reshape(shape);
+    21   } else {
+    22     CHECK(ShapeEquals(proto)) << "shape mismatch (reshape not set)";
+    23  }
+    24// copy data25   Dtype* data_vec = mutable_cpu_data();
+    26if (proto.double_data_size() > 0) {
+    27    CHECK_EQ(count_, proto.double_data_size());
+    28for (int i = 0; i < count_; ++i) {
+    29       data_vec[i] = proto.double_data(i);
+    30    }
+    31   } else {
+    32    CHECK_EQ(count_, proto.data_size());
+    33for (int i = 0; i < count_; ++i) {
+    34       data_vec[i] = proto.data(i);
+    35    }
+    36  }
+    37if (proto.double_diff_size() > 0) {
+    38    CHECK_EQ(count_, proto.double_diff_size());
+    39     Dtype* diff_vec = mutable_cpu_diff();
+    40for (int i = 0; i < count_; ++i) {
+    41       diff_vec[i] = proto.double_diff(i);
+    42    }
+    43   } elseif (proto.diff_size() > 0) {
+    44    CHECK_EQ(count_, proto.diff_size());
+    45     Dtype* diff_vec = mutable_cpu_diff();
+    46for (int i = 0; i < count_; ++i) {
+    47       diff_vec[i] = proto.diff(i);
+    48    }
+    49  }
+    50if(shape_.size()==4||shape_.size()==2){
+    51     Dtype* mask_vec = mutable_cpu_data();
+    52    CHECK(count_);
+    53for(int i=0;i<count_;i++)
+    54       mask_vec[i]=data_vec[i]?1:0;
+    55 }
+
+在读入proto文件的同时，如果层的大小是4D——conv层、或2D——fc层时，初始化mask_为data_vec[i]?1:0。当层的大小是1Ds——pool或relu层时，不进行mask的初始化。
+
+**反向传播的修改？**
+
+1、修改blob的更新方式，添加math_funcion.hpp头文件。
+
+     1 template <typename Dtype>
+     2void Blob<Dtype>::Update() {
+     3// We will perform update based on where the data is located. 4switch (data_->head()) {
+     5case SyncedMemory::HEAD_AT_CPU:
+     6// perform computation on CPU 7     caffe_axpy<Dtype>(count_, Dtype(-1),
+     8         static_cast<const Dtype*>(diff_->cpu_data()),
+     9         static_cast<Dtype*>(data_->mutable_cpu_data()));
+    10     caffe_mul<Dtype>(count_,
+    11       static_cast<const Dtype*>(mask_->cpu_data()),
+    12       static_cast<const Dtype*>(data_->cpu_data()),
+    13       static_cast<Dtype*>(data_->mutable_cpu_data()));
+    14break;
+    15case SyncedMemory::HEAD_AT_GPU:
+    16case SyncedMemory::SYNCED:
+    17#ifndef CPU_ONLY
+    18// perform computation on GPU19     caffe_gpu_axpy<Dtype>(count_, Dtype(-1),
+    20         static_cast<const Dtype*>(diff_->gpu_data()),
+    21         static_cast<Dtype*>(data_->mutable_gpu_data()));
+    22     caffe_gpu_mul<Dtype>(count_,
+    23       static_cast<const Dtype*>(mask_->gpu_data()),
+    24       static_cast<const Dtype*>(data_->gpu_data()),
+    25       static_cast<Dtype*>(data_->mutable_gpu_data()));
+    26#else27    NO_GPU;
+    28#endif29break;
+    30default:
+    31     LOG(FATAL) << "Syncedmem not initialized.";
+    32  }
+    33 }
+
+2、为cpu下的计算和gpu下的计算分别添加形如weight[i]*=mask[i];的运算方式。
+
+inner_product_layer.cpp:
+
+     1void InnerProductLayer<Dtype>::Backward_cpu(const vector<Blob<Dtype>*>& top,
+     2const vector<bool>& propagate_down,
+     3const vector<Blob<Dtype>*>& bottom) {
+     4if (this->param_propagate_down_[0]) {
+     5const Dtype* top_diff = top[0]->cpu_diff();
+     6const Dtype* bottom_data = bottom[0]->cpu_data();
+     7// Gradient with respect to weight 8     Dtype* weight_diff = this->blobs_[0]->mutable_cpu_diff();
+     9     vector<int> weight_shape(2);
+    10if (transpose_) {
+    11       weight_shape[0] = K_;
+    12       weight_shape[1] = N_;
+    13     } else {
+    14       weight_shape[0] = N_;
+    15       weight_shape[1] = K_;
+    16    }
+    17int count = weight_shape[0]*weight_shape[1];
+    18const Dtype* mask = this->blobs_[0]->cpu_mask();
+    19for(int j=0;j<count;j++)
+    20       weight_diff[j]*=mask[j];
+    2122if (transpose_) {
+    23       caffe_cpu_gemm<Dtype>(CblasTrans, CblasNoTrans,
+    24          K_, N_, M_,
+    25           (Dtype)1., bottom_data, top_diff,
+    26           (Dtype)1., weight_diff);
+    27     } else {
+    28       caffe_cpu_gemm<Dtype>(CblasTrans, CblasNoTrans,
+    29          N_, K_, M_,
+    30           (Dtype)1., top_diff, bottom_data,
+    31           (Dtype)1., weight_diff);
+    32    }
+    33  }
+    34if (bias_term_ && this->param_propagate_down_[1]) {
+    35const Dtype* top_diff = top[0]->cpu_diff();
+    36// Gradient with respect to bias37     caffe_cpu_gemv<Dtype>(CblasTrans, M_, N_, (Dtype)1., top_diff,
+    38         bias_multiplier_.cpu_data(), (Dtype)1.,
+    39this->blobs_[1]->mutable_cpu_diff());
+    40  }
+    41if (propagate_down[0]) {
+    42const Dtype* top_diff = top[0]->cpu_diff();
+    43// Gradient with respect to bottom data44if (transpose_) {
+    45       caffe_cpu_gemm<Dtype>(CblasNoTrans, CblasTrans,
+    46          M_, K_, N_,
+    47           (Dtype)1., top_diff, this->blobs_[0]->cpu_data(),
+    48           (Dtype)0., bottom[0]->mutable_cpu_diff());
+    49     } else {
+    50       caffe_cpu_gemm<Dtype>(CblasNoTrans, CblasNoTrans,
+    51          M_, K_, N_,
+    52           (Dtype)1., top_diff, this->blobs_[0]->cpu_data(),
+    53           (Dtype)0., bottom[0]->mutable_cpu_diff());
+    54    }
+    55  }
+    56 }
+
+inner_product_layer.cu:
+
+     1 template <typename Dtype>
+     2void InnerProductLayer<Dtype>::Backward_gpu(const vector<Blob<Dtype>*>& top,
+     3const vector<bool>& propagate_down,
+     4const vector<Blob<Dtype>*>& bottom) {
+     5if (this->param_propagate_down_[0]) {
+     6const Dtype* top_diff = top[0]->gpu_diff();
+     7const Dtype* bottom_data = bottom[0]->gpu_data();
+     8     vector<int> weight_shape(2);
+     9if (transpose_) {
+    10       weight_shape[0] = K_;
+    11       weight_shape[1] = N_;
+    12     } else {
+    13       weight_shape[0] = N_;
+    14       weight_shape[1] = K_;
+    15    }
+    16int count = weight_shape[0]*weight_shape[1];
+    17     caffe_gpu_mul<Dtype>(count,static_cast<const Dtype*>(this->blobs_[0]->mutable_gpu_diff()),static_cast<const Dtype*>(this->blobs_[0]->gpu_mask()),static_cast<Dtype*>(this->blobs_[0]->mutable_gpu_diff()));
+    18     Dtype* weight_diff = this->blobs_[0]->mutable_gpu_diff();
+    19//for(int j=0;j<count;j++)
+    20//weight_diff[j]*=this->masks_[j];
+    21// Gradient with respect to weight22if (transpose_) {
+    23       caffe_gpu_gemm<Dtype>(CblasTrans, CblasNoTrans,
+    24          K_, N_, M_,
+    25           (Dtype)1., bottom_data, top_diff,
+    26           (Dtype)1., weight_diff);
+    27     } else {
+    28       caffe_gpu_gemm<Dtype>(CblasTrans, CblasNoTrans,
+    29          N_, K_, M_,
+    30           (Dtype)1., top_diff, bottom_data,
+    31           (Dtype)1., weight_diff);
+    32    }
+    33  }
+    34if (bias_term_ && this->param_propagate_down_[1]) {
+    35const Dtype* top_diff = top[0]->gpu_diff();
+    36// Gradient with respect to bias37     caffe_gpu_gemv<Dtype>(CblasTrans, M_, N_, (Dtype)1., top_diff,
+    38         bias_multiplier_.gpu_data(), (Dtype)1.,
+    39this->blobs_[1]->mutable_gpu_diff());
+    40  }
+    41if (propagate_down[0]) {
+    42const Dtype* top_diff = top[0]->gpu_diff();
+    43// Gradient with respect to bottom data44if (transpose_) {
+    45       caffe_gpu_gemm<Dtype>(CblasNoTrans, CblasTrans,
+    46          M_, K_, N_,
+    47           (Dtype)1., top_diff, this->blobs_[0]->gpu_data(),
+    48           (Dtype)0., bottom[0]->mutable_gpu_diff());
+    49     } else {
+    50       caffe_gpu_gemm<Dtype>(CblasNoTrans, CblasNoTrans,
+    51          M_, K_, N_,
+    52          (Dtype)1., top_diff, this->blobs_[0]->gpu_data(),
+    53          (Dtype)0., bottom[0]->mutable_gpu_diff());
+    54    }
+    55  }
+    56 }
+
+至此修改完毕。
+
+另外，caffe在新的版本中已添加sparse_参数，参考 https://github.com/BVLC/caffe/pulls?utf8=%E2%9C%93&q=sparse
+{% endraw %}

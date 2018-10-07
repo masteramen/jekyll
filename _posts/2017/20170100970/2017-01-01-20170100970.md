@@ -1,0 +1,99 @@
+---
+layout: post
+title:  "Angular的依赖注入是怎么实现的？"
+title2:  "Angular的依赖注入是怎么实现的？"
+date:   2017-01-01 23:51:10  +0800
+source:  "http://www.jfox.info/angular%e7%9a%84%e4%be%9d%e8%b5%96%e6%b3%a8%e5%85%a5%e6%98%af%e6%80%8e%e4%b9%88%e5%ae%9e%e7%8e%b0%e7%9a%84.html"
+fileName:  "20170100970"
+lang:  "zh_CN"
+published: true
+permalink: "angular%e7%9a%84%e4%be%9d%e8%b5%96%e6%b3%a8%e5%85%a5%e6%98%af%e6%80%8e%e4%b9%88%e5%ae%9e%e7%8e%b0%e7%9a%84.html"
+---
+{% raw %}
+# Angular的依赖注入是怎么实现的？ 
+
+
+ 这篇文章是探索对于Angular开发者来说既熟悉又陌生的概念：依赖注入。 
+
+ 我们在定义控制器、服务(甚至是指令)的时候通常会依赖一些服务，例如下面这样： 
+
+    //按照Angular的严格模式，希望我们这样写：
+    angular.module('app', []).controller('ctrl', ['$scop', $http', function($scope, $http) {
+    ...
+    }])
+    //在非严格模式下也可以这样写减少代码量：
+    angular.module('app', []).controller('ctrl', function($scope, $http) {
+    ...
+    })
+    
+
+#  实现过程 
+
+ 按照科学方法（提出假设——>进行实验——>得出结论）可以先猜想一下Angular的实现过程： 
+
+ 提取所需的服务（即函数参数）显得有点麻烦，因为js并没有提供原生的方法，可能需要手动实现。 
+
+ 一种常用的解析字符串的方法就是用正则表达式。 
+
+ 得到了参数之后就需要根据参数来生成其对应的服务实例了，因为Angular的服务是单例模式，所以很可能会用到缓存的方式来来避免多个相同的服务。 
+
+ 传入服务并调用我们的声明函数，创建对应的控制器/服务/指令等。 
+
+#  源码探究 
+
+##  依赖解析 
+
+ 我们以(Angular1.3)[ [ https://cdn.bootcss.com/angular.js/1.3.20/angular.js]版本源码为例。 ](http://www.jfox.info/go.php?url=https://cdn.bootcss.com/angular.js/1.3.20/angular.js]版本源码为例。)
+
+    // 第3492行
+    // var STRIP_COMMENTS = /((//.*$)|(/*[sS]*?*/))/mg;
+    // fn为传入的定义函数，通过toString函数来获取它的源代码
+    // 这里的主要目的是去除函数源码中的注释
+    fnText = fn.toString().replace(STRIP_COMMENTS, '');
+    // var FN_ARGS = /^functions*[^(]*(s*([^)]*))/m;
+    // 将函数定义的头部取出来，舍弃函数体，得到 function abc(...) 这种形式
+    argDecl = fnText.match(FN_ARGS);
+    // var FN_ARG_SPLIT = /,/;
+    // 通过逗号分隔参数进行遍历，并将每个参数放入数组中
+    forEach(argDecl[1].split(FN_ARG_SPLIT), function(arg) {
+    // var FN_ARG = /^s*(_?)(S+?)1s*$/;
+    arg.replace(FN_ARG, function(all, underscore, name) {
+    $inject.push(name);
+    });
+    });
+    
+
+ 简而言之，这一部分代码流程也很简单：获取函数源码，取到函数头部，分割放入数组。 
+
+ 这样就获得了我们依赖注入所需要的参数名，这是针对前面所说的第二种情况，第一种情况则很简单，直接从数组中提取就行。 
+
+##  服务实例 
+
+ ··· 
+// 第4201行 
+//遍历函数依赖的服务 
+for (i = 0, length = $inject.length; i < length; i++) { 
+key = $inject[i]; 
+//从缓存中获取或者从provider中获取服务 
+args.push( 
+locals && locals.hasOwnProperty(key) 
+? locals[key] 
+// getService函数负责从provider中获取对应的定义函数 
+: getService(key, serviceName) 
+); 
+} 
+··· 
+
+ 这一部分代码完整的贴出来看起来会比较费解，因为它的执行方式很像递归函数。 
+
+ 简而言之就是执行服务的定义函数，然后在执行环境（this指针上）绑定对应的函数，然后返回改执行环境。 
+
+ 这样依赖它的函数就可以访问服务内部的函数了 
+
+ 同时也用了一个json对象来(locals变量)缓存服务。 
+
+##  调用函数 
+
+    // 第4219行
+    return fn.apply(self, args);
+{% endraw %}

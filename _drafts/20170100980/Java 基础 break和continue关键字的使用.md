@@ -1,0 +1,76 @@
+---
+layout: post
+title:  "Java 基础 break和continue关键字的使用"
+title2:  "Java 基础 break和continue关键字的使用"
+date:   2017-01-01 23:51:20  +0800
+source:  "http://www.jfox.info/java-%e5%9f%ba%e7%a1%80-break%e5%92%8ccontinue%e5%85%b3%e9%94%ae%e5%ad%97%e7%9a%84%e4%bd%bf%e7%94%a8.html"
+fileName:  "20170100980"
+lang:  "zh_CN"
+published: true
+permalink: "java-%e5%9f%ba%e7%a1%80-break%e5%92%8ccontinue%e5%85%b3%e9%94%ae%e5%ad%97%e7%9a%84%e4%bd%bf%e7%94%a8.html"
+---
+{% raw %}
+**break**：使用在switch…case语句或者循环结构语句中，表示结束当前循环。
+
+示例代码：
+
+     1publicclass TestBreak {
+     2publicstaticvoid main(String[] args) {
+     3for(int i = 1; i <= 5; i++){
+     4if(i % 4 == 0){
+     5break;//如果满足i对4取余为零，即i可以被4整除时执行break关键字，跳出循环，后续语句均不执行，在这个循环里i最大值为5，所以这里只有4可以被4整除所以打印语句只会打印1-3的值 6            }
+     7             System.out.println("i="+i);
+     8        }
+     9    }
+    10 }
+
+嵌套循环中使用break关键字：
+
+     1publicclass TestBreak {
+     2publicstaticvoid main(String[] args) {
+     3//两层循环 4for(int i = 1; i <= 5; i++){
+     5for(int j = 1; j <= 5; j++){
+     6if(j % 4 == 0){
+     7break; //由于是两层循环，而break关键字使用在内层循环，如果满足条件，则只会跳出内层循环，再次进入外层循环执行语句 8                }
+     9                 System.out.print("j="+j+"t");
+    10//所以会打印外层循环规定的次数的J的值，但依旧不会打印4之后的数字11            }
+    12            System.out.println();
+    13        }
+    14    }
+    15 }
+
+**continue**：使用在循环结构语句中，表示结束当次循环。
+
+示例代码：
+
+     1publicclass TestContinue {
+     2publicstaticvoid main(String[] args) {
+     3//需要和break关键字区分开，所以讲循环条件改为10，可以更清晰的看出break和continue的区别 4for(int i = 1; i <= 10; i++){
+     5if(i % 4 == 0){
+     6continue;//如果满足i对4取余为零，即i可以被4整除时执行continue关键字，结束本次循环，本次循环的后续语句均不执行，但下一次的循环语句若不满足被4整除的条件则会照常执行 7            }
+     8             System.out.print("i="+i+"t");
+     9        }
+    10//运行后会发现有两个数字没有打印，但是后续不满足该条件的却都打印出来，和break关键字截然不同11    }
+    12 }
+
+嵌套循环中使用continue关键字：
+
+     1publicclass TestContinue {
+     2publicstaticvoid main(String[] args) {
+     3//两层循环 4for(int i = 1; i <= 5; i++){
+     5for(int j = 1; j <= 10; j++){
+     6if(j % 4 == 0){
+     7continue; //由于是两层循环，而continue关键字使用在内层循环，如果满足条件，则只会结束本次内层循环，执行下一次内层循环语句 8                }
+     9                 System.out.print("j="+j+"t");
+    10//所以会打印外层循环规定的次数的J的值，但不会打印能够被4整除的数字11            }
+    12            System.out.println();
+    13        }
+    14    }
+    15 }
+
+### 补充：
+
+break和continue都有一个新添加的功能，在进行多层嵌套循环时，想要使用break和continue关键字结束非当前层而是某一层的循环时可以在关键字后面加上一个标签，该标签名是可以自行命名的，比如英文label
+
+同时还需要在你想要结束的循环层的for关键字前面加上标签：，同样用label举例—— label:for(int i=0;循环条件;迭代){}。
+{% endraw %}

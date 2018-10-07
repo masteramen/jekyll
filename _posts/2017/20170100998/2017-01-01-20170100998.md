@@ -1,0 +1,411 @@
+---
+layout: post
+title:  "accp8.0转换教材第1章多线程理解与练习"
+title2:  "accp8.0转换教材第1章多线程理解与练习"
+date:   2017-01-01 23:51:38  +0800
+source:  "http://www.jfox.info/accp8-0%e8%bd%ac%e6%8d%a2%e6%95%99%e6%9d%90%e7%ac%ac1%e7%ab%a0%e5%a4%9a%e7%ba%bf%e7%a8%8b%e7%90%86%e8%a7%a3%e4%b8%8e%e7%bb%83%e4%b9%a0.html"
+fileName:  "20170100998"
+lang:  "zh_CN"
+published: true
+permalink: "accp8-0%e8%bd%ac%e6%8d%a2%e6%95%99%e6%9d%90%e7%ac%ac1%e7%ab%a0%e5%a4%9a%e7%ba%bf%e7%a8%8b%e7%90%86%e8%a7%a3%e4%b8%8e%e7%bb%83%e4%b9%a0.html"
+---
+{% raw %}
+一.单词部分：
+
+①process进程 ②current当前的③thread线程④runnable可获取的
+
+⑤interrupt中断⑥join加入⑦yield产生⑧synchronize同时发生
+
+二.预习部分
+
+1.线程与进程的区别：
+
+进程是系统运行程序的基本单位
+
+线程是进程中执行运算的最小单位
+
+2.说明创建线程的方式有哪两种
+
+①继承thread类
+
+②实现Runnable接口
+
+3.线程的生命周期可分为几个阶段，各是什么阶段
+
+五个阶段：①创建②就绪③运行④阻塞⑤死亡
+
+4.使用线程的什么方法可以设置线程的休眠，线程的强制执行，线程的礼让
+
+分别为：sleep(),join(),yield()
+
+5.什么情况下需要进行线程的同步，线程的同步有几种方式
+
+当访问冲突时需要进行
+
+两种方式：①同步方法②同步代码块
+
+三.练习部分
+
+1.使用继承Thread类的方法创建线程，显示相应内容
+
+首先创建一个线程类：
+
+package oneOne;
+
+public class MyRunnableone extends Thread{
+public void run() {
+for(int i=1;i<=20;i++){
+System.out.println(i+”.你好，来自线程”+Thread.currentThread().getName());
+}
+}
+}
+
+再创建main方法类去掉用就行了
+
+package oneOne;
+
+public class testone {
+
+ /**
+* @param args
+*/
+public static void main(String[] args) {
+// TODO Auto-generated method stub
+MyRunnableone my=new MyRunnableone();
+MyRunnableone my1=new MyRunnableone();
+my.start();
+my1.start();
+}
+
+}
+
+2.使用实现Runnable接口方式创建线程
+
+同第一个先创建实现类：
+
+package oneTwo;
+
+public class MyRunnabletwo implements Runnable{
+public void run() {
+for(int i=1;i<=20;i++){
+System.out.println(i+”.你好，来自线程”+Thread.currentThread().getName());
+}
+}
+
+}
+
+再main方法：
+
+package oneTwo;
+
+public class testtwo {
+
+ /**
+* @param args
+*/
+public static void main(String[] args) {
+// TODO Auto-generated method stub
+MyRunnabletwo my=new MyRunnabletwo();
+MyRunnabletwo my1=new MyRunnabletwo();
+Thread tr=new Thread(my);
+Thread tr1=new Thread(my1);
+tr.start();
+tr1.start();
+}
+
+}
+
+3.使用多线程模拟多人徒步爬山
+
+先创建继承或者实现类（我这里用了继承）：
+
+package oneThree;
+
+public class MyRunnablethree extends Thread{
+private int time;
+public int num=0;
+public MyRunnablethree(String name,int time,int kio) {
+super(name);
+this.time=time;
+this.num=kio*1000/100;
+}
+public void run() {
+while (num>0) {
+try {
+Thread.sleep(this.time);
+} catch (InterruptedException e) {
+// TODO: handle exception
+e.printStackTrace();
+}
+System.out.println(Thread.currentThread().getName()+”爬完100米！”);
+num–;
+}
+System.out.println(Thread.currentThread().getName()+”到达终点！”);
+}
+}
+
+再main方法：
+
+package oneThree;
+
+public class testthree {
+
+ /**
+* @param args
+*/
+public static void main(String[] args) {
+// TODO Auto-generated method stub
+MyRunnablethree young=new MyRunnablethree(“年轻人”, 500, 1);
+MyRunnablethree old=new MyRunnablethree(“老年人”, 1500, 1);
+MyRunnablethree child=new MyRunnablethree(“小孩”, 600, 1);
+System.out.println(“**********开始爬山*********”);
+old.start();
+young.start();
+child.start();
+}
+
+}
+
+4.显示，设置线程优先级
+
+先继承或者实现类：
+
+package oneFour;
+
+public class MyRunnablefour extends Thread{
+public void run() {
+Thread.currentThread().setPriority(1);
+System.out.println(“子线程名：”+Thread.currentThread().getName()+”,优先级：”+Thread.currentThread().getPriority());
+}
+}
+
+再main：
+
+package oneFour;
+
+public class testfour {
+
+ /**
+* @param args
+*/
+public static void main(String[] args) {
+// TODO Auto-generated method stub
+MyRunnablefour myf=new MyRunnablefour();
+myf.start();
+System.out.println(“*************显示默认优先级********”);
+System.out.println(“主线程名：”+Thread.currentThread().getName()+”,优先级：”+Thread.currentThread().getPriority());
+Thread.currentThread().setPriority(10);
+System.out.println(“***********修改默认优先级后***********”);
+//myf.setPriority(1);
+System.out.println(“主线程名：”+Thread.currentThread().getName()+”,优先级：”+Thread.currentThread().getPriority());
+//System.out.println(“子线程名：”+MyRunnablefour.currentThread().getName()+”,优先级：”+MyRunnablefour.currentThread().getPriority());
+}
+
+}
+
+5.模拟叫号看病
+
+先继承或实现类：
+
+package oneFive;
+
+public class MyRunnablefive extends Thread{
+private int time;
+//public int pertail=0;
+public MyRunnablefive(String common,int time) {
+super(common);
+this.time=time;
+}
+public void run() {
+Thread.currentThread().setPriority(8);
+for(int i=1;i<=10;i++){
+try {
+Thread.sleep(this.time);
+} catch (InterruptedException e) {
+// TODO: handle exception
+e.printStackTrace();
+}
+System.out.println(“特需号:”+i+”号病人在看病！”);
+}
+}
+}
+
+再main：
+
+package oneFive;
+
+public class testfive {
+
+ /**
+* @param args
+*/
+public static void main(String[] args) {
+// TODO Auto-generated method stub
+//MyRunnablefive pertail=new MyRunnablefive(“特需号”, 1000);
+
+ Thread temp=new Thread(new MyRunnablefive(“特需号”, 400));
+temp.start();
+Thread.currentThread().setPriority(4);
+for(int i=1;i<=50;i++){
+if(i==11){
+try {
+temp.join();
+} catch (InterruptedException e) {
+// TODO: handle exception
+e.printStackTrace();
+}
+}
+try {
+Thread.sleep(200);
+} catch (InterruptedException e) {
+// TODO Auto-generated catch block
+e.printStackTrace();
+}
+System.out.println(“普通号:”+i+”号病人在看病”);
+}
+}
+}
+
+6.多线程模拟 接力赛跑
+
+先创建继承或者实现类：
+
+package oneSix;
+
+public class runSix implements Runnable{
+private int meters=1000;
+public runSix(){
+}
+@Override
+public void run() {
+// TODO Auto-generated method stub
+//System.out.println(“进来了”);
+while (true) {
+//type type = (type) true.nextElement();
+synchronized (this) {
+if(meters<=100){
+break;
+}
+System.out.println(Thread.currentThread().getName()+”拿到了接力棒！”);
+for (int i = 0; i < 100; i+=10) {
+try {
+Thread.sleep(100);
+} catch (InterruptedException e) {
+// TODO Auto-generated catch block
+e.printStackTrace();
+}
+System.out.println(Thread.currentThread().getName()+”跑了”+(i+10)+”米！”);
+}
+meters-=100;
+}
+}
+}
+
+}
+
+再main接口类：
+
+package oneSix;
+
+public class testsix {
+
+ /**
+* @param args
+*/
+public static void main(String[] args) {
+// TODO Auto-generated method stub
+runSix ru=new runSix();
+for (int i = 0; i < 5; i++) {
+new Thread(ru,(i+1)+”号选手”).start();
+}
+}
+
+}
+
+7.多线程模拟网络购票
+
+桃跑跑，张票票，黄牛党，共同抢十张票，限制黄牛党只能抢一次票
+
+先创建继承或者实现类：
+
+package oneSeven;
+
+public class siteSeven implements Runnable{
+private int count=10;
+private int num=0;
+private boolean flag=false;
+@Override
+public void run() {
+// TODO Auto-generated method stub
+//System.out.println(“进来了”);
+while (!flag) {
+synchronized (this){
+//System.out.println(“进来了”);
+if(count<=0){
+flag=true;
+return;
+}
+num++;
+count–;
+try {
+Thread.sleep(500);
+} catch (InterruptedException e) {
+// TODO Auto-generated catch block
+e.printStackTrace();
+}
+String name=Thread.currentThread().getName();
+if(name.equals(“黄牛党”)){
+System.out.println(name+”抢到第”+num+”张票,剩余”+count+”张票！”);
+break; 
+}
+System.out.println(name+”抢到第”+num+”张票,剩余”+count+”张票！”);
+}
+}
+}
+
+}
+
+再创建main接口类：
+
+package oneSeven;
+
+public class testseven {
+
+ /**
+* @param args
+*/
+public static void main(String[] args) {
+// TODO Auto-generated method stub
+siteSeven si=new siteSeven();
+Thread per1=new Thread(si,”大东”);
+Thread yellow=new Thread(si,”黄牛党”);
+Thread per2=new Thread(si,”启圳”);
+per1.start();
+yellow.start();
+per2.start();
+}
+
+}
+
+ 四：总结：
+
+1.Thread类中的方法实现对线程对象的操作
+
+①调整线程的优先级
+
+②线程睡眠sleep()
+
+③线程的强制运行join()
+
+④线程礼让yield()
+
+2.多线程允许程序员编写可最大利用CPU的高效程序
+
+3.两种方式创建线程：
+
+①声明一个继承了Thread类的子类并实现Thread类的run()方法
+
+②声明一个实现Runnable接口的类，然后实现run()方法
+
+ 原文在博客园有需要可以联系扣扣：2265682997
+{% endraw %}

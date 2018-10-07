@@ -1,0 +1,61 @@
+---
+layout: post
+title:  "Apache Kylin的入门安装"
+title2:  "Apache Kylin的入门安装"
+date:   2017-01-01 23:51:24  +0800
+source:  "http://www.jfox.info/apache-kylin%e7%9a%84%e5%85%a5%e9%97%a8%e5%ae%89%e8%a3%85.html"
+fileName:  "20170100984"
+lang:  "zh_CN"
+published: true
+permalink: "apache-kylin%e7%9a%84%e5%85%a5%e9%97%a8%e5%ae%89%e8%a3%85.html"
+---
+{% raw %}
+Apache Kylin™是一个开源的分布式分析引擎，提供Hadoop之上的SQL查询接口及多维分析（OLAP）能力以支持超大规模数据，最初由eBay Inc. 开发并贡献至开源社区。它能在亚秒内查询巨大的Hive表。 
+
+从官网的介绍来看Kylin是一个OLAP的数据查询引擎，其特点就是快。公司最近准备引入Kylin做数据分析，原来也听说过 
+
+但一直没有接触，现在正好可以验证下Kylin是否是传说中那么NB，今天我们先来看看如何安装部署Kylin。 
+
+由于Kylin本身只是一个Server，所以安装部署还是比较简单的，但是它的前提要求是Hadoop，Hive，Hbase必须已经安装而且能正常工作，在这里关于Hadoop生态的一些框架的安装部署就不再重复写了，有兴趣的可以看我以前的博文。 
+
+下面来看下一些基础软件的版本： 
+
+    Hadoop2.7.2
+    Hive2.1.1
+    Hbase1.2.0
+    Zookeeper3.4.8
+    Kylin2.0.0
+    
+
+在这里假设你的Hadoop，Hive，Hbase都已经安装成功并能正常运行。 
+
+然后去Kylin官网下载对应的kylin版本，链接如下： 
+
+[http://kylin.apache.org/cn/download/](http://www.jfox.info/go.php?url=http://kylin.apache.org/cn/download/)
+下载的具体版本是： 
+
+apache-kylin-2.0.0-bin-hbase1x.tar.gz 
+
+下载成功后，解压到根目录，然后重命名目录为kylin并在.bash_profile 文件中，配置kylin的环境变量： 
+
+    export KYLIN_HOME=/home/search/kylin
+    export CLASSPATH=$CLASSPATH:$KYLIN_HOME/lib
+    export PATH=$KYLIN_HOME/bin:$PATH
+    
+
+然后执行bin/check-env.sh 脚本，检查环境变量是否有缺失的，校验通过之后，可以执行如下脚本启动： 
+
+    bin/kylin.sh start // 启动
+    bin/kylin.sh stop // 停止
+    
+
+这里需要注意一点，Kylin当前最新的版本只支持spark1.6.0的版本，原来我的机器中，安装了一个spark2.0的版本，导致 
+
+启动kylin失败，终端仅仅输出spark assembly lib not found这个提示信息，别的什么也没有，导致我误以为我编译的spark有问题，后来我将我的spark移除，重新启动kylin才成功， 
+
+另外一个注意的地方是Hadoop的mr-jobhistory-daemon.sh 进程也要启动起来。 
+
+启动成功之后，访问地址：http://hostname:7070/kylin（kylin的启动过程感觉有点慢，差不多1分钟之后，在访问这个地址基本能生效） 
+
+并输入默认的用户名和密码：ADMIN / KYLIN 成功登录之后，看到下面的页面，就代表安装部署成功了。
+{% endraw %}

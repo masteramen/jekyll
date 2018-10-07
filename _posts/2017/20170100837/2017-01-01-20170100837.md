@@ -1,0 +1,60 @@
+---
+layout: post
+title:  "spring boot入门操作(一)"
+title2:  "spring boot入门操作(一)"
+date:   2017-01-01 23:48:57  +0800
+source:  "http://www.jfox.info/spring-boot-ru-men-cao-zuo-yi.html"
+fileName:  "20170100837"
+lang:  "zh_CN"
+published: true
+permalink: "spring-boot-ru-men-cao-zuo-yi.html"
+---
+{% raw %}
+H2M_LI_HEADER 新建maven project ，选择artifact id 为maven-archetype-quicktype
+H2M_LI_HEADER 
+创建pom，在project中添加
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>1.5.4.RELEASE</version>
+    </parent>
+
+在properties在添加
+
+    <java.version>1.8</java.version>
+
+在dependencies里添加
+
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-web</artifactId>
+    </dependency>
+
+H2M_LI_HEADER update maven
+H2M_LI_HEADER 创建HelloWorldController类
+H2M_LI_HEADER 
+    @RestController
+    public class HelloWorldController {
+        @RequestMapping("/hello")
+        public String hello(){
+            return "Hello World!";
+        }
+    }
+
+H2M_LI_HEADER 
+编写启动类 APP.java
+
+    @SpringBootApplication
+    public class App 
+    {
+        public static void main( String[] args )
+        {
+             System.out.println( "console  Hello World!" );
+             SpringApplication.run(App.class, args);
+        } 
+    }
+
+H2M_LI_HEADER 
+浏览器输入localhost:8080/hello
+{% endraw %}

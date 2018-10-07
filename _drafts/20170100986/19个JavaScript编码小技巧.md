@@ -1,0 +1,484 @@
+---
+layout: post
+title:  "19个JavaScript编码小技巧"
+title2:  "19个JavaScript编码小技巧"
+date:   2017-01-01 23:51:26  +0800
+source:  "http://www.jfox.info/19%e4%b8%aajavascript%e7%bc%96%e7%a0%81%e5%b0%8f%e6%8a%80%e5%b7%a7.html"
+fileName:  "20170100986"
+lang:  "zh_CN"
+published: true
+permalink: "19%e4%b8%aajavascript%e7%bc%96%e7%a0%81%e5%b0%8f%e6%8a%80%e5%b7%a7.html"
+---
+{% raw %}
+这篇文章适合任何一位基于JavaScript开发的开发者。我写这篇文章主要涉及JavaScript中一些简写的代码，帮助大家更好理解一些JavaScript的基础。希望这些代码能从不同的角度帮助你更好的理解JavaScript。 
+
+##  三元操作符 
+
+ 如果使用 ` if...else ` 语句，那么这是一个很好节省代码的方式。 
+
+** Longhand: **
+
+    const x = 20;
+    let big;
+    if (x > 10) {
+        big = true;
+    } else {
+        big = false;
+    }
+    
+
+** Shorthand: **
+
+    const big = x > 10 ? true : false;
+    
+
+ 你还可以像下面这样嵌套 ` if ` 语句： 
+
+    const big = x > 10 ? 'greater 10' : x < 5 ? 'less 5' : 'between 5 and 10';
+    
+
+##  Short-circuit Evaluation 
+
+ 分配一个变量值到另一个变量的时候，你可能想要确保变量不是 ` null ` 、 ` undefined ` 或空。你可以写一个有多个 ` if ` 的条件语句或者Short-circuit Evaluation。 
+
+** Longhand: **
+
+    if (variable1 !== null || variable1 !== undefined || variable1 !== '') {
+        let variable2 = variable1;
+    }
+    
+
+** Shorthand: **
+
+    const variable2 = variable1 || 'new';
+    
+
+ 不要相信我，请先相信自己的测试（可以把下面的代码粘贴在 [ es6console ](http://www.jfox.info/go.php?url=http://es6console.com/) ） 
+
+    let variable1;
+    let variable2 = variable1 || '';
+    console.log(variable2 === ''); // true
+    variable1 = 'foo';
+    variable2 = variable1 || '';
+    console.log(variable2); // foo
+    
+
+##  声明变量 
+
+ 在函数中声明变量时，像下面这样同时声明多个变量可以节省你大量的时间和空间： 
+
+** Longhand: **
+
+    let x;
+    let y;
+    let x = 3;
+    
+
+** Shorthand: **
+
+    let x, y, z = 3;
+    
+
+##  如果存在 
+
+ 这可能是微不足道的，但值得提及。做“如果检查”时，赋值操作符有时可以省略。 
+
+** Longhand: **
+
+    if (likeJavaScript === true)
+    
+
+** Shorthand: **
+
+    if (likeJavaScript)
+    
+
+** 注： ** 这两种方法并不完全相同，简写检查只要 ` likeJavaScript ` 是 [` true ` 都将通过 ](http://www.jfox.info/go.php?url=http://developer.mozilla.org/en-US/docs/Glossary/Truthy) 。 
+
+ 这有另一个示例。如果 ` a ` 不是 ` true ` ，然后做什么。 
+
+** Longhand: **
+
+    let a;
+    if (a !== true) {
+        // do something ...
+    }
+    
+
+** Shorthand: **
+
+    let a;
+    if (!a) {
+        // do something ...
+    }
+    
+
+##  JavaScript的for循环 
+
+ 如果你只想要原生的JavaScript，而不想依赖于jQuery或Lodash这样的外部库，那这个小技巧是非常有用的。 
+
+** Longhand: **
+
+    for (let i = 0; i < allImgs.length; i++)
+    
+
+** Shorthand: **
+
+    for (let index in allImgs)
+    
+
+` Array.forEach ` 简写： 
+
+    function logArrayElements(element, index, array) {
+        console.log('a[' + index + ']=' + element);
+    }
+    [2, 5, 9].forEach(logArrayElements);
+    // logs:
+    // a[0] = 2
+    // a[1] = 5
+    // a[2] = 9
+    
+
+##  Short-circuit Evaluation 
+
+ 如果参数是 ` null ` 或者是 ` undefined ` ，我们可以简单的使用一个Short-circuit逻辑运算，实现一行代码替代六行代码的写法。 
+
+** Longhand: **
+
+    let dbHost;
+    if (process.env.DB_HOST) {
+        dbHost = process.env.DB_HOST;
+    } else {
+        dbHost = 'localhost';
+    }
+    
+
+** Shorthand: **
+
+    const dbHost = process.env.DB_HOST || 'localhost';
+    
+
+##  十进制指数 
+
+ 你可能看过这个。它本质上是一个写数字的奇特写法，就是一个数字后面有很多个 ` 0 ` 。例如 ` 1e7 ` 本质相当于 ` 10000000 ` （ ` 1 ` 的后面有 ` 7 ` 个 ` 0 ` ）。它代表了十进制计数等于 ` 10000000 ` 。 
+
+** Longhand: **
+
+    for (let i = 0; i < 10000; i++) {}
+    
+
+** Shorthand: **
+
+    for (let i = 0; i < 1e7; i++) {}
+    // All the below will evaluate to true
+    e0 === 1;
+    e1 === 10;
+    e2 === 100;
+    e3 === 1000;
+    e4 === 10000;
+    e5 === 100000;
+    
+
+##  对象属性 
+
+ 定义对象文字（Object literals）让JavaScript变得更有趣。ES6提供了一个更简单的办法来分配对象的属性。如果属性名和值一样，你可以使用下面简写的方式。 
+
+** Longhand: **
+
+    const obj = {x: x, y: y};
+    
+
+** Shorthand: **
+
+    const obj = {x, y};
+    
+
+##  箭头函数 
+
+ 经典函数很容易读和写，但它们确实会变得有点冗长，特别是嵌套函数中调用其他函数时还会让你感到困惑。 
+
+** Longhand: **
+
+    function sayHello(name) {
+        console.log('Hello', name);
+    }
+    setTimeout(function() {
+        console.log('Loaded')
+    }, 2000);
+    list.forEach(function(item){
+        console.log(item)
+    })
+    
+
+** Shorthand: **
+
+    sayHello = name => console.log('Hello', name);
+    setTimeout(() => console.log('Loaded'), 2000);
+    list.forEach(item => console.log(item));
+    
+
+##  隐式返回 
+
+` return ` 在函数中经常使用到的一个关键词，将返回函数的最终结果。箭头函数用一个语句将隐式的返回结果（函数必须省略 ` {} ` ，为了省略 ` return ` 关键词）。 
+
+ 如果返回一个多行语句（比如对象），有必要在函数体内使用 ` () ` 替代 ` {} ` 。这样可以确保代码是否作为一个单独的语句返回。 
+
+** Longhand: **
+
+    function calcCircumference(diameter) {
+        return Math.PI * diameter
+    }
+    
+
+** Shorthand: **
+
+    calcCircumference = diameter => (
+        Math.PI * diameter;
+    )
+    
+
+##  默认参数值 
+
+ 你可以使用 ` if ` 语句来定义函数参数的默认值。在ES6中，可以在函数声明中定义默认值。 
+
+** Longhand: **
+
+    function volume(l, w, h) {
+        if (w === undefined)
+            w = 3;
+        if (h === undefined)
+            h = 4;
+        return l * w * h;
+    }
+    
+
+** Shorthand: **
+
+    volume = (l, w = 3, h = 4) => (l * w * h);
+    volume(2); // 24
+    
+
+##  Template Literals 
+
+ 是不是厌倦了使用 ` + ` 来连接多个变量变成一个字符串？难道就没有一个更容易的方法吗？如果你能使用ES6，那么你是幸运的。在ES6中，你要做的是使用撇号和 ` ${} ` ，并且把你的变量放在大括号内。 
+
+** Longhand: **
+
+    const welcome = 'You have logged in as' + first + ' ' + last + '.';
+    const db = 'http://' + host + ':' + port + '/' + database;
+    
+
+** Shorthand: **
+
+    const welcome = `You have logged in as ${first} ${last}`;
+    const db = `http://${host}:${port}/${database}`;
+    
+
+##  Destructuring Assignment 
+
+ 如果你正在使用任何一个流行的Web框架时，就有很多机会使用数组的形式或数据对象的形式与API之间传递信息。一旦数据对象达到一个对个组件时，你需要将其展开。 
+
+** Longhand: **
+
+    const observable = require('mobx/observable');
+    const action = require('mobx/action');
+    const runInAction = require('mobx/runInAction');
+    const store = this.props.store;
+    const form = this.props.form;
+    const loading = this.props.loading;
+    const errors = this.props.errors;
+    const entity = this.props.entity;
+    
+
+** Shorthand: **
+
+    import {observable, action, runInAction} from 'mobx';
+    const {store, form, loading, errors, entity} = this.props;
+    
+
+ 你甚至可以自己指定变量名： 
+
+    const {store, form, loading, errors, entity:contact} = this.props;
+    
+
+##  多行字符串 
+
+ 你会发现以前自己写多行字符串的代码会像下面这样： 
+
+** Longhand: **
+
+    const lorem = 'Lorem ipsum dolor sit amet, consecteturnt'
+        + 'adipisicing elit, sed do eiusmod tempor incididuntnt'
+        + 'ut labore et dolore magna aliqua. Ut enim ad minimnt'
+        + 'veniam, quis nostrud exercitation ullamco laborisnt'
+        + 'nisi ut aliquip ex ea commodo consequat. Duis autent'
+        + 'irure dolor in reprehenderit in voluptate velit esse.nt'
+    
+
+ 但还有一个更简单的方法。使用撇号。 
+
+** Shorthand: **
+
+    const lorem = `Lorem ipsum dolor sit amet, consectetur
+        adipisicing elit, sed do eiusmod tempor incididunt
+        ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris
+        nisi ut aliquip ex ea commodo consequat. Duis aute
+        irure dolor in reprehenderit in voluptate velit esse.`
+    
+
+##  Spread Operator 
+
+** Spread Operator ** 是ES6中引入的，使JavaScript代码更高效和有趣。它可以用来代替某些数组的功能。Spread Operator只是一个系列的三个点( ` ... ` )。 
+
+** Longhand: **
+
+    // Joining arrays
+    const odd = [1, 3, 5];
+    const nums = [2, 4, 6].concat(odd);
+    // cloning arrays
+    const arr = [1, 2, 3, 4];
+    const arr2 = arr.slice();
+    
+
+** Shorthand: **
+
+    // Joining arrays
+    const odd = [1, 3, 5];
+    const nums = [2, 4, 6, ...odd];
+    console.log(nums); // [2, 4, 6, 1, 3, 5]
+    // cloning arrays
+    const arr = [1, 2, 3, 4];
+    const arr2 = [...arr];
+    
+
+ 不像 ` concat() ` 函数，使用Spread Operator你可以将一个数组插入到另一个数组的任何地方。 
+
+    const odd = [1, 3, 5];
+    const nums = [2, ...odd, 4, 6];
+    
+
+ 另外还可以当作解构符： 
+
+    const {a, b, ...z} = {a: 1, b: 2, c: 3, d: 4};
+    console.log(a); // 1
+    console.log(b); // 2
+    console.log(z); // {c: 3, d: 4}
+    
+
+##  强制参数 
+
+ 默认情况下，JavaScript如果不给函数参数传一个值的话，将会是一个 ` undefined ` 。有些语言也将抛出一个警告或错误。在执行参数赋值时，你可以使用 ` if ` 语句，如果未定义将会抛出一个错误，或者你可以使用强制参数（Mandatory parameter）。 
+
+** Longhand: **
+
+    function foo(bar) {
+        if (bar === undefined) {
+            throw new Error('Missing parameter!');
+        }
+        return bar;
+    }
+    
+
+** Shorthand: **
+
+    mandatory = () => {
+        throw new Error('Missing parameter!');
+    }
+    foo = (bar = mandatory()) => {
+        return bar;
+    }
+    
+
+##  Array.find 
+
+ 如果你以前写过一个查找函数，你可能会使用一个 ` for ` 循环。在ES6中，你可以使用数组的一个新功能 ` find() ` 。 
+
+** Longhand: **
+
+    const pets = [
+        {type: 'Dog', name: 'Max'},
+        {type: 'Cat', name: 'Karl'},
+        {type: 'Dog', name: 'Tommy'}
+    ]
+    function findDog(name) {
+        for (let i = 0; i < pets.length; ++i) {
+            if (pets[i].type === 'Dog' && pets[i].name === name) {
+                return pets[i];
+            }
+        }
+    }
+    
+
+** Shorthand: **
+
+    pet = pets.find(pet => pet.type === 'Dog' && pet.name === 'Tommy');
+    console.log(pet); // {type: 'Dog', name: 'Tommy'}
+    
+
+##  Object[key] 
+
+ 你知道 ` Foo.bar ` 也可以写成 ` Foo[bar] ` 吧。起初，似乎没有理由应该这样写。然而，这个符号可以让你编写可重用代码块。 
+
+ 下面是一段简化后的函数的例子： 
+
+    function validate(values) {
+        if (!values.first)
+            return false;
+        if (!values.last)
+            return false;
+        return true;
+    }
+    console.log(validate({first: 'Bruce', last: 'Wayne'})); //  true
+    
+
+ 这个函数可以正常工作。然而，需要考虑一个这样的场景：有很多种形式需要应用验证，而且不同领域有不同规则。在运行时很难创建一个通用的验证功能。 
+
+** Shorthand: **
+
+    // object validation rules
+    const schema = {
+        first: {
+            required: true
+        },
+        last: {
+            required: true
+        }
+    }
+    // universal validation function
+    const validate = (schema, values) => {
+        for(field in schema) {
+            if (schema[field].required) {
+                if(!values[field]) {
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
+    console.log(validate(schema, {first: 'Bruce'})); // false
+    console.log(validate(schema, {first: 'Bruce', last: 'Wayne'})); // true
+    
+
+ 现在我们有一个验证函数，可以各种形式的重用，而不需要为每个不同的功能定制一个验证函数。 
+
+##  Double Bitwise NOT 
+
+ 如果你是一位JavaScript新手的话，对于逐位运算符（Bitwise Operator）你应该永远不会在任何地方使用。此外，如果你不处理二进制 ` 0 ` 和 ` 1 ` ，那就更不会想使用。 
+
+ 然而，一个非常实用的用例，那就是双位操作符。你可以用它替代 ` Math.floor() ` 。Double Bitwise NOT运算符有很大的优势，它执行相同的操作要快得多。你可以在 [ 这里阅读 ](http://www.jfox.info/go.php?url=http://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Bitwise_Operators) 更多关于位运算符相关的知识。 
+
+** Longhand: **
+
+    Math.floor(4.9) === 4; // true
+    
+
+** Shorthand: **
+
+    ~~4.9 === 4; //true
+    
+
+##  推荐一个吗？ 
+
+ 我真的喜欢这些小技巧，希望能有更多关于这方面的JavaScript小技巧。如果你有这方面的，欢迎在下面的评论中与我们一起分享。
+{% endraw %}

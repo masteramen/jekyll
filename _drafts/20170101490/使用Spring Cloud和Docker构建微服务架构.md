@@ -211,5 +211,5 @@ Ribbon是一个客户端负载均衡器，可以很好地控制HTTP和TCP客户�
 
  所有Spring Boot应用都需要运行 [配置服务器](http://www.jfox.info/go.php?url=https://github.com/sqshq/PiggyMetrics#config-service) 才能启动。得益于Spring Boot的 `fail-fast` 属性和docker-compsoe的 `restart:always` 选项，我们可以同时启动所有容器。这意味着所有依赖的容器将尝试重新启动，直到配置服务器启动运行为止。 
 
-此外，服务发现机制在所有应用启动后需要一段时间。在实例、Eureka服务器和客户端在其本地缓存中都具有相同的元数据之前，任何服务都�
+此外，服务发现机制在所有应用启动后需要一段时间。在实例、Eureka服务器和客户端在其本地缓存中都具有相同的元数据之前，任何服务都不可用于客户端发现，因此可能需要3次心跳。默认的心跳周期为30秒。
 {% endraw %}

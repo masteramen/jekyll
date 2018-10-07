@@ -1,0 +1,176 @@
+---
+layout: post
+title:  "聊聊Java项目的动态多数据源配置"
+title2:  "聊聊Java项目的动态多数据源配置"
+date:   2017-01-01 23:53:51  +0800
+source:  "http://www.jfox.info/%e8%81%8a%e8%81%8ajava%e9%a1%b9%e7%9b%ae%e7%9a%84%e5%8a%a8%e6%80%81%e5%a4%9a%e6%95%b0%e6%8d%ae%e6%ba%90%e9%85%8d%e7%bd%ae.html"
+fileName:  "20170101131"
+lang:  "zh_CN"
+published: true
+permalink: "%e8%81%8a%e8%81%8ajava%e9%a1%b9%e7%9b%ae%e7%9a%84%e5%8a%a8%e6%80%81%e5%a4%9a%e6%95%b0%e6%8d%ae%e6%ba%90%e9%85%8d%e7%bd%ae.html"
+---
+{% raw %}
+在我们的项目中遇到这样一个问题：我们的项目需要连接多个数据库，而且不同的客户在每次访问中根据需要会去访问不同的数据库。所以就采用了多数据源的方式（可以根据客户的需求去连接客户所需要的真正的数据源，即提供动态切换数据源的功能）。
+
+       多数据源配置是怎么个配置法，其中用到了些什么技术，想必大家都会有这个疑问，下面将逐一介绍。
+
+       大概思路是这样的：在登录页面放置一个下拉选择列表（使用的Bootstrap框架的dropdown-menu,不懂的可以百度一下特别好用），下拉列表在加载以前是从后台读取的一个包含了多个数据库信息的Json文件，前台通过js循环渲染出来。另外有一个子页面可以创建新的数据库保存到刚才的那个Json文件中。
+
+关键点来了，最主要的是登录的时候选了不同的数据库，后台是怎么知道并且登录成功的。
+
+写一个DBContextHolder类放一个多线程的变量记录当前数据源，具体实现类继承AbstractRoutingDataSource类并且重写方法determineCurrentLookupKey获取当前数据源，如果当前数据源不存在就新建并且要通知spring容器。
+
+具体代码如下：
+
+1.datasource.xml配置文件内容：
+
+<bean id=”datasource”  class=”xxxxxxxxxxx.DynamicDataSource”>
+
+    <property name=”targetDataSources”>   <map></map>  </property>
+
+</bean>
+
+2.DynamicDataSource.class
+
+package    com.core;
+
+import org.springframework.jdbc.datasource.lookup.AbstractRoutingDataSource;
+
+public  class  DynamicDataSource    extends    AbstractRoutingDataSource{
+
+    /*datasource.xml配置文件中配置数据源为此类*/
+
+     public DynamicDataSource(){                                                     /*默认数据源*/
+
+                HashMapmap_1 = new HashMap();
+
+                 map_1.put(“DRIVER_CLASS”, “com.mysql.jdbc.Driver”);
+
+                map_1.put(“dbUrl”, “jdbc:mysql://127.0.0.1:3306/ifms?                       useUnicode=true&characterEncoding=utf8&allowMultiQueries=true&autoReconnect=true”);
+
+                  map_1.put(“dbUserName”, “root”);
+
+                 map_1.put(“dbPassword”, “123456”);
+
+                dbMap.put(“db0”, map_1);
+
+}
+
+    @Override
+
+    protected   Object determineCurrentLookupKey() {           /*得到当前数据源*/
+
+          return   DatabaseContextHolder.getCustomerType();
+
+    }
+
+    public void setTargetDataSources(MaptargetDataSources) {
+
+           this._targetDataSources = targetDataSources;
+
+           super.setTargetDataSources(this._targetDataSources);
+
+           super.afterPropertiesSet();//当我们添加数据库，切换了数据源，要通知当前spring容器
+
+   }
+
+    public void addTargetDataSource(String key, BasicDataSource dataSource) {
+
+           this._targetDataSources.put(key, dataSource);
+
+           this.setTargetDataSources(this._targetDataSources);
+
+   }
+
+   public BasicDataSource createDataSource(String driverClassName, String url,
+
+          String username, String password) {
+
+          BasicDataSource dataSource = new BasicDataSource();
+
+          dataSource.setDriverClassName(driverClassName);
+
+          dataSource.setUrl(url);
+
+          dataSource.setUsername(username);
+
+         dataSource.setPassword(password);
+
+          dataSource.setTestWhileIdle(true);
+
+          return dataSource;
+
+ }
+
+/**
+
+* @param serverId
+
+* @describe 数据源存在时不做处理，不存在时创建新的数据源链接，并将新数据链接添加至缓存
+
+*/
+
+     public void selectDataSource(String serverId) {
+
+           Object sid = DBContextHolder.getCustomerType();         
+
+           Object obj = this._targetDataSources.get(serverId);
+
+            if (obj != null && sid.equals(serverId + “”)) {
+
+                   return;
+
+             } else {
+
+             System.out.println(“—数据源不存在，创建数据源”);
+
+              BasicDataSource dataSource = this.getDataSource(serverId);  //判断当前数据源是否存在
+
+             if (null != dataSource)
+
+                     this.setDataSource(serverId, dataSource);                        //设置当前数据源
+
+             }
+
+       }
+
+     public void setDataSource(String serverId, BasicDataSource dataSource) {
+
+          this.addTargetDataSource(serverId, dataSource);
+
+          DBContextHolder.setCustomerType(serverId);
+
+     }
+
+}
+
+3.DBContextHolder.class
+
+package   com.core;
+
+public  class  DBContextHolder{
+
+private   static   final   Thread   Local contextHolder =newThreadLocal();
+
+   public   static   void   setCustomerType(String customerType) {
+
+      contextHolder.set(customerType);
+
+   }
+
+    public   static   String getCustomerType() {
+
+        return   contextHolder.get();
+
+     }
+
+   public   static   void   clearCustomerType() {
+
+       contextHolder.remove();
+
+   }
+
+}
+
+      其中遇到个问题，如果将数据源变量定义为多线程的时候，如果前台页面另起一个线程并且中途出现异常之后会获取不到当前数据源。所以暂时改为了一个静态变量但是只能支持单线程。如果有一台电脑正用着A数据库，另外一台电脑突然用B数据库登录，那原来那个的数据库也会变成A。目前还没有找到好的方法解决这个问题，找到了会继续更新。如果谁有比较好的方法也可以告诉我，灰常感激！！！！！！！！！！！！！！！！！！
+{% endraw %}

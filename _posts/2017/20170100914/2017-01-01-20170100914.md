@@ -1,0 +1,42 @@
+---
+layout: post
+title:  "springMVC使用jsp:include嵌入页面的两种方式"
+title2:  "springMVC使用jspinclude嵌入页面的两种方式"
+date:   2017-01-01 23:50:14  +0800
+source:  "http://www.jfox.info/springmvc%e4%bd%bf%e7%94%a8jsp-include%e5%b5%8c%e5%85%a5%e9%a1%b5%e9%9d%a2%e7%9a%84%e4%b8%a4%e7%a7%8d%e6%96%b9%e5%bc%8f.html"
+fileName:  "20170100914"
+lang:  "zh_CN"
+published: true
+permalink: "springmvc%e4%bd%bf%e7%94%a8jsp-include%e5%b5%8c%e5%85%a5%e9%a1%b5%e9%9d%a2%e7%9a%84%e4%b8%a4%e7%a7%8d%e6%96%b9%e5%bc%8f.html"
+---
+{% raw %}
+**1、静态嵌入子页面**
+
+**`<% @include file="header.jsp" %>`**
+
+静态嵌入支持 `jsp` 、 `html` 、 `xml` 以及纯文本。
+
+　　静态嵌入在编译时完成，相当于直接将子页面的文本插入到 `include` 标签所在的位置。子页面可直接使用父页面中的变量。 
+
+**2、动态嵌入子页面**
+
+**　使用 `jsp:include` 时必须设置 `flush` 属性为 `true` 。**
+
+**<jsp:include page=”/main/header.jsp” flush=”true”/>**
+
+** 　　否则子页面在嵌套的时候会报500错误**
+
+<%@ page language=”java” contentType=”text/html; charset=UTF-8″
+pageEncoding=”UTF-8″%>
+<jsp:include page=”/main/header.jsp” flush=”true”/>
+
+<div class=”right”>
+<img class=”wColck” src=”${pageContext.request.contextPath }/statics/img/clock.jpg” alt=””/>
+<div class=”wFont”>
+<h2> ${userSession.userName }</h2>
+<p>欢迎来到超市账单管理系统!</p>
+</div>
+</div>
+
+<jsp:include page=”/main/footer.jsp” flush=”true”/>
+{% endraw %}

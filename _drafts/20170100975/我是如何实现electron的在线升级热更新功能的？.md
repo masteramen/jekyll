@@ -1,0 +1,91 @@
+---
+layout: post
+title:  "我是如何实现electron的在线升级热更新功能的？"
+title2:  "我是如何实现electron的在线升级热更新功能的？"
+date:   2017-01-01 23:51:15  +0800
+source:  "http://www.jfox.info/%e6%88%91%e6%98%af%e5%a6%82%e4%bd%95%e5%ae%9e%e7%8e%b0electron%e7%9a%84%e5%9c%a8%e7%ba%bf%e5%8d%87%e7%ba%a7%e7%83%ad%e6%9b%b4%e6%96%b0%e5%8a%9f%e8%83%bd%e7%9a%84.html"
+fileName:  "20170100975"
+lang:  "zh_CN"
+published: true
+permalink: "%e6%88%91%e6%98%af%e5%a6%82%e4%bd%95%e5%ae%9e%e7%8e%b0electron%e7%9a%84%e5%9c%a8%e7%ba%bf%e5%8d%87%e7%ba%a7%e7%83%ad%e6%9b%b4%e6%96%b0%e5%8a%9f%e8%83%bd%e7%9a%84.html"
+---
+{% raw %}
+###  一、electron的热更新效果预览 
+
+ 下面几张图是我实现的带热更新功能的electron应用实际效果截图： 
+
+ 打开electron应用，此时会去检测线上是否有新版本，例如，我本地版本是1.2.2，然后线上版本是1.2.4，则会有这样的显示： 
+
+ 点击“新版功能”会显示最新版的升级描述，例如，这里点击后出现弹框信息： 
+
+ 点击红色的“升级”按钮，则直接请求线上的资源替换本地资源，完成升级（升级成功后刷新页面），升级效果参见下gif截图： 
+
+###  二、electron的热更新原理说明 
+
+** 1. 我是直接使用github作为线上资源仓储的 **
+
+ 当使用 ` raw.githubusercontent.com ` 作为请求域名，我们是可以直接获取资源内容的，例如，我们要获取一个路径为 ` js/test.js ` 的文件，则该文件完整地址为： 
+
+    https://raw.githubusercontent.com/username/project-name/master/js/test.js
+
+ 此时，我们就可以使用node.js的 ` https.get() ` 方法获取这个 ` js/test.js ` 完整内容了。 
+
+** 2. 我是借助 ` package.json ` 标记版本和更新内容的 **
+
+ 之所以借助 ` package.json ` ，主要是被里面约定俗成的 ` version ` 版本关键字吸引，如果用户本地 ` version ` 版本比github项目线上 ` version ` 版本低，岂不就意味着可以进行升级。 
+
+ 于是，再把升级文件列表和更新信息一整合，就有了完整的升级数据了，如下截图示意： 
+
+** 3. electron的热更新原理说明 **
+
+ 当每次我们的electron加载完毕之后，就会发送一个请求，去获取github项目上的 ` package.json ` 文件，主要是知道目前线上的版本是多少，然后和本地的 ` package.json ` 文件的 ` version ` 版本数据做比较。如果发现版本不一致，则说明有新版可以升级，于是让界面变成这样： 
+
+ 当我们点击“升级”按钮后，会把高于本地版本的需要更新的文件重新整合成一个新的完整的升级文件列表，然后依次从github上远程获取，存储在一个临时文件夹中，如果全部文件获取成功，再一并覆盖本地资源，全部覆盖完成后，刷新页面，完成升级。 
+
+ 以上就是完整的升级原理。 
+
+###  三、electron的热更新一些代码实现 
+
+ electron热更新最大的难点应该是如何获取远程资源，我简单整理了下，希望能够对有需求的小伙伴有所帮助，由于ES6并未花时间学习，因此，相关JS还是ES5语法： 
+
+    var https = require('https');
+    var getHttpsData = function (filepath, success, error) {
+      // 回调缺省时候的处理
+      success = success || function () {};
+      error = error || function () {};
+      var url = 'https://raw.githubusercontent.com/username/project-name/master/' + filepath + '?r=' + Math.random();
+      https.get(url, function (res) {
+        var statusCode = res.statusCode;
+        if (statusCode !== 200) {
+            // 出错回调
+            error();
+            // 消耗响应数据以释放内存
+            res.resume();
+            return;
+        }
+        res.setEncoding('utf8');
+        var rawData = '';
+        res.on('data', function (chunk) {
+          rawData += chunk;
+        });
+        // 请求结束
+        res.on('end', function () {
+          // 成功回调
+          success(rawData);
+        }).on('error', function (e) {
+          // 出错回调
+          error();
+        });
+      });
+    };
+
+ 然后，下面的事情就简单了，直接把请求的数据写入本地就可以了，举个简单的例子，一个 ` index.html ` 文件： 
+
+    getHttpsData('index.html', function (data) {
+      // 写入文件
+      fs.writeFileSync('index.html', data);
+      // 然后下一个文件获取并写入...
+    });
+
+ 配合一些loading交互效果，就完成了完整的在线热更新功能。
+{% endraw %}

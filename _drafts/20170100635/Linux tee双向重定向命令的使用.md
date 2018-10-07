@@ -1,0 +1,57 @@
+---
+layout: post
+title:  "Linux tee双向重定向命令的使用"
+title2:  "Linux tee双向重定向命令的使用"
+date:   2017-01-01 23:45:35  +0800
+source:  "http://www.jfox.info/bidirectional-use-linux-tee-command-to-redirect.html"
+fileName:  "20170100635"
+lang:  "zh_CN"
+published: true
+permalink: "bidirectional-use-linux-tee-command-to-redirect.html"
+---
+{% raw %}
+By Lee - Last updated: 星期六, 五月 17, 2014
+
+这篇文章介绍个重定向的小技巧–双向重定向！
+
+tee命令会从标准输入设备读取数据，将其内容输出到标准输出设备，同时保存成文件。如果tee后面没有指定文件，则只将其内容输出到标准输出设备。我们可利用tee把管道导入的数据存成文件，甚至一次保存数份文件。
+
+一般格式：
+tee [选项]… [文件]…
+
+常用选项：
+-a, –append ：将内容附加在文件后面而不是覆盖文件。
+-i, –ignore-interrupts ：忽略中断信号。
+
+举例：
+1、查看/home目录下文件，并保存到3个文件
+# ls /home | tee copy1 copy2 copy3
+
+平时我们喜欢将很长的Linux的标准输出重定向到一个文本文件中，然后再去分析这个“大文件”，那有没有在不影响标准输出的同时能再次将标准输出重定向到文件中的方法呢？
+
+答案是有的，那就是tee命令！
+
+ [![tee](http://www.jfox.info/wp-content/uploads/2014/05/tee.jpg)](http://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2014/05/tee.jpg)
+
+tee命令使用很简单：
+
+比如使用ls命令显示所有的内容，除了在屏幕上照常输出外，还保留了一份文本记录：
+
+    [mars@njdc-mars152 esx]$ ls
+
+test2 test3 test4
+
+[mars@njdc-mars152 esx]$ ll | tee tee.out
+
+total 12
+
+-rw-rw-r– 1 mars mars 0 Mar 17 22:00 tee.out
+
+drwxrwxr-x 2 mars mars 4096 Mar 17 14:00 test2
+
+drwxrwxr-x 2 mars mars 4096 Mar 17 14:00 test3
+
+drwxrwxr-x 2 mars mars 4096 Mar 17 14:16 test4
+
+有人说这个命令可能有点华而不实，但是lorinnn告诉你比如这样一个应用场景，你的服务器的剩余空间不够了，你打算去清理空间，可是/home目录下有太多的文件需要统计，计算，甚至必须进入子目录查看才能知道文件是否能够删除，这时你用du -sk并用sort进行了从大到小的排序，然后你进入
+{% endraw %}

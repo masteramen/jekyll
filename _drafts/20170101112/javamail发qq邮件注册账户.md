@@ -1,0 +1,362 @@
+---
+layout: post
+title:  "javamail发qq邮件注册账户"
+title2:  "javamail发qq邮件注册账户"
+date:   2017-01-01 23:53:32  +0800
+source:  "http://www.jfox.info/javamail%e5%8f%91qq%e9%82%ae%e4%bb%b6%e6%b3%a8%e5%86%8c%e8%b4%a6%e6%88%b7.html"
+fileName:  "20170101112"
+lang:  "zh_CN"
+published: true
+permalink: "javamail%e5%8f%91qq%e9%82%ae%e4%bb%b6%e6%b3%a8%e5%86%8c%e8%b4%a6%e6%88%b7.html"
+---
+{% raw %}
+# javamail发qq邮件注册账户 
+
+
+H2M_LI_HEADER 1、 建数据库、表
+H2M_LI_HEADER 2、 User类（实体类）
+H2M_LI_HEADER 3、 UserDao类（与数据库交互）
+H2M_LI_HEADER 4、 SendMailUtils类（发送邮件）
+H2M_LI_HEADER 5、 UUIDUtils（生成随机字符串code）
+H2M_LI_HEADER 6、 RegistServlet（注册账户）
+H2M_LI_HEADER 7、 ActiveServlet（激活账户）
+H2M_LI_HEADER 8、 index.jsp（输入界面）
+H2M_LI_HEADER 9、 success.jsp（成功界面）
+
+# 具体实现
+
+## 1、 建数据库、表
+
+    /*
+    DROP TABLE IF EXISTS `user`;
+    CREATE TABLE `user` (
+      `id` int(11) NOT NULL AUTO_INCREMENT,
+      `username` varchar(30) NOT NULL,
+      `password` varchar(30) NOT NULL,
+      `nickname` varchar(30) NOT NULL,
+      `email` varchar(30) NOT NULL,
+      `state` int(11) DEFAULT '0',
+      `code` varchar(64) DEFAULT NULL,
+      PRIMARY KEY (`id`)
+    ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+## 2、 User类（实体类）
+
+    package com.look.bean;
+    
+    public class User {
+        private Integer id;
+        private String username;
+        private String password;
+        private String nickname;//昵称
+        private String email;
+        private Integer state;//状态
+        private String code;//随机码
+        getter and setter...
+    }
+
+## 3、 UserDao类（与数据库交互）
+
+    package com.look.dao;
+    import java.sql.Connection;
+    import java.sql.DriverManager;
+    import java.sql.PreparedStatement;
+    import java.sql.SQLException;
+    import com.look.bean.User;
+    public class UserDao {
+        private static Connection conn;
+        // 获取数据库连接
+        public  void getConn() {
+            try {
+                Class.forName("com.mysql.jdbc.Driver");
+                String url = "jdbc:mysql://localhost:3306/javamail";
+                String rootname = "root";
+                String rootpass = "123456";
+                conn = DriverManager.getConnection(url, rootname, rootpass);
+            } catch (ClassNotFoundException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            } catch (SQLException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
+        }
+        // 注册
+        public void regist(User user) {
+            try {
+                String sql = "insert into user(username,password,nickname,email,code) values(?,?,?,?,?)";
+                PreparedStatement pstmt;
+                pstmt = conn.prepareStatement(sql);
+                pstmt.setString(1, user.getUsername());
+                pstmt.setString(2, user.getPassword());
+                pstmt.setString(3, user.getNickname());
+                pstmt.setString(4, user.getEmail());
+                pstmt.setString(5, user.getCode());
+                pstmt.executeUpdate();
+            } catch (SQLException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
+        }
+        // 激活
+        public void activeByCode(String code) {
+                    //状态标志置为1，code置空
+            String sql = "update user set state=1,code=null where code=?";
+            PreparedStatement pstmt;
+            try {
+                pstmt = conn.prepareStatement(sql);
+                pstmt.setString(1, code);
+                pstmt.executeUpdate();
+            } catch (SQLException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
+        }
+        // 关闭数据库连接
+        public void closeConn() {
+            if (conn != null) {
+                try {
+                    conn.close();
+                } catch (SQLException e) {
+                    // TODO Auto-generated catch block
+                    e.printStackTrace();
+                }
+            }
+        }
+    }
+
+**注**
+mysql的账号密码需要修改为自己的账号密码。
+
+## 4、 SendMailUtils类（发送邮件）
+
+    package com.look.util;
+    
+    import java.security.GeneralSecurityException;
+    import java.util.Properties;
+    
+    import javax.mail.Address;
+    import javax.mail.Message;
+    import javax.mail.MessagingException;
+    import javax.mail.Session;
+    import javax.mail.Transport;
+    import javax.mail.internet.InternetAddress;
+    import javax.mail.internet.MimeMessage;
+    import com.sun.mail.util.MailSSLSocketFactory;
+    public class SendMailUtils {
+        public static void sendMail(String to, String code)
+                throws GeneralSecurityException, MessagingException {
+            Properties props = new Properties();
+            // 开启debug调试
+            // props.setProperty("mail.debug", "true");
+            // 发送服务器需要身份验证
+            props.setProperty("mail.smtp.auth", "true");
+            // 设置邮件服务器主机名
+            props.setProperty("mail.host", "smtp.qq.com");
+            // 发送邮件协议名称
+            props.setProperty("mail.transport.protocol", "smtp");
+            MailSSLSocketFactory sf = new MailSSLSocketFactory();
+            sf.setTrustAllHosts(true);
+            props.put("mail.smtp.ssl.enable", "true");
+            props.put("mail.smtp.ssl.socketFactory", sf);
+            Session session = Session.getInstance(props);
+            Message msg = new MimeMessage(session);
+            msg.setSubject("本邮件用于测试");
+            // send text to the mail
+            // StringBuilder builder = new StringBuilder();
+            // builder.append("点击测试<a href='http://loc alhost:8080/ssm/listCategory'>listCategory1</a>");
+            // msg.setText(builder.toString());
+            msg.setContent(
+                    "<a href='http://localhost:8080/javamail/ActiveServlet?code="
+                            + code + "'>点我激活</a>", "text/html;charset=UTF-8");
+            msg.setFrom(new InternetAddress("1478161802@qq.com"));
+            Transport transport = session.getTransport();
+            transport.connect("smtp.qq.com", "1478161802@qq.com",
+                    "hsvsqhofljqtjgdi");
+            transport.sendMessage(msg, new Address[] { new InternetAddress(to) });
+            transport.close();
+        }
+    }
+
+**注：**
+`msg.setFrom(new InternetAddress("12345678@qq.com"));`和`transport.connect("smtp.qq.com", "12345678@qq.com","hsvsqhofljqtjgdi");`中的`12345678@qq.com`需要替换为你自己的qq邮箱，`hsvsqhofljqtjgdi`要替换为自己的**授权码**。
+
+## 5、 UUIDUtils（生成随机字符串code）
+
+    package com.look.util;
+    import java.util.UUID;
+    public class UUIDUtils {
+        public static String getUUID() {
+            return UUID.randomUUID().toString().replace("-", "")
+                    + UUID.randomUUID().toString().replace("-", "");
+        }
+    }
+
+## 6、 RegistServlet（注册账户）
+
+    package com.look.servlet;
+    import java.io.IOException;
+    import java.io.PrintWriter;
+    import java.security.GeneralSecurityException;
+    import javax.mail.MessagingException;
+    import javax.servlet.ServletException;
+    import javax.servlet.http.HttpServlet;
+    import javax.servlet.http.HttpServletRequest;
+    import javax.servlet.http.HttpServletResponse;
+    import com.look.bean.User;
+    import com.look.dao.UserDao;
+    import com.look.util.SendMailUtils;
+    import com.look.util.UUIDUtils;
+    public class RegistServlet extends HttpServlet {
+        private static final long serialVersionUID = 1L;
+        public void init() throws ServletException {
+            super.init();
+        }
+        public void service(HttpServletRequest request, HttpServletResponse response) {
+            // 获取数据
+            String username = request.getParameter("username");
+            String password = request.getParameter("password");
+            String nickname = request.getParameter("nickname");
+            String email = request.getParameter("email");
+            // 封装数据
+            User user = new User();
+            user.setUsername(username);
+            user.setPassword(password);
+            user.setNickname(nickname);
+            user.setEmail(email);
+            user.setCode(UUIDUtils.getUUID());
+            System.out.println(user.getEmail() + "t" + user.getCode());
+            // 注册
+            UserDao dao = new UserDao();
+            dao.getConn();
+            dao.regist(user);
+            dao.closeConn();
+            // 发送邮件
+            try {
+                SendMailUtils.sendMail(email, user.getCode());
+                request.setCharacterEncoding("utf-8");
+                response.setContentType("text/html;charset=utf-8");
+                response.setCharacterEncoding("utf-8");
+                PrintWriter out = response.getWriter();
+                out.print("<html><head><meta charset='utf-8'/></head><body><p>邮件已经发送到"
+                        + user.getEmail() + "中，请登录邮箱点击链接完成验证</p></body></html>");
+                out.flush();
+                out.close();
+            } catch (GeneralSecurityException | MessagingException e) {
+                e.printStackTrace();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+        public void destroy() {
+            super.destroy();
+        }
+    }
+
+## 7、 ActiveServlet（激活账户）
+
+    package com.look.servlet;
+    import java.io.IOException;
+    import javax.servlet.ServletException;
+    import javax.servlet.http.HttpServlet;
+    import javax.servlet.http.HttpServletRequest;
+    import javax.servlet.http.HttpServletResponse;
+    import com.look.dao.UserDao;
+    public class ActiveServlet extends HttpServlet
+    {
+        private static final long serialVersionUID = 1L;
+        public void init() throws ServletException {
+            super.init();
+        }
+        public void service(HttpServletRequest request,
+                HttpServletResponse response) {
+            // 获取数据
+            String code = request.getParameter("code");
+            // 数据库判断对应code是否存在，（这里就不进行判断了，直接进行比对）state=1&code=null代表激活
+            UserDao dao = new UserDao();
+            dao.getConn();
+            dao.activeByCode(code);
+            dao.closeConn();
+            // 重定向success.jsp
+            try {
+                request.getRequestDispatcher("success.jsp").forward(request,
+                        response);
+            } catch (ServletException e) {
+                e.printStackTrace();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+        public void destroy() {
+            super.destroy();
+        }
+    }
+
+## 8、 index.jsp（输入界面）
+
+    <%@ page language="java" contentType="text/html; charset=UTF-8"
+        pageEncoding="UTF-8"%>
+    <!DOCTYPE html PUBLIC "-//W3C//Dli HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dli">
+    <html>
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Insert title here</title>
+    </head>
+    <body>
+        <form action="RegistServlet" method="post">
+            <ul>
+                <li><label for="username">账号</label><input type="text" name="username" /></li>
+                <li><label for="password">密码</label><input type="text" name="password" /></li>
+                <li><label for="nickname">昵称</label><input type="text" name="nickname" /></li>
+                <li><label for="email">邮箱</label><input type="text" name="email" /></li>
+                <li><input type="submit" value="注册" /></li>
+                <li><input type="reset" name="重写" /></li>
+            </ul>
+        </form>
+    </body>
+    </html>
+
+## 9、 success.jsp（成功界面）
+
+    <%@ page language="java" contentType="text/html; charset=UTF-8"
+        pageEncoding="UTF-8"%>
+    <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+    <html>
+     <head>
+      <title>成功激活</title>
+     </head>
+     <body>
+      <script>
+       window.onload = function(){
+        alert("已成功激活");
+       };
+      </script>
+     </body>
+    </html>
+
+## 10、web.xml
+
+    <?xml version="1.0" encoding="UTF-8"?>
+    <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+      <display-name>javamail</display-name>
+      <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+      </welcome-file-list>
+      <servlet>
+        <servlet-name>RegistServlet</servlet-name>
+        <servlet-class>com.look.servlet.RegistServlet</servlet-class>
+      </servlet>
+      <servlet-mapping>
+        <servlet-name>RegistServlet</servlet-name>
+        <url-pattern>/RegistServlet</url-pattern>
+      </servlet-mapping>
+      <servlet>
+        <servlet-name>ActiveServlet</servlet-name>
+        <servlet-class>com.look.servlet.ActiveServlet</servlet-class>
+      </servlet>
+      <servlet-mapping>
+        <servlet-name>ActiveServlet</servlet-name>
+        <url-pattern>/ActiveServlet</url-pattern>
+      </servlet-mapping>
+    </web-app>
+{% endraw %}

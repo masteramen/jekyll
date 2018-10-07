@@ -1,0 +1,62 @@
+---
+layout: post
+title:  "Push Based Monitoring Service with Prometheus"
+title2:  "Push Based Monitoring Service with Prometheus"
+date:   2017-01-01 23:55:44  +0800
+source:  "http://www.jfox.info/pushbasedmonitoringservicewithprometheus.html"
+fileName:  "20170101244"
+lang:  "zh_CN"
+published: true
+permalink: "pushbasedmonitoringservicewithprometheus.html"
+---
+{% raw %}
+What is different here is we add a forwarder between node_exporter and pushgateway, which helps us to switch the direction of data pipeline. Basically, node_exporter still listens on a specific port to expose metrics, but it only accepts internal requests. It helps us to keep the node safe from external malicious visits. Forwarder gets the metrics and send it to pushgateway, prometheus scraps data from pushgateway, instead of node_exporter. 
+
+##  Configuration 
+
+** I. node_exporter **
+
+ It does not make any sense if we launch node_exporter in a separate container, because it needs to be able to access the host status directly by scraping system info files, not the container status. So in order to make life easy, we create a ` exporter.service ` to manage its lifetime. 
+
+ By default the port ` 9014 ` will be listened by node_exporter, we should setup the inbound rules of network security group and make sure that it can not be accessed from outside to keep the node safe. 
+
+** II. Forwarder **
+
+ Instead of pulling data from node_exporter, we create an internal cron task to pull the metrics constantly from node_exporter and send it to pushgateway passively. The script is simple enough with no more than two ` curl ` calls. Of course it would be better if we check the exporter status before local pulling, this helps to eliminate empty push actions. 
+
+    # Send metrics to pushgateway
+    curl -s http://$EXPORTER_ADDR/$EXPORTER_METRIC | curl --data-binary @- http://$PGW_ADDR/metrics/job/$PGW_JOB/instance/$PGW_INSTANCE
+
+ The cron task can be added as below. However, it is not recommended to do that because it has the risk of adding duplicated tasks. A better way of doing this is to create ` PID ` file and use it as a lock. More details can be found here, [ Preventing duplicate cron job executions ](http://www.jfox.info/go.php?url=http://bencane.com/2015/09/22/preventing-duplicate-cron-job-executions/)
+
+    echo "*/1 * * * * /root/exporter/cron.sh > /dev/null" | crontab
+
+** III. Pushgateway **
+
+ Launching pushgateway is easy, simply follow the official document here [ README.md ](http://www.jfox.info/go.php?url=https://github.com/prometheus/pushgateway/blob/master/README.md) . I’d suggest to run pushgateway in a separate container by drafting a local Dockerfile. 
+
+    # This is an official Dockerfile
+    FROM        quay.io/prometheus/busybox:latest
+    MAINTAINER  The Prometheus Authors <prometheus-developers@googlegroups.com>
+    
+    COPY pushgateway /bin/pushgateway
+    
+    EXPOSE     9091
+    WORKDIR    /pushgateway
+    ENTRYPOINT [ "/bin/pushgateway" ]
+
+ You can add more parameters by appending ` CMD ` commands after ` ENTRYPOINT ` . Details of its parameters can be found by using ` -h ` option. 
+
+    ./pushgateway -h
+
+** IV. Prometheus **
+
+ I’d recommend to launch prometheus by using container. You can follow the documentation here to setup a prometheus container within 5 min, [ Install Prometheus using Docker ](http://www.jfox.info/go.php?url=https://prometheus.io/docs/introduction/install/#using-docker) . 
+
+##  Summary 
+
+ This post gives a brief instructions on how to setup a push based monitoring service with ` node_exporter ` , ` pushgateway ` and ` prometheus ` . The key of replacing pull with push is simply adding a cron task that pulls local metrics and send it to pushgateway. It helps to hide the port ` 9014 ` from outside and keep the system safe. 
+
+ There has been a long discussion for Prometheus between pull and push, I’d suggest to read through this post [ Pull doesn’t scale – or does it? ](http://www.jfox.info/go.php?url=https://prometheus.io/blog/2016/07/23/pull-does-not-scale-or-does-it/) . It gives detailed pros and cons for each model, even though Prometheus natively supports pull model. Even so, considering that we prefer not to expose an extra HTTP endpoint for each worker node, we would like to take some walk around to implement a push based monitoring with [ node_exporter ](http://www.jfox.info/go.php?url=https://github.com/prometheus/node_exporter) , [ pushgateway ](http://www.jfox.info/go.php?url=https://github.com/prometheus/pushgateway) and [ prometheus ](http://www.jfox.info/go.php?url=https://github.com/prometheus/prometheus) . 
+[点赞](void(0))[push](http://www.jfox.info/go.php?url=http://ju.outofmemory.cn/tag/push/)[monitoring](http://www.jfox.info/go.php?url=http://ju.outofmemory.cn/tag/monitoring/)[Service](http://www.jfox.info/go.php?url=http://ju.outofmemory.cn/tag/Service/)
+{% endraw %}

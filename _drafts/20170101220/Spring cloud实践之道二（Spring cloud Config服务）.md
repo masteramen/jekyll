@@ -1,0 +1,222 @@
+---
+layout: post
+title:  "Spring cloud实践之道二（Spring cloud Config服务）"
+title2:  "Spring cloud实践之道二（Spring cloud Config服务）"
+date:   2017-01-01 23:55:20  +0800
+source:  "http://www.jfox.info/springcloud%e5%ae%9e%e8%b7%b5%e4%b9%8b%e9%81%93%e4%ba%8cspringcloudconfig%e6%9c%8d%e5%8a%a1.html"
+fileName:  "20170101220"
+lang:  "zh_CN"
+published: true
+permalink: "springcloud%e5%ae%9e%e8%b7%b5%e4%b9%8b%e9%81%93%e4%ba%8cspringcloudconfig%e6%9c%8d%e5%8a%a1.html"
+---
+{% raw %}
+spring cloud config 是一个配置管理工具包，让用户可以集中管理配置。具有中心化，版本控制，支持动态更新，平台独立，语言独立等特性。
+为什么我们需要一个配置中心？在单体应用中我们通过配置文件就可以解决配置的问题，但是在微服务的环境下，大量的服务导致了需要大量的配置，每次维护这些配置就成了比较繁琐和容易犯错误的地方。
+
+解决的方法：
+
+1. 一次提取配置：
+将需要配置的信息抽取到配置文件中
+2. 二次提取配置：
+将所有的配置放置在专门的配置中心进行统一管理
+
+演示用代码：
+[spring cloud server](http://www.jfox.info/go.php?url=https://github.com/hutou-workhouse/miscroServiceHello/tree/master/springCloudConfigServer)
+[spring cloud client](http://www.jfox.info/go.php?url=https://github.com/hutou-workhouse/miscroServiceHello/tree/master/springCloudConfigClient)
+
+## 使用
+
+spring boot config支持三种存储方式：本地资源、SVN、GIT
+通过配置文件进行配置，配置文件的命名规则：应用名 + 环境名 + 格式
+例如：
+
+    myservice1-dev.properties
+    myservice1-test.properties
+
+### 本地文件方式服务端
+
+进行本地文件的配置方式，我们需要在服务端配置文件中进行如下配置
+
+    spring.application.name=ConfigServer
+    
+    # 使用本地文件系统
+    spring.profiles.active=native
+    
+    server.port=8899
+
+根据使用配置的应用的名字，环境，数据进行配置文件的编写。例如：我们希望为**myservice1**这个应用进行配置，环境分别为开发和测试，则需要生产两个配置文件：myservice1-dev.properties，myservice1-test.properties
+
+    # myservice1-dev.properties
+    myenv=dev
+    
+    # myservice1-test.properties
+    myenv=test
+
+修改POM.xml，增加如下依赖
+
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-config-server</artifactId>
+            </dependency>
+
+修改启动类，增加注解：**@EnableConfigServer**
+
+    @SpringBootApplication
+    @EnableConfigServer
+    public class ConfigServer {
+        public static void main(String[] args) {
+            new SpringApplicationBuilder(ConfigServer.class).web(true).run(args);
+        }
+    }
+
+当我们启动服务之后，可以通过如下的方式验证一下：[http://localhost:port/myservice1/dev](http://www.jfox.info/go.php?url=http://localhost:port/myservice1/dev)
+
+### 客户端
+
+在完成了config服务端代码编写之后，我们可以开始进行client端的编写。这里要注意，增加一个**bootstrap.properties**配置文件，关于config相关的配置需要写在这个文件中，不能用在**application.properties**文件里。
+
+    # 这里的应用名在服务端配置过
+    spring.application.name=myservice1
+    server.port=8888
+    # 指定使用哪个环境的配置信息
+    spring.cloud.config.profile=dev
+    # 配置服务器的地址
+    spring.cloud.config.uri=http://localhost:8899/
+
+修改客户端pom.xml文件，增加如下的依赖
+
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-config</artifactId>
+            </dependency>
+
+修改启动类增加注解： **@EnableDiscoveryClient**
+
+    @SpringBootApplication
+    @EnableDiscoveryClient
+    public class ConfigClient {
+        public static void main(String[] args) {
+            new SpringApplicationBuilder(ConfigClient.class).web(true).run(args);
+        }
+    }
+
+下面增加一个Controller，通过注解：**@RefreshScope** + **@Value** 使用配置信息
+
+    @RefreshScope
+    @RestController
+    public class ConfigController {
+        @Value("${myenv}")
+        private String env;
+    
+        @RequestMapping("/config")
+        public String config(){
+            return env;
+        }
+    }
+
+### git方式服务端
+
+上面我们展示了配置文件放置在本地，默认的和推荐的方式都是放置在git服务器上，这样才能实现之前说的：具有中心化，版本控制，支持动态更新，平台独立，语言独立等特性。
+服务器配置文件增加如下的内容：需要注意，我曾经犯过的一个错误，在配置文件目录下不要放置application.properties文件，否则客户端读取配置服务器的时候会读取这个配置文件，可能造成错误。
+
+    spring.cloud.config.server.git.uri=https://github.com/hutou-workhouse/miscroServiceHello/
+    spring.cloud.config.server.git.searchPaths=config-repo
+    #spring.cloud.config.server.git.username=username
+    #spring.cloud.config.server.git.password=password
+
+上面的本地文件方式中有如下配置
+
+    spring.profiles.active=native
+
+我们可以不修改它，直接在启动服务的时候指定
+
+    java -jar configServer.jar --spring.profiles.active=git
+
+服务启动之后，我们可以通过如下的方式进行验证
+
+    http://localhost:8001/myservice1/dev/
+    http://localhost:8001/myservice1/test/
+    http://localhost:8001/myservice1-test.properties
+
+访问配置信息的URL与配置文件的映射关系如下：
+
+    /{application}/{profile}[/{label}]
+    /{application}-{profile}.yml
+    /{label}/{application}-{profile}.yml
+    /{application}-{profile}.properties
+    /{label}/{application}-{profile}.properties
+
+上面的url会映射{application}-{profile}.properties对应的配置文件，其中{label}对应Git上不同的分支，默认为master。
+
+至于客户端，是不需要进行任何修改，只要指向config服务器地址即可。
+
+## 配置集群
+
+通常在生产环境，Config Server与服务注册中心一样，我们也需要将其扩展为高可用的集群。
+Config Server本身就可以看成一个微服务，也可以通过注册在Eureka服务器上被其他的服务发现并调用。
+![](/wp-content/uploads/2017/07/1499506033.png) 
+ 
+   配置服务集群框架图(来自网络) 
+  
+ 
+
+### 服务端修改
+
+1. 修改config server的pom.xml文件，增加eureka server的依赖
+         <dependency>
+             <groupId>org.springframework.cloud</groupId>
+             <artifactId>spring-cloud-starter-eureka</artifactId>
+         </dependency>
+
+2. 在主类上增加注解：**@EnableDiscoveryClient**
+    @SpringBootApplication
+    @EnableConfigServer
+    @EnableDiscoveryClient
+    public class ConfigServer {
+     public static void main(String[] args) {
+         new SpringApplicationBuilder(ConfigServer.class).web(true).run(args);
+     }
+    }
+
+3. 配置文件中增加eureka server的地址
+    # 配置服务注册中心
+    eureka.client.serviceUrl.defaultZone=http://master:8671/eureka/
+
+运行之后可以在erueka server上查看，是否注册成功！可以注册多个config server形成集群
+
+### 客户端修改
+
+服务端运行成功，在eureka server上注册服务名：**CONFIGSERVER**
+下面开始修改客户端
+
+1. 在客户端pom.xm文件中增加erureka依赖
+     <dependency>
+         <groupId>org.springframework.cloud</groupId>
+         <artifactId>spring-cloud-starter-eureka</artifactId>
+     </dependency>
+
+2. 修改配置文件bootstrap.properties
+    # 配置服务注册中心
+    eureka.client.serviceUrl.defaultZone=http://master:8671/eureka/
+    # 配置config server名
+    spring.cloud.config.discovery.enabled=true
+    spring.cloud.config.discovery.serviceId=CONFIGSERVER
+
+## 数据刷新
+
+当配置文件发生改变的时候，我们访问配置服务器的时候会发现已经改变了，但是服务不能马上更新这个变化。那么怎么更新那
+
+1. 修改服务的pom.xml文件，增加监控的依赖
+         <dependency>
+             <groupId>org.springframework.boot</groupId>
+             <artifactId>spring-boot-starter-actuator</artifactId>
+         </dependency>
+
+2. 修改配置文件，允许访问/refresh
+    # 打开安全控制，通过/refresh刷新数据
+    management.security.enabled=false
+    endpoints.enabled=false
+    endpoints.refresh.enabled=true
+
+3. 需要刷新数据的时候，需要通过post方法访问/refresh，就可以获得最新的数据了
+{% endraw %}

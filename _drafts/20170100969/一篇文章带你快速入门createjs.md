@@ -1,0 +1,222 @@
+---
+layout: post
+title:  "一篇文章带你快速入门createjs"
+title2:  "一篇文章带你快速入门createjs"
+date:   2017-01-01 23:51:09  +0800
+source:  "http://www.jfox.info/%e4%b8%80%e7%af%87%e6%96%87%e7%ab%a0%e5%b8%a6%e4%bd%a0%e5%bf%ab%e9%80%9f%e5%85%a5%e9%97%a8createjs.html"
+fileName:  "20170100969"
+lang:  "zh_CN"
+published: true
+permalink: "%e4%b8%80%e7%af%87%e6%96%87%e7%ab%a0%e5%b8%a6%e4%bd%a0%e5%bf%ab%e9%80%9f%e5%85%a5%e9%97%a8createjs.html"
+---
+{% raw %}
+EaselJS：用于 Sprites、动画、向量和位图的绘制，创建 HTML5 Canvas 上的交互体验（包含多点触控） 
+
+  TweenJS：用于做动画效果 
+ 
+
+  SoundJS：音频播放引擎 
+ 
+
+  PreloadJS：网站资源预加载 
+ 
+
+  类似于SoundJS，PreloadJS，如果自己处理起来比较方便的话，也可以自己写，总的来说，它们相当于一个辅助作用，可选可不选。因此，本文章主要讲解EaselJS的使用。 
+ 
+ 
+ **1. EaselJS的大致api**
+- 画图片用(Bitmap)
+- 画图形，比如矩形，圆形等用(Shape) 【类似于改变坐标x，y，增加阴影shadow，透明度alpha，缩小放大scaleX/scaleY都可以做到】
+- 画文字，用(Text)
+- 还有容器Container的概念，容器可以包含多个显示对象
+
+**2. EaselJS绘图的大致流程** 
+ 
+ 
+ 
+   大致流程： 
+  创建显示对象→设置一些参数→调用方法绘制→添加到舞台→update()，代码如下： 
+  
+  
+   
+   
+    <script src="easeljs-0.7.1.min.js"></script>  //引入相关的js文件<canvas id="canvas"></canvas>
+    var canvas = document.querySelector('#canvas');
+    //创建舞台var stage = new createjs.Stage(canvas);
+    //创建一个Shape对象，此处也可以创建文字Text,创建图片Bitmapvar rect = new createjs.Shape();
+    //用画笔设置颜色，调用方法画矩形，矩形参数：x,y,w,h
+    rect.graphics.beginFill("#f00").drawRect(0, 0, 100, 100);
+    //添加到舞台  stage.addChild(rect);
+    //刷新舞台
+    stage.update();
+
+graphics可以设置一些样式，线条宽度，颜色等等，也可以调用一些方法绘制图形，比如矩形drawRect，圆形drawCircle等等，具体可以自己查看api。
+ 
+  
+ 
+   注意：记得一定要把shape对象加到舞台上，否则屏幕上不会显示。 
+  
+ 
+ 
+  
+  **3. Ticker定时器** 
+  
+ 
+   写createjs肯定会遇到的一个，就是ticker，主要就是定时刷新舞台，理想的帧速率是60FPS 
+  
+  
+   
+   
+    createjs.Ticker.setFPS(60);  
+
+**4. 控制多个显示对象的层级关系** 
+   
+  
+    stage，contain对象有个children属性代表子元素，是一个数组，里面的元素层级像下标一样从0开始，简单来说就是后面的覆盖前面的，addChild方法是添加到显示列表的最后。 
+   
+  
+    我们也可以动态改变children的层叠效果。 
+   
+   
+    
+    
+    stage.setChildIndex(red,1);
+
+**5.容器 container** 
+   
+  
+    它可以包含Text、Bitmap、Shape、Sprite等其他的EaselJS元素，包含在一个Container中方便统一管理。 
+   
+  
+    比如一个人物，他由手，脚，头，身体组成，你可以将这几个部分放在同一个container中，统一移动。使用方法也比较简单： 
+   
+   
+    
+    
+    var contain = new createjs.Container(); 
+    contain.addChild(bgImg);
+    contain.addChild(bitmap);  
+    stage.addChild(contain);
+
+蹬蹬蹬～本篇文章的重点，绘制图像并对图像进行处理
+**6. 绘制图片**
+    var bg = new createjs.Bitmap("./background.png");
+    stage.addChild(bg);
+    stage.update();
+
+按照上面的EaselJS的正常的绘制流程来说，上面这段代码应该可以正常显示。但是，只是有些情况下可以正常显示的，这个图像资源需要确定加载成功后才可以new，否则不会有图像在画布上，如果有做资源预加载，可以直接使用上面的代码，如果没有，则需要在image加载完成onload之后才进行绘制
+
+    var img = new Image();
+    img.src = './img/linkgame_pass@2x.png';
+    img.onload = function () {
+     var bg = new createjs.Bitmap("./background.png");
+     stage.addChild(bg);
+     stage.update();
+    }
+
+ 仅仅绘制图片是不够的，createjs提供了几种处理图片的方法：
+**6.1 给图片增加遮罩层** 
+   
+  
+    使用mask属性，可以只显示图片和shape相交的区域 
+   
+   
+    
+    
+    stage = new createjs.Stage("gameView");
+    bg = new createjs.Bitmap("./img/linkgame_pass@2x.png");
+    bg.x = 10;
+    bg.y = 10;
+    //遮罩图形
+    shape = new createjs.Shape();
+    shape.graphics.beginFill("#000").drawCircle(0, 0, 100);
+    shape.x = 200;
+    shape.y = 100;
+    bg.mask = shape;     //给图片bg添加遮罩stage.addChild(shape);
+    stage.addChild(bg);
+    stage.update();
+
+ 
+    
+   
+  
+    常用应用场景：用来剪裁图片，比如显示圆形的图片等 
+   
+   
+   ![](/wp-content/uploads/2017/06/910706-20170620210438148-1566406616.png)
+**6.2 给图片增加滤镜效果**
+
+    var blur = new createjs.BlurFilter(5,5,1);
+    bg.filters = [blur];
+
+ 
+    
+   
+     我们发现，图片还是没有变模糊，原因是图片添加了filter后stage立即刷新，filter只能保持一帧的效果，第二帧filter则失效了。而使用图片的cache()方法后，可以使得无论舞台怎么刷新，都可以保持住Filter的效果，添加cache还有很多作用，可以提高FPS，缓存等 
+    
+    
+     
+     
+    bg.cache(0,0,bg.image.width,bg.image.height);
+
+**6.3 使用Rectangle剪裁图片** 使用EaselJS内置的Rectangle对象来创建一个选取框，显示图片的某各部分。 
+   
+   
+    
+    
+    stage = new createjs.Stage("gameView");
+    bg = new createjs.Bitmap("./img/linkgame_pass@2x.png");
+    bg.x = 10;
+    bg.y = 10;
+    var rect = new createjs.Rectangle(0, 0, 121, 171);
+    bg.sourceRect = rect;
+    stage.addChild(bg);
+    stage.update();
+
+ 
+    
+   
+   
+   
+     适用场景：拼图小游戏，剪裁图片…… 
+     
+   
+   
+   **7. createjs事件**
+easeljs事件默认是不支持touch设备的，需要以下代码才支持：
+
+    createjs.Touch.enable(stage);
+
+对于Bitmap，Shape等对象，都可以直接使用addEventListener进行事件监听
+
+    bitmap = new createjs.Bitmap('');
+    bitmap.addEventListener（‘click’，handle）;
+
+**8. CreateJs的渲染模式** 
+ 
+
+  CreateJs提供了两种渲染模式，一种是用setTimeout，一种是用requestAnimationFrame，默认是setTimeout，默认的帧数是20，一般的话还没啥，但是如果动画多的话，设置成requestAnimationFrame模式的话，就会感觉到动画如丝般的流畅。 
+ 
+ 
+ **9.适配** 
+ 
+
+  在移动端开发中，不得不面对一个多屏幕，多尺寸的问题，所以适配问题显得特别重要。 
+ 
+ 
+  
+  
+    <canvas id="game" width="1000" height="700"></canvas>
+
+注意，以上代码的width，height不同于css中的width，height。
+
+比如，你在canvas内部绘制图片，用x，y轴进行定位，这里的x，y是相对于canvas这个整体。
+
+我们再把canvas当成一整张图片使用css进行适配
+
+    canvas{
+         width: 100%;
+    }
+
+那么，就会有以下的效果，canvas会适配屏幕尺寸，里面的图片也会等比例变大变小。
+{% endraw %}

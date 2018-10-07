@@ -1,0 +1,23 @@
+---
+layout: post
+title:  "一个JAVA开发一年的总结"
+title2:  "一个JAVA开发一年的总结"
+date:   2017-01-01 23:56:22  +0800
+source:  "http://www.jfox.info/%e4%b8%80%e4%b8%aajava%e5%bc%80%e5%8f%91%e4%b8%80%e5%b9%b4%e7%9a%84%e6%80%bb%e7%bb%93.html"
+fileName:  "20170101282"
+lang:  "zh_CN"
+published: true
+permalink: "%e4%b8%80%e4%b8%aajava%e5%bc%80%e5%8f%91%e4%b8%80%e5%b9%b4%e7%9a%84%e6%80%bb%e7%bb%93.html"
+---
+{% raw %}
+.catesblock h5 a{font-weight:bold;text-transform: uppercase;}
+.cates a {
+display: inline-block;
+margin: 0 3px 5px 0;
+padding: 2px 3px;
+position: relative;
+text-align: left;
+text-shadow: none;
+text-transform: lowercase;
+}
+{% endraw %}

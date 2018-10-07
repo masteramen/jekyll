@@ -1,0 +1,130 @@
+---
+layout: post
+title:  "Spring Boot 日志配置(LogBack,LockBack异步日志)"
+title2:  "Spring Boot 日志配置(LogBack,LockBack异步日志)"
+date:   2017-01-01 23:54:37  +0800
+source:  "http://www.jfox.info/springboot%e6%97%a5%e5%bf%97%e9%85%8d%e7%bd%aelogbacklockback%e5%bc%82%e6%ad%a5%e6%97%a5%e5%bf%97.html"
+fileName:  "20170101177"
+lang:  "zh_CN"
+published: true
+permalink: "springboot%e6%97%a5%e5%bf%97%e9%85%8d%e7%bd%aelogbacklockback%e5%bc%82%e6%ad%a5%e6%97%a5%e5%bf%97.html"
+---
+{% raw %}
+# Spring Boot 日志配置(LogBack,LockBack异步日志) 
+
+
+Spring Boot支持Java Util Logging、Log4J、Log4J2和LockBack作为日志框架，无论使用哪种日志框架，Spring Boot都为当前使用的日志框架的控制台及文件输出做好了配置。
+
+默认使用LockBack日志框架。
+
+# 使用application.properties配置
+
+在application.properties文件中配置日志级别：
+
+    logging.file=E:logsspring-boot-student
+    logging.level.org.springframework.web=debug
+
+日志 默认的格式
+
+    %d{yyyy-MM-dd HH:mm:ss.SSS} -%5p ${PID:-} [%15.15t] %-40.40logger{39} : %m%n
+
+输出的节点（ items） 如下：
+
+1. 日期和时间 – 精确到毫秒， 且易于排序。
+2. 日志级别 – ERROR, WARN, INFO, DEBUG 或 TRACE。
+3. Process ID。
+4. 一个用于区分实际日志信息开头的—分隔符。
+5. 线程名 – 包括在方括号中（ 控制台输出可能会被截断） 。
+6. 日志名 – 通常是源class的类名（ 缩写） 。
+7. 日志信息。
+
+配置项：
+
+- logging.config= classpath:logback.xml ：日志配置
+- logging.file= `myapp.log` ：默认的日志文件路径和名称配置
+- logging.level.*=日志级别
+- logging.level.org.springframework=DEBUG（日志级别）
+- logging.path= /var/log ：默认的日志路径配置
+- logging.pattern.level : 日志等级的格式渲染，只支持logback
+- logging.pattern.console= ：控制台日志的格式，只支持logback
+- logging.pattern.file= ：日志文件中日志的格式，只支持logback
+- logging.register-shutdown-hook=false 
+
+# 使用logback.xml配置
+
+通过application.properties文件配置Logback,对于大多数Spring Boot应用来说已经足够了，但是对于一些大型的企业应用来说似乎有一些相对复杂的日志需求。在Spring Boot中你可以在logback.xml或者在logback-spring.xml中对Logback进行配置，相对于logback.xml,logback-spring.xml更加被偏爱。下面我们以logback-spring.xml为例。
+
+## 默认的logback配置在：
+![](/wp-content/uploads/2017/07/1499447011.png) 
+ 
+   image 
+  
+ 
+ 
+ ![](/wp-content/uploads/2017/07/1499447013.png) 
+ 
+   image 
+  
+ 
+
+## 通过额外的文件配置Logback
+
+在src/main/resources目录下新建logback.xml
+
+    <?xml version="1.0" encoding="UTF-8"?>  
+    <configuration>  
+        <include resource="org/springframework/boot/logging/logback/base.xml"/>  
+        <logger name="com.xiaolyuh" level="debug" additivity="false">  
+            <appender-ref ref="CONSOLE"/>  
+            <appender-ref ref="FILE"/>  
+        </logger>  
+     </configuration>
+
+## 配置异步日志AsyncAppender
+
+工作原理：
+
+当Logging Event进入AsyncAppender后，AsyncAppender会调用appender方法，append方法中在将event填入Buffer(这里选用的数据结构为BlockingQueue)中前，会先判断当前buffer的容量以及丢弃日志特性是否开启，当消费能力不如生产能力时，AsyncAppender会超出Buffer容量的Logging Event的级别，进行丢弃，作为消费速度一旦跟不上生产速度，中转buffer的溢出处理的一种方案。AsyncAppender有个线程类Worker，它是一个简单的线程类，是AsyncAppender的后台线程，所要做的工作是：从buffer中取出event交给对应的appender进行后面的日志推送。
+
+从上面的描述中可以看出，AsyncAppender并不处理日志，只是将日志缓冲到一个BlockingQueue里面去，并在内部创建一个工作线程从队列头部获取日志，之后将获取的日志循环记录到附加的其他appender上去，从而达到不阻塞主线程的效果。因此AsynAppender仅仅充当事件转发器，必须引用另一个appender来做事。
+
+在使用AsyncAppender的时候，有些选项还是要注意的。由于使用了BlockingQueue来缓存日志，因此就会出现队列满的情况。正如上面原理中所说的，在这种情况下，AsyncAppender会做出一些处理：默认情况下，如果队列80%已满，AsyncAppender将丢弃TRACE、DEBUG和INFO级别的event，从这点就可以看出，该策略有一个惊人的对event丢失的代价性能的影响。
+
+另外其他的一些选项信息，也会对性能产生影响，下面列出常用的几个属性配置信息：
+
+<style>table th:first-of-type { width: 100px;}</style> 
+属性名类型描述queueSizeintBlockingQueue的最大容量，默认情况下，大小为256。discardingThresholdint默认情况下，当BlockingQueue还有20%容量，他将丢弃TRACE、DEBUG和INFO级别的event，只保留WARN和ERROR级别的event。为了保持所有的events，设置该值为0。includeCallerDataboolean提取调用者数据的代价是相当昂贵的。为了提升性能，默认情况下，当event被加入到queue时，event关联的调用者数据不会被提取。默认情况下，只有”cheap”的数据，如线程名。
+默认情况下，event queue配置最大容量为256个events。如果队列被填满，应用程序线程被阻止记录新的events，直到工作线程有机会来转发一个或多个events。因此队列深度需要根据业务场景进行相应的测试，做出相应的更改，以达到较好的性能。
+
+下面给出一个使用的配置示例：
+
+    <?xml version="1.0" encoding="UTF-8"?>
+    <configuration>
+        <include resource="org/springframework/boot/logging/logback/base.xml" />
+    
+        <appender name="ASYNC_FILE" class="ch.qos.logback.classic.AsyncAppender">
+            <!-- 不丢失日志.默认的,如果队列的80%已满,则会丢弃TRACT、DEBUG、INFO级别的日志 -->
+            <discardingThreshold>0</discardingThreshold>
+            <!-- 更改默认的队列的深度,该值会影响性能.默认值为256 -->
+            <queueSize>2048</queueSize>
+            <includeCallerData>true</includeCallerData>
+            <!-- 添加附加的appender,最多只能添加一个 -->
+            <appender-ref ref="FILE" />
+        </appender>
+    
+        <logger name="com.xiaolyuh" level="debug" additivity="true">
+            <appender-ref ref="CONSOLE" />
+            <appender-ref ref="ASYNC_FILE" />
+        </logger>
+    </configuration>
+
+目前研究logBack提供AsynAppender，发现此AsynAppender用了个BlockingQueue，但是不知道为什么用ArrayBlockingQueue，不用LinkedBlockingQueue，在大并发的时候，此queue有明显的优势。
+
+因为AsynAppender不能单独使用，需要另挂一个Appender，比如RollingFileAppender。这个Appender继承了OutputStreamFileAppender，OutputStreamFileAppender只是把BufferedOutPutStream包装一下，加入一些layout以及一些格式方面的东西。但是OutputStreamFileAppender在同步方面使用大量synchronized，由于AsynAppender已经做了，同步了，再次同步已经没必要了，而且synchronized的性能又不那么好，看来有优化的余地。
+
+另外LayoutWrappingEncoder是配合OutputStreamFileAppender一起使用的，里面有个ImmediateFlush的开关，可以延迟写io，但是什么写io呢，取决于bufferedOutputStream的时机。
+
+所以这里可以通过一个后台线程在不忙的时候flush积极一些
+
+注意： 在Spring Boot的main方法里的日志不会记录到日志文件。
+{% endraw %}

@@ -56,5 +56,55 @@ HandleExcelController用来处理前端请求，代码如下：
 
     package cn.wangze.controller;
     
-    import java.io.File; import java.util.List; import javax.servlet.ServletOutputStream; import javax.servlet.http.HttpServletResponse; import javax.servlet.http.HttpSession; import org.apache.commons.io.FileUtils; import org.springframework.beans.factory.annotation.Autowired; import org.springframework.stereotype.Controller; import org.springframework.web.bind.annotation.RequestMapping; import org.springframework.web.multipart.MultipartFile; import cn.wangze.domain.Students; import cn.wangze.service.BaseExcelService; @Controller @RequestMapping("/File") public class HandleExcelController extends BaseExcelController{ @Autowired private BaseExcelService baseExcelService; @RequestMapping("/UploadExcel") public void UploadExcel(MultipartFile file,HttpSession session,HttpServletResponse response) throws Exception{ //如果上传的文件不存在，抛出异常 if(file == null){ throw new Exception("文件不存在"); } //获取文件名 String fileName = file.getOriginalFilename(); //选择上传的文件存放到项目的路径 String path = session.getServletContext().getRealPath(separator+"res"+separator+"upload"); if(!checkPathName(fileName,response)) return ; String msg = baseExcelService.loadExcel(getSheet(file, path, fileName)); sendMsg(true,msg,response); } @RequestMapping("/DownLoadExcel") public void UpdownExcel(Students student,HttpServletResponse res,HttpSession session,HttpServletResponse response) throws Exception{ List<Students> stus = baseExcelService.queryList(student); if(stus.size()==0){ res.sendRedirect("/index.jsp"); return; } //下载的excel文件存放的本地路径 String path = session.getServletContext().getRealPath(separator+"res"+separator+"exportExcel"+separator); ServletOutputStream os = res.getOutputStream(); Students t = baseExcelService.queryTotal(student); //标题文字，数值中的第一个值+当前日期为文件名称，以后的每个元素为每列的标题 String[] title={"studets04","id","名字","年龄","性别"};//标题文字 //对应实体类的属性值 String[] parameters ={"id","name","age","sex"}; String[] endContent = {"","","",""}; //调用父类的处理方法，生成excel文件 String filename = getOutputName(stus,path,title,parameters,t,endContent); try { res.reset(); res.setCharacterEncoding("utf8"); res.setContentType("application/vnd.ms-excel;charset=utf8"); res.setHeader("Content-Disposition", "attachment;fileName=" +new String(filename.getBytes("utf-8"),"iso-8859-1")); os.write(FileUtils.readFileToByteArray(new File(path+separator+filename))); sendResult(true,response);
+    import java.io.File; import java.util.List; import javax.servlet.ServletOutputStream; import javax.servlet.http.HttpServletResponse; import javax.servlet.http.HttpSession; import org.apache.commons.io.FileUtils; import org.springframework.beans.factory.annotation.Autowired; import org.springframework.stereotype.Controller; import org.springframework.web.bind.annotation.RequestMapping; import org.springframework.web.multipart.MultipartFile; import cn.wangze.domain.Students; import cn.wangze.service.BaseExcelService; @Controller @RequestMapping("/File") public class HandleExcelController extends BaseExcelController{ @Autowired private BaseExcelService baseExcelService; @RequestMapping("/UploadExcel") public void UploadExcel(MultipartFile file,HttpSession session,HttpServletResponse response) throws Exception{ //如果上传的文件不存在，抛出异常 if(file == null){ throw new Exception("文件不存在"); } //获取文件名 String fileName = file.getOriginalFilename(); //选择上传的文件存放到项目的路径 String path = session.getServletContext().getRealPath(separator+"res"+separator+"upload"); if(!checkPathName(fileName,response)) return ; String msg = baseExcelService.loadExcel(getSheet(file, path, fileName)); sendMsg(true,msg,response); } @RequestMapping("/DownLoadExcel") public void UpdownExcel(Students student,HttpServletResponse res,HttpSession session,HttpServletResponse response) throws Exception{ List<Students> stus = baseExcelService.queryList(student); if(stus.size()==0){ res.sendRedirect("/index.jsp"); return; } //下载的excel文件存放的本地路径 String path = session.getServletContext().getRealPath(separator+"res"+separator+"exportExcel"+separator); ServletOutputStream os = res.getOutputStream(); Students t = baseExcelService.queryTotal(student); //标题文字，数值中的第一个值+当前日期为文件名称，以后的每个元素为每列的标题 String[] title={"studets04","id","名字","年龄","性别"};//标题文字 //对应实体类的属性值 String[] parameters ={"id","name","age","sex"}; String[] endContent = {"","","",""}; //调用父类的处理方法，生成excel文件 String filename = getOutputName(stus,path,title,parameters,t,endContent); try { res.reset(); res.setCharacterEncoding("utf8"); res.setContentType("application/vnd.ms-excel;charset=utf8"); res.setHeader("Content-Disposition", "attachment;fileName=" +new String(filename.getBytes("utf-8"),"iso-8859-1")); os.write(FileUtils.readFileToByteArray(new File(path+separator+filename))); sendResult(true,response); os.flush(); } finally { if (os != null) { os.close(); } } } }
+
+2）、service层的处理，把StudentsMapper注入到BaseExcelService
+
+BaseExcelService代码：
+
+    package cn.wangze.service;
+    
+    import java.util.ArrayList; import java.util.HashMap; import java.util.List; import java.util.Map; import javax.servlet.ServletOutputStream; import javax.servlet.http.HttpSession; import org.apache.poi.ss.usermodel.Cell; import org.apache.poi.ss.usermodel.Row; import org.apache.poi.ss.usermodel.Sheet; import org.springframework.beans.factory.annotation.Autowired; import org.springframework.stereotype.Service; import cn.wangze.domain.Students; import cn.wangze.mapper.StudentsMapper; @Service public class BaseExcelService { @Autowired private StudentsMapper<Students> studentsMapper; //判断字符串是否为空 public boolean isEmpty(String str) { return str == null || str.length() == 0; } //获取单个表格(字段)存放的信息 private String getValue(Cell cell,String cellLable,Map<String,String> errMap){ cell.setCellType(Cell.CELL_TYPE_STRING); String value = cell.getStringCellValue().trim(); return value; } //通过这个方法将excel表的每行的数据放到info对象里面 private String addInfo(Row row,Students info){ Map<String,String> errMap = new HashMap<String,String>(); String id = getValue(row.getCell(0),"ID",errMap); String username = getValue(row.getCell(1),"姓名",errMap); String age = getValue(row.getCell(2),"年龄",errMap); String sex = getValue(row.getCell(3),"性别",errMap); String errMsg = errMap.get("errMsg"); if(!isEmpty(errMsg)){ return errMsg; } info.setId(id); info.setName(username); info.setAge(age); info.setSex(sex); return null; } public String loadExcel(Sheet sheet) throws Exception{ //新建一个List集合，用来存放所有行信息，即每行为单条实体信息 List<Students> infos = new ArrayList<Students>(); //获取到数据行数，第一行是title，不需要存入数据库，所以rowNum从1开始 for (int rowNum = 1; rowNum <= sheet.getLastRowNum(); rowNum++) { Students info = new Students(); String errMsg2 = addInfo(sheet.getRow(rowNum),info); if(errMsg2 != null) return errMsg2; infos.add(info); } if(infos.isEmpty()){ return "没有解析到学生数据，请查验EXCEL文件"; } //通过studentsMapper的insertSheetData方法，将实体类存放的数据插入到数据库 int result = studentsMapper.insertSheetData(infos); //若插入成功会返回大于1的整数，返回success if(result >= 1){ return "success"; } return "error"; } //查询所有数据库存放的学生信息 public List<Students> queryList(Students students){ return studentsMapper.queryList(students); } //获取到的学生实体信息 public Students queryTotal(Students students){ return studentsMapper.queryTotal(students); } public void downExcel(HttpSession session,String separator){ } }
+
+3）、实体层的处理，字段要对应excel表的字段
+
+    package cn.wangze.domain;
+    
+    public class Students { String id; String name; String age; String sex; public String getId() { return id; } public void setId(String id) { this.id = id; } public String getName() { return name; } public void setName(String name) { this.name = name; } public String getAge() { return age; } public void setAge(String age) { this.age = age; } public String getSex() { return sex; } public void setSex(String sex) { this.sex = sex; } }
+
+4）、dao层处理：StudentsMapper.java是一个接口，业务到数据库需要执行的方法在这里声明，StudentsMapper.xml相当于接口的实现类，用来连接java和数据库的操作。
+
+StudentsMapper.java代码：
+
+    package cn.wangze.mapper;
+    
+    import java.util.List; public interface StudentsMapper<T> { public int insertSheetData(List<T> list); public List<T> queryList(T t); public T queryTotal(T t); }
+
+StudentsMapper.xml代码：
+
+    <?xml version="1.0" encoding="UTF-8"?>
+    <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+    <mapper namespace="cn.wangze.mapper.StudentsMapper">
+        <sql id="ColumnList">
+            id,name,age,sex
+        </sql>
+        <sql id="ColumnList_t" > t.id,t.name,t.age,t.sex </sql> <sql id="ValueList"> #{id},#{name},#{age},#{sex} </sql> <sql id="WhereClause"> where 1=1 <if test="id!=null and id!=''">and id=#{id}</if> <if test="name!=null and name!=''">and name=#{name}</if> <if test="age!=null and age!=''">and age=#{age}</if> <if test="sex!=null and sex!=''">and sex=#{sex}</if> </sql> <sql id="WhereClause_pager" > where 1=1 <if test="t.id!=null and t.id!=''">and id=#{t.id}</if> <if test="t.name!=null and t.name!=''">and name=#{t.name}</if> <if test="t.age!=null">and age=#{t.age}</if> <if test="t.sex!=null and t.sex!=''">and sex=#{t.sex}</if> </sql> <sql id="SetClause" > set <trim suffixOverrides="," > <if test="id!=null">id=#{id},</if> <if test="name!=null">name=#{name},</if> <if test="pid!=null">age=#{age},</if> <if test="url!=null">sex=#{sex},</if> </trim> </sql> <select id="queryList" resultType="Students"> select <include refid="ColumnList"/> from students </select> <select id="queryTotal" parameterType="Students" resultType="Students"> select <include refid="ColumnList" /> from students <include refid="WhereClause"/> <!-- (select <include refid="ColumnList"/> from t_account_cash t <include refid="WhereClauseQuery"/> group by to_char(t.add_time,'yyyy-mm-dd'),t.account_id) a --> </select> <insert id="insertSheetData" useGeneratedKeys="true" parameterType="java.util.List"> <!-- <selectKey resultType="long" keyProperty="id" order="AFTER"> SELECT LAST_INSERT_ID() </selectKey> --> insert into students (id,name,age,sex) values <foreach collection="list" item="item" index="index" separator="," > (#{item.id},#{item.name},#{item.age},#{item.sex}) </foreach> </insert> </mapper>
+
+**所有的代码就是这些了，操作的时候需要注意的多是路径的问题。最复杂的就是BaseExcelController的操作，它做的事情就是解析上传和创建下载excel文件。**
+
+**执行完之后的结果图是这样：**
+
+在数据库查看上传的excel表：
+
+**![](/wp-content/uploads/2017/08/1501940853.png)**
+
+下载到D:\tomcat\tomcat6.0.32\webapps\ExcelHandleDemo\res\exportExcel文件夹下的excel表：
+
+![](/wp-content/uploads/2017/08/15019408531.png)
+
+这里有一点不足的地方，我相信你已经发现了，就是下载完excel表格之后，前端还没有和业务对接上，没有相应的提示来告诉操作人执行结果，只能通过代码设置好的路径去查看文件夹下是否有下载的excel文件，
+
+不过这都是细节问题，相信难不倒聪明的各位。
+
+这些代码是从项目里面摘出来的，所以有些可以优化的地方，视个人业务情况而定。
 {% endraw %}
