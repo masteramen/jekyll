@@ -142,5 +142,114 @@ springmvc.xml中配置日期转换器
         <property name="webBindingInitializer" ref="customBinder" />
     </bean>
     
-    <!-- 自定义
+    <!-- 自定义webBinder -->
+    <bean id="customBinder"
+        class="org.springframework.web.bind.support.ConfigurableWebBindingInitializer">
+        <property name="conversionService" ref="conversionService" />
+    </bean>
+    <!-- conversionService -->
+    <bean id="conversionService"
+        class="org.springframework.format.support.FormattingConversionServiceFactoryBean">
+        <!-- 转换器 -->
+        <property name="converters">
+            <list>
+                <bean class="com.wuhao.ssm.util.DateConverter" />
+            </list>
+        </property>
+    </bean>
+
+View Code
+1.6、包装pojo参数绑定
+
+　　　　　　　　与1.4的pojo参数绑定的区别在于，这里将pojo放入一个包装类中，如下图，将Items类放入了ItemsQueryVO类中，ItemsQueryVO就是一个包装pojo
+
+　　　　　　　　　　ItemsQueryVO
+
+![](/wp-content/uploads/2017/07/1500039983.png)
+
+　　　　　　　　　　jsp
+
+![](/wp-content/uploads/2017/07/15000399831.png)
+
+　　　　　　　　　　controller：直接使用包装pojo接收
+
+![](/wp-content/uploads/2017/07/1500039984.png)
+
+1.7、集合参数的绑定
+
+1.7.1、简单类型的集合参数绑定，可以使用数组或者List来接收
+
+　　　　　　　　比如jsp页面有一些多选框，复选框，这样提交过来，就需要使用集合参数的绑定了。
+
+　　　　　　　　jsp
+
+![](/wp-content/uploads/2017/07/15000399841.png)
+
+　　　　　　　　controller
+
+　　　　　　　　　　使用数组来接收
+
+　　　　　　　　　　　　形参中的数组类型要和jsp中值的类型一致，形参中的参数名称要和jsp中name一致。也就是itemsid 
+
+![](/wp-content/uploads/2017/07/1500039985.png)
+
+　　　　　　　　　　使用list来接收
+
+　　　　　　　　　　　　形参中list的泛型跟jsp中的值的类型一致，形参中参数名称要和jsp中name一致。(我们想象中是这样)
+
+![](/wp-content/uploads/2017/07/15000399851.png)
+
+　　　　　　　　　　　　结果，会报错，嘿嘿，因为不能在形参中直接定义List类型的参数，如果想要使用list来接收，需要把List类型的参数定义在包装POJO中，Controller的方法形参使用该包装POJO，下面讲解。所以如果使用接收简单类型的集合参数，使用数组最为方便。
+
+1.7.2、pojo类型的集合参数绑定，可以使用数组或者list来接收
+
+　　　　　　　　　　注意：pojo类型的集合参数绑定时，接收它的数组或者List，都不能直接定义在Controller方法形参上，需要把它定义到一个包装pojo中，如何把这个包装pojo放到形参
+
+　　　　　　　　　　使用list。
+
+　　　　　　　　　　包装pojo类 ItemsQueryVo， 将需要装items集合的对象放入包装类中。
+
+![](/wp-content/uploads/2017/07/1500039986.png)
+
+　　　　　　　　　　jsp
+
+![](/wp-content/uploads/2017/07/15000399861.png)
+
+　　　　　　　　　　这里注意：标记的是name属性，不要与value属性搞混淆了，在ItemsQueryVo中有名为itemsList的list，所以在jsp中的name就需要一层层匹配下去才能正确将其属性值装载到正确的位置，list的格式为：itemsList[下标].name。 就拿这个分析，itemsList就可以找打ItemsQueryVo中的itemsList， itemsList[1]，就可以定位到itemsList中的第一个items，itemsList[1].name就可以定位到itemsList中的第一个items的name属性，这样一来就看得懂了。
+
+　　　　　　　　　　controller
+
+![](/wp-content/uploads/2017/07/15000399862.png)
+
+1.7.3、总结上面两种
+
+　　　　　　　　　　总结一下集合参数的绑定
+
+　　　　　　　　　　　　对于简单类型的集合参数绑定，则使用数组作为形参来接收请求的集合参数
+
+　　　　　　　　　　　　对于pojo类型的集合参数绑定，则使用数组或者list两者都可以，一般常用list。
+
+　　　　　　　　　　　　　　注意：这种pojo类型的集合参数绑定，必须将list或者数组作为一个包装类中的属性，然后使用该包装类对象作为形参来接收请求参数。　　　　　　　
+
+　　　　　　　　1.7.4、map集合类型绑定
+
+　　　　　　　　　　这个用的不多，一般只是用list，这个也稍微了解一下，等需要的时候会用即可，贴出关键代码就行
+
+　　　　　　　　　　同样，需要使用包装pojo类。
+
+　　　　　　　　　　ItemsQueryVo
+
+![](/wp-content/uploads/2017/07/1500039987.png)
+
+　　　　　　　　　　jsp：格式为下面这样。就能够匹配到
+
+![](/wp-content/uploads/2017/07/15000399871.png)
+
+　　　　　　　　　　controller
+
+![](/wp-content/uploads/2017/07/1500039988.png)
+
+二、总结
+
+　　　　　　看了这么多中参数绑定的例子，我觉得用一句话来概括最为准确，万变不离其宗。有耐心看一下就自然就会用了，真的很简单。只是知识比较多比较细，需要理解的也不多。
 {% endraw %}

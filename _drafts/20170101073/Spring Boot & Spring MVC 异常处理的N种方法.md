@@ -320,21 +320,5 @@ PS. `DispatcherServlet.EXCEPTION` = `org.springframework.web.servlet.DispatcherS
     
     }
 
-不过需要注意的是，无法通过[ErrorViewResolver](http://www.jfox.info/go.php?url=http://docs.spring.io/spring-boot/docs/1.5.4.RELEASE/api/org/springframework/boot/autoconfigure/web/ErrorViewResolver.html)设定Status Code，Status Code由[@ResponseStatus](http://www.jfox.info/go.php?url=https://docs.spring.io/spring/docs/4.3.9.RELEASE/javadoc-api/org/springframework/web/bind/annotation/ResponseStatus.html)或者容器决定（Tomcat里一律是500）。
-
-本章节代码在[me.chanjar.boot.customerrorviewresolver](http://www.jfox.info/go.php?url=https://github.com/chanjarster/spring-mvc-error-handling-example/blob/master/src/main/java/me/chanjar/boot/customerrorviewresolver)，使用[CustomErrorViewResolverExample](http://www.jfox.info/go.php?url=https://github.com/chanjarster/spring-mvc-error-handling-example/blob/master/src/main/java/me/chanjar/boot/customerrorviewresolver/CustomErrorViewResolverExample.java)运行。
-
-## @ExceptionHandler 和 @ControllerAdvice
-
-前面的例子中已经有了对[@ControllerAdvice](http://www.jfox.info/go.php?url=http://docs.spring.io/spring/docs/4.3.9.RELEASE/spring-framework-reference/htmlsingle/#mvc-ann-controller-advice)和[@ExceptionHandler](http://www.jfox.info/go.php?url=http://docs.spring.io/spring/docs/4.3.9.RELEASE/spring-framework-reference/htmlsingle/#mvc-ann-exceptionhandler)的使用，这里只是在做一些补充说明：
-
-1. 
-`@ExceptionHandler`配合`@ControllerAdvice`用时，能够应用到所有被`@ControllerAdvice`切到的Controller
-
-2. 
-`@ExceptionHandler`在Controller里的时候，就只会对那个Controller生效
-
-## 附录I
-
-下表列出哪些特性是Spring Boot的，哪些是Spring MVC的：
+不过需要注意的是，无法通过[ErrorViewResolver](http://www.jfox.info/go.php?url=http://docs.spring.io/spring-boot/docs/1.5.4.RELEASE/api/org/springframework/boot/autoconfigure/web/ErrorViewResolver.html)设定Status Code，Status Code由[@ResponseStatus](http://www.jfox.info/go.php?url=https://docs.spring.io/spring/docs/4.3.9.RELEASE/javadoc-api/org/springframework/web/bind/annotation/ResponseStatus.html)或者容器决定�
 {% endraw %}

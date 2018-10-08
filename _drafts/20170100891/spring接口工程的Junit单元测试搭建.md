@@ -291,5 +291,140 @@ Junit测试类：
 
 这种提取，同样适用于c命令空间。
 
-对于这种方式的整合到Junit，其实前面已经用到，直接在Junit测试类中指定对应的xml即可：@ContextConfiguration(locations = {“classpath:xxxx.xml”})。这里我们以Junit整合一个jdbc数据源为例进行讲解，首先看下需要装配的数据源类TestJdbcSo
+对于这种方式的整合到Junit，其实前面已经用到，直接在Junit测试类中指定对应的xml即可：@ContextConfiguration(locations = {“classpath:xxxx.xml”})。这里我们以Junit整合一个jdbc数据源为例进行讲解，首先看下需要装配的数据源类TestJdbcSource：
+
+    public class TestJdbcSource {
+        private String userName;
+        private String password;
+        private String uri;
+        public TestJdbcSource(String userName,String password,String uri){
+            this.userName = userName;
+            this.password = password;
+            this.uri = uri;
+        }
+        public void getSource(){
+            System.out.println("连接数据库uri:"+uri);
+            System.out.println("连接数据库用户名:"+userName);
+            System.out.println("连接数据库密码:"+password);
+        }
+    }
+
+然后看下装配该bean的xml配置：
+
+    <?xml version="1.0" encoding="UTF-8"?>
+    <beans xmlns="http://www.springframework.org/schema/beans"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd">
+        <!-- 不需要依赖的id，可以不用指定-->
+        <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+            <property name="locations">
+                <list>
+                    <value>classpath:test.properties</value>
+                </list>
+            </property>
+        </bean>
+        <bean id="testDbSource" class="com.sky.locale.dao.jdbc.TestJdbcSource">
+            <constructor-arg name="uri" value="${jdbc.url}"/>
+            <constructor-arg name="userName" value="${jdbc.username}"/>
+            <constructor-arg name="password" value="${jdbc.password}"/>
+        </bean>
+    </beans>
+
+在看下属性配置文件test.properties内容：
+
+    jdbc.url=jdbc:msyql:loadbalance://localhost/test_db
+    jdbc.username=root
+    jdbc.password=123
+     
+
+我们要在JUnit中使用该数据源，可以直接引入xml配置即可，代码如下：
+
+    @RunWith(SpringJUnit4ClassRunner.class)
+    @ContextConfiguration(locations = {"classpath:spring-jdbc.xml"})
+    public class JdbcSourceTest {
+        @Autowired
+        private TestJdbcSource testDbSource;
+        @Test
+        public void jdbcTest(){
+            Assert.notNull(testDbSource);
+            testDbSource.getSource();
+        }
+    }
+
+运行测试方法，打印信息为：
+
+    连接数据库uri:jdbc:msyql:loadbalance://localhost/test_db
+    连接数据库用户名:root
+    连接数据库密码:123
+
+说明Junit整合“显示XML装配” 成功。
+
+**整合”显式java装配****”**
+
+这种方式类似“显示xml装配”，但比xml更加灵活。新版spring也推荐使用这种方式（所谓的去xml化），但可惜的是现在我们系统还基本没有使用过。我们首先看下”显式java装配”方法有那些形式：
+
+首先创建一个空类，@Configuration表示该类为一个配置类：
+
+    @Configuration
+    public class ExplicitTestConfig {
+    }
+     
+
+然后依次往里面添加下列方法，进行“显示java装配”。
+
+1、没有依赖其他对象的bean，直接调用其无参构造方法：
+
+    @Bean(name="explicitTestDao")
+        public ExplicitTestDao explicitTestDao(){
+            return new ExplicitTestDaoImpl();
+        }
+     
+
+2、有依赖其他对象的bean，调用其构造方法，并注入需要的对象：
+
+    @Bean(name = "explicitTestService0")
+        public ExplicitTestService explicitTestService0(){
+            return new ExplicitTestServiceImpl(explicitTestDao());
+    }
+
+这里以explicitTestDao()方法，会让人错误的以为多次的创建了新的对象，其实spring默认是单例，这种写法不会重复创建对象。
+
+3、有依赖其他对象的bean，为避免第2中方式的错觉，可以直接以bean名注入：
+
+    @Bean(name = "explicitTestService1")
+        public ExplicitTestService explicitTestService1(ExplicitTestDao explicitTestDao){
+            return new ExplicitTestServiceImpl(explicitTestDao);
+    }
+
+推荐使用这种方式，同时注意这里创建的bean跟2中相同，但name不同。
+
+4、setter方式注入，与方式2对应：
+
+    @Bean(name = "explicitTestService2")
+        public ExplicitTestService explicitTestService3(){
+            ExplicitTestServiceImpl impl = new ExplicitTestServiceImpl();
+            impl.setExplicitTestDao(explicitTestDao());
+            return impl;
+    }
+
+5、setter方式注入，与方式3对应：
+
+    @Bean(name = "explicitTestService3")
+        public ExplicitTestService explicitTestService2(ExplicitTestDao explicitTestDao){
+            ExplicitTestServiceImpl impl = new ExplicitTestServiceImpl();
+            impl.setExplicitTestDao(explicitTestDao);
+            return impl;
+    }
+     
+
+可以看到通过“显示java装配”的方式，可以在方法里任意的实现自己的逻辑，比”xml”更加灵活。
+
+与Junit整合，也很简单，直接在JUnit测试类中通过注解引入上述配置类，@ContextConfiguration(classes=ExplicitTestConfig.class)即可。
+
+**整合三种装配方式**
+
+前面把Junit分别三种装配方式整合进行了讲解。但我们所在的项目，业务代码很有可能以上三种装配方式都有使用，这时候创建Junit单元测试，需要把不同的装配方式整合到一起。其中”自动装配”其实也是通过，java或者xml配置实现的。所有我们只需要整合java装配和xml装配。具体可以使用@import 和@importResource注解来实现。
+
+假设有个业务测试，需要用到商品接口、用户接口、jdbc数据连接。我们
 {% endraw %}

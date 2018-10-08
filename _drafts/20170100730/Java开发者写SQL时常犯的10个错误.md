@@ -295,42 +295,5 @@ is not the same as A IS NOT NULL
 `JOIN`  `address a`
 `ON`  `(c.id, c.tenant_id) = (a.id, a.tenant_id)`
 
-不幸的是，并不是所有数据库都支持行值表达式。但SQL标准已经在1992对行值表达式进行了定义，如果你使用他们，像Oracle或Postgres这些的复杂数据库可以使用它们计算出更好的执行计划。在[Use The Index, Luke](/url.php?_src=&amp;isencode=1&amp;content=dGltZT0xNDI2Njg4MTM5NzY3JnVybD1odHRwJTNBJTJGJTJGdXNlLXRoZS1pbmRleC1sdWtlLmNvbSUyRnNxbCUyRnBhcnRpYWwtcmVzdWx0cyUyRmZldGNoLW5leHQtcGFnZQ==)这个页面上有解析。
-
-**解决方案**：
-
-不管干什么都可以使用行值表达式。它们会让你的SQL语句更加简洁高效。
-
-### **9、不定义足够的限制条件（****constraints****）**
-
-我又要再次引用Tom Kyte 和 Use The Index, Luke 了。对你的元数据使用限制条件不能更赞了。首先，限制条件可以帮你防止数据质变，光这一点就很有用。但对我来说更重要的是，限制条件可以帮助数据库进行SQL语句转换，数据库可以决定。
-
-- 哪些值是等价的
-- 哪些子句是冗余的
-- 哪些子句是无效的（例如，会返回空值的语句）
-
-有些开发者可能认为限制条件会导致（数据库）变慢。但相反，除非你插入大量的数据，对于大型操作是你可以禁用限制条件，或用一个无限制条件的临时“载入表”，线下再把数据转移到真实的表中。
-
-**解决方案：**
-
-尽可能定义足够多的限制条件（constraints）。它们将帮你更好的执行数据库请求。
-
-### **10、认为50ms是一个快的查询速度**
-
-NoSQL的炒作依然在继续，许多公司认为它们像Twitter或Facebook一样需要更快、扩展性更好的解决方案，想脱离ACID和关系模型横向扩展。有些可能会成功（比如Twitter或Facebook），而其他的也许会走入误区：
-
-看这篇文章：[https://twitter.com/codinghorror/status/347070841059692545](/url.php?_src=&amp;isencode=1&amp;content=dGltZT0xNDI2Njg4MTM5NzY5JnVybD1odHRwcyUzQSUyRiUyRnR3aXR0ZXIuY29tJTJGY29kaW5naG9ycm9yJTJGc3RhdHVzJTJGMzQ3MDcwODQxMDU5NjkyNTQ1)。
-
-对于那些仍被迫（或坚持）使用关系型数据 库的公司，请不要自欺欺人的认为：“现在的关系型数据库很慢，其实它们是被天花乱坠的宣传弄快的”。实际上，它们真的很快，解析20Kb查询文档，计算 2000行执行计划，如此庞大的执行，所需时间小于1ms，如果你和数据管理员（DBA）继续优化调整数据库，就能得到最大限度的运行。
-
-它们会变慢的原因有两种：一是你的应用滥用流行的ORM；二是ORM无法针对你复杂的查询逻辑产生快的SQL语句。遇到这种情况，你就要考虑选择像 JDBC、jOOQ 或MyBatis这样的更贴近SQL核心，能更好的控制你的SQL语句的API。
-
-因此，不要认为查询速度50ms是很快或者可以接受的。完全不是！如果你程序运行时间是这样的，请检查你的执行计划。这种潜在危险可能会在你执行更复杂的上下文或数据中爆发。
-
-### **总结****
-**
-
-SQL很有趣，同时在各种各样的方面也很微妙。正如我的关于10个错误的博客所展示的。跋山涉水也要掌握SQL是一件值得做的事。数据是你最有价值的资产。带着尊敬的心态对待你的数据才能写出更好的SQL语句。
-
-原文链接： [jooq](/url.php?_src=&amp;isencode=1&amp;content=dGltZT0xNDI2Njg4MTM5NzcwJnVybD1odHRwJTNBJTJGJTJGd3d3LmltcG9ydG5ldy5jb20lMkZibG9nLmpvb3Eub3JnJTJGMjAxMyUyRjA4JTJGMTIlMkYxMC1tb3JlLWNvbW1vbi1taXN0YWtlcy1qYXZhLWRldmVsb3BlcnMtbWFrZS13aGVuLXdyaXRpbmctc3FsJTJG) 译文链接： [mportnew](/url.php?_src=&amp;isencode=1&amp;content=dGltZT0xNDI2Njg4MTM5NzcxJnVybD1odHRwJTNBJTJGJTJGd3d3LmltcG9ydG5ldy5jb20lMkYxNTI5MS5odG1s)
+不幸的是，并不是所有数据库都支持行值表达式。但SQL标准已经在1992对行值表达式进行了定义，如果你使用他们，像Oracle或Postgres这些的复杂数据库可以使用它们计算出更好的执行计划。在
 {% endraw %}

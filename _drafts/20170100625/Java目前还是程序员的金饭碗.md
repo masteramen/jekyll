@@ -28,11 +28,5 @@ Java 可能不是最被大众喜欢的，甚至不是最受欢迎的编程语言
 
 Will Cole 是 Career 2.0 网站的产品经理，他曾说过“无论喜不喜欢 Java，你都不可否认许多人知道 Java，许多公司需要 Java。”
 
-Will Cole 还说到：“上面那份排名中特别有趣的一点是，任何过度炒作的新技术都没有上榜。虽然新的技术频繁出现，但这些新技术若想在公司日常的方方面面大规模的范围中发挥其作用，这种可见的改变趋势需要大量的时间。”
-
-2013 年，这份显示需求量最大的语言名单中，传统语言占据了统治地位，部分原因是由于使用它们的公司的地位稳固。这也是为什么，微软和 Sybase 专有的数据库 Transact-SQL 赢得了 TIOBE Index 的年度编程语言大奖，即使微软的数据库引擎 SQL 服务器的人气持续下降。
-
-若没有改变现状的“催化剂”作用（比如，某种很少人知晓的语言实现了一种拥有巨大影响力的设备），榜单上的数据仍会保持相对的平稳。对于这些传统语言的“信徒”和他们的腰包，这是一个好消息，但这其实也没什么好说的。
-
-via: [Why Java skills are still golden for developers](http://www.jfox.info/go.php?url=http://jaxenter.com/why-java-skills-are-still-golden-for-developers.1-49296.html)
+Will Cole 还说到：“上面那份排名中特别有趣的一点是，任�
 {% endraw %}

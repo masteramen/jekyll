@@ -70,4 +70,27 @@ permalink: "%e5%85%b3%e4%ba%8ejava%e7%9a%84%e4%ba%8c%e7%bb%b4%e7%a0%81%e7%9a%84%
         publicstaticvoid main(String[] args) {
             try {
                 MultiFormatReader reader=new MultiFormatReader();//[需要详细了解MultiFormatReader的小伙伴可以点我一下官方去看文档](http://www.jfox.info/go.php?url=https://zxing.github.io/zxing/apidocs/com/google/zxing/MultiFormatReader.html)
+                File f=new File("D:/img.png");
+                BufferedImage image=ImageIO.read(f);
+                BinaryBitmap bb=new BinaryBitmap(new HybridBinarizer(new BufferedImageLuminanceSource(image)));
+                HashMap map =new HashMap();
+                map.put(EncodeHintType.CHARACTER_SET, "utf-8");
+                Result result = reader.decode(bb,map);
+                System.out.println("解析结果："+result.toString());
+                System.out.println("二维码格式类型："+result.getBarcodeFormat());
+                System.out.println("二维码文本内容："+result.getText());
+            } catch (NotFoundException e) {
+                e.printStackTrace();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+    
+        }
+    }
+
+执行的结果如下
+
+    解析结果：www.baidu.com
+    二维码格式类型：QR_CODE
+    二维码文本内容：www.baidu.com
 {% endraw %}

@@ -347,27 +347,5 @@ Java 对象序列化是 JDK 1.1 中引入的一组开创性特性之一，用于
         private Person spouse;
     }
 
-注意，`PersonProxy` 必须跟踪 `Person` 的所有数据。这通常意味着代理需要是 `Person` 的一个内部类，以便能访问 private 字段。有时候，代理还需要追踪其他对象引用并手动序列化它们，例如 `Person` 的 spouse。
-
-这种技巧是少数几种不需要读/写平衡的技巧之一。例如，一个类被重构成另一种类型后的版本可以提供一个 `readResolve` 方法，以便静默地将被序列化的对象转换成新类型。类似地，它可以采用 `writeReplace` 方法将旧类序列化成新版本。
-
-回页首
-
-## 5. 信任，但要验证
-
-认为序列化流中的数据总是与最初写到流中的数据一致，这没有问题。但是，正如一位美国前总统所说的，“信任，但要验证”。
-
-对于序列化的对象，这意味着验证字段，以确保在反序列化之后它们仍具有正确的值，“以防万一”。为此，可以实现 `ObjectInputValidation` 接口，并覆盖 `validateObject()` 方法。如果调用该方法时发现某处有错误，则抛出一个 `InvalidObjectException`。
-
-回页首
-
-## 结束语
-
-Java 对象序列化比大多数 Java 开发人员想象的更灵活，这使我们有更多的机会解决棘手的情况。
-
-幸运的是，像这样的编程妙招在 JVM 中随处可见。关键是要知道它们，在遇到难题的时候能用上它们。
-
-*5 件事* 系列下期预告：Java Collections。在此之前，好好享受按自己的想法调整序列化吧！
-
-原文出处： [IBM-Ted Neward](/url.php?_src=&amp;isencode=1&amp;content=dGltZT0xNDM1ODk3Njg0MTYyJnVybD1odHRwJTNBJTJGJTJGd3d3LmlibS5jb20lMkZkZXZlbG9wZXJ3b3JrcyUyRmNuJTJGamF2YSUyRmotNXRoaW5nczElMkY=)
+注意，`PersonProxy` 必须跟踪 `Person` 的所有数据。这通常意味着代理需要是 `Person` 的一个�
 {% endraw %}

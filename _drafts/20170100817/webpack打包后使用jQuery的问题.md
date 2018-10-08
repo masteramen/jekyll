@@ -10,14 +10,50 @@ published: true
 permalink: "webpack-da-bao-hou-shi-yong-jquery-de-wen-ti.html"
 ---
 {% raw %}
-.catesblock h5 a{font-weight:bold;text-transform: uppercase;}
-.cates a {
-display: inline-block;
-margin: 0 3px 5px 0;
-padding: 2px 3px;
-position: relative;
-text-align: left;
-text-shadow: none;
-text-transform: lowercase;
-}
+By Lee - Last updated: 星期二, 四月 4, 2017
+
+使用webpack打包了页面上使用的一些js文件
+配置文件：
+
+    var webpack = require("webpack");
+    var path= require("path");
+    module.exports = {
+     entry: [
+    "./admin/public/entry/entry.js"
+    ],
+     output: {
+     path: path.join(__dirname,"/admin/public/js/out"),
+     filename:"bundle.js"
+    },
+     module: {
+     loaders: [{
+     test: /.css$/,
+     loader:"style!css"
+    }]
+    },
+     plugins: [
+     new webpack.ProvidePlugin({
+     $:"jquery",
+     jQuery:"jquery",
+    "window.jQuery":"jquery"
+    })
+    ],
+    }
+
+入口文件：
+
+    require('bootstrap');
+    require('bootstrap-switch');
+    require('bootstrap-timepicker');
+    require('../js/jquery.cookies.js');
+    require('gritter');
+    require('../js/datatable.js');
+    require('../js/custom.js');
+    require('../js/common.js');
+    require('../js/tag.js');
+    require('jquery-ui');
+    require('cropper');
+    require('ztree');
+
+打包完之后再网页上使用jQuery会报 `Uncaught ReferenceError: $ is not defined` 表示理解不能，为何在打包的js插件中使用jq没问题，在网页中却要报错
 {% endraw %}

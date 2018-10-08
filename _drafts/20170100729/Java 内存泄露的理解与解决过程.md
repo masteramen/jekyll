@@ -214,29 +214,5 @@ D、  GC发现一个只有虚引用的对象内存，那么：
              Log.e( " SoftHashMap " ,  " release  "   +  sv.key);  
            }    
          }    
-          /**  Here we put the key, value pair into the HashMap using   
-          a SoftValue object.  */    
-          public  Object put(Object key, Object value)  {   
-           processQueue();  //  throw out garbage collected values first    
-           Log.e( " SoftHashMap " ,  " put into  "   +  key);  
-            return  hash.put(key,  new  SoftValue(value, key, queue));   
-         }    
-          public  Object remove(Object key)  {   
-           processQueue();  //  throw out garbage collected values first    
-            return  hash.remove(key);   
-         }    
-          public   void  clear()  {   
-           hardCache.clear();   
-           processQueue();  //  throw out garbage collected values    
-          hash.clear();   
-        }    
-         public   int  size()  {   
-          processQueue();  //  throw out garbage collected values first    
-           return  hash.size();   
-        }    
-         public  Set entrySet()  {   
-           //  no, no, you may NOT do that!!! GRRR    
-           throw   new  UnsupportedOperationException();   
-        }   
-      }
+          /**  Here we put the key, value pair into the HashMap using
 {% endraw %}

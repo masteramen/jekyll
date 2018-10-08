@@ -190,46 +190,5 @@ permalink: "android%e8%87%aa%e5%ae%9a%e4%b9%89%e4%b8%87%e8%83%bdcanvas%e7%94%bb%
                 @Override
                 public void onWidgetLongPress(int index, int x, int y) {
                     ActionWidget actionWidget = (ActionWidget) mCanvasView.mDrawableList.get(index);
-                    mCanvasView.setVisibility(View.GONE);
-                    mGamePadCanvasView.setVisibility(View.VISIBLE);
-                    mGamePadWidget=new ActionWidget(x, y, mPaint);
-                    mGamePadCanvasView.addCanvasDrawable(mGamePadWidget);
-                    isGamePadCanvas=true;//把是否显示底层画布的开关开启
-                }
-            });
-
- 7、判断A控件是否移动B控件的位置范围之上：   
- 
-    mCanvasView.setOnWidgetMoveListener(new ActionEditorCanvasView.onWidgetMoveListener() {
-                @Override
-                public void onWidgetMove(int index, int x, int y) {
-                    if (isGamePadCanvas){
-                        if (mGamePadWidget!=null){
-                            mGamePadCanvasView.mDrawableList.get(1).setXcoords(x);
-                            mGamePadCanvasView.mDrawableList.get(1).setYcoords(y);
-                            mGamePadCanvasView.invalidate();
-                            if ((x>mXcoords&&x<mXcoords+250)&&(y>mYcoords&&y<mYcoords+250)){
-                                Toast.makeText(ActionCanvasTestActivity.this, "控件移动到控制器按钮界面！！！！！" , Toast.LENGTH_SHORT).show();
-                            }
-                        }
-                   }
-                }
-            });
-
- 8、最后是判断抬起事件，如底层画布是显示则隐藏底层画布显示第一层画布： 
- 
-
-          mCanvasView.setOnWidgetUpListener(new ActionEditorCanvasView.onWidgetUpListener() {
-                @Override
-                public void onWidgetUp(int index, int x, int y) {
-                    if (isGamePadCanvas){
-                        mCanvasView.setVisibility(View.VISIBLE);
-                        mGamePadCanvasView.setVisibility(View.GONE);
-                        mGamePadCanvasView.mDrawableList.remove(1);
-                        isGamePadCanvas=false;
-                    }
-                }
-            });
-
-五、Demo项目地址：
+                    mCanvasView.setV
 {% endraw %}

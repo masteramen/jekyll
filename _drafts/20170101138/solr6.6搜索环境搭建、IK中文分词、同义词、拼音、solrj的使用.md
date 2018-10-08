@@ -211,5 +211,78 @@ entity是data-config.xml里面的entity
 
 pinyin:属性是指全拼音,如重庆:chognqing,zhongqing默认为true,
 
-isFirstChar:属性�
+isFirstChar:属性是指简拼.如重庆:cq,zq默认为false;都为TRUE则都有.
+
+minTermLenght=”2″至少为两个字符才转拼音,
+
+minGram:这里配置的是2,因为如果1的话拼音简写会拆成单个字母,如重庆:cq,zq,c,z,q;
+
+影响很严重;
+
+<filter class=”top.pinyin.index.solr.PinyinTokenFilterFactory” pinyin=”true”
+
+isFirstChar=”true” minTermLenght=”2″ />
+
+     <fieldType name="text_ik" class="solr.TextField">
+    		<analyzer type="index">
+    			<tokenizer class="org.wltea.analyzer.lucene.IKTokenizerFactory" isMaxWordLength="false" useSmart="false" />
+    			<filter class="solr.LowerCaseFilterFactory" />
+    			<filter class="top.pinyin.index.solr.PinyinTokenFilterFactory" pinyin="true" isFirstChar="true" minTermLenght="2" />
+    			<filter class="com.shentong.search.analyzers.PinyinNGramTokenFilterFactory" minGram="2" maxGram="20" />
+    		</analyzer>
+    		<analyzer type="query">
+    			<tokenizer class="org.wltea.analyzer.lucene.IKTokenizerFactory" isMaxWordLength="false" useSmart="false" />
+    			<filter class="solr.SynonymFilterFactory" synonyms="synonyms.txt" ignoreCase="true" expand="true" />
+    			<filter class="solr.LowerCaseFilterFactory" />
+    		</analyzer>
+        </fieldType>
+
+ 结果如下:
+![](/wp-content/uploads/2017/07/1499354928.png)
+但是:在开启高亮显示时进行搜索时发现,报错了.原因是solr的千古难题lucene默认的高亮机制会出问题.暂时没有解决办法,可能需要修改solr源码,
+
+因为高亮显示的字段和搜索关键字长度不一致造成的,因为创建索引时一个关键字被索引成拼音和同义词,在搜索时使用拼音或同义词虽然查询出结果,
+
+但是在高亮时回显的并不是拼音和同义词所以长度会不一致,同义词可以改成索引时不存储同义词,在query时查询时将关键字转换成多个同义词查询,
+
+在回显时高亮的内容和关键字是匹配的所以不会出问题,如上是这样配置的.但却不能将拼音转汉字.所以只能选择简拼搜索,就是首字母那样长度是一致的
+
+方案二:使用solrj工具将中文分词,之后利用pinyin4j将数据的拼音存储数据库,
+
+用逗号隔开.创建Field,type选择text_general.它可以根据逗号拆分
+
+并且不会将拼音再次拆分了.如果是中文的话就会把中文拆分成单个字.
+
+此处就不演示了.此方法好处是便于维护,及对拼音进行处理和修改.
+
+ 方案三:同义词,不推荐;
+
+solrj的使用:
+
+将solr-6.6.0dist目录下的solr-solrj-6.6.0.jar和solr-core-6.6.0.jar和solrj-lib文件夹下的jar包
+
+拷贝到项目中.
+
+对于solrj的使用这里就不做过多的介绍了,
+
+网上内容很多,这里就做个查询的示例.
+
+HttpSolrClient httpSolrClient = new HttpSolrClient(URL);发现这个方法已经过时,现在使用
+
+HttpSolrClient httpSolrClient = new HttpSolrClient.Builder(“URL”).build();
+
+注意:在使用查询的时候,需要对一些特殊字符转义,因为solr中很多特殊符号有着不同的意义,
+
+那么可以直接调用
+
+ClientUtils.escapeQueryChars(key);就可以返回转义后的字符串了.
+
+    HttpSolrClient httpSolrClient = new HttpSolrClient.Builder("http://localhost:8080/solr/collection1").build();
+    SolrQuery query = new SolrQuery();//获取查询
+    query.setQuery("关*");//设置搜索关键词,注意:因为使用了IK中文分词,有时单个字符搜索不会出现结果,那么就需要使用通配符*代替.
+    query.set("df", "product_keywords");//设置默认搜索域,前面定义的
+    query.set("fq", "product_price:[0 TO 20]");//设置筛选条件,可多个
+    query.setStart(0);//设置开始的条数  用于分页
+    query.setRows(10);//设置显示条数  
+    query.addSort("score", ORDER.desc); //设置排序方式,可添加多个排序方式,有顺序的优先级.score为默认的排序方式,会根据结果的符�
 {% endraw %}

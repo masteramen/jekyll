@@ -290,5 +290,60 @@ java.sql.ResultSet:
     117//返回结果集，这里是查询指定id，所以结果集中应该最多只有一条记录118             rs = ps.executeQuery();
     119if(rs.next()) {
     120                 Person p = new Person();
-    12
+    121                p.setId(id);
+    122//这里的Result的getObject方法，参数为数据表中字段名，可以获取对应字段值123                 p.setName(rs.getString("name"));
+    124                 p.setGender(rs.getString("gender"));
+    125                 p.setAge(rs.getInt("age"));
+    126return p;//返回p对象，结束127            }
+    128         } catch (SQLException e) {
+    129            e.printStackTrace();
+    130         } finally {
+    131//关闭相关对象132            JdbcUtil.close(rs, ps, conn);
+    133        }
+    134returnnull;
+    135    }
+    136//获取所有记录，返回结果集不便操作，故封装到一个List中作为方法返回值137public List<Person> findAll() {
+    138             Connection conn = JdbcUtil.getConnection();
+    139             PreparedStatement ps = null;
+    140             ResultSet rs = null;
+    141             List<Person> list = new ArrayList<>();
+    142try {
+    143                 ps = conn.prepareStatement(SQL_ALL);
+    144//返回结果集145                 rs = ps.executeQuery();
+    146while(rs.next()) {
+    147//创建一个Person对象148                     Person p = new Person();
+    149//这里的Result的getObject方法，参数为数据表中字段名，可以获取对应字段值150                     p.setId(rs.getInt("id"));
+    151                     p.setName(rs.getString("name"));
+    152                     p.setGender(rs.getString("gender"));
+    153                     p.setAge(rs.getInt("age"));
+    154                     list.add(p);//添加至集合155                }
+    156return list;
+    157             } catch (SQLException e) {
+    158                e.printStackTrace();
+    159             } finally {
+    160//关闭相关对象161                JdbcUtil.close(rs, ps, conn);
+    162            }
+    163returnnull;
+    164        }
+    165 }
+
+##  小结
+
+JDBC操作数据库步骤概述如下：
+
+1.注册加载驱动类
+
+2.获取连接
+
+3.创建语句对象
+
+4.执行SQL语句（excute）
+
+5（可选）.处理结果
+
+6.关闭相关对象（注意顺序：依次为ResultSet、Statement/PreparedStatement、Connction）
+
+## 扩展
+
+上述过程能基本完整实现对一个数据表的操作，但是只能针对固定的单个数据表，利用泛型、反射等技术，可对dao层代码进行抽取和封装，添加SQL语句实现联表查询，使得程序更具有通用性和灵活性，对任意的数据表都适用。在实际开发过程中，有框架已经封装了JDBC，如hibernate和mybatis，可以通过底层的JDBC操作进一步学习。
 {% endraw %}

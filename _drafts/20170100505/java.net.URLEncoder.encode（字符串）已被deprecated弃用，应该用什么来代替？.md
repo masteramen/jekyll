@@ -10,14 +10,7 @@ published: true
 permalink: "java-net-urlencoder-encode%ef%bc%88%e5%ad%97%e7%ac%a6%e4%b8%b2%ef%bc%89%e5%b7%b2%e8%a2%abdeprecated%e5%bc%83%e7%94%a8%ef%bc%8c%e5%ba%94%e8%af%a5%e7%94%a8%e4%bb%80%e4%b9%88%e6%9d%a5%e4%bb%a3%e6%9b%bf.html"
 ---
 {% raw %}
-.catesblock h5 a{font-weight:bold;text-transform: uppercase;}
-.cates a {
-display: inline-block;
-margin: 0 3px 5px 0;
-padding: 2px 3px;
-position: relative;
-text-align: left;
-text-shadow: none;
-text-transform: lowercase;
-}
+By Lee - Last updated: 星期三, 一月 29, 2014
+
+你应该使用的的URLEncoder类中的其他方法：方法URLEncoder.encode（字符串，字符串）。第一个参数是要编码的字符串，第二个是字符编码使用（例如，“UTF-8”）的名称。
 {% endraw %}

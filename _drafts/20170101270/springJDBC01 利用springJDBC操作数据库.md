@@ -332,4 +332,93 @@ UserDao.java
     3435    }
     3637public List<User> findAll() {
     38         String sql = "SELECT * FROM t_user ";
+    39         List<User> users = jt.query(sql, new UserRowMapper());
+    40return users;
+    41    }
+    4243/**44     * 结果集处理：经每一条查询记录转变成一个实体对象
+    45     * @author 三少
+    46     *
+    47*/48class UserRowMapper implements RowMapper<User> {
+    4950public User mapRow(ResultSet rs, int rowNum) throws SQLException {
+    51             User user = new User();
+    52             user.setUserId(rs.getInt("user_id"));
+    53             user.setUserName(rs.getString("user_name"));
+    54             user.setCredits(rs.getInt("credits"));
+    55             user.setPassword(rs.getString("password"));
+    56             user.setLastVisit(rs.getDate("last_visit"));
+    57             user.setLastIp(rs.getString("last_ip"));
+    58return user;
+    59        }
+    60    }
+    6162 }
+
+UserDaoImpl
+　　　　使用springJDBC操作数据库时，程序员只需要编写相关的sql语句，待定参数可以用？代替，然后调用JdbcTemplate类的相关方法来执行sql语句就行啦。
+
+　　　　JdbcTemplate类中的主要方法
+
+[execute方法：可以用于执行任何SQL语句，一般用于执行DDL语句；](execute方法：可以用于执行任何SQL语句，一般用于执行DDL语句；) 
+[update方法及batchUpdate方法：update方法用于执行新增、修改、删除等语句; 
+batchUpdate方法用于执行批处理相关语句；](update方法及batchUpdate方法：update方法用于执行新增、修改、删除等语句; 
+batchUpdate方法用于执行批处理相关语句；) 
+[query方法及queryForXXX方法：用于执行查询相关语句](query方法及queryForXXX方法：用于执行查询相关语句) 
+[　　　　　　call方法：用于执行存储过程、函数相关语句。](　　　　　　call方法：用于执行存储过程、函数相关语句。)
+
+　　　　　　注意：
+
+　　　　　　　　使用query方法时有三个参数
+
+　　　　　　　　　　参数1　　sql语句字符串
+
+　　　　　　　　　　参数2　　未知参数组
+
+　　　　　　　　　　参数3　　查询结果处理（就是讲每一条查询记录变成一个实体对象，三少的一般做法是编写一个实现了RowMapper接口的内部类，然后创建一个该内部类对象来作为参数3）
+
+### 　　4.4 项目结构图
+
+![](/wp-content/uploads/2017/07/1500041950.png)
+
+## 5 测试类
+
+### 　　5.1 测试前需要启动spring容器，因为我们的代码中使用到了spring容器的功能
+
+![](/wp-content/uploads/2017/07/1500041951.png)
+
+### 　　5.2 编写测试方法
+![](/wp-content/uploads/2017/07/1500041948.gif)![](/wp-content/uploads/2017/07/15000419481.gif)
+     1package testDao;
+     2 3import java.util.List;
+     4 5import org.junit.Before;
+     6import org.junit.Test;
+     7import org.springframework.context.ApplicationContext;
+     8import org.springframework.context.support.ClassPathXmlApplicationContext;
+     910import com.baobaotao.dao.UserDao;
+    11import com.baobaotao.entity.User;
+    1213publicclass TestDao {
+    1415private ApplicationContext ac;
+    16private UserDao userDao;
+    1718    @Before
+    19publicvoid init() {
+    20         ac = new ClassPathXmlApplicationContext("config/spring_mysql.xml"); // 启动容器21        System.out.println(ac);
+    2223         userDao = ac.getBean("userDao", UserDao.class); // 利用容器创建对象24        System.out.println(userDao);
+    25    }
+    2627/**28     * 测试插入数据
+    29*/30    @Test
+    31publicvoid test01() {
+    32         User user = new User();
+    33         user.setUserName("wym");
+    34         user.setPassword("111");
+    3536        userDao.insert(user);
+    37    }
+    3839/**40     * 测试查询所有数据
+    41*/42    @Test
+    43publicvoid test02() {
+    44         List<User> users = userDao.findAll();
+    45for(User user : users) {
+    46            System.out.println(user);
+    47        }
+    48    }
+    495051 }
+
+测试类
 {% endraw %}

@@ -128,45 +128,5 @@ By Lee - Last updated: 星期二, 五月 20, 2014
     				e.printStackTrace();
     			}
     			if(response == null)return;
-    			System.out.println(response.toString());
-    			System.out.println("Response Header:");
-    			
-    			for (org.apache.http.Header h : response.getAllHeaders()) {
-    				System.out.println(h.getName() + "\t:" + h.getValue());
-    
-    				if("Transfer-Encoding".equalsIgnoreCase(h.getName())) continue;
-    
-    				if("Location".equalsIgnoreCase(h.getName())){
-    					
-    					String location =null;
-    					
-    					location= h.getValue();
-    					if(location.startsWith(realHost))location = location.replace(realHost, myHost);
-    					System.out.println("new Location:"+location);
-    					t.getResponseHeaders().add(h.getName(), location);
-    				}else
-    				{
-    					t.getResponseHeaders().add(h.getName(), h.getValue());
-    
-    				}
-    				
-    			}
-    			System.out.println("Response Header end");
-    			ByteArrayOutputStream baos = new ByteArrayOutputStream();
-    			response.getEntity().writeTo(baos);
-    			byte[] bytes = baos.toByteArray();
-    
-    			System.out.println(" Response Body:");
-    			System.out.println(new String(bytes));
-    			System.out.println("Response Body End");
-    			int statusCode = response.getStatusLine().getStatusCode();
-    			System.out.println("Status Code:"+statusCode);
-    			t.sendResponseHeaders(statusCode,bytes.length);
-    			OutputStream os = t.getResponseBody();
-    			os.write(bytes);
-    			os.close();
-    		}
-    	}
-    
-    }
+    			System.out.println(response
 {% endraw %}

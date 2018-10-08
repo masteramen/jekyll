@@ -107,4 +107,45 @@ permalink: "oracle-shu-ju-ku-you-hua-oracle-zhi-xing-ji-hua-shun-xu-jie-shi.html
 **4 ****HASH JOIN **Cost: 45 Bytes: 1,255,576 Cardinality: 12,812
  
 **2 ****INDEX FULL SCAN INDEX (UNIQUE) **SYS.I_USER2 Cost: 1 Bytes: 735 Cardinality: 35
+ 
+**3 ****TABLE ACCESS FULL ****TABLE **SYS.OBJ$ Cost: 44 Bytes: 986,524 Cardinality: 12,812
+
+**5 ****HASH JOIN **Cost: 48 Bytes: 1,486,192 Cardinality: 12,812
+
+他的子步骤是
+
+***1 ******TABLE ACCESS FULL ******CLUSTER ******SYS.USER$ ******Cost: 2 Bytes: 630 Cardinality: 35 ***
+
+**4 ****HASH JOIN **Cost: 45 Bytes: 1,255,576 Cardinality: 12,812
+
+这个时候按照最右最上原则，那么，先执行的是
+
+***1 ******TABLE ACCESS FULL ******CLUSTER ******SYS.USER$ ******Cost: 2 Bytes: 630 Cardinality: 35 ***
+
+然后再应该执行
+
+**4 ****HASH JOIN **Cost: 45 Bytes: 1,255,576 Cardinality: 12,812
+
+然而，这个父步骤又有子步骤
+
+**2 ****INDEX FULL SCAN INDEX (UNIQUE) **SYS.I_USER2 Cost: 1 Bytes: 735 Cardinality: 35
+
+**3 ****TABLE ACCESS FULL ****TABLE **SYS.OBJ$ Cost: 44 Bytes: 986,524 Cardinality: 12,812
+
+那么，先执行子步骤的原则，先执行
+
+**2 ****INDEX FULL SCAN INDEX (UNIQUE) **SYS.I_USER2 Cost: 1 Bytes: 735 Cardinality: 35
+
+然后再执行
+
+**3 ****TABLE ACCESS FULL ****TABLE **SYS.OBJ$ Cost: 44 Bytes: 986,524 Cardinality: 12,812
+
+至此，oracle执行计划的真正阅读顺序是：
+
+**1、  没有父子步骤关系的遵循最右最上原则。**
+
+**2、  有父子步骤的，先要执行子步骤，也是按照最右最上原则执行。
+**
+
+[原文链接](http://www.jfox.info/go.php?url=http://www.tanyangxf.net/index.php/oracle-explain-sequence/)
 {% endraw %}

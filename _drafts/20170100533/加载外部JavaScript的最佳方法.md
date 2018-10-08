@@ -27,4 +27,28 @@ By Lee - Last updated: 星期六, 二月 8, 2014
                 if (script.readyState == "loaded" ||
                         script.readyState == "complete"){
                     script.onreadystatechange = null;
+                    callback();
+                }
+            };
+        } else {  //Others
+            script.onload = function(){
+                callback();
+            };
+        }
+    
+        script.src = url;
+        document.getElementsByTagName("head")[0].appendChild(script);
+    }
+    
+
+代码量很小，这样会让您的启动载入加载更快实际代码最终看起来像这样：
+
+    <script type="text/javascript" src="http://your.cdn.com/first.js"></script>
+    <script type="text/javascript">
+    loadScript("http://your.cdn.com/second.js", function(){
+        //initialization code
+    });
+    </script>
+
+关键，这整个技术是只有两个JavaScript文件，所以第二个包含的需要初始化页面的一切。如果你的页面需要两个以上的文件？那么你应该串联您的文件一起要么在构建时（使用类似链轮），或在运行时（使用类似mod_concat或组合处理程序）。不应该有，当你的页面需要超过这两个JavaScript文件到正确的初始化时间。每个额外的HTTP请求有开销，然后你就不需要担心顺序安排的下载，使代码在正确的顺序执行。通过刚才有两个文件，可以消除大量的关注点在哪个文件被下载并执行第一次以及消除不必要的HTTP请求。
 {% endraw %}

@@ -10,5 +10,5 @@ published: true
 permalink: "mina-bao-wen-tong-xin-jian-dan-shi-li.html"
 ---
 {% raw %}
-By  - Last updated: 星期二, 六月 20, 2017
+false
 {% endraw %}

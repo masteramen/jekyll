@@ -53,5 +53,34 @@ ROC 曲线和 AUC 常被用来评价一个二值分类器的优劣。
 
 **4. 代码：**
 
-输入 y 的�
+输入 y 的真实标签，还有 score，设定标签为 2 时是正例：
+
+    y = np.array([1, 1, 2, 2])
+    scores = np.array([0.1, 0.4, 0.35, 0.8])
+    fpr, tpr, thresholds = metrics.roc_curve(y, scores, pos_label=2)
+
+就会得到相应的 TPR, FPR, 截断点 ：
+
+    fpr = array([ 0. ,  0.5,  0.5,  1. ])
+    tpr = array([ 0.5,  0.5,  1. ,  1. ])
+    thresholds = array([ 0.8 ,  0.4 ,  0.35,  0.1 ])#截断点
+
+**5. AUC：**
+
+是 ROC 曲线下的面积，它是一个数值，当仅仅看 ROC 曲线分辨不出哪个分类器的效果更好时，用这个数值来判断。 
+![](/wp-content/uploads/2017/07/14991791052.png)
+
+The AUC value is equivalent to the probability that a randomly chosen positive example is ranked higher than a randomly chosen negative example.
+
+从上面定义可知，意思是随机挑选一个正样本和一个负样本，当前分类算法得到的 Score 将这个正样本排在负样本前面的概率就是 AUC 值。AUC 值是一个概率值，AUC 值越大，分类算法越好。
+
+**6. 代码：**
+
+    import numpy as np
+    from sklearn.metrics import roc_auc_score
+    y_true = np.array([0, 0, 1, 1])
+    y_scores = np.array([0.1, 0.4, 0.35, 0.8])
+    roc_auc_score(y_true, y_scores)
+    
+    0.75
 {% endraw %}

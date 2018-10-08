@@ -10,14 +10,29 @@ published: true
 permalink: "php-cong-url-zhong-ti-qu-can-shu-ming-he-can-shu-zhi-de-fang-fa.html"
 ---
 {% raw %}
-.catesblock h5 a{font-weight:bold;text-transform: uppercase;}
-.cates a {
-display: inline-block;
-margin: 0 3px 5px 0;
-padding: 2px 3px;
-position: relative;
-text-align: left;
-text-shadow: none;
-text-transform: lowercase;
+By Lee - Last updated: 星期日, 八月 24, 2014
+
+php从url中提取参数名和参数值的实现方法：
+
+php的preg_match_all方法把匹配的结果存放在第三个指定的参数中，是一个二维数组。第一维度是分组信息的数组，即第一个数组存放的是所有匹配的完整字符串，第二个数组存放的是第一个()对应的值得，第二维度是分组的值。
+
+    function getKeyValue($url) {
+
+$result = array();
+
+$mr = preg_match_all(‘/(\?|&)(.+?)=([^&?]*)/i’, $url, $matchs);
+
+if ($mr !== FALSE) {
+
+for ($i = 0; $i < $mr; $i++) {
+
+$result[$matchs[2][$i]] = $matchs[3][$i];
+
+}
+
+}
+
+return $result;
+
 }
 {% endraw %}

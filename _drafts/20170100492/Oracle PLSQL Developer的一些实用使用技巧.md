@@ -38,4 +38,8 @@ WORCL =
 
          Oracle Home：c:\instantclient
 OCI Library：c:\instantclient\oci.dll
+
+[![20110421_737fb2957a575ca375ccQxBma2hvZ2XY](http://www.jfox.info/wp-content/uploads/2013/11/20110421_737fb2957a575ca375ccQxBma2hvZ2XY.png)](http://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2013/11/20110421_737fb2957a575ca375ccQxBma2hvZ2XY.png)
+
+至此配置完成,现在就可以正常使用pl/sql developer了
 {% endraw %}

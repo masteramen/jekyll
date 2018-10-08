@@ -53,5 +53,53 @@ drwxrwxr-x 2 mars mars 4096 Mar 17 14:00 test3
 
 drwxrwxr-x 2 mars mars 4096 Mar 17 14:16 test4
 
-有人说这个命令可能有点华而不实，但是lorinnn告诉你比如这样一个应用场景，你的服务器的剩余空间不够了，你打算去清理空间，可是/home目录下有太多的文件需要统计，计算，甚至必须进入子目录查看才能知道文件是否能够删除，这时你用du -sk并用sort进行了从大到小的排序，然后你进入
+有人说这个命令可能有点华而不实，但是lorinnn告诉你比如这样一个应用场景，你的服务器的剩余空间不够了，你打算去清理空间，可是/home目录下有太多的文件需要统计，计算，甚至必须进入子目录查看才能知道文件是否能够删除，这时你用du -sk并用sort进行了从大到小的排序，然后你进入这些大目录里面查看是否能够删除，走着走着，然后这个排序结果是不是被淹没了，找不到了有没有？如果你能将当时的结果记录下来，然后再去一个一个清理，那岂不是美哉！
+
+    [mars@njdc-mars152 ~]$ du -sk * | sort -n -k 1 -r | head | tee big.out
+
+17565256 SyncIAD1SamplePriority
+
+15748612 runMarsTool
+
+8274728 MARS2
+
+6623984 TableTransfer
+
+6384448 FlashDB
+
+6341424 MonitorPAFI
+
+4914916 googleCountParser
+
+3954296 PAFIPatternServer
+
+2751844 MapReduceJobs
+
+2709280 UpdateReportSummary
+
+查看刚才的big.out文件：
+
+    [mars@njdc-mars152 ~]$ cat big.out
+
+17565256 SyncIAD1SamplePriority
+
+15748612 runMarsTool
+
+8274728 MARS2
+
+6623984 TableTransfer
+
+6384448 FlashDB
+
+6341424 MonitorPAFI
+
+4914916 googleCountParser
+
+3954296 PAFIPatternServer
+
+2751844 MapReduceJobs
+
+2709280 UpdateReportSummary
+
+参考文章:[http://www.ourunix.org/post/303.html](http://www.jfox.info/go.php?url=http://www.jfox.info/url.php?url=http%3A%2F%2Fwww.ourunix.org%2Fpost%2F303.html).
 {% endraw %}

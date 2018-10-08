@@ -172,5 +172,135 @@ Java集合框架为Java编程语言的基础，也是Java面试中很重要的�
 
 （2）HashTable是同步的，而HashMap不是。所以HashMap适合单线程环境，HashTable适合多线程环境。
 
-（3）在Java1.4中引入了LinkedHashMap，HashMap的一个子类，假如你想要遍历顺序，你很容易从HashMap转向LinkedHashMap，但是HashTable不是这样的，它
+（3）在Java1.4中引入了LinkedHashMap，HashMap的一个子类，假如你想要遍历顺序，你很容易从HashMap转向LinkedHashMap，但是HashTable不是这样的，它的顺序是不可预知的。
+
+（4）HashMap提供对key的Set进行遍历，因此它是fail-fast的，但HashTable提供对key的Enumeration进行遍历，它不支持fail-fast。
+
+（5）HashTable被认为是个遗留的类，如果你寻求在迭代的时候修改Map，你应该使用CocurrentHashMap。
+
+**22.如何决定选用HashMap还是TreeMap？**
+
+    对于在Map中插入、删除和定位元素这类操作，HashMap是最好的选择。然而，假如你需要对一个有序的key集合进行遍历，TreeMap是更好的选择。基于你的collection的大小，也许向HashMap中添加元素会更快，将map换为TreeMap进行有序key的遍历。
+
+**23.ArrayList和Vector有何异同点？**
+
+    ArrayList和Vector在很多时候都很类似。
+
+（1）两者都是基于索引的，内部由一个数组支持。
+
+（2）两者维护插入的顺序，我们可以根据插入顺序来获取元素。
+
+（3）ArrayList和Vector的迭代器实现都是fail-fast的。
+
+（4）ArrayList和Vector两者允许null值，也可以使用索引值对元素进行随机访问。
+
+    以下是ArrayList和Vector的不同点。
+
+（1）Vector是同步的，而ArrayList不是。然而，如果你寻求在迭代的时候对列表进行改变，你应该使用CopyOnWriteArrayList。
+
+（2）ArrayList比Vector快，它因为有同步，不会过载。
+
+（3）ArrayList更加通用，因为我们可以使用Collections工具类轻易地获取同步列表和只读列表。
+
+**24.Array和ArrayList有何区别？什么时候更适合用Array？**
+
+    Array可以容纳基本类型和对象，而ArrayList只能容纳对象。
+
+    Array是指定大小的，而ArrayList大小是固定的。
+
+    Array没有提供ArrayList那么多功能，比如addAll、removeAll和iterator等。尽管ArrayList明显是更好的选择，但也有些时候Array比较好用。
+
+（1）如果列表的大小已经指定，大部分情况下是存储和遍历它们。
+
+（2）对于遍历基本数据类型，尽管Collections使用自动装箱来减轻编码任务，在指定大小的基本类型的列表上工作也会变得很慢。
+
+（3）如果你要使用多维数组，使用[][]比List<List<>>更容易。
+
+**25.ArrayList和LinkedList有何区别？**
+
+    ArrayList和LinkedList两者都实现了List接口，但是它们之间有些不同。
+
+（1）ArrayList是由Array所支持的基于一个索引的数据结构，所以它提供对元素的随机访问，复杂度为O(1)，但LinkedList存储一系列的节点数据，每个节点都与前一个和下一个节点相连接。所以，尽管有使用索引获取元素的方法，内部实现是从起始点开始遍历，遍历到索引的节点然后返回元素，时间复杂度为O(n)，比ArrayList要慢。
+
+（2）与ArrayList相比，在LinkedList中插入、添加和删除一个元素会更快，因为在一个元素被插入到中间的时候，不会涉及改变数组的大小，或更新索引。
+
+（3）LinkedList比ArrayList消耗更多的内存，因为LinkedList中的每个节点存储了前后节点的引用。
+
+**26.哪些集合类提供对元素的随机访问？**
+
+    ArrayList、HashMap、TreeMap和HashTable类提供对元素的随机访问。
+
+**27.EnumSet是什么？**
+
+    java.util.EnumSet是使用枚举类型的集合实现。当集合创建时，枚举集合中的所有元素必须来自单个指定的枚举类型，可以是显示的或隐示的。EnumSet是不同步的，不允许值为null的元素。它也提供了一些有用的方法，比如copyOf(Collection c)、of(E first,E…rest)和complementOf(EnumSet s)。
+
+**28.哪些集合类是线程安全的？**
+
+    Vector、HashTable、Properties和Stack是同步类，所以它们是线程安全的，可以在多线程环境下使用。Java1.5并发API包括一些集合类，允许迭代时修改，因为它们都工作在集合的克隆上，所以它们在多线程环境中是安全的。
+
+**29.并发集合类是什么？**
+
+    Java1.5并发包（java.util.concurrent）包含线程安全集合类，允许在迭代时修改集合。迭代器被设计为fail-fast的，会抛出ConcurrentModificationException。一部分类为：CopyOnWriteArrayList、 ConcurrentHashMap、CopyOnWriteArraySet。
+
+**30.BlockingQueue是什么？**
+
+    Java.util.concurrent.BlockingQueue是一个队列，在进行检索或移除一个元素的时候，它会等待队列变为非空；当在添加一个元素时，它会等待队列中的可用空间。BlockingQueue接口是Java集合框架的一部分，主要用于实现生产者-消费者模式。我们不需要担心等待生产者有可用的空间，或消费者有可用的对象，因为它都在BlockingQueue的实现类中被处理了。Java提供了集中BlockingQueue的实现，比如ArrayBlockingQueue、LinkedBlockingQueue、PriorityBlockingQueue,、SynchronousQueue等。
+
+**31.队列和栈是什么，列出它们的区别？**
+
+    栈和队列两者都被用来预存储数据。java.util.Queue是一个接口，它的实现类在Java并发包中。队列允许先进先出（FIFO）检索元素，但并非总是这样。Deque接口允许从两端检索元素。
+
+栈与队列很相似，但它允许对元素进行后进先出（LIFO）进行检索。
+
+    Stack是一个扩展自Vector的类，而Queue是一个接口。
+
+**32.Collections类是什么？**
+
+    Java.util.Collections是一个工具类仅包含静态方法，它们操作或返回集合。它包含操作集合的多态算法，返回一个由指定集合支持的新集合和其它一些内容。这个类包含集合框架算法的方法，比如折半搜索、排序、混编和逆序等。
+
+**33.Comparable和Comparator接口是什么？**
+
+    如果我们想使用Array或Collection的排序方法时，需要在自定义类里实现Java提供Comparable接口。Comparable接口有compareTo(T OBJ)方法，它被排序方法所使用。我们应该重写这个方法，如果“this”对象比传递的对象参数更小、相等或更大时，它返回一个负整数、0或正整数。但是，在大多数实际情况下，我们想根据不同参数进行排序。比如，作为一个CEO，我想对雇员基于薪资进行排序，一个HR想基于年龄对他们进行排序。这就是我们需要使用Comparator接口的情景，因为Comparable.compareTo(Object o)方法实现只能基于一个字段进行排序，我们不能根据对象排序的需要选择字段。Comparator接口的compare(Object o1, Object o2)方法的实现需要传递两个对象参数，若第一个参数比第二个小，返回负整数；若第一个等于第二个，返回0；若第一个比第二个大，返回正整数。
+
+**34.Comparable和Comparator接口有何区别？**
+
+    Comparable和Comparator接口被用来对对象集合或者数组进行排序。Comparable接口被用来提供对象的自然排序，我们可以使用它来提供基于单个逻辑的排序。
+
+    Comparator接口被用来提供不同的排序算法，我们可以选择需要使用的Comparator来对给定的对象集合进行排序。
+
+**35.我们如何对一组对象进行排序？**
+
+    如果我们需要对一个对象数组进行排序，我们可以使用Arrays.sort()方法。如果我们需要排序一个对象列表，我们可以使用Collection.sort()方法。两个类都有用于自然排序（使用Comparable）或基于标准的排序（使用Comparator）的重载方法sort()。Collections内部使用数组排序方法，所有它们两者都有相同的性能，只是Collections需要花时间将列表转换为数组。
+
+**36.当一个集合被作为参数传递给一个函数时，如何才可以确保函数不能修改它？**
+
+    在作为参数传递之前，我们可以使用Collections.unmodifiableCollection(Collection c)方法创建一个只读集合，这将确保改变集合的任何操作都会抛出UnsupportedOperationException。
+
+**37.我们如何从给定集合那里创建一个synchronized的集合？**
+
+    我们可以使用Collections.synchronizedCollection(Collection c)根据指定集合来获取一个synchronized（线程安全的）集合。
+
+**38.集合框架里实现的通用算法有哪些？**
+
+    Java集合框架提供常用的算法实现，比如排序和搜索。Collections类包含这些方法实现。大部分算法是操作List的，但一部分对所有类型的集合都是可用的。部分算法有排序、搜索、混编、最大最小值。
+
+**39.大写的O是什么？举几个例子？**
+
+    大写的O描述的是，就数据结构中的一系列元素而言，一个算法的性能。Collection类就是实际的数据结构，我们通常基于时间、内存和性能，使用大写的O来选择集合实现。比如：例子1：ArrayList的get(index i)是一个常量时间操作，它不依赖list中元素的数量。所以它的性能是O(1)。例子2：一个对于数组或列表的线性搜索的性能是O(n)，因为我们需要遍历所有的元素来查找需要的元素。
+
+**40.与Java集合框架相关的有哪些最好的实践？**
+
+（1）根据需要选择正确的集合类型。比如，如果指定了大小，我们会选用Array而非ArrayList。如果我们想根据插入顺序遍历一个Map，我们需要使用TreeMap。如果我们不想重复，我们应该使用Set。
+
+（2）一些集合类允许指定初始容量，所以如果我们能够估计到存储元素的数量，我们可以使用它，就避免了重新哈希或大小调整。
+
+（3）基于接口编程，而非基于实现编程，它允许我们后来轻易地改变实现。
+
+（4）总是使用类型安全的泛型，避免在运行时出现ClassCastException。
+
+（5）使用JDK提供的不可变类作为Map的key，可以避免自己实现hashCode()和equals()。
+
+（6）尽可能使用Collections工具类，或者获取只读、同步或空的集合，而非编写自己的实现。它将会提供代码重用性，它有着更好的稳定性和可维护性。
+
+原文链接：[40 Java Collections Interview Questions and Answers](/url.php?_src=&amp;isencode=1&amp;content=dGltZT0xNDMzMjUzMDI2NDI3JnVybD1odHRwJTNBJTJGJTJGd3d3LmphdmFjb2RlZ2Vla3MuY29tJTJGMjAxMyUyRjAyJTJGNDAtamF2YS1jb2xsZWN0aW9ucy1pbnRlcnZpZXctcXVlc3Rpb25zLWFuZC1hbnN3ZXJzLmh0bWw=)
 {% endraw %}
