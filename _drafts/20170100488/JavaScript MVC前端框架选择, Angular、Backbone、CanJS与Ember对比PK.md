@@ -10,6 +10,8 @@ published: true
 permalink: "javascript-mvc-qian-duan-kuang-jia-xuan-ze-angularbackbonecanjs-yu-ember-dui-bi-pk.html"
 ---
 {% raw %}
+By Lee - Last updated: 星期二, 十一月 12, 2013
+
 选择JavaScript MVC框架很难。一方面要考虑的因素非常多，另一方面这种框架也非常多，而要从中选择一个合适的，还真得费一番心思。想知道有哪些JavaScript MVC框架可以选择？
 
 我用过其中4个框架：**Angular**、 **Backbone**、 **CanJS**和 **Ember**。因此，可以对它们作一比较，供大家参考。本文会涉及框架选型过程中需要考虑的一系列因素，我们逐一讨论。
@@ -127,73 +129,5 @@ AngularBackboneCanJSEmber4524
 
 **自身大小（无依赖，未压缩）**
 AngularBackboneCanJSEmber80KB18KB33KB141KB
-Backbone最小，这一点也是最为人们所津津乐道的。但不能只看库本身的体积。
-
-**包含依赖的大小**
-
-80KB的Angular是唯一不需要其他库就能使用的。其他三个框架则都对其他库有依赖。
-
-Backbone至少需要Underscore和Zepto。虽然在Underscore中可以使用最小的模板来渲染视图，但多数情况下，还要借助更好的模板引擎，比如Mustache。这样它就增肥到了61KB。
-
-CanJS至少需要Zepto，因此会达到57KB。
-
-Ember需要jQuery和Handlebars，总共是269KB。
-AngularBackboneCanJSEmber80KB61KB57KB269KB
-### 得分
-AngularBackboneCanJSEmber4552
-## 性能
-
-[![01YLCrLj6si](http://www.jfox.info/wp-content/uploads/2013/11/01YLCrLj6siq)](http://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2013/11/01YLCrLj6siq)
-
-我不认为性能是选择框架的关键因素，因为这些框架在预期应用领域中的性能都不差。当然啦，具体还得看你做什么项目。要是想开发游戏，那性能是个重要因素。
-
-虽然我见过，也亲自做过一些性能对比，但我并不完全相信测试结果。很难说这种测试的方法和结果与实际项目吻合。
-
-不过，据我所见所闻，CanJS的性能是最高的，而且在视图绑定上格外突出。相对来说，我觉得Angular性能稍差，因为它执行对象的脏检查（dirty checking），这一点就拖了它的后腿了。
-
-### 得分
-AngularBackboneCanJSEmber3454
-## 成熟度
-
-[![01YLCrLqC3W](http://www.jfox.info/wp-content/uploads/2013/11/01YLCrLqC3W2)](http://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2013/11/01YLCrLqC3W2)
-
-这个框架成熟吗，经过实际检验了吗，有多少网站在用它呢？
-
-使用Backbone的网站不计其数。最近两年，它的核心代码没怎么改过，这是成熟的一个重要标志。
-
-Ember已经不是新框架了，但它的重大变更还是经常有，前几月刚刚稳定下来。因此，目前还不能说它是个成熟的框架。
-
-Angular似乎比Ember更稳定，验证的示例也更多，但不能与Backbone相提并论。
-
-CanJS好像还未经任何验证，因为不知道有什么网站在使用它。不过，CanJS其实也没有看起来那么弱不经风，它可是从JavaScriptMVC精简来的。JavaScriptMVC是2008年就出现的一个库，因此会有很多智慧结晶留传下来。
-
-### 得分
-AngularBackboneCanJSEmber4543
-## 内存泄漏隐患
-
-如果你想开发每次打开都得运行很长时间的单页应用，这是必须得考虑的问题。你当然不希望自己的应用导致内存泄漏，这个问题非常现实。不幸的是，内存泄露很容易发生，而自己编写的DOM事件监听器则是重灾区。
-
-只要你守规矩，Angular、CanJS和Ember能把这个问题帮你解决好。Backbone则不然，它需要你自己手工来卸载。
-
-### 得分
-AngularBackboneCanJSEmber5355
-## 个人偏好
-
-这恐怕是选择框架时最重要的一个因素了。
-
-- 你喜欢声明式HTML吗？-> Angular
-- 你喜欢使用模板引擎吗？-> Backbone、CanJS或Ember
-- 你喜欢固执已见的框架吗？-> Ember
-- 你希望框架与最初的SmallTalk MVC模式完全吻合吗？-> 没有完全吻合的，或许CanJS最接近
-- 你希望使用目前看来很酷的框架吗？-> Ember、Angular
-
-本项没办法打分。
-
-## 算总分
-
-好啦，把各框架所得分数做个汇总吧。别忘了这只是我个人看法，如果你觉得哪一项打分有失偏颇，请务必告诉我。
-
-（此处只是一个静态图表，单击可以打开） [![01YLCrQ27ccE](http://www.jfox.info/wp-content/uploads/2013/11/01YLCrQ27ccE.small)](http://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2013/11/01YLCrQ27ccE.small)
-
-如果每一个因素的权重都一样，那么这几个框架确实难分高下。因此，我觉得最终决定很大程度上还是取决于你的个人偏好，或者必须要给每个因素赋予不同的权重才行。
+Backbone最小，这一点也是最为人们
 {% endraw %}
