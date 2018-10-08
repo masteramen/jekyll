@@ -488,5 +488,482 @@ GaServer的bind方法为启动服务,启动后activeSelectorDaemon方法启动�
          * 返回通知
          *
          * @param loader       类加载器
-         * @param className
+         * @param className    类名
+         * @param methodName   方法名
+         * @param methodDesc   方法描述
+         * @param target       目标类实例
+         *                     若目标为静态方法,则为null
+         * @param args         参数列表
+         * @param returnObject 返回结果
+         *                     若为无返回值方法(void),则为null
+         * @throws Throwable 通知过程出错
+         */
+        void afterReturning(
+                ClassLoader loader, String className, String methodName, String methodDesc,
+                Object target, Object[] args,
+                Object returnObject) throws Throwable;              
+    
+
+接下来看起增强方法,可见真正的增强class是Enhancer
+
+        public static synchronized EnhancerAffect enhance(
+                final Instrumentation inst,
+                final int adviceId,
+                final boolean isTracing,
+                final PointCut pointCut) throws UnmodifiableClassException {
+    
+            final EnhancerAffect affect = new EnhancerAffect();
+            final Map<Class<?>, Matcher<AsmMethod>> enhanceMap = toEnhanceMap(pointCut);
+    
+            // 构建增强器
+            final Enhancer enhancer = new Enhancer(adviceId, isTracing, enhanceMap, affect);
+            try {
+                inst.addTransformer(enhancer, true);
+    
+                // 批量增强
+                if (GlobalOptions.isBatchReTransform) {
+                    final int size = enhanceMap.size();
+                    final Class<?>[] classArray = new Class<?>[size];
+                    arraycopy(enhanceMap.keySet().toArray(), 0, classArray, 0, size);
+                    if (classArray.length > 0) {
+                        inst.retransformClasses(classArray);
+                    }
+                }
+    
+    
+                // for each 增强
+                else {
+                    for (Class<?> clazz : enhanceMap.keySet()) {
+                        try {
+                            inst.retransformClasses(clazz);
+                        } catch (Throwable t) {
+                            logger.warn("reTransform {} failed.", clazz, t);
+                            if (t instanceof UnmodifiableClassException) {
+                                throw (UnmodifiableClassException) t;
+                            } else if (t instanceof RuntimeException) {
+                                throw (RuntimeException) t;
+                            } else {
+                                throw new RuntimeException(t);
+                            }
+                        }
+                    }
+                }
+            } finally {
+                inst.removeTransformer(enhancer);
+            }
+            return affect;
+        }
+
+Enhancer实现了Java Instrumentation的接口ClassFileTransformer,来看其核心方法transform
+
+        @Override
+        public byte[] transform(
+                final ClassLoader inClassLoader,
+                final String className,
+                final Class<?> classBeingRedefined,
+                final ProtectionDomain protectionDomain,
+                final byte[] classfileBuffer) throws IllegalClassFormatException {
+    
+            // 过滤掉不在增强集合范围内的类
+            if (!enhanceMap.containsKey(classBeingRedefined)) {
+                return null;
+            }
+    
+            final ClassReader cr;
+    
+            // 首先先检查是否在缓存中存在Class字节码
+            // 因为要支持多人协作,存在多人同时增强的情况
+            final byte[] byteOfClassInCache = classBytesCache.get(classBeingRedefined);
+            if (null != byteOfClassInCache) {
+                cr = new ClassReader(byteOfClassInCache);
+            }
+    
+            // 如果没有命中缓存,则从原始字节码开始增强
+            else {
+                cr = new ClassReader(classfileBuffer);
+            }
+    
+            // 获取这个类所对应的asm方法匹配
+            final Matcher<AsmMethod> asmMethodMatcher = enhanceMap.get(classBeingRedefined);
+    
+            // 字节码增强
+            final ClassWriter cw = new ClassWriter(cr, COMPUTE_FRAMES | COMPUTE_MAXS) {
+    
+                /*
+                 * 注意，为了自动计算帧的大小，有时必须计算两个类共同的父类。
+                 * 缺省情况下，ClassWriter将会在getCommonSuperClass方法中计算这些，通过在加载这两个类进入虚拟机时，使用反射API来计算。
+                 * 但是，如果你将要生成的几个类相互之间引用，这将会带来问题，因为引用的类可能还不存在。
+                 * 在这种情况下，你可以重写getCommonSuperClass方法来解决这个问题。
+                 *
+                 * 通过重写 getCommonSuperClass() 方法，更正获取ClassLoader的方式，改成使用指定ClassLoader的方式进行。
+                 * 规避了原有代码采用Object.class.getClassLoader()的方式
+                 */
+                @Override
+                protected String getCommonSuperClass(String type1, String type2) {
+                    Class<?> c, d;
+                    try {
+                        c = Class.forName(type1.replace('/', '.'), false, inClassLoader);
+                        d = Class.forName(type2.replace('/', '.'), false, inClassLoader);
+                    } catch (Exception e) {
+                        throw new RuntimeException(e);
+                    }
+                    if (c.isAssignableFrom(d)) {
+                        return type1;
+                    }
+                    if (d.isAssignableFrom(c)) {
+                        return type2;
+                    }
+                    if (c.isInterface() || d.isInterface()) {
+                        return "java/lang/Object";
+                    } else {
+                        do {
+                            c = c.getSuperclass();
+                        } while (!c.isAssignableFrom(d));
+                        return c.getName().replace('.', '/');
+                    }
+                }
+    
+            };
+    
+            try {
+    
+                // 生成增强字节码
+                cr.accept(new AdviceWeaver(adviceId, isTracing, cr.getClassName(), asmMethodMatcher, affect, cw), EXPAND_FRAMES);
+                final byte[] enhanceClassByteArray = cw.toByteArray();
+    
+                // 生成成功,推入缓存
+                classBytesCache.put(classBeingRedefined, enhanceClassByteArray);
+    
+                // dump the class
+                dumpClassIfNecessary(className, enhanceClassByteArray, affect);
+    
+                // 成功计数
+                affect.cCnt(1);
+    
+                // 排遣间谍
+                try {
+                    spy(inClassLoader);
+                } catch (Throwable t) {
+                    logger.warn("print spy failed. classname={};loader={};", className, inClassLoader, t);
+                    throw t;
+                }
+    
+                return enhanceClassByteArray;
+            } catch (Throwable t) {
+                logger.warn("transform loader[{}]:class[{}] failed.", inClassLoader, className, t);
+            }
+    
+            return null;
+        }
+    
+
+其最主要的逻辑应该是派遣间谍了
+
+         /*
+         * 派遣间谍混入对方的classLoader中
+         */
+        private void spy(final ClassLoader targetClassLoader)
+                throws IOException, NoSuchMethodException, IllegalAccessException, InvocationTargetException {
+    
+            // 如果对方是bootstrap就算了
+            if (null == targetClassLoader) {
+                return;
+            }
+    
+    
+            // Enhancer类只可能从greysClassLoader中加载
+            // 所以找他要ClassLoader是靠谱的
+            final ClassLoader greysClassLoader = Enhancer.class.getClassLoader();
+    
+            final String spyClassName = GaStringUtils.SPY_CLASSNAME;
+    
+            // 从GreysClassLoader中加载Spy
+            final Class<?> spyClassFromGreysClassLoader = loadSpyClassFromGreysClassLoader(greysClassLoader, spyClassName);
+            if (null == spyClassFromGreysClassLoader) {
+                return;
+            }
+    
+            // 从目标ClassLoader中尝试加载或定义ClassLoader
+            Class<?> spyClassFromTargetClassLoader = null;
+            try {
+    
+                // 去目标类加载器中找下是否已经存在间谍
+                // 如果间谍已经存在就算了
+                spyClassFromTargetClassLoader = targetClassLoader.loadClass(spyClassName);
+                logger.info("Spy already in targetClassLoader : " + targetClassLoader);
+    
+            }
+    
+            // 看来间谍不存在啊
+            catch (ClassNotFoundException cnfe) {
+    
+                try {// 在目标类加载起中混入间谍
+                    spyClassFromTargetClassLoader = defineClass(
+                            targetClassLoader,
+                            spyClassName,
+                            toByteArray(Enhancer.class.getResourceAsStream("/" + spyClassName.replace('.', '/') + ".class"))
+                    );
+                } catch (InvocationTargetException ite) {
+                    if (ite.getCause() instanceof java.lang.LinkageError) {
+                        // CloudEngine 由于 loadClass 不到,会导致 java.lang.LinkageError: loader (instance of  com/alipay/cloudengine/extensions/equinox/KernelAceClassLoader): attempted  duplicate class definition for name: "com/taobao/arthas/core/advisor/Spy"
+                        // 这里尝试忽略
+                        logger.debug("resolve #112 issues", ite);
+                    } else {
+                        throw ite;
+                    }
+                }
+    
+            }
+    
+    
+            // 无论从哪里取到spyClass，都需要重新初始化一次
+            // 用以兼容重新加载的场景
+            // 当然，这样做会给渲染的过程带来一定的性能开销，不过能简化编码复杂度
+            finally {
+    
+                if (null != spyClassFromTargetClassLoader) {
+                    // 初始化间谍
+                    invokeStaticMethod(
+                            spyClassFromTargetClassLoader,
+                            "init",
+                            greysClassLoader,
+                            getField(spyClassFromGreysClassLoader, "ON_BEFORE_METHOD").get(null),
+                            getField(spyClassFromGreysClassLoader, "ON_RETURN_METHOD").get(null),
+                            getField(spyClassFromGreysClassLoader, "ON_THROWS_METHOD").get(null),
+                            getField(spyClassFromGreysClassLoader, "BEFORE_INVOKING_METHOD").get(null),
+                            getField(spyClassFromGreysClassLoader, "AFTER_INVOKING_METHOD").get(null),
+                            getField(spyClassFromGreysClassLoader, "THROW_INVOKING_METHOD").get(null)
+                    );
+                }
+    
+            }
+    
+        }
+
+接下来看Spy的实现,发现其没什么特别的啊,怎么实现织入呢,期间在这迷了很久
+
+    
+        public class Spy {
+        // -- 各种Advice的钩子引用 --
+        public static volatile Method ON_BEFORE_METHOD;
+        public static volatile Method ON_RETURN_METHOD;
+        public static volatile Method ON_THROWS_METHOD;
+        public static volatile Method BEFORE_INVOKING_METHOD;
+        public static volatile Method AFTER_INVOKING_METHOD;
+        public static volatile Method THROW_INVOKING_METHOD;
+    
+        /**
+         * 代理重设方法
+         */
+        public static volatile Method AGENT_RESET_METHOD;
+    
+        /*
+         * 用于普通的间谍初始化
+         */
+        public static void init(
+                @Deprecated
+                ClassLoader classLoader,
+                Method onBeforeMethod,
+                Method onReturnMethod,
+                Method onThrowsMethod,
+                Method beforeInvokingMethod,
+                Method afterInvokingMethod,
+                Method throwInvokingMethod) {
+            ON_BEFORE_METHOD = onBeforeMethod;
+            ON_RETURN_METHOD = onReturnMethod;
+            ON_THROWS_METHOD = onThrowsMethod;
+            BEFORE_INVOKING_METHOD = beforeInvokingMethod;
+            AFTER_INVOKING_METHOD = afterInvokingMethod;
+            THROW_INVOKING_METHOD = throwInvokingMethod;
+        }
+    
+        /*
+         * 用于启动线程初始化
+         */
+        public static void initForAgentLauncher(
+                @Deprecated
+                ClassLoader classLoader,
+                Method onBeforeMethod,
+                Method onReturnMethod,
+                Method onThrowsMethod,
+                Method beforeInvokingMethod,
+                Method afterInvokingMethod,
+                Method throwInvokingMethod,
+                Method agentResetMethod) {
+            ON_BEFORE_METHOD = onBeforeMethod;
+            ON_RETURN_METHOD = onReturnMethod;
+            ON_THROWS_METHOD = onThrowsMethod;
+            BEFORE_INVOKING_METHOD = beforeInvokingMethod;
+            AFTER_INVOKING_METHOD = afterInvokingMethod;
+            THROW_INVOKING_METHOD = throwInvokingMethod;
+            AGENT_RESET_METHOD = agentResetMethod;
+        }
+    
+    
+        public static void clean() {
+            ON_BEFORE_METHOD = null;
+            ON_RETURN_METHOD = null;
+            ON_THROWS_METHOD = null;
+            BEFORE_INVOKING_METHOD = null;
+            AFTER_INVOKING_METHOD = null;
+            THROW_INVOKING_METHOD = null;
+            AGENT_RESET_METHOD = null;
+        }
+    
+    }
+    
+
+迷久了,偶尔查看其方法的调用,发现奥妙,其真正值得织入逻辑原来是在AdviceWeaver的相关方法内
+
+       private static ClassLoader loadOrDefineClassLoader(String agentJar) throws Throwable {
+    
+            final ClassLoader classLoader;
+    
+            // 如果已经被启动则返回之前启动的classloader
+            if (null != greysClassLoader) {
+                classLoader = greysClassLoader;
+            }
+    
+            // 如果未启动则重新加载
+            else {
+                classLoader = new AgentClassLoader(agentJar);
+    
+                // 获取各种Hook
+                final Class<?> adviceWeaverClass = classLoader.loadClass("com.github.ompc.greys.core.advisor.AdviceWeaver");
+    
+                // 初始化全局间谍
+                Spy.initForAgentLauncher(
+                        classLoader,
+                        adviceWeaverClass.getMethod("methodOnBegin",
+                                int.class,
+                                ClassLoader.class,
+                                String.class,
+                                String.class,
+                                String.class,
+                                Object.class,
+                                Object[].class),
+                        adviceWeaverClass.getMethod("methodOnReturnEnd",
+                                Object.class,
+                                int.class),
+                        adviceWeaverClass.getMethod("methodOnThrowingEnd",
+                                Throwable.class,
+                                int.class),
+                        adviceWeaverClass.getMethod("methodOnInvokeBeforeTracing",
+                                int.class,
+                                Integer.class,
+                                String.class,
+                                String.class,
+                                String.class),
+                        adviceWeaverClass.getMethod("methodOnInvokeAfterTracing",
+                                int.class,
+                                Integer.class,
+                                String.class,
+                                String.class,
+                                String.class),
+                        adviceWeaverClass.getMethod("methodOnInvokeThrowTracing",
+                                int.class,
+                                Integer.class,
+                                String.class,
+                                String.class,
+                                String.class,
+                                String.class),
+                        AgentLauncher.class.getMethod("resetGreysClassLoader")
+                );
+            }
+    
+            return greysClassLoader = classLoader;
+        }
+
+抽出一个方法来看,其最终还是委托listner的before来实现的,MonitorCommand只是实现一个invokeCost.Begin.可是没有字节码增强啊,怎么能动态实现呢
+
+         /**
+         * 方法开始<br/>
+         * 用于编织通知器,外部不会直接调用
+         *
+         * @param loader     类加载器
+         * @param adviceId   通知ID
+         * @param className  类名
+         * @param methodName 方法名
+         * @param methodDesc 方法描述
+         * @param target     返回结果
+         *                   若为无返回值方法(void),则为null
+         * @param args       参数列表
+         */
+        public static void methodOnBegin(
+                int adviceId,
+                ClassLoader loader, String className, String methodName, String methodDesc,
+                Object target, Object[] args) {
+    
+            if (!advices.containsKey(adviceId)) {
+                return;
+            }
+    
+            if (isSelfCallRef.get()) {
+                return;
+            } else {
+                isSelfCallRef.set(true);
+            }
+    
+            try {
+                // 构建执行帧栈,保护当前的执行现场
+                final GaStack<Object> frameStack = new ThreadUnsafeFixGaStack<Object>(FRAME_STACK_SIZE);
+                frameStack.push(loader);
+                frameStack.push(className);
+                frameStack.push(methodName);
+                frameStack.push(methodDesc);
+                frameStack.push(target);
+                frameStack.push(args);
+    
+                final AdviceListener listener = getListener(adviceId);
+                frameStack.push(listener);
+    
+                // 获取通知器并做前置通知
+                before(listener, loader, className, methodName, methodDesc, target, args);
+    
+                // 保护当前执行帧栈,压入线程帧栈
+                threadFrameStackPush(frameStack);
+            } finally {
+                isSelfCallRef.set(false);
+            }
+    
+        }
+    
+
+其实上面都是幌子,真正的增强是透过visitMethod实现的,其又委托了AdviceAdapter实现,其onMethodEnter方法是真正的before类增强(参见ASM官方文档),
+这里面不只用了字节码增强,还直接操作了堆栈,这部分看的云里雾里的.你有好的资料推荐我学习,我会很感谢的,如果我实现的话应该就如上述ASM例子中的实现,加字节码之类的吧.
+
+                @Override
+                protected void onMethodEnter() {
+    
+                    codeLockForTracing.lock(new CodeLock.Block() {
+                        @Override
+                        public void code() {
+    
+                            final StringBuilder append = new StringBuilder();
+                            _debug(append, "debug:onMethodEnter()");
+    
+                            // 加载before方法
+                            loadAdviceMethod(KEY_GREYS_ADVICE_BEFORE_METHOD);
+                            _debug(append, "loadAdviceMethod()");
+    
+                            // 推入Method.invoke()的第一个参数
+                            pushNull();
+    
+                            // 方法参数
+                            loadArrayForBefore();
+                            _debug(append, "loadArrayForBefore()");
+    
+                            // 调用方法
+                            invokeVirtual(ASM_TYPE_METHOD, ASM_METHOD_METHOD_INVOKE);
+                            pop();
+                            _debug(append, "invokeVirtual()");
+    
+                        }
+                    });
+    
+                    mark(beginLabel);
+    
+                }
+
+最近看了几个阿里开源的框架或工具,希望能有机会去阿里码代码,和优秀的人一起共事.
 {% endraw %}

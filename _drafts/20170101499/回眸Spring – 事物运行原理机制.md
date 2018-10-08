@@ -510,5 +510,6 @@ ObjenesisCglibAopProxy 的 父类是 CglibAopProxy 所以初始化ObjenesisCglib
                     }
                 } 
                 // Validate the class, writing log messages as necessary.
-                validateClassIfNecessary(proxySuperClass, classLoader);
+                validateClassIfNecessary(proxySuperClass, classLoader); 
+                //
 {% endraw %}

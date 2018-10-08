@@ -257,28 +257,5 @@ permalink: "%e6%9d%a5%e4%b8%80%e6%89%8baop%e6%b3%a8%e8%a7%a3%e6%96%b9%e5%bc%8f%e
     
         privatevoid gePointMsg(JoinPoint joinPoint) {
             logger.info("切点所在位置:{}", joinPoint.toString());
-            logger.info("切点所在位置的简短信息:{}", joinPoint.toShortString());
-            logger.info("切点所在位置的全部信息:{}", joinPoint.toLongString());
-            logger.info("切点AOP代理对象:{}", joinPoint.getThis());
-            logger.info("切点目标对象:{}", joinPoint.getTarget());
-            logger.info("切点被通知方法参数列表:{}", joinPoint.getArgs());
-            logger.info("切点签名:{}", joinPoint.getSignature());
-            logger.info("切点方法所在类文件中位置:{}", joinPoint.getSourceLocation());
-            logger.info("切点类型:{}", joinPoint.getKind());
-            logger.info("切点静态部分:{}", joinPoint.getStaticPart());
-        }
-    
-        private HttpServletRequest getHttpReq() {
-            RequestAttributes requestAttributes = RequestContextHolder.getRequestAttributes();
-            ServletRequestAttributes servletRequestAttributes = (ServletRequestAttributes) requestAttributes;
-            return servletRequestAttributes.getRequest();
-        }
-    }
-
-View Code
-   上述三步骤之后，你就可以在想记录日志的方法上面添加注解来进行记录操作日志，像下面这样。
-
-![](/wp-content/uploads/2017/07/1501508455.png)
-
-    源码托管地址：[https://git.oschina.net/LanboEx/spmvc-mybatis.git](http://www.jfox.info/go.php?url=https://git.oschina.net/LanboEx/spmvc-mybatis.git)  有这方面需求和兴趣的可以检出到本地跑一跑。
+            logger.info("切点所在位置
 {% endraw %}
