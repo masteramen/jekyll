@@ -1,0 +1,18 @@
+---
+layout: post
+title:  "数组有没有length()这个方法? String有没有length()这个方法？"
+title2:  "数组有没有length()这个方法 String有没有length()这个方法？"
+date:   2017-01-01 23:41:20  +0800
+source:  "http://www.jfox.info/shu-zu-you-mei-you-length-zhe-ge-fang-fa-String-you-mei-you-length-zhe-ge-fang-fa.html"
+fileName:  "20170100380"
+lang:  "zh_CN"
+published: true
+permalink: "shu-zu-you-mei-you-length-zhe-ge-fang-fa-String-you-mei-you-length-zhe-ge-fang-fa.html"
+---
+{% raw %}
+By Lee - Last updated: 星期二, 五月 21, 2013
+
+### 数组有没有length()这个方法? String有没有length()这个方法？
+
+数组没有length()这个方法，有length的属性。String有有length()这个方法。
+{% endraw %}

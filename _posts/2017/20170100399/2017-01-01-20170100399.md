@@ -1,0 +1,14 @@
+---
+layout: post
+title:  "Java 是从语言改进重新设计"
+title2:  "Java 是从语言改进重新设计"
+date:   2017-01-01 23:41:39  +0800
+source:  "http://www.jfox.info/Java-shi-cong-yu-yan-gai-jin-chong-xin-she-ji.html"
+fileName:  "20170100399"
+lang:  "zh_CN"
+published: true
+permalink: "Java-shi-cong-yu-yan-gai-jin-chong-xin-she-ji.html"
+---
+{% raw %}
+By Lee - Last updated: 星期日, 五月 26, 2013
+{% endraw %}

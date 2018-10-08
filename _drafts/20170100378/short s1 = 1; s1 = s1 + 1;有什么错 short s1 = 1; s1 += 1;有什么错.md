@@ -1,0 +1,19 @@
+---
+layout: post
+title:  "short s1 = 1; s1 = s1 + 1;有什么错? short s1 = 1; s1 += 1;有什么错?"
+title2:  "short s1 = 1; s1 = s1 + 1;有什么错 short s1 = 1; s1 += 1;有什么错"
+date:   2017-01-01 23:41:18  +0800
+source:  "http://www.jfox.info/short-s1-1-s1-s1-1-you-shen-me-cuo-short-s1-1-s1-1-you-shen-me-cuo.html"
+fileName:  "20170100378"
+lang:  "zh_CN"
+published: true
+permalink: "short-s1-1-s1-s1-1-you-shen-me-cuo-short-s1-1-s1-1-you-shen-me-cuo.html"
+---
+{% raw %}
+By Lee - Last updated: 星期二, 五月 21, 2013
+
+### short s1 = 1; s1 = s1 + 1;有什么错? short s1 = 1; s1 += 1;有什么错?
+
+short s1 = 1; s1 = s1 + 1; （s1+1运算结果是int型，需要强制转换类型）
+short s1 = 1; s1 += 1;（可以正确编译）
+{% endraw %}
