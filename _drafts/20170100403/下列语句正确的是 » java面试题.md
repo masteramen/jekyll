@@ -10,13 +10,14 @@ published: true
 permalink: "xia-lie-yu-ju-zheng-que-de-shi.html"
 ---
 {% raw %}
-By Lee - Last updated: 星期日, 五月 26, 2013
-
-### 下列语句正确的是
-
-A．形式参数可被视为localvariable
-B．形式参数可被字段修饰符修饰
-C．形式参数为方法被调用时，真正被传递的参数
-D．形式参数不可以是对象
-答案：A
+.catesblock h5 a{font-weight:bold;text-transform: uppercase;}
+.cates a {
+display: inline-block;
+margin: 0 3px 5px 0;
+padding: 2px 3px;
+position: relative;
+text-align: left;
+text-shadow: none;
+text-transform: lowercase;
+}
 {% endraw %}
