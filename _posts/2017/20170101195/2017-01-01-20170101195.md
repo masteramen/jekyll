@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/whatisanullpointerexceptionandhowdoifixit.html"
 fileName:  "20170101195"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/whatisanullpointerexceptionandhowdoifixit.html"
+permalink: "2017/whatisanullpointerexceptionandhowdoifixit.html"
 ---
 {% raw %}
 When you declare a reference variable (i.e. an object) you are really creating a pointer to an object. Consider the following code where you declare a variable of primitive type `int`:

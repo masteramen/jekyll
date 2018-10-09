@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/javaselenium%e5%85%adxpath%e5%ae%9a%e4%bd%8d.htm
 fileName:  "20170101100"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/javaselenium%e5%85%adxpath%e5%ae%9a%e4%bd%8d.html"
+permalink: "2017/javaselenium%e5%85%adxpath%e5%ae%9a%e4%bd%8d.html"
 ---
 {% raw %}
 xpath 的定位方法， 非常强大。 使用这种方法几乎可以定位到页面上的任意元素。 

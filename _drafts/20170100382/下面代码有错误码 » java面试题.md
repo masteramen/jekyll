@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/xia-mian-dai-ma-you-cuo-wu-ma.html"
 fileName:  "20170100382"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/xia-mian-dai-ma-you-cuo-wu-ma.html"
+permalink: "2017/xia-mian-dai-ma-you-cuo-wu-ma.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期二, 五月 21, 2013

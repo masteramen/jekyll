@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/hibernate-performance-tuning-summary.html"
 fileName:  "20170100612"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/hibernate-performance-tuning-summary.html"
+permalink: "2017/hibernate-performance-tuning-summary.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期五, 三月 14, 2014

@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/lightweight-esb-messaging-framework-mule-esb-pro
 fileName:  "20170100623"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/lightweight-esb-messaging-framework-mule-esb-profile.html"
+permalink: "2017/lightweight-esb-messaging-framework-mule-esb-profile.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期一, 四月 21, 2014

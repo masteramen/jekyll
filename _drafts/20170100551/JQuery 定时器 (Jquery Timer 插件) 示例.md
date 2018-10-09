@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/jquery-%e5%ae%9a%e6%97%b6%e5%99%a8-jquery-timer-
 fileName:  "20170100551"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/jquery-%e5%ae%9a%e6%97%b6%e5%99%a8-jquery-timer-%e6%8f%92%e4%bb%b6-%e7%a4%ba%e4%be%8b.html"
+permalink: "2017/jquery-%e5%ae%9a%e6%97%b6%e5%99%a8-jquery-timer-%e6%8f%92%e4%bb%b6-%e7%a4%ba%e4%be%8b.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期四, 二月 13, 2014

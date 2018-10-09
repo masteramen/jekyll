@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/%e4%bd%bf%e7%94%a8-maven-%e7%ae%a1%e7%90%86%e9%a
 fileName:  "20170100928"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/%e4%bd%bf%e7%94%a8-maven-%e7%ae%a1%e7%90%86%e9%a1%b9%e7%9b%ae.html"
+permalink: "2017/%e4%bd%bf%e7%94%a8-maven-%e7%ae%a1%e7%90%86%e9%a1%b9%e7%9b%ae.html"
 ---
 {% raw %}
 最近的练手项目使用的是 Maven 在管理项目，在使用 Maven 管理项目时，三层的开发时分模块开发的，parent-dao-service-web，所有的spring+struts + Hibernate的依赖都是加在 parent 上，dao-service-web都是作为子模块，在模块之间的关系处理的时候出现了几个问题：

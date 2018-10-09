@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/httpserver%e4%bc%98%e9%9b%85%e5%85%b3%e9%97%ad.h
 fileName:  "20170101241"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/httpserver%e4%bc%98%e9%9b%85%e5%85%b3%e9%97%ad.html"
+permalink: "2017/httpserver%e4%bc%98%e9%9b%85%e5%85%b3%e9%97%ad.html"
 ---
 {% raw %}
 和同事聊到了服务在需要关闭的时候该如何优雅退出，顺藤摸瓜挖掘了Go1.8的特性。Go 1.8起新增了优雅退出 HTTPServer 的特性，也就是大家经常提到的 GraceFul ShutDown。 

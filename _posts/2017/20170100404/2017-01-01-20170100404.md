@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/shuo-shuo-preparedstatement-he-statement-ju-ti-q
 fileName:  "20170100404"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/shuo-shuo-preparedstatement-he-statement-ju-ti-qu-bie.html"
+permalink: "2017/shuo-shuo-preparedstatement-he-statement-ju-ti-qu-bie.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期一, 五月 27, 2013

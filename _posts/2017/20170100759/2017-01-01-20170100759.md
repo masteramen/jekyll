@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/shi-me-shi-base62-bian-ma-he-base64-you-shi-me-q
 fileName:  "20170100759"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/shi-me-shi-base62-bian-ma-he-base64-you-shi-me-qu-bie.html"
+permalink: "2017/shi-me-shi-base62-bian-ma-he-base64-you-shi-me-qu-bie.html"
 ---
 {% raw %}
 在网上冲浪的时候，阅读技术文章有时候会看到base62，你可能会问这个base62和base64有什么区别？base62有什么用，难道就是64-62=2的区别？

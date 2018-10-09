@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/apache%e7%9a%84%e5%af%b9%e8%b1%a1%e5%a4%8d%e5%88
 fileName:  "20170100997"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/apache%e7%9a%84%e5%af%b9%e8%b1%a1%e5%a4%8d%e5%88%b6%e8%af%a6%e8%a7%a3.html"
+permalink: "2017/apache%e7%9a%84%e5%af%b9%e8%b1%a1%e5%a4%8d%e5%88%b6%e8%af%a6%e8%a7%a3.html"
 ---
 {% raw %}
 **BeanUtils.copyProperties 和 PropertyUtils.copyProperties**

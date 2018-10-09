@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/yuan-gong-bu-men-gong-zi-sql-mian-shi-ti.html"
 fileName:  "20170100446"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/yuan-gong-bu-men-gong-zi-sql-mian-shi-ti.html"
+permalink: "2017/yuan-gong-bu-men-gong-zi-sql-mian-shi-ti.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期一, 六月 24, 2013

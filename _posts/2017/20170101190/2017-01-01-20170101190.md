@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/shortcuttomakeamapoutofalistofstringsinjava.html
 fileName:  "20170101190"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/shortcuttomakeamapoutofalistofstringsinjava.html"
+permalink: "2017/shortcuttomakeamapoutofalistofstringsinjava.html"
 ---
 {% raw %}
 Yes. You can also use [`Arrays.asList(T...)`](https://www.jfox.info/go.php?url=https://docs.oracle.com/javase/8/docs/api/java/util/Arrays.html#asList-T...-) to create your `List`. Then use a `Stream` to [collect](https://www.jfox.info/go.php?url=https://docs.oracle.com/javase/8/docs/api/java/util/stream/Collectors.html) this with `Boolean.TRUE` like

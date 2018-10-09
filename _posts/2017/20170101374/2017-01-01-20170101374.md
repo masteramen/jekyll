@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/sbc%e4%ba%8c%e9%ab%98%e5%8f%af%e7%94%a8eureka%e5
 fileName:  "20170101374"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/sbc%e4%ba%8c%e9%ab%98%e5%8f%af%e7%94%a8eureka%e5%a3%b0%e6%98%8e%e5%bc%8f%e6%9c%8d%e5%8a%a1%e8%b0%83%e7%94%a8.html"
+permalink: "2017/sbc%e4%ba%8c%e9%ab%98%e5%8f%af%e7%94%a8eureka%e5%a3%b0%e6%98%8e%e5%bc%8f%e6%9c%8d%e5%8a%a1%e8%b0%83%e7%94%a8.html"
 ---
 {% raw %}
 这次会按照实际生产要求来搭建这套服务。

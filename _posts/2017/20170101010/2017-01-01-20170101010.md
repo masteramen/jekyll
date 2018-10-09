@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/spring-amqp%e4%b8%ad%e6%96%87%e6%96%87%e6%a1%a3.
 fileName:  "20170101010"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/spring-amqp%e4%b8%ad%e6%96%87%e6%96%87%e6%a1%a3.html"
+permalink: "2017/spring-amqp%e4%b8%ad%e6%96%87%e6%96%87%e6%a1%a3.html"
 ---
 {% raw %}
 该帮助文档的第一部分是Spring AMQP以及基本概念和一些代码段的概述，可以尽快帮助您快速使用。 

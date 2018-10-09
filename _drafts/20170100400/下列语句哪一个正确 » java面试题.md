@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/xia-lie-yu-ju-na-yi-ge-zheng-que.html"
 fileName:  "20170100400"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/xia-lie-yu-ju-na-yi-ge-zheng-que.html"
+permalink: "2017/xia-lie-yu-ju-na-yi-ge-zheng-que.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期日, 五月 26, 2013

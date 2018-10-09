@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/resolve-eclipse-subversion-does-not-recognize-th
 fileName:  "20170100631"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/resolve-eclipse-subversion-does-not-recognize-the-source-tortoisesvn-checkout-from-svn.html"
+permalink: "2017/resolve-eclipse-subversion-does-not-recognize-the-source-tortoisesvn-checkout-from-svn.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期四, 五月 8, 2014

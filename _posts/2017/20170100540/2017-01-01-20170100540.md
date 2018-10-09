@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/js-window-open-%e5%bc%b9%e5%87%ba%e7%aa%97%e5%8f
 fileName:  "20170100540"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/js-window-open-%e5%bc%b9%e5%87%ba%e7%aa%97%e5%8f%a3%e8%ae%be%e7%bd%ae-utf-8%e7%bc%96%e7%a0%81%e7%9a%84%e9%97%ae%e9%a2%98%e8%a7%a3%e5%86%b3.html"
+permalink: "2017/js-window-open-%e5%bc%b9%e5%87%ba%e7%aa%97%e5%8f%a3%e8%ae%be%e7%bd%ae-utf-8%e7%bc%96%e7%a0%81%e7%9a%84%e9%97%ae%e9%a2%98%e8%a7%a3%e5%86%b3.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期二, 二月 11, 2014

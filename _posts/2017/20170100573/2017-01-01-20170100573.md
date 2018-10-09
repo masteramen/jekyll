@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java-nio-jieshao.html"
 fileName:  "20170100573"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java-nio-jieshao.html"
+permalink: "2017/java-nio-jieshao.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期四, 二月 20, 2014

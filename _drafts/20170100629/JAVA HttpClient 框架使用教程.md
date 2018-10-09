@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java-httpclient-framework-tutorial.html"
 fileName:  "20170100629"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java-httpclient-framework-tutorial.html"
+permalink: "2017/java-httpclient-framework-tutorial.html"
 ---
 {% raw %}
 前言

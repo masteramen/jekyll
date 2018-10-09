@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/ajax-mian-shi-ti.html"
 fileName:  "20170100410"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/ajax-mian-shi-ti.html"
+permalink: "2017/ajax-mian-shi-ti.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期二, 五月 28, 2013

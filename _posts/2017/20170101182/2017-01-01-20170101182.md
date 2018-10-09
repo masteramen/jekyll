@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java%e9%80%9a%e8%bf%87poi%e6%a8%a1%e6%9d%bf%e5%a
 fileName:  "20170101182"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java%e9%80%9a%e8%bf%87poi%e6%a8%a1%e6%9d%bf%e5%af%bc%e5%87%baexcel.html"
+permalink: "2017/java%e9%80%9a%e8%bf%87poi%e6%a8%a1%e6%9d%bf%e5%af%bc%e5%87%baexcel.html"
 ---
 {% raw %}
 java通过poi来读写excel目前很方便，支持xls和xlsx格式，目前代码支持按照sheet模板导出,并且支持sheet页级的模板复制功能。

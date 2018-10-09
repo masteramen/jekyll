@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/%e6%b5%85%e5%85%a5%e6%b7%b1%e5%87%ba%e4%b9%8bjav
 fileName:  "20170101246"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/%e6%b5%85%e5%85%a5%e6%b7%b1%e5%87%ba%e4%b9%8bjava%e9%9b%86%e5%90%88%e6%a1%86%e6%9e%b6%e4%b8%ad-2.html"
+permalink: "2017/%e6%b5%85%e5%85%a5%e6%b7%b1%e5%87%ba%e4%b9%8bjava%e9%9b%86%e5%90%88%e6%a1%86%e6%9e%b6%e4%b8%ad-2.html"
 ---
 {% raw %}
 # 浅入深出之Java集合框架（中） 

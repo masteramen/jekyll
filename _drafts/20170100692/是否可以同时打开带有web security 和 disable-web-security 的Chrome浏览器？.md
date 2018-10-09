@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/shi-fu-ke-yi-tong-shi-da-kai-dai-you-web-securit
 fileName:  "20170100692"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/shi-fu-ke-yi-tong-shi-da-kai-dai-you-web-security-he-disable-web-security-de-chrome-liu-lan-qi.html"
+permalink: "2017/shi-fu-ke-yi-tong-shi-da-kai-dai-you-web-security-he-disable-web-security-de-chrome-liu-lan-qi.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期一, 九月 29, 2014

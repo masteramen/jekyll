@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java%e5%ae%9e%e7%94%a8%e6%a1%88%e4%be%8b%e4%b9%8
 fileName:  "20170101361"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java%e5%ae%9e%e7%94%a8%e6%a1%88%e4%be%8b%e4%b9%8b%e5%9b%be%e7%89%87%e6%b0%b4%e5%8d%b0%e5%bc%80%e5%8f%91.html"
+permalink: "2017/java%e5%ae%9e%e7%94%a8%e6%a1%88%e4%be%8b%e4%b9%8b%e5%9b%be%e7%89%87%e6%b0%b4%e5%8d%b0%e5%bc%80%e5%8f%91.html"
 ---
 {% raw %}
 # JAVA实用案例之图片水印开发 

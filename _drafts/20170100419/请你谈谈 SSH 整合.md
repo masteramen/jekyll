@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/qing-ni-tan-tan-SSH-zheng-he.html"
 fileName:  "20170100419"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/qing-ni-tan-tan-SSH-zheng-he.html"
+permalink: "2017/qing-ni-tan-tan-SSH-zheng-he.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期三, 六月 5, 2013

@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/%e6%b5%85%e5%85%a5%e6%b7%b1%e5%87%ba%e4%b9%8bjav
 fileName:  "20170101143"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/%e6%b5%85%e5%85%a5%e6%b7%b1%e5%87%ba%e4%b9%8bjava%e9%9b%86%e5%90%88%e6%a1%86%e6%9e%b6%e4%b8%8a.html"
+permalink: "2017/%e6%b5%85%e5%85%a5%e6%b7%b1%e5%87%ba%e4%b9%8bjava%e9%9b%86%e5%90%88%e6%a1%86%e6%9e%b6%e4%b8%8a.html"
 ---
 {% raw %}
 由于Java中的集合框架的内容比较多，在这里分为三个部分介绍Java的集合框架，内容是从浅到深，如果已经有java基础的小伙伴可以直接跳到<浅入深出之Java集合框架（下）>。

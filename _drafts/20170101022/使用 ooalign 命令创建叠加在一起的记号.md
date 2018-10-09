@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/%e4%bd%bf%e7%94%a8-ooalign-%e5%91%bd%e4%bb%a4%e5
 fileName:  "20170101022"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/%e4%bd%bf%e7%94%a8-ooalign-%e5%91%bd%e4%bb%a4%e5%88%9b%e5%bb%ba%e5%8f%a0%e5%8a%a0%e5%9c%a8%e4%b8%80%e8%b5%b7%e7%9a%84%e8%ae%b0%e5%8f%b7.html"
+permalink: "2017/%e4%bd%bf%e7%94%a8-ooalign-%e5%91%bd%e4%bb%a4%e5%88%9b%e5%bb%ba%e5%8f%a0%e5%8a%a0%e5%9c%a8%e4%b8%80%e8%b5%b7%e7%9a%84%e8%ae%b0%e5%8f%b7.html"
 ---
 {% raw %}
 TeX 是强大的排版工具，尤其以其数学排版而出名。然而，数学无有止境，有时候我们会需要特别的记号来表达一个新的概念。这些记号，TeX 可能默认没有提供。此时，我们就要自己创造符号了。 

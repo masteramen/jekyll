@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/jboot10beta1%e5%8f%91%e5%b8%83%e5%9f%ba%e4%ba%8e
 fileName:  "20170101337"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/jboot10beta1%e5%8f%91%e5%b8%83%e5%9f%ba%e4%ba%8ejfinal%e7%b1%bb%e4%bc%bcspringboot%e7%9a%84%e6%a1%86%e6%9e%b6.html"
+permalink: "2017/jboot10beta1%e5%8f%91%e5%b8%83%e5%9f%ba%e4%ba%8ejfinal%e7%b1%bb%e4%bc%bcspringboot%e7%9a%84%e6%a1%86%e6%9e%b6.html"
 ---
 {% raw %}
 jboot 1.0-beta1 changes更新如下： 

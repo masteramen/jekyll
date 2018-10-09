@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/pushbasedmonitoringservicewithprometheus.html"
 fileName:  "20170101244"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/pushbasedmonitoringservicewithprometheus.html"
+permalink: "2017/pushbasedmonitoringservicewithprometheus.html"
 ---
 {% raw %}
 What is different here is we add a forwarder between node_exporter and pushgateway, which helps us to switch the direction of data pipeline. Basically, node_exporter still listens on a specific port to expose metrics, but it only accepts internal requests. It helps us to keep the node safe from external malicious visits. Forwarder gets the metrics and send it to pushgateway, prometheus scraps data from pushgateway, instead of node_exporter. 

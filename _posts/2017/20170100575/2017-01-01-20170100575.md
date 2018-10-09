@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java-bing-fa-duo-xian-cheng-de-mian-shi-wen-ti-j
 fileName:  "20170100575"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java-bing-fa-duo-xian-cheng-de-mian-shi-wen-ti-ji-da-an-ji-shu-bu-feng.html"
+permalink: "2017/java-bing-fa-duo-xian-cheng-de-mian-shi-wen-ti-ji-da-an-ji-shu-bu-feng.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期四, 二月 20, 2014

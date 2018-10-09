@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/%e6%85%95%e8%af%be%e7%bd%91%e7%bb%86%e8%af%b4%e5
 fileName:  "20170101175"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/%e6%85%95%e8%af%be%e7%bd%91%e7%bb%86%e8%af%b4%e5%a4%9a%e7%ba%bf%e7%a8%8b%e4%b9%8bthreadvsrunnable%e5%ad%a6%e4%b9%a0%e6%80%bb%e7%bb%93.html"
+permalink: "2017/%e6%85%95%e8%af%be%e7%bd%91%e7%bb%86%e8%af%b4%e5%a4%9a%e7%ba%bf%e7%a8%8b%e4%b9%8bthreadvsrunnable%e5%ad%a6%e4%b9%a0%e6%80%bb%e7%bb%93.html"
 ---
 {% raw %}
 # 慕课网_《细说多线程之Thread VS Runnable》学习总结 

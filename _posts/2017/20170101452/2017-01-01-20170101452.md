@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/storm%e4%bb%8e%e5%85%a5%e9%97%a8%e5%88%b0%e6%94%
 fileName:  "20170101452"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/storm%e4%bb%8e%e5%85%a5%e9%97%a8%e5%88%b0%e6%94%be%e5%bc%83%e4%b8%80storm%e4%bb%8b%e7%bb%8d.html"
+permalink: "2017/storm%e4%bb%8e%e5%85%a5%e9%97%a8%e5%88%b0%e6%94%be%e5%bc%83%e4%b8%80storm%e4%bb%8b%e7%bb%8d.html"
 ---
 {% raw %}
 背景:目前就职于国内最大的IT咨询公司，恰巧又是毕业季，所在部门招了100多个应届毕业生，本人要跟部门新人进行为期一个月的大数据入职培训，特此将整理的文档分享出来。

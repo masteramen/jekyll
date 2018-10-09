@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/yun-wei-biao-zhun-guan-li-za-shi.html"
 fileName:  "20170100852"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/yun-wei-biao-zhun-guan-li-za-shi.html"
+permalink: "2017/yun-wei-biao-zhun-guan-li-za-shi.html"
 ---
 {% raw %}
 前言： 人蠢没办法，用不惯 iteye的编辑器。

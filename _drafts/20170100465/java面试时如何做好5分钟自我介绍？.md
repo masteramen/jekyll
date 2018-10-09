@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java-mian-shi-shi-ru-he-zuo-hao-5-fen-zhong-zi-w
 fileName:  "20170100465"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java-mian-shi-shi-ru-he-zuo-hao-5-fen-zhong-zi-wo-jie-shao.html"
+permalink: "2017/java-mian-shi-shi-ru-he-zuo-hao-5-fen-zhong-zi-wo-jie-shao.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期一, 十月 21, 2013

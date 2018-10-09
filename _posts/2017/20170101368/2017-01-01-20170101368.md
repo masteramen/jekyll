@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/motan%e6%ba%90%e7%a0%81%e5%ad%a6%e4%b9%a02%e4%b8
 fileName:  "20170101368"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/motan%e6%ba%90%e7%a0%81%e5%ad%a6%e4%b9%a02%e4%b8%8espring%e9%9b%86%e6%88%90.html"
+permalink: "2017/motan%e6%ba%90%e7%a0%81%e5%ad%a6%e4%b9%a02%e4%b8%8espring%e9%9b%86%e6%88%90.html"
 ---
 {% raw %}
 ServiceConfig<MotanDemoService> motanDemoService = new ServiceConfig<MotanDemoService>();

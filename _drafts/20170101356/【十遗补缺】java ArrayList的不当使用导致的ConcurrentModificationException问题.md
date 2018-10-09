@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/%e5%8d%81%e9%81%97%e8%a1%a5%e7%bc%bajavaarraylis
 fileName:  "20170101356"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/%e5%8d%81%e9%81%97%e8%a1%a5%e7%bc%bajavaarraylist%e7%9a%84%e4%b8%8d%e5%bd%93%e4%bd%bf%e7%94%a8%e5%af%bc%e8%87%b4%e7%9a%84concurrentmodificationexception%e9%97%ae%e9%a2%98.html"
+permalink: "2017/%e5%8d%81%e9%81%97%e8%a1%a5%e7%bc%bajavaarraylist%e7%9a%84%e4%b8%8d%e5%bd%93%e4%bd%bf%e7%94%a8%e5%af%bc%e8%87%b4%e7%9a%84concurrentmodificationexception%e9%97%ae%e9%a2%98.html"
 ---
 {% raw %}
 # 【十遗补缺】java ArrayList的不当使用导致的ConcurrentModificationException问题 

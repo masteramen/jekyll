@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/fen-xiang-8-nian-kai-fa-jing-yan-qian-tan-java-c
 fileName:  "20170100443"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/fen-xiang-8-nian-kai-fa-jing-yan-qian-tan-java-cheng-xu-yuan-zhi-ye-gui-hua.html"
+permalink: "2017/fen-xiang-8-nian-kai-fa-jing-yan-qian-tan-java-cheng-xu-yuan-zhi-ye-gui-hua.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期五, 六月 21, 2013

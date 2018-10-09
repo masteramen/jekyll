@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java-yi-chang-ji-zhi.html"
 fileName:  "20170100449"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java-yi-chang-ji-zhi.html"
+permalink: "2017/java-yi-chang-ji-zhi.html"
 ---
 {% raw %}
 一、 异常的概念和Java异常体系结构 异常是程序运行过程中出现的错误。本文主要讲授的是Java语言的异常处理。Java语言的异常处理框架，是Java语言健壮性的一个重要体现。 Java把异常当作对象来处理，并定义一个基类java.lang.Throwable作为所有异常的超类。在Java API中已经定义了许多异常类，这些异常类分为两大类，错误Error和异常Exception。Java异常体系结构呈树状，其层次结构图如图 1所示：

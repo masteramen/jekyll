@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/strutss%e8%bf%9c%e7%a8%8b%e5%91%bd%e4%bb%a4%e6%8
 fileName:  "20170101155"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/strutss%e8%bf%9c%e7%a8%8b%e5%91%bd%e4%bb%a4%e6%89%a7%e8%a1%8c%e6%bc%8f%e6%b4%9e%e9%a2%84%e8%ad%a6.html"
+permalink: "2017/strutss%e8%bf%9c%e7%a8%8b%e5%91%bd%e4%bb%a4%e6%89%a7%e8%a1%8c%e6%bc%8f%e6%b4%9e%e9%a2%84%e8%ad%a6.html"
 ---
 {% raw %}
 天融信 .阿尔法实验室

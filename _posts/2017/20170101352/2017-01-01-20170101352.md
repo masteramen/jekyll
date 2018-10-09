@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/testingspringbootwithtestng%e9%99%84%e5%bd%95iit
 fileName:  "20170101352"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/testingspringbootwithtestng%e9%99%84%e5%bd%95iitestutils.html"
+permalink: "2017/testingspringbootwithtestng%e9%99%84%e5%bd%95iitestutils.html"
 ---
 {% raw %}
 # Testing Spring Boot with TestNG – 附录II Test Utils 

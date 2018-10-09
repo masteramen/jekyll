@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/apache-kylin%e7%9a%84%e5%85%a5%e9%97%a8%e5%ae%89
 fileName:  "20170100984"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/apache-kylin%e7%9a%84%e5%85%a5%e9%97%a8%e5%ae%89%e8%a3%85.html"
+permalink: "2017/apache-kylin%e7%9a%84%e5%85%a5%e9%97%a8%e5%ae%89%e8%a3%85.html"
 ---
 {% raw %}
 Apache Kylin™是一个开源的分布式分析引擎，提供Hadoop之上的SQL查询接口及多维分析（OLAP）能力以支持超大规模数据，最初由eBay Inc. 开发并贡献至开源社区。它能在亚秒内查询巨大的Hive表。 

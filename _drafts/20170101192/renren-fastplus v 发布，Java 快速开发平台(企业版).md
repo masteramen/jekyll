@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/renrenfastplusv%e5%8f%91%e5%b8%83java%e5%bf%ab%e
 fileName:  "20170101192"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/renrenfastplusv%e5%8f%91%e5%b8%83java%e5%bf%ab%e9%80%9f%e5%bc%80%e5%8f%91%e5%b9%b3%e5%8f%b0%e4%bc%81%e4%b8%9a%e7%89%88.html"
+permalink: "2017/renrenfastplusv%e5%8f%91%e5%b8%83java%e5%bf%ab%e9%80%9f%e5%bc%80%e5%8f%91%e5%b9%b3%e5%8f%b0%e4%bc%81%e4%b8%9a%e7%89%88.html"
 ---
 {% raw %}
 renren-fastplus是针对企业的Java快速开发平台，其核心设计目标是开发迅速、学习简单、轻量级、易扩展，方便二次开发！

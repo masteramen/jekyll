@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/21-bu-zhu-ni-cheng-wei-cheng-gong-de-web-kai-fa-
 fileName:  "20170100815"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/21-bu-zhu-ni-cheng-wei-cheng-gong-de-web-kai-fa-zhe.html"
+permalink: "2017/21-bu-zhu-ni-cheng-wei-cheng-gong-de-web-kai-fa-zhe.html"
 ---
 {% raw %}
 随着 Web 开发产业的爆发式发展，许多人会问这样的问题：我如何才能成为一名 Web 开发者？我认为这是一个错误的提问。问题应该是：我如何才能成为一名成功的 Web 开发者？

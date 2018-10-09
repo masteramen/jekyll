@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java-jie-kou-he-chou-xiang-lei-de-qu-bie-shi-shi
 fileName:  "20170100680"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java-jie-kou-he-chou-xiang-lei-de-qu-bie-shi-shi-me.html"
+permalink: "2017/java-jie-kou-he-chou-xiang-lei-de-qu-bie-shi-shi-me.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期日, 八月 24, 2014

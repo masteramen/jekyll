@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java-classical-algorithm-interview-40-questions-
 fileName:  "20170100606"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java-classical-algorithm-interview-40-questions-and-answer.html"
+permalink: "2017/java-classical-algorithm-interview-40-questions-and-answer.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期日, 三月 9, 2014

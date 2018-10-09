@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/bencode%e8%a7%a3%e7%a0%81%e5%ae%9e%e7%8e%b0.html
 fileName:  "20170100907"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/bencode%e8%a7%a3%e7%a0%81%e5%ae%9e%e7%8e%b0.html"
+permalink: "2017/bencode%e8%a7%a3%e7%a0%81%e5%ae%9e%e7%8e%b0.html"
 ---
 {% raw %}
 字符串被如此编码:<字符串长度>:字符串正文.这种表示法没有任何的分界符. 

@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/shi-yong-uncss-qu-chu-wu-yong-de-css.html"
 fileName:  "20170100822"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/shi-yong-uncss-qu-chu-wu-yong-de-css.html"
+permalink: "2017/shi-yong-uncss-qu-chu-wu-yong-de-css.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期日, 四月 16, 2017

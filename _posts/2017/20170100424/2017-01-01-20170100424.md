@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/JVM-you-hua-wen-ti.html"
 fileName:  "20170100424"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/JVM-you-hua-wen-ti.html"
+permalink: "2017/JVM-you-hua-wen-ti.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期五, 六月 7, 2013

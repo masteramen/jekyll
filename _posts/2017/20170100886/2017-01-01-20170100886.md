@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/tomcat%e6%ba%90%e7%a0%81%e5%88%86%e6%9e%90-catal
 fileName:  "20170100886"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/tomcat%e6%ba%90%e7%a0%81%e5%88%86%e6%9e%90-catalina-home%e5%92%8ccatalina-base.html"
+permalink: "2017/tomcat%e6%ba%90%e7%a0%81%e5%88%86%e6%9e%90-catalina-home%e5%92%8ccatalina-base.html"
 ---
 {% raw %}
 Bootstrap启动的时候使用了两个系统变量catalina.home和catalina.base，从官网和源码中的注释可以知道这两者的区别主要是：catalina.home是Tomcat产品的安装目录，而catalina.base是tomcat启动过程中需要读取的各种配置及日志的根目录。

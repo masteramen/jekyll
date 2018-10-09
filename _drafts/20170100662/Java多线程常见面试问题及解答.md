@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java-multi-thread-common-interview-question-and-
 fileName:  "20170100662"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java-multi-thread-common-interview-question-and-answer.html"
+permalink: "2017/java-multi-thread-common-interview-question-and-answer.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期六, 七月 19, 2014

@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/spring%e5%ae%9a%e6%97%b6%e4%bb%bb%e5%8a%a1%e4%b9
 fileName:  "20170100994"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/spring%e5%ae%9a%e6%97%b6%e4%bb%bb%e5%8a%a1%e4%b9%8b%e4%bd%bf%e7%94%a8.html"
+permalink: "2017/spring%e5%ae%9a%e6%97%b6%e4%bb%bb%e5%8a%a1%e4%b9%8b%e4%bd%bf%e7%94%a8.html"
 ---
 {% raw %}
 H2M_LI_HEADER Java自带的java.util.Timer类，这个类允许你调度一个java.util.TimerTask任务。使用这种方式可以让你的程序按照某一个频度执行，但不能在指定时间运行。

@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/%e5%ae%89%e5%85%a8%e5%8f%91%e5%b8%83%e4%b9%8bjvm
 fileName:  "20170101087"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/%e5%ae%89%e5%85%a8%e5%8f%91%e5%b8%83%e4%b9%8bjvm%e5%8f%8b%e5%a5%bd%e5%85%b3%e9%97%ad.html"
+permalink: "2017/%e5%ae%89%e5%85%a8%e5%8f%91%e5%b8%83%e4%b9%8bjvm%e5%8f%8b%e5%a5%bd%e5%85%b3%e9%97%ad.html"
 ---
 {% raw %}
 小伙伴们一定很熟悉kill -9 来杀某个进程了，其实这样做在生产系统中是存在安全隐患的。

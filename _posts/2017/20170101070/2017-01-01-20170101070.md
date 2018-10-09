@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java%e5%9f%ba%e7%a1%80%e4%b9%8bjava%e4%b8%ad%e7%
 fileName:  "20170101070"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java%e5%9f%ba%e7%a1%80%e4%b9%8bjava%e4%b8%ad%e7%9a%84%e6%b3%9b%e5%9e%8b.html"
+permalink: "2017/java%e5%9f%ba%e7%a1%80%e4%b9%8bjava%e4%b8%ad%e7%9a%84%e6%b3%9b%e5%9e%8b.html"
 ---
 {% raw %}
 List list = new ArrayList();  

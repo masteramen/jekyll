@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/spring-wu-ge-shi-wu-ge-li-ji-bie-he-qi-ge-shi-wu
 fileName:  "20170100475"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/spring-wu-ge-shi-wu-ge-li-ji-bie-he-qi-ge-shi-wu-chuan-bo-xing-wei.html"
+permalink: "2017/spring-wu-ge-shi-wu-ge-li-ji-bie-he-qi-ge-shi-wu-chuan-bo-xing-wei.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期一, 十月 28, 2013

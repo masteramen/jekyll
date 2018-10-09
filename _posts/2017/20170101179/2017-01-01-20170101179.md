@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/akka%e7%b3%bb%e5%88%97%e5%85%adactor%e8%a7%a3%e5
 fileName:  "20170101179"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/akka%e7%b3%bb%e5%88%97%e5%85%adactor%e8%a7%a3%e5%86%b3%e4%ba%86%e4%bb%80%e4%b9%88%e9%97%ae%e9%a2%98.html"
+permalink: "2017/akka%e7%b3%bb%e5%88%97%e5%85%adactor%e8%a7%a3%e5%86%b3%e4%ba%86%e4%bb%80%e4%b9%88%e9%97%ae%e9%a2%98.html"
 ---
 {% raw %}
 ## Actor解决了什么问题？

@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/php-cong-url-zhong-ti-qu-can-shu-ming-he-can-shu
 fileName:  "20170100678"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/php-cong-url-zhong-ti-qu-can-shu-ming-he-can-shu-zhi-de-fang-fa.html"
+permalink: "2017/php-cong-url-zhong-ti-qu-can-shu-ming-he-can-shu-zhi-de-fang-fa.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期日, 八月 24, 2014

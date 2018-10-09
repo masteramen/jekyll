@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/windows-linux-like-cat-type-command.html"
 fileName:  "20170100636"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/windows-linux-like-cat-type-command.html"
+permalink: "2017/windows-linux-like-cat-type-command.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期六, 五月 17, 2014

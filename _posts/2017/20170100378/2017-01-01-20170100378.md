@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/short-s1-1-s1-s1-1-you-shen-me-cuo-short-s1-1-s1
 fileName:  "20170100378"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/short-s1-1-s1-s1-1-you-shen-me-cuo-short-s1-1-s1-1-you-shen-me-cuo.html"
+permalink: "2017/short-s1-1-s1-s1-1-you-shen-me-cuo-short-s1-1-s1-1-you-shen-me-cuo.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期二, 五月 21, 2013

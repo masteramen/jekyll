@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/elasticsearch-yuan-ma-fen-xi-yi.html"
 fileName:  "20170100844"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/elasticsearch-yuan-ma-fen-xi-yi.html"
+permalink: "2017/elasticsearch-yuan-ma-fen-xi-yi.html"
 ---
 {% raw %}
 工作中经常使用es，所以想研究一下es的源码，常用的es版本为2.1.0，所以此系列以2.1.0为准

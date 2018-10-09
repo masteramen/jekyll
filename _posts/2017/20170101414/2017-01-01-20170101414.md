@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/%e4%b8%80%e7%a7%8d%e5%9f%ba%e4%ba%8ekafkastorm%e
 fileName:  "20170101414"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/%e4%b8%80%e7%a7%8d%e5%9f%ba%e4%ba%8ekafkastorm%e5%ae%9e%e7%8e%b0%e7%9a%84%e6%97%a5%e5%bf%97%e8%ae%b0%e5%bd%95%e6%96%b9%e6%b3%95%e4%b8%89.html"
+permalink: "2017/%e4%b8%80%e7%a7%8d%e5%9f%ba%e4%ba%8ekafkastorm%e5%ae%9e%e7%8e%b0%e7%9a%84%e6%97%a5%e5%bf%97%e8%ae%b0%e5%bd%95%e6%96%b9%e6%b3%95%e4%b8%89.html"
 ---
 {% raw %}
 主要过程分为三部分：

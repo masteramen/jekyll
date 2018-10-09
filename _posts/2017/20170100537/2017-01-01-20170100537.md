@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/spring-mvc-%e7%9a%84controller%e7%b1%bb%e9%bb%98
 fileName:  "20170100537"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/spring-mvc-%e7%9a%84controller%e7%b1%bb%e9%bb%98%e8%ae%a4scope%e6%98%af%e5%8d%95%e4%be%8bsingleton%e7%9a%84.html"
+permalink: "2017/spring-mvc-%e7%9a%84controller%e7%b1%bb%e9%bb%98%e8%ae%a4scope%e6%98%af%e5%8d%95%e4%be%8bsingleton%e7%9a%84.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期一, 二月 10, 2014

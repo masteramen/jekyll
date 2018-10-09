@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/SQL-you-hua.html"
 fileName:  "20170100355"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/SQL-you-hua.html"
+permalink: "2017/SQL-you-hua.html"
 ---
 {% raw %}
 ### 数据库的优化问题

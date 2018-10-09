@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/android%e8%87%aa%e5%ae%9a%e4%b9%89%e4%b8%87%e8%8
 fileName:  "20170101280"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/android%e8%87%aa%e5%ae%9a%e4%b9%89%e4%b8%87%e8%83%bdcanvas%e7%94%bb%e5%b8%83.html"
+permalink: "2017/android%e8%87%aa%e5%ae%9a%e4%b9%89%e4%b8%87%e8%83%bdcanvas%e7%94%bb%e5%b8%83.html"
 ---
 {% raw %}
 分类：*android进阶的小步伐*

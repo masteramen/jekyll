@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/okhttp%e6%8b%a6%e6%88%aa%e5%99%a8retryandfollowu
 fileName:  "20170101279"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/okhttp%e6%8b%a6%e6%88%aa%e5%99%a8retryandfollowupinterceptor%e7%9a%84%e7%ae%80%e5%8d%95%e5%88%86%e6%9e%90.html"
+permalink: "2017/okhttp%e6%8b%a6%e6%88%aa%e5%99%a8retryandfollowupinterceptor%e7%9a%84%e7%ae%80%e5%8d%95%e5%88%86%e6%9e%90.html"
 ---
 {% raw %}
 # OKHTTP拦截器RetryAndFollowUpInterceptor的简单分析 

@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/zen-yang-cai-shi-li-xiang-de-cheng-xu-yuan.html"
 fileName:  "20170100791"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/zen-yang-cai-shi-li-xiang-de-cheng-xu-yuan.html"
+permalink: "2017/zen-yang-cai-shi-li-xiang-de-cheng-xu-yuan.html"
 ---
 {% raw %}
 **第1个一点点：专注眼下**

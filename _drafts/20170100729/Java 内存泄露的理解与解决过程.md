@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java-na-cun-xie-lu-de-li-jie-yu-jie-jue-guo-chen
 fileName:  "20170100729"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java-na-cun-xie-lu-de-li-jie-yu-jie-jue-guo-cheng.html"
+permalink: "2017/java-na-cun-xie-lu-de-li-jie-yu-jie-jue-guo-cheng.html"
 ---
 {% raw %}
 本文详细地介绍了Java内存管理的原理，以及内存泄露产生的原因，同时提供了一些列解决Java内存泄露的方案，希望对各位Java开发者有所帮助。

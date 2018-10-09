@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java-huo-qu-han-zi-pin-yin-shou-zi-mu-de-jian-da
 fileName:  "20170100770"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java-huo-qu-han-zi-pin-yin-shou-zi-mu-de-jian-dan-fang-fa.html"
+permalink: "2017/java-huo-qu-han-zi-pin-yin-shou-zi-mu-de-jian-dan-fang-fa.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期一, 六月 8, 2015

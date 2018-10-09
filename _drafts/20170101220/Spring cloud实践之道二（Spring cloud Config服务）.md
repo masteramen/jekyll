@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/springcloud%e5%ae%9e%e8%b7%b5%e4%b9%8b%e9%81%93%
 fileName:  "20170101220"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/springcloud%e5%ae%9e%e8%b7%b5%e4%b9%8b%e9%81%93%e4%ba%8cspringcloudconfig%e6%9c%8d%e5%8a%a1.html"
+permalink: "2017/springcloud%e5%ae%9e%e8%b7%b5%e4%b9%8b%e9%81%93%e4%ba%8cspringcloudconfig%e6%9c%8d%e5%8a%a1.html"
 ---
 {% raw %}
 spring cloud config 是一个配置管理工具包，让用户可以集中管理配置。具有中心化，版本控制，支持动态更新，平台独立，语言独立等特性。

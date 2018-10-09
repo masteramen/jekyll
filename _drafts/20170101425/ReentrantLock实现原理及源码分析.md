@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/reentrantlock%e5%ae%9e%e7%8e%b0%e5%8e%9f%e7%90%8
 fileName:  "20170101425"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/reentrantlock%e5%ae%9e%e7%8e%b0%e5%8e%9f%e7%90%86%e5%8f%8a%e6%ba%90%e7%a0%81%e5%88%86%e6%9e%90.html"
+permalink: "2017/reentrantlock%e5%ae%9e%e7%8e%b0%e5%8e%9f%e7%90%86%e5%8f%8a%e6%ba%90%e7%a0%81%e5%88%86%e6%9e%90.html"
 ---
 {% raw %}
 # ReentrantLock实现原理及源码分析 

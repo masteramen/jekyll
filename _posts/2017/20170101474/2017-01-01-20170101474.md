@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/%e8%b5%a2%e5%9c%a8%e9%9d%a2%e8%af%95%e4%b9%8bjav
 fileName:  "20170101474"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/%e8%b5%a2%e5%9c%a8%e9%9d%a2%e8%af%95%e4%b9%8bjava%e6%a1%86%e6%9e%b6%e7%af%878.html"
+permalink: "2017/%e8%b5%a2%e5%9c%a8%e9%9d%a2%e8%af%95%e4%b9%8bjava%e6%a1%86%e6%9e%b6%e7%af%878.html"
 ---
 {% raw %}
 #### 71，谈谈你对Struts的理解。

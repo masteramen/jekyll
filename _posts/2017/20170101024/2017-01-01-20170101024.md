@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java%e8%af%ad%e8%a8%80%e4%b8%ad%e7%9a%84%e5%8c%b
 fileName:  "20170101024"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java%e8%af%ad%e8%a8%80%e4%b8%ad%e7%9a%84%e5%8c%bf%e5%90%8d%e7%b1%bb%e4%b8%8elambda%e8%a1%a8%e8%be%be%e5%bc%8f%e4%bb%8b%e7%bb%8d%e4%b8%8e%e6%80%bb%e7%bb%93-anonymous-classes-and-lambda-expressions.html"
+permalink: "2017/java%e8%af%ad%e8%a8%80%e4%b8%ad%e7%9a%84%e5%8c%bf%e5%90%8d%e7%b1%bb%e4%b8%8elambda%e8%a1%a8%e8%be%be%e5%bc%8f%e4%bb%8b%e7%bb%8d%e4%b8%8e%e6%80%bb%e7%bb%93-anonymous-classes-and-lambda-expressions.html"
 ---
 {% raw %}
 2017/6/30

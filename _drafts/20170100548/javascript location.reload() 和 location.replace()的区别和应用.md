@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/javascript-location-reload-%e5%92%8c-location-re
 fileName:  "20170100548"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/javascript-location-reload-%e5%92%8c-location-replace%e7%9a%84%e5%8c%ba%e5%88%ab%e5%92%8c%e5%ba%94%e7%94%a8.html"
+permalink: "2017/javascript-location-reload-%e5%92%8c-location-replace%e7%9a%84%e5%8c%ba%e5%88%ab%e5%92%8c%e5%ba%94%e7%94%a8.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期三, 二月 12, 2014

@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/%e8%af%91serverjre%e7%ae%80%e4%bb%8b.html"
 fileName:  "20170101436"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/%e8%af%91serverjre%e7%ae%80%e4%bb%8b.html"
+permalink: "2017/%e8%af%91serverjre%e7%ae%80%e4%bb%8b.html"
 ---
 {% raw %}
 Server JRE, 服务器版JRE

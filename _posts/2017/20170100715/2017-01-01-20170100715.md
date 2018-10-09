@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/hu-lian-wang-xing-ye-de-h-r-zen-me-kan-dai-san-s
 fileName:  "20170100715"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/hu-lian-wang-xing-ye-de-h-r-zen-me-kan-dai-san-shi-sui-yi-shang-de-ji-chu-gang-wei-qiu-zhi-zhe-2.html"
+permalink: "2017/hu-lian-wang-xing-ye-de-h-r-zen-me-kan-dai-san-shi-sui-yi-shang-de-ji-chu-gang-wei-qiu-zhi-zhe-2.html"
 ---
 {% raw %}
 互联网就是一个年轻人为主力军的行业，一批批的年轻人在这个战场上奋勇战斗。

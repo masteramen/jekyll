@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/use-jawe-design-a-shark-workflow.html"
 fileName:  "20170100619"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/use-jawe-design-a-shark-workflow.html"
+permalink: "2017/use-jawe-design-a-shark-workflow.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期五, 三月 28, 2014

@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/%e7%94%a8java%e5%81%9a%e4%b8%80%e4%b8%aa%e7%88%a
 fileName:  "20170101122"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/%e7%94%a8java%e5%81%9a%e4%b8%80%e4%b8%aa%e7%88%ac%e8%99%ab%e7%a8%8b%e5%ba%8fgecco.html"
+permalink: "2017/%e7%94%a8java%e5%81%9a%e4%b8%80%e4%b8%aa%e7%88%ac%e8%99%ab%e7%a8%8b%e5%ba%8fgecco.html"
 ---
 {% raw %}
 public class StarIndexPage{

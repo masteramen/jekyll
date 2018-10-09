@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/%e5%88%9b%e5%bb%ba%e5%bf%bd%e7%95%a5%e8%af%81%e4
 fileName:  "20170100888"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/%e5%88%9b%e5%bb%ba%e5%bf%bd%e7%95%a5%e8%af%81%e4%b9%a6%e9%aa%8c%e8%af%81%e7%9a%84closeablehttpclient.html"
+permalink: "2017/%e5%88%9b%e5%bb%ba%e5%bf%bd%e7%95%a5%e8%af%81%e4%b9%a6%e9%aa%8c%e8%af%81%e7%9a%84closeablehttpclient.html"
 ---
 {% raw %}
 By  - Last updated: 星期四, 六月 22, 2017

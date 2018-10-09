@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/mybatis-spring-mysql-da-jian-pei-zhi.html"
 fileName:  "20170100483"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/mybatis-spring-mysql-da-jian-pei-zhi.html"
+permalink: "2017/mybatis-spring-mysql-da-jian-pei-zhi.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期日, 十一月 3, 2013

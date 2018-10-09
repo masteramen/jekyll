@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/%e4%b8%80%e8%b5%b7%e6%9d%a5%e5%ad%a6springcloud%
 fileName:  "20170101495"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/%e4%b8%80%e8%b5%b7%e6%9d%a5%e5%ad%a6springcloud%e4%b9%8b%e6%96%ad%e8%b7%af%e5%99%a8hystrixribbon.html"
+permalink: "2017/%e4%b8%80%e8%b5%b7%e6%9d%a5%e5%ad%a6springcloud%e4%b9%8b%e6%96%ad%e8%b7%af%e5%99%a8hystrixribbon.html"
 ---
 {% raw %}
 微服务架构中，根据业务划分成若干个服务，各单元应用间通过服务注册与订阅的方式互相依赖，依赖通过远程调用的方式执行，该方式难以避免因网络或自身原因而出现故障或者延迟，从而并不能保证服务的100%可用，此时若有大量的网络涌入，会形成任务累计，导致服务瘫痪，甚至导致服务“雪崩”。

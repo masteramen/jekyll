@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/js%e7%bb%84%e4%bb%b6%e7%b3%bb%e5%88%97%e5%9c%a8a
 fileName:  "20170101435"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/js%e7%bb%84%e4%bb%b6%e7%b3%bb%e5%88%97%e5%9c%a8abp%e4%b8%ad%e5%b0%81%e8%a3%85bootstraptable.html"
+permalink: "2017/js%e7%bb%84%e4%bb%b6%e7%b3%bb%e5%88%97%e5%9c%a8abp%e4%b8%ad%e5%b0%81%e8%a3%85bootstraptable.html"
 ---
 {% raw %}
 # JS组件系列——在ABP中封装BootstrapTable 

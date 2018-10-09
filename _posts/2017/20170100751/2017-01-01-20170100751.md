@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/da-gong-si-zui-xi-huan-wen-de-java-ji-he-lei-mia
 fileName:  "20170100751"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/da-gong-si-zui-xi-huan-wen-de-java-ji-he-lei-mian-shi-ti.html"
+permalink: "2017/da-gong-si-zui-xi-huan-wen-de-java-ji-he-lei-mian-shi-ti.html"
 ---
 {% raw %}
 看了一些所谓大公司的JAVA面试问题，发现对于JAVA集合类的使用都比较看重似的，而自己在这方面还真的是所真甚少，抽空也学习学习吧。

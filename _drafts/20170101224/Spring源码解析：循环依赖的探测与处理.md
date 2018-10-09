@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/spring%e6%ba%90%e7%a0%81%e8%a7%a3%e6%9e%90%e5%be
 fileName:  "20170101224"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/spring%e6%ba%90%e7%a0%81%e8%a7%a3%e6%9e%90%e5%be%aa%e7%8e%af%e4%be%9d%e8%b5%96%e7%9a%84%e6%8e%a2%e6%b5%8b%e4%b8%8e%e5%a4%84%e7%90%86.html"
+permalink: "2017/spring%e6%ba%90%e7%a0%81%e8%a7%a3%e6%9e%90%e5%be%aa%e7%8e%af%e4%be%9d%e8%b5%96%e7%9a%84%e6%8e%a2%e6%b5%8b%e4%b8%8e%e5%a4%84%e7%90%86.html"
 ---
 {% raw %}
 Spring 为开发人员提供了极其灵活和强大的配置方式，在方便使用的同时也为容器的初始化过程带来了不确定性，本篇所要介绍的循环依赖就是其中之一，尤其在一些大型项目中，循环依赖的配置往往是我们不经意而为之的，幸好 Spring 能够在初始化的过程中探测到对象之间的循环依赖，并能够在一定程度上对其进行处理。 

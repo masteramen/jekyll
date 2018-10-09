@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/left-joinright-joininner-join-de-qu-bie.html"
 fileName:  "20170100423"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/left-joinright-joininner-join-de-qu-bie.html"
+permalink: "2017/left-joinright-joininner-join-de-qu-bie.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期四, 六月 6, 2013

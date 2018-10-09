@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/mybatisplus%e5%92%8cbootstraptable%e9%9b%86%e6%8
 fileName:  "20170101048"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/mybatisplus%e5%92%8cbootstraptable%e9%9b%86%e6%88%90demo.html"
+permalink: "2017/mybatisplus%e5%92%8cbootstraptable%e9%9b%86%e6%88%90demo.html"
 ---
 {% raw %}
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>

@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/%e7%ac%94%e8%ae%b0-jersey-rest-api-%e8%ae%be%e8%
 fileName:  "20170101017"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/%e7%ac%94%e8%ae%b0-jersey-rest-api-%e8%ae%be%e8%ae%a1.html"
+permalink: "2017/%e7%ac%94%e8%ae%b0-jersey-rest-api-%e8%ae%be%e8%ae%a1.html"
 ---
 {% raw %}
 **REST 统一接口 **

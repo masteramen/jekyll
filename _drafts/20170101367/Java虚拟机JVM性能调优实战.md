@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java%e8%99%9a%e6%8b%9f%e6%9c%bajvm%e6%80%a7%e8%8
 fileName:  "20170101367"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java%e8%99%9a%e6%8b%9f%e6%9c%bajvm%e6%80%a7%e8%83%bd%e8%b0%83%e4%bc%98%e5%ae%9e%e6%88%98.html"
+permalink: "2017/java%e8%99%9a%e6%8b%9f%e6%9c%bajvm%e6%80%a7%e8%83%bd%e8%b0%83%e4%bc%98%e5%ae%9e%e6%88%98.html"
 ---
 {% raw %}
 16年的时候花了一些时间整理了一些关于jvm的介绍文章,到现在回顾起来还是一些还没有补充全面，其中就包括如何利用工具来监控调优前后的性能变化。工具做为图形化界面来展示更能直观的发现问题，另一方面一些耗费性能的分析（dump文件分析）一般也不会在生产直接分析，往往dump下来的文件达1G左右，人工分析效率较低，因此利用工具来分析jvm相关问题，长长可以到达事半功倍的效果来。

@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java-shu-zu-pai-xu-mian-shi-ti-mu.html"
 fileName:  "20170100441"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java-shu-zu-pai-xu-mian-shi-ti-mu.html"
+permalink: "2017/java-shu-zu-pai-xu-mian-shi-ti-mu.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期四, 六月 20, 2013

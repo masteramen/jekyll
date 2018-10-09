@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java-mian-shi-chang-wen-ibatis-he-hibernate-de-q
 fileName:  "20170100390"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java-mian-shi-chang-wen-ibatis-he-hibernate-de-qu-bie.html"
+permalink: "2017/java-mian-shi-chang-wen-ibatis-he-hibernate-de-qu-bie.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期四, 五月 23, 2013

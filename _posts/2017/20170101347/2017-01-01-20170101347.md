@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java%e8%ae%bf%e9%97%ae%e6%9d%83%e9%99%90%e8%af%a
 fileName:  "20170101347"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java%e8%ae%bf%e9%97%ae%e6%9d%83%e9%99%90%e8%af%a6%e8%bf%b0.html"
+permalink: "2017/java%e8%ae%bf%e9%97%ae%e6%9d%83%e9%99%90%e8%af%a6%e8%bf%b0.html"
 ---
 {% raw %}
 1.什么是访问权限？

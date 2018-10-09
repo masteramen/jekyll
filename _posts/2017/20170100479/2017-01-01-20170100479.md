@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java-xi-tong-diao-you-nei-cun-guan-li-yu-la-ji-h
 fileName:  "20170100479"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java-xi-tong-diao-you-nei-cun-guan-li-yu-la-ji-hui-shou.html"
+permalink: "2017/java-xi-tong-diao-you-nei-cun-guan-li-yu-la-ji-hui-shou.html"
 ---
 {% raw %}
 **1、Java虚拟机运行时的数据区**

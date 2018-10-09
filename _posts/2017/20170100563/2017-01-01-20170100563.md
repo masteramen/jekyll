@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java-huo-qu-url-zhong-de-ding-ji-yu-ming-bu-bao-
 fileName:  "20170100563"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java-huo-qu-url-zhong-de-ding-ji-yu-ming-bu-bao-kuo-zi-yu-ming-de-yuan-dai-ma.html"
+permalink: "2017/java-huo-qu-url-zhong-de-ding-ji-yu-ming-bu-bao-kuo-zi-yu-ming-de-yuan-dai-ma.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期一, 二月 17, 2014

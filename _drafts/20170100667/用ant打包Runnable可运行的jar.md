@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/yon-gant-da-bao-runnable-ke-yun-xing-de-jar.html
 fileName:  "20170100667"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/yon-gant-da-bao-runnable-ke-yun-xing-de-jar.html"
+permalink: "2017/yon-gant-da-bao-runnable-ke-yun-xing-de-jar.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期五, 八月 8, 2014

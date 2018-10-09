@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/guan-yu-java-static-de-mian-shi-ti-he-da-an.html
 fileName:  "20170100677"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/guan-yu-java-static-de-mian-shi-ti-he-da-an.html"
+permalink: "2017/guan-yu-java-static-de-mian-shi-ti-he-da-an.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期六, 八月 23, 2014

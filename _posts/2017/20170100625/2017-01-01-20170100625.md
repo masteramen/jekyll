@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java-programmers-is-still-golden-rice-bowl.html"
 fileName:  "20170100625"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java-programmers-is-still-golden-rice-bowl.html"
+permalink: "2017/java-programmers-is-still-golden-rice-bowl.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期日, 四月 27, 2014

@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/shuo-chu-ArrayList-Vector-LinkedList-de-cun-chu-
 fileName:  "20170100415"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/shuo-chu-ArrayList-Vector-LinkedList-de-cun-chu-xing-neng-he-te-xing.html"
+permalink: "2017/shuo-chu-ArrayList-Vector-LinkedList-de-cun-chu-xing-neng-he-te-xing.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期日, 六月 2, 2013

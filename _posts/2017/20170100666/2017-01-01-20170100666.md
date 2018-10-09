@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/httpconnection-redirect-getresponsecode-not-301-
 fileName:  "20170100666"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/httpconnection-redirect-getresponsecode-not-301-302.html"
+permalink: "2017/httpconnection-redirect-getresponsecode-not-301-302.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期日, 八月 3, 2014

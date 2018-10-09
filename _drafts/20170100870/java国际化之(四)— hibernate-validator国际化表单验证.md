@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java%e5%9b%bd%e9%99%85%e5%8c%96%e4%b9%8b-%e5%9b%
 fileName:  "20170100870"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java%e5%9b%bd%e9%99%85%e5%8c%96%e4%b9%8b-%e5%9b%9b-hibernate-validator%e5%9b%bd%e9%99%85%e5%8c%96%e8%a1%a8%e5%8d%95%e9%aa%8c%e8%af%81.html"
+permalink: "2017/java%e5%9b%bd%e9%99%85%e5%8c%96%e4%b9%8b-%e5%9b%9b-hibernate-validator%e5%9b%bd%e9%99%85%e5%8c%96%e8%a1%a8%e5%8d%95%e9%aa%8c%e8%af%81.html"
 ---
 {% raw %}
 /**

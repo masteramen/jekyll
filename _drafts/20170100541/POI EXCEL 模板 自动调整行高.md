@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/poi-excel-%e6%a8%a1%e6%9d%bf-%e8%87%aa%e5%8a%a8%
 fileName:  "20170100541"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/poi-excel-%e6%a8%a1%e6%9d%bf-%e8%87%aa%e5%8a%a8%e8%b0%83%e6%95%b4%e8%a1%8c%e9%ab%98.html"
+permalink: "2017/poi-excel-%e6%a8%a1%e6%9d%bf-%e8%87%aa%e5%8a%a8%e8%b0%83%e6%95%b4%e8%a1%8c%e9%ab%98.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期二, 二月 11, 2014

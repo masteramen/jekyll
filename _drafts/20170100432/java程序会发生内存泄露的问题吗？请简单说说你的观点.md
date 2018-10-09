@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java-cheng-xu-hui-fa-sheng-nei-cun-xie-lu-de-wen
 fileName:  "20170100432"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java-cheng-xu-hui-fa-sheng-nei-cun-xie-lu-de-wen-ti-ma-qing-jian-dan-shuo-shuo-ni-de-guan-dian.html"
+permalink: "2017/java-cheng-xu-hui-fa-sheng-nei-cun-xie-lu-de-wen-ti-ma-qing-jian-dan-shuo-shuo-ni-de-guan-dian.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期三, 六月 12, 2013

@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/oracle-sqlplus-tian-jia-xin-yong-hu-fu-zhi-quan-
 fileName:  "20170100686"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/oracle-sqlplus-tian-jia-xin-yong-hu-fu-zhi-quan-xian-xin-jian-biao-kong-jian.html"
+permalink: "2017/oracle-sqlplus-tian-jia-xin-yong-hu-fu-zhi-quan-xian-xin-jian-biao-kong-jian.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期三, 九月 3, 2014

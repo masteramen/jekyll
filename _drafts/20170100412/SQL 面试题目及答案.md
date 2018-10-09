@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/sql-mian-shi-ti-mu-ji-da-an.html"
 fileName:  "20170100412"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/sql-mian-shi-ti-mu-ji-da-an.html"
+permalink: "2017/sql-mian-shi-ti-mu-ji-da-an.html"
 ---
 {% raw %}
 学生成绩表(stuscore)：

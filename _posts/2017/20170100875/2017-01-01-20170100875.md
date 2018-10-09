@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/legendshop%e7%94%b5%e5%95%86%e5%95%86%e5%9f%8e%e
 fileName:  "20170100875"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/legendshop%e7%94%b5%e5%95%86%e5%95%86%e5%9f%8e%e7%b3%bb%e7%bb%9f%e5%9c%a8%e6%8a%80%e6%9c%af%e4%b8%8a%e6%9c%89%e4%ba%9b%e4%bb%80%e4%b9%88%e4%bc%98%e5%8a%bf.html"
+permalink: "2017/legendshop%e7%94%b5%e5%95%86%e5%95%86%e5%9f%8e%e7%b3%bb%e7%bb%9f%e5%9c%a8%e6%8a%80%e6%9c%af%e4%b8%8a%e6%9c%89%e4%ba%9b%e4%bb%80%e4%b9%88%e4%bc%98%e5%8a%bf.html"
 ---
 {% raw %}
 如何评价一个商城系统的优劣？最基本的，一个好的电商商城系统应该具备高稳定性、高性能、高容量、高扩展性等特质。那么，要具备这些特质，需要什么技术支持？而Legendshop是否具备这些技术来为您的电商之旅保驾护航？ 

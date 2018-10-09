@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/randoop%e6%b5%8b%e8%af%95%e7%b1%bb%e5%92%8c%e6%9
 fileName:  "20170101285"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/randoop%e6%b5%8b%e8%af%95%e7%b1%bb%e5%92%8c%e6%96%b9%e6%b3%95%e7%94%a8%e4%be%8b%e8%87%aa%e5%8a%a8%e7%94%9f%e6%88%90.html"
+permalink: "2017/randoop%e6%b5%8b%e8%af%95%e7%b1%bb%e5%92%8c%e6%96%b9%e6%b3%95%e7%94%a8%e4%be%8b%e8%87%aa%e5%8a%a8%e7%94%9f%e6%88%90.html"
 ---
 {% raw %}
 详细使用方法见randoop官网：　　https://randoop.github.io/randoop/manual/index.html　　

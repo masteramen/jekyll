@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java-xian-cheng-shen-ru-li-jie-threadlocal-de-yu
 fileName:  "20170100450"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java-xian-cheng-shen-ru-li-jie-threadlocal-de-yuan-li.html"
+permalink: "2017/java-xian-cheng-shen-ru-li-jie-threadlocal-de-yuan-li.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期五, 九月 6, 2013

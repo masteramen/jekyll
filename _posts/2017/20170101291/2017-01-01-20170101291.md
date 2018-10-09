@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/%e7%94%a8jspservlet%e5%ae%9e%e7%8e%b0bbs%e8%ae%b
 fileName:  "20170101291"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/%e7%94%a8jspservlet%e5%ae%9e%e7%8e%b0bbs%e8%ae%ba%e5%9d%9b.html"
+permalink: "2017/%e7%94%a8jspservlet%e5%ae%9e%e7%8e%b0bbs%e8%ae%ba%e5%9d%9b.html"
 ---
 {% raw %}
 H2M_LI_HEADER 

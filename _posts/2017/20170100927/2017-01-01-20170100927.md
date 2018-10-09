@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/bencode%e5%af%b9%e8%b1%a1%e7%bc%96%e7%a0%81%e5%a
 fileName:  "20170100927"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/bencode%e5%af%b9%e8%b1%a1%e7%bc%96%e7%a0%81%e5%ae%9e%e7%8e%b0.html"
+permalink: "2017/bencode%e5%af%b9%e8%b1%a1%e7%bc%96%e7%a0%81%e5%ae%9e%e7%8e%b0.html"
 ---
 {% raw %}
 承接上文，使用递归可以很简单的就实现了一个bencode编码函数 

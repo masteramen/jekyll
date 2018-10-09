@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/%e6%88%91%e6%98%af%e5%a6%82%e4%bd%95%e6%89%be%e4
 fileName:  "20170101160"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/%e6%88%91%e6%98%af%e5%a6%82%e4%bd%95%e6%89%be%e4%b8%80%e4%b8%aa%e5%bd%b1%e5%93%8d%e6%95%b0%e5%8d%83%e8%81%8c%e4%b8%9a%e7%bd%91%e7%ab%99%e7%9a%84%e6%8c%81%e7%bb%ad%e5%9e%8bxss%e7%9a%84.html"
+permalink: "2017/%e6%88%91%e6%98%af%e5%a6%82%e4%bd%95%e6%89%be%e4%b8%80%e4%b8%aa%e5%bd%b1%e5%93%8d%e6%95%b0%e5%8d%83%e8%81%8c%e4%b8%9a%e7%bd%91%e7%ab%99%e7%9a%84%e6%8c%81%e7%bb%ad%e5%9e%8bxss%e7%9a%84.html"
 ---
 {% raw %}
 [secist](https://www.jfox.info/go.php?url=http://www.freebuf.com/author/secist)共**28719**人围观 [WEB安全](https://www.jfox.info/go.php?url=http://www.freebuf.com/./articles/web)[漏洞](https://www.jfox.info/go.php?url=http://www.freebuf.com/./vuls)

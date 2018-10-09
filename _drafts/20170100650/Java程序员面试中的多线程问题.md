@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java-interview-issues-about-multi-thread.html"
 fileName:  "20170100650"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java-interview-issues-about-multi-thread.html"
+permalink: "2017/java-interview-issues-about-multi-thread.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期三, 七月 2, 2014

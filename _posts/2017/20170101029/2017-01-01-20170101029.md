@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/javaweb%e6%9c%8d%e5%8a%a1%e7%ab%af%e8%b7%a8%e5%9
 fileName:  "20170101029"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/javaweb%e6%9c%8d%e5%8a%a1%e7%ab%af%e8%b7%a8%e5%9f%9f%e6%94%af%e6%8c%81.html"
+permalink: "2017/javaweb%e6%9c%8d%e5%8a%a1%e7%ab%af%e8%b7%a8%e5%9f%9f%e6%94%af%e6%8c%81.html"
 ---
 {% raw %}
 项目开发为了支持web浏览器ajax的直接请求，涉及到了跨域的需求，通过学习对跨域有了更深入的认识，现在总结一下：

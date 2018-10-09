@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/rman-bei-fen-yu-hui-fu-yi-ren-shi-rman.html"
 fileName:  "20170100850"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/rman-bei-fen-yu-hui-fu-yi-ren-shi-rman.html"
+permalink: "2017/rman-bei-fen-yu-hui-fu-yi-ren-shi-rman.html"
 ---
 {% raw %}
 RMAN（Recovery Manager）是Oracle恢复管理器的简称，是集数据库备份（backup）、修复（restore）和恢复（recover）于一体的工具。接下来了解一下RMAN中的几个重要概念。 

@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/apachewicket%e5%8f%91%e5%b8%83web%e5%bc%80%e5%8f
 fileName:  "20170101162"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/apachewicket%e5%8f%91%e5%b8%83web%e5%bc%80%e5%8f%91%e6%a1%86%e6%9e%b6.html"
+permalink: "2017/apachewicket%e5%8f%91%e5%b8%83web%e5%bc%80%e5%8f%91%e6%a1%86%e6%9e%b6.html"
 ---
 {% raw %}
 Apache Wicket 是一个开源的面向 Java 组件的 Web 应用框架，为政府、商店、大学、城市、银行、电子邮件提供商等提供数千个 Web 应用和网站。

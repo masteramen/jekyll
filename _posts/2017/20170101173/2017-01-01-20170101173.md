@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/netbeans%e8%a3%85javaplugin%e5%87%ba%e7%8e%b0som
 fileName:  "20170101173"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/netbeans%e8%a3%85javaplugin%e5%87%ba%e7%8e%b0somepluginsrequirejdk.html"
+permalink: "2017/netbeans%e8%a3%85javaplugin%e5%87%ba%e7%8e%b0somepluginsrequirejdk.html"
 ---
 {% raw %}
 安装 NetBeans 时系统没 JDK、或 JDK版本太旧，

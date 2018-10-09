@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/dubbo%e6%ba%90%e7%a0%81%e5%88%86%e6%9e%90%e4%ba%
 fileName:  "20170101485"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/dubbo%e6%ba%90%e7%a0%81%e5%88%86%e6%9e%90%e4%ba%8c%e8%b6%85%e6%97%b6%e5%8e%9f%e7%90%86%e4%bb%a5%e5%8f%8a%e5%ba%94%e7%94%a8%e5%9c%ba%e6%99%af.html"
+permalink: "2017/dubbo%e6%ba%90%e7%a0%81%e5%88%86%e6%9e%90%e4%ba%8c%e8%b6%85%e6%97%b6%e5%8e%9f%e7%90%86%e4%bb%a5%e5%8f%8a%e5%ba%94%e7%94%a8%e5%9c%ba%e6%99%af.html"
 ---
 {% raw %}
 # dubbo源码分析（二）：超时原理以及应用场景 

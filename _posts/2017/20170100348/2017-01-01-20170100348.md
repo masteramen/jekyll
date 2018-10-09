@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/Java-yu-yan-zhong-de-volatile-he-synchronized-yo
 fileName:  "20170100348"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/Java-yu-yan-zhong-de-volatile-he-synchronized-you-shen-me-qu-bie.html"
+permalink: "2017/Java-yu-yan-zhong-de-volatile-he-synchronized-you-shen-me-qu-bie.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期五, 五月 17, 2013

@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/amazon-vice-president-of-technical-perfection-fo
 fileName:  "20170100603"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/amazon-vice-president-of-technical-perfection-former-technical-anatomy.html"
+permalink: "2017/amazon-vice-president-of-technical-perfection-former-technical-anatomy.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期四, 三月 6, 2014

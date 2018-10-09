@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/%e4%bd%bf%e7%94%a8-keepalived-%e7%9a%84ip%e6%bc%
 fileName:  "20170100876"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/%e4%bd%bf%e7%94%a8-keepalived-%e7%9a%84ip%e6%bc%82%e7%a7%bb%e6%90%ad%e5%bb%ba%e4%b8%bb%e4%bb%8eweb.html"
+permalink: "2017/%e4%bd%bf%e7%94%a8-keepalived-%e7%9a%84ip%e6%bc%82%e7%a7%bb%e6%90%ad%e5%bb%ba%e4%b8%bb%e4%bb%8eweb.html"
 ---
 {% raw %}
 H2M_LI_HEADER keepalived 的原理请自行百度，这里利用其ip漂移功能，实现 主从web的高可用。

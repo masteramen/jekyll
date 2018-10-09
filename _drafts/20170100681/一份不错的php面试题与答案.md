@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/yi-fen-bu-cuo-de-php-mian-shi-ti-yu-da-an.html"
 fileName:  "20170100681"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/yi-fen-bu-cuo-de-php-mian-shi-ti-yu-da-an.html"
+permalink: "2017/yi-fen-bu-cuo-de-php-mian-shi-ti-yu-da-an.html"
 ---
 {% raw %}
 一份不错的php面试题,附答案,有准备换工作的同学可以参考一下.

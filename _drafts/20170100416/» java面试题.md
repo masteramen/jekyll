@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/226.html"
 fileName:  "20170100416"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/226.html"
+permalink: "2017/226.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期三, 六月 5, 2013

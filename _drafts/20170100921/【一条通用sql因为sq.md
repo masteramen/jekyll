@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/%e4%b8%80%e6%9d%a1%e9%80%9a%e7%94%a8sql%e5%9b%a0
 fileName:  "20170100921"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/%e4%b8%80%e6%9d%a1%e9%80%9a%e7%94%a8sql%e5%9b%a0%e4%b8%basq.html"
+permalink: "2017/%e4%b8%80%e6%9d%a1%e9%80%9a%e7%94%a8sql%e5%9b%a0%e4%b8%basq.html"
 ---
 {% raw %}
 问题背景：用到GROUP BY 语句查询5.7版本时com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Expression #2 of SELECT list is not in GROUP BY clause and contains nonaggregated column ‘col_user_6.a.START_TIME’ which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by错误

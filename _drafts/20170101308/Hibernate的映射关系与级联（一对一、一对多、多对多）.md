@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/hibernate%e7%9a%84%e6%98%a0%e5%b0%84%e5%85%b3%e7
 fileName:  "20170101308"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/hibernate%e7%9a%84%e6%98%a0%e5%b0%84%e5%85%b3%e7%b3%bb%e4%b8%8e%e7%ba%a7%e8%81%94%e4%b8%80%e5%af%b9%e4%b8%80%e4%b8%80%e5%af%b9%e5%a4%9a%e5%a4%9a%e5%af%b9%e5%a4%9a.html"
+permalink: "2017/hibernate%e7%9a%84%e6%98%a0%e5%b0%84%e5%85%b3%e7%b3%bb%e4%b8%8e%e7%ba%a7%e8%81%94%e4%b8%80%e5%af%b9%e4%b8%80%e4%b8%80%e5%af%b9%e5%a4%9a%e5%a4%9a%e5%af%b9%e5%a4%9a.html"
 ---
 {% raw %}
 长期专业踩坑……怪物猎人要登陆switch了

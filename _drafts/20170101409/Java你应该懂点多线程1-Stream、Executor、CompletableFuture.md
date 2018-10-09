@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java%e4%bd%a0%e5%ba%94%e8%af%a5%e6%87%82%e7%82%b
 fileName:  "20170101409"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java%e4%bd%a0%e5%ba%94%e8%af%a5%e6%87%82%e7%82%b9%e5%a4%9a%e7%ba%bf%e7%a8%8b1streamexecutorcompletablefuture.html"
+permalink: "2017/java%e4%bd%a0%e5%ba%94%e8%af%a5%e6%87%82%e7%82%b9%e5%a4%9a%e7%ba%bf%e7%a8%8b1streamexecutorcompletablefuture.html"
 ---
 {% raw %}
 作者[Mr_AG](/u/86feb75a6296)2017.07.29 07:05字数 2580

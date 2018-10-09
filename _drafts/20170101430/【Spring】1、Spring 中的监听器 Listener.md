@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/spring1spring%e4%b8%ad%e7%9a%84%e7%9b%91%e5%90%a
 fileName:  "20170101430"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/spring1spring%e4%b8%ad%e7%9a%84%e7%9b%91%e5%90%ac%e5%99%a8listener.html"
+permalink: "2017/spring1spring%e4%b8%ad%e7%9a%84%e7%9b%91%e5%90%ac%e5%99%a8listener.html"
 ---
 {% raw %}
 1、EventListener

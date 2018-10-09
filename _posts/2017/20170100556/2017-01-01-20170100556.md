@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/jquery%e5%9b%be%e7%89%87%e6%92%ad%e6%94%be%e6%8f
 fileName:  "20170100556"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/jquery%e5%9b%be%e7%89%87%e6%92%ad%e6%94%be%e6%8f%92%e4%bb%b6fancybox%e4%bd%bf%e7%94%a8%e8%af%a6%e8%a7%a3.html"
+permalink: "2017/jquery%e5%9b%be%e7%89%87%e6%92%ad%e6%94%be%e6%8f%92%e4%bb%b6fancybox%e4%bd%bf%e7%94%a8%e8%af%a6%e8%a7%a3.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期五, 二月 14, 2014

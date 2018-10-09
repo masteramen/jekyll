@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/sql-developer-4-1-5-hangs-man-si-de-wen-ti-jie-j
 fileName:  "20170100813"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/sql-developer-4-1-5-hangs-man-si-de-wen-ti-jie-jue.html"
+permalink: "2017/sql-developer-4-1-5-hangs-man-si-de-wen-ti-jie-jue.html"
 ---
 {% raw %}
 SQL Developer 4.1.5 hangs 慢死的问题解决

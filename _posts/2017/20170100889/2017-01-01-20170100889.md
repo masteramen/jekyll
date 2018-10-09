@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/spring-data%e7%9a%84domain-event%e7%9a%84%e7%94%
 fileName:  "20170100889"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/spring-data%e7%9a%84domain-event%e7%9a%84%e7%94%a8%e6%b3%95.html"
+permalink: "2017/spring-data%e7%9a%84domain-event%e7%9a%84%e7%94%a8%e6%b3%95.html"
 ---
 {% raw %}
 ### 1.DDD与Spring Data

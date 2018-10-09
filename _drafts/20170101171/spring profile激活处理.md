@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/springprofile%e6%bf%80%e6%b4%bb%e5%a4%84%e7%90%8
 fileName:  "20170101171"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/springprofile%e6%bf%80%e6%b4%bb%e5%a4%84%e7%90%86.html"
+permalink: "2017/springprofile%e6%bf%80%e6%b4%bb%e5%a4%84%e7%90%86.html"
 ---
 {% raw %}
 项目开发一共有三个环境：测试环境，灰度环境和生产环境，比如我们想在测试环境下，不加载某些配置信息，可以通过profile来实现

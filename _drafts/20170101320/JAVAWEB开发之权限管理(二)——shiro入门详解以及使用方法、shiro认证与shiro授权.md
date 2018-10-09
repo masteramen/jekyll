@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/javaweb%e5%bc%80%e5%8f%91%e4%b9%8b%e6%9d%83%e9%9
 fileName:  "20170101320"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/javaweb%e5%bc%80%e5%8f%91%e4%b9%8b%e6%9d%83%e9%99%90%e7%ae%a1%e7%90%86%e4%ba%8cshiro%e5%85%a5%e9%97%a8%e8%af%a6%e8%a7%a3%e4%bb%a5%e5%8f%8a%e4%bd%bf%e7%94%a8%e6%96%b9%e6%b3%95shiro%e8%ae%a4%e8%af%81.html"
+permalink: "2017/javaweb%e5%bc%80%e5%8f%91%e4%b9%8b%e6%9d%83%e9%99%90%e7%ae%a1%e7%90%86%e4%ba%8cshiro%e5%85%a5%e9%97%a8%e8%af%a6%e8%a7%a3%e4%bb%a5%e5%8f%8a%e4%bd%bf%e7%94%a8%e6%96%b9%e6%b3%95shiro%e8%ae%a4%e8%af%81.html"
 ---
 {% raw %}
 # JAVAWEB开发之权限管理(二)——shiro入门详解以及使用方法、shiro认证与shiro授权 

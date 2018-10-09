@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/editable-select-%e5%8f%af%e7%bc%96%e8%be%91selec
 fileName:  "20170100518"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/editable-select-%e5%8f%af%e7%bc%96%e8%be%91select.html"
+permalink: "2017/editable-select-%e5%8f%af%e7%bc%96%e8%be%91select.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期一, 二月 3, 2014

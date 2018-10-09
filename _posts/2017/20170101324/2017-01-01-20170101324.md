@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/dubbo%e7%b3%bb%e5%88%974%e5%b7%a5%e5%8e%82%e6%a8
 fileName:  "20170101324"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/dubbo%e7%b3%bb%e5%88%974%e5%b7%a5%e5%8e%82%e6%a8%a1%e5%bc%8f%e7%9a%84registry.html"
+permalink: "2017/dubbo%e7%b3%bb%e5%88%974%e5%b7%a5%e5%8e%82%e6%a8%a1%e5%bc%8f%e7%9a%84registry.html"
 ---
 {% raw %}
 # Dubbo系列-4.工厂模式的Registry 

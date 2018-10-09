@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/%e5%88%9d%e8%af%86eventsourcing%e5%92%8ccqrs.htm
 fileName:  "20170100949"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/%e5%88%9d%e8%af%86eventsourcing%e5%92%8ccqrs.html"
+permalink: "2017/%e5%88%9d%e8%af%86eventsourcing%e5%92%8ccqrs.html"
 ---
 {% raw %}
 EventSourcing就是事件溯源的意思，我们平时在设计系统的时候都存储了对象的最终的状态，比如一个交易订单，它当前的状态是等待买家确认收货，这个状态是由于发生了一系列事件所导致的，那么EventSourcing的思想就是存储对象的所有变更事件，根据对象的所有变更事件追溯出对象的状态。 

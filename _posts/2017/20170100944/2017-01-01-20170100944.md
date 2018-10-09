@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/%e7%ae%80%e8%b0%88java-%e4%b8%ad%e7%9a%84-%e7%bb
 fileName:  "20170100944"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/%e7%ae%80%e8%b0%88java-%e4%b8%ad%e7%9a%84-%e7%bb%a7%e6%89%bf%e5%92%8c%e5%a4%9a%e6%80%81.html"
+permalink: "2017/%e7%ae%80%e8%b0%88java-%e4%b8%ad%e7%9a%84-%e7%bb%a7%e6%89%bf%e5%92%8c%e5%a4%9a%e6%80%81.html"
 ---
 {% raw %}
 继承（extends） ：

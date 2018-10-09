@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/%e7%a8%8b%e5%ba%8f%e5%91%98%e4%b8%8e%e6%8a%80%e6
 fileName:  "20170101009"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/%e7%a8%8b%e5%ba%8f%e5%91%98%e4%b8%8e%e6%8a%80%e6%9c%af%e5%80%ba.html"
+permalink: "2017/%e7%a8%8b%e5%ba%8f%e5%91%98%e4%b8%8e%e6%8a%80%e6%9c%af%e5%80%ba.html"
 ---
 {% raw %}
 最近半年一直在弄一个项目，原来做项目都是基于HTML5+Spring MVC+Mybatis开发的，HTML5也是采用了BootStrap和JQuery，中间还浅尝辄止的用过Angular，不过没感觉到Angular的强大，现在再做新项目的时候，就全部转到Spring Boot了。

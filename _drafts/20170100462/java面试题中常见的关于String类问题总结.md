@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java-mian-shi-ti-zhong-chang-jian-de-guan-yu-str
 fileName:  "20170100462"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java-mian-shi-ti-zhong-chang-jian-de-guan-yu-string-lei-wen-ti-zong-jie.html"
+permalink: "2017/java-mian-shi-ti-zhong-chang-jian-de-guan-yu-string-lei-wen-ti-zong-jie.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期五, 十月 18, 2013

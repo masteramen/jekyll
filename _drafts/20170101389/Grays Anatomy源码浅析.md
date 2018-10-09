@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/graysanatomy%e6%ba%90%e7%a0%81%e6%b5%85%e6%9e%90
 fileName:  "20170101389"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/graysanatomy%e6%ba%90%e7%a0%81%e6%b5%85%e6%9e%90.html"
+permalink: "2017/graysanatomy%e6%ba%90%e7%a0%81%e6%b5%85%e6%9e%90.html"
 ---
 {% raw %}
 标签（空格分隔）：JAVA JVM 问题排查

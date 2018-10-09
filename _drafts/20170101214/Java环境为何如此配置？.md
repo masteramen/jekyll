@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java%e7%8e%af%e5%a2%83%e4%b8%ba%e4%bd%95%e5%a6%8
 fileName:  "20170101214"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java%e7%8e%af%e5%a2%83%e4%b8%ba%e4%bd%95%e5%a6%82%e6%ad%a4%e9%85%8d%e7%bd%ae.html"
+permalink: "2017/java%e7%8e%af%e5%a2%83%e4%b8%ba%e4%bd%95%e5%a6%82%e6%ad%a4%e9%85%8d%e7%bd%ae.html"
 ---
 {% raw %}
 Java环境如何配置的帖子，网上随处可见。但是，很少有人能够讲解为何如此配置。作为一个小白，按照网上的教程进行配置，运气好的情况下，顺利地配置成功，运气差点，就会出现各种错误，又无处下手，只能重新开始。当然，这种态度不是一个好的编程人员该有的态度。

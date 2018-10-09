@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/redis%e4%b8%ad%e7%9a%84%e6%95%b0%e6%8d%ae%e5%af%
 fileName:  "20170100926"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/redis%e4%b8%ad%e7%9a%84%e6%95%b0%e6%8d%ae%e5%af%b9%e8%b1%a1.html"
+permalink: "2017/redis%e4%b8%ad%e7%9a%84%e6%95%b0%e6%8d%ae%e5%af%b9%e8%b1%a1.html"
 ---
 {% raw %}
 redis中有五种常用对象

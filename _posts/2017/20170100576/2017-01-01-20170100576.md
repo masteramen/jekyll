@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java-classloader-de-gong-zuo-yuan-li.html"
 fileName:  "20170100576"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java-classloader-de-gong-zuo-yuan-li.html"
+permalink: "2017/java-classloader-de-gong-zuo-yuan-li.html"
 ---
 {% raw %}
 每个运行中的线程都有一个成员contextClassLoader，用来在运行时动态地载入其它类 

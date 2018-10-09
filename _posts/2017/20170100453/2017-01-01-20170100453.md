@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/guan-yu-java-tomcat-ji-qun-de-mian-shi-wen-ti.ht
 fileName:  "20170100453"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/guan-yu-java-tomcat-ji-qun-de-mian-shi-wen-ti.html"
+permalink: "2017/guan-yu-java-tomcat-ji-qun-de-mian-shi-wen-ti.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期六, 十月 12, 2013

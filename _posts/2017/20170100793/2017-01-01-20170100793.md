@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/xie-wang-zhan-xie-dao-bei-youtube-ceo-wa-jiao-90
 fileName:  "20170100793"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/xie-wang-zhan-xie-dao-bei-youtube-ceo-wa-jiao-90-hou-gong-cheng-shi-gong-kai-coding-xue-xi-li-cheng.html"
+permalink: "2017/xie-wang-zhan-xie-dao-bei-youtube-ceo-wa-jiao-90-hou-gong-cheng-shi-gong-kai-coding-xue-xi-li-cheng.html"
 ---
 {% raw %}
 在工作中，我常常和硅谷地区的工程师交流，时常讨论这样一个话题：什么样的工程师，在硅谷是最受欢迎的？

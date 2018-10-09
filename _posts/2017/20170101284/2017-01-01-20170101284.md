@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/tkinter%e5%ae%9e%e7%8e%b0%e7%94%b5%e5%ad%90%e6%9
 fileName:  "20170101284"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/tkinter%e5%ae%9e%e7%8e%b0%e7%94%b5%e5%ad%90%e6%97%b6%e9%92%9f.html"
+permalink: "2017/tkinter%e5%ae%9e%e7%8e%b0%e7%94%b5%e5%ad%90%e6%97%b6%e9%92%9f.html"
 ---
 {% raw %}
 By  - Last updated: 星期六, 七月 15, 2017

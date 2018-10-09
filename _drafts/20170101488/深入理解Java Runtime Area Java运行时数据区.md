@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/%e6%b7%b1%e5%85%a5%e7%90%86%e8%a7%a3javaruntimea
 fileName:  "20170101488"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/%e6%b7%b1%e5%85%a5%e7%90%86%e8%a7%a3javaruntimeareajava%e8%bf%90%e8%a1%8c%e6%97%b6%e6%95%b0%e6%8d%ae%e5%8c%ba.html"
+permalink: "2017/%e6%b7%b1%e5%85%a5%e7%90%86%e8%a7%a3javaruntimeareajava%e8%bf%90%e8%a1%8c%e6%97%b6%e6%95%b0%e6%8d%ae%e5%8c%ba.html"
 ---
 {% raw %}
 # 深入理解Java Runtime Area Java运行时数据区 

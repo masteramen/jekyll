@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/jms-%e4%b9%8b-active-mq-%e7%9a%84spring%e6%95%b4
 fileName:  "20170100902"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/jms-%e4%b9%8b-active-mq-%e7%9a%84spring%e6%95%b4%e5%90%88.html"
+permalink: "2017/jms-%e4%b9%8b-active-mq-%e7%9a%84spring%e6%95%b4%e5%90%88.html"
 ---
 {% raw %}
 ### 一、与spring整合实现ptp的同步接收消息

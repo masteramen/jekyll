@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/lombok%e7%9a%84%e7%ae%80%e5%8d%95%e4%bb%8b%e7%bb
 fileName:  "20170101373"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/lombok%e7%9a%84%e7%ae%80%e5%8d%95%e4%bb%8b%e7%bb%8d%e5%92%8c%e4%bd%bf%e7%94%a8%e6%96%b9%e6%b3%95-2.html"
+permalink: "2017/lombok%e7%9a%84%e7%ae%80%e5%8d%95%e4%bb%8b%e7%bb%8d%e5%92%8c%e4%bd%bf%e7%94%a8%e6%96%b9%e6%b3%95-2.html"
 ---
 {% raw %}
 这是上周在群里发现有人推荐lombok，他说是神器，当时就引起了我的好奇，然后下班回来我就看了看官网介绍（菜鸟英语水平），这就是难点了，然后就是大概了解了一下，就在网上查了查相关资料，周末的时候自己试了试，现在来做个总结：

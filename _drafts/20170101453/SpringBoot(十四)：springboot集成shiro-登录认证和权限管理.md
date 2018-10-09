@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/springboot%e5%8d%81%e5%9b%9bspringboot%e9%9b%86%
 fileName:  "20170101453"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/springboot%e5%8d%81%e5%9b%9bspringboot%e9%9b%86%e6%88%90shiro%e7%99%bb%e5%bd%95%e8%ae%a4%e8%af%81%e5%92%8c%e6%9d%83%e9%99%90%e7%ae%a1%e7%90%86.html"
+permalink: "2017/springboot%e5%8d%81%e5%9b%9bspringboot%e9%9b%86%e6%88%90shiro%e7%99%bb%e5%bd%95%e8%ae%a4%e8%af%81%e5%92%8c%e6%9d%83%e9%99%90%e7%ae%a1%e7%90%86.html"
 ---
 {% raw %}
 这篇文章我们来学习如何使用Spring Boot集成Apache Shiro。安全应该是互联网公司的一道生命线，几乎任何的公司都会涉及到这方面的需求。在Java领域一般有Spring Security、Apache Shiro等安全框架，但是由于Spring Security过于庞大和复杂，大多数公司会选择Apache Shiro来使用，这篇文章会先介绍一下Apache Shiro，在结合Spring Boot给出使用案例。

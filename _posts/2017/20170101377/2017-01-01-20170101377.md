@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java8%e6%96%b0%e7%89%b9%e6%80%a7%e6%97%a5%e6%9c%
 fileName:  "20170101377"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java8%e6%96%b0%e7%89%b9%e6%80%a7%e6%97%a5%e6%9c%9fapi.html"
+permalink: "2017/java8%e6%96%b0%e7%89%b9%e6%80%a7%e6%97%a5%e6%9c%9fapi.html"
 ---
 {% raw %}
 Java 8 在包java.time下包含了一组全新的时间日期API。下面的例子展示了这组新API里最重要的一些部分：

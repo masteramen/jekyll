@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/collectioniteratorforeach.html"
 fileName:  "20170101092"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/collectioniteratorforeach.html"
+permalink: "2017/collectioniteratorforeach.html"
 ---
 {% raw %}
 一.Collection(java.util)

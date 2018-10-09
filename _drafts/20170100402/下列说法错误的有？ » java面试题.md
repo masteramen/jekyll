@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/xia-lie-shuo-fa-cuo-wu-de-you.html"
 fileName:  "20170100402"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/xia-lie-shuo-fa-cuo-wu-de-you.html"
+permalink: "2017/xia-lie-shuo-fa-cuo-wu-de-you.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期日, 五月 26, 2013

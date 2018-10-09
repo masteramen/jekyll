@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/creazypebbles.html"
 fileName:  "20170100936"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/creazypebbles.html"
+permalink: "2017/creazypebbles.html"
 ---
 {% raw %}
 By  - Last updated: 星期日, 六月 25, 2017

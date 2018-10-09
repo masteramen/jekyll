@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/angular%e7%9a%84%e4%be%9d%e8%b5%96%e6%b3%a8%e5%8
 fileName:  "20170100970"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/angular%e7%9a%84%e4%be%9d%e8%b5%96%e6%b3%a8%e5%85%a5%e6%98%af%e6%80%8e%e4%b9%88%e5%ae%9e%e7%8e%b0%e7%9a%84.html"
+permalink: "2017/angular%e7%9a%84%e4%be%9d%e8%b5%96%e6%b3%a8%e5%85%a5%e6%98%af%e6%80%8e%e4%b9%88%e5%ae%9e%e7%8e%b0%e7%9a%84.html"
 ---
 {% raw %}
 # Angular的依赖注入是怎么实现的？ 

@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/%e9%ab%98%e4%bb%bfios%e7%9b%b8%e5%86%8c%e5%9c%b0
 fileName:  "20170101364"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/%e9%ab%98%e4%bb%bfios%e7%9b%b8%e5%86%8c%e5%9c%b0%e5%9b%be%e5%8a%9f%e8%83%bd.html"
+permalink: "2017/%e9%ab%98%e4%bb%bfios%e7%9b%b8%e5%86%8c%e5%9c%b0%e5%9b%be%e5%8a%9f%e8%83%bd.html"
 ---
 {% raw %}
 老规矩先上图

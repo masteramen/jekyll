@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/%e6%97%a0%e5%9d%91%e7%95%85%e7%8e%a9minikube-%e5
 fileName:  "20170100987"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/%e6%97%a0%e5%9d%91%e7%95%85%e7%8e%a9minikube-%e5%88%a9%e7%94%a8%e9%98%bf%e9%87%8c%e4%ba%91%e9%95%9c%e5%83%8f%e7%bc%96%e8%af%91minikube.html"
+permalink: "2017/%e6%97%a0%e5%9d%91%e7%95%85%e7%8e%a9minikube-%e5%88%a9%e7%94%a8%e9%98%bf%e9%87%8c%e4%ba%91%e9%95%9c%e5%83%8f%e7%bc%96%e8%af%91minikube.html"
 ---
 {% raw %}
 `Kubernetes`占据容器编排的霸主地位，我们一般都会通过`minikube`实验`kubernetes`功能，但是`minikube`是不能直接安装成功的,网上解决方案有2种：

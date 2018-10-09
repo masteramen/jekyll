@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/how-to-design-java-programming-code-exception-ha
 fileName:  "20170100601"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/how-to-design-java-programming-code-exception-handling.html"
+permalink: "2017/how-to-design-java-programming-code-exception-handling.html"
 ---
 {% raw %}
 有一句这样话：一个衡量Java设计师水平和开发团队纪律性的好方法就是读读他们应用程序里的异常处理代码。

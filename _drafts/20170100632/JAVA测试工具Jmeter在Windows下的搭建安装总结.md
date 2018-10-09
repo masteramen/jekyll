@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java-jmeter-testing-tools-installation-summary.h
 fileName:  "20170100632"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java-jmeter-testing-tools-installation-summary.html"
+permalink: "2017/java-jmeter-testing-tools-installation-summary.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期日, 五月 11, 2014

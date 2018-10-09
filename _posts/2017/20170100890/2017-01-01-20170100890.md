@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/%e7%9b%91%e6%8e%a7%e5%b7%a5%e5%85%b7%e4%b9%8bspo
 fileName:  "20170100890"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/%e7%9b%91%e6%8e%a7%e5%b7%a5%e5%85%b7%e4%b9%8bspotlight.html"
+permalink: "2017/%e7%9b%91%e6%8e%a7%e5%b7%a5%e5%85%b7%e4%b9%8bspotlight.html"
 ---
 {% raw %}
 Spotlight 是一款强大的windows系统监控工具，不但可以监控本地windows，还可以进行远程监控windows系统，监控内容也十分丰富，进程，CPU，内存，磁盘，网络等，功能十分强大。

@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/cha-kan-oracle-zhi-xing-ji-hua-de-ji-zhong-fang-
 fileName:  "20170100470"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/cha-kan-oracle-zhi-xing-ji-hua-de-ji-zhong-fang-fa.html"
+permalink: "2017/cha-kan-oracle-zhi-xing-ji-hua-de-ji-zhong-fang-fa.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期五, 十月 25, 2013

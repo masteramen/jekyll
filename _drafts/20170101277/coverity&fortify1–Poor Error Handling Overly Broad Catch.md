@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/coverityfortify1poorerrorhandlingoverlybroadcatc
 fileName:  "20170101277"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/coverityfortify1poorerrorhandlingoverlybroadcatch.html"
+permalink: "2017/coverityfortify1poorerrorhandlingoverlybroadcatch.html"
 ---
 {% raw %}
 [ganchuanpu](https://www.jfox.info/go.php?url=http://www.cnblogs.com/ganchuanpu/) 阅读( 

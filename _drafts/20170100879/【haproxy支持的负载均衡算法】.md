@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/haproxy%e6%94%af%e6%8c%81%e7%9a%84%e8%b4%9f%e8%b
 fileName:  "20170100879"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/haproxy%e6%94%af%e6%8c%81%e7%9a%84%e8%b4%9f%e8%bd%bd%e5%9d%87%e8%a1%a1%e7%ae%97%e6%b3%95.html"
+permalink: "2017/haproxy%e6%94%af%e6%8c%81%e7%9a%84%e8%b4%9f%e8%bd%bd%e5%9d%87%e8%a1%a1%e7%ae%97%e6%b3%95.html"
 ---
 {% raw %}
 目前haproxy支持的负载均衡算法有如下8种

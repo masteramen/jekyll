@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/the-differentce-of-hibernate-saveorupdate-and-me
 fileName:  "20170100582"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/the-differentce-of-hibernate-saveorupdate-and-merge-method.html"
+permalink: "2017/the-differentce-of-hibernate-saveorupdate-and-merge-method.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期六, 二月 22, 2014

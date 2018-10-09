@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/spring%e6%9e%81%e9%80%9f%e9%9b%86%e6%88%90%e6%b3
 fileName:  "20170101080"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/spring%e6%9e%81%e9%80%9f%e9%9b%86%e6%88%90%e6%b3%a8%e8%a7%a3redis%e5%ae%9e%e5%bd%95.html"
+permalink: "2017/spring%e6%9e%81%e9%80%9f%e9%9b%86%e6%88%90%e6%b3%a8%e8%a7%a3redis%e5%ae%9e%e5%bd%95.html"
 ---
 {% raw %}
 Redis 做为基于内存的 Key-Value 数据库，用来做缓存服务器性价比相当高。

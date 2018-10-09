@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/kotlin%e5%92%8cjavaee%e8%ae%a9%e4%ba%8c%e8%80%85
 fileName:  "20170101339"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/kotlin%e5%92%8cjavaee%e8%ae%a9%e4%ba%8c%e8%80%85%e7%9a%84%e8%bd%ac%e6%8d%a2%e6%9b%b4%e9%a1%ba%e7%95%85.html"
+permalink: "2017/kotlin%e5%92%8cjavaee%e8%ae%a9%e4%ba%8c%e8%80%85%e7%9a%84%e8%bd%ac%e6%8d%a2%e6%9b%b4%e9%a1%ba%e7%95%85.html"
 ---
 {% raw %}
 翻译：mycstar 

@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/beanutils%e5%b7%a5%e5%85%b7%e7%b1%bb.html"
 fileName:  "20170101067"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/beanutils%e5%b7%a5%e5%85%b7%e7%b1%bb.html"
+permalink: "2017/beanutils%e5%b7%a5%e5%85%b7%e7%b1%bb.html"
 ---
 {% raw %}
 一.BeanUtils 概述

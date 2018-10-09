@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/spring-boot-ru-men-cao-zuo-yi.html"
 fileName:  "20170100837"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/spring-boot-ru-men-cao-zuo-yi.html"
+permalink: "2017/spring-boot-ru-men-cao-zuo-yi.html"
 ---
 {% raw %}
 H2M_LI_HEADER 新建maven project ，选择artifact id 为maven-archetype-quicktype

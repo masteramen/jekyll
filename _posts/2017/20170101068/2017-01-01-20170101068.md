@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/localmq%e4%bb%8e%e9%9b%b6%e6%9e%84%e5%bb%ba%e7%b
 fileName:  "20170101068"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/localmq%e4%bb%8e%e9%9b%b6%e6%9e%84%e5%bb%ba%e7%b1%bbrocketmq%e9%ab%98%e6%80%a7%e8%83%bd%e6%b6%88%e6%81%af%e9%98%9f%e5%88%97.html"
+permalink: "2017/localmq%e4%bb%8e%e9%9b%b6%e6%9e%84%e5%bb%ba%e7%b1%bbrocketmq%e9%ab%98%e6%80%a7%e8%83%bd%e6%b6%88%e6%81%af%e9%98%9f%e5%88%97.html"
 ---
 {% raw %}
 // 首先在这里：https://parg.co/beX 下载代码

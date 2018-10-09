@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java%e5%9f%ba%e7%a1%80servlet%e4%b8%80.html"
 fileName:  "20170101484"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java%e5%9f%ba%e7%a1%80servlet%e4%b8%80.html"
+permalink: "2017/java%e5%9f%ba%e7%a1%80servlet%e4%b8%80.html"
 ---
 {% raw %}
 在学习Servlet之前，需要首先学习一些关联性的知识。

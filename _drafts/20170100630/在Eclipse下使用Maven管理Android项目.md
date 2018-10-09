@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/using-maven-for-android-project-management-in-ec
 fileName:  "20170100630"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/using-maven-for-android-project-management-in-eclipse.html"
+permalink: "2017/using-maven-for-android-project-management-in-eclipse.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期三, 五月 7, 2014

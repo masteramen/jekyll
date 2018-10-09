@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/android-%e5%85%a5%e9%97%a8%e5%bc%80%e5%8f%91hell
 fileName:  "20170100529"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/android-%e5%85%a5%e9%97%a8%e5%bc%80%e5%8f%91helloworld%e4%be%8b%e5%ad%90.html"
+permalink: "2017/android-%e5%85%a5%e9%97%a8%e5%bc%80%e5%8f%91helloworld%e4%be%8b%e5%ad%90.html"
 ---
 {% raw %}
 **Hello，Android例子 Hello,World例子**

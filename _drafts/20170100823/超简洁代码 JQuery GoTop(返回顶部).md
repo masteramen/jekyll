@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/chao-jian-jie-dai-ma-jquery-gotop-fan-hui-ding-b
 fileName:  "20170100823"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/chao-jian-jie-dai-ma-jquery-gotop-fan-hui-ding-bu.html"
+permalink: "2017/chao-jian-jie-dai-ma-jquery-gotop-fan-hui-ding-bu.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期一, 四月 17, 2017

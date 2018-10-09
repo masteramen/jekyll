@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/git-%e6%9c%ac%e5%9c%b0%e4%bb%93%e5%ba%93%ef%bc%8
 fileName:  "20170100812"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/git-%e6%9c%ac%e5%9c%b0%e4%bb%93%e5%ba%93%ef%bc%88repository%ef%bc%89.html"
+permalink: "2017/git-%e6%9c%ac%e5%9c%b0%e4%bb%93%e5%ba%93%ef%bc%88repository%ef%bc%89.html"
 ---
 {% raw %}
 By  - Last updated: 星期五, 十二月 23, 2016

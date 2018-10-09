@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/leveldb%e5%ae%9e%e7%8e%b0%e5%88%86%e6%9e%90.html
 fileName:  "20170101203"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/leveldb%e5%ae%9e%e7%8e%b0%e5%88%86%e6%9e%90.html"
+permalink: "2017/leveldb%e5%ae%9e%e7%8e%b0%e5%88%86%e6%9e%90.html"
 ---
 {% raw %}
 ### LevelDB 介绍

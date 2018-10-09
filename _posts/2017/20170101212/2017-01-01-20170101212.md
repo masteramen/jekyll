@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/netty%e5%9b%ba%e5%ae%9a%e9%95%bf%e5%ba%a6%e8%a7%
 fileName:  "20170101212"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/netty%e5%9b%ba%e5%ae%9a%e9%95%bf%e5%ba%a6%e8%a7%a3%e7%a0%81%e5%99%a8%e8%ae%b2%e8%a7%a3.html"
+permalink: "2017/netty%e5%9b%ba%e5%ae%9a%e9%95%bf%e5%ba%a6%e8%a7%a3%e7%a0%81%e5%99%a8%e8%ae%b2%e8%a7%a3.html"
 ---
 {% raw %}
 `FixedLengthFrameDecoder`是固定长度解码器，它能够按照指定的长度对消息进行自动解码，开发者不需要考虑TCP的粘包/拆包问题。

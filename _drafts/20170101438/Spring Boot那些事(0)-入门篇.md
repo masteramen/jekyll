@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/springboot%e9%82%a3%e4%ba%9b%e4%ba%8b0%e5%85%a5%
 fileName:  "20170101438"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/springboot%e9%82%a3%e4%ba%9b%e4%ba%8b0%e5%85%a5%e9%97%a8%e7%af%87.html"
+permalink: "2017/springboot%e9%82%a3%e4%ba%9b%e4%ba%8b0%e5%85%a5%e9%97%a8%e7%af%87.html"
 ---
 {% raw %}
 读研期间主要写的是Java后端，工作之后开始更多地接触Node.js写后端程序，有对比才有伤害，让我深深的感受到了Java的重量级，开发的时候各种配置，部署的时候还有一堆要忙活，相对而言Node.js之类的新兴的后端语言显得格外的清新小巧。如果你觉得既然如此就可以就此放弃Java了，那就太草率了，毕竟Java作为后端主流语言不会就这么自甘堕落，Spring Boot应运而生，虽然很早之前就听过Spring Boot的大名，但是碍于当时论文的压力，一直没有深入地去了解，最近项目需要正好可以搞一搞熟悉一下。

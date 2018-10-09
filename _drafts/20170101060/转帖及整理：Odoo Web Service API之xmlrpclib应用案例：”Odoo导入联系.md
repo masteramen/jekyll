@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/%e8%bd%ac%e5%b8%96%e5%8f%8a%e6%95%b4%e7%90%86odo
 fileName:  "20170101060"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/%e8%bd%ac%e5%b8%96%e5%8f%8a%e6%95%b4%e7%90%86odoowebserviceapi%e4%b9%8bxmlrpclib%e5%ba%94%e7%94%a8%e6%a1%88%e4%be%8bodoo%e5%af%bc%e5%85%a5%e8%81%94%e7%b3%bb.html"
+permalink: "2017/%e8%bd%ac%e5%b8%96%e5%8f%8a%e6%95%b4%e7%90%86odoowebserviceapi%e4%b9%8bxmlrpclib%e5%ba%94%e7%94%a8%e6%a1%88%e4%be%8bodoo%e5%af%bc%e5%85%a5%e8%81%94%e7%b3%bb.html"
 ---
 {% raw %}
 参考官方文档：https://www. [ odoo ](https://www.jfox.info/go.php?url=http://www.jointd.com/?p=54) .com/documentation/10.0/api_integration.html 

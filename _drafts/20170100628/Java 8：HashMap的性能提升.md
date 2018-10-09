@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/hashmap-performance-boost-in-java-8.html"
 fileName:  "20170100628"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/hashmap-performance-boost-in-java-8.html"
+permalink: "2017/hashmap-performance-boost-in-java-8.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期日, 五月 4, 2014

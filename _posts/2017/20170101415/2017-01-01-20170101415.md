@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/%e6%b3%a8%e8%a7%a3%e5%ba%93%e4%b9%8bbutterknife.
 fileName:  "20170101415"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/%e6%b3%a8%e8%a7%a3%e5%ba%93%e4%b9%8bbutterknife.html"
+permalink: "2017/%e6%b3%a8%e8%a7%a3%e5%ba%93%e4%b9%8bbutterknife.html"
 ---
 {% raw %}
 ## butterknife解决的问题

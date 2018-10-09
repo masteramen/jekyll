@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/s%e5%8a%a8%e6%80%81%e5%88%86%e6%9e%90.html"
 fileName:  "20170101183"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/s%e5%8a%a8%e6%80%81%e5%88%86%e6%9e%90.html"
+permalink: "2017/s%e5%8a%a8%e6%80%81%e5%88%86%e6%9e%90.html"
 ---
 {% raw %}
 2017年7月7日，Apache Struts发布最新的安全公告，Apache Structs2的strus1插件存在远程代码执行的高危漏洞，漏洞编号为CVE-2017-9791（S2-048）。攻击者可以构造恶意的字段值通过Struts2的struts2-struts1-plugin的插件，远程执行代码

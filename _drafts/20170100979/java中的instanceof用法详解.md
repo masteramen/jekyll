@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java%e4%b8%ad%e7%9a%84instanceof%e7%94%a8%e6%b3%
 fileName:  "20170100979"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java%e4%b8%ad%e7%9a%84instanceof%e7%94%a8%e6%b3%95%e8%af%a6%e8%a7%a3.html"
+permalink: "2017/java%e4%b8%ad%e7%9a%84instanceof%e7%94%a8%e6%b3%95%e8%af%a6%e8%a7%a3.html"
 ---
 {% raw %}
 instanceof是Java的一个二元操作符（运算符）,也是Java的保留关键字。它的作用是判断其左边对象是否为其右边类的实例，返回的是boolean类型的数据。用它来判断某个对象是否是某个Class类的实例。

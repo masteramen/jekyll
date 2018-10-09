@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/javascript-zai-html-zhong-de-dan-yin-hao-shuang-
 fileName:  "20170100689"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/javascript-zai-html-zhong-de-dan-yin-hao-shuang-yin-hao-ji-qi-zhuan-yi-shi-yong.html"
+permalink: "2017/javascript-zai-html-zhong-de-dan-yin-hao-shuang-yin-hao-ji-qi-zhuan-yi-shi-yong.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期六, 九月 20, 2014

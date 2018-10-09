@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/xie-yi-ge-ni-ren-wei-zui-gao-xiao-de-sql.html"
 fileName:  "20170100429"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/xie-yi-ge-ni-ren-wei-zui-gao-xiao-de-sql.html"
+permalink: "2017/xie-yi-ge-ni-ren-wei-zui-gao-xiao-de-sql.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期一, 六月 10, 2013

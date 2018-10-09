@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java-classloader-xq.html"
 fileName:  "20170100665"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java-classloader-xq.html"
+permalink: "2017/java-classloader-xq.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期四, 七月 31, 2014

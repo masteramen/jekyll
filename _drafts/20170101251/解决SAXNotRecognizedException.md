@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/%e8%a7%a3%e5%86%b3saxnotrecognizedexception.html
 fileName:  "20170101251"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/%e8%a7%a3%e5%86%b3saxnotrecognizedexception.html"
+permalink: "2017/%e8%a7%a3%e5%86%b3saxnotrecognizedexception.html"
 ---
 {% raw %}
 在java8进行wsdl调用，报错SAXNotRecognizedException。

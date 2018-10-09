@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/tomcat%e5%ad%a6%e4%b9%a0%e7%ac%94%e8%ae%b015conn
 fileName:  "20170101348"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/tomcat%e5%ad%a6%e4%b9%a0%e7%ac%94%e8%ae%b015connector.html"
+permalink: "2017/tomcat%e5%ad%a6%e4%b9%a0%e7%ac%94%e8%ae%b015connector.html"
 ---
 {% raw %}
 Connector 属于 StandardService 里的一个组件，可以在 server.xml 中配置，指定协议、端口、超时时间等。 

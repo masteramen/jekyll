@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/Math-round.html"
 fileName:  "20170100357"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/Math-round.html"
+permalink: "2017/Math-round.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期日, 五月 19, 2013

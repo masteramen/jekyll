@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java%e4%bd%8d%e8%bf%90%e7%ae%97%e4%b9%8b%e7%ae%8
 fileName:  "20170101344"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java%e4%bd%8d%e8%bf%90%e7%ae%97%e4%b9%8b%e7%ae%80%e5%8d%95%e4%ba%86%e8%a7%a3.html"
+permalink: "2017/java%e4%bd%8d%e8%bf%90%e7%ae%97%e4%b9%8b%e7%ae%80%e5%8d%95%e4%ba%86%e8%a7%a3.html"
 ---
 {% raw %}
 1.十进制转化为二进制

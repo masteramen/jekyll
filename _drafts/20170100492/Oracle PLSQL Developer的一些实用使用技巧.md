@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/oracle-pl-sql-developer-de-yi-xie-shi-yong-ji-qi
 fileName:  "20170100492"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/oracle-pl-sql-developer-de-yi-xie-shi-yong-ji-qiao.html"
+permalink: "2017/oracle-pl-sql-developer-de-yi-xie-shi-yong-ji-qiao.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期六, 十一月 23, 2013

@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/dubbo254snapshot%e6%ba%90%e7%a0%81%e7%bc%96%e8%a
 fileName:  "20170101292"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/dubbo254snapshot%e6%ba%90%e7%a0%81%e7%bc%96%e8%af%91.html"
+permalink: "2017/dubbo254snapshot%e6%ba%90%e7%a0%81%e7%bc%96%e8%af%91.html"
 ---
 {% raw %}
 一、从  https://github.com/alibaba/dubbo  下载dubbo源代码，我下载的version是2.5.4-SNAPSHOT

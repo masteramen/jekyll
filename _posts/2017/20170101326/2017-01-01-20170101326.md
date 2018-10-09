@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java%e7%9a%84forkjoin%e4%bb%bb%e5%8a%a1.html"
 fileName:  "20170101326"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java%e7%9a%84forkjoin%e4%bb%bb%e5%8a%a1.html"
+permalink: "2017/java%e7%9a%84forkjoin%e4%bb%bb%e5%8a%a1.html"
 ---
 {% raw %}
 H2M_LI_HEADER 

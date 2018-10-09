@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/jpaadvancedmappings%e6%98%a0%e5%b0%84.html"
 fileName:  "20170101432"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/jpaadvancedmappings%e6%98%a0%e5%b0%84.html"
+permalink: "2017/jpaadvancedmappings%e6%98%a0%e5%b0%84.html"
 ---
 {% raw %}
 JPA是一个使用java规范发布的库。因此，它支持所有面向对象的实体持久性概念。

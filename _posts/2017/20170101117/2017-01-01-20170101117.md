@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/%e5%9c%a8docker%e4%b8%ad%e8%bf%90%e8%a1%8cmysql%
 fileName:  "20170101117"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/%e5%9c%a8docker%e4%b8%ad%e8%bf%90%e8%a1%8cmysql%e7%ae%80%e4%bb%8b%e6%95%99%e7%a8%8b.html"
+permalink: "2017/%e5%9c%a8docker%e4%b8%ad%e8%bf%90%e8%a1%8cmysql%e7%ae%80%e4%bb%8b%e6%95%99%e7%a8%8b.html"
 ---
 {% raw %}
 本文用最直接的方式介绍如何在Docker中运行MySQL，如果你只是想让MySQL运行起来，或者想了解一些相关的知识，这篇文章就能够给你想要的。 

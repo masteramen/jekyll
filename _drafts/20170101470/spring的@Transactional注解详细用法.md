@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/spring%e7%9a%84transactional%e6%b3%a8%e8%a7%a3%e
 fileName:  "20170101470"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/spring%e7%9a%84transactional%e6%b3%a8%e8%a7%a3%e8%af%a6%e7%bb%86%e7%94%a8%e6%b3%95.html"
+permalink: "2017/spring%e7%9a%84transactional%e6%b3%a8%e8%a7%a3%e8%af%a6%e7%bb%86%e7%94%a8%e6%b3%95.html"
 ---
 {% raw %}
 事务管理对于企业应用来说是至关重要的，即使出现异常情况，它也可以保证数据的一致性。

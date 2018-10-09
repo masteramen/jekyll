@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java-kai-fa-web-shi-yong-struts2-springmvc-he-sp
 fileName:  "20170100774"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java-kai-fa-web-shi-yong-struts2-springmvc-he-spring-jquery-de-li-you.html"
+permalink: "2017/java-kai-fa-web-shi-yong-struts2-springmvc-he-spring-jquery-de-li-you.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期二, 六月 16, 2015

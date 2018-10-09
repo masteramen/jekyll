@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/jquery-scrollfix-gun-dong-ding-wei-cha-jian.html
 fileName:  "20170100819"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/jquery-scrollfix-gun-dong-ding-wei-cha-jian.html"
+permalink: "2017/jquery-scrollfix-gun-dong-ding-wei-cha-jian.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期二, 四月 4, 2017

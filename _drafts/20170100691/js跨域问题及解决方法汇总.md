@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/js-kua-yu-wen-ti-ji-jie-jue-fang-fa-hui-zong.htm
 fileName:  "20170100691"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/js-kua-yu-wen-ti-ji-jie-jue-fang-fa-hui-zong.html"
+permalink: "2017/js-kua-yu-wen-ti-ji-jie-jue-fang-fa-hui-zong.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期六, 九月 27, 2014

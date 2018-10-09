@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/php%e7%a8%8b%e5%ba%8f%e5%91%98%e5%a6%82%e4%bd%95
 fileName:  "20170101393"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/php%e7%a8%8b%e5%ba%8f%e5%91%98%e5%a6%82%e4%bd%95%e5%bf%ab%e9%80%9f%e8%bf%9b%e8%a1%8cjava%e5%bc%80%e5%8f%91.html"
+permalink: "2017/php%e7%a8%8b%e5%ba%8f%e5%91%98%e5%a6%82%e4%bd%95%e5%bf%ab%e9%80%9f%e8%bf%9b%e8%a1%8cjava%e5%bc%80%e5%8f%91.html"
 ---
 {% raw %}
 ## 入门不要拿着放大镜去学

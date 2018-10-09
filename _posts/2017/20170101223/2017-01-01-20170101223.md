@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/javaweb%e9%9a%8f%e5%bf%83%e7%ac%94%e8%ae%b02.htm
 fileName:  "20170101223"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/javaweb%e9%9a%8f%e5%bf%83%e7%ac%94%e8%ae%b02.html"
+permalink: "2017/javaweb%e9%9a%8f%e5%bf%83%e7%ac%94%e8%ae%b02.html"
 ---
 {% raw %}
 JSP 是在 HTML 页面中嵌入 Java 代码。HTML 负责页面的静态部分， Java 代码负责动态部分，java 代码获取服务端的数据，并利用数据在游览器上。JSP 的实质是 Servlet，具体通过 jsp 的生命周期理解。

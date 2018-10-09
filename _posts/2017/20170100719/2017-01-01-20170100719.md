@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/php-ba-miao-shu-zhuan-huan-cheng-shi-fen-miao-ge
 fileName:  "20170100719"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/php-ba-miao-shu-zhuan-huan-cheng-shi-fen-miao-ge-shi-shu-chu-de-han-shu.html"
+permalink: "2017/php-ba-miao-shu-zhuan-huan-cheng-shi-fen-miao-ge-shi-shu-chu-de-han-shu.html"
 ---
 {% raw %}
 gmstrftime(‘%H:%M:%S’,800);

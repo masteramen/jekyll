@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java%e5%a4%9a%e7%ba%bf%e7%a8%8b2%e5%b9%b6%e5%8f%
 fileName:  "20170101363"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java%e5%a4%9a%e7%ba%bf%e7%a8%8b2%e5%b9%b6%e5%8f%91%e8%ae%bf%e9%97%ae%e6%8e%a7%e5%88%b6.html"
+permalink: "2017/java%e5%a4%9a%e7%ba%bf%e7%a8%8b2%e5%b9%b6%e5%8f%91%e8%ae%bf%e9%97%ae%e6%8e%a7%e5%88%b6.html"
 ---
 {% raw %}
 这章主要介绍一下synchronized关键字相关的用法，顺带也介绍一下volatile关键字。这两个关键字在 [java](https://www.jfox.info/go.php?url=http://irfen.me/tag/java) 的并发访问控制中都很重要。 

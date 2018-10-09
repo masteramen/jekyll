@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/37%e9%81%93javascript%e5%89%8d%e7%ab%af%e9%80%89
 fileName:  "20170100555"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/37%e9%81%93javascript%e5%89%8d%e7%ab%af%e9%80%89%e6%8b%a9%e9%a2%98%e8%a7%a3%e7%ad%94%e9%9d%a2%e8%af%95%e9%a2%98.html"
+permalink: "2017/37%e9%81%93javascript%e5%89%8d%e7%ab%af%e9%80%89%e6%8b%a9%e9%a2%98%e8%a7%a3%e7%ad%94%e9%9d%a2%e8%af%95%e9%a2%98.html"
 ---
 {% raw %}
 37道前端JavaScript选择题解答面试题，虽然很多题都偏而怪，但其中涉及的知识还是相当重要的。JavaScript中的糟粕和精华永远是一个话题，也是笔试面试时经常遇到的问题。

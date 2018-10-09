@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/%e5%88%9d%e7%aa%a5spring%e4%b9%8b%e5%ae%b9%e5%99
 fileName:  "20170101043"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/%e5%88%9d%e7%aa%a5spring%e4%b9%8b%e5%ae%b9%e5%99%a8.html"
+permalink: "2017/%e5%88%9d%e7%aa%a5spring%e4%b9%8b%e5%ae%b9%e5%99%a8.html"
 ---
 {% raw %}
 <bean id="job" class="com.jellythink.Job">

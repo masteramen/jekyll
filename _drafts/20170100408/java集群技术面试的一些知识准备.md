@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java-ji-qun-ji-shu-mian-shi-de-yi-xie-zhi-shi-zh
 fileName:  "20170100408"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java-ji-qun-ji-shu-mian-shi-de-yi-xie-zhi-shi-zhun-bei.html"
+permalink: "2017/java-ji-qun-ji-shu-mian-shi-de-yi-xie-zhi-shi-zhun-bei.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期一, 五月 27, 2013

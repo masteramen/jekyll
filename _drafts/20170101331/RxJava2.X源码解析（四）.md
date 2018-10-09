@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/rxjava2x%e6%ba%90%e7%a0%81%e8%a7%a3%e6%9e%90%e5%
 fileName:  "20170101331"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/rxjava2x%e6%ba%90%e7%a0%81%e8%a7%a3%e6%9e%90%e5%9b%9b.html"
+permalink: "2017/rxjava2x%e6%ba%90%e7%a0%81%e8%a7%a3%e6%9e%90%e5%9b%9b.html"
 ---
 {% raw %}
 H2M_LI_HEADER 基于RxJava2.1.1

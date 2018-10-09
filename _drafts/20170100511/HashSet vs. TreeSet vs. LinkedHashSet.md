@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/hashset-vs-treeset-vs-linkedhashset.html"
 fileName:  "20170100511"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/hashset-vs-treeset-vs-linkedhashset.html"
+permalink: "2017/hashset-vs-treeset-vs-linkedhashset.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期五, 一月 31, 2014

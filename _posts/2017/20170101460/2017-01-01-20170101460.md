@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/threadlocal%e5%af%bc%e8%87%b4fullgc%e5%88%86%e6%
 fileName:  "20170101460"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/threadlocal%e5%af%bc%e8%87%b4fullgc%e5%88%86%e6%9e%90.html"
+permalink: "2017/threadlocal%e5%af%bc%e8%87%b4fullgc%e5%88%86%e6%9e%90.html"
 ---
 {% raw %}
 难得出现了一次Full GC，抓住机会分析了一次。

@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/spring-springmvc-mybatis%e6%b7%b1%e5%85%a5%e5%ad
 fileName:  "20170101013"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/spring-springmvc-mybatis%e6%b7%b1%e5%85%a5%e5%ad%a6%e4%b9%a0%e5%8f%8a%e6%90%ad%e5%bb%ba-%e5%8d%81%e4%ba%94-springmvc%e6%b3%a8%e8%a7%a3%e5%bc%80%e5%8f%91-%e5%9f%ba%e7%a1%80%e7%af%87.html"
+permalink: "2017/spring-springmvc-mybatis%e6%b7%b1%e5%85%a5%e5%ad%a6%e4%b9%a0%e5%8f%8a%e6%90%ad%e5%bb%ba-%e5%8d%81%e4%ba%94-springmvc%e6%b3%a8%e8%a7%a3%e5%bc%80%e5%8f%91-%e5%9f%ba%e7%a1%80%e7%af%87.html"
 ---
 {% raw %}
 （1）进入商品查询列表页面；

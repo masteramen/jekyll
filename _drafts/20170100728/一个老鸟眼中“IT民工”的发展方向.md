@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/yi-ge-lao-niao-yan-zhong-it-min-gong-de-fa-zhan-
 fileName:  "20170100728"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/yi-ge-lao-niao-yan-zhong-it-min-gong-de-fa-zhan-fang-xiang.html"
+permalink: "2017/yi-ge-lao-niao-yan-zhong-it-min-gong-de-fa-zhan-fang-xiang.html"
 ---
 {% raw %}
 导语：今天庖丁技术小编继续为大家带来过来着开发者的进阶之路的分析，来看看职业规划分析师是如何看待IT民工的发展之路。IT行业“挣钱太容易”，“IT不像政府管房产这么严，想干嘛就干嘛，另外都跑到境外去上市，没干两年市值翻好多倍，利润比地产高出几十倍几千倍，我们投入10块钱赚1块钱，IT行业投入10块钱赚1000块钱，不能用这种得钱太容易的方式看待别人。”

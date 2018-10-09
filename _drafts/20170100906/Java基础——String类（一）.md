@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java%e5%9f%ba%e7%a1%80-string%e7%b1%bb-%e4%b8%80
 fileName:  "20170100906"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java%e5%9f%ba%e7%a1%80-string%e7%b1%bb-%e4%b8%80.html"
+permalink: "2017/java%e5%9f%ba%e7%a1%80-string%e7%b1%bb-%e4%b8%80.html"
 ---
 {% raw %}
 **`一、String` 类代表字符串**

@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/tienlen%e6%b8%b8%e6%88%8f%e6%a8%a1%e5%9e%8b%e7%a
 fileName:  "20170101217"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/tienlen%e6%b8%b8%e6%88%8f%e6%a8%a1%e5%9e%8b%e7%ae%97%e6%b3%95%e7%b1%bb%e4%bc%bc%e6%96%97%e5%9c%b0%e4%b8%bb%e6%b8%b8%e6%88%8f%e7%ae%97%e6%b3%95.html"
+permalink: "2017/tienlen%e6%b8%b8%e6%88%8f%e6%a8%a1%e5%9e%8b%e7%ae%97%e6%b3%95%e7%b1%bb%e4%bc%bc%e6%96%97%e5%9c%b0%e4%b8%bb%e6%b8%b8%e6%88%8f%e7%ae%97%e6%b3%95.html"
 ---
 {% raw %}
 最近需要做一个类似于斗地主的游戏——柬埔寨TienLen游戏，规则方面和斗地主相差不大，算法方面，也是大同小异，所以趁着这个机会，将这部分算法进行整理，文章中包含了牌模型的构建、初始化牌、洗牌、发牌、牌类型判断、出牌校验、提示等算法，AI算法暂时没有整理：

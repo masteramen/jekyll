@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/http-proxy-server-implemented-in-java.html"
 fileName:  "20170100633"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/http-proxy-server-implemented-in-java.html"
+permalink: "2017/http-proxy-server-implemented-in-java.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期六, 五月 17, 2014

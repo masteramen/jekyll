@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/mybatis%e7%8e%af%e5%a2%83%e7%9a%84%e7%ae%80%e5%8
 fileName:  "20170101309"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/mybatis%e7%8e%af%e5%a2%83%e7%9a%84%e7%ae%80%e5%8d%95%e6%90%ad%e5%bb%ba.html"
+permalink: "2017/mybatis%e7%8e%af%e5%a2%83%e7%9a%84%e7%ae%80%e5%8d%95%e6%90%ad%e5%bb%ba.html"
 ---
 {% raw %}
 MyBatis是支持普通SQL查询，存储过程和高级映射的持久层框架。封装了几乎所有的JDBC代码和参数的手工设置以及结果集的检索。MyBatis使用简单的XML或注解做配置和定义映射关系，将接口中POJO(实体类)映射成数据库的记录。

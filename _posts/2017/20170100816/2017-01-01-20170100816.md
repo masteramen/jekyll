@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/javascript-jian-tou-han-shu-lambda-biao-da-shi.h
 fileName:  "20170100816"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/javascript-jian-tou-han-shu-lambda-biao-da-shi.html"
+permalink: "2017/javascript-jian-tou-han-shu-lambda-biao-da-shi.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期日, 四月 2, 2017

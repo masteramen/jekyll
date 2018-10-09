@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/using-java-to-convert-the-file-to-hexadecimal-an
 fileName:  "20170100646"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/using-java-to-convert-the-file-to-hexadecimal-and-print-display.html"
+permalink: "2017/using-java-to-convert-the-file-to-hexadecimal-and-print-display.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期一, 五月 26, 2014

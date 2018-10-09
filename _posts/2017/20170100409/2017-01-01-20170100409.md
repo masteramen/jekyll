@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/jquery-mian-shi-ti-li-huan-cun-wen-ti-ru-he-jie-
 fileName:  "20170100409"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/jquery-mian-shi-ti-li-huan-cun-wen-ti-ru-he-jie-jue.html"
+permalink: "2017/jquery-mian-shi-ti-li-huan-cun-wen-ti-ru-he-jie-jue.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期二, 五月 28, 2013

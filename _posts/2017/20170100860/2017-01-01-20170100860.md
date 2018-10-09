@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/jms_zhi_active_mq_xiao_xi_cun_chu.html"
 fileName:  "20170100860"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/jms_zhi_active_mq_xiao_xi_cun_chu.html"
+permalink: "2017/jms_zhi_active_mq_xiao_xi_cun_chu.html"
 ---
 {% raw %}
 ActiveMQ支持JMS规范中的持久化消息与非持久化消息

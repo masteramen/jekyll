@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java-kai-fa-zhe-xie-sql-shi-chang-fan-de-10-ge-c
 fileName:  "20170100730"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java-kai-fa-zhe-xie-sql-shi-chang-fan-de-10-ge-cuo-wu.html"
+permalink: "2017/java-kai-fa-zhe-xie-sql-shi-chang-fan-de-10-ge-cuo-wu.html"
 ---
 {% raw %}
 我十分惊讶的发现，我最近的一篇文章——《Java开发者写SQL时常犯的10个错误》——最近在我的博客和我的合作伙伴DZone上非常的受欢迎。（这篇博客）的流行程度说明了几件事：

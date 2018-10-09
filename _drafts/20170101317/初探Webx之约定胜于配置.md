@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/%e5%88%9d%e6%8e%a2webx%e4%b9%8b%e7%ba%a6%e5%ae%9
 fileName:  "20170101317"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/%e5%88%9d%e6%8e%a2webx%e4%b9%8b%e7%ba%a6%e5%ae%9a%e8%83%9c%e4%ba%8e%e9%85%8d%e7%bd%ae.html"
+permalink: "2017/%e5%88%9d%e6%8e%a2webx%e4%b9%8b%e7%ba%a6%e5%ae%9a%e8%83%9c%e4%ba%8e%e9%85%8d%e7%bd%ae.html"
 ---
 {% raw %}
 在分析之前，我们需要强调 `Webx` 的一个重要设计理念——约定胜于配置。“约定”即规则，规则是预先定义的，工程师只需要按着规则来做事，就不需要额外的“配置”。对比其它一些框架，往往每增加一个页面，都需要在配置文件中增加若干行内容。 

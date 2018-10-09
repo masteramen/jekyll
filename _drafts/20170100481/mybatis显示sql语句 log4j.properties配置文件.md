@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/mybatis-xian-shi-sql-yu-ju-log4j-properties-pei-
 fileName:  "20170100481"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/mybatis-xian-shi-sql-yu-ju-log4j-properties-pei-zhi-wen-jian.html"
+permalink: "2017/mybatis-xian-shi-sql-yu-ju-log4j-properties-pei-zhi-wen-jian.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期四, 十月 31, 2013

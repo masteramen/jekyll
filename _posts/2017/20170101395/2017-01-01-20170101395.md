@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/rbac%e6%9d%83%e9%99%90%e6%a8%a1%e5%9e%8b%e7%9a%8
 fileName:  "20170101395"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/rbac%e6%9d%83%e9%99%90%e6%a8%a1%e5%9e%8b%e7%9a%84%e5%88%9d%e6%ad%a5%e7%90%86%e8%a7%a3.html"
+permalink: "2017/rbac%e6%9d%83%e9%99%90%e6%a8%a1%e5%9e%8b%e7%9a%84%e5%88%9d%e6%ad%a5%e7%90%86%e8%a7%a3.html"
 ---
 {% raw %}
 近来部门接到一个外包项目，是基于现有的系统做一个知识文档库，类似于百度网盘一样的功能，只是在角色和权限上与网盘不同，这个项目我们部门称为KM，Knowledge Manager ，难点就在于文件的权限管理。

@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/%e5%8a%a8%e6%89%8b%e5%ad%a6dubbo%e4%b9%8bcontain
 fileName:  "20170101306"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/%e5%8a%a8%e6%89%8b%e5%ad%a6dubbo%e4%b9%8bcontainer%e4%b8%8espi.html"
+permalink: "2017/%e5%8a%a8%e6%89%8b%e5%ad%a6dubbo%e4%b9%8bcontainer%e4%b8%8espi.html"
 ---
 {% raw %}
 在动手学dubbo之初体验一文中我们了解了dubbo的架构，接下来的几篇文章我会根据阅读Quick Start里面的demo源码来深入学习dubbo的实现。这一篇主要学习Container的原理、实现和作用。 

@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/li-yong-eclipse-zuo-ke-xing-jar.html"
 fileName:  "20170100668"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/li-yong-eclipse-zuo-ke-xing-jar.html"
+permalink: "2017/li-yong-eclipse-zuo-ke-xing-jar.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期五, 八月 8, 2014

@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/shiro%e5%ae%9e%e6%88%98%e4%b8%89shiro%e6%8e%88%e
 fileName:  "20170101381"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/shiro%e5%ae%9e%e6%88%98%e4%b8%89shiro%e6%8e%88%e6%9d%83%e4%b8%8a.html"
+permalink: "2017/shiro%e5%ae%9e%e6%88%98%e4%b8%89shiro%e6%8e%88%e6%9d%83%e4%b8%8a.html"
 ---
 {% raw %}
 ① Permissions

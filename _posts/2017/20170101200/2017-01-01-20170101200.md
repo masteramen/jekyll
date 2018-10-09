@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java%e5%88%86%e5%89%b2csv%e6%95%b0%e6%8d%ae.html
 fileName:  "20170101200"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java%e5%88%86%e5%89%b2csv%e6%95%b0%e6%8d%ae.html"
+permalink: "2017/java%e5%88%86%e5%89%b2csv%e6%95%b0%e6%8d%ae.html"
 ---
 {% raw %}
 实际需要解析的csv中很多都是从excel中转过来的,数据中本身包含了逗号的数据导致split的过程中发现数据对不上，因此，基于这种特性，重新写了一个csv数据的分割方法：

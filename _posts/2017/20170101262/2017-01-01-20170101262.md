@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/struts2%e5%9b%bd%e9%99%85%e5%8c%96%e4%bf%a1%e6%8
 fileName:  "20170101262"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/struts2%e5%9b%bd%e9%99%85%e5%8c%96%e4%bf%a1%e6%81%af%e6%9c%ba%e5%88%b6.html"
+permalink: "2017/struts2%e5%9b%bd%e9%99%85%e5%8c%96%e4%bf%a1%e6%81%af%e6%9c%ba%e5%88%b6.html"
 ---
 {% raw %}
 ##  国际化信息机制  （三种 Action范围、 Package范围、 全局）

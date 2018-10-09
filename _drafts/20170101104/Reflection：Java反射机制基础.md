@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/reflectionjava%e5%8f%8d%e5%b0%84%e6%9c%ba%e5%88%
 fileName:  "20170101104"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/reflectionjava%e5%8f%8d%e5%b0%84%e6%9c%ba%e5%88%b6%e5%9f%ba%e7%a1%80.html"
+permalink: "2017/reflectionjava%e5%8f%8d%e5%b0%84%e6%9c%ba%e5%88%b6%e5%9f%ba%e7%a1%80.html"
 ---
 {% raw %}
 反射机制是在运行状态中，对于任意一个类，都能够知道这个类的所有属性和方法；对于任意一个对象，都能够调用它的任意一个方法和属性；这种动态获取的信息以及动态调用对象的方法的功能称为java语言的反射机制

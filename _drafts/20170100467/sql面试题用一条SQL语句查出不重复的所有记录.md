@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/sql-mian-shi-ti-yong-yi-tiao-sql-yu-ju-cha-chu-b
 fileName:  "20170100467"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/sql-mian-shi-ti-yong-yi-tiao-sql-yu-ju-cha-chu-bu-chong-fu-de-suo-you-ji-lu.html"
+permalink: "2017/sql-mian-shi-ti-yong-yi-tiao-sql-yu-ju-cha-chu-bu-chong-fu-de-suo-you-ji-lu.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期一, 十月 21, 2013

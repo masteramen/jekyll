@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/%e8%bf%98%e5%9c%a8%e4%b8%ba%e7%94%bb%e7%b1%bbwor
 fileName:  "20170101343"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/%e8%bf%98%e5%9c%a8%e4%b8%ba%e7%94%bb%e7%b1%bbword%e6%96%87%e6%a1%a3%e6%8a%a5%e8%a1%a8%e8%80%8c%e5%8f%91%e6%84%81%e5%90%97.html"
+permalink: "2017/%e8%bf%98%e5%9c%a8%e4%b8%ba%e7%94%bb%e7%b1%bbword%e6%96%87%e6%a1%a3%e6%8a%a5%e8%a1%a8%e8%80%8c%e5%8f%91%e6%84%81%e5%90%97.html"
 ---
 {% raw %}
 # 还在为画“类Word文档报表”而发愁吗？ 

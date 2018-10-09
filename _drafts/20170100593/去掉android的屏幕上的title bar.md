@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/%e5%8e%bb%e6%8e%89android%e7%9a%84%e5%b1%8f%e5%b
 fileName:  "20170100593"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/%e5%8e%bb%e6%8e%89android%e7%9a%84%e5%b1%8f%e5%b9%95%e4%b8%8a%e7%9a%84title-bar.html"
+permalink: "2017/%e5%8e%bb%e6%8e%89android%e7%9a%84%e5%b1%8f%e5%b9%95%e4%b8%8a%e7%9a%84title-bar.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期四, 二月 27, 2014

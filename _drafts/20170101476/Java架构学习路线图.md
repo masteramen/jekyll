@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java%e6%9e%b6%e6%9e%84%e5%ad%a6%e4%b9%a0%e8%b7%a
 fileName:  "20170101476"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java%e6%9e%b6%e6%9e%84%e5%ad%a6%e4%b9%a0%e8%b7%af%e7%ba%bf%e5%9b%be.html"
+permalink: "2017/java%e6%9e%b6%e6%9e%84%e5%ad%a6%e4%b9%a0%e8%b7%af%e7%ba%bf%e5%9b%be.html"
 ---
 {% raw %}
 **JAVA学习路线图：**

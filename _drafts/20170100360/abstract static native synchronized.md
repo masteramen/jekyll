@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/abstract-static-native-synchronized.html"
 fileName:  "20170100360"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/abstract-static-native-synchronized.html"
+permalink: "2017/abstract-static-native-synchronized.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期日, 五月 19, 2013

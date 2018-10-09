@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/jie-jue-html-pre-biao-qian-de-na-rong-zi-dong-hu
 fileName:  "20170100670"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/jie-jue-html-pre-biao-qian-de-na-rong-zi-dong-huan-xing-de-wen-ti.html"
+permalink: "2017/jie-jue-html-pre-biao-qian-de-na-rong-zi-dong-huan-xing-de-wen-ti.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期二, 八月 12, 2014

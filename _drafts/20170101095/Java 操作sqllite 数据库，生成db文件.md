@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java%e6%93%8d%e4%bd%9csqllite%e6%95%b0%e6%8d%ae%
 fileName:  "20170101095"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java%e6%93%8d%e4%bd%9csqllite%e6%95%b0%e6%8d%ae%e5%ba%93%e7%94%9f%e6%88%90db%e6%96%87%e4%bb%b6.html"
+permalink: "2017/java%e6%93%8d%e4%bd%9csqllite%e6%95%b0%e6%8d%ae%e5%ba%93%e7%94%9f%e6%88%90db%e6%96%87%e4%bb%b6.html"
 ---
 {% raw %}
 By  - Last updated: 星期四, 七月 6, 2017

@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/%e6%b7%b1%e5%85%a5%e7%90%86%e8%a7%a3thread%e7%b1
 fileName:  "20170101127"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/%e6%b7%b1%e5%85%a5%e7%90%86%e8%a7%a3thread%e7%b1%bb.html"
+permalink: "2017/%e6%b7%b1%e5%85%a5%e7%90%86%e8%a7%a3thread%e7%b1%bb.html"
 ---
 {% raw %}
 云计算与大数据时代，分布式、高并发是Java程序员面临的难题，其中Thread类的复杂性，往往让人摸不着头脑，学习《Java多线程编程核心技术》，对于初学者确实是一本入门宝典。

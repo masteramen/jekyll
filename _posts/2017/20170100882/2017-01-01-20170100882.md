@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/%e6%b7%b1%e5%85%a5-jvm-%e5%88%86%e6%9e%90-spring
 fileName:  "20170100882"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/%e6%b7%b1%e5%85%a5-jvm-%e5%88%86%e6%9e%90-spring-boot-%e5%ba%94%e7%94%a8-hibernate-validator-noclassdeffounderror.html"
+permalink: "2017/%e6%b7%b1%e5%85%a5-jvm-%e5%88%86%e6%9e%90-spring-boot-%e5%ba%94%e7%94%a8-hibernate-validator-noclassdeffounderror.html"
 ---
 {% raw %}
 Caused by: java.lang.NoClassDefFoundError: Could not initialize class org.hibernate.validator.internal.engine.ConfigurationImpl

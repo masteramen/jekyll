@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/highcharts-yi-ge-chun-javascript-zhi-zuo-tu-biao
 fileName:  "20170100464"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/highcharts-yi-ge-chun-javascript-zhi-zuo-tu-biao-de-lei-ku.html"
+permalink: "2017/highcharts-yi-ge-chun-javascript-zhi-zuo-tu-biao-de-lei-ku.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期日, 十月 20, 2013

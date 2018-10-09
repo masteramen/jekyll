@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/c%e5%ae%9e%e7%8e%b0%e8%b0%b7%e6%ad%8c%e7%bf%bb%e
 fileName:  "20170101007"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/c%e5%ae%9e%e7%8e%b0%e8%b0%b7%e6%ad%8c%e7%bf%bb%e8%af%91api.html"
+permalink: "2017/c%e5%ae%9e%e7%8e%b0%e8%b0%b7%e6%ad%8c%e7%bf%bb%e8%af%91api.html"
 ---
 {% raw %}
 由于谷歌翻译官方API是付费版本，本着免费和开源的精神，分享一下用C#实现谷歌翻译API的代码。这个代码非常简单，主要分两块：通过WebRequest的方式请求内容；获取Get方式的请求参数（难点在于tk的获取）。

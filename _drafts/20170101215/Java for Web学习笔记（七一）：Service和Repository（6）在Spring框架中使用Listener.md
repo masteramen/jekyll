@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/javaforweb%e5%ad%a6%e4%b9%a0%e7%ac%94%e8%ae%b0%e
 fileName:  "20170101215"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/javaforweb%e5%ad%a6%e4%b9%a0%e7%ac%94%e8%ae%b0%e4%b8%83%e4%b8%80service%e5%92%8crepository6%e5%9c%a8spring%e6%a1%86%e6%9e%b6%e4%b8%ad%e4%bd%bf%e7%94%a8listener.html"
+permalink: "2017/javaforweb%e5%ad%a6%e4%b9%a0%e7%ac%94%e8%ae%b0%e4%b8%83%e4%b8%80service%e5%92%8crepository6%e5%9c%a8spring%e6%a1%86%e6%9e%b6%e4%b8%ad%e4%bd%bf%e7%94%a8listener.html"
 ---
 {% raw %}
 Listener是Servlet的，不属于Spring framework，也就是说我们无法在Listener中主动注入Spring bean。本学习将解决这个问题。

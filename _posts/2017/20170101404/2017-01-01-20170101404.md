@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/%e8%b5%a2%e5%9c%a8%e9%9d%a2%e8%af%95%e4%b9%8bjav
 fileName:  "20170101404"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/%e8%b5%a2%e5%9c%a8%e9%9d%a2%e8%af%95%e4%b9%8bjava%e5%9f%ba%e7%a1%80%e7%af%872.html"
+permalink: "2017/%e8%b5%a2%e5%9c%a8%e9%9d%a2%e8%af%95%e4%b9%8bjava%e5%9f%ba%e7%a1%80%e7%af%872.html"
 ---
 {% raw %}
 #### 11、是否可以从一个static方法内部发出对非static方法的调用？

@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/%e6%9c%89%e5%85%b3linkedlist%e5%b8%b8%e7%94%a8%e
 fileName:  "20170100963"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/%e6%9c%89%e5%85%b3linkedlist%e5%b8%b8%e7%94%a8%e6%96%b9%e6%b3%95%e7%9a%84%e6%ba%90%e7%a0%81%e8%a7%a3%e6%9e%90.html"
+permalink: "2017/%e6%9c%89%e5%85%b3linkedlist%e5%b8%b8%e7%94%a8%e6%96%b9%e6%b3%95%e7%9a%84%e6%ba%90%e7%a0%81%e8%a7%a3%e6%9e%90.html"
 ---
 {% raw %}
 第一个默认不带参数的构造方法，构造一个空链表。

@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java-selenium-%e4%ba%8c-%e7%8e%af%e5%a2%83%e6%90
 fileName:  "20170101037"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java-selenium-%e4%ba%8c-%e7%8e%af%e5%a2%83%e6%90%ad%e5%bb%ba%e6%96%b9%e6%b3%95.html"
+permalink: "2017/java-selenium-%e4%ba%8c-%e7%8e%af%e5%a2%83%e6%90%ad%e5%bb%ba%e6%96%b9%e6%b3%95.html"
 ---
 {% raw %}
 webdriver 就是selenium 2。 webdriver 是一款优秀的，开源的，自动化测试框架。 支持很多语言。 本文描述的是用java Eclipse 如何搭建环境。 

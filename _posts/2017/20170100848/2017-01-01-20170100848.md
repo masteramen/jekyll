@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/mian-shi-xi-lie-qi-spring-kuang-jia.html"
 fileName:  "20170100848"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/mian-shi-xi-lie-qi-spring-kuang-jia.html"
+permalink: "2017/mian-shi-xi-lie-qi-spring-kuang-jia.html"
 ---
 {% raw %}
 终于到最后一个比较常问的点了。基本上问你对于Spring的理解。把它的核心概念：IOC和AOP答好，以及Spring的工作原理，Spring里用到的一些设计模式答好就差不多了……

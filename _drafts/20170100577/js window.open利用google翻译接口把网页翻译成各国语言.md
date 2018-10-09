@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/js-window-open-li-yong-google-fangyi-jiekou-ba-w
 fileName:  "20170100577"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/js-window-open-li-yong-google-fangyi-jiekou-ba-wangye-fangyi-cheng-geguo-yiyan.html"
+permalink: "2017/js-window-open-li-yong-google-fangyi-jiekou-ba-wangye-fangyi-cheng-geguo-yiyan.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期五, 二月 21, 2014

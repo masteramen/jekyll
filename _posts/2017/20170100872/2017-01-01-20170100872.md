@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/jms-%e4%b9%8b-active-mq%e7%9a%84%e5%ae%89%e5%85%
 fileName:  "20170100872"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/jms-%e4%b9%8b-active-mq%e7%9a%84%e5%ae%89%e5%85%a8%e6%9c%ba%e5%88%b6.html"
+permalink: "2017/jms-%e4%b9%8b-active-mq%e7%9a%84%e5%ae%89%e5%85%a8%e6%9c%ba%e5%88%b6.html"
 ---
 {% raw %}
 认证（Authentication）：验证某个实体或者用户是否有权限访问受保护资源。

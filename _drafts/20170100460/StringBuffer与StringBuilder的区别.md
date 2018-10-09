@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/stringbuffer-yu-stringbuilder-de-qu-bie.html"
 fileName:  "20170100460"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/stringbuffer-yu-stringbuilder-de-qu-bie.html"
+permalink: "2017/stringbuffer-yu-stringbuilder-de-qu-bie.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期四, 十月 17, 2013

@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/netty%e7%ae%80%e5%8d%95inbound%e4%bf%a1%e9%81%93
 fileName:  "20170101429"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/netty%e7%ae%80%e5%8d%95inbound%e4%bf%a1%e9%81%93%e5%a4%84%e7%90%86%e5%99%a8simplechannelinboundhandler.html"
+permalink: "2017/netty%e7%ae%80%e5%8d%95inbound%e4%bf%a1%e9%81%93%e5%a4%84%e7%90%86%e5%99%a8simplechannelinboundhandler.html"
 ---
 {% raw %}
 Netty 通道处理器ChannelHandler和适配器定义ChannelHandlerAdapter： 

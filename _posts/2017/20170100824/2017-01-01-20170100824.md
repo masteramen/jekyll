@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/ru-he-zai-webpack-zhong-yin-ru-wei-mo-kuai-hua-d
 fileName:  "20170100824"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/ru-he-zai-webpack-zhong-yin-ru-wei-mo-kuai-hua-de-ku-ru-zepto.html"
+permalink: "2017/ru-he-zai-webpack-zhong-yin-ru-wei-mo-kuai-hua-de-ku-ru-zepto.html"
 ---
 {% raw %}
 By go - Last updated: 星期六, 四月 22, 2017

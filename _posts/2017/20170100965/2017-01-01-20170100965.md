@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/%e9%80%9a%e8%bf%87class%e7%b1%bb%e8%8e%b7%e5%8f%
 fileName:  "20170100965"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/%e9%80%9a%e8%bf%87class%e7%b1%bb%e8%8e%b7%e5%8f%96%e5%af%b9%e8%b1%a1%e5%ae%9e%e4%be%8b.html"
+permalink: "2017/%e9%80%9a%e8%bf%87class%e7%b1%bb%e8%8e%b7%e5%8f%96%e5%af%b9%e8%b1%a1%e5%ae%9e%e4%be%8b.html"
 ---
 {% raw %}
 通过Class对象获取对象的方式是通过class.newInstance()方式获取，通过调用默认构造参数实例化一个对象。

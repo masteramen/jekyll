@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/%e9%80%9a%e8%bf%87%e6%ba%90%e7%a0%81%e8%af%a6%e8
 fileName:  "20170101239"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/%e9%80%9a%e8%bf%87%e6%ba%90%e7%a0%81%e8%af%a6%e8%a7%a3servlet.html"
+permalink: "2017/%e9%80%9a%e8%bf%87%e6%ba%90%e7%a0%81%e8%af%a6%e8%a7%a3servlet.html"
 ---
 {% raw %}
 ### 1、Servlet

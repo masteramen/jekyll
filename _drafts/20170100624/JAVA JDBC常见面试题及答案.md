@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java-jdbc-common-interview-questions-and-answers
 fileName:  "20170100624"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java-jdbc-common-interview-questions-and-answers.html"
+permalink: "2017/java-jdbc-common-interview-questions-and-answers.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期日, 四月 27, 2014

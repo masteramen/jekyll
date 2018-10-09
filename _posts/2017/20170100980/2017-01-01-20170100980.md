@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java-%e5%9f%ba%e7%a1%80-break%e5%92%8ccontinue%e
 fileName:  "20170100980"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java-%e5%9f%ba%e7%a1%80-break%e5%92%8ccontinue%e5%85%b3%e9%94%ae%e5%ad%97%e7%9a%84%e4%bd%bf%e7%94%a8.html"
+permalink: "2017/java-%e5%9f%ba%e7%a1%80-break%e5%92%8ccontinue%e5%85%b3%e9%94%ae%e5%ad%97%e7%9a%84%e4%bd%bf%e7%94%a8.html"
 ---
 {% raw %}
 **break**：使用在switch…case语句或者循环结构语句中，表示结束当前循环。

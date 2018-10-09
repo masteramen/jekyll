@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/dubbo%e6%b3%a8%e8%a7%a3%e6%96%b9%e5%bc%8f%e9%9b%
 fileName:  "20170101398"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/dubbo%e6%b3%a8%e8%a7%a3%e6%96%b9%e5%bc%8f%e9%9b%86%e6%88%90springmvc.html"
+permalink: "2017/dubbo%e6%b3%a8%e8%a7%a3%e6%96%b9%e5%bc%8f%e9%9b%86%e6%88%90springmvc.html"
 ---
 {% raw %}
 创建一个 maven 多模块项目，结构如下：

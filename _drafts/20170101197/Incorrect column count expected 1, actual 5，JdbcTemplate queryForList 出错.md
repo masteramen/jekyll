@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/incorrectcolumncountexpected1actual5jdbctemplate
 fileName:  "20170101197"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/incorrectcolumncountexpected1actual5jdbctemplatequeryforlist%e5%87%ba%e9%94%99.html"
+permalink: "2017/incorrectcolumncountexpected1actual5jdbctemplatequeryforlist%e5%87%ba%e9%94%99.html"
 ---
 {% raw %}
 **spring JdbcTemplate  queryForList 出错**

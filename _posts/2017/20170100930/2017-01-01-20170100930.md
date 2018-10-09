@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/spring_yuan_ma_fen_xi_zhi_proxyfactorybean_fang_
 fileName:  "20170100930"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/spring_yuan_ma_fen_xi_zhi_proxyfactorybean_fang_shi_shi_xian_aop_gong_neng_de_fen_xi.html"
+permalink: "2017/spring_yuan_ma_fen_xi_zhi_proxyfactorybean_fang_shi_shi_xian_aop_gong_neng_de_fen_xi.html"
 ---
 {% raw %}
 实现Aop功能有两种方式，

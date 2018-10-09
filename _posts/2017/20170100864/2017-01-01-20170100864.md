@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java_guo_ji_hua_zhi_wu_-_zi_ding_yi_guo_ji_hua_f
 fileName:  "20170100864"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java_guo_ji_hua_zhi_wu_-_zi_ding_yi_guo_ji_hua_formatter_zhu_jie_shi_xian.html"
+permalink: "2017/java_guo_ji_hua_zhi_wu_-_zi_ding_yi_guo_ji_hua_formatter_zhu_jie_shi_xian.html"
 ---
 {% raw %}
 **引言**

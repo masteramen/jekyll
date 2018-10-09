@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java-proguard-zui-quan-hun-xiao-gui-ze-shuo-ming
 fileName:  "20170100825"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java-proguard-zui-quan-hun-xiao-gui-ze-shuo-ming.html"
+permalink: "2017/java-proguard-zui-quan-hun-xiao-gui-ze-shuo-ming.html"
 ---
 {% raw %}
 说明：本文参考（翻译）自Android SDK根目录下的proguard目录下的说明文档，是其中的一篇。，文中除了翻译外加了一些作者的实际验证。文章对Android混淆规则做一个解释说明。作者才疏学浅，如有错误，请谅解！<@_@>Android混淆入门可参考[《Android 代码混淆零基础入门》](https://www.jfox.info/go.php?url=http://www.jianshu.com/writer#/notebooks/7436441/notes/9900573)

@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java-net-urlencoder-encode%ef%bc%88%e5%ad%97%e7%
 fileName:  "20170100505"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java-net-urlencoder-encode%ef%bc%88%e5%ad%97%e7%ac%a6%e4%b8%b2%ef%bc%89%e5%b7%b2%e8%a2%abdeprecated%e5%bc%83%e7%94%a8%ef%bc%8c%e5%ba%94%e8%af%a5%e7%94%a8%e4%bb%80%e4%b9%88%e6%9d%a5%e4%bb%a3%e6%9b%bf.html"
+permalink: "2017/java-net-urlencoder-encode%ef%bc%88%e5%ad%97%e7%ac%a6%e4%b8%b2%ef%bc%89%e5%b7%b2%e8%a2%abdeprecated%e5%bc%83%e7%94%a8%ef%bc%8c%e5%ba%94%e8%af%a5%e7%94%a8%e4%bb%80%e4%b9%88%e6%9d%a5%e4%bb%a3%e6%9b%bf.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期三, 一月 29, 2014

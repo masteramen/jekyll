@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/html5-mian-shi-shi-me-10-ge-zui-chang-jian-de-ht
 fileName:  "20170100787"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/html5-mian-shi-shi-me-10-ge-zui-chang-jian-de-html5-mian-shi-ti-ji-da-an.html"
+permalink: "2017/html5-mian-shi-shi-me-10-ge-zui-chang-jian-de-html5-mian-shi-ti-ji-da-an.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期二, 七月 21, 2015

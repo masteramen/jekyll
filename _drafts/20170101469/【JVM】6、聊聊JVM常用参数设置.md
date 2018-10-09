@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/jvm6%e8%81%8a%e8%81%8ajvm%e5%b8%b8%e7%94%a8%e5%8
 fileName:  "20170101469"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/jvm6%e8%81%8a%e8%81%8ajvm%e5%b8%b8%e7%94%a8%e5%8f%82%e6%95%b0%e8%ae%be%e7%bd%ae.html"
+permalink: "2017/jvm6%e8%81%8a%e8%81%8ajvm%e5%b8%b8%e7%94%a8%e5%8f%82%e6%95%b0%e8%ae%be%e7%bd%ae.html"
 ---
 {% raw %}
 -Xms3550m， 初始化堆大小。通常情况和-Xmx大小设置一样，避免虚拟机频繁自动计算后调整堆大小。 

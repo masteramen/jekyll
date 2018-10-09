@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java%e7%9a%84%e6%95%b0%e6%8d%ae%e7%b1%bb%e5%9e%8
 fileName:  "20170101170"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java%e7%9a%84%e6%95%b0%e6%8d%ae%e7%b1%bb%e5%9e%8b%e5%92%8c%e5%8f%82%e6%95%b0%e4%bc%a0%e9%80%92.html"
+permalink: "2017/java%e7%9a%84%e6%95%b0%e6%8d%ae%e7%b1%bb%e5%9e%8b%e5%92%8c%e5%8f%82%e6%95%b0%e4%bc%a0%e9%80%92.html"
 ---
 {% raw %}
 Java提供的数据类型主要分为两大类：基本数据类型和引用数据类型。

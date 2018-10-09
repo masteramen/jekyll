@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/experience-after-being-interviewed-java-architec
 fileName:  "20170100643"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/experience-after-being-interviewed-java-architect.html"
+permalink: "2017/experience-after-being-interviewed-java-architect.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期三, 五月 21, 2014

@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/%e6%b7%b1%e5%85%a5%e8%a7%a3%e8%af%bbjavascript%e
 fileName:  "20170101163"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/%e6%b7%b1%e5%85%a5%e8%a7%a3%e8%af%bbjavascript%e4%b8%ad%e7%9a%84%e9%9d%a2%e5%90%91%e5%af%b9%e8%b1%a1%e7%bc%96%e7%a8%8b.html"
+permalink: "2017/%e6%b7%b1%e5%85%a5%e8%a7%a3%e8%af%bbjavascript%e4%b8%ad%e7%9a%84%e9%9d%a2%e5%90%91%e5%af%b9%e8%b1%a1%e7%bc%96%e7%a8%8b.html"
 ---
 {% raw %}
 面向对象编程是用抽象方式创建基于现实世界模型的一种编程模式，主要包括模块化、多态、和封装几种技术。 对 JavaScript 而言，其核心是支持面向对象的，同时它也提供了强大灵活的基于原型的面向对象编程能力。 本文将会深入的探讨有关使用 JavaScript 进行面向对象编程的一些核心基础知识，包括对象的创建，继承机制， 最后还会简要的介绍如何借助 ES6 提供的新的类机制重写传统的JavaScript面向对象代码。

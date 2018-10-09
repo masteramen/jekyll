@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/%e6%bc%8f%e6%b4%9e%e5%88%86%e6%9e%90struts2%e9%a
 fileName:  "20170101169"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/%e6%bc%8f%e6%b4%9e%e5%88%86%e6%9e%90struts2%e9%ab%98%e5%8d%b1%e6%bc%8f%e6%b4%9es%e5%88%86%e6%9e%90.html"
+permalink: "2017/%e6%bc%8f%e6%b4%9e%e5%88%86%e6%9e%90struts2%e9%ab%98%e5%8d%b1%e6%bc%8f%e6%b4%9es%e5%88%86%e6%9e%90.html"
 ---
 {% raw %}
 本次漏洞触发点在：

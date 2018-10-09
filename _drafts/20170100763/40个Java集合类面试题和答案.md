@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/40-ge-java-ji-he-lei-mian-shi-ti-he-da-an.html"
 fileName:  "20170100763"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/40-ge-java-ji-he-lei-mian-shi-ti-he-da-an.html"
+permalink: "2017/40-ge-java-ji-he-lei-mian-shi-ti-he-da-an.html"
 ---
 {% raw %}
 Java集合框架为Java编程语言的基础，也是Java面试中很重要的一个知识点。这里，我列出了一些关于Java集合的重要问题和答案。

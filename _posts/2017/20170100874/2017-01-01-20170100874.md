@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java%e5%9b%bd%e9%99%85%e5%8c%96%e4%b9%8b-%e4%b8%
 fileName:  "20170100874"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java%e5%9b%bd%e9%99%85%e5%8c%96%e4%b9%8b-%e4%b8%89-springmvc-freemaker-demo.html"
+permalink: "2017/java%e5%9b%bd%e9%99%85%e5%8c%96%e4%b9%8b-%e4%b8%89-springmvc-freemaker-demo.html"
 ---
 {% raw %}
 **概述**

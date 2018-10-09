@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/ejb%e7%b3%bb%e5%88%97-%e6%b6%88%e6%81%af%e4%b8%8
 fileName:  "20170100964"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/ejb%e7%b3%bb%e5%88%97-%e6%b6%88%e6%81%af%e4%b8%8emdb.html"
+permalink: "2017/ejb%e7%b3%bb%e5%88%97-%e6%b6%88%e6%81%af%e4%b8%8emdb.html"
 ---
 {% raw %}
 松散耦合的异步通信过程

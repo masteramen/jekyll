@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/comparatorcomparable%e5%b0%8f%e6%80%bb%e7%bb%93.
 fileName:  "20170101132"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/comparatorcomparable%e5%b0%8f%e6%80%bb%e7%bb%93.html"
+permalink: "2017/comparatorcomparable%e5%b0%8f%e6%80%bb%e7%bb%93.html"
 ---
 {% raw %}
 H2M_LI_HEADER 

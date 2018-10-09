@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/Ibatis-zhong-shi-yong-like-filedName-shi-you-she
 fileName:  "20170100393"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/Ibatis-zhong-shi-yong-like-filedName-shi-you-shen-me-wen-ti.html"
+permalink: "2017/Ibatis-zhong-shi-yong-like-filedName-shi-you-shen-me-wen-ti.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期四, 五月 23, 2013

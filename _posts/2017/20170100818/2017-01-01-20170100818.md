@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/webpack-chang-jian-jing-tai-zi-yuan-chu-li-mo-ku
 fileName:  "20170100818"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/webpack-chang-jian-jing-tai-zi-yuan-chu-li-mo-kuai-jia-zai-qi-loaders-extracttextplugin-cha-jian.html"
+permalink: "2017/webpack-chang-jian-jing-tai-zi-yuan-chu-li-mo-kuai-jia-zai-qi-loaders-extracttextplugin-cha-jian.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期二, 四月 4, 2017

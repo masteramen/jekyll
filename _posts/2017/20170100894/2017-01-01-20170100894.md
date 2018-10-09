@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java%e8%bf%9b%e9%98%b6%e8%87%aa%e6%b5%8b-%e9%9d%
 fileName:  "20170100894"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java%e8%bf%9b%e9%98%b6%e8%87%aa%e6%b5%8b-%e9%9d%a2%e5%90%91%e5%af%b9%e8%b1%a1%e5%9f%ba%e7%a1%80%e7%9f%a5%e8%af%86%e6%8e%8c%e6%8f%a1%e4%ba%86%e5%90%97-%e9%99%84%e7%ad%94%e6%a1%88%e5%8f%8a%e4%b8%aa.html"
+permalink: "2017/java%e8%bf%9b%e9%98%b6%e8%87%aa%e6%b5%8b-%e9%9d%a2%e5%90%91%e5%af%b9%e8%b1%a1%e5%9f%ba%e7%a1%80%e7%9f%a5%e8%af%86%e6%8e%8c%e6%8f%a1%e4%ba%86%e5%90%97-%e9%99%84%e7%ad%94%e6%a1%88%e5%8f%8a%e4%b8%aa.html"
 ---
 {% raw %}
 publicclass Test { 

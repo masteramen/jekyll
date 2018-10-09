@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/%e4%bd%bf%e7%94%a8%e9%95%9c%e5%83%8f%e4%bb%93%e5
 fileName:  "20170101267"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/%e4%bd%bf%e7%94%a8%e9%95%9c%e5%83%8f%e4%bb%93%e5%ba%93%e6%89%98%e7%ae%a1%e8%87%aa%e5%b7%b1%e6%9e%84%e5%bb%ba%e7%9a%84docker%e9%95%9c%e5%83%8f.html"
+permalink: "2017/%e4%bd%bf%e7%94%a8%e9%95%9c%e5%83%8f%e4%bb%93%e5%ba%93%e6%89%98%e7%ae%a1%e8%87%aa%e5%b7%b1%e6%9e%84%e5%bb%ba%e7%9a%84docker%e9%95%9c%e5%83%8f.html"
 ---
 {% raw %}
 自己构建的Docker镜像，默认存储在本机中，Docker有提供某些方式分享这些镜像，但不是主流的镜像分享方式，也有违于开源社区的共享精神。

@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/jie-jue-eclipse-access-restriction-wen-ti.html"
 fileName:  "20170100826"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/jie-jue-eclipse-access-restriction-wen-ti.html"
+permalink: "2017/jie-jue-eclipse-access-restriction-wen-ti.html"
 ---
 {% raw %}
 By go - Last updated: 星期四, 四月 27, 2017

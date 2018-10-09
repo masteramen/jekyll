@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/orgapachecommonsiofileutils%e5%ad%a6%e4%b9%a0%e7
 fileName:  "20170101040"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/orgapachecommonsiofileutils%e5%ad%a6%e4%b9%a0%e7%ac%94%e8%ae%b0.html"
+permalink: "2017/orgapachecommonsiofileutils%e5%ad%a6%e4%b9%a0%e7%ac%94%e8%ae%b0.html"
 ---
 {% raw %}
 FileUtils类的应用

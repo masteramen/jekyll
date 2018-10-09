@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/%e4%b8%80%e9%81%93java-io%e9%9d%a2%e8%af%95%e9%a
 fileName:  "20170100508"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/%e4%b8%80%e9%81%93java-io%e9%9d%a2%e8%af%95%e9%a2%98.html"
+permalink: "2017/%e4%b8%80%e9%81%93java-io%e9%9d%a2%e8%af%95%e9%a2%98.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期五, 一月 31, 2014

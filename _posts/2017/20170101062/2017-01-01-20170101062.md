@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java%e7%99%bd%e8%af%9d%e7%bc%96%e8%af%91%e5%99%a
 fileName:  "20170101062"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java%e7%99%bd%e8%af%9d%e7%bc%96%e8%af%91%e5%99%a8%e5%af%b9listextendt%e5%92%8clistsupert%e7%b1%bb%e5%9e%8b%e5%ae%9e%e4%be%8b%e7%9a%84add%e5%92%8cget%e6%93%8d%e4%bd%9c%e9%99%90%e5%88%b6.html"
+permalink: "2017/java%e7%99%bd%e8%af%9d%e7%bc%96%e8%af%91%e5%99%a8%e5%af%b9listextendt%e5%92%8clistsupert%e7%b1%bb%e5%9e%8b%e5%ae%9e%e4%be%8b%e7%9a%84add%e5%92%8cget%e6%93%8d%e4%bd%9c%e9%99%90%e5%88%b6.html"
 ---
 {% raw %}
 如果你不懂，可以不看的问题背景：

@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/AOP-you-ji-zhong-zhi-ru-qie-mian-de-fang-fa.html
 fileName:  "20170100389"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/AOP-you-ji-zhong-zhi-ru-qie-mian-de-fang-fa.html"
+permalink: "2017/AOP-you-ji-zhong-zhi-ru-qie-mian-de-fang-fa.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期四, 五月 23, 2013

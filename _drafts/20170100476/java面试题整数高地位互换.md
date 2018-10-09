@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java-mian-shi-ti-zheng-shu-gao-di-wei-hu-huan.ht
 fileName:  "20170100476"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java-mian-shi-ti-zheng-shu-gao-di-wei-hu-huan.html"
+permalink: "2017/java-mian-shi-ti-zheng-shu-gao-di-wei-hu-huan.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期一, 十月 28, 2013

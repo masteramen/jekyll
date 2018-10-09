@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/org-json-%e5%92%8c-fast-json-%e6%8e%ba%e6%9d%82%
 fileName:  "20170100981"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/org-json-%e5%92%8c-fast-json-%e6%8e%ba%e6%9d%82%e4%bd%bf%e7%94%a8%e5%bc%95%e8%b5%b7%e7%9a%84%e9%94%99%e8%af%af.html"
+permalink: "2017/org-json-%e5%92%8c-fast-json-%e6%8e%ba%e6%9d%82%e4%bd%bf%e7%94%a8%e5%bc%95%e8%b5%b7%e7%9a%84%e9%94%99%e8%af%af.html"
 ---
 {% raw %}
 By  - Last updated: 星期三, 六月 28, 2017

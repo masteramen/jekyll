@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java-dan-li-mo-shi-de-ji-zhong-xie-fa.html"
 fileName:  "20170100461"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java-dan-li-mo-shi-de-ji-zhong-xie-fa.html"
+permalink: "2017/java-dan-li-mo-shi-de-ji-zhong-xie-fa.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期四, 十月 17, 2013

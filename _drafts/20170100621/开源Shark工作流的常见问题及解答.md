@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/opensource-shark-workflow-faqs.html"
 fileName:  "20170100621"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/opensource-shark-workflow-faqs.html"
+permalink: "2017/opensource-shark-workflow-faqs.html"
 ---
 {% raw %}
 Shark 工作流的常见问题及解答。你可以从这里找到常见问题的解答。

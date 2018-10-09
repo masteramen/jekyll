@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/sleep-suspend-he-wait-zhi-jian-you-shen-me-qu-bi
 fileName:  "20170100407"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/sleep-suspend-he-wait-zhi-jian-you-shen-me-qu-bie.html"
+permalink: "2017/sleep-suspend-he-wait-zhi-jian-you-shen-me-qu-bie.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期一, 五月 27, 2013

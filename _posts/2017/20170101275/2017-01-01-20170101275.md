@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/%e5%85%b3%e4%ba%8efinal%e7%9a%84%e6%89%80%e6%9c%
 fileName:  "20170101275"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/%e5%85%b3%e4%ba%8efinal%e7%9a%84%e6%89%80%e6%9c%89.html"
+permalink: "2017/%e5%85%b3%e4%ba%8efinal%e7%9a%84%e6%89%80%e6%9c%89.html"
 ---
 {% raw %}
 Java有一个关键字final，一个变量可以被声明为final类型，一个final类型的变量只能被赋值一次。如果一个final变量被重复赋值将会出现编译错误。

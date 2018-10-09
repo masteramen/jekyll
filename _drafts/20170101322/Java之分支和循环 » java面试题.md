@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java%e4%b9%8b%e5%88%86%e6%94%af%e5%92%8c%e5%be%a
 fileName:  "20170101322"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java%e4%b9%8b%e5%88%86%e6%94%af%e5%92%8c%e5%be%aa%e7%8e%af.html"
+permalink: "2017/java%e4%b9%8b%e5%88%86%e6%94%af%e5%92%8c%e5%be%aa%e7%8e%af.html"
 ---
 {% raw %}
 # Java之分支和循环 

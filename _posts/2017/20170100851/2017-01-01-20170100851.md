@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/shen-ru-qian-chu-spring-data-elasticsearch-zhi-e
 fileName:  "20170100851"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/shen-ru-qian-chu-spring-data-elasticsearch-zhi-elasticsearch-jia-gou-chu-tan-yi.html"
+permalink: "2017/shen-ru-qian-chu-spring-data-elasticsearch-zhi-elasticsearch-jia-gou-chu-tan-yi.html"
 ---
 {% raw %}
 **本文目录**

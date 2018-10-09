@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/es5%e7%9a%84%e5%8e%9f%e5%9e%8b%e9%93%be%e5%92%8c
 fileName:  "20170101362"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/es5%e7%9a%84%e5%8e%9f%e5%9e%8b%e9%93%be%e5%92%8ces6%e7%9a%84%e7%b1%bb%e5%ae%9e%e7%8e%b0%e8%af%a6%e8%a7%a3.html"
+permalink: "2017/es5%e7%9a%84%e5%8e%9f%e5%9e%8b%e9%93%be%e5%92%8ces6%e7%9a%84%e7%b1%bb%e5%ae%9e%e7%8e%b0%e8%af%a6%e8%a7%a3.html"
 ---
 {% raw %}
 JavaScript最初设计时受到了**面相对象编程**的影响，从而引入了**new关键字**，来**实例化对象**。而在ES5中new后面跟着的是**构造函数**（也是函数），而到了ES6则改成了**clas**了，而一开始new创建对象都是**独立的对象**，并不能像java那样拥有**继承**的概念，去**共享变量和方法**，为了解决这个问题，JavaScript就又给构造函数设计了一个**prototype**属性，这样所有**私有的方法和变量**就放到**构造函数**里面定义，而所有的**公共的变量和方法**就放到**prototype对象**里面，这样当构造函数创建一个实例化的对象的时候，就即拥有自己的私有变量和方法，也有公有的变量和方法了，实例化出来的对象的私有方法和变量修改都不会互相有影响，只有在修改公有的变量和方法的时候是对所有实例生效的。

@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/%e5%ad%a6%e4%b9%a0mysql%e8%af%ad%e6%b3%95-%e5%9f
 fileName:  "20170100937"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/%e5%ad%a6%e4%b9%a0mysql%e8%af%ad%e6%b3%95-%e5%9f%ba%e7%a1%80%e7%af%87-%e4%ba%8c.html"
+permalink: "2017/%e5%ad%a6%e4%b9%a0mysql%e8%af%ad%e6%b3%95-%e5%9f%ba%e7%a1%80%e7%af%87-%e4%ba%8c.html"
 ---
 {% raw %}
 ** 前 言**

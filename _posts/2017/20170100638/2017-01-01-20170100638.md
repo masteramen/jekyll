@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/in-depth-study-java-threadlocal-class.html"
 fileName:  "20170100638"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/in-depth-study-java-threadlocal-class.html"
+permalink: "2017/in-depth-study-java-threadlocal-class.html"
 ---
 {% raw %}
 深入研究java.lang.ThreadLocal类

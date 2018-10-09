@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/%e4%b8%bb%e9%a2%98%e6%a8%a1%e5%9e%8b%e5%87%a0%e6
 fileName:  "20170101314"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/%e4%b8%bb%e9%a2%98%e6%a8%a1%e5%9e%8b%e5%87%a0%e6%ac%be%e6%96%b0%e4%b8%bb%e9%a2%98%e6%a8%a1%e5%9e%8bsentenceldacopulaldatwe%e7%ae%80%e6%9e%90%e4%b8%8e%e5%ae%9e%e7%8e%b0.html"
+permalink: "2017/%e4%b8%bb%e9%a2%98%e6%a8%a1%e5%9e%8b%e5%87%a0%e6%ac%be%e6%96%b0%e4%b8%bb%e9%a2%98%e6%a8%a1%e5%9e%8bsentenceldacopulaldatwe%e7%ae%80%e6%9e%90%e4%b8%8e%e5%ae%9e%e7%8e%b0.html"
 ---
 {% raw %}
 # 主题模型︱几款新主题模型——SentenceLDA、CopulaLDA、TWE简析与实现 

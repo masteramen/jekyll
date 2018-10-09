@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/springboot%e6%96%b9%e5%bc%8f%e6%90%ad%e5%bb%ba%e
 fileName:  "20170101085"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/springboot%e6%96%b9%e5%bc%8f%e6%90%ad%e5%bb%ba%e8%87%aa%e5%b7%b1%e7%9a%84springinitializr%e6%9c%8d%e5%8a%a1%e5%99%a8.html"
+permalink: "2017/springboot%e6%96%b9%e5%bc%8f%e6%90%ad%e5%bb%ba%e8%87%aa%e5%b7%b1%e7%9a%84springinitializr%e6%9c%8d%e5%8a%a1%e5%99%a8.html"
 ---
 {% raw %}
 <dependency>

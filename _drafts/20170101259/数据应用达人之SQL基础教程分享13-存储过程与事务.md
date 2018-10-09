@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/%e6%95%b0%e6%8d%ae%e5%ba%94%e7%94%a8%e8%be%be%e4
 fileName:  "20170101259"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/%e6%95%b0%e6%8d%ae%e5%ba%94%e7%94%a8%e8%be%be%e4%ba%ba%e4%b9%8bsql%e5%9f%ba%e7%a1%80%e6%95%99%e7%a8%8b%e5%88%86%e4%ba%ab13%e5%ad%98%e5%82%a8%e8%bf%87%e7%a8%8b%e4%b8%8e%e4%ba%8b%e5%8a%a1.html"
+permalink: "2017/%e6%95%b0%e6%8d%ae%e5%ba%94%e7%94%a8%e8%be%be%e4%ba%ba%e4%b9%8bsql%e5%9f%ba%e7%a1%80%e6%95%99%e7%a8%8b%e5%88%86%e4%ba%ab13%e5%ad%98%e5%82%a8%e8%bf%87%e7%a8%8b%e4%b8%8e%e4%ba%8b%e5%8a%a1.html"
 ---
 {% raw %}
 简单的解释，存储过程就是将一条或多条SQL语句保存起来，以方便以后反复使用。

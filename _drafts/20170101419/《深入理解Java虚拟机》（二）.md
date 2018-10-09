@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/%e6%b7%b1%e5%85%a5%e7%90%86%e8%a7%a3java%e8%99%9
 fileName:  "20170101419"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/%e6%b7%b1%e5%85%a5%e7%90%86%e8%a7%a3java%e8%99%9a%e6%8b%9f%e6%9c%ba%e4%ba%8c.html"
+permalink: "2017/%e6%b7%b1%e5%85%a5%e7%90%86%e8%a7%a3java%e8%99%9a%e6%8b%9f%e6%9c%ba%e4%ba%8c.html"
 ---
 {% raw %}
 # 《深入理解Java虚拟机》（二） 

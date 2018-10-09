@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/%e6%bc%8f%e6%b4%9e%e9%a2%84%e8%ad%a6%e6%96%97%e8
 fileName:  "20170101157"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/%e6%bc%8f%e6%b4%9e%e9%a2%84%e8%ad%a6%e6%96%97%e8%b1%a1%e7%a7%91%e6%8a%80%e8%83%bd%e5%8a%9b%e4%b8%ad%e5%bf%83%e5%8f%91%e7%8e%b0%e9%ab%98%e5%8d%b1struts2%e8%bf%9c%e7%a8%8b%e4%bb%a3%e7%a0%81%e6%89%a7.html"
+permalink: "2017/%e6%bc%8f%e6%b4%9e%e9%a2%84%e8%ad%a6%e6%96%97%e8%b1%a1%e7%a7%91%e6%8a%80%e8%83%bd%e5%8a%9b%e4%b8%ad%e5%bf%83%e5%8f%91%e7%8e%b0%e9%ab%98%e5%8d%b1struts2%e8%bf%9c%e7%a8%8b%e4%bb%a3%e7%a0%81%e6%89%a7.html"
 ---
 {% raw %}
 近期，来自斗象科技（Tophant）的安全研究员 icez（星光） 发现著名J2EE框架——Struts2存在远程代码执行的严重漏洞。Struts2官方已经确认该漏洞（漏洞编号S2-048，CVE编号：CVE-2017-9791），漏洞危害程度为高危(High)。

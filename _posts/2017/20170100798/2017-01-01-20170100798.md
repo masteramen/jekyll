@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/chang-jian-de-san-zhong-java-na-cun-yi-chu-xiang
 fileName:  "20170100798"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/chang-jian-de-san-zhong-java-na-cun-yi-chu-xiang-jie.html"
+permalink: "2017/chang-jian-de-san-zhong-java-na-cun-yi-chu-xiang-jie.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期四, 八月 27, 2015

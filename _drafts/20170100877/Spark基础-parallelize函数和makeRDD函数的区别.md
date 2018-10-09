@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/spark%e5%9f%ba%e7%a1%80-parallelize%e5%87%bd%e6%
 fileName:  "20170100877"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/spark%e5%9f%ba%e7%a1%80-parallelize%e5%87%bd%e6%95%b0%e5%92%8cmakerdd%e5%87%bd%e6%95%b0%e7%9a%84%e5%8c%ba%e5%88%ab.html"
+permalink: "2017/spark%e5%9f%ba%e7%a1%80-parallelize%e5%87%bd%e6%95%b0%e5%92%8cmakerdd%e5%87%bd%e6%95%b0%e7%9a%84%e5%8c%ba%e5%88%ab.html"
 ---
 {% raw %}
 Spark提供了两种创建RDD的方式：读取外部数据集，以及在驱动器程序中对一个集合进行并行化。

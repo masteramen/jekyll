@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/shu-ju-ku-you-hua-you-hua-cha-xun.html"
 fileName:  "20170100383"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/shu-ju-ku-you-hua-you-hua-cha-xun.html"
+permalink: "2017/shu-ju-ku-you-hua-you-hua-cha-xun.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期二, 五月 21, 2013

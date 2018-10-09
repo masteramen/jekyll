@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/it-zhi-chang-cheng-xu-yuan-kun-jing.html"
 fileName:  "20170100809"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/it-zhi-chang-cheng-xu-yuan-kun-jing.html"
+permalink: "2017/it-zhi-chang-cheng-xu-yuan-kun-jing.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期一, 十二月 21, 2015

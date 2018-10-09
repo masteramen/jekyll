@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java-jdbc%e4%ba%8b%e5%8a%a1%e7%ae%a1%e7%90%86%e5
 fileName:  "20170100552"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java-jdbc%e4%ba%8b%e5%8a%a1%e7%ae%a1%e7%90%86%e5%8f%8asavepoint%e7%a4%ba%e4%be%8b.html"
+permalink: "2017/java-jdbc%e4%ba%8b%e5%8a%a1%e7%ae%a1%e7%90%86%e5%8f%8asavepoint%e7%a4%ba%e4%be%8b.html"
 ---
 {% raw %}
 在[JDBC教程](https://www.jfox.info/go.php?url=http://www.journaldev.com/2471/jdbc-example-tutorial-drivers-connection-statement-resultset)中，我们学习了如何使用JDBC API进行数据库连接和执行SQL查询。此外，还研究了不同类型的驱动程序，以及如何编写松散耦合的JDBC程序，帮助我们轻松地切换数据库服务器。

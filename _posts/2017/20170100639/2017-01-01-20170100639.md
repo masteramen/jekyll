@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/use-java-library-opencsv-read-write-csv-file.htm
 fileName:  "20170100639"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/use-java-library-opencsv-read-write-csv-file.html"
+permalink: "2017/use-java-library-opencsv-read-write-csv-file.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期一, 五月 19, 2014

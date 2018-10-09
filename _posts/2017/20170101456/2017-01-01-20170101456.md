@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/%e5%8d%8e%e4%b8%ba%e8%bd%af%e4%bb%b6%e5%bc%80%e5
 fileName:  "20170101456"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/%e5%8d%8e%e4%b8%ba%e8%bd%af%e4%bb%b6%e5%bc%80%e5%8f%91%e4%ba%91%e5%af%b9%e6%af%94jenkinsjavaweb%e9%a1%b9%e7%9b%ae%e6%8c%81%e7%bb%ad%e9%83%a8%e7%bd%b2%e6%96%b9%e5%bc%8f.html"
+permalink: "2017/%e5%8d%8e%e4%b8%ba%e8%bd%af%e4%bb%b6%e5%bc%80%e5%8f%91%e4%ba%91%e5%af%b9%e6%af%94jenkinsjavaweb%e9%a1%b9%e7%9b%ae%e6%8c%81%e7%bb%ad%e9%83%a8%e7%bd%b2%e6%96%b9%e5%bc%8f.html"
 ---
 {% raw %}
 作者[程序员的那点事](/u/e03fc43b507b)2017.08.02 14:58字数 2531

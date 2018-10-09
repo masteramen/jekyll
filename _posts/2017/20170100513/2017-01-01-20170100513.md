@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/jetty%e5%ae%9e%e6%88%98%e4%b9%8b%e5%b5%8c%e5%85%
 fileName:  "20170100513"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/jetty%e5%ae%9e%e6%88%98%e4%b9%8b%e5%b5%8c%e5%85%a5%e5%bc%8fjetty%e8%bf%90%e8%a1%8cweb-app.html"
+permalink: "2017/jetty%e5%ae%9e%e6%88%98%e4%b9%8b%e5%b5%8c%e5%85%a5%e5%bc%8fjetty%e8%bf%90%e8%a1%8cweb-app.html"
 ---
 {% raw %}
 要说嵌入式运行Jetty，最常用的还应该是运行一个标准的war文件或者指定一个webapp目录。

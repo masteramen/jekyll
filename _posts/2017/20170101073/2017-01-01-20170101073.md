@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/springbootspringmvc%e5%bc%82%e5%b8%b8%e5%a4%84%e
 fileName:  "20170101073"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/springbootspringmvc%e5%bc%82%e5%b8%b8%e5%a4%84%e7%90%86%e7%9a%84n%e7%a7%8d%e6%96%b9%e6%b3%95.html"
+permalink: "2017/springbootspringmvc%e5%bc%82%e5%b8%b8%e5%a4%84%e7%90%86%e7%9a%84n%e7%a7%8d%e6%96%b9%e6%b3%95.html"
 ---
 {% raw %}
 根据Spring Boot官方文档的说法：

@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/String-shi-zui-ji-ben-de-shu-ju-lei-xing-ma.html
 fileName:  "20170100350"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/String-shi-zui-ji-ben-de-shu-ju-lei-xing-ma.html"
+permalink: "2017/String-shi-zui-ji-ben-de-shu-ju-lei-xing-ma.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期五, 五月 17, 2013

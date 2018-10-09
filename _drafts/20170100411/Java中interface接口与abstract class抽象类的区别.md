@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java-zhong-interface-jie-kou-yu-abstract-class-c
 fileName:  "20170100411"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java-zhong-interface-jie-kou-yu-abstract-class-chou-xiang-lei-de-qu-bie.html"
+permalink: "2017/java-zhong-interface-jie-kou-yu-abstract-class-chou-xiang-lei-de-qu-bie.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期三, 五月 29, 2013

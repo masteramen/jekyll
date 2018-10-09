@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/%e8%bf%bd%e6%ba%af%e6%9c%a8%e9%a9%ac%e9%bb%91%e5
 fileName:  "20170101027"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/%e8%bf%bd%e6%ba%af%e6%9c%a8%e9%a9%ac%e9%bb%91%e5%ae%a2%e6%8a%80%e5%b7%a7%e5%88%86%e4%ba%ab-%e6%89%be%e5%88%b0%e4%bb%96%e7%9a%84ip-%e9%80%ae%e7%9d%80%e4%bb%96%e7%9a%84%e5%9c%b0%e7%90%86%e4%bd%8d.html"
+permalink: "2017/%e8%bf%bd%e6%ba%af%e6%9c%a8%e9%a9%ac%e9%bb%91%e5%ae%a2%e6%8a%80%e5%b7%a7%e5%88%86%e4%ba%ab-%e6%89%be%e5%88%b0%e4%bb%96%e7%9a%84ip-%e9%80%ae%e7%9d%80%e4%bb%96%e7%9a%84%e5%9c%b0%e7%90%86%e4%bd%8d.html"
 ---
 {% raw %}
 1.Wireshark (网络分析器)

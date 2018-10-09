@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/httpclient-mo-ni-deng-lu-ren-ren-wang.html"
 fileName:  "20170100477"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/httpclient-mo-ni-deng-lu-ren-ren-wang.html"
+permalink: "2017/httpclient-mo-ni-deng-lu-ren-ren-wang.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期二, 十月 29, 2013

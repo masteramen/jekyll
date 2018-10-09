@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/jooq%e4%b8%ad%e6%96%871%e4%b8%83%e4%b8%aa%e6%ad%
 fileName:  "20170101421"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/jooq%e4%b8%ad%e6%96%871%e4%b8%83%e4%b8%aa%e6%ad%a5%e9%aa%a4%e5%bf%ab%e9%80%9f%e5%85%a5%e9%97%a8.html"
+permalink: "2017/jooq%e4%b8%ad%e6%96%871%e4%b8%83%e4%b8%aa%e6%ad%a5%e9%aa%a4%e5%bf%ab%e9%80%9f%e5%85%a5%e9%97%a8.html"
 ---
 {% raw %}
 jOOQ: The easiest way to write SQL in Java

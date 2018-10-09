@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/shu-yu-jie-shi-shen-me-shi-OOA-OOD-OOP.html"
 fileName:  "20170100430"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/shu-yu-jie-shi-shen-me-shi-OOA-OOD-OOP.html"
+permalink: "2017/shu-yu-jie-shi-shen-me-shi-OOA-OOD-OOP.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期一, 六月 10, 2013

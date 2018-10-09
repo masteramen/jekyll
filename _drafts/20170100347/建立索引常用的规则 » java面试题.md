@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/jian-li-suo-yin-chang-yong-de-gui-ze.html"
 fileName:  "20170100347"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/jian-li-suo-yin-chang-yong-de-gui-ze.html"
+permalink: "2017/jian-li-suo-yin-chang-yong-de-gui-ze.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期五, 五月 17, 2013

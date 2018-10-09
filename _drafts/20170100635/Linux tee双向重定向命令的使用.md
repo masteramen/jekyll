@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/bidirectional-use-linux-tee-command-to-redirect.
 fileName:  "20170100635"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/bidirectional-use-linux-tee-command-to-redirect.html"
+permalink: "2017/bidirectional-use-linux-tee-command-to-redirect.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期六, 五月 17, 2014

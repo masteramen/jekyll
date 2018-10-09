@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/%e8%bd%bb%e9%87%8f%e7%ba%a7%e9%ab%98%e6%80%a7%e8
 fileName:  "20170101035"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/%e8%bd%bb%e9%87%8f%e7%ba%a7%e9%ab%98%e6%80%a7%e8%83%bdorm%e6%a1%86%e6%9e%b6-dapper%e9%ab%98%e7%ba%a7%e7%8e%a9%e6%b3%95.html"
+permalink: "2017/%e8%bd%bb%e9%87%8f%e7%ba%a7%e9%ab%98%e6%80%a7%e8%83%bdorm%e6%a1%86%e6%9e%b6-dapper%e9%ab%98%e7%ba%a7%e7%8e%a9%e6%b3%95.html"
 ---
 {% raw %}
 public class User

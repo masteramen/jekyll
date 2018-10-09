@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/afteraclosecallacodingchampion.html"
 fileName:  "20170101255"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/afteraclosecallacodingchampion.html"
+permalink: "2017/afteraclosecallacodingchampion.html"
 ---
 {% raw %}
 Eighteen-year-old Cameroon resident Nji Collins had just put the finishing touches on his final submission for the Google Code-In competition when his entire town lost internet access. It stayed dark for two months. 

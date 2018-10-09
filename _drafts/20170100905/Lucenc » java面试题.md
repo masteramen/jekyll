@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/lucenc.html"
 fileName:  "20170100905"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/lucenc.html"
+permalink: "2017/lucenc.html"
 ---
 {% raw %}
 import java.io.File;

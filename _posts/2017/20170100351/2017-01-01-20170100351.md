@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java-zhong-liu-de-fen-lei-dou-you-na-xie.html"
 fileName:  "20170100351"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java-zhong-liu-de-fen-lei-dou-you-na-xie.html"
+permalink: "2017/java-zhong-liu-de-fen-lei-dou-you-na-xie.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期五, 五月 17, 2013

@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java%e5%85%b3%e4%ba%8ehashmap%e7%9a%84%e5%ae%9e%
 fileName:  "20170101210"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java%e5%85%b3%e4%ba%8ehashmap%e7%9a%84%e5%ae%9e%e7%8e%b0%e5%8e%9f%e7%90%86%e7%9a%84%e6%b5%8b%e8%af%95.html"
+permalink: "2017/java%e5%85%b3%e4%ba%8ehashmap%e7%9a%84%e5%ae%9e%e7%8e%b0%e5%8e%9f%e7%90%86%e7%9a%84%e6%b5%8b%e8%af%95.html"
 ---
 {% raw %}
 网上关于HashMap的工作原理的文章多了去了，所以我也不打算再重复别人的文章。我就是有点好奇，我怎么样能更好的理解他的原理，或者说使用他的特性呢？最好的开发就是测试~

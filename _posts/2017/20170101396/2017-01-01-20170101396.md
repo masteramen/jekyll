@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/javasynchronized%e4%b8%ad%e7%9a%84while%e5%92%8c
 fileName:  "20170101396"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/javasynchronized%e4%b8%ad%e7%9a%84while%e5%92%8cnotifyall.html"
+permalink: "2017/javasynchronized%e4%b8%ad%e7%9a%84while%e5%92%8cnotifyall.html"
 ---
 {% raw %}
 ## 问题1 为什么是while 而不是if

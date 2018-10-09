@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/%e4%bd%bf%e7%94%a8stream%e6%88%96%e8%80%85guava%
 fileName:  "20170101123"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/%e4%bd%bf%e7%94%a8stream%e6%88%96%e8%80%85guava%e5%ae%9e%e7%8e%b0list%e5%88%b0map%e7%9a%84%e8%bd%ac%e6%8d%a2.html"
+permalink: "2017/%e4%bd%bf%e7%94%a8stream%e6%88%96%e8%80%85guava%e5%ae%9e%e7%8e%b0list%e5%88%b0map%e7%9a%84%e8%bd%ac%e6%8d%a2.html"
 ---
 {% raw %}
 By  - Last updated: 星期五, 七月 7, 2017

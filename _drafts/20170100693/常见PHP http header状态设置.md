@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/chang-jian-php-http-header-zhuang-tai-she-zhi.ht
 fileName:  "20170100693"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/chang-jian-php-http-header-zhuang-tai-she-zhi.html"
+permalink: "2017/chang-jian-php-http-header-zhuang-tai-she-zhi.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期三, 十月 1, 2014

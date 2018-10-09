@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/about-java-internal-classes-and-their-role.html"
 fileName:  "20170100617"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/about-java-internal-classes-and-their-role.html"
+permalink: "2017/about-java-internal-classes-and-their-role.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期二, 三月 25, 2014

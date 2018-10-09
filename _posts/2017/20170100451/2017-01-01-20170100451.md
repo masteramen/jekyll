@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/mysql-de-quan-biao-sao-miao-zhu-jian-suo-yin-ju-
 fileName:  "20170100451"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/mysql-de-quan-biao-sao-miao-zhu-jian-suo-yin-ju-ji-suo-yin-di-yi-suo-yin-fei-zhu-jian-suo-yin-fei-ju-ji-suo-yin-di-er-suo-yin-fu-gai-suo-yin-si-zhong-bu-tong-cha-xun-de-fen-xi.html"
+permalink: "2017/mysql-de-quan-biao-sao-miao-zhu-jian-suo-yin-ju-ji-suo-yin-di-yi-suo-yin-fei-zhu-jian-suo-yin-fei-ju-ji-suo-yin-di-er-suo-yin-fu-gai-suo-yin-si-zhong-bu-tong-cha-xun-de-fen-xi.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期二, 九月 10, 2013

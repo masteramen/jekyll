@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/axis1-4%e5%bc%80%e5%8f%91webservice%e5%ae%a2%e6%
 fileName:  "20170100946"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/axis1-4%e5%bc%80%e5%8f%91webservice%e5%ae%a2%e6%88%b7%e7%ab%af-%e5%bf%ab%e9%80%9f%e5%85%a5%e9%97%a8-%e5%9f%ba%e4%ba%8ejdk1-4.html"
+permalink: "2017/axis1-4%e5%bc%80%e5%8f%91webservice%e5%ae%a2%e6%88%b7%e7%ab%af-%e5%bf%ab%e9%80%9f%e5%85%a5%e9%97%a8-%e5%9f%ba%e4%ba%8ejdk1-4.html"
 ---
 {% raw %}
 写在前面：

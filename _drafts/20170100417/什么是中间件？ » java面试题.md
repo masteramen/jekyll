@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/shen-me-shi-zhong-jian-jian.html"
 fileName:  "20170100417"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/shen-me-shi-zhong-jian-jian.html"
+permalink: "2017/shen-me-shi-zhong-jian-jian.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期三, 六月 5, 2013

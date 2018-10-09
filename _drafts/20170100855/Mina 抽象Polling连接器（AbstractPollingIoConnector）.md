@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/mina_chou_xiang_polling_lian_jie_qi_abstractpoll
 fileName:  "20170100855"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/mina_chou_xiang_polling_lian_jie_qi_abstractpollingioconnector.html"
+permalink: "2017/mina_chou_xiang_polling_lian_jie_qi_abstractpollingioconnector.html"
 ---
 {% raw %}
 By  - Last updated: 星期二, 六月 20, 2017

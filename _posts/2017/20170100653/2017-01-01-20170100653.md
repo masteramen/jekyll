@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/oracle-database-interview-exercises.html"
 fileName:  "20170100653"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/oracle-database-interview-exercises.html"
+permalink: "2017/oracle-database-interview-exercises.html"
 ---
 {% raw %}
 1．列出至少有一个员工的所有部门。

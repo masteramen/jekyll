@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/ora-01658-cuo-wu-oracle-xiu-gai-biao-kong-jian-d
 fileName:  "20170100702"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/ora-01658-cuo-wu-oracle-xiu-gai-biao-kong-jian-da-xiao.html"
+permalink: "2017/ora-01658-cuo-wu-oracle-xiu-gai-biao-kong-jian-da-xiao.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期二, 十二月 30, 2014

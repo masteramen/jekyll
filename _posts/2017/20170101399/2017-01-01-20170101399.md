@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/springboot%e7%b3%bb%e5%88%97%e4%b8%80%e5%85%a5%e
 fileName:  "20170101399"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/springboot%e7%b3%bb%e5%88%97%e4%b8%80%e5%85%a5%e9%97%a8ormtransactionlog4j2%e7%ad%89.html"
+permalink: "2017/springboot%e7%b3%bb%e5%88%97%e4%b8%80%e5%85%a5%e9%97%a8ormtransactionlog4j2%e7%ad%89.html"
 ---
 {% raw %}
 今天写篇springboot的博客，主要介绍一下springboot搭建以及一些整合。

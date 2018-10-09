@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java-class%e6%96%87%e4%bb%b6%e5%ad%a6%e4%b9%a0.h
 fileName:  "20170100898"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java-class%e6%96%87%e4%bb%b6%e5%ad%a6%e4%b9%a0.html"
+permalink: "2017/java-class%e6%96%87%e4%bb%b6%e5%ad%a6%e4%b9%a0.html"
 ---
 {% raw %}
 数据类型：

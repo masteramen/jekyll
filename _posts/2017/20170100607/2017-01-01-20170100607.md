@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/65-kinds-of-skills-the-candidates-to-answer.html
 fileName:  "20170100607"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/65-kinds-of-skills-the-candidates-to-answer.html"
+permalink: "2017/65-kinds-of-skills-the-candidates-to-answer.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期一, 三月 10, 2014

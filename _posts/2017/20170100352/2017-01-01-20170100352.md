@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java-zhong-cun-zai-nei-cun-xie-lou-wen-ti-ma-qin
 fileName:  "20170100352"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java-zhong-cun-zai-nei-cun-xie-lou-wen-ti-ma-qing-ju-li-shuo-ming.html"
+permalink: "2017/java-zhong-cun-zai-nei-cun-xie-lou-wen-ti-ma-qing-ju-li-shuo-ming.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期五, 五月 17, 2013

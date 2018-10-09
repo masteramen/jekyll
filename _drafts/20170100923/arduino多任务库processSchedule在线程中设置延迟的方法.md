@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/arduino%e5%a4%9a%e4%bb%bb%e5%8a%a1%e5%ba%93proce
 fileName:  "20170100923"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/arduino%e5%a4%9a%e4%bb%bb%e5%8a%a1%e5%ba%93processschedule%e5%9c%a8%e7%ba%bf%e7%a8%8b%e4%b8%ad%e8%ae%be%e7%bd%ae%e5%bb%b6%e8%bf%9f%e7%9a%84%e6%96%b9%e6%b3%95.html"
+permalink: "2017/arduino%e5%a4%9a%e4%bb%bb%e5%8a%a1%e5%ba%93processschedule%e5%9c%a8%e7%ba%bf%e7%a8%8b%e4%b8%ad%e8%ae%be%e7%bd%ae%e5%bb%b6%e8%bf%9f%e7%9a%84%e6%96%b9%e6%b3%95.html"
 ---
 {% raw %}
 我先引用一下这个项目介绍的部分内容，然后再来说我选择的理由 

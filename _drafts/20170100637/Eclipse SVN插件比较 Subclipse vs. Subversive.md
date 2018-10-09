@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/eclipse-svn-plugin-subclipse-vs-subversive.html"
 fileName:  "20170100637"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/eclipse-svn-plugin-subclipse-vs-subversive.html"
+permalink: "2017/eclipse-svn-plugin-subclipse-vs-subversive.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期六, 五月 17, 2014

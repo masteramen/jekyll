@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/google-zhi-wei-xin-chou-jie-mi-he-zhong-guo-gong
 fileName:  "20170100673"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/google-zhi-wei-xin-chou-jie-mi-he-zhong-guo-gong-si-zheng-hao-xiang-fan.html"
+permalink: "2017/google-zhi-wei-xin-chou-jie-mi-he-zhong-guo-gong-si-zheng-hao-xiang-fan.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期三, 八月 20, 2014

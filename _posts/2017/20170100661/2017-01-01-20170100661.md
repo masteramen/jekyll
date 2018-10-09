@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/interview-questions-about-java-framework-spring-
 fileName:  "20170100661"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/interview-questions-about-java-framework-spring-hibernate-struts.html"
+permalink: "2017/interview-questions-about-java-framework-spring-hibernate-struts.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期四, 七月 17, 2014

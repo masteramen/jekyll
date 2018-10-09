@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/springmvc%e9%85%8d%e7%bd%aebootstrap.html"
 fileName:  "20170101082"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/springmvc%e9%85%8d%e7%bd%aebootstrap.html"
+permalink: "2017/springmvc%e9%85%8d%e7%bd%aebootstrap.html"
 ---
 {% raw %}
 1.下载bootstrap

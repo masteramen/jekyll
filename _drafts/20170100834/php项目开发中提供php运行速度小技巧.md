@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/php-xiang-mu-kai-fa-zhong-ti-gong-php-yun-xing-s
 fileName:  "20170100834"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/php-xiang-mu-kai-fa-zhong-ti-gong-php-yun-xing-su-du-xiao-ji-qiao.html"
+permalink: "2017/php-xiang-mu-kai-fa-zhong-ti-gong-php-yun-xing-su-du-xiao-ji-qiao.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期六, 六月 10, 2017

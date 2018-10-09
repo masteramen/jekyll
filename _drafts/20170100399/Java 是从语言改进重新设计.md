@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/Java-shi-cong-yu-yan-gai-jin-chong-xin-she-ji.ht
 fileName:  "20170100399"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/Java-shi-cong-yu-yan-gai-jin-chong-xin-she-ji.html"
+permalink: "2017/Java-shi-cong-yu-yan-gai-jin-chong-xin-she-ji.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期日, 五月 26, 2013

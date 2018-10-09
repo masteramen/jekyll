@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/rxjava1x%e7%ac%94%e8%ae%b0%e8%bf%87%e6%bb%a4%e5%
 fileName:  "20170101327"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/rxjava1x%e7%ac%94%e8%ae%b0%e8%bf%87%e6%bb%a4%e5%9e%8b%e6%93%8d%e4%bd%9c%e7%ac%a6.html"
+permalink: "2017/rxjava1x%e7%ac%94%e8%ae%b0%e8%bf%87%e6%bb%a4%e5%9e%8b%e6%93%8d%e4%bd%9c%e7%ac%a6.html"
 ---
 {% raw %}
 过滤型操作符即对 Observable 的数据进行过滤，选择性地发射出去。

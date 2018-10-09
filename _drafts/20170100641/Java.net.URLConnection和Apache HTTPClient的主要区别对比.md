@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java-net-urlconnection%e5%92%8capache-httpclient
 fileName:  "20170100641"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java-net-urlconnection%e5%92%8capache-httpclient%e7%9a%84%e4%b8%bb%e8%a6%81%e5%8c%ba%e5%88%ab%e5%af%b9%e6%af%94.html"
+permalink: "2017/java-net-urlconnection%e5%92%8capache-httpclient%e7%9a%84%e4%b8%bb%e8%a6%81%e5%8c%ba%e5%88%ab%e5%af%b9%e6%af%94.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期二, 五月 20, 2014

@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java-gong-cheng-shi-ru-he-tan-xin-zi.html"
 fileName:  "20170100458"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java-gong-cheng-shi-ru-he-tan-xin-zi.html"
+permalink: "2017/java-gong-cheng-shi-ru-he-tan-xin-zi.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期三, 十月 16, 2013

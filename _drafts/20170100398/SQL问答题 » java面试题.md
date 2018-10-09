@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/SQL-wen-da-ti.html"
 fileName:  "20170100398"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/SQL-wen-da-ti.html"
+permalink: "2017/SQL-wen-da-ti.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期日, 五月 26, 2013

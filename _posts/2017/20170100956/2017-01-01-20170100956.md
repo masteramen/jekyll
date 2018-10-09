@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/%e4%bb%8e%e4%b8%80%e9%81%93%e4%be%8b%e9%a2%98%e8
 fileName:  "20170100956"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/%e4%bb%8e%e4%b8%80%e9%81%93%e4%be%8b%e9%a2%98%e8%b0%88arrays-tostring-%e4%b8%8e%e5%85%b6%e4%bb%96string%e7%9a%84%e8%bd%ac%e6%8d%a2%e6%96%b9%e6%b3%95.html"
+permalink: "2017/%e4%bb%8e%e4%b8%80%e9%81%93%e4%be%8b%e9%a2%98%e8%b0%88arrays-tostring-%e4%b8%8e%e5%85%b6%e4%bb%96string%e7%9a%84%e8%bd%ac%e6%8d%a2%e6%96%b9%e6%b3%95.html"
 ---
 {% raw %}
 /* use int[26] assuming it's all lowercase letters count each string char in a letter array int[], convert the array into string. HashMap carray string as key, and actualy string as value outupt all values */publicclass Solution { public List<String> anagrams(String[] strs) { List<String> rst = new ArrayList<String>(); if (strs == null || strs.length == 0) { return rst; } HashMap<String, ArrayList<String>> map = new HashMap<String, ArrayList<String>>(); for (int i = 0; i < strs.length; i++) { int[] arr = newint[26]; for (int j = 0; j < strs[i].length(); j++) { arr[strs[i].charAt(j) - 'a'] += 1; } String arrString = Arrays.toString(arr); // 不能使用String.valueOf(arr);if (!map.containsKey(arrString)) { map.put(arrString, new ArrayList<String>()); } map.get(arrString).add(strs[i]); } //Outputfor (Map.Entry<String, ArrayList<String>> entry : map.entrySet()) { if (entry.getValue().size() >= 2) rst.addAll(entry.getValue()); } return rst; } }

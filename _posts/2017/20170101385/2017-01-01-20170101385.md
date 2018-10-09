@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/springboot%e4%bd%bf%e7%94%a8redis%e7%bc%93%e5%ad
 fileName:  "20170101385"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/springboot%e4%bd%bf%e7%94%a8redis%e7%bc%93%e5%ad%98.html"
+permalink: "2017/springboot%e4%bd%bf%e7%94%a8redis%e7%bc%93%e5%ad%98.html"
 ---
 {% raw %}
 Spring 提供了很多缓存管理器，例如：

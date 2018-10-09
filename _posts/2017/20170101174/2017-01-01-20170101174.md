@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/mybatisspringmvc%e6%89%b9%e9%87%8f%e5%88%a0%e9%9
 fileName:  "20170101174"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/mybatisspringmvc%e6%89%b9%e9%87%8f%e5%88%a0%e9%99%a42%e6%9c%80%e6%96%b0.html"
+permalink: "2017/mybatisspringmvc%e6%89%b9%e9%87%8f%e5%88%a0%e9%99%a42%e6%9c%80%e6%96%b0.html"
 ---
 {% raw %}
 service层：

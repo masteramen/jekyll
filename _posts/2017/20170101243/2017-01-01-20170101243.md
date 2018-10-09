@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/eclipse%e4%b8%ad%e7%94%a8maven%e5%88%9b%e5%bb%ba
 fileName:  "20170101243"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/eclipse%e4%b8%ad%e7%94%a8maven%e5%88%9b%e5%bb%bajavaweb%e9%a1%b9%e7%9b%ae.html"
+permalink: "2017/eclipse%e4%b8%ad%e7%94%a8maven%e5%88%9b%e5%bb%bajavaweb%e9%a1%b9%e7%9b%ae.html"
 ---
 {% raw %}
 最近学到在eclipse中用Maven创建java web项目，总结一下创建步骤。 

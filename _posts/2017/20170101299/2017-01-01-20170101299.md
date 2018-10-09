@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/playframework%e7%b3%bb%e5%88%97%e4%b8%80%e5%88%9
 fileName:  "20170101299"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/playframework%e7%b3%bb%e5%88%97%e4%b8%80%e5%88%9d%e6%8e%a2play%e6%a1%86%e6%9e%b6.html"
+permalink: "2017/playframework%e7%b3%bb%e5%88%97%e4%b8%80%e5%88%9d%e6%8e%a2play%e6%a1%86%e6%9e%b6.html"
 ---
 {% raw %}
 `Play!` 是一种高效率的 Java 和 Scala Web 应用程序框架，它集成了现代 Web 应用程序开发所需的组件和 API。本文将介绍一下 `Play!` 的基本性质以及利用该框架开发 Web 程序的优势。 

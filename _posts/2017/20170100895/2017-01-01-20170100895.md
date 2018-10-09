@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java%e5%9f%ba%e7%a1%80-string%e7%b1%bb-%e4%ba%8c
 fileName:  "20170100895"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java%e5%9f%ba%e7%a1%80-string%e7%b1%bb-%e4%ba%8c.html"
+permalink: "2017/java%e5%9f%ba%e7%a1%80-string%e7%b1%bb-%e4%ba%8c.html"
 ---
 {% raw %}
 今天做了几道String常见操作。先来几个代码实例：

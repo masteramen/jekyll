@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/ava-persistence-framework-mybatis-how-to-prevent
 fileName:  "20170100627"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/ava-persistence-framework-mybatis-how-to-prevent-sql-injection.html"
+permalink: "2017/ava-persistence-framework-mybatis-how-to-prevent-sql-injection.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期四, 五月 1, 2014

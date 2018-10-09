@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/mysql-da-shu-ju-liang-gao-bing-fa-de-shu-ju-ku-s
 fileName:  "20170100474"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/mysql-da-shu-ju-liang-gao-bing-fa-de-shu-ju-ku-she-ji-you-hua.html"
+permalink: "2017/mysql-da-shu-ju-liang-gao-bing-fa-de-shu-ju-ku-she-ji-you-hua.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期五, 十月 25, 2013

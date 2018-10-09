@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/%e4%b8%80%e4%b8%aajava%e5%bc%80%e5%8f%91%e4%b8%8
 fileName:  "20170101282"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/%e4%b8%80%e4%b8%aajava%e5%bc%80%e5%8f%91%e4%b8%80%e5%b9%b4%e7%9a%84%e6%80%bb%e7%bb%93.html"
+permalink: "2017/%e4%b8%80%e4%b8%aajava%e5%bc%80%e5%8f%91%e4%b8%80%e5%b9%b4%e7%9a%84%e6%80%bb%e7%bb%93.html"
 ---
 {% raw %}
 到今天为止，正好是工作一年了。

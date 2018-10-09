@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/then-soho-programmer-to-programmer-from-soldiers
 fileName:  "20170100614"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/then-soho-programmer-to-programmer-from-soldiers.html"
+permalink: "2017/then-soho-programmer-to-programmer-from-soldiers.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期一, 三月 17, 2014

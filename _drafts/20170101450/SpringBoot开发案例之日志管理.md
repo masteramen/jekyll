@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/springboot%e5%bc%80%e5%8f%91%e6%a1%88%e4%be%8b%e
 fileName:  "20170101450"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/springboot%e5%bc%80%e5%8f%91%e6%a1%88%e4%be%8b%e4%b9%8b%e6%97%a5%e5%bf%97%e7%ae%a1%e7%90%86.html"
+permalink: "2017/springboot%e5%bc%80%e5%8f%91%e6%a1%88%e4%be%8b%e4%b9%8b%e6%97%a5%e5%bf%97%e7%ae%a1%e7%90%86.html"
 ---
 {% raw %}
 顺便引用以下原文，当然看不明白也没关系，我们有-有道翻译，如果翻译的不准确，后面会提供配置分享于大家。

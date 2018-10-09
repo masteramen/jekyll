@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/20-tiao-mysql-xing-nen-you-hua-de-zui-jia-jing-y
 fileName:  "20170100797"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/20-tiao-mysql-xing-nen-you-hua-de-zui-jia-jing-yan.html"
+permalink: "2017/20-tiao-mysql-xing-nen-you-hua-de-zui-jia-jing-yan.html"
 ---
 {% raw %}
 今天，数据库的操作越来越成为整个应用的性能瓶颈了，这点对于Web应用尤其明显。关于数据库的性能，这并不只是DBA才需要担心的事，而这更是我们程序员需要去关注的事情。

@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/Static-Nested-Class-he-Inner-Class-de-bu-tong.ht
 fileName:  "20170100377"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/Static-Nested-Class-he-Inner-Class-de-bu-tong.html"
+permalink: "2017/Static-Nested-Class-he-Inner-Class-de-bu-tong.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期二, 五月 21, 2013

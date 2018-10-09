@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/oracle-shu-ju-ku-you-hua-oracle-zhi-xing-ji-hua-
 fileName:  "20170100795"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/oracle-shu-ju-ku-you-hua-oracle-zhi-xing-ji-hua-shun-xu-jie-shi.html"
+permalink: "2017/oracle-shu-ju-ku-you-hua-oracle-zhi-xing-ji-hua-shun-xu-jie-shi.html"
 ---
 {% raw %}
 关于oracle执行计划，网上很多说法都是，先执行最大缩进的行，如果缩进相同，就先执行上面的行，也就是最右最上原则。

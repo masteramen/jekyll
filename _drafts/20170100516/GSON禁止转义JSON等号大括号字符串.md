@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/gson%e7%a6%81%e6%ad%a2%e8%bd%ac%e4%b9%89json%e7%
 fileName:  "20170100516"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/gson%e7%a6%81%e6%ad%a2%e8%bd%ac%e4%b9%89json%e7%ad%89%e5%8f%b7%e5%a4%a7%e6%8b%ac%e5%8f%b7%e5%ad%97%e7%ac%a6%e4%b8%b2.html"
+permalink: "2017/gson%e7%a6%81%e6%ad%a2%e8%bd%ac%e4%b9%89json%e7%ad%89%e5%8f%b7%e5%a4%a7%e6%8b%ac%e5%8f%b7%e5%ad%97%e7%ac%a6%e4%b8%b2.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期六, 二月 1, 2014

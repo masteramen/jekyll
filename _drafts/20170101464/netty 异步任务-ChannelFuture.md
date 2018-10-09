@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/netty%e5%bc%82%e6%ad%a5%e4%bb%bb%e5%8a%a1channel
 fileName:  "20170101464"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/netty%e5%bc%82%e6%ad%a5%e4%bb%bb%e5%8a%a1channelfuture.html"
+permalink: "2017/netty%e5%bc%82%e6%ad%a5%e4%bb%bb%e5%8a%a1channelfuture.html"
 ---
 {% raw %}
 netty Inboudn/Outbound通道Invoker: 

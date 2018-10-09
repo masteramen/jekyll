@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/%e7%ae%80%e5%8d%95%e5%ae%9e%e7%8e%b0iframe%e8%87
 fileName:  "20170100523"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/%e7%ae%80%e5%8d%95%e5%ae%9e%e7%8e%b0iframe%e8%87%aa%e9%80%82%e5%ba%94%e9%ab%98%e5%ba%a6.html"
+permalink: "2017/%e7%ae%80%e5%8d%95%e5%ae%9e%e7%8e%b0iframe%e8%87%aa%e9%80%82%e5%ba%94%e9%ab%98%e5%ba%a6.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期二, 二月 4, 2014

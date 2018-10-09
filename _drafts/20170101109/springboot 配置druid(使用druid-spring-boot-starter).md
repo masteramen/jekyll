@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/springboot%e9%85%8d%e7%bd%aedruid%e4%bd%bf%e7%94
 fileName:  "20170101109"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/springboot%e9%85%8d%e7%bd%aedruid%e4%bd%bf%e7%94%a8druidspringbootstarter.html"
+permalink: "2017/springboot%e9%85%8d%e7%bd%aedruid%e4%bd%bf%e7%94%a8druidspringbootstarter.html"
 ---
 {% raw %}
 H2M_LI_HEADER 首先添加依赖

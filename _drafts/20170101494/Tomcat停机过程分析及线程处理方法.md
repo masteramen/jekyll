@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/tomcat%e5%81%9c%e6%9c%ba%e8%bf%87%e7%a8%8b%e5%88
 fileName:  "20170101494"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/tomcat%e5%81%9c%e6%9c%ba%e8%bf%87%e7%a8%8b%e5%88%86%e6%9e%90%e5%8f%8a%e7%ba%bf%e7%a8%8b%e5%a4%84%e7%90%86%e6%96%b9%e6%b3%95.html"
+permalink: "2017/tomcat%e5%81%9c%e6%9c%ba%e8%bf%87%e7%a8%8b%e5%88%86%e6%9e%90%e5%8f%8a%e7%ba%bf%e7%a8%8b%e5%a4%84%e7%90%86%e6%96%b9%e6%b3%95.html"
 ---
 {% raw %}
 工作中经常遇到因为Tomcat shutdown时自己创建的线程因没有及时停止而引起的各种莫名其妙的报错，这篇文章将通过对Tomcat停机过程的梳理讨论产生这些错误的原因,同时提出了两个可行的解决办法。

@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/springbootapi%e7%89%88%e6%9c%ac%e6%9d%83%e9%99%9
 fileName:  "20170101248"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/springbootapi%e7%89%88%e6%9c%ac%e6%9d%83%e9%99%90%e6%8e%a7%e5%88%b6.html"
+permalink: "2017/springbootapi%e7%89%88%e6%9c%ac%e6%9d%83%e9%99%90%e6%8e%a7%e5%88%b6.html"
 ---
 {% raw %}
 之前有文章讲述在Spring MVC 中扩展 RequestMappingHandlerMapping 实现对版本的控制。

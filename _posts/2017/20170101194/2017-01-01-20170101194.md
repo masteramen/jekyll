@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/mybatis%e6%ba%90%e7%a0%81%e8%a7%a3%e6%9e%905%e5%
 fileName:  "20170101194"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/mybatis%e6%ba%90%e7%a0%81%e8%a7%a3%e6%9e%905%e5%b7%a5%e5%8e%82%e7%9a%84%e6%9e%84%e5%bb%ba.html"
+permalink: "2017/mybatis%e6%ba%90%e7%a0%81%e8%a7%a3%e6%9e%905%e5%b7%a5%e5%8e%82%e7%9a%84%e6%9e%84%e5%bb%ba.html"
 ---
 {% raw %}
 这个分类比较连续，如果这里看不懂，或者第一次看，请回顾之前的博客

@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/%e6%b5%85%e8%b0%88-%e5%ae%88%e6%9c%9b%e5%85%88%e
 fileName:  "20170100968"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/%e6%b5%85%e8%b0%88-%e5%ae%88%e6%9c%9b%e5%85%88%e9%94%8b-%e4%b8%ad%e7%9a%84-ecs-%e6%9e%84%e6%9e%b6.html"
+permalink: "2017/%e6%b5%85%e8%b0%88-%e5%ae%88%e6%9c%9b%e5%85%88%e9%94%8b-%e4%b8%ad%e7%9a%84-ecs-%e6%9e%84%e6%9e%b6.html"
 ---
 {% raw %}
 演讲后面还提到了一些 ECS 模式下处理一些复杂问题的常见手法。 

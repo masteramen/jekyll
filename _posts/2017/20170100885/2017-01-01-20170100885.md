@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/%e5%9f%ba%e4%ba%8espring%e7%9a%84%e6%9c%80%e7%ae
 fileName:  "20170100885"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/%e5%9f%ba%e4%ba%8espring%e7%9a%84%e6%9c%80%e7%ae%80%e5%8d%95%e7%9a%84%e5%ae%9a%e6%97%b6%e4%bb%bb%e5%8a%a1%e5%ae%9e%e7%8e%b0%e4%b8%8e%e9%85%8d%e7%bd%ae-%e4%b8%80.html"
+permalink: "2017/%e5%9f%ba%e4%ba%8espring%e7%9a%84%e6%9c%80%e7%ae%80%e5%8d%95%e7%9a%84%e5%ae%9a%e6%97%b6%e4%bb%bb%e5%8a%a1%e5%ae%9e%e7%8e%b0%e4%b8%8e%e9%85%8d%e7%bd%ae-%e4%b8%80.html"
 ---
 {% raw %}
 朋友的项目中有点问题。他那边是Spring架构的，有一个比较简单的需要定时的任务执行。在了解了他的需求之后，于是提出了比较简单的Spring+quartz的实现方式。

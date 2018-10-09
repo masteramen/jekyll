@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/%e6%95%b0%e6%8d%ae%e5%ba%94%e7%94%a8%e8%be%be%e4
 fileName:  "20170100954"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/%e6%95%b0%e6%8d%ae%e5%ba%94%e7%94%a8%e8%be%be%e4%ba%ba%e4%b9%8bsql%e5%9f%ba%e7%a1%80%e6%95%99%e7%a8%8b%e5%88%86%e4%ba%ab8-%e5%ad%90%e6%9f%a5%e8%af%a2-%e8%bf%9e%e6%8e%a5-%e7%bb%84%e5%90%88%e6%9f%a5.html"
+permalink: "2017/%e6%95%b0%e6%8d%ae%e5%ba%94%e7%94%a8%e8%be%be%e4%ba%ba%e4%b9%8bsql%e5%9f%ba%e7%a1%80%e6%95%99%e7%a8%8b%e5%88%86%e4%ba%ab8-%e5%ad%90%e6%9f%a5%e8%af%a2-%e8%bf%9e%e6%8e%a5-%e7%bb%84%e5%90%88%e6%9f%a5.html"
 ---
 {% raw %}
 学习到现在，我们已经使用WHERE进行了很多简单的查询，一个条件、多个条件的查询都处理过了。

@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/lombok%e4%bd%bf%e7%94%a8%e7%bb%99%e8%87%aa%e5%b7
 fileName:  "20170101079"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/lombok%e4%bd%bf%e7%94%a8%e7%bb%99%e8%87%aa%e5%b7%b1%e7%9c%8b%e7%9a%84%e5%8f%aa%e4%b8%ba%e4%b8%8d%e8%a6%81%e5%bf%98%e8%ae%b0%e8%87%aa%e5%b7%b1%e7%94%a8%e8%bf%87%e7%9a%84%e6%8a%80%e6%9c%af.html"
+permalink: "2017/lombok%e4%bd%bf%e7%94%a8%e7%bb%99%e8%87%aa%e5%b7%b1%e7%9c%8b%e7%9a%84%e5%8f%aa%e4%b8%ba%e4%b8%8d%e8%a6%81%e5%bf%98%e8%ae%b0%e8%87%aa%e5%b7%b1%e7%94%a8%e8%bf%87%e7%9a%84%e6%8a%80%e6%9c%af.html"
 ---
 {% raw %}
 一、1）eclipse使用方法

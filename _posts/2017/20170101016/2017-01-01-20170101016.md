@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/%e7%94%a8sql%e7%8e%a9%e8%bd%ac%e6%95%b0%e6%8d%ae
 fileName:  "20170101016"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/%e7%94%a8sql%e7%8e%a9%e8%bd%ac%e6%95%b0%e6%8d%ae%e6%8c%96%e6%8e%98%e4%b9%8bmadlib-%e4%b8%80-%e5%ae%89%e8%a3%85.html"
+permalink: "2017/%e7%94%a8sql%e7%8e%a9%e8%bd%ac%e6%95%b0%e6%8d%ae%e6%8c%96%e6%8e%98%e4%b9%8bmadlib-%e4%b8%80-%e5%ae%89%e8%a3%85.html"
 ---
 {% raw %}
 # 一、MADlib简介

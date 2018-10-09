@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/u%e7%9b%98%e4%bd%bf%e7%94%a8windows10%e7%9a%84%e
 fileName:  "20170101002"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/u%e7%9b%98%e4%bd%bf%e7%94%a8windows10%e7%9a%84%e7%a3%81%e7%9b%98%e7%ae%a1%e7%90%86%e5%b7%a5%e5%85%b7%e5%88%92%e5%88%86%e5%a4%9a%e5%88%86%e5%8c%ba.html"
+permalink: "2017/u%e7%9b%98%e4%bd%bf%e7%94%a8windows10%e7%9a%84%e7%a3%81%e7%9b%98%e7%ae%a1%e7%90%86%e5%b7%a5%e5%85%b7%e5%88%92%e5%88%86%e5%a4%9a%e5%88%86%e5%8c%ba.html"
 ---
 {% raw %}
 U盘的容量越来越大，速度也是与日俱增，对Windows系统稍有认知的人都知道，在安装时都会产生一个100——500M不等的隐藏分区，由于所占硬盘空间不大，一般很少会在意此分区，Windows 10内建的磁盘管理可以让你轻松管理与建立硬盘的分割区，但对于U盘似乎不是那么友善，想要将U盘划分多分区需要借助第三方工具，如今Windows 10 Creators Update (1703)版已支持USB设备的划分分区功能，不过需要一些些技巧，来看看如何使用磁盘管理将U盘划分成多分区。

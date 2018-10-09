@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/audio-js-%e9%9a%8f%e6%97%b6%e9%9a%8f%e5%9c%b0%ef
 fileName:  "20170100536"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/audio-js-%e9%9a%8f%e6%97%b6%e9%9a%8f%e5%9c%b0%ef%bc%8c%e6%92%ad%e6%94%be-html5-%e7%9a%84%e5%a3%b0%e9%9f%b3.html"
+permalink: "2017/audio-js-%e9%9a%8f%e6%97%b6%e9%9a%8f%e5%9c%b0%ef%bc%8c%e6%92%ad%e6%94%be-html5-%e7%9a%84%e5%a3%b0%e9%9f%b3.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期日, 二月 9, 2014

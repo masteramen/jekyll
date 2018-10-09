@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/spring%e6%ba%90%e7%a0%81ioc%e5%8e%9f%e7%90%86%e8
 fileName:  "20170101153"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/spring%e6%ba%90%e7%a0%81ioc%e5%8e%9f%e7%90%86%e8%a7%a3%e6%9e%90%e4%ba%8c.html"
+permalink: "2017/spring%e6%ba%90%e7%a0%81ioc%e5%8e%9f%e7%90%86%e8%a7%a3%e6%9e%90%e4%ba%8c.html"
 ---
 {% raw %}
 版权声明：本文为博主原创文章，转载请注明出处，欢迎交流学习！

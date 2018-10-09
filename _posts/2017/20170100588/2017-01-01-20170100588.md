@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/the-difference-of-java-synchronized-for-method-a
 fileName:  "20170100588"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/the-difference-of-java-synchronized-for-method-and-object.html"
+permalink: "2017/the-difference-of-java-synchronized-for-method-and-object.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期二, 二月 25, 2014

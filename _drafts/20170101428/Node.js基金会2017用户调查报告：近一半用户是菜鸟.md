@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/nodejs%e5%9f%ba%e9%87%91%e4%bc%9a2017%e7%94%a8%e
 fileName:  "20170101428"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/nodejs%e5%9f%ba%e9%87%91%e4%bc%9a2017%e7%94%a8%e6%88%b7%e8%b0%83%e6%9f%a5%e6%8a%a5%e5%91%8a%e8%bf%91%e4%b8%80%e5%8d%8a%e7%94%a8%e6%88%b7%e6%98%af%e8%8f%9c%e9%b8%9f.html"
+permalink: "2017/nodejs%e5%9f%ba%e9%87%91%e4%bc%9a2017%e7%94%a8%e6%88%b7%e8%b0%83%e6%9f%a5%e6%8a%a5%e5%91%8a%e8%bf%91%e4%b8%80%e5%8d%8a%e7%94%a8%e6%88%b7%e6%98%af%e8%8f%9c%e9%b8%9f.html"
 ---
 {% raw %}
 关于Node.js话题的热度一直没有消散，近日，Node.js基金会发布了Node.js 2017用户调查报告。调查显示，目前Node.js的线上实例已超800万。除此之外，还有一个振奋人心的好消息——继美国之后，中国成为第二个Node.js使用人数最多的国家。 

@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/business-users-to-select-more-than-java-nets-fiv
 fileName:  "20170100596"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/business-users-to-select-more-than-java-nets-five-reasons.html"
+permalink: "2017/business-users-to-select-more-than-java-nets-five-reasons.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期六, 三月 1, 2014

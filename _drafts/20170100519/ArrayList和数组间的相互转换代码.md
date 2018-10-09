@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/arraylist%e5%92%8c%e6%95%b0%e7%bb%84%e9%97%b4%e7
 fileName:  "20170100519"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/arraylist%e5%92%8c%e6%95%b0%e7%bb%84%e9%97%b4%e7%9a%84%e7%9b%b8%e4%ba%92%e8%bd%ac%e6%8d%a2%e4%bb%a3%e7%a0%81.html"
+permalink: "2017/arraylist%e5%92%8c%e6%95%b0%e7%bb%84%e9%97%b4%e7%9a%84%e7%9b%b8%e4%ba%92%e8%bd%ac%e6%8d%a2%e4%bb%a3%e7%a0%81.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期一, 二月 3, 2014

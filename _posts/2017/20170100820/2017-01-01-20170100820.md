@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/springboot-de-shi-wu-guan-li.html"
 fileName:  "20170100820"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/springboot-de-shi-wu-guan-li.html"
+permalink: "2017/springboot-de-shi-wu-guan-li.html"
 ---
 {% raw %}
 By go - Last updated: 星期二, 四月 11, 2017

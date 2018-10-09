@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/guan-yu-huo-hu-he-ie-xia-href-javascript-void-0-
 fileName:  "20170100742"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/guan-yu-huo-hu-he-ie-xia-href-javascript-void-0-jian-rong-xing-de-wen-ti.html"
+permalink: "2017/guan-yu-huo-hu-he-ie-xia-href-javascript-void-0-jian-rong-xing-de-wen-ti.html"
 ---
 {% raw %}
 写了一个简单的幻灯，但是上下翻动按钮在火狐和IE下点击后会打开一个空白页面，而谷歌是正常的。

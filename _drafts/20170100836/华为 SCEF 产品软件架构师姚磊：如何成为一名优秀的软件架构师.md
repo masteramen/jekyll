@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/hua-wei-scef-chan-pin-ruan-jian-jia-gou-shi-yao-
 fileName:  "20170100836"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/hua-wei-scef-chan-pin-ruan-jian-jia-gou-shi-yao-le.html"
+permalink: "2017/hua-wei-scef-chan-pin-ruan-jian-jia-gou-shi-yao-le.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期日, 六月 11, 2017

@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/%e6%9c%80%e5%85%a8java%e5%ad%a6%e4%b9%a0%e8%b7%a
 fileName:  "20170100940"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/%e6%9c%80%e5%85%a8java%e5%ad%a6%e4%b9%a0%e8%b7%af%e7%ba%bf%e5%9b%be-java%e5%ad%a6%e4%b9%a0%e6%8c%87%e5%8d%97.html"
+permalink: "2017/%e6%9c%80%e5%85%a8java%e5%ad%a6%e4%b9%a0%e8%b7%af%e7%ba%bf%e5%9b%be-java%e5%ad%a6%e4%b9%a0%e6%8c%87%e5%8d%97.html"
 ---
 {% raw %}
 **准备篇**

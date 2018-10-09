@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/javaforweb%e5%ad%a6%e4%b9%a0%e7%ac%94%e8%ae%b0%e
 fileName:  "20170101216"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/javaforweb%e5%ad%a6%e4%b9%a0%e7%ac%94%e8%ae%b0%e4%b8%83%e5%8d%81service%e5%92%8crepository5%e5%9b%9e%e8%b0%83%e5%a4%84%e7%90%86consumer.html"
+permalink: "2017/javaforweb%e5%ad%a6%e4%b9%a0%e7%ac%94%e8%ae%b0%e4%b8%83%e5%8d%81service%e5%92%8crepository5%e5%9b%9e%e8%b0%83%e5%a4%84%e7%90%86consumer.html"
 ---
 {% raw %}
 Consumer可以作为回调函数使用，很是方便，在接下来的学习中会使用到，我们先了解一下Consumer是什么。

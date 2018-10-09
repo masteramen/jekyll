@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java-dong-tai-jia-zai-jar-bao-bing-shi-yong.html
 fileName:  "20170100845"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java-dong-tai-jia-zai-jar-bao-bing-shi-yong.html"
+permalink: "2017/java-dong-tai-jia-zai-jar-bao-bing-shi-yong.html"
 ---
 {% raw %}
 By  - Last updated: 星期日, 六月 18, 2017

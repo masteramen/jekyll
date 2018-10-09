@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/springmvc%e5%9b%9bspringmvc%e7%9a%84%e6%95%b0%e6
 fileName:  "20170101365"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/springmvc%e5%9b%9bspringmvc%e7%9a%84%e6%95%b0%e6%8d%ae%e6%a0%a1%e9%aa%8c%e7%9a%84%e5%ae%9e%e7%8e%b0.html"
+permalink: "2017/springmvc%e5%9b%9bspringmvc%e7%9a%84%e6%95%b0%e6%8d%ae%e6%a0%a1%e9%aa%8c%e7%9a%84%e5%ae%9e%e7%8e%b0.html"
 ---
 {% raw %}
 so easy~

@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/oracle-shu-ju-ku-kai-fa-xu-zhu-yi-de-16-ge-shi-x
 fileName:  "20170100564"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/oracle-shu-ju-ku-kai-fa-xu-zhu-yi-de-16-ge-shi-xiang-wen-ti.html"
+permalink: "2017/oracle-shu-ju-ku-kai-fa-xu-zhu-yi-de-16-ge-shi-xiang-wen-ti.html"
 ---
 {% raw %}
 **1. 删除表的注意事项**

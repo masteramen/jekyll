@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/mybatis-lan-jie-qi-jie-shao-ji-fen-ye-cha-jian.h
 fileName:  "20170100482"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/mybatis-lan-jie-qi-jie-shao-ji-fen-ye-cha-jian.html"
+permalink: "2017/mybatis-lan-jie-qi-jie-shao-ji-fen-ye-cha-jian.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期四, 十月 31, 2013

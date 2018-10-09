@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/gen-ju-cron-biao-da-shi-ji-suan-zui-jin-ji-ci-de
 fileName:  "20170100478"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/gen-ju-cron-biao-da-shi-ji-suan-zui-jin-ji-ci-de-zhi-xing-shi-jian.html"
+permalink: "2017/gen-ju-cron-biao-da-shi-ji-suan-zui-jin-ji-ci-de-zhi-xing-shi-jian.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期二, 十月 29, 2013

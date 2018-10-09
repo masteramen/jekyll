@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/Hibernate-mian-shi-ti-shuo-shuo-ni-dui-Hibernate
 fileName:  "20170100434"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/Hibernate-mian-shi-ti-shuo-shuo-ni-dui-Hibernate-de-yi-xie-liao-jie-he-kan-fa.html"
+permalink: "2017/Hibernate-mian-shi-ti-shuo-shuo-ni-dui-Hibernate-de-yi-xie-liao-jie-he-kan-fa.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期五, 六月 14, 2013

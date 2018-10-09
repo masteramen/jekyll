@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/html5-zai-liu-lang-qi-duan-yong-js-chuang-jian-x
 fileName:  "20170100574"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/html5-zai-liu-lang-qi-duan-yong-js-chuang-jian-xia-zai-wen-jian.html"
+permalink: "2017/html5-zai-liu-lang-qi-duan-yong-js-chuang-jian-xia-zai-wen-jian.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期四, 二月 20, 2014

@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/guan-yu-Tomcat-he-Tomcat-de-mian-shi-wen-ti.html
 fileName:  "20170100439"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/guan-yu-Tomcat-he-Tomcat-de-mian-shi-wen-ti.html"
+permalink: "2017/guan-yu-Tomcat-he-Tomcat-de-mian-shi-wen-ti.html"
 ---
 {% raw %}
 ### 关于Tomcat和Tomcat的面试问题

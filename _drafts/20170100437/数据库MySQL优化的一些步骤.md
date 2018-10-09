@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/shu-ju-ku-MySQL-you-hua-de-yi-xie-bu-zhou.html"
 fileName:  "20170100437"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/shu-ju-ku-MySQL-you-hua-de-yi-xie-bu-zhou.html"
+permalink: "2017/shu-ju-ku-MySQL-you-hua-de-yi-xie-bu-zhou.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期日, 六月 16, 2013

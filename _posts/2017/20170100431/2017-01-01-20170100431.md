@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java-duo-xian-cheng-mian-shi-ti.html"
 fileName:  "20170100431"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java-duo-xian-cheng-mian-shi-ti.html"
+permalink: "2017/java-duo-xian-cheng-mian-shi-ti.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期二, 六月 11, 2013

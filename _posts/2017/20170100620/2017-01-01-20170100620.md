@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/solve-ant-compile-shark-error-com-sun-tools-java
 fileName:  "20170100620"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/solve-ant-compile-shark-error-com-sun-tools-javac-main-is-not-available-questions.html"
+permalink: "2017/solve-ant-compile-shark-error-com-sun-tools-javac-main-is-not-available-questions.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期五, 三月 28, 2014

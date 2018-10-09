@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/zookeeper%e6%ba%90%e7%a0%81%e5%88%86%e6%9e%90-ju
 fileName:  "20170100916"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/zookeeper%e6%ba%90%e7%a0%81%e5%88%86%e6%9e%90-jute-%e7%ac%ac%e4%ba%8c%e9%83%a8%e5%88%86.html"
+permalink: "2017/zookeeper%e6%ba%90%e7%a0%81%e5%88%86%e6%9e%90-jute-%e7%ac%ac%e4%ba%8c%e9%83%a8%e5%88%86.html"
 ---
 {% raw %}
 **数据类型和流**

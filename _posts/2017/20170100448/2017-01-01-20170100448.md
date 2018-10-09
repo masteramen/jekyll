@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java-xml-fang-mian-de-yi-xie-mian-shi-ti.html"
 fileName:  "20170100448"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java-xml-fang-mian-de-yi-xie-mian-shi-ti.html"
+permalink: "2017/java-xml-fang-mian-de-yi-xie-mian-shi-ti.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期三, 六月 26, 2013

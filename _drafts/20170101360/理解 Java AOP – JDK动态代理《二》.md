@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/%e7%90%86%e8%a7%a3javaaopjdk%e5%8a%a8%e6%80%81%e
 fileName:  "20170101360"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/%e7%90%86%e8%a7%a3javaaopjdk%e5%8a%a8%e6%80%81%e4%bb%a3%e7%90%86%e4%ba%8c.html"
+permalink: "2017/%e7%90%86%e8%a7%a3javaaopjdk%e5%8a%a8%e6%80%81%e4%bb%a3%e7%90%86%e4%ba%8c.html"
 ---
 {% raw %}
 ### 业务接口: `IBiz`

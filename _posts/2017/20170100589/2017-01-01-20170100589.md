@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/html5-tag-shi-yong-chang-jian-wu-qu.html"
 fileName:  "20170100589"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/html5-tag-shi-yong-chang-jian-wu-qu.html"
+permalink: "2017/html5-tag-shi-yong-chang-jian-wu-qu.html"
 ---
 {% raw %}
 在这篇文章中，我将给大家分享html5构建页面的小错误和不好的实践方法，让我们在以后的工作中避免这些错误。

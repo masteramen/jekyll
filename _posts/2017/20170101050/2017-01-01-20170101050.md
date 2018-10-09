@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/%e5%8a%a8%e6%80%81%e4%bb%a3%e7%90%86%e6%a8%a1%e5
 fileName:  "20170101050"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/%e5%8a%a8%e6%80%81%e4%bb%a3%e7%90%86%e6%a8%a1%e5%bc%8f%e5%ae%9e%e7%8e%b0%e5%8e%9f%e7%90%86.html"
+permalink: "2017/%e5%8a%a8%e6%80%81%e4%bb%a3%e7%90%86%e6%a8%a1%e5%bc%8f%e5%ae%9e%e7%8e%b0%e5%8e%9f%e7%90%86.html"
 ---
 {% raw %}
 # 动态代理模式实现原理 

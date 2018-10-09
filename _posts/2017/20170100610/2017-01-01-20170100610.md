@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/about-httpwatch-tools-and-tips.html"
 fileName:  "20170100610"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/about-httpwatch-tools-and-tips.html"
+permalink: "2017/about-httpwatch-tools-and-tips.html"
 ---
 {% raw %}
 # 一概述：

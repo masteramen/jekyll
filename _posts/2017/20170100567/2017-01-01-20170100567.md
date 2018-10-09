@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/yi-ge-i-t-ji-shu-ren-de-gan-tan-ji-shu-you-shi-m
 fileName:  "20170100567"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/yi-ge-i-t-ji-shu-ren-de-gan-tan-ji-shu-you-shi-me-wei-lai.html"
+permalink: "2017/yi-ge-i-t-ji-shu-ren-de-gan-tan-ji-shu-you-shi-me-wei-lai.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期二, 二月 18, 2014

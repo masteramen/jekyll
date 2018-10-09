@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/mvn-clean-package-%e9%94%99%e8%af%af%e4%b8%8d%e5
 fileName:  "20170100515"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/mvn-clean-package-%e9%94%99%e8%af%af%e4%b8%8d%e5%85%bc%e5%ae%b9%e7%9a%84%e7%b1%bb%e5%9e%8b%e7%9a%84%e8%a7%a3%e5%86%b3%e6%96%b9%e6%a1%88.html"
+permalink: "2017/mvn-clean-package-%e9%94%99%e8%af%af%e4%b8%8d%e5%85%bc%e5%ae%b9%e7%9a%84%e7%b1%bb%e5%9e%8b%e7%9a%84%e8%a7%a3%e5%86%b3%e6%96%b9%e6%a1%88.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期六, 二月 1, 2014

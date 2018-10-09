@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/springcloud%e4%bd%93%e9%aa%8c.html"
 fileName:  "20170101249"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/springcloud%e4%bd%93%e9%aa%8c.html"
+permalink: "2017/springcloud%e4%bd%93%e9%aa%8c.html"
 ---
 {% raw %}
 H2M_LI_HEADER 

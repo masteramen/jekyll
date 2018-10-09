@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/pl-sql-oracle-database-unworthy-tnsnames-ora-dir
 fileName:  "20170100618"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/pl-sql-oracle-database-unworthy-tnsnames-ora-direct-connection-method.html"
+permalink: "2017/pl-sql-oracle-database-unworthy-tnsnames-ora-direct-connection-method.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期三, 三月 26, 2014

@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/gao-shou-zheng-zheng-li-java-cheng-xu-yuan-mian-
 fileName:  "20170100814"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/gao-shou-zheng-zheng-li-java-cheng-xu-yuan-mian-shi-zong-jie.html"
+permalink: "2017/gao-shou-zheng-zheng-li-java-cheng-xu-yuan-mian-shi-zong-jie.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期五, 二月 24, 2017

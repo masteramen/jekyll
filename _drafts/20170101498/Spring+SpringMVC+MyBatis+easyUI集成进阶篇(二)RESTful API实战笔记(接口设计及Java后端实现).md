@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/springspringmvcmybatiseasyui%e9%9b%86%e6%88%90%e
 fileName:  "20170101498"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/springspringmvcmybatiseasyui%e9%9b%86%e6%88%90%e8%bf%9b%e9%98%b6%e7%af%87%e4%ba%8crestfulapi%e5%ae%9e%e6%88%98%e7%ac%94%e8%ae%b0%e6%8e%a5%e5%8f%a3%e8%ae%be%e8%ae%a1%e5%8f%8ajava%e5%90%8e%e7%ab%af.html"
+permalink: "2017/springspringmvcmybatiseasyui%e9%9b%86%e6%88%90%e8%bf%9b%e9%98%b6%e7%af%87%e4%ba%8crestfulapi%e5%ae%9e%e6%88%98%e7%ac%94%e8%ae%b0%e6%8e%a5%e5%8f%a3%e8%ae%be%e8%ae%a1%e5%8f%8ajava%e5%90%8e%e7%ab%af.html"
 ---
 {% raw %}
 原计划这部分代码的更新也是上传到ssm-demo仓库中，因为如下原因并没有这么做：

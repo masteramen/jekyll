@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java%e6%9c%80%e5%bf%ab%e7%9a%84maven%e5%9c%b0%e5
 fileName:  "20170101075"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java%e6%9c%80%e5%bf%ab%e7%9a%84maven%e5%9c%b0%e5%9d%80%e5%9b%bd%e5%86%85maven%e5%9c%b0%e5%9d%80%e8%b6%85%e5%bf%ab%e7%9a%84maven%e5%9c%b0%e5%9d%80.html"
+permalink: "2017/java%e6%9c%80%e5%bf%ab%e7%9a%84maven%e5%9c%b0%e5%9d%80%e5%9b%bd%e5%86%85maven%e5%9c%b0%e5%9d%80%e8%b6%85%e5%bf%ab%e7%9a%84maven%e5%9c%b0%e5%9d%80.html"
 ---
 {% raw %}
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>

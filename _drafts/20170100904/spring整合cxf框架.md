@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/spring%e6%95%b4%e5%90%88cxf%e6%a1%86%e6%9e%b6.ht
 fileName:  "20170100904"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/spring%e6%95%b4%e5%90%88cxf%e6%a1%86%e6%9e%b6.html"
+permalink: "2017/spring%e6%95%b4%e5%90%88cxf%e6%a1%86%e6%9e%b6.html"
 ---
 {% raw %}
 CXF是webService的框架,能够和spring无缝整合

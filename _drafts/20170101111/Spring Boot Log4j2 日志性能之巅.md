@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/springbootlog4j2%e6%97%a5%e5%bf%97%e6%80%a7%e8%8
 fileName:  "20170101111"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/springbootlog4j2%e6%97%a5%e5%bf%97%e6%80%a7%e8%83%bd%e4%b9%8b%e5%b7%85.html"
+permalink: "2017/springbootlog4j2%e6%97%a5%e5%bf%97%e6%80%a7%e8%83%bd%e4%b9%8b%e5%b7%85.html"
 ---
 {% raw %}
 0x01 Maven 依赖 pom.xml

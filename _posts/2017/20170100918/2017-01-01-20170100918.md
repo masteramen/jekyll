@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java%e5%9f%ba%e7%a1%80-collection%e6%8e%a5%e5%8f
 fileName:  "20170100918"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java%e5%9f%ba%e7%a1%80-collection%e6%8e%a5%e5%8f%a3-%e4%b8%80.html"
+permalink: "2017/java%e5%9f%ba%e7%a1%80-collection%e6%8e%a5%e5%8f%a3-%e4%b8%80.html"
 ---
 {% raw %}
 public interfaceCollectionextends iterable 

@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java%e5%9f%ba%e7%a1%80io%e4%b8%89.html"
 fileName:  "20170101178"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java%e5%9f%ba%e7%a1%80io%e4%b8%89.html"
+permalink: "2017/java%e5%9f%ba%e7%a1%80io%e4%b8%89.html"
 ---
 {% raw %}
 演示：PipedInputStream  , PipedOutputStream

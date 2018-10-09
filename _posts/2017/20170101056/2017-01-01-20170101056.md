@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/springspringmvcmybatis%e6%b7%b1%e5%85%a5%e5%ad%a
 fileName:  "20170101056"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/springspringmvcmybatis%e6%b7%b1%e5%85%a5%e5%ad%a6%e4%b9%a0%e5%8f%8a%e6%90%ad%e5%bb%ba%e5%8d%81%e4%b8%83springmvc%e6%8b%a6%e6%88%aa%e5%99%a8.html"
+permalink: "2017/springspringmvcmybatis%e6%b7%b1%e5%85%a5%e5%ad%a6%e4%b9%a0%e5%8f%8a%e6%90%ad%e5%bb%ba%e5%8d%81%e4%b8%83springmvc%e6%8b%a6%e6%88%aa%e5%99%a8.html"
 ---
 {% raw %}
 # Spring+SpringMVC+MyBatis深入学习及搭建(十七)——SpringMVC拦截器 

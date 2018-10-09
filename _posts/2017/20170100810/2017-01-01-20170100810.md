@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/cheng-xu-yuan-zhun-bei-tiao-cao-liao-ru-he-xuan-
 fileName:  "20170100810"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/cheng-xu-yuan-zhun-bei-tiao-cao-liao-ru-he-xuan-ze-xia-yi-jia-it-gong-si.html"
+permalink: "2017/cheng-xu-yuan-zhun-bei-tiao-cao-liao-ru-he-xuan-ze-xia-yi-jia-it-gong-si.html"
 ---
 {% raw %}
 程序猿在选择公司的时候，会比较看重公司的哪些地方，选择怎样的公司才不会令自己后悔？一起来看看知乎上各网友的回答。

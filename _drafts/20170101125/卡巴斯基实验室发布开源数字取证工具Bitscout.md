@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/%e5%8d%a1%e5%b7%b4%e6%96%af%e5%9f%ba%e5%ae%9e%e9
 fileName:  "20170101125"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/%e5%8d%a1%e5%b7%b4%e6%96%af%e5%9f%ba%e5%ae%9e%e9%aa%8c%e5%ae%a4%e5%8f%91%e5%b8%83%e5%bc%80%e6%ba%90%e6%95%b0%e5%ad%97%e5%8f%96%e8%af%81%e5%b7%a5%e5%85%b7bitscout.html"
+permalink: "2017/%e5%8d%a1%e5%b7%b4%e6%96%af%e5%9f%ba%e5%ae%9e%e9%aa%8c%e5%ae%a4%e5%8f%91%e5%b8%83%e5%bc%80%e6%ba%90%e6%95%b0%e5%ad%97%e5%8f%96%e8%af%81%e5%b7%a5%e5%85%b7bitscout.html"
 ---
 {% raw %}
 Bitscout是一款可自定义配置的远程数字取证工具。近日，卡巴斯基实验室的安全研究专家Vitaly Kamluk正式发布了Bitscout的源代码。

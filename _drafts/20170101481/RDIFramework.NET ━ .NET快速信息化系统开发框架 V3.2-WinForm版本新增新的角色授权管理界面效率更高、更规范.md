@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/rdiframeworknetnet%e5%bf%ab%e9%80%9f%e4%bf%a1%e6
 fileName:  "20170101481"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/rdiframeworknetnet%e5%bf%ab%e9%80%9f%e4%bf%a1%e6%81%af%e5%8c%96%e7%b3%bb%e7%bb%9f%e5%bc%80%e5%8f%91%e6%a1%86%e6%9e%b6v32winform%e7%89%88%e6%9c%ac%e6%96%b0%e5%a2%9e%e6%96%b0%e7%9a%84%e8%a7%92%e8%89%b2.html"
+permalink: "2017/rdiframeworknetnet%e5%bf%ab%e9%80%9f%e4%bf%a1%e6%81%af%e5%8c%96%e7%b3%bb%e7%bb%9f%e5%bc%80%e5%8f%91%e6%a1%86%e6%9e%b6v32winform%e7%89%88%e6%9c%ac%e6%96%b0%e5%a2%9e%e6%96%b0%e7%9a%84%e8%a7%92%e8%89%b2.html"
 ---
 {% raw %}
 角色授权管理模块主要是对角色的相应权限进行集中设置。在角色权限管理模块中，管理员可以添加或移除指定角色所包含的用户、可以分配或授予指定角色的模块（菜单）的访问权限、可以收回或分配指定角色的操作（功能）权限、可以对所有角色、用户、模块（菜单）、操作（功能）权限进行集中批量设置，角色户授权范围的设置（类似于用户授权范围的设置），表字段权限的设置以及表约束条件权限的设置等。

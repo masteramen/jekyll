@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java-ee-html5-websocket-%e7%a4%ba%e4%be%8b%e6%95
 fileName:  "20170100558"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java-ee-html5-websocket-%e7%a4%ba%e4%be%8b%e6%95%99%e7%a8%8b.html"
+permalink: "2017/java-ee-html5-websocket-%e7%a4%ba%e4%be%8b%e6%95%99%e7%a8%8b.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期六, 二月 15, 2014

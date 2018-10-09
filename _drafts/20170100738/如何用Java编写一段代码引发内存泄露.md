@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/ru-he-yong-java-bian-xie-yi-duan-dai-ma-yin-fa-n
 fileName:  "20170100738"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/ru-he-yong-java-bian-xie-yi-duan-dai-ma-yin-fa-na-cun-xie-lu.html"
+permalink: "2017/ru-he-yong-java-bian-xie-yi-duan-dai-ma-yin-fa-na-cun-xie-lu.html"
 ---
 {% raw %}
 本文来自StackOverflow问答网站的一个热门讨论：如何用Java编写一段会发生内存泄露的代码。

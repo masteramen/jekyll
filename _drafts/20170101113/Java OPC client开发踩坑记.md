@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/javaopcclient%e5%bc%80%e5%8f%91%e8%b8%a9%e5%9d%9
 fileName:  "20170101113"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/javaopcclient%e5%bc%80%e5%8f%91%e8%b8%a9%e5%9d%91%e8%ae%b0.html"
+permalink: "2017/javaopcclient%e5%bc%80%e5%8f%91%e8%b8%a9%e5%9d%91%e8%ae%b0.html"
 ---
 {% raw %}
 # Java OPC client开发踩坑记 

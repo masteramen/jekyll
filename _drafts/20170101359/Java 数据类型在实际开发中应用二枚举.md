@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java%e6%95%b0%e6%8d%ae%e7%b1%bb%e5%9e%8b%e5%9c%a
 fileName:  "20170101359"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java%e6%95%b0%e6%8d%ae%e7%b1%bb%e5%9e%8b%e5%9c%a8%e5%ae%9e%e9%99%85%e5%bc%80%e5%8f%91%e4%b8%ad%e5%ba%94%e7%94%a8%e4%ba%8c%e6%9e%9a%e4%b8%be.html"
+permalink: "2017/java%e6%95%b0%e6%8d%ae%e7%b1%bb%e5%9e%8b%e5%9c%a8%e5%ae%9e%e9%99%85%e5%bc%80%e5%8f%91%e4%b8%ad%e5%ba%94%e7%94%a8%e4%ba%8c%e6%9e%9a%e4%b8%be.html"
 ---
 {% raw %}
 在实际编程中，往往存在着这样的“数据集”，它们的数值在程序中是稳定的，而且“数据集”中的元素是有限的。在JDK1.5之前，人们用接口来描述这一种数据类型。

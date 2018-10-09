@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/guan-yu-shu-ju-ku-you-hua-1-guan-yu-count-1-coun
 fileName:  "20170100840"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/guan-yu-shu-ju-ku-you-hua-1-guan-yu-count-1-count-he-count-lie-ming-de-qu-bie.html"
+permalink: "2017/guan-yu-shu-ju-ku-you-hua-1-guan-yu-count-1-count-he-count-lie-ming-de-qu-bie.html"
 ---
 {% raw %}
 ### 1.关于count(1)，count(*),和count(列名)的区别

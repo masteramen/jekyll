@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/wei-shi-me-kai-fa-ren-yuan-dui-yu-php-yu-yan-bao
 fileName:  "20170100735"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/wei-shi-me-kai-fa-ren-yuan-dui-yu-php-yu-yan-bao-bian-bu-yi.html"
+permalink: "2017/wei-shi-me-kai-fa-ren-yuan-dui-yu-php-yu-yan-bao-bian-bu-yi.html"
 ---
 {% raw %}
 PHP 语言，作为服务器端开发的脚本语言，在网站开发方面非常有名。从1995年 Rasmus Lerdorf 创建之后，根据 W3Techs 的调查显示在已知的服务端编程语言中，PHP 占了82%。其中不乏WordPress，Facebook 这种公司。在 PyPL（编程语言流行度排行榜）中仅次于 Java，在 Toibe 排行中名列第六。2015年会有高性能的 PHP 7 发布。

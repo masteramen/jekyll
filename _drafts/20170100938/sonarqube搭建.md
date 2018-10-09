@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/sonarqube%e6%90%ad%e5%bb%ba.html"
 fileName:  "20170100938"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/sonarqube%e6%90%ad%e5%bb%ba.html"
+permalink: "2017/sonarqube%e6%90%ad%e5%bb%ba.html"
 ---
 {% raw %}
 sonar.jdbc.username=root

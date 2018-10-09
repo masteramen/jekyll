@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java-zhong-shi-xian-duo-tai-de-ji-zhi-shi-shen-m
 fileName:  "20170100358"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java-zhong-shi-xian-duo-tai-de-ji-zhi-shi-shen-me.html"
+permalink: "2017/java-zhong-shi-xian-duo-tai-de-ji-zhi-shi-shen-me.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期日, 五月 19, 2013

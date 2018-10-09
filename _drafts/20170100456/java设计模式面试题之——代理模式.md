@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java-she-ji-mo-shi-mian-shi-ti-zhi-dai-li-mo-shi
 fileName:  "20170100456"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java-she-ji-mo-shi-mian-shi-ti-zhi-dai-li-mo-shi.html"
+permalink: "2017/java-she-ji-mo-shi-mian-shi-ti-zhi-dai-li-mo-shi.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期三, 十月 16, 2013

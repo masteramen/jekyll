@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/%e4%b9%9f%e8%b0%88tdd%e4%bb%a5%e5%8f%8a%e4%b8%89
 fileName:  "20170101107"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/%e4%b9%9f%e8%b0%88tdd%e4%bb%a5%e5%8f%8a%e4%b8%89%e5%b1%82%e6%9e%b6%e6%9e%84%e8%ae%be%e8%ae%a1%e6%a8%a1%e5%bc%8form%e6%b2%a1%e6%9c%89%e5%85%8d%e8%b4%b9%e7%9a%84%e5%8d%88%e9%a4%90.html"
+permalink: "2017/%e4%b9%9f%e8%b0%88tdd%e4%bb%a5%e5%8f%8a%e4%b8%89%e5%b1%82%e6%9e%b6%e6%9e%84%e8%ae%be%e8%ae%a1%e6%a8%a1%e5%bc%8form%e6%b2%a1%e6%9c%89%e5%85%8d%e8%b4%b9%e7%9a%84%e5%8d%88%e9%a4%90.html"
 ---
 {% raw %}
 但再难写也要写啊，要等到“能写好了再写”，怕是黄花菜都凉了——尤其是技术类文章，时效性非常强的。

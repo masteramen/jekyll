@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/%e6%95%b0%e6%8d%ae%e5%ba%93open%e9%81%ad%e9%81%8
 fileName:  "20170101172"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/%e6%95%b0%e6%8d%ae%e5%ba%93open%e9%81%ad%e9%81%87ora%e9%94%99%e8%af%af.html"
+permalink: "2017/%e6%95%b0%e6%8d%ae%e5%ba%93open%e9%81%ad%e9%81%87ora%e9%94%99%e8%af%af.html"
 ---
 {% raw %}
 前几天我们的一位准客户的其中一套较为重要的数据库出现了故障。我们这里先姑且不去分析原因，来将数据库打开提供业务恢复再说。首先我们来看下一线工程师现场发回的报道： 

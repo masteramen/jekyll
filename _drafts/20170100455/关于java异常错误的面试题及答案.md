@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/guan-yu-java-yi-chang-cuo-wu-de-mian-shi-ti.html
 fileName:  "20170100455"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/guan-yu-java-yi-chang-cuo-wu-de-mian-shi-ti.html"
+permalink: "2017/guan-yu-java-yi-chang-cuo-wu-de-mian-shi-ti.html"
 ---
 {% raw %}
 **1) Java中什么是Exception?**

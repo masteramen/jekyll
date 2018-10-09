@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/string-stringbuffer-yu-stringbuilder-de-qu-bie.h
 fileName:  "20170100859"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/string-stringbuffer-yu-stringbuilder-de-qu-bie.html"
+permalink: "2017/string-stringbuffer-yu-stringbuilder-de-qu-bie.html"
 ---
 {% raw %}
 <!–[if !supportLists]–>**1.**<!–[endif]–>[String,StringBuffer与StringBuilder的区别](https://www.jfox.info/go.php?url=http://blog.csdn.net/rmn190/article/details/1492013)

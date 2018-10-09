@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/windows-xia-de-chcp-ming-ling-geng-gai-gai-kong-
 fileName:  "20170100740"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/windows-xia-de-chcp-ming-ling-geng-gai-gai-kong-zhi-tai-de-huo-dong-kong-zhi-tai-dai-ma-ye.html"
+permalink: "2017/windows-xia-de-chcp-ming-ling-geng-gai-gai-kong-zhi-tai-de-huo-dong-kong-zhi-tai-dai-ma-ye.html"
 ---
 {% raw %}
 Chcp 

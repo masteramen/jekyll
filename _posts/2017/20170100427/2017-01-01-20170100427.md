@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java-mian-shi-ru-he-jie-shao-zuo-guo-xiang-mu-qi
 fileName:  "20170100427"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java-mian-shi-ru-he-jie-shao-zuo-guo-xiang-mu-qing-kuang.html"
+permalink: "2017/java-mian-shi-ru-he-jie-shao-zuo-guo-xiang-mu-qing-kuang.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期日, 六月 9, 2013

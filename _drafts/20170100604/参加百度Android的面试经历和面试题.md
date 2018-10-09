@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/baidu-android-experience-to-participate-in-inter
 fileName:  "20170100604"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/baidu-android-experience-to-participate-in-interviews-and-interview-questions.html"
+permalink: "2017/baidu-android-experience-to-participate-in-interviews-and-interview-questions.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期五, 三月 7, 2014

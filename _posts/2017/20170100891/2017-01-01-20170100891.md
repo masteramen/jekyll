@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/spring%e6%8e%a5%e5%8f%a3%e5%b7%a5%e7%a8%8b%e7%9a
 fileName:  "20170100891"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/spring%e6%8e%a5%e5%8f%a3%e5%b7%a5%e7%a8%8b%e7%9a%84junit%e5%8d%95%e5%85%83%e6%b5%8b%e8%af%95%e6%90%ad%e5%bb%ba.html"
+permalink: "2017/spring%e6%8e%a5%e5%8f%a3%e5%b7%a5%e7%a8%8b%e7%9a%84junit%e5%8d%95%e5%85%83%e6%b5%8b%e8%af%95%e6%90%ad%e5%bb%ba.html"
 ---
 {% raw %}
 **引言**

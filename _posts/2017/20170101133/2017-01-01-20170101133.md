@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/jdbc03%e5%88%a9%e7%94%a8jdbc%e5%ae%9e%e7%8e%b0%e
 fileName:  "20170101133"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/jdbc03%e5%88%a9%e7%94%a8jdbc%e5%ae%9e%e7%8e%b0%e4%ba%8b%e5%8a%a1%e6%8f%90%e4%ba%a4%e4%b8%8e%e5%9b%9e%e6%bb%9a%e8%b0%83%e7%94%a8connection%e4%b8%ad%e7%9a%84%e6%96%b9%e6%b3%95%e5%ae%9e%e7%8e%b0%e4%ba%8b.html"
+permalink: "2017/jdbc03%e5%88%a9%e7%94%a8jdbc%e5%ae%9e%e7%8e%b0%e4%ba%8b%e5%8a%a1%e6%8f%90%e4%ba%a4%e4%b8%8e%e5%9b%9e%e6%bb%9a%e8%b0%83%e7%94%a8connection%e4%b8%ad%e7%9a%84%e6%96%b9%e6%b3%95%e5%ae%9e%e7%8e%b0%e4%ba%8b.html"
 ---
 {% raw %}
 1 Connection中的重用方法

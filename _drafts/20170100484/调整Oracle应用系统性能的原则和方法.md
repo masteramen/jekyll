@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/tiao-zheng-oracle-ying-yong-xi-tong-xing-neng-de
 fileName:  "20170100484"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/tiao-zheng-oracle-ying-yong-xi-tong-xing-neng-de-yuan-ze-he-fang-fa.html"
+permalink: "2017/tiao-zheng-oracle-ying-yong-xi-tong-xing-neng-de-yuan-ze-he-fang-fa.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期二, 十一月 5, 2013

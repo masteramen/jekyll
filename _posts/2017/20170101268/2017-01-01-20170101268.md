@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/%e6%85%95%e8%af%be%e7%bd%91hibernate%e7%bc%93%e5
 fileName:  "20170101268"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/%e6%85%95%e8%af%be%e7%bd%91hibernate%e7%bc%93%e5%ad%98%e7%ad%96%e7%95%a5%e5%ad%a6%e4%b9%a0%e6%80%bb%e7%bb%93.html"
+permalink: "2017/%e6%85%95%e8%af%be%e7%bd%91hibernate%e7%bc%93%e5%ad%98%e7%ad%96%e7%95%a5%e5%ad%a6%e4%b9%a0%e6%80%bb%e7%bb%93.html"
 ---
 {% raw %}
 # 慕课网_《Hibernate缓存策略》学习总结 

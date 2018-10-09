@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/jsp%e5%9f%ba%e6%9c%ac%e8%af%ad%e6%b3%95%e6%80%bb
 fileName:  "20170101236"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/jsp%e5%9f%ba%e6%9c%ac%e8%af%ad%e6%b3%95%e6%80%bb%e7%bb%932%e4%b9%9d%e5%a4%a7%e5%86%85%e7%bd%ae%e5%af%b9%e8%b1%a1.html"
+permalink: "2017/jsp%e5%9f%ba%e6%9c%ac%e8%af%ad%e6%b3%95%e6%80%bb%e7%bb%932%e4%b9%9d%e5%a4%a7%e5%86%85%e7%bd%ae%e5%af%b9%e8%b1%a1.html"
 ---
 {% raw %}
 内置对象也称为内建对象，隐含对象，即无需声明，直接可以在JSP中使用的java对象。JSP的内置对象就是把最常用、重要的几个对象直接创建了。

@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/oracle-dao-ru-dao-chu-imp-exp-yu-impdp-expdp-de-
 fileName:  "20170100688"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/oracle-dao-ru-dao-chu-imp-exp-yu-impdp-expdp-de-shi-yong-fan-wei-yu-qu-bie.html"
+permalink: "2017/oracle-dao-ru-dao-chu-imp-exp-yu-impdp-expdp-de-shi-yong-fan-wei-yu-qu-bie.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期五, 九月 5, 2014

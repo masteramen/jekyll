@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/springboot%e4%b9%8b%e6%97%85%e9%9b%86%e6%88%90my
 fileName:  "20170101209"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/springboot%e4%b9%8b%e6%97%85%e9%9b%86%e6%88%90mybatisplus.html"
+permalink: "2017/springboot%e4%b9%8b%e6%97%85%e9%9b%86%e6%88%90mybatisplus.html"
 ---
 {% raw %}
 By  - Last updated: 星期一, 七月 10, 2017

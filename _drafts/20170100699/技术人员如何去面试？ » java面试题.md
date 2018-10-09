@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/ji-shu-ren-yuan-ru-he-qu-mian-shi.html"
 fileName:  "20170100699"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/ji-shu-ren-yuan-ru-he-qu-mian-shi.html"
+permalink: "2017/ji-shu-ren-yuan-ru-he-qu-mian-shi.html"
 ---
 {% raw %}
 每年3月-5月的离职跳槽高峰期，不论什么level的程序员们都开始纷纷去考虑勾兑猎头跳槽投递简历应聘面试等等关乎自己工作事业等重大问题的忙碌上面了。本文探讨的主要是如何选择公司、如何面试、如何谈薪水等实际的问题，可能描述会有偏颇，仅供参考。

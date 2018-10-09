@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/springmvc%e5%9f%ba%e7%a1%80%e5%8f%8a%e5%ba%94%e7
 fileName:  "20170101101"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/springmvc%e5%9f%ba%e7%a1%80%e5%8f%8a%e5%ba%94%e7%94%a8%e4%b8%80helloworld.html"
+permalink: "2017/springmvc%e5%9f%ba%e7%a1%80%e5%8f%8a%e5%ba%94%e7%94%a8%e4%b8%80helloworld.html"
 ---
 {% raw %}
 准备工具：

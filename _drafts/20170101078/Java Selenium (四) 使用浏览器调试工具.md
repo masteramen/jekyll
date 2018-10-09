@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/javaselenium%e5%9b%9b%e4%bd%bf%e7%94%a8%e6%b5%8f
 fileName:  "20170101078"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/javaselenium%e5%9b%9b%e4%bd%bf%e7%94%a8%e6%b5%8f%e8%a7%88%e5%99%a8%e8%b0%83%e8%af%95%e5%b7%a5%e5%85%b7.html"
+permalink: "2017/javaselenium%e5%9b%9b%e4%bd%bf%e7%94%a8%e6%b5%8f%e8%a7%88%e5%99%a8%e8%b0%83%e8%af%95%e5%b7%a5%e5%85%b7.html"
 ---
 {% raw %}
 在基于UI元素的自动化测试中, 无论是桌面的UI自动化测试,还是Web的UI自动化测试. 首先我们需要查找和识别UI元素.

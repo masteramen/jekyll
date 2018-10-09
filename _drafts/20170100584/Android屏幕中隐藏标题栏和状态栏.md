@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/android-hide-the-title-and-statubar.html"
 fileName:  "20170100584"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/android-hide-the-title-and-statubar.html"
+permalink: "2017/android-hide-the-title-and-statubar.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期日, 二月 23, 2014

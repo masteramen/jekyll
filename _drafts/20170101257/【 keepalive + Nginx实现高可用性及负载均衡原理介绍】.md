@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/keepalivenginx%e5%ae%9e%e7%8e%b0%e9%ab%98%e5%8f%
 fileName:  "20170101257"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/keepalivenginx%e5%ae%9e%e7%8e%b0%e9%ab%98%e5%8f%af%e7%94%a8%e6%80%a7%e5%8f%8a%e8%b4%9f%e8%bd%bd%e5%9d%87%e8%a1%a1%e5%8e%9f%e7%90%86%e4%bb%8b%e7%bb%8d.html"
+permalink: "2017/keepalivenginx%e5%ae%9e%e7%8e%b0%e9%ab%98%e5%8f%af%e7%94%a8%e6%80%a7%e5%8f%8a%e8%b4%9f%e8%bd%bd%e5%9d%87%e8%a1%a1%e5%8e%9f%e7%90%86%e4%bb%8b%e7%bb%8d.html"
 ---
 {% raw %}
 keepalive，是在TCP中一个可以检测死连接的机制。

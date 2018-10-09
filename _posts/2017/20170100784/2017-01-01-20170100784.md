@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/base64-jia-mi-url-di-zhi-can-shu-chuan-di-python
 fileName:  "20170100784"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/base64-jia-mi-url-di-zhi-can-shu-chuan-di-python-yu-php-ban-ben.html"
+permalink: "2017/base64-jia-mi-url-di-zhi-can-shu-chuan-di-python-yu-php-ban-ben.html"
 ---
 {% raw %}
 有关base64加密url地址栏参数值的方法，分为python与php二种版本加密url地址，需要的朋友参考下。

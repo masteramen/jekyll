@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/%e7%ac%ac%e4%b8%89%e6%96%b9jar%e5%8c%85%e4%b8%8e
 fileName:  "20170101089"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/%e7%ac%ac%e4%b8%89%e6%96%b9jar%e5%8c%85%e4%b8%8e%e9%a1%b9%e7%9b%ae%e4%b8%ad%e5%8c%85%e5%90%ab%e5%90%8c%e5%90%8d%e7%b1%bb%e6%97%b6%e7%9a%84%e5%a4%84%e7%90%86%e6%96%b9%e5%bc%8f.html"
+permalink: "2017/%e7%ac%ac%e4%b8%89%e6%96%b9jar%e5%8c%85%e4%b8%8e%e9%a1%b9%e7%9b%ae%e4%b8%ad%e5%8c%85%e5%90%ab%e5%90%8c%e5%90%8d%e7%b1%bb%e6%97%b6%e7%9a%84%e5%a4%84%e7%90%86%e6%96%b9%e5%bc%8f.html"
 ---
 {% raw %}
 当用ide工具创建一个类时，这个类与第三方jar包中的类名字冲突（全类名相同），工具会有警告提示，但是还是可以创建的。例如我导入了阿里的fastjson，然后在自己项目下创建类

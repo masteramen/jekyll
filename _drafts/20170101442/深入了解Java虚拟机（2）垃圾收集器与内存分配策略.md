@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/%e6%b7%b1%e5%85%a5%e4%ba%86%e8%a7%a3java%e8%99%9
 fileName:  "20170101442"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/%e6%b7%b1%e5%85%a5%e4%ba%86%e8%a7%a3java%e8%99%9a%e6%8b%9f%e6%9c%ba2%e5%9e%83%e5%9c%be%e6%94%b6%e9%9b%86%e5%99%a8%e4%b8%8e%e5%86%85%e5%ad%98%e5%88%86%e9%85%8d%e7%ad%96%e7%95%a5.html"
+permalink: "2017/%e6%b7%b1%e5%85%a5%e4%ba%86%e8%a7%a3java%e8%99%9a%e6%8b%9f%e6%9c%ba2%e5%9e%83%e5%9c%be%e6%94%b6%e9%9b%86%e5%99%a8%e4%b8%8e%e5%86%85%e5%ad%98%e5%88%86%e9%85%8d%e7%ad%96%e7%95%a5.html"
 ---
 {% raw %}
 由于JVM中对象的频繁操作是在堆中，所以主要回收的是堆内存，方法区中的回收也有，但是比较谨慎

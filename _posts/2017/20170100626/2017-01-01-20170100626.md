@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/error-prone-javascript-question.html"
 fileName:  "20170100626"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/error-prone-javascript-question.html"
+permalink: "2017/error-prone-javascript-question.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期二, 四月 29, 2014

@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/ejb%e7%b3%bb%e5%88%97ejb%e9%ab%98%e7%ba%a7%e6%a6
 fileName:  "20170101069"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/ejb%e7%b3%bb%e5%88%97ejb%e9%ab%98%e7%ba%a7%e6%a6%82%e5%bf%b5.html"
+permalink: "2017/ejb%e7%b3%bb%e5%88%97ejb%e9%ab%98%e7%ba%a7%e6%a6%82%e5%bf%b5.html"
 ---
 {% raw %}
 幕后的EJB:容器会为每一个bean实例自动生成称为EJB对象的代理, 由容器实现, 对使用者开发者透明

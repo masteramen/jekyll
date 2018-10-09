@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/j-d-k-he-j-r-e-de-qu-bie-shi-shi-me.html"
 fileName:  "20170100676"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/j-d-k-he-j-r-e-de-qu-bie-shi-shi-me.html"
+permalink: "2017/j-d-k-he-j-r-e-de-qu-bie-shi-shi-me.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期六, 八月 23, 2014

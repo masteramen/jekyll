@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java%e8%a7%a3%e6%9e%90uri%e5%ad%97%e7%ac%a6%e4%b
 fileName:  "20170100503"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java%e8%a7%a3%e6%9e%90uri%e5%ad%97%e7%ac%a6%e4%b8%b2map%e9%9b%86%e5%90%88.html"
+permalink: "2017/java%e8%a7%a3%e6%9e%90uri%e5%ad%97%e7%ac%a6%e4%b8%b2map%e9%9b%86%e5%90%88.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期二, 一月 28, 2014

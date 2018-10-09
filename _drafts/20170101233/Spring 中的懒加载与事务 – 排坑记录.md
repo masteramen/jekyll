@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/spring%e4%b8%ad%e7%9a%84%e6%87%92%e5%8a%a0%e8%bd
 fileName:  "20170101233"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/spring%e4%b8%ad%e7%9a%84%e6%87%92%e5%8a%a0%e8%bd%bd%e4%b8%8e%e4%ba%8b%e5%8a%a1%e6%8e%92%e5%9d%91%e8%ae%b0%e5%bd%95-2.html"
+permalink: "2017/spring%e4%b8%ad%e7%9a%84%e6%87%92%e5%8a%a0%e8%bd%bd%e4%b8%8e%e4%ba%8b%e5%8a%a1%e6%8e%92%e5%9d%91%e8%ae%b0%e5%bd%95-2.html"
 ---
 {% raw %}
 本文主要描述了开发中常见的几个与spring懒加载和事务相关的案例，主要描述常见的使用场景，以及如何规避他们，给出具体的代码。

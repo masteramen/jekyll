@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/advantages-and-disadvantages-of-the-new-features
 fileName:  "20170100616"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/advantages-and-disadvantages-of-the-new-features-of-java-8.html"
+permalink: "2017/advantages-and-disadvantages-of-the-new-features-of-java-8.html"
 ---
 {% raw %}
 Java 8或许是 迄今为止最令人期待的Java版本，最初定于今年的9月份发布，但由于一系列的安全漏洞问题，目前已推迟到明年的3月份。

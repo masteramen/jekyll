@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/shu-zu-you-mei-you-length-zhe-ge-fang-fa-String-
 fileName:  "20170100380"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/shu-zu-you-mei-you-length-zhe-ge-fang-fa-String-you-mei-you-length-zhe-ge-fang-fa.html"
+permalink: "2017/shu-zu-you-mei-you-length-zhe-ge-fang-fa-String-you-mei-you-length-zhe-ge-fang-fa.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期二, 五月 21, 2013

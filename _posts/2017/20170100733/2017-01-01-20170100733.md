@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/a-li-mian-shi-jing-li-ji-zong-jie-shu-ju-yan-fa-
 fileName:  "20170100733"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/a-li-mian-shi-jing-li-ji-zong-jie-shu-ju-yan-fa-java-yan-fa-fang-xiang.html"
+permalink: "2017/a-li-mian-shi-jing-li-ji-zong-jie-shu-ju-yan-fa-java-yan-fa-fang-xiang.html"
 ---
 {% raw %}
 我投的岗位“软件研发工程师”。到了面试现场，选择了Java语言（有对应的面试官）。不过，后面进行了交叉面试，被推到了“数据研发”岗位。

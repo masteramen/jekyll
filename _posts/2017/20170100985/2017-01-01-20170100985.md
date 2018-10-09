@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java-queue%e6%96%b9%e6%b3%95.html"
 fileName:  "20170100985"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java-queue%e6%96%b9%e6%b3%95.html"
+permalink: "2017/java-queue%e6%96%b9%e6%b3%95.html"
 ---
 {% raw %}
 By  - Last updated: 星期四, 六月 29, 2017

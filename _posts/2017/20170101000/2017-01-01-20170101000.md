@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/cia-vault7-%e7%b3%bb%e5%88%97%e5%90%8e%e7%bb%ad-
 fileName:  "20170101000"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/cia-vault7-%e7%b3%bb%e5%88%97%e5%90%8e%e7%bb%ad-%e6%96%b0%e5%b7%a5%e5%85%b7-elsa-%e5%8f%af%e9%80%9a%e8%bf%87wifi%e5%af%b9%e7%94%a8%e6%88%b7%e8%bf%9b%e8%a1%8c%e5%ae%9a%e4%bd%8d.html"
+permalink: "2017/cia-vault7-%e7%b3%bb%e5%88%97%e5%90%8e%e7%bb%ad-%e6%96%b0%e5%b7%a5%e5%85%b7-elsa-%e5%8f%af%e9%80%9a%e8%bf%87wifi%e5%af%b9%e7%94%a8%e6%88%b7%e8%bf%9b%e8%a1%8c%e5%ae%9a%e4%bd%8d.html"
 ---
 {% raw %}
 如果目标设备连接上了网络，恶意程序就会自动尝试使用谷歌或微软的公共地理位置数据库进行地理位置匹配，并将经纬度数据及时间戳一起保存下来。—— WikiLeaks

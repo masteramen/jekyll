@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/%e4%b8%8egooglecloudplatf%e4%b8%8a%e7%9a%84kuber
 fileName:  "20170101219"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/%e4%b8%8egooglecloudplatf%e4%b8%8a%e7%9a%84kubernetes%e6%b7%b7%e5%90%88%e4%bd%bf%e7%94%a8.html"
+permalink: "2017/%e4%b8%8egooglecloudplatf%e4%b8%8a%e7%9a%84kubernetes%e6%b7%b7%e5%90%88%e4%bd%bf%e7%94%a8.html"
 ---
 {% raw %}
 作者Allan Naim,产品GTM负责人,Kubernetes和集装箱发动机

@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java-mutil-thread-develop-history.html"
 fileName:  "20170100583"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java-mutil-thread-develop-history.html"
+permalink: "2017/java-mutil-thread-develop-history.html"
 ---
 {% raw %}
 这篇文章，大部分内容，是周五我做的一个关于如何进行Java多线程编程的Knowledge Sharing的一个整理，我希望能对Java从第一个版本开始，在多线程编程方面的大事件和发展脉络有一个描述，并且提及一些在多线程编程方面常见的问题。对于Java程序员来说，如果从历史的角度去了解一门语言一个特性的演进，或许能有不同收获。

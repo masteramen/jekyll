@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java_util_concurrent_executionexception_org_apac
 fileName:  "20170100862"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java_util_concurrent_executionexception_org_apache_catalina_lifecycleexcept_wen_ti_jie_jue_fang_an.html"
+permalink: "2017/java_util_concurrent_executionexception_org_apache_catalina_lifecycleexcept_wen_ti_jie_jue_fang_an.html"
 ---
 {% raw %}
 在部署Dynamic Web Project时，如果正确配置web.xml或者标注时，仍然出现以上异常的话，可以尝试以下内容讲解的方法：

@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/tan-tan-final-finally-finalize-de-qu-bie.html"
 fileName:  "20170100371"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/tan-tan-final-finally-finalize-de-qu-bie.html"
+permalink: "2017/tan-tan-final-finally-finalize-de-qu-bie.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期二, 五月 21, 2013

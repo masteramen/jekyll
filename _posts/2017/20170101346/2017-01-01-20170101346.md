@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/idea2017tomcat%e7%83%ad%e9%83%a8%e7%bd%b2%e9%85%
 fileName:  "20170101346"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/idea2017tomcat%e7%83%ad%e9%83%a8%e7%bd%b2%e9%85%8d%e7%bd%ae.html"
+permalink: "2017/idea2017tomcat%e7%83%ad%e9%83%a8%e7%bd%b2%e9%85%8d%e7%bd%ae.html"
 ---
 {% raw %}
 # idea2017+tomcat热部署配置 

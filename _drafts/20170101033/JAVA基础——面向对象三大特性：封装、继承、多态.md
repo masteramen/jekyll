@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java%e5%9f%ba%e7%a1%80-%e9%9d%a2%e5%90%91%e5%af%
 fileName:  "20170101033"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java%e5%9f%ba%e7%a1%80-%e9%9d%a2%e5%90%91%e5%af%b9%e8%b1%a1%e4%b8%89%e5%a4%a7%e7%89%b9%e6%80%a7%ef%bc%9a%e5%b0%81%e8%a3%85%e3%80%81%e7%bb%a7%e6%89%bf%e3%80%81%e5%a4%9a%e6%80%81.html"
+permalink: "2017/java%e5%9f%ba%e7%a1%80-%e9%9d%a2%e5%90%91%e5%af%b9%e8%b1%a1%e4%b8%89%e5%a4%a7%e7%89%b9%e6%80%a7%ef%bc%9a%e5%b0%81%e8%a3%85%e3%80%81%e7%bb%a7%e6%89%bf%e3%80%81%e5%a4%9a%e6%80%81.html"
 ---
 {% raw %}
 将类的某些信息隐藏在类内部，不允许外部程序直接访问，而是通过该类提供的方法来实现对隐藏信息的操作和访问。

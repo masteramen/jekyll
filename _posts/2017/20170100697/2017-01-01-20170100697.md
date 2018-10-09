@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/jian-dan-hao-yong-de-qing-liang-ji-html-bian-ji-
 fileName:  "20170100697"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/jian-dan-hao-yong-de-qing-liang-ji-html-bian-ji-qi-tinyeditor.html"
+permalink: "2017/jian-dan-hao-yong-de-qing-liang-ji-html-bian-ji-qi-tinyeditor.html"
 ---
 {% raw %}
 new TINY.editor.edit('editor',{

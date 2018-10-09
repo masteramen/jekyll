@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/webpack-da-bao-hou-shi-yong-jquery-de-wen-ti.htm
 fileName:  "20170100817"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/webpack-da-bao-hou-shi-yong-jquery-de-wen-ti.html"
+permalink: "2017/webpack-da-bao-hou-shi-yong-jquery-de-wen-ti.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期二, 四月 4, 2017

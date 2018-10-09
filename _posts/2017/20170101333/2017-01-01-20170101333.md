@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/spring%e5%9f%ba%e7%a1%80%e7%b3%bb%e5%88%97javaco
 fileName:  "20170101333"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/spring%e5%9f%ba%e7%a1%80%e7%b3%bb%e5%88%97javaconfig%e9%85%8d%e7%bd%ae.html"
+permalink: "2017/spring%e5%9f%ba%e7%a1%80%e7%b3%bb%e5%88%97javaconfig%e9%85%8d%e7%bd%ae.html"
 ---
 {% raw %}
 早以前，Spring推荐使用XML的方式来定义Bean及Bean之间的装配规则，但是在Spring3之后，Spring提出的强大的JavaConfig这种类型安全的Bean装配方式，它基于Java代码的灵活性，使得装配的过程也变得及其灵活。

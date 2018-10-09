@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/%e5%88%a9%e7%94%a8flume%e5%b0%86mysql%e8%a1%a8%e
 fileName:  "20170100950"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/%e5%88%a9%e7%94%a8flume%e5%b0%86mysql%e8%a1%a8%e6%95%b0%e6%8d%ae%e5%87%86%e5%ae%9e%e6%97%b6%e6%8a%bd%e5%8f%96%e5%88%b0hdfs.html"
+permalink: "2017/%e5%88%a9%e7%94%a8flume%e5%b0%86mysql%e8%a1%a8%e6%95%b0%e6%8d%ae%e5%87%86%e5%ae%9e%e6%97%b6%e6%8a%bd%e5%8f%96%e5%88%b0hdfs.html"
 ---
 {% raw %}
 # 利用Flume将MySQL表数据准实时抽取到HDFS 

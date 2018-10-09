@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/5-tools-help-you-to-write-better-java-code.html"
 fileName:  "20170100581"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/5-tools-help-you-to-write-better-java-code.html"
+permalink: "2017/5-tools-help-you-to-write-better-java-code.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期六, 二月 22, 2014

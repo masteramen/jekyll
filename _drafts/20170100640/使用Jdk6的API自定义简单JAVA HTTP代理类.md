@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/using-jdk6-api-to-create-custom-simple-java-http
 fileName:  "20170100640"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/using-jdk6-api-to-create-custom-simple-java-http-proxy-class.html"
+permalink: "2017/using-jdk6-api-to-create-custom-simple-java-http-proxy-class.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期二, 五月 20, 2014

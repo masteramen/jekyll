@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/4-ge-li-you-rang-ni-ming-bai-wei-shi-me-chrome-l
 fileName:  "20170100753"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/4-ge-li-you-rang-ni-ming-bai-wei-shi-me-chrome-liu-lan-qi-te-ai-chi-na-cun.html"
+permalink: "2017/4-ge-li-you-rang-ni-ming-bai-wei-shi-me-chrome-liu-lan-qi-te-ai-chi-na-cun.html"
 ---
 {% raw %}
 微软用惯用的手法——改名——给 IE 被黑的一生画上了句号。还好，它在技术段子圈里早就有了接班人：Chrome。

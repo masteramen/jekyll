@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java%e5%9f%ba%e7%a1%8010java%e4%b8%adthrow%e5%92
 fileName:  "20170101454"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java%e5%9f%ba%e7%a1%8010java%e4%b8%adthrow%e5%92%8cthrows%e7%9a%84%e5%8c%ba%e5%88%ab.html"
+permalink: "2017/java%e5%9f%ba%e7%a1%8010java%e4%b8%adthrow%e5%92%8cthrows%e7%9a%84%e5%8c%ba%e5%88%ab.html"
 ---
 {% raw %}
 **系统自动抛出的异常**

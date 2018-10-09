@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/maven%e8%bd%ac%e5%8c%96%e4%b8%badynamic-web-modu
 fileName:  "20170100983"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/maven%e8%bd%ac%e5%8c%96%e4%b8%badynamic-web-module.html"
+permalink: "2017/maven%e8%bd%ac%e5%8c%96%e4%b8%badynamic-web-module.html"
 ---
 {% raw %}
 如今Maven仍然是最常用的项目管理工具，若要将Java Web项目使用Maven进行管理，则首先需要新建Maven项目，然后将其转化为web项目。

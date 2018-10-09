@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/%e7%aa%97%e5%8f%a3%e7%ae%a1%e7%90%86%e5%99%a8xmo
 fileName:  "20170101401"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/%e7%aa%97%e5%8f%a3%e7%ae%a1%e7%90%86%e5%99%a8xmonad%e6%95%99%e7%a8%8b.html"
+permalink: "2017/%e7%aa%97%e5%8f%a3%e7%ae%a1%e7%90%86%e5%99%a8xmonad%e6%95%99%e7%a8%8b.html"
 ---
 {% raw %}
 开发者最需要的，就是一个顺手的开发环境。 

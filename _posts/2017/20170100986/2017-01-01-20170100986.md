@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/19%e4%b8%aajavascript%e7%bc%96%e7%a0%81%e5%b0%8f
 fileName:  "20170100986"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/19%e4%b8%aajavascript%e7%bc%96%e7%a0%81%e5%b0%8f%e6%8a%80%e5%b7%a7.html"
+permalink: "2017/19%e4%b8%aajavascript%e7%bc%96%e7%a0%81%e5%b0%8f%e6%8a%80%e5%b7%a7.html"
 ---
 {% raw %}
 这篇文章适合任何一位基于JavaScript开发的开发者。我写这篇文章主要涉及JavaScript中一些简写的代码，帮助大家更好理解一些JavaScript的基础。希望这些代码能从不同的角度帮助你更好的理解JavaScript。 

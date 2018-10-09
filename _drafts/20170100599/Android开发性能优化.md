@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/android-development-performance-optimization.htm
 fileName:  "20170100599"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/android-development-performance-optimization.html"
+permalink: "2017/android-development-performance-optimization.html"
 ---
 {% raw %}
 一， 内存优化：

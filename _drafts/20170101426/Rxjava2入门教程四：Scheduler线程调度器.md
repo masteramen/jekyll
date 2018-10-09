@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/rxjava2%e5%85%a5%e9%97%a8%e6%95%99%e7%a8%8b%e5%9
 fileName:  "20170101426"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/rxjava2%e5%85%a5%e9%97%a8%e6%95%99%e7%a8%8b%e5%9b%9bscheduler%e7%ba%bf%e7%a8%8b%e8%b0%83%e5%ba%a6%e5%99%a8.html"
+permalink: "2017/rxjava2%e5%85%a5%e9%97%a8%e6%95%99%e7%a8%8b%e5%9b%9bscheduler%e7%ba%bf%e7%a8%8b%e8%b0%83%e5%ba%a6%e5%99%a8.html"
 ---
 {% raw %}
 作者[冯丰枫](/u/f7176d6d53d2)2017.07.30 13:16字数 1678

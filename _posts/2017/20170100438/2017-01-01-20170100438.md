@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java-spring-shi-wu-mian-shi-ti.html"
 fileName:  "20170100438"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java-spring-shi-wu-mian-shi-ti.html"
+permalink: "2017/java-spring-shi-wu-mian-shi-ti.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期一, 六月 17, 2013

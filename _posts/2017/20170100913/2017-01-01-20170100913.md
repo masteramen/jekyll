@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/guava-eventbus%e4%bb%a3%e7%a0%81%e5%88%86%e6%9e%
 fileName:  "20170100913"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/guava-eventbus%e4%bb%a3%e7%a0%81%e5%88%86%e6%9e%90-%e4%b8%80.html"
+permalink: "2017/guava-eventbus%e4%bb%a3%e7%a0%81%e5%88%86%e6%9e%90-%e4%b8%80.html"
 ---
 {% raw %}
 分析guava eventbus之前，先看一下传统观察者模式的写法：

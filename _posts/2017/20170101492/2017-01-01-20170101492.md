@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/hashmap%e5%ae%9e%e7%8e%b0%e5%8e%9f%e7%90%86%e5%8
 fileName:  "20170101492"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/hashmap%e5%ae%9e%e7%8e%b0%e5%8e%9f%e7%90%86%e5%88%86%e6%9e%90java%e6%ba%90%e7%a0%81%e5%89%96%e6%9e%90.html"
+permalink: "2017/hashmap%e5%ae%9e%e7%8e%b0%e5%8e%9f%e7%90%86%e5%88%86%e6%9e%90java%e6%ba%90%e7%a0%81%e5%89%96%e6%9e%90.html"
 ---
 {% raw %}
 HashMap是Java程序员使用频率最高的用于映射(键值对)处理的数据类型。随着JDK（Java Developmet Kit）版本的更新，JDK1.8对HashMap底层的实现进行了优化，例如引入红黑树的数据结构和扩容的优化等。本文结合JDK1.7和JDK1.8的区别，深入探讨HashMap的结构实现和功能原理。

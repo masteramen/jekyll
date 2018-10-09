@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/web-she-ji-html5-he-css3-xin-jiao-hu-te-xing.htm
 fileName:  "20170100566"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/web-she-ji-html5-he-css3-xin-jiao-hu-te-xing.html"
+permalink: "2017/web-she-ji-html5-he-css3-xin-jiao-hu-te-xing.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期二, 二月 18, 2014

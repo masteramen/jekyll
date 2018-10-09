@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/xia-lie-shuo-fa-zheng-que-de-shi.html"
 fileName:  "20170100401"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/xia-lie-shuo-fa-zheng-que-de-shi.html"
+permalink: "2017/xia-lie-shuo-fa-zheng-que-de-shi.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期日, 五月 26, 2013

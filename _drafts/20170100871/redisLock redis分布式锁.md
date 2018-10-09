@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/redislock-redis%e5%88%86%e5%b8%83%e5%bc%8f%e9%94
 fileName:  "20170100871"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/redislock-redis%e5%88%86%e5%b8%83%e5%bc%8f%e9%94%81.html"
+permalink: "2017/redislock-redis%e5%88%86%e5%b8%83%e5%bc%8f%e9%94%81.html"
 ---
 {% raw %}
 H2M_LI_HEADER redis setnx cmmand

@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/%e6%9e%84%e5%bb%ba%e8%87%aa%e5%b7%b1%e7%9a%84tom
 fileName:  "20170101271"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/%e6%9e%84%e5%bb%ba%e8%87%aa%e5%b7%b1%e7%9a%84tomcat%e9%95%9c%e5%83%8f.html"
+permalink: "2017/%e6%9e%84%e5%bb%ba%e8%87%aa%e5%b7%b1%e7%9a%84tomcat%e9%95%9c%e5%83%8f.html"
 ---
 {% raw %}
 H2M_LI_HEADER 在官方提供的Tomcat镜像的基础上进行构建（以官方Tomcat镜像为父镜像）。官方的Tomcat镜像已经为我们做了很多工作，我们只需要修改部分内容即可。

@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java-multi-threaded-download-code.html"
 fileName:  "20170100655"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java-multi-threaded-download-code.html"
+permalink: "2017/java-multi-threaded-download-code.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期四, 七月 10, 2014

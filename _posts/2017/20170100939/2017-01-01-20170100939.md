@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/%e5%88%a9%e7%94%a8listener%e5%ae%9e%e7%8e%b0%e7%
 fileName:  "20170100939"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/%e5%88%a9%e7%94%a8listener%e5%ae%9e%e7%8e%b0%e7%bd%91%e7%ab%99%e7%b4%af%e7%a7%af%e8%ae%bf%e9%97%ae%e4%ba%ba%e6%95%b0-%e6%9c%80%e5%a4%a7%e5%90%8c%e6%97%b6%e5%9c%a8%e7%ba%bf%e4%ba%ba%e6%95%b0-%e5%bd%93.html"
+permalink: "2017/%e5%88%a9%e7%94%a8listener%e5%ae%9e%e7%8e%b0%e7%bd%91%e7%ab%99%e7%b4%af%e7%a7%af%e8%ae%bf%e9%97%ae%e4%ba%ba%e6%95%b0-%e6%9c%80%e5%a4%a7%e5%90%8c%e6%97%b6%e5%9c%a8%e7%ba%bf%e4%ba%ba%e6%95%b0-%e5%bd%93.html"
 ---
 {% raw %}
 1package com.lt.listener;

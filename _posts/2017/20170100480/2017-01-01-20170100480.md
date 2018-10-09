@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/zai-spring-zhong-hun-he-shi-yong-hibernate-he-ib
 fileName:  "20170100480"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/zai-spring-zhong-hun-he-shi-yong-hibernate-he-ibatis-de-pei-zhi-fang-fa.html"
+permalink: "2017/zai-spring-zhong-hun-he-shi-yong-hibernate-he-ibatis-de-pei-zhi-fang-fa.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期三, 十月 30, 2013

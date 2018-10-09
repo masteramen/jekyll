@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/guan-yu-java-dui-xiang-xu-lie-hua-nin-bu-zhi-dao
 fileName:  "20170100780"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/guan-yu-java-dui-xiang-xu-lie-hua-nin-bu-zhi-dao-de-5-jian-shi.html"
+permalink: "2017/guan-yu-java-dui-xiang-xu-lie-hua-nin-bu-zhi-dao-de-5-jian-shi.html"
 ---
 {% raw %}
 数年前，当和一个软件团队一起用 Java 语言编写一个应用程序时，我体会到比一般程序员多知道一点关于 Java 对象序列化的知识所带来的好处。

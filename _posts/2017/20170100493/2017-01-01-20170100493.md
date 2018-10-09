@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/webservice-cxf-huo-qu-ke-hu-duan-de-ip-di-zhi.ht
 fileName:  "20170100493"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/webservice-cxf-huo-qu-ke-hu-duan-de-ip-di-zhi.html"
+permalink: "2017/webservice-cxf-huo-qu-ke-hu-duan-de-ip-di-zhi.html"
 ---
 {% raw %}
 最近这几天在做一个用户同步，具体就是当权限系统中添加用户后，把该用户的信息同步到论坛系统中去，服务器端发布webservice采用的是cxf框架，这时候一个业务需求就是能获取到客户端的ip,并将这字段存到数据库中，用于论坛统计。

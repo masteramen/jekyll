@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java%e5%86%85%e9%83%a8%e7%b1%bb%e5%9f%ba%e6%9c%a
 fileName:  "20170101014"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java%e5%86%85%e9%83%a8%e7%b1%bb%e5%9f%ba%e6%9c%ac%e4%bd%bf%e7%94%a8.html"
+permalink: "2017/java%e5%86%85%e9%83%a8%e7%b1%bb%e5%9f%ba%e6%9c%ac%e4%bd%bf%e7%94%a8.html"
 ---
 {% raw %}
 ??创建内部类时，那个类的对象同时拥有封装对象(封装内部类的外部类)的一个链接，所以内部类可以访问外部类的成员。

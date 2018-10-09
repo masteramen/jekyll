@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/finally%e4%b8%80%e5%ae%9a%e4%bc%9a%e6%89%a7%e8%a
 fileName:  "20170101110"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/finally%e4%b8%80%e5%ae%9a%e4%bc%9a%e6%89%a7%e8%a1%8c.html"
+permalink: "2017/finally%e4%b8%80%e5%ae%9a%e4%bc%9a%e6%89%a7%e8%a1%8c.html"
 ---
 {% raw %}
 class Exc{

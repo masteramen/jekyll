@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/%e4%b8%ba%e4%bd%a0%e7%9a%84web%e7%a8%8b%e5%ba%8f
 fileName:  "20170101008"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/%e4%b8%ba%e4%bd%a0%e7%9a%84web%e7%a8%8b%e5%ba%8f%e5%8a%a0%e4%b8%aa%e5%90%af%e5%8a%a8%e7%94%bb%e9%9d%a2.html"
+permalink: "2017/%e4%b8%ba%e4%bd%a0%e7%9a%84web%e7%a8%8b%e5%ba%8f%e5%8a%a0%e4%b8%aa%e5%90%af%e5%8a%a8%e7%94%bb%e9%9d%a2.html"
 ---
 {% raw %}
 # 为你的Web程序加个启动画面 

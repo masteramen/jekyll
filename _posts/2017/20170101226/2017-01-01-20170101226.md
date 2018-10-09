@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/%e6%ad%bb%e7%a3%95java%e5%b9%b6%e5%8f%91juc%e4%b
 fileName:  "20170101226"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/%e6%ad%bb%e7%a3%95java%e5%b9%b6%e5%8f%91juc%e4%b9%8bjava%e5%b9%b6%e5%8f%91%e5%ae%b9%e5%99%a8concurrentlinkedqueue.html"
+permalink: "2017/%e6%ad%bb%e7%a3%95java%e5%b9%b6%e5%8f%91juc%e4%b9%8bjava%e5%b9%b6%e5%8f%91%e5%ae%b9%e5%99%a8concurrentlinkedqueue.html"
 ---
 {% raw %}
 要实现一个线程安全的队列有两种方式：阻塞和非阻塞。阻塞队列无非就是锁的应用，而非阻塞则是CAS算法的应用。下面我们就开始一个非阻塞算法的研究：CoucurrentLinkedQueue。

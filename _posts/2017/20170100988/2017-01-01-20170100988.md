@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/aws-ec2%e7%9a%84iam-role%e6%b7%b1%e5%ba%a6%e8%a7
 fileName:  "20170100988"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/aws-ec2%e7%9a%84iam-role%e6%b7%b1%e5%ba%a6%e8%a7%a3%e6%9e%90.html"
+permalink: "2017/aws-ec2%e7%9a%84iam-role%e6%b7%b1%e5%ba%a6%e8%a7%a3%e6%9e%90.html"
 ---
 {% raw %}
 **Aws ec2 iam role**

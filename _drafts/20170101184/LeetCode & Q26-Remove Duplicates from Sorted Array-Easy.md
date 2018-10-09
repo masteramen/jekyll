@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/leetcodeq26removeduplicatesfromsortedarrayeasy.h
 fileName:  "20170101184"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/leetcodeq26removeduplicatesfromsortedarrayeasy.html"
+permalink: "2017/leetcodeq26removeduplicatesfromsortedarrayeasy.html"
 ---
 {% raw %}
 Given a sorted array, remove the duplicates in place such that each element appear only *once* and return the new length.

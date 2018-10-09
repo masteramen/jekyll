@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/linkedlist%e5%8e%9f%e7%90%86%e5%8f%8a%e6%ba%90%e
 fileName:  "20170101204"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/linkedlist%e5%8e%9f%e7%90%86%e5%8f%8a%e6%ba%90%e7%a0%81%e8%a7%a3%e6%9e%90.html"
+permalink: "2017/linkedlist%e5%8e%9f%e7%90%86%e5%8f%8a%e6%ba%90%e7%a0%81%e8%a7%a3%e6%9e%90.html"
 ---
 {% raw %}
 # LinkedList原理及源码解析 

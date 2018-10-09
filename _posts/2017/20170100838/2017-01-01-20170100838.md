@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/springmvc-jie-shou-can-shu.html"
 fileName:  "20170100838"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/springmvc-jie-shou-can-shu.html"
+permalink: "2017/springmvc-jie-shou-can-shu.html"
 ---
 {% raw %}
 public ModelAndView test1(HttpServletRequest req){ 

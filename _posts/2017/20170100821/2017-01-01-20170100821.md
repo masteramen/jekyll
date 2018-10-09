@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/guan-yu-java-mian-shi-ni-ying-gai-zhun-bei-zhe-x
 fileName:  "20170100821"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/guan-yu-java-mian-shi-ni-ying-gai-zhun-bei-zhe-xie-zhi-shi-dian.html"
+permalink: "2017/guan-yu-java-mian-shi-ni-ying-gai-zhun-bei-zhe-xie-zhi-shi-dian.html"
 ---
 {% raw %}
 原文出处： [占小狼](https://www.jfox.info/go.php?url=http://www.jianshu.com/p/1b2f63a45476)

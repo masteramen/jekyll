@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/the-nature-of-java-language-interface-and-inheri
 fileName:  "20170100591"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/the-nature-of-java-language-interface-and-inheritance.html"
+permalink: "2017/the-nature-of-java-language-interface-and-inheritance.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期三, 二月 26, 2014

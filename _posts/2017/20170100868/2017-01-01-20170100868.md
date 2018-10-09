@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/io-%e5%ad%97%e8%8a%82%e6%b5%81-%e9%ab%98%e6%95%8
 fileName:  "20170100868"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/io-%e5%ad%97%e8%8a%82%e6%b5%81-%e9%ab%98%e6%95%88%e6%b5%81.html"
+permalink: "2017/io-%e5%ad%97%e8%8a%82%e6%b5%81-%e9%ab%98%e6%95%88%e6%b5%81.html"
 ---
 {% raw %}
 **IO流:**

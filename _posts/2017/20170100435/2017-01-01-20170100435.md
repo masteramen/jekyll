@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java-duo-xian-cheng-mian-shi-ti-qing-shuo-chu-ni
 fileName:  "20170100435"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java-duo-xian-cheng-mian-shi-ti-qing-shuo-chu-ni-suo-zhi-dao-de-xian-cheng-tong-bu-de-fang-fa.html"
+permalink: "2017/java-duo-xian-cheng-mian-shi-ti-qing-shuo-chu-ni-suo-zhi-dao-de-xian-cheng-tong-bu-de-fang-fa.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期五, 六月 14, 2013

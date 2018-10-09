@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/jquery%e4%b8%ad%e7%9a%84sortable%e6%8e%92%e5%ba%
 fileName:  "20170100530"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/jquery%e4%b8%ad%e7%9a%84sortable%e6%8e%92%e5%ba%8f%e4%b9%8b%e5%90%8e%e7%9a%84%e4%bf%9d%e5%ad%98%e7%8a%b6%e6%80%81%e5%88%b0%e5%90%8e%e5%8f%b0%e7%9a%84%e8%a7%a3%e5%86%b3%e6%96%b9%e6%b3%95.html"
+permalink: "2017/jquery%e4%b8%ad%e7%9a%84sortable%e6%8e%92%e5%ba%8f%e4%b9%8b%e5%90%8e%e7%9a%84%e4%bf%9d%e5%ad%98%e7%8a%b6%e6%80%81%e5%88%b0%e5%90%8e%e5%8f%b0%e7%9a%84%e8%a7%a3%e5%86%b3%e6%96%b9%e6%b3%95.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期五, 二月 7, 2014

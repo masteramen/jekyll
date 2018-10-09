@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java%e7%ba%bf%e7%a8%8b%e4%b9%8bsleep-wait-yield-
 fileName:  "20170100996"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java%e7%ba%bf%e7%a8%8b%e4%b9%8bsleep-wait-yield-%e4%b8%89%e4%b8%aa%e6%96%b9%e6%b3%95%e7%9a%84%e4%bd%9c%e7%94%a8%e5%92%8c%e7%89%b9%e7%82%b9.html"
+permalink: "2017/java%e7%ba%bf%e7%a8%8b%e4%b9%8bsleep-wait-yield-%e4%b8%89%e4%b8%aa%e6%96%b9%e6%b3%95%e7%9a%84%e4%bd%9c%e7%94%a8%e5%92%8c%e7%89%b9%e7%82%b9.html"
 ---
 {% raw %}
 —恢复内容开始—

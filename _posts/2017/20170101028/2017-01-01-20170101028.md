@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/spring-boot-quickstart-2-%e5%9f%ba%e7%a1%80.html
 fileName:  "20170101028"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/spring-boot-quickstart-2-%e5%9f%ba%e7%a1%80.html"
+permalink: "2017/spring-boot-quickstart-2-%e5%9f%ba%e7%a1%80.html"
 ---
 {% raw %}
 环境：Spring Boot 1.5.4

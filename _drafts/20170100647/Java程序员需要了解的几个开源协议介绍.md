@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java-programmers-need-konw-the-open-source-agree
 fileName:  "20170100647"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java-programmers-need-konw-the-open-source-agreements.html"
+permalink: "2017/java-programmers-need-konw-the-open-source-agreements.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期六, 五月 31, 2014

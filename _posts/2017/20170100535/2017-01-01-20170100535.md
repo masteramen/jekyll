@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/chrome%e6%b5%8f%e8%a7%88%e5%99%a8%e6%8a%a5%e9%94
 fileName:  "20170100535"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/chrome%e6%b5%8f%e8%a7%88%e5%99%a8%e6%8a%a5%e9%94%99%ef%bc%9aorigin-null-is-not-allowed-by-access-control-allow-origin-%e9%97%ae%e9%a2%98%e8%a7%a3%e5%86%b3.html"
+permalink: "2017/chrome%e6%b5%8f%e8%a7%88%e5%99%a8%e6%8a%a5%e9%94%99%ef%bc%9aorigin-null-is-not-allowed-by-access-control-allow-origin-%e9%97%ae%e9%a2%98%e8%a7%a3%e5%86%b3.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期日, 二月 9, 2014

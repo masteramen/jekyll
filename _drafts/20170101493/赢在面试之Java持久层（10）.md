@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/%e8%b5%a2%e5%9c%a8%e9%9d%a2%e8%af%95%e4%b9%8bjav
 fileName:  "20170101493"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/%e8%b5%a2%e5%9c%a8%e9%9d%a2%e8%af%95%e4%b9%8bjava%e6%8c%81%e4%b9%85%e5%b1%8210.html"
+permalink: "2017/%e8%b5%a2%e5%9c%a8%e9%9d%a2%e8%af%95%e4%b9%8bjava%e6%8c%81%e4%b9%85%e5%b1%8210.html"
 ---
 {% raw %}
 91，什么是ORM？对象关系映射（Object-Relational Mapping，简称ORM）是一种为了解决程序的面向对象模型与数据库的关系模型互不匹配问题的技术； 

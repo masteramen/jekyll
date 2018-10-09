@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/solr66%e6%90%9c%e7%b4%a2%e7%8e%af%e5%a2%83%e6%90
 fileName:  "20170101138"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/solr66%e6%90%9c%e7%b4%a2%e7%8e%af%e5%a2%83%e6%90%ad%e5%bb%baik%e4%b8%ad%e6%96%87%e5%88%86%e8%af%8d%e5%90%8c%e4%b9%89%e8%af%8d%e6%8b%bc%e9%9f%b3solrj%e7%9a%84%e4%bd%bf%e7%94%a8.html"
+permalink: "2017/solr66%e6%90%9c%e7%b4%a2%e7%8e%af%e5%a2%83%e6%90%ad%e5%bb%baik%e4%b8%ad%e6%96%87%e5%88%86%e8%af%8d%e5%90%8c%e4%b9%89%e8%af%8d%e6%8b%bc%e9%9f%b3solrj%e7%9a%84%e4%bd%bf%e7%94%a8.html"
 ---
 {% raw %}
 2017-06-20 Apache官网发布了solr6.6版本下载地址

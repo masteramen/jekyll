@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/shuo-chu-Servlet-de-sheng-ming-zhou-qi-bing-shuo
 fileName:  "20170100375"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/shuo-chu-Servlet-de-sheng-ming-zhou-qi-bing-shuo-chu-Servlet-he-CGI-de-qu-bie.html"
+permalink: "2017/shuo-chu-Servlet-de-sheng-ming-zhou-qi-bing-shuo-chu-Servlet-he-CGI-de-qu-bie.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期二, 五月 21, 2013

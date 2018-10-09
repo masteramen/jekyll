@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/%e5%85%b3%e4%ba%8ejava%e7%9a%84%e4%ba%8c%e7%bb%b
 fileName:  "20170101311"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/%e5%85%b3%e4%ba%8ejava%e7%9a%84%e4%ba%8c%e7%bb%b4%e7%a0%81%e7%9a%84%e7%94%9f%e6%88%90%e4%b8%8e%e8%a7%a3%e6%9e%90.html"
+permalink: "2017/%e5%85%b3%e4%ba%8ejava%e7%9a%84%e4%ba%8c%e7%bb%b4%e7%a0%81%e7%9a%84%e7%94%9f%e6%88%90%e4%b8%8e%e8%a7%a3%e6%9e%90.html"
 ---
 {% raw %}
 本文说的是通过zxing实现二维码的生成与解析，看着很简单，直接上代码

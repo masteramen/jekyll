@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/oracle-shu-ju-ku-you-hua-biao-fen-qu-yu-suo-yin-
 fileName:  "20170100466"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/oracle-shu-ju-ku-you-hua-biao-fen-qu-yu-suo-yin-fen-qu.html"
+permalink: "2017/oracle-shu-ju-ku-you-hua-biao-fen-qu-yu-suo-yin-fen-qu.html"
 ---
 {% raw %}
 一、Oracle分区简介 

@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/mina-socket-lian-jie-qi-niosocketconnector.html"
 fileName:  "20170100854"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/mina-socket-lian-jie-qi-niosocketconnector.html"
+permalink: "2017/mina-socket-lian-jie-qi-niosocketconnector.html"
 ---
 {% raw %}
 By  - Last updated: 星期二, 六月 20, 2017

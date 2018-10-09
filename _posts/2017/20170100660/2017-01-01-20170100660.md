@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/difference-between-abstract-class-and-interface-
 fileName:  "20170100660"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/difference-between-abstract-class-and-interface-in-java-for-interview.html"
+permalink: "2017/difference-between-abstract-class-and-interface-in-java-for-interview.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期三, 七月 16, 2014

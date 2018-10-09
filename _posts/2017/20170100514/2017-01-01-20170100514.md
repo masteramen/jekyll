@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/ru-he-tian-jia-jar-wen-jian-dao-maven-gou-jian-c
 fileName:  "20170100514"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/ru-he-tian-jia-jar-wen-jian-dao-maven-gou-jian-classpath-zhong.html"
+permalink: "2017/ru-he-tian-jia-jar-wen-jian-dao-maven-gou-jian-classpath-zhong.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期六, 二月 1, 2014

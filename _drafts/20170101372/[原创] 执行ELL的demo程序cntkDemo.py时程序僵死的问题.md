@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/%e5%8e%9f%e5%88%9b%e6%89%a7%e8%a1%8cell%e7%9a%84
 fileName:  "20170101372"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/%e5%8e%9f%e5%88%9b%e6%89%a7%e8%a1%8cell%e7%9a%84demo%e7%a8%8b%e5%ba%8fcntkdemopy%e6%97%b6%e7%a8%8b%e5%ba%8f%e5%83%b5%e6%ad%bb%e7%9a%84%e9%97%ae%e9%a2%98.html"
+permalink: "2017/%e5%8e%9f%e5%88%9b%e6%89%a7%e8%a1%8cell%e7%9a%84demo%e7%a8%8b%e5%ba%8fcntkdemopy%e6%97%b6%e7%a8%8b%e5%ba%8f%e5%83%b5%e6%ad%bb%e7%9a%84%e9%97%ae%e9%a2%98.html"
 ---
 {% raw %}
 OS：Ubuntu 14.04 

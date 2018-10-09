@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/jie-jue-qian-duan-html5-he-egret-kua-yu-qing-qiu
 fileName:  "20170100832"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/jie-jue-qian-duan-html5-he-egret-kua-yu-qing-qiu-http-shu-ju-de-li-zi.html"
+permalink: "2017/jie-jue-qian-duan-html5-he-egret-kua-yu-qing-qiu-http-shu-ju-de-li-zi.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期五, 六月 9, 2017

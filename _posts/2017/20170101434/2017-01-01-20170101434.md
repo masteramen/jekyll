@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/%e7%bb%88%e6%9e%81%e9%94%81%e5%ae%9e%e6%88%98%e5
 fileName:  "20170101434"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/%e7%bb%88%e6%9e%81%e9%94%81%e5%ae%9e%e6%88%98%e5%8d%95jvm%e9%94%81%e5%88%86%e5%b8%83%e5%bc%8f%e9%94%81.html"
+permalink: "2017/%e7%bb%88%e6%9e%81%e9%94%81%e5%ae%9e%e6%88%98%e5%8d%95jvm%e9%94%81%e5%88%86%e5%b8%83%e5%bc%8f%e9%94%81.html"
 ---
 {% raw %}
 [只会一点java](https://www.jfox.info/go.php?url=http://www.cnblogs.com/dennyzhangdd/) 阅读( 

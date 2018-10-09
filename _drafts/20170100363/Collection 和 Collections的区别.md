@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/Collection-he-Collections-de-qu-bie.html"
 fileName:  "20170100363"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/Collection-he-Collections-de-qu-bie.html"
+permalink: "2017/Collection-he-Collections-de-qu-bie.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期一, 五月 20, 2013

@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/%e4%bb%80%e4%b9%88%e6%98%afrocauc.html"
 fileName:  "20170101057"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/%e4%bb%80%e4%b9%88%e6%98%afrocauc.html"
+permalink: "2017/%e4%bb%80%e4%b9%88%e6%98%afrocauc.html"
 ---
 {% raw %}
 ROC 曲线和 AUC 常被用来评价一个二值分类器的优劣。

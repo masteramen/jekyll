@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java%e5%a4%9a%e7%ba%bf%e7%a8%8b%e7%b3%bb%e5%88%9
 fileName:  "20170101417"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java%e5%a4%9a%e7%ba%bf%e7%a8%8b%e7%b3%bb%e5%88%97%e5%9b%9block%e7%9a%84%e4%bd%bf%e7%94%a8.html"
+permalink: "2017/java%e5%a4%9a%e7%ba%bf%e7%a8%8b%e7%b3%bb%e5%88%97%e5%9b%9block%e7%9a%84%e4%bd%bf%e7%94%a8.html"
 ---
 {% raw %}
 前言：本系列将从零开始讲解java多线程相关的技术，内容参考于《java多线程核心技术》与《java并发编程实战》等相关资料，希望站在巨人的肩膀上,再通过我的理解能让知识更加简单易懂。

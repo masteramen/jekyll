@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/db%e5%88%86%e5%ba%93%e5%88%86%e8%a1%a83%e5%85%b3
 fileName:  "20170101310"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/db%e5%88%86%e5%ba%93%e5%88%86%e8%a1%a83%e5%85%b3%e4%ba%8e%e4%bd%bf%e7%94%a8%e6%a1%86%e6%9e%b6%e8%bf%98%e6%98%af%e8%87%aa%e4%b8%bb%e5%bc%80%e5%8f%91%e4%bb%a5%e5%8f%8asharding%e5%ae%9e%e7%8e%b0%e5%b1%82.html"
+permalink: "2017/db%e5%88%86%e5%ba%93%e5%88%86%e8%a1%a83%e5%85%b3%e4%ba%8e%e4%bd%bf%e7%94%a8%e6%a1%86%e6%9e%b6%e8%bf%98%e6%98%af%e8%87%aa%e4%b8%bb%e5%bc%80%e5%8f%91%e4%bb%a5%e5%8f%8asharding%e5%ae%9e%e7%8e%b0%e5%b1%82.html"
 ---
 {% raw %}
 当团队对系统业务和数据库进行了细致的梳理，确定了切分方案后，接下来的问题就是如何去实现切分方案了，目前在sharding方面有不少的开源框架和产品可供参考，同时很多团队也会选择自主开发实现，而不管是选择框架还是自主开发，都会面临一个在哪一层上实现sharding逻辑的问题，本文会对这一系列的问题逐一进行分析和考量。

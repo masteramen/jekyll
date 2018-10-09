@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/google-chrome-%e5%bf%ab%e6%8d%b7%e9%94%ae.html"
 fileName:  "20170100501"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/google-chrome-%e5%bf%ab%e6%8d%b7%e9%94%ae.html"
+permalink: "2017/google-chrome-%e5%bf%ab%e6%8d%b7%e9%94%ae.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期一, 一月 27, 2014

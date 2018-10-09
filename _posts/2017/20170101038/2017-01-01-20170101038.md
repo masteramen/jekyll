@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/%e8%af%b4%e8%af%b4%e6%88%91%e4%bb%ac%e8%87%aa%e5
 fileName:  "20170101038"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/%e8%af%b4%e8%af%b4%e6%88%91%e4%bb%ac%e8%87%aa%e5%bb%baidc%e7%9a%84%e8%a7%84%e5%88%92%e5%92%8c%e8%b5%b0%e8%bf%87%e7%9a%84%e9%82%a3%e4%ba%9b%e5%9d%91.html"
+permalink: "2017/%e8%af%b4%e8%af%b4%e6%88%91%e4%bb%ac%e8%87%aa%e5%bb%baidc%e7%9a%84%e8%a7%84%e5%88%92%e5%92%8c%e8%b5%b0%e8%bf%87%e7%9a%84%e9%82%a3%e4%ba%9b%e5%9d%91.html"
 ---
 {% raw %}
 ##  1. 公司机房发展史 

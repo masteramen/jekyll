@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/dos%e5%91%bd%e4%bb%a4%e7%8e%af%e5%a2%83%e5%8f%98
 fileName:  "20170101083"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/dos%e5%91%bd%e4%bb%a4%e7%8e%af%e5%a2%83%e5%8f%98%e9%87%8f%e6%95%b0%e6%8d%ae%e7%b1%bb%e5%9e%8b%e5%91%bd%e5%90%8d%e8%a7%84%e8%8c%83.html"
+permalink: "2017/dos%e5%91%bd%e4%bb%a4%e7%8e%af%e5%a2%83%e5%8f%98%e9%87%8f%e6%95%b0%e6%8d%ae%e7%b1%bb%e5%9e%8b%e5%91%bd%e5%90%8d%e8%a7%84%e8%8c%83.html"
 ---
 {% raw %}
 2、能够使用常见的DOS命令

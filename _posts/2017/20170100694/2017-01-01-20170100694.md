@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/kai-fa-gong-cheng-shi-ren-sheng-zhi-lu.html"
 fileName:  "20170100694"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/kai-fa-gong-cheng-shi-ren-sheng-zhi-lu.html"
+permalink: "2017/kai-fa-gong-cheng-shi-ren-sheng-zhi-lu.html"
 ---
 {% raw %}
 相对同时刚出校门同学从事其它行业而言优厚的薪水，以及不断学习更新的专业知识不仅仅让你感到生活的充实，更满足了你那不让外人知的虚荣心。在刚出校门的几年中，你经常回头看看被你落在后面的同学们，在内心怜悯他们的同时，你也会对自已天天加班的努力工作感到心里平衡：“有付出才会有回报”这句话在那几年中你说的最多，不管是对自已的朋友们还是自已的爱人。第二句最常说的话是对公司的领导：“不行我就走人！”，实际上你也真的走过几回。对了，在这几年中，因为你的经济条件不错，你开始买房、开始谈恋爱、结婚、开始有了自已的小孩。有时候你会对自已说再过两年就去买车。当然其中可能有许多大件是需要分期付款的，但你对前途充满了信心，你确信认为这种日子会永远的持续下去，即使不是变得更好的话。

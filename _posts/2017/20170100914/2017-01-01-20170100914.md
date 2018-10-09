@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/springmvc%e4%bd%bf%e7%94%a8jsp-include%e5%b5%8c%
 fileName:  "20170100914"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/springmvc%e4%bd%bf%e7%94%a8jsp-include%e5%b5%8c%e5%85%a5%e9%a1%b5%e9%9d%a2%e7%9a%84%e4%b8%a4%e7%a7%8d%e6%96%b9%e5%bc%8f.html"
+permalink: "2017/springmvc%e4%bd%bf%e7%94%a8jsp-include%e5%b5%8c%e5%85%a5%e9%a1%b5%e9%9d%a2%e7%9a%84%e4%b8%a4%e7%a7%8d%e6%96%b9%e5%bc%8f.html"
 ---
 {% raw %}
 **1、静态嵌入子页面**

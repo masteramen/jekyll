@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/jie-jue-cxf-huo-qu-ke-hu-duan-ip-webserviceconte
 fileName:  "20170100494"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/jie-jue-cxf-huo-qu-ke-hu-duan-ip-webservicecontext-wei-null-wen-ti.html"
+permalink: "2017/jie-jue-cxf-huo-qu-ke-hu-duan-ip-webservicecontext-wei-null-wen-ti.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期三, 十一月 27, 2013

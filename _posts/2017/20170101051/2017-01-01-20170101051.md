@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java%e5%9f%ba%e7%a1%80%e9%87%8d%e6%96%b0%e8%ae%a
 fileName:  "20170101051"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java%e5%9f%ba%e7%a1%80%e9%87%8d%e6%96%b0%e8%ae%a4%e8%af%86string%e5%ad%97%e7%ac%a6%e4%b8%b2.html"
+permalink: "2017/java%e5%9f%ba%e7%a1%80%e9%87%8d%e6%96%b0%e8%ae%a4%e8%af%86string%e5%ad%97%e7%ac%a6%e4%b8%b2.html"
 ---
 {% raw %}
 在程序开发中字符串无处不在，如用户登陆时输入的用户名、密码等使用的就是字符串。

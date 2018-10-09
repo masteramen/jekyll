@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/jyuoa-xiang-mu-jie-shao-shi-he-gang-xue-wan-ssh-
 fileName:  "20170100831"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/jyuoa-xiang-mu-jie-shao-shi-he-gang-xue-wan-ssh-de-peng-you.html"
+permalink: "2017/jyuoa-xiang-mu-jie-shao-shi-he-gang-xue-wan-ssh-de-peng-you.html"
 ---
 {% raw %}
 # JYUOA项目介绍——适合刚学完SSH的朋友 

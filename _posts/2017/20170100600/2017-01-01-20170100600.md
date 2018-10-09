@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java-double-checked-locking-and-lazy-initializat
 fileName:  "20170100600"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java-double-checked-locking-and-lazy-initialization.html"
+permalink: "2017/java-double-checked-locking-and-lazy-initialization.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期二, 三月 4, 2014

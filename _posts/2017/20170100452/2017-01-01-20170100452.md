@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/ji-he-lei-set-list-map-ji-qi-zi-lei-de-lei-ji-ch
 fileName:  "20170100452"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/ji-he-lei-set-list-map-ji-qi-zi-lei-de-lei-ji-cheng-tu.html"
+permalink: "2017/ji-he-lei-set-list-map-ji-qi-zi-lei-de-lei-ji-cheng-tu.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期四, 九月 19, 2013

@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java-interview-require-to-know-the-questions.htm
 fileName:  "20170100585"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java-interview-require-to-know-the-questions.html"
+permalink: "2017/java-interview-require-to-know-the-questions.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期一, 二月 24, 2014

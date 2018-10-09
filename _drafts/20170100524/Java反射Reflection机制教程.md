@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java%e5%8f%8d%e5%b0%84reflection%e6%9c%ba%e5%88%
 fileName:  "20170100524"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java%e5%8f%8d%e5%b0%84reflection%e6%9c%ba%e5%88%b6%e6%95%99%e7%a8%8b.html"
+permalink: "2017/java%e5%8f%8d%e5%b0%84reflection%e6%9c%ba%e5%88%b6%e6%95%99%e7%a8%8b.html"
 ---
 {% raw %}
 什么是反射？反射有什么用处？

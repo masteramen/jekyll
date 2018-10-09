@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/struts2%e8%af%b7%e6%b1%82%e5%8f%82%e6%95%b0%e5%9
 fileName:  "20170101254"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/struts2%e8%af%b7%e6%b1%82%e5%8f%82%e6%95%b0%e5%90%88%e6%b3%95%e6%80%a7%e6%a0%a1%e9%aa%8c%e6%9c%ba%e5%88%b6.html"
+permalink: "2017/struts2%e8%af%b7%e6%b1%82%e5%8f%82%e6%95%b0%e5%90%88%e6%b3%95%e6%80%a7%e6%a0%a1%e9%aa%8c%e6%9c%ba%e5%88%b6.html"
 ---
 {% raw %}
 ##  在Action中通过代码执行数据校验

@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/whether-wifi-network-is-available-and-reliable-m
 fileName:  "20170100649"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/whether-wifi-network-is-available-and-reliable-method-in-android.html"
+permalink: "2017/whether-wifi-network-is-available-and-reliable-method-in-android.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期一, 六月 30, 2014

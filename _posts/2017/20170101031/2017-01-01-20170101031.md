@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java%e4%b8%ad%e6%99%ae%e9%80%9afor%e5%be%aa%e7%8
 fileName:  "20170101031"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java%e4%b8%ad%e6%99%ae%e9%80%9afor%e5%be%aa%e7%8e%af%e5%92%8c%e5%a2%9e%e5%bc%bafor%e5%be%aa%e7%8e%af%e7%9a%84%e4%b8%80%e4%ba%9b%e5%8c%ba%e5%88%ab.html"
+permalink: "2017/java%e4%b8%ad%e6%99%ae%e9%80%9afor%e5%be%aa%e7%8e%af%e5%92%8c%e5%a2%9e%e5%bc%bafor%e5%be%aa%e7%8e%af%e7%9a%84%e4%b8%80%e4%ba%9b%e5%8c%ba%e5%88%ab.html"
 ---
 {% raw %}
 ## Java中for的几种常见形式

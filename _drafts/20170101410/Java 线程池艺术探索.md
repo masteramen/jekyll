@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java%e7%ba%bf%e7%a8%8b%e6%b1%a0%e8%89%ba%e6%9c%a
 fileName:  "20170101410"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java%e7%ba%bf%e7%a8%8b%e6%b1%a0%e8%89%ba%e6%9c%af%e6%8e%a2%e7%b4%a2.html"
+permalink: "2017/java%e7%ba%bf%e7%a8%8b%e6%b1%a0%e8%89%ba%e6%9c%af%e6%8e%a2%e7%b4%a2.html"
 ---
 {% raw %}
 ![](/wp-content/uploads/2017/07/1501341809.png)

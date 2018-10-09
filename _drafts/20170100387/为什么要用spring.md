@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/wei-shen-me-yao-yong-spring.html"
 fileName:  "20170100387"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/wei-shen-me-yao-yong-spring.html"
+permalink: "2017/wei-shen-me-yao-yong-spring.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期四, 五月 23, 2013

@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/mybatis%e5%ad%a6%e4%b9%a0%e4%b9%8b%e6%9f%a5%e8%a
 fileName:  "20170100929"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/mybatis%e5%ad%a6%e4%b9%a0%e4%b9%8b%e6%9f%a5%e8%af%a2%e7%bc%93%e5%ad%98.html"
+permalink: "2017/mybatis%e5%ad%a6%e4%b9%a0%e4%b9%8b%e6%9f%a5%e8%af%a2%e7%bc%93%e5%ad%98.html"
 ---
 {% raw %}
 ### 什么是查询缓存？

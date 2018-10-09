@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/android-wifi-xin-hao-zhuang-tai-gai-bian-broadca
 fileName:  "20170100672"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/android-wifi-xin-hao-zhuang-tai-gai-bian-broadcastreceiver-jian-ting.html"
+permalink: "2017/android-wifi-xin-hao-zhuang-tai-gai-bian-broadcastreceiver-jian-ting.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期日, 八月 17, 2014

@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/%e6%9d%a5%e4%b8%80%e6%89%8baop%e6%b3%a8%e8%a7%a3
 fileName:  "20170101427"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/%e6%9d%a5%e4%b8%80%e6%89%8baop%e6%b3%a8%e8%a7%a3%e6%96%b9%e5%bc%8f%e8%bf%9b%e8%a1%8c%e6%97%a5%e5%bf%97%e8%ae%b0%e5%bd%95.html"
+permalink: "2017/%e6%9d%a5%e4%b8%80%e6%89%8baop%e6%b3%a8%e8%a7%a3%e6%96%b9%e5%bc%8f%e8%bf%9b%e8%a1%8c%e6%97%a5%e5%bf%97%e8%ae%b0%e5%bd%95.html"
 ---
 {% raw %}
 系统日志对于定位/排查问题的重要性不言而喻，相信许多开发和运维都深有体会。

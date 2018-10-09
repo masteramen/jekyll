@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/javascript-mvc-qian-duan-kuang-jia-xuan-ze-angul
 fileName:  "20170100488"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/javascript-mvc-qian-duan-kuang-jia-xuan-ze-angularbackbonecanjs-yu-ember-dui-bi-pk.html"
+permalink: "2017/javascript-mvc-qian-duan-kuang-jia-xuan-ze-angularbackbonecanjs-yu-ember-dui-bi-pk.html"
 ---
 {% raw %}
 选择JavaScript MVC框架很难。一方面要考虑的因素非常多，另一方面这种框架也非常多，而要从中选择一个合适的，还真得费一番心思。想知道有哪些JavaScript MVC框架可以选择？

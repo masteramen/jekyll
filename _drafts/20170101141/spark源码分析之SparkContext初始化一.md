@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/spark%e6%ba%90%e7%a0%81%e5%88%86%e6%9e%90%e4%b9%
 fileName:  "20170101141"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/spark%e6%ba%90%e7%a0%81%e5%88%86%e6%9e%90%e4%b9%8bsparkcontext%e5%88%9d%e5%a7%8b%e5%8c%96%e4%b8%80.html"
+permalink: "2017/spark%e6%ba%90%e7%a0%81%e5%88%86%e6%9e%90%e4%b9%8bsparkcontext%e5%88%9d%e5%a7%8b%e5%8c%96%e4%b8%80.html"
 ---
 {% raw %}
 这里，我们主要关注最主要的2个地方的初始化，首先是TaskScheduler的创建初始化。 

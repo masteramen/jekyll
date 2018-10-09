@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/%e5%9c%a8java%e4%b8%ad-%e5%b0%86string%e7%b1%bb%
 fileName:  "20170100892"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/%e5%9c%a8java%e4%b8%ad-%e5%b0%86string%e7%b1%bb%e5%9e%8b%e5%ad%97%e7%ac%a6%e4%b8%b2s%e8%b5%8b%e5%80%bc%e4%b8%banull%e5%90%8e-%e5%b0%86%e5%ad%97%e7%ac%a6%e4%b8%b2%e4%b8%8e%e5%85%b6%e4%bb%96%e5%ad%97.html"
+permalink: "2017/%e5%9c%a8java%e4%b8%ad-%e5%b0%86string%e7%b1%bb%e5%9e%8b%e5%ad%97%e7%ac%a6%e4%b8%b2s%e8%b5%8b%e5%80%bc%e4%b8%banull%e5%90%8e-%e5%b0%86%e5%ad%97%e7%ac%a6%e4%b8%b2%e4%b8%8e%e5%85%b6%e4%bb%96%e5%ad%97.html"
 ---
 {% raw %}
 String s = null;

@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/springboot%e7%bb%93%e5%90%88%e6%9c%8d%e5%8a%a1%e
 fileName:  "20170101020"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/springboot%e7%bb%93%e5%90%88%e6%9c%8d%e5%8a%a1%e5%8c%96%e6%a1%86%e6%9e%b6motan.html"
+permalink: "2017/springboot%e7%bb%93%e5%90%88%e6%9c%8d%e5%8a%a1%e5%8c%96%e6%a1%86%e6%9e%b6motan.html"
 ---
 {% raw %}
 springboot极大地提升了java应用的开发体验，感觉特别酸爽。服务化框架可谓是大型系统必用，比较古典的是阿里开源的dubbo，可惜很早就不更新了，研究其代码来看，感觉不够轻量，幸运的是去年微博开源了自己的轻量级服务化框架motan。本文阐述下如何在springboot下用motan。

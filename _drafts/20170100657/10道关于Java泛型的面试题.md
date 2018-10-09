@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/10-interview-questions-relative-with-java-generi
 fileName:  "20170100657"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/10-interview-questions-relative-with-java-generics.html"
+permalink: "2017/10-interview-questions-relative-with-java-generics.html"
 ---
 {% raw %}
 **1. Java中的泛型是什么 ? 使用泛型的好处是什么?**

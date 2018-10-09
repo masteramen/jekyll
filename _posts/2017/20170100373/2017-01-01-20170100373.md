@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/shi-wu-shi-shen-me.html"
 fileName:  "20170100373"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/shi-wu-shi-shen-me.html"
+permalink: "2017/shi-wu-shi-shen-me.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期二, 五月 21, 2013

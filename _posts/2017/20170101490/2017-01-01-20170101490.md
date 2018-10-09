@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/%e4%bd%bf%e7%94%a8springcloud%e5%92%8cdocker%e6%
 fileName:  "20170101490"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/%e4%bd%bf%e7%94%a8springcloud%e5%92%8cdocker%e6%9e%84%e5%bb%ba%e5%be%ae%e6%9c%8d%e5%8a%a1%e6%9e%b6%e6%9e%84.html"
+permalink: "2017/%e4%bd%bf%e7%94%a8springcloud%e5%92%8cdocker%e6%9e%84%e5%bb%ba%e5%be%ae%e6%9c%8d%e5%8a%a1%e6%9e%b6%e6%9e%84.html"
 ---
 {% raw %}
 H2M_LI_HEADER 每一个微服务拥有自己的数据库，因此没有办法绕过API直接访问持久数据。

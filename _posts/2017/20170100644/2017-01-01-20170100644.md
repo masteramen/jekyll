@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/10-common-java-programmer-interview-question-abo
 fileName:  "20170100644"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/10-common-java-programmer-interview-question-about-xml.html"
+permalink: "2017/10-common-java-programmer-interview-question-about-xml.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期四, 五月 22, 2014

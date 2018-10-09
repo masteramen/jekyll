@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/springcloud%e6%9e%84%e5%bb%ba%e5%be%ae%e6%9c%8d%
 fileName:  "20170101128"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/springcloud%e6%9e%84%e5%bb%ba%e5%be%ae%e6%9c%8d%e5%8a%a1%e6%9e%b6%e6%9e%84%e6%9c%8d%e5%8a%a1%e6%b3%a8%e5%86%8c%e4%b8%8e%e5%8f%91%e7%8e%b0eurekaconsuldalston%e7%89%88.html"
+permalink: "2017/springcloud%e6%9e%84%e5%bb%ba%e5%be%ae%e6%9c%8d%e5%8a%a1%e6%9e%b6%e6%9e%84%e6%9c%8d%e5%8a%a1%e6%b3%a8%e5%86%8c%e4%b8%8e%e5%8f%91%e7%8e%b0eurekaconsuldalston%e7%89%88.html"
 ---
 {% raw %}
 已经有非常长的时间没有更新《Spring Cloud构建微服务架构》系列文章了，自从开始写Spring Cloud的专题内容开始就获得了不少的阅读量和认可，当然也有一些批评，其中也不乏一些很中肯的意见和深度的问题，对我来说也是进一步提高的契机，在此感谢所有关注我博客的读者们。

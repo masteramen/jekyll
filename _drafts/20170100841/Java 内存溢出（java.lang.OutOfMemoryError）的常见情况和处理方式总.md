@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java-nei-cun-yi-chu-java-lang-outofmemoryerror-d
 fileName:  "20170100841"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java-nei-cun-yi-chu-java-lang-outofmemoryerror-de-chang-jian-qing-kuang-he-chu-l.html"
+permalink: "2017/java-nei-cun-yi-chu-java-lang-outofmemoryerror-de-chang-jian-qing-kuang-he-chu-l.html"
 ---
 {% raw %}
 # Java 内存溢出（java.lang.OutOfMemoryError）的常见情况和处理方式总 

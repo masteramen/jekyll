@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/%e5%9f%ba%e4%ba%8eebnf%e8%af%ad%e6%b3%95%e7%9a%8
 fileName:  "20170101076"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/%e5%9f%ba%e4%ba%8eebnf%e8%af%ad%e6%b3%95%e7%9a%84%e6%8f%8f%e8%bf%b0.html"
+permalink: "2017/%e5%9f%ba%e4%ba%8eebnf%e8%af%ad%e6%b3%95%e7%9a%84%e6%8f%8f%e8%bf%b0.html"
 ---
 {% raw %}
 # 基于EBNF语法的描述 

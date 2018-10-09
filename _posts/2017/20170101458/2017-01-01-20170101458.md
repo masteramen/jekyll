@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/%e5%be%ae%e6%9c%8d%e5%8a%a1%e6%9e%b6%e6%9e%84spr
 fileName:  "20170101458"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/%e5%be%ae%e6%9c%8d%e5%8a%a1%e6%9e%b6%e6%9e%84springcloud.html"
+permalink: "2017/%e5%be%ae%e6%9c%8d%e5%8a%a1%e6%9e%b6%e6%9e%84springcloud.html"
 ---
 {% raw %}
 1 为什么需要服务发现

@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java%e5%88%86%e6%94%af%e4%b8%8e%e5%be%aa%e7%8e%a
 fileName:  "20170101300"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java%e5%88%86%e6%94%af%e4%b8%8e%e5%be%aa%e7%8e%af.html"
+permalink: "2017/java%e5%88%86%e6%94%af%e4%b8%8e%e5%be%aa%e7%8e%af.html"
 ---
 {% raw %}
 基础数据类型（四类八种 ） 不能为null。

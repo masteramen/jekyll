@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java-swing-he-qian-ru-liu-lan-qi.html"
 fileName:  "20170100828"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java-swing-he-qian-ru-liu-lan-qi.html"
+permalink: "2017/java-swing-he-qian-ru-liu-lan-qi.html"
 ---
 {% raw %}
 By go - Last updated: 星期六, 四月 29, 2017

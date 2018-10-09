@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java%e7%b1%bb%e7%9a%84%e5%be%aa%e7%8e%af%e5%88%9
 fileName:  "20170101058"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java%e7%b1%bb%e7%9a%84%e5%be%aa%e7%8e%af%e5%88%9d%e5%a7%8b%e5%8c%96%e6%98%af%e5%90%a6%e4%bc%9a%e5%bc%95%e8%b5%b7%e6%ad%bb%e9%94%81.html"
+permalink: "2017/java%e7%b1%bb%e7%9a%84%e5%be%aa%e7%8e%af%e5%88%9d%e5%a7%8b%e5%8c%96%e6%98%af%e5%90%a6%e4%bc%9a%e5%bc%95%e8%b5%b7%e6%ad%bb%e9%94%81.html"
 ---
 {% raw %}
 # 【Java】类的循环初始化是否会引起死锁? 

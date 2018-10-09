@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/springboot%e6%97%a5%e5%bf%97%e9%85%8d%e7%bd%aelo
 fileName:  "20170101177"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/springboot%e6%97%a5%e5%bf%97%e9%85%8d%e7%bd%aelogbacklockback%e5%bc%82%e6%ad%a5%e6%97%a5%e5%bf%97.html"
+permalink: "2017/springboot%e6%97%a5%e5%bf%97%e9%85%8d%e7%bd%aelogbacklockback%e5%bc%82%e6%ad%a5%e6%97%a5%e5%bf%97.html"
 ---
 {% raw %}
 # Spring Boot 日志配置(LogBack,LockBack异步日志) 

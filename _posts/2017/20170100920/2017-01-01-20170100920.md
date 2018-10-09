@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/%e6%b7%b1%e5%85%a5%e7%90%86%e8%a7%a3java%e8%99%9
 fileName:  "20170100920"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/%e6%b7%b1%e5%85%a5%e7%90%86%e8%a7%a3java%e8%99%9a%e6%8b%9f%e6%9c%ba-%e5%ad%a6%e4%b9%a0%e7%ac%94%e8%ae%b0%e4%b9%8b%e7%bc%96%e8%af%91%e4%bc%98%e5%8c%96%e6%8a%80%e6%9c%af.html"
+permalink: "2017/%e6%b7%b1%e5%85%a5%e7%90%86%e8%a7%a3java%e8%99%9a%e6%8b%9f%e6%9c%ba-%e5%ad%a6%e4%b9%a0%e7%ac%94%e8%ae%b0%e4%b9%8b%e7%bc%96%e8%af%91%e4%bc%98%e5%8c%96%e6%8a%80%e6%9c%af.html"
 ---
 {% raw %}
 **郑重声明：本片博客是学习<深入理解Java虚拟机>一书所记录的笔记，内容基本为书中知识．**

@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/%e5%a4%a7%e6%95%b0%e6%8d%ae%e6%90%9c%e7%b4%a2%e9
 fileName:  "20170100941"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/%e5%a4%a7%e6%95%b0%e6%8d%ae%e6%90%9c%e7%b4%a2%e9%80%89%e5%bc%80%e6%ba%90%e8%bf%98%e6%98%af%e5%95%86%e4%b8%9a%e8%bd%af%e4%bb%b6%ef%bc%9felasticsearch-%e5%af%b9%e6%af%94-splunk.html"
+permalink: "2017/%e5%a4%a7%e6%95%b0%e6%8d%ae%e6%90%9c%e7%b4%a2%e9%80%89%e5%bc%80%e6%ba%90%e8%bf%98%e6%98%af%e5%95%86%e4%b8%9a%e8%bd%af%e4%bb%b6%ef%bc%9felasticsearch-%e5%af%b9%e6%af%94-splunk.html"
 ---
 {% raw %}
 本文就架构，功能，产品线，概念等方面就ElasticSearch和Splunk做了一下全方位的对比，希望能够大家在制定大数据搜索方案的时候有所帮助。

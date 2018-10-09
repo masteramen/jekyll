@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java-xml-%e6%93%8d%e4%bd%9c-dom4j%e4%bf%ae%e6%94
 fileName:  "20170100915"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java-xml-%e6%93%8d%e4%bd%9c-dom4j%e4%bf%ae%e6%94%b9xml-xpath%e6%8a%80%e6%9c%af-sax%e8%a7%a3%e6%9e%90-xml%e7%ba%a6%e6%9d%9f.html"
+permalink: "2017/java-xml-%e6%93%8d%e4%bd%9c-dom4j%e4%bf%ae%e6%94%b9xml-xpath%e6%8a%80%e6%9c%af-sax%e8%a7%a3%e6%9e%90-xml%e7%ba%a6%e6%9d%9f.html"
 ---
 {% raw %}
 # Java xml 操作(Dom4J修改xml   + xPath技术  + SAX解析 + XML约束) 

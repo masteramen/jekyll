@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/whatissuesshouldbeconsideredwhenoverridingequals
 fileName:  "20170101193"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/whatissuesshouldbeconsideredwhenoverridingequalsandhashcodeinjava.html"
+permalink: "2017/whatissuesshouldbeconsideredwhenoverridingequalsandhashcodeinjava.html"
 ---
 {% raw %}
 ### The theory (for the language lawyers and the mathematically inclined):

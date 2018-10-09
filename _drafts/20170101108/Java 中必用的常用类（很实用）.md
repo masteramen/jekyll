@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java%e4%b8%ad%e5%bf%85%e7%94%a8%e7%9a%84%e5%b8%b
 fileName:  "20170101108"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java%e4%b8%ad%e5%bf%85%e7%94%a8%e7%9a%84%e5%b8%b8%e7%94%a8%e7%b1%bb%e5%be%88%e5%ae%9e%e7%94%a8.html"
+permalink: "2017/java%e4%b8%ad%e5%bf%85%e7%94%a8%e7%9a%84%e5%b8%b8%e7%94%a8%e7%b1%bb%e5%be%88%e5%ae%9e%e7%94%a8.html"
 ---
 {% raw %}
 相信各位小伙伴们对基本数据类型都非常熟悉，例如 int、float、double、boolean、char 等。基本数据类型是不具备对象的特性的，比如基本类型不能调用方法、功能简单。。。，为了让基本数据类型也具备对象的特性， Java 为每个基本数据类型都提供了一个包装类，这样我们就可以像操作对象那样来操作基本数据类型。

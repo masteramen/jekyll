@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/shen-me-shi-ThreadLocal-lei-zen-me-shi-yong-ta.h
 fileName:  "20170100405"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/shen-me-shi-ThreadLocal-lei-zen-me-shi-yong-ta.html"
+permalink: "2017/shen-me-shi-ThreadLocal-lei-zen-me-shi-yong-ta.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期一, 五月 27, 2013

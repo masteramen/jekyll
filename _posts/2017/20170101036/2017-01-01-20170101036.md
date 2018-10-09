@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java%e7%9a%84%e4%b8%89%e5%a4%a7%e7%89%b9%e6%80%a
 fileName:  "20170101036"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java%e7%9a%84%e4%b8%89%e5%a4%a7%e7%89%b9%e6%80%a7%e6%80%bb%e7%bb%93.html"
+permalink: "2017/java%e7%9a%84%e4%b8%89%e5%a4%a7%e7%89%b9%e6%80%a7%e6%80%bb%e7%bb%93.html"
 ---
 {% raw %}
 在Java中，面向对象编程有三大特性：**封装**、**继承**、**多态**。

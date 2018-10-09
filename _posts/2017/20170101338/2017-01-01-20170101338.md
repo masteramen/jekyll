@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/%e4%b8%80%e9%a2%97%e7%ae%80%e5%8d%95%e7%9a%84hib
 fileName:  "20170101338"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/%e4%b8%80%e9%a2%97%e7%ae%80%e5%8d%95%e7%9a%84hibernate%e6%a0%97%e5%ad%90.html"
+permalink: "2017/%e4%b8%80%e9%a2%97%e7%ae%80%e5%8d%95%e7%9a%84hibernate%e6%a0%97%e5%ad%90.html"
 ---
 {% raw %}
 # 一颗简单的hibernate栗子 

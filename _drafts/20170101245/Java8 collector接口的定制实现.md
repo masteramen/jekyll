@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java8collector%e6%8e%a5%e5%8f%a3%e7%9a%84%e5%ae%
 fileName:  "20170101245"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java8collector%e6%8e%a5%e5%8f%a3%e7%9a%84%e5%ae%9a%e5%88%b6%e5%ae%9e%e7%8e%b0.html"
+permalink: "2017/java8collector%e6%8e%a5%e5%8f%a3%e7%9a%84%e5%ae%9a%e5%88%b6%e5%ae%9e%e7%8e%b0.html"
 ---
 {% raw %}
 问题主要就是把集合里的数据按照一定大小顺序平均分成若干组的问题，看起来挺简单的，不过我开始看到就想用用stream来实现，但是想了想Collectors里并没有适合的方法，所以就想到了用定制的collector来实现了。

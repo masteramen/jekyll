@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/%e6%88%91%e6%98%af%e5%a6%82%e4%bd%95%e5%ae%9e%e7
 fileName:  "20170100975"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/%e6%88%91%e6%98%af%e5%a6%82%e4%bd%95%e5%ae%9e%e7%8e%b0electron%e7%9a%84%e5%9c%a8%e7%ba%bf%e5%8d%87%e7%ba%a7%e7%83%ad%e6%9b%b4%e6%96%b0%e5%8a%9f%e8%83%bd%e7%9a%84.html"
+permalink: "2017/%e6%88%91%e6%98%af%e5%a6%82%e4%bd%95%e5%ae%9e%e7%8e%b0electron%e7%9a%84%e5%9c%a8%e7%ba%bf%e5%8d%87%e7%ba%a7%e7%83%ad%e6%9b%b4%e6%96%b0%e5%8a%9f%e8%83%bd%e7%9a%84.html"
 ---
 {% raw %}
 ###  一、electron的热更新效果预览 

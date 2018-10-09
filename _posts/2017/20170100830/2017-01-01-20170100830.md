@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/javaweb-kai-fa-zhi-mybatis-xiang-jie-yi-mybatis-
 fileName:  "20170100830"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/javaweb-kai-fa-zhi-mybatis-xiang-jie-yi-mybatis-de-ru-men-shi-xian-zeng-shan-gai-cha-cao-zuo-zi-ding.html"
+permalink: "2017/javaweb-kai-fa-zhi-mybatis-xiang-jie-yi-mybatis-de-ru-men-shi-xian-zeng-shan-gai-cha-cao-zuo-zi-ding.html"
 ---
 {% raw %}
 # JAVAWEB开发之mybatis详解(一)——mybatis的入门(实现增删改查操作)、自定义别名、抽取代码块以及动态SQL的使用 

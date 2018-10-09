@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java%e5%8f%82%e6%95%b0%e4%bc%a0%e9%80%92%e4%b9%8
 fileName:  "20170101342"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java%e5%8f%82%e6%95%b0%e4%bc%a0%e9%80%92%e4%b9%8b%e5%80%bc%e4%bc%a0%e9%80%92.html"
+permalink: "2017/java%e5%8f%82%e6%95%b0%e4%bc%a0%e9%80%92%e4%b9%8b%e5%80%bc%e4%bc%a0%e9%80%92.html"
 ---
 {% raw %}
 ## 一 概述

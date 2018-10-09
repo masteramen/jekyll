@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/springboot_kuang_jia_maven_gou_jian_fastjson_qi_
 fileName:  "20170100865"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/springboot_kuang_jia_maven_gou_jian_fastjson_qi_dong_bao_cuo.html"
+permalink: "2017/springboot_kuang_jia_maven_gou_jian_fastjson_qi_dong_bao_cuo.html"
 ---
 {% raw %}
 Exception in thread "main" java.lang.IllegalStateException: Failed to read Class-Path 

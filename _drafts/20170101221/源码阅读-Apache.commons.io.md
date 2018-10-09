@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/%e6%ba%90%e7%a0%81%e9%98%85%e8%af%bbapachecommon
 fileName:  "20170101221"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/%e6%ba%90%e7%a0%81%e9%98%85%e8%af%bbapachecommonsio.html"
+permalink: "2017/%e6%ba%90%e7%a0%81%e9%98%85%e8%af%bbapachecommonsio.html"
 ---
 {% raw %}
 本人现尝试去阅读一些源码，准备从Apache.commons入手。IO包花了一天的时间阅读。都是些工具类。但还是有些感悟，关于类的组织结构以及一些java语法的应用。内容较杂，用于本人自己记录和查阅。

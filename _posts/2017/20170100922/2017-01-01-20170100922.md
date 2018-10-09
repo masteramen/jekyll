@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/%e8%af%91-spring-framework-5-0-%e4%b8%ad%e5%bc%9
 fileName:  "20170100922"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/%e8%af%91-spring-framework-5-0-%e4%b8%ad%e5%bc%95%e5%85%a5-kotlin-%e6%94%af%e6%8c%81.html"
+permalink: "2017/%e8%af%91-spring-framework-5-0-%e4%b8%ad%e5%bc%95%e5%85%a5-kotlin-%e6%94%af%e6%8c%81.html"
 ---
 {% raw %}
 ## 用 Kotlin 进行函数式 bean 注册

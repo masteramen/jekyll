@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/jdk18%e4%b9%8bhashmap%e6%ba%90%e7%a0%81%e5%88%86
 fileName:  "20170101380"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/jdk18%e4%b9%8bhashmap%e6%ba%90%e7%a0%81%e5%88%86%e6%9e%90.html"
+permalink: "2017/jdk18%e4%b9%8bhashmap%e6%ba%90%e7%a0%81%e5%88%86%e6%9e%90.html"
 ---
 {% raw %}
 与JDK1.7中HashMap的实现相比，JDK1.8做了如下改动：

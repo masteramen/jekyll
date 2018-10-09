@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/it-nan-de-ni-xi-zui-you-qian-tu-de-bian-cheng-yu
 fileName:  "20170100698"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/it-nan-de-ni-xi-zui-you-qian-tu-de-bian-cheng-yu-yan-top-12.html"
+permalink: "2017/it-nan-de-ni-xi-zui-you-qian-tu-de-bian-cheng-yu-yan-top-12.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期一, 十一月 24, 2014

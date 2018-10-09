@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/javascript-implements-extends-methods.html"
 fileName:  "20170100586"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/javascript-implements-extends-methods.html"
+permalink: "2017/javascript-implements-extends-methods.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期一, 二月 24, 2014

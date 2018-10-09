@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/15-ge-bi-xu-zhi-dao-de-chrome-kai-fa-zhe-ji-qiao
 fileName:  "20170100829"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/15-ge-bi-xu-zhi-dao-de-chrome-kai-fa-zhe-ji-qiao.html"
+permalink: "2017/15-ge-bi-xu-zhi-dao-de-chrome-kai-fa-zhe-ji-qiao.html"
 ---
 {% raw %}
 By go - Last updated: 星期三, 五月 3, 2017

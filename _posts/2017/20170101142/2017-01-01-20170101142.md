@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/weakhashmap%e6%95%b4%e7%90%86.html"
 fileName:  "20170101142"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/weakhashmap%e6%95%b4%e7%90%86.html"
+permalink: "2017/weakhashmap%e6%95%b4%e7%90%86.html"
 ---
 {% raw %}
 # WeakHashMap整理 

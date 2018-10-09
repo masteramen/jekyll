@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/lan-duo-cheng-xu-yuan-de-shen-mi-tian-fu.html"
 fileName:  "20170100711"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/lan-duo-cheng-xu-yuan-de-shen-mi-tian-fu.html"
+permalink: "2017/lan-duo-cheng-xu-yuan-de-shen-mi-tian-fu.html"
 ---
 {% raw %}
 假如说，你是一个经理，环顾所有的员工——嗯，所有人都在忙着噼里啪啦敲键盘、对着电脑疯狂点击鼠标，咦，不对，有一个家伙不是这样的！这个家伙躲在角落里……他在干什么呢？慢悠悠的，像一只蜗牛一样转悠。哦，等等，现在他回到了自己的座位！这个家伙真的是在工作吗？

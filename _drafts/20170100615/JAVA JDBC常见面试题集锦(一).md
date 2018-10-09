@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java-jdbc-common-magazines-questions-a.html"
 fileName:  "20170100615"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java-jdbc-common-magazines-questions-a.html"
+permalink: "2017/java-jdbc-common-magazines-questions-a.html"
 ---
 {% raw %}
 ### 什么是JDBC，在什么时候会用到它？

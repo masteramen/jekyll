@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/Integer-yu-int-de-qu-bie.html"
 fileName:  "20170100356"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/Integer-yu-int-de-qu-bie.html"
+permalink: "2017/Integer-yu-int-de-qu-bie.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期日, 五月 19, 2013

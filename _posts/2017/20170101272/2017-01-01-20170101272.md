@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/%e6%85%95%e8%af%be%e7%bd%91hibernate%e5%88%9d%e6
 fileName:  "20170101272"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/%e6%85%95%e8%af%be%e7%bd%91hibernate%e5%88%9d%e6%8e%a2%e4%b9%8b%e5%a4%9a%e5%af%b9%e5%a4%9a%e6%98%a0%e5%b0%84%e5%ad%a6%e4%b9%a0%e6%80%bb%e7%bb%93.html"
+permalink: "2017/%e6%85%95%e8%af%be%e7%bd%91hibernate%e5%88%9d%e6%8e%a2%e4%b9%8b%e5%a4%9a%e5%af%b9%e5%a4%9a%e6%98%a0%e5%b0%84%e5%ad%a6%e4%b9%a0%e6%80%bb%e7%bb%93.html"
 ---
 {% raw %}
 # 慕课网_《Hibernate初探之多对多映射》学习总结 

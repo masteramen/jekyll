@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/do-not-be-misled-intuition-about-java-performanc
 fileName:  "20170100597"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/do-not-be-misled-intuition-about-java-performance-9-fallacy.html"
+permalink: "2017/do-not-be-misled-intuition-about-java-performance-9-fallacy.html"
 ---
 {% raw %}
 Java的性能有某种黑魔法之称。部分原因在于Java平台非常复杂，很多情况下问题难以定位。然而在历史上还有一种趋势，人们靠智慧和经验来研究Java性能，而不是靠应用统计和实证推理。在这篇文章中，我希望拆穿一些最荒谬的技术神话。

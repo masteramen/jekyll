@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/oracle-wallet-%e5%ae%9e%e6%96%bd%e7%9a%84%e4%b8%
 fileName:  "20170101019"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/oracle-wallet-%e5%ae%9e%e6%96%bd%e7%9a%84%e4%b8%80%e6%ac%a1%e6%82%b2%e6%83%a8%e7%bb%8f%e5%8e%86.html"
+permalink: "2017/oracle-wallet-%e5%ae%9e%e6%96%bd%e7%9a%84%e4%b8%80%e6%ac%a1%e6%82%b2%e6%83%a8%e7%bb%8f%e5%8e%86.html"
 ---
 {% raw %}
 前几天一个运营商客户被某O记忽悠之后，准备上一个安全解决方案，其目的是为了 

@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/%e4%b8%8d%e8%a6%81%e5%86%8d%e5%9c%a8-javascript-
 fileName:  "20170100992"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/%e4%b8%8d%e8%a6%81%e5%86%8d%e5%9c%a8-javascript-%e4%b8%ad%e5%86%99-css-%e4%ba%86.html"
+permalink: "2017/%e4%b8%8d%e8%a6%81%e5%86%8d%e5%9c%a8-javascript-%e4%b8%ad%e5%86%99-css-%e4%ba%86.html"
 ---
 {% raw %}
 # 不要再在 JavaScript 中写 CSS 了 

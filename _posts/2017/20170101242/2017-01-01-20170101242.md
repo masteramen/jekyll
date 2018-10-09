@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/alogicframework%e6%ba%90%e7%a0%81%e5%88%86%e6%9e
 fileName:  "20170101242"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/alogicframework%e6%ba%90%e7%a0%81%e5%88%86%e6%9e%901%e6%9c%8d%e5%8a%a1%e5%bc%80%e5%8f%91.html"
+permalink: "2017/alogicframework%e6%ba%90%e7%a0%81%e5%88%86%e6%9e%901%e6%9c%8d%e5%8a%a1%e5%bc%80%e5%8f%91.html"
 ---
 {% raw %}
 ## 1.0 Alogic-FrameWork介绍

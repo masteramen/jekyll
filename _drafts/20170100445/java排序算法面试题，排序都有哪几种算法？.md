@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java-pai-xu-suan-fa-mian-shi-ti-pai-xu-dou-you-n
 fileName:  "20170100445"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java-pai-xu-suan-fa-mian-shi-ti-pai-xu-dou-you-na-ji-zhong-suan-fa.html"
+permalink: "2017/java-pai-xu-suan-fa-mian-shi-ti-pai-xu-dou-you-na-ji-zhong-suan-fa.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期日, 六月 23, 2013

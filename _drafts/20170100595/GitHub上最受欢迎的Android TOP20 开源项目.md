@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/android-top20-most-popular-on-github-open-source
 fileName:  "20170100595"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/android-top20-most-popular-on-github-open-source-project.html"
+permalink: "2017/android-top20-most-popular-on-github-open-source-project.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期五, 二月 28, 2014

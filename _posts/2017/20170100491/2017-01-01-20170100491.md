@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java-dan-yuan-ce-shi-junit-mock-dai-ma-fu-gai-lv
 fileName:  "20170100491"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java-dan-yuan-ce-shi-junit-mock-dai-ma-fu-gai-lv.html"
+permalink: "2017/java-dan-yuan-ce-shi-junit-mock-dai-ma-fu-gai-lv.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期四, 十一月 21, 2013

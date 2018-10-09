@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/jvm%e5%b8%b8%e8%a7%81%e5%9e%83%e5%9c%be%e5%9b%9e
 fileName:  "20170101301"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/jvm%e5%b8%b8%e8%a7%81%e5%9e%83%e5%9c%be%e5%9b%9e%e6%94%b6%e7%ae%97%e6%b3%95.html"
+permalink: "2017/jvm%e5%b8%b8%e8%a7%81%e5%9e%83%e5%9c%be%e5%9b%9e%e6%94%b6%e7%ae%97%e6%b3%95.html"
 ---
 {% raw %}
 ***jdk1.7.0_79***

@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java%e5%bc%80%e5%8f%91%e6%a1%86%e6%9e%b6%e4%b9%8
 fileName:  "20170100873"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java%e5%bc%80%e5%8f%91%e6%a1%86%e6%9e%b6%e4%b9%8bninja.html"
+permalink: "2017/java%e5%bc%80%e5%8f%91%e6%a1%86%e6%9e%b6%e4%b9%8bninja.html"
 ---
 {% raw %}
 Ninja是一个Java全栈Web开发框架，稳定、快速、非常高效。

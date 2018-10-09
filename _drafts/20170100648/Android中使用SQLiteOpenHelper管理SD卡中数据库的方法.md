@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/android%e4%b8%ad%e4%bd%bf%e7%94%a8sqliteopenhelp
 fileName:  "20170100648"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/android%e4%b8%ad%e4%bd%bf%e7%94%a8sqliteopenhelper%e7%ae%a1%e7%90%86sd%e5%8d%a1%e4%b8%ad%e6%95%b0%e6%8d%ae%e5%ba%93%e7%9a%84%e6%96%b9%e6%b3%95.html"
+permalink: "2017/android%e4%b8%ad%e4%bd%bf%e7%94%a8sqliteopenhelper%e7%ae%a1%e7%90%86sd%e5%8d%a1%e4%b8%ad%e6%95%b0%e6%8d%ae%e5%ba%93%e7%9a%84%e6%96%b9%e6%b3%95.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期六, 六月 28, 2014

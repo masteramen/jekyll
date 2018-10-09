@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/ru-he-kai-shi-xue-xi-a-d-f-he-jdeveroper-11g-6.h
 fileName:  "20170100705"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/ru-he-kai-shi-xue-xi-a-d-f-he-jdeveroper-11g-6.html"
+permalink: "2017/ru-he-kai-shi-xue-xi-a-d-f-he-jdeveroper-11g-6.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期一, 二月 16, 2015

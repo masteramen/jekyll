@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/%e6%9b%be%e5%b0%86%e5%85%ac%e5%8f%b8%e9%80%81%e4
 fileName:  "20170101015"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/%e6%9b%be%e5%b0%86%e5%85%ac%e5%8f%b8%e9%80%81%e4%b8%8a%e6%96%b0%e4%b8%89%e6%9d%bf%e7%9a%84%e5%88%9b%e5%a7%8b%e4%ba%ba-%e4%b8%ba%e4%bd%95%e9%87%8d%e5%9b%9ebat%e5%b7%a5%e4%bd%9c.html"
+permalink: "2017/%e6%9b%be%e5%b0%86%e5%85%ac%e5%8f%b8%e9%80%81%e4%b8%8a%e6%96%b0%e4%b8%89%e6%9d%bf%e7%9a%84%e5%88%9b%e5%a7%8b%e4%ba%ba-%e4%b8%ba%e4%bd%95%e9%87%8d%e5%9b%9ebat%e5%b7%a5%e4%bd%9c.html"
 ---
 {% raw %}
 从进入百度担任四年产品经理，到将自己的创业公司经过四次融资送上新三板，林建华在 30 岁前的日子过得简直就是成功人士的模板。但 2017 年，他终于还是出售了所持新三板挂牌公司的股份，选择重新回到大企业中历练一番，这次他的落脚点在阿里巴巴。

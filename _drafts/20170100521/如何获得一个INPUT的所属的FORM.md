@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/%e5%a6%82%e4%bd%95%e8%8e%b7%e5%be%97%e4%b8%80%e4
 fileName:  "20170100521"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/%e5%a6%82%e4%bd%95%e8%8e%b7%e5%be%97%e4%b8%80%e4%b8%aainput%e7%9a%84%e6%89%80%e5%b1%9e%e7%9a%84form.html"
+permalink: "2017/%e5%a6%82%e4%bd%95%e8%8e%b7%e5%be%97%e4%b8%80%e4%b8%aainput%e7%9a%84%e6%89%80%e5%b1%9e%e7%9a%84form.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期一, 二月 3, 2014

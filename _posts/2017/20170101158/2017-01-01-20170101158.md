@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/servlet30%e6%96%b0%e7%89%b9%e6%80%a7tomcat70%e7%
 fileName:  "20170101158"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/servlet30%e6%96%b0%e7%89%b9%e6%80%a7tomcat70%e7%89%88%e6%9c%ac%e5%8f%8a%e4%bb%a5%e4%b8%8a.html"
+permalink: "2017/servlet30%e6%96%b0%e7%89%b9%e6%80%a7tomcat70%e7%89%88%e6%9c%ac%e5%8f%8a%e4%bb%a5%e4%b8%8a.html"
 ---
 {% raw %}
 在Eclipse中创建Servlet后，Eclipse不会自动在web.xml中生成该Servlet对应的mapping信息，而是在Servlet代码中加入注解@WebServlet。

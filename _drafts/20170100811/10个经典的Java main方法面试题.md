@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/10-ge-jing-dian-de-java-main-fang-fa-mian-shi-ti
 fileName:  "20170100811"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/10-ge-jing-dian-de-java-main-fang-fa-mian-shi-ti.html"
+permalink: "2017/10-ge-jing-dian-de-java-main-fang-fa-mian-shi-ti.html"
 ---
 {% raw %}
 以下是笔者认为比较经典的关于Java main方法的面试题，与其说是Java面试题，其实也是Java的一些最基础知识问题，分享给大家，如有错误，请指出。

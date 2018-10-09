@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/mina-lian-jie-qi-jie-kou-ding-yi-ji-chou-xiang-s
 fileName:  "20170100856"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/mina-lian-jie-qi-jie-kou-ding-yi-ji-chou-xiang-shi-xian-ioconnector.html"
+permalink: "2017/mina-lian-jie-qi-jie-kou-ding-yi-ji-chou-xiang-shi-xian-ioconnector.html"
 ---
 {% raw %}
 By  - Last updated: 星期二, 六月 20, 2017

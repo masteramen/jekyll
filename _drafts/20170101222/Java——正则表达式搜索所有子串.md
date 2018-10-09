@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java%e6%ad%a3%e5%88%99%e8%a1%a8%e8%be%be%e5%bc%8
 fileName:  "20170101222"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java%e6%ad%a3%e5%88%99%e8%a1%a8%e8%be%be%e5%bc%8f%e6%90%9c%e7%b4%a2%e6%89%80%e6%9c%89%e5%ad%90%e4%b8%b2.html"
+permalink: "2017/java%e6%ad%a3%e5%88%99%e8%a1%a8%e8%be%be%e5%bc%8f%e6%90%9c%e7%b4%a2%e6%89%80%e6%9c%89%e5%ad%90%e4%b8%b2.html"
 ---
 {% raw %}
 搜索字符串(下文称主串)中所有符合某正则表达式的子串，并得到所有子串的文字、位置、长度。

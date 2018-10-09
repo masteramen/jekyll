@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/springboot%e8%87%aa%e5%ae%9a%e4%b9%89%e5%90%af%e
 fileName:  "20170101263"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/springboot%e8%87%aa%e5%ae%9a%e4%b9%89%e5%90%af%e5%8a%a8banner.html"
+permalink: "2017/springboot%e8%87%aa%e5%ae%9a%e4%b9%89%e5%90%af%e5%8a%a8banner.html"
 ---
 {% raw %}
 这段时间较忙，有些想念“小红”，为了表达我对小红的思念之情，决定将spring boot启动的banner研究一下，看看是否能够自定义，让我天天能够看到她。

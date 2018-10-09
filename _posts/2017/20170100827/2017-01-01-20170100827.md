@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java-jframe-zai-qu-diao-biao-ti-lan-hou-shi-xian
 fileName:  "20170100827"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java-jframe-zai-qu-diao-biao-ti-lan-hou-shi-xian-la-da-shou-suo-bian-kuang-de-gong-neng.html"
+permalink: "2017/java-jframe-zai-qu-diao-biao-ti-lan-hou-shi-xian-la-da-shou-suo-bian-kuang-de-gong-neng.html"
 ---
 {% raw %}
 By go - Last updated: 星期四, 四月 27, 2017

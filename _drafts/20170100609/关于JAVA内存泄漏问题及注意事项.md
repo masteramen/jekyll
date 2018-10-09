@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/about-java-memory-leak-problem-and-precautions.h
 fileName:  "20170100609"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/about-java-memory-leak-problem-and-precautions.html"
+permalink: "2017/about-java-memory-leak-problem-and-precautions.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期二, 三月 11, 2014

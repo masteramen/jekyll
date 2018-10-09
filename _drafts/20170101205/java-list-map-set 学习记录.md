@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/javalistmapset%e5%ad%a6%e4%b9%a0%e8%ae%b0%e5%bd%
 fileName:  "20170101205"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/javalistmapset%e5%ad%a6%e4%b9%a0%e8%ae%b0%e5%bd%95.html"
+permalink: "2017/javalistmapset%e5%ad%a6%e4%b9%a0%e8%ae%b0%e5%bd%95.html"
 ---
 {% raw %}
 By  - Last updated: 星期一, 七月 10, 2017

@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/heap-he-stack-you-shen-me-qu-bie.html"
 fileName:  "20170100414"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/heap-he-stack-you-shen-me-qu-bie.html"
+permalink: "2017/heap-he-stack-you-shen-me-qu-bie.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期日, 六月 2, 2013

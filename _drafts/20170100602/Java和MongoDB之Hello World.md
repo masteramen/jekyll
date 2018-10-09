@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/the-hello-world-java-and-mongodb.html"
 fileName:  "20170100602"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/the-hello-world-java-and-mongodb.html"
+permalink: "2017/the-hello-world-java-and-mongodb.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期四, 三月 6, 2014

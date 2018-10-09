@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/%e5%b0%91%e6%89%93%e4%b8%80%e5%b1%80%e7%8e%8b%e8
 fileName:  "20170101335"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/%e5%b0%91%e6%89%93%e4%b8%80%e5%b1%80%e7%8e%8b%e8%80%85%e8%8d%a3%e8%80%80%e5%b0%b1%e8%83%bd%e4%b8%8a%e6%89%8bspringcloud.html"
+permalink: "2017/%e5%b0%91%e6%89%93%e4%b8%80%e5%b1%80%e7%8e%8b%e8%80%85%e8%8d%a3%e8%80%80%e5%b0%b1%e8%83%bd%e4%b8%8a%e6%89%8bspringcloud.html"
 ---
 {% raw %}
 大神的操作当然离不开合适的装备。（框架说明-组件架构） 

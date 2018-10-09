@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/lebronsix%e7%9a%84%e4%b8%93%e6%a0%8f.html"
 fileName:  "20170101176"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/lebronsix%e7%9a%84%e4%b8%93%e6%a0%8f.html"
+permalink: "2017/lebronsix%e7%9a%84%e4%b8%93%e6%a0%8f.html"
 ---
 {% raw %}
 By  - Last updated: 星期日, 七月 9, 2017

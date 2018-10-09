@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/start-process-virtual-machine-jvm-process-one-jv
 fileName:  "20170100598"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/start-process-virtual-machine-jvm-process-one-jvm.html"
+permalink: "2017/start-process-virtual-machine-jvm-process-one-jvm.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期一, 三月 3, 2014

@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/Hibernate-de-10-ge-chang-jian-mian-shi-wen-ti-ji
 fileName:  "20170100436"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/Hibernate-de-10-ge-chang-jian-mian-shi-wen-ti-ji-da-an.html"
+permalink: "2017/Hibernate-de-10-ge-chang-jian-mian-shi-wen-ti-ji-da-an.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期六, 六月 15, 2013

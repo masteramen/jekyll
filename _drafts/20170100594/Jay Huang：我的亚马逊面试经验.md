@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/jay-huang-my-interview-experience-at-amazon.html
 fileName:  "20170100594"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/jay-huang-my-interview-experience-at-amazon.html"
+permalink: "2017/jay-huang-my-interview-experience-at-amazon.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期五, 二月 28, 2014

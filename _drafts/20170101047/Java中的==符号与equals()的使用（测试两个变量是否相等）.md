@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java%e4%b8%ad%e7%9a%84%e7%ac%a6%e5%8f%b7%e4%b8%8
 fileName:  "20170101047"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java%e4%b8%ad%e7%9a%84%e7%ac%a6%e5%8f%b7%e4%b8%8eequals%e7%9a%84%e4%bd%bf%e7%94%a8%e6%b5%8b%e8%af%95%e4%b8%a4%e4%b8%aa%e5%8f%98%e9%87%8f%e6%98%af%e5%90%a6%e7%9b%b8%e7%ad%89.html"
+permalink: "2017/java%e4%b8%ad%e7%9a%84%e7%ac%a6%e5%8f%b7%e4%b8%8eequals%e7%9a%84%e4%bd%bf%e7%94%a8%e6%b5%8b%e8%af%95%e4%b8%a4%e4%b8%aa%e5%8f%98%e9%87%8f%e6%98%af%e5%90%a6%e7%9b%b8%e7%ad%89.html"
 ---
 {% raw %}
 Java 程序中测试两个变量是否相等有两种方式：一种是利用 == 运算符，另一种是利用equals()方法。

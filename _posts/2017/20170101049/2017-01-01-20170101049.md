@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/springbootquickstart5springdatajpa.html"
 fileName:  "20170101049"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/springbootquickstart5springdatajpa.html"
+permalink: "2017/springbootquickstart5springdatajpa.html"
 ---
 {% raw %}
 接(4) – Database 系列

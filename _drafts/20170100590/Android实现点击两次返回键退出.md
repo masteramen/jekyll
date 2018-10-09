@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/android-click-two-black-key-to-exit-program.html
 fileName:  "20170100590"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/android-click-two-black-key-to-exit-program.html"
+permalink: "2017/android-click-two-black-key-to-exit-program.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期三, 二月 26, 2014

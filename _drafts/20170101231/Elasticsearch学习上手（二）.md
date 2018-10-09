@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/elasticsearch%e5%ad%a6%e4%b9%a0%e4%b8%8a%e6%89%8
 fileName:  "20170101231"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/elasticsearch%e5%ad%a6%e4%b9%a0%e4%b8%8a%e6%89%8b%e4%ba%8c.html"
+permalink: "2017/elasticsearch%e5%ad%a6%e4%b9%a0%e4%b8%8a%e6%89%8b%e4%ba%8c.html"
 ---
 {% raw %}
 在安装elasticsearch之后，我们就要开始进行操作实践，那么在实践之前，我们首先了解下elasticsearch的几个概念

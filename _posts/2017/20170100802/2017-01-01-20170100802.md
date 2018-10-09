@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/cong-chan-pin-jing-li-de-jiao-du-suan-zuo-yi-ge-
 fileName:  "20170100802"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/cong-chan-pin-jing-li-de-jiao-du-suan-zuo-yi-ge-app-xu-yao-duo-shao-qian.html"
+permalink: "2017/cong-chan-pin-jing-li-de-jiao-du-suan-zuo-yi-ge-app-xu-yao-duo-shao-qian.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期五, 十月 16, 2015

@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/xa%e5%88%86%e5%b8%83%e5%bc%8f%e4%ba%8b%e5%8a%a1%
 fileName:  "20170101455"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/xa%e5%88%86%e5%b8%83%e5%bc%8f%e4%ba%8b%e5%8a%a1%e6%8e%a8%e8%8d%90%e9%98%85%e8%af%bb.html"
+permalink: "2017/xa%e5%88%86%e5%b8%83%e5%bc%8f%e4%ba%8b%e5%8a%a1%e6%8e%a8%e8%8d%90%e9%98%85%e8%af%bb.html"
 ---
 {% raw %}
 # XA 分布式事务【推荐阅读】 

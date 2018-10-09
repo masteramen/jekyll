@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/%e7%bb%86%e8%af%b4nullable-t-%e7%b1%bb%e5%9e%8b.
 fileName:  "20170100957"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/%e7%bb%86%e8%af%b4nullable-t-%e7%b1%bb%e5%9e%8b.html"
+permalink: "2017/%e7%bb%86%e8%af%b4nullable-t-%e7%b1%bb%e5%9e%8b.html"
 ---
 {% raw %}
 众所周知，值类型变量不能null，这也是为什么它们被称为值类型。但是，在实际的开发过程中，也需要值为`null`的一些场景。例如以下场景：

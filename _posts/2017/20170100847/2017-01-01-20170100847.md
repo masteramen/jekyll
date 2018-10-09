@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/ying-yong-ajax-ji-shu-shan-chu-shu-ju.html"
 fileName:  "20170100847"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/ying-yong-ajax-ji-shu-shan-chu-shu-ju.html"
+permalink: "2017/ying-yong-ajax-ji-shu-shan-chu-shu-ju.html"
 ---
 {% raw %}
 By  - Last updated: 星期一, 六月 19, 2017

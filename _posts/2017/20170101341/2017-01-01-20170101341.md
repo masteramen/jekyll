@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/%e4%bd%bf%e7%94%a8web%e5%89%8d%e7%ab%af%e6%8a%80
 fileName:  "20170101341"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/%e4%bd%bf%e7%94%a8web%e5%89%8d%e7%ab%af%e6%8a%80%e6%9c%af%e5%ae%9e%e7%8e%b0%e7%9a%84%e6%a2%a6%e5%b9%bbvr%e8%99%9a%e6%8b%9f%e7%8e%b0%e5%ae%9e%e6%95%88%e6%9e%9c.html"
+permalink: "2017/%e4%bd%bf%e7%94%a8web%e5%89%8d%e7%ab%af%e6%8a%80%e6%9c%af%e5%ae%9e%e7%8e%b0%e7%9a%84%e6%a2%a6%e5%b9%bbvr%e8%99%9a%e6%8b%9f%e7%8e%b0%e5%ae%9e%e6%95%88%e6%9e%9c.html"
 ---
 {% raw %}
 VR/AR是近两年的热点， 而基于浏览器的Web VR技术在这两年的发展中，也慢慢的展现了自己强大的技术号召力， 很多新的基于web的VR类库，例如， A-frame， forge.js等等都出现在技术社区中， 各种webVR类库也越来越成熟起来， 在今天这篇代码把玩的文章中，我们精挑细选了五个最惊为天人的Web 3D及其VR效果，希望大家能够觉得给力， 小编废话不说， 请看以下VR效果~

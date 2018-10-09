@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/%e5%88%9d%e8%af%86spring%e4%b8%8emaven%e9%85%8d%
 fileName:  "20170101274"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/%e5%88%9d%e8%af%86spring%e4%b8%8emaven%e9%85%8d%e7%bd%ae.html"
+permalink: "2017/%e5%88%9d%e8%af%86spring%e4%b8%8emaven%e9%85%8d%e7%bd%ae.html"
 ---
 {% raw %}
 # 初识Spring与Maven配置 

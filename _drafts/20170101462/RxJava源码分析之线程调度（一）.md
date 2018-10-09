@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/rxjava%e6%ba%90%e7%a0%81%e5%88%86%e6%9e%90%e4%b9
 fileName:  "20170101462"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/rxjava%e6%ba%90%e7%a0%81%e5%88%86%e6%9e%90%e4%b9%8b%e7%ba%bf%e7%a8%8b%e8%b0%83%e5%ba%a6%e4%b8%80.html"
+permalink: "2017/rxjava%e6%ba%90%e7%a0%81%e5%88%86%e6%9e%90%e4%b9%8b%e7%ba%bf%e7%a8%8b%e8%b0%83%e5%ba%a6%e4%b8%80.html"
 ---
 {% raw %}
 作者[TripleZ](/u/adb7c6deb713)2017.08.03 16:52*字数 1097

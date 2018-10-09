@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/springboot%e7%b3%bb%e5%88%97%e4%ba%94web%e5%bc%8
 fileName:  "20170101316"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/springboot%e7%b3%bb%e5%88%97%e4%ba%94web%e5%bc%80%e5%8f%91thymeleaffreemarker%e6%a8%a1%e6%9d%bf%e5%8f%91%e5%8a%a8%e6%9c%ba-2.html"
+permalink: "2017/springboot%e7%b3%bb%e5%88%97%e4%ba%94web%e5%bc%80%e5%8f%91thymeleaffreemarker%e6%a8%a1%e6%9d%bf%e5%8f%91%e5%8a%a8%e6%9c%ba-2.html"
 ---
 {% raw %}
 # Spring Boot 系列（五）web开发-Thymeleaf、FreeMarker模板发动机 

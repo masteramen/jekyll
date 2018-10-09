@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java%e6%8e%a5%e5%8f%a3%e4%b8%8e%e6%8a%bd%e8%b1%a
 fileName:  "20170101191"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java%e6%8e%a5%e5%8f%a3%e4%b8%8e%e6%8a%bd%e8%b1%a1%e7%b1%bb.html"
+permalink: "2017/java%e6%8e%a5%e5%8f%a3%e4%b8%8e%e6%8a%bd%e8%b1%a1%e7%b1%bb.html"
 ---
 {% raw %}
 如果你对接口和抽象类的使用场景比较模煳，这篇文章或许会对你有所帮助。

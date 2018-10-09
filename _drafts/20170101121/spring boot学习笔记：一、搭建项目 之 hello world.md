@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/springboot%e5%ad%a6%e4%b9%a0%e7%ac%94%e8%ae%b0%e
 fileName:  "20170101121"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/springboot%e5%ad%a6%e4%b9%a0%e7%ac%94%e8%ae%b0%e4%b8%80%e6%90%ad%e5%bb%ba%e9%a1%b9%e7%9b%ae%e4%b9%8bhelloworld.html"
+permalink: "2017/springboot%e5%ad%a6%e4%b9%a0%e7%ac%94%e8%ae%b0%e4%b8%80%e6%90%ad%e5%bb%ba%e9%a1%b9%e7%9b%ae%e4%b9%8bhelloworld.html"
 ---
 {% raw %}
 ### spring boot学习笔记之一：搭建项目 之 hello world

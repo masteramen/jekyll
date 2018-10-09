@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/mysql-explain%e6%89%a7%e8%a1%8c%e8%ae%a1%e5%88%9
 fileName:  "20170100858"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/mysql-explain%e6%89%a7%e8%a1%8c%e8%ae%a1%e5%88%92%e8%af%a6%e7%bb%86%e8%a7%a3%e9%87%8a.html"
+permalink: "2017/mysql-explain%e6%89%a7%e8%a1%8c%e8%ae%a1%e5%88%92%e8%af%a6%e7%bb%86%e8%a7%a3%e9%87%8a.html"
 ---
 {% raw %}
 ## 一. explain 语法

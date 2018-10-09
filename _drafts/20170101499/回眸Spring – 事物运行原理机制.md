@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/%e5%9b%9e%e7%9c%b8spring%e4%ba%8b%e7%89%a9%e8%bf
 fileName:  "20170101499"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/%e5%9b%9e%e7%9c%b8spring%e4%ba%8b%e7%89%a9%e8%bf%90%e8%a1%8c%e5%8e%9f%e7%90%86%e6%9c%ba%e5%88%b6.html"
+permalink: "2017/%e5%9b%9e%e7%9c%b8spring%e4%ba%8b%e7%89%a9%e8%bf%90%e8%a1%8c%e5%8e%9f%e7%90%86%e6%9c%ba%e5%88%b6.html"
 ---
 {% raw %}
 H2M_LI_HEADER Spring的事物是通过哪些原理实现的?

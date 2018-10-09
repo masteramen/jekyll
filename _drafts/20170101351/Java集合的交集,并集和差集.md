@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java%e9%9b%86%e5%90%88%e7%9a%84%e4%ba%a4%e9%9b%8
 fileName:  "20170101351"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java%e9%9b%86%e5%90%88%e7%9a%84%e4%ba%a4%e9%9b%86%e5%b9%b6%e9%9b%86%e5%92%8c%e5%b7%ae%e9%9b%86.html"
+permalink: "2017/java%e9%9b%86%e5%90%88%e7%9a%84%e4%ba%a4%e9%9b%86%e5%b9%b6%e9%9b%86%e5%92%8c%e5%b7%ae%e9%9b%86.html"
 ---
 {% raw %}
 项目中有时会遇到计算集合的交集, 差集和并集的操作.现写个Demo作为笔记.

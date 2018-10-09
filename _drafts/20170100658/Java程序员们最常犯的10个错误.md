@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/10-errors-are-most-commonly-committed-for-java-p
 fileName:  "20170100658"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/10-errors-are-most-commonly-committed-for-java-programmer.html"
+permalink: "2017/10-errors-are-most-commonly-committed-for-java-programmer.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期日, 七月 13, 2014

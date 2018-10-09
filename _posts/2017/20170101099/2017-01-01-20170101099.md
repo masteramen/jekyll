@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/%e4%b8%ba%e4%bb%80%e4%b9%88%e5%9c%a8javascript%e
 fileName:  "20170101099"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/%e4%b8%ba%e4%bb%80%e4%b9%88%e5%9c%a8javascript%e4%b8%ad%e4%bd%bf%e7%94%a8getter%e5%92%8csetter%e6%98%af%e4%b8%80%e4%b8%aa%e5%9d%8f%e4%b8%bb%e6%84%8f.html"
+permalink: "2017/%e4%b8%ba%e4%bb%80%e4%b9%88%e5%9c%a8javascript%e4%b8%ad%e4%bd%bf%e7%94%a8getter%e5%92%8csetter%e6%98%af%e4%b8%80%e4%b8%aa%e5%9d%8f%e4%b8%bb%e6%84%8f.html"
 ---
 {% raw %}
 什么也没有。对象是可扩展的，可以动态分配键和值，因此不会有错误在运行时被抛出。

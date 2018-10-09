@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/java%e5%9f%ba%e7%a1%80io%e4%ba%8c.html"
 fileName:  "20170101164"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/java%e5%9f%ba%e7%a1%80io%e4%ba%8c.html"
+permalink: "2017/java%e5%9f%ba%e7%a1%80io%e4%ba%8c.html"
 ---
 {% raw %}
 接着上一篇，继续做学习笔记。学IO这块，突然找到一点好处，好像以后操作电脑，尤其是电脑里的文件啥的，可以很少的用鼠标了。添加、修改、删除啥的，几行代码就可以搞定了。这只是我一个初学者的一点小心思，IO背后的大用处，相信还有很多很多。继续学习ing….

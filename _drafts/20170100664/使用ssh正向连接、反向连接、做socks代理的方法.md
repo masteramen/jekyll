@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/%e4%bd%bf%e7%94%a8ssh%e6%ad%a3%e5%90%91%e8%bf%9e
 fileName:  "20170100664"
 lang:  "zh_CN"
 published: true
-permalink: "2017/https://www.jfox.info/%e4%bd%bf%e7%94%a8ssh%e6%ad%a3%e5%90%91%e8%bf%9e%e6%8e%a5%e3%80%81%e5%8f%8d%e5%90%91%e8%bf%9e%e6%8e%a5%e3%80%81%e5%81%9asocks%e4%bb%a3%e7%90%86%e7%9a%84%e6%96%b9%e6%b3%95.html"
+permalink: "2017/%e4%bd%bf%e7%94%a8ssh%e6%ad%a3%e5%90%91%e8%bf%9e%e6%8e%a5%e3%80%81%e5%8f%8d%e5%90%91%e8%bf%9e%e6%8e%a5%e3%80%81%e5%81%9asocks%e4%bb%a3%e7%90%86%e7%9a%84%e6%96%b9%e6%b3%95.html"
 ---
 {% raw %}
 最近才发现ssh有多么的强大！
