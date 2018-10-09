@@ -3,11 +3,11 @@ layout: post
 title:  "简单java播放mp3代码"
 title2:  "简单java播放mp3代码"
 date:   2017-01-01 23:43:24  +0800
-source:  "http://www.jfox.info/%e7%ae%80%e5%8d%95java%e6%92%ad%e6%94%bemp3%e4%bb%a3%e7%a0%81.html"
+source:  "https://www.jfox.info/%e7%ae%80%e5%8d%95java%e6%92%ad%e6%94%bemp3%e4%bb%a3%e7%a0%81.html"
 fileName:  "20170100504"
 lang:  "zh_CN"
 published: true
-permalink: "%e7%ae%80%e5%8d%95java%e6%92%ad%e6%94%bemp3%e4%bb%a3%e7%a0%81.html"
+permalink: "2017/https://www.jfox.info/%e7%ae%80%e5%8d%95java%e6%92%ad%e6%94%bemp3%e4%bb%a3%e7%a0%81.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期三, 一月 29, 2014

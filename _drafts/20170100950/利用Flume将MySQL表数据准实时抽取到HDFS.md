@@ -3,11 +3,11 @@ layout: post
 title:  "利用Flume将MySQL表数据准实时抽取到HDFS"
 title2:  "利用Flume将MySQL表数据准实时抽取到HDFS"
 date:   2017-01-01 23:50:50  +0800
-source:  "http://www.jfox.info/%e5%88%a9%e7%94%a8flume%e5%b0%86mysql%e8%a1%a8%e6%95%b0%e6%8d%ae%e5%87%86%e5%ae%9e%e6%97%b6%e6%8a%bd%e5%8f%96%e5%88%b0hdfs.html"
+source:  "https://www.jfox.info/%e5%88%a9%e7%94%a8flume%e5%b0%86mysql%e8%a1%a8%e6%95%b0%e6%8d%ae%e5%87%86%e5%ae%9e%e6%97%b6%e6%8a%bd%e5%8f%96%e5%88%b0hdfs.html"
 fileName:  "20170100950"
 lang:  "zh_CN"
 published: true
-permalink: "%e5%88%a9%e7%94%a8flume%e5%b0%86mysql%e8%a1%a8%e6%95%b0%e6%8d%ae%e5%87%86%e5%ae%9e%e6%97%b6%e6%8a%bd%e5%8f%96%e5%88%b0hdfs.html"
+permalink: "2017/https://www.jfox.info/%e5%88%a9%e7%94%a8flume%e5%b0%86mysql%e8%a1%a8%e6%95%b0%e6%8d%ae%e5%87%86%e5%ae%9e%e6%97%b6%e6%8a%bd%e5%8f%96%e5%88%b0hdfs.html"
 ---
 {% raw %}
 # 利用Flume将MySQL表数据准实时抽取到HDFS 
@@ -61,7 +61,7 @@ permalink: "%e5%88%a9%e7%94%a8flume%e5%b0%86mysql%e8%a1%a8%e6%95%b0%e6%8d%ae%e5%
 
 # 三、安装Hadoop和Flume
  我的实验在HDP 2.5.0上进行，HDP安装中包含Flume，只要配置Flume服务即可。HDP的安装步骤参见“ 
- [HAWQ技术解析（二） —— 安装部署](http://www.jfox.info/go.php?url=http://blog.csdn.net/wzy0623/article/details/55212318)
+ [HAWQ技术解析（二） —— 安装部署](https://www.jfox.info/go.php?url=http://blog.csdn.net/wzy0623/article/details/55212318)
 ” 
  
 
@@ -110,7 +110,7 @@ permalink: "%e5%88%a9%e7%94%a8flume%e5%b0%86mysql%e8%a1%a8%e6%95%b0%e6%8d%ae%e5%
 
 ## 3. 准备JAR包
  从 
- [http://book2s.com/java/jar/f/flume-ng-sql-source/download-flume-ng-sql-source-1.3.7.html](http://www.jfox.info/go.php?url=http://book2s.com/java/jar/f/flume-ng-sql-source/download-flume-ng-sql-source-1.3.7.html)
+ [http://book2s.com/java/jar/f/flume-ng-sql-source/download-flume-ng-sql-source-1.3.7.html](https://www.jfox.info/go.php?url=http://book2s.com/java/jar/f/flume-ng-sql-source/download-flume-ng-sql-source-1.3.7.html)
 下载flume-ng-sql-source-1.3.7.jar文件，并复制到Flume库目录。 
  
 

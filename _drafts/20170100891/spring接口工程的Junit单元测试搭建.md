@@ -3,11 +3,11 @@ layout: post
 title:  "spring接口工程的Junit单元测试搭建"
 title2:  "spring接口工程的Junit单元测试搭建"
 date:   2017-01-01 23:49:51  +0800
-source:  "http://www.jfox.info/spring%e6%8e%a5%e5%8f%a3%e5%b7%a5%e7%a8%8b%e7%9a%84junit%e5%8d%95%e5%85%83%e6%b5%8b%e8%af%95%e6%90%ad%e5%bb%ba.html"
+source:  "https://www.jfox.info/spring%e6%8e%a5%e5%8f%a3%e5%b7%a5%e7%a8%8b%e7%9a%84junit%e5%8d%95%e5%85%83%e6%b5%8b%e8%af%95%e6%90%ad%e5%bb%ba.html"
 fileName:  "20170100891"
 lang:  "zh_CN"
 published: true
-permalink: "spring%e6%8e%a5%e5%8f%a3%e5%b7%a5%e7%a8%8b%e7%9a%84junit%e5%8d%95%e5%85%83%e6%b5%8b%e8%af%95%e6%90%ad%e5%bb%ba.html"
+permalink: "2017/https://www.jfox.info/spring%e6%8e%a5%e5%8f%a3%e5%b7%a5%e7%a8%8b%e7%9a%84junit%e5%8d%95%e5%85%83%e6%b5%8b%e8%af%95%e6%90%ad%e5%bb%ba.html"
 ---
 {% raw %}
 **引言**
@@ -426,5 +426,87 @@ Junit测试类：
 
 前面把Junit分别三种装配方式整合进行了讲解。但我们所在的项目，业务代码很有可能以上三种装配方式都有使用，这时候创建Junit单元测试，需要把不同的装配方式整合到一起。其中”自动装配”其实也是通过，java或者xml配置实现的。所有我们只需要整合java装配和xml装配。具体可以使用@import 和@importResource注解来实现。
 
-假设有个业务测试，需要用到商品接口、用户接口、jdbc数据连接。我们
+假设有个业务测试，需要用到商品接口、用户接口、jdbc数据连接。我们可以把各个业务块的java装配、xml转配整合到一起。具体整合内容如下：
+
+     
+    @Import({UserServiceConfig.class,ProductServiceConfig.class})
+    @ImportResource("classpath:spring-jdbc.xml")
+    public class MultConfig {
+    }
+    @ComponentScan
+    public class UserServiceConfig {
+    }
+    @ComponentScan
+    public class ProductServiceConfig {
+    }
+    <?xml version="1.0" encoding="UTF-8"?>
+    <beans xmlns="http://www.springframework.org/schema/beans"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd">
+        <!-- 不需要依赖的id，可以不用指定-->
+        <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+            <property name="locations">
+                <list>
+                    <value>classpath:test.properties</value>
+                </list>
+            </property>
+        </bean>
+        <bean id="testDbSource" class="com.sky.locale.dao.jdbc.TestJdbcSource">
+            <constructor-arg name="uri" value="${jdbc.url}"/>
+            <constructor-arg name="userName" value="${jdbc.username}"/>
+            <constructor-arg name="password" value="${jdbc.password}"/>
+        </bean>
+    </beans>
+
+这种整合方式有点类似 我们用一个顶级的xml配置文件，整合各个业务模块xml配置一样：
+
+    <?xml version="1.0" encoding="GBK"?>
+    <beans xmlns="http://www.springframework.org/schema/beans"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://www.springframework.org/schema/beans
+                         http://www.springframework.org/schema/beans/spring-beans.xsd"
+           default-autowire="byName">
+        <import resource="xx1.xml" />
+        <import resource="xx2.xml" />
+        <import resource="xx3.xml" />
+    </beans>
+
+整合完成后，创建Junit测试类，这时只需引入整合后的MultConfig类即可：
+
+    @RunWith(SpringJUnit4ClassRunner.class)
+    @ContextConfiguration(classes=MultConfig.class)
+    public class MultTest {
+        @Autowired
+        private UserService us;
+        @Autowired
+        private ProductService ps;
+        @Autowired
+        private TestJdbcSource testDbSource;
+        @Test
+        public void mutliTest(){
+            Assert.notNull(us);
+            Assert.notNull(ps);
+            Assert.notNull(testDbSource);
+            us.add();
+            ps.add();
+            testDbSource.getSource();
+        }
+    }
+
+执行测试方法，打印结果为：
+
+    service层:用户添加成功
+    service层:商品添加成功
+    连接数据库uri:jdbc:msyql:loadbalance://localhost/test_db
+    连接数据库用户名:root
+    连接数据库密码:123
+
+整合成功。
+
+理论上通过这种方式，你可以把程序中所有bean都注入到容器中，而不需要部署程序，就可以对任意一个接口方法进行测试。
+
+通过以上讲解，应该覆盖了我们在创建Junit单元测试所遇到的大部分情况。根据不同场景，灵活运用，可以让我们的纯接口工程测试更加轻松。
+
+以上示例代码已上传到GitHub，地址：https://github.com/gantianxing/spring-test.git
 {% endraw %}

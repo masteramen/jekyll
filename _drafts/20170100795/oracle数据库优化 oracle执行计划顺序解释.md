@@ -3,11 +3,11 @@ layout: post
 title:  "oracle数据库优化 oracle执行计划顺序解释"
 title2:  "oracle数据库优化 oracle执行计划顺序解释"
 date:   2017-01-01 23:48:15  +0800
-source:  "http://www.jfox.info/oracle-shu-ju-ku-you-hua-oracle-zhi-xing-ji-hua-shun-xu-jie-shi.html"
+source:  "https://www.jfox.info/oracle-shu-ju-ku-you-hua-oracle-zhi-xing-ji-hua-shun-xu-jie-shi.html"
 fileName:  "20170100795"
 lang:  "zh_CN"
 published: true
-permalink: "oracle-shu-ju-ku-you-hua-oracle-zhi-xing-ji-hua-shun-xu-jie-shi.html"
+permalink: "2017/https://www.jfox.info/oracle-shu-ju-ku-you-hua-oracle-zhi-xing-ji-hua-shun-xu-jie-shi.html"
 ---
 {% raw %}
 关于oracle执行计划，网上很多说法都是，先执行最大缩进的行，如果缩进相同，就先执行上面的行，也就是最右最上原则。
@@ -147,5 +147,5 @@ permalink: "oracle-shu-ju-ku-you-hua-oracle-zhi-xing-ji-hua-shun-xu-jie-shi.html
 **2、  有父子步骤的，先要执行子步骤，也是按照最右最上原则执行。
 **
 
-[原文链接](http://www.jfox.info/go.php?url=http://www.tanyangxf.net/index.php/oracle-explain-sequence/)
+[原文链接](https://www.jfox.info/go.php?url=http://www.tanyangxf.net/index.php/oracle-explain-sequence/)
 {% endraw %}

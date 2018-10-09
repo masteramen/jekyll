@@ -3,11 +3,11 @@ layout: post
 title:  "我的面试准备过程–leetcode树"
 title2:  "我的面试准备过程–leetcode树"
 date:   2017-01-01 23:53:35  +0800
-source:  "http://www.jfox.info/%e6%88%91%e7%9a%84%e9%9d%a2%e8%af%95%e5%87%86%e5%a4%87%e8%bf%87%e7%a8%8bleetcode%e6%a0%91.html"
+source:  "https://www.jfox.info/%e6%88%91%e7%9a%84%e9%9d%a2%e8%af%95%e5%87%86%e5%a4%87%e8%bf%87%e7%a8%8bleetcode%e6%a0%91.html"
 fileName:  "20170101115"
 lang:  "zh_CN"
 published: true
-permalink: "%e6%88%91%e7%9a%84%e9%9d%a2%e8%af%95%e5%87%86%e5%a4%87%e8%bf%87%e7%a8%8bleetcode%e6%a0%91.html"
+permalink: "2017/https://www.jfox.info/%e6%88%91%e7%9a%84%e9%9d%a2%e8%af%95%e5%87%86%e5%a4%87%e8%bf%87%e7%a8%8bleetcode%e6%a0%91.html"
 ---
 {% raw %}
 ## 　由遍历结果反求树

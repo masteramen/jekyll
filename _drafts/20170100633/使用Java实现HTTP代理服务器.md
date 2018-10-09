@@ -3,11 +3,11 @@ layout: post
 title:  "使用Java实现HTTP代理服务器"
 title2:  "使用Java实现HTTP代理服务器"
 date:   2017-01-01 23:45:33  +0800
-source:  "http://www.jfox.info/http-proxy-server-implemented-in-java.html"
+source:  "https://www.jfox.info/http-proxy-server-implemented-in-java.html"
 fileName:  "20170100633"
 lang:  "zh_CN"
 published: true
-permalink: "http-proxy-server-implemented-in-java.html"
+permalink: "2017/https://www.jfox.info/http-proxy-server-implemented-in-java.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期六, 五月 17, 2014
@@ -230,5 +230,5 @@ By Lee - Last updated: 星期六, 五月 17, 2014
 
 效果还不错，用firefox/ ie都测试过，可用。
 
-原文地址:[http://blog.csdn.net/java2000_net/article/details/7826660](http://www.jfox.info/go.php?url=http://www.jfox.info/url.php?url=http%3A%2F%2Fblog.csdn.net%2Fjava2000_net%2Farticle%2Fdetails%2F7826660).
+原文地址:[http://blog.csdn.net/java2000_net/article/details/7826660](https://www.jfox.info/go.php?url=http://www.jfox.info/url.php?url=http%3A%2F%2Fblog.csdn.net%2Fjava2000_net%2Farticle%2Fdetails%2F7826660).
 {% endraw %}

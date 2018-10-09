@@ -3,11 +3,11 @@ layout: post
 title:  "Personally Identifiable Brains"
 title2:  "Personally Identifiable Brains"
 date:   2017-01-01 23:53:10  +0800
-source:  "http://www.jfox.info/personallyidentifiablebrains.html"
+source:  "https://www.jfox.info/personallyidentifiablebrains.html"
 fileName:  "20170101090"
 lang:  "zh_CN"
 published: true
-permalink: "personallyidentifiablebrains.html"
+permalink: "2017/https://www.jfox.info/personallyidentifiablebrains.html"
 ---
 {% raw %}
 ** 1. To hack into neuroscientist’s brain. ** As a neuroscientist, one inevitably scan his/her own brain. If these datasets are collected and shared, it would be a unique resource for better understanding of human brain, in particular of the neuroscientists’ brain and their academic life. For example, with the data, we could answer questions like: what kind of brain ensures a scientist’s academic success? what kind of brain make researchers perfectly network/collaborate with each other in the social network or collaboration network? 

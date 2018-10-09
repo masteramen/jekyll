@@ -3,11 +3,11 @@ layout: post
 title:  "Spring Boot API 版本权限控制"
 title2:  "Spring Boot API 版本权限控制"
 date:   2017-01-01 23:55:48  +0800
-source:  "http://www.jfox.info/springbootapi%e7%89%88%e6%9c%ac%e6%9d%83%e9%99%90%e6%8e%a7%e5%88%b6.html"
+source:  "https://www.jfox.info/springbootapi%e7%89%88%e6%9c%ac%e6%9d%83%e9%99%90%e6%8e%a7%e5%88%b6.html"
 fileName:  "20170101248"
 lang:  "zh_CN"
 published: true
-permalink: "springbootapi%e7%89%88%e6%9c%ac%e6%9d%83%e9%99%90%e6%8e%a7%e5%88%b6.html"
+permalink: "2017/https://www.jfox.info/springbootapi%e7%89%88%e6%9c%ac%e6%9d%83%e9%99%90%e6%8e%a7%e5%88%b6.html"
 ---
 {% raw %}
 之前有文章讲述在Spring MVC 中扩展 RequestMappingHandlerMapping 实现对版本的控制。

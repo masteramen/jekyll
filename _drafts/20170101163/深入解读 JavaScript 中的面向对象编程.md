@@ -3,11 +3,11 @@ layout: post
 title:  "深入解读 JavaScript 中的面向对象编程"
 title2:  "深入解读 JavaScript 中的面向对象编程"
 date:   2017-01-01 23:54:23  +0800
-source:  "http://www.jfox.info/%e6%b7%b1%e5%85%a5%e8%a7%a3%e8%af%bbjavascript%e4%b8%ad%e7%9a%84%e9%9d%a2%e5%90%91%e5%af%b9%e8%b1%a1%e7%bc%96%e7%a8%8b.html"
+source:  "https://www.jfox.info/%e6%b7%b1%e5%85%a5%e8%a7%a3%e8%af%bbjavascript%e4%b8%ad%e7%9a%84%e9%9d%a2%e5%90%91%e5%af%b9%e8%b1%a1%e7%bc%96%e7%a8%8b.html"
 fileName:  "20170101163"
 lang:  "zh_CN"
 published: true
-permalink: "%e6%b7%b1%e5%85%a5%e8%a7%a3%e8%af%bbjavascript%e4%b8%ad%e7%9a%84%e9%9d%a2%e5%90%91%e5%af%b9%e8%b1%a1%e7%bc%96%e7%a8%8b.html"
+permalink: "2017/https://www.jfox.info/%e6%b7%b1%e5%85%a5%e8%a7%a3%e8%af%bbjavascript%e4%b8%ad%e7%9a%84%e9%9d%a2%e5%90%91%e5%af%b9%e8%b1%a1%e7%bc%96%e7%a8%8b.html"
 ---
 {% raw %}
 面向对象编程是用抽象方式创建基于现实世界模型的一种编程模式，主要包括模块化、多态、和封装几种技术。 对 JavaScript 而言，其核心是支持面向对象的，同时它也提供了强大灵活的基于原型的面向对象编程能力。 本文将会深入的探讨有关使用 JavaScript 进行面向对象编程的一些核心基础知识，包括对象的创建，继承机制， 最后还会简要的介绍如何借助 ES6 提供的新的类机制重写传统的JavaScript面向对象代码。
@@ -69,7 +69,7 @@ var person2 = new Person(‘Lily’, 25, ‘Doctor’);
          7 
         
        functionPerson(name,age,job){  this.name=name;  this.age=age;  this.job=job;}varperson1=newPerson(‘Weiwei’,27,‘Student’);varperson2=newPerson(‘Lily’,25,‘Doctor’);
-按照惯例，构造函数始终都应该以一个大写字母开头（和Java中定义的类一样），普通函数则小写字母开头。 要创建 `Person` 的新实例，必须使用 [`new`](http://www.jfox.info/go.php?url=https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/new) 操作符。 以这种方式调用构造函数实际上会经历以下4个步骤：
+按照惯例，构造函数始终都应该以一个大写字母开头（和Java中定义的类一样），普通函数则小写字母开头。 要创建 `Person` 的新实例，必须使用 [`new`](https://www.jfox.info/go.php?url=https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/new) 操作符。 以这种方式调用构造函数实际上会经历以下4个步骤：
 
 1. 创建一个新对象（实例）
 2. **将构造函数的作用域赋给新对象**（也就是重设了`this`的指向，`this`就指向了这个新对象）
@@ -284,7 +284,7 @@ Object.getPrototypeOf(person1) === Person.prototype; // true
          2 
         
        person1.__proto__===Object.getPrototypeOf(person1);// trueObject.getPrototypeOf(person1)===Person.prototype;// true
-也就是说，`Object.getPrototypeOf(p1)`返回的对象实际就是这个对象的原型。 这个方法的兼容性请参考[该链接](http://www.jfox.info/go.php?url=http://caniuse.com/#search=getPrototypeOf())。
+也就是说，`Object.getPrototypeOf(p1)`返回的对象实际就是这个对象的原型。 这个方法的兼容性请参考[该链接](https://www.jfox.info/go.php?url=http://caniuse.com/#search=getPrototypeOf())。
 
 ### `Object.keys()`
 
@@ -307,7 +307,7 @@ Object.keys(p1); // [“name”, “age”, “job”]
 
 ### 更简单的原型语法
 
-在上面的代码中，如果我们要添加原型属性和方法，就要重复的敲一遍`Person.prototype`。为了减少这个重复的过程， 更常见的做法是用一个包含所有属性和方法的对象字面量来重写整个原型对象。 [参考资料](http://www.jfox.info/go.php?url=https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertyNames)。
+在上面的代码中，如果我们要添加原型属性和方法，就要重复的敲一遍`Person.prototype`。为了减少这个重复的过程， 更常见的做法是用一个包含所有属性和方法的对象字面量来重写整个原型对象。 [参考资料](https://www.jfox.info/go.php?url=https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertyNames)。
 JavaScript 
    
   
@@ -443,7 +443,7 @@ Object.defineProperty(Person.prototype, “constructor”, {
 - 原型对象包含一个指向构造函数的指针（`constructor`）
 - 实例都包含一个指向原型对象的内部指针（`[[Prototype]]`）
 
-如果我们让原型对象等于另一个类型的实现，结果会怎么样？显然，**此时的原型对象将包含一个指向另一个原型的指针**， 相应的，另一个原型中也包含着一个指向另一个构造函数的指针。假如另一个原型又是另一个类型的实例，那么上述关系依然成立， 如此层层递进，就构成了实例与原型的链条。 更详细的内容可以参考[这个链接](http://www.jfox.info/go.php?url=https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Inheritance_and_the_prototype_chain)。 先看一个简单的例子，它演示了使用原型链实现继承的基本框架：
+如果我们让原型对象等于另一个类型的实现，结果会怎么样？显然，**此时的原型对象将包含一个指向另一个原型的指针**， 相应的，另一个原型中也包含着一个指向另一个构造函数的指针。假如另一个原型又是另一个类型的实例，那么上述关系依然成立， 如此层层递进，就构成了实例与原型的链条。 更详细的内容可以参考[这个链接](https://www.jfox.info/go.php?url=https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Inheritance_and_the_prototype_chain)。 先看一个简单的例子，它演示了使用原型链实现继承的基本框架：
 JavaScript 
    
   
@@ -546,7 +546,7 @@ instance.getChildValue();  // false
 
 ### 别忘了`Object`
 
-所有的函数都默认原型都是`Object`的实例，因此默认原型都会包含一个内部指针`[[Prototype]]`，指向`Object.prototype`。 这也正是所有自定义类型都会继承`toString()`、`valueOf()`等默认方法的根本原因。所以， 我们说上面例子展示的原型链中还应该包括另外一个继承层次。关于`Object`的更多内容，可以参考[这篇博客](http://www.jfox.info/go.php?url=http://luopq.com/2016/02/28/Object-in-Javascript/)。
+所有的函数都默认原型都是`Object`的实例，因此默认原型都会包含一个内部指针`[[Prototype]]`，指向`Object.prototype`。 这也正是所有自定义类型都会继承`toString()`、`valueOf()`等默认方法的根本原因。所以， 我们说上面例子展示的原型链中还应该包括另外一个继承层次。关于`Object`的更多内容，可以参考[这篇博客](https://www.jfox.info/go.php?url=http://luopq.com/2016/02/28/Object-in-Javascript/)。
 
 也就是说，`Child`继承了`Father`，而`Father`继承了`Object`。当调用了`instance.toString()`时， 实际上调用的是保存在`Object.prototype`中的那个方法。
 
@@ -881,7 +881,7 @@ student1.saySchool(); // Southeast University
 
 ### 组合继承的改进版：使用`Object.create()`
 
-在上面，我们继承父类的原型方法使用的是`Student.prototype = new Person()`。 这样做[有很多的问题](http://www.jfox.info/go.php?url=https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Introduction_to_Object-Oriented_JavaScript)。 改进方法是使用ES5中新增的`Object.create()`。可以调用这个方法来创建一个新对象。新对象的原型就是调用`create()`方法传入的第一个参数：
+在上面，我们继承父类的原型方法使用的是`Student.prototype = new Person()`。 这样做[有很多的问题](https://www.jfox.info/go.php?url=https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Introduction_to_Object-Oriented_JavaScript)。 改进方法是使用ES5中新增的`Object.create()`。可以调用这个方法来创建一个新对象。新对象的原型就是调用`create()`方法传入的第一个参数：
 JavaScript 
    
   
@@ -908,7 +908,7 @@ Student.prototype.constructor = Student;
          4 
         
        Student.prototype=Object.create(Person.prototype);console.log(Student.prototype.constructor);// [Function: Person]// 设置 constructor 属性指向 StudentStudent.prototype.constructor=Student;
-详细用法可以[参考文档](http://www.jfox.info/go.php?url=https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/create)。 关于`Object.create()`的实现，我们可以参考一个简单的polyfill：
+详细用法可以[参考文档](https://www.jfox.info/go.php?url=https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/create)。 关于`Object.create()`的实现，我们可以参考一个简单的polyfill：
 JavaScript 
    
   
@@ -951,7 +951,7 @@ Student.prototype = createObject(Person.prototype);
 
 ## ES6中的面向对象语法
 
-ES6中引入了一套新的关键字用来实现[class](http://www.jfox.info/go.php?url=https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Classes)。 但它并不是映入了一种新的面向对象继承模式。JavaScript仍然是基于原型的，这些新的关键字包括[class](http://www.jfox.info/go.php?url=https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/class)、 [constructor](http://www.jfox.info/go.php?url=https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Classes/constructor)、 [static](http://www.jfox.info/go.php?url=https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Classes/static)、 [extends](http://www.jfox.info/go.php?url=https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Classes/extends)、 和[super](http://www.jfox.info/go.php?url=https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/super)。
+ES6中引入了一套新的关键字用来实现[class](https://www.jfox.info/go.php?url=https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Classes)。 但它并不是映入了一种新的面向对象继承模式。JavaScript仍然是基于原型的，这些新的关键字包括[class](https://www.jfox.info/go.php?url=https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/class)、 [constructor](https://www.jfox.info/go.php?url=https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Classes/constructor)、 [static](https://www.jfox.info/go.php?url=https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Classes/static)、 [extends](https://www.jfox.info/go.php?url=https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Classes/extends)、 和[super](https://www.jfox.info/go.php?url=https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/super)。
 
 `class`关键字不过是提供了一种在本文中所讨论的基于原型模式和构造器模式的面向对象的继承方式的**语法糖(syntactic sugar)**。
 
@@ -1072,15 +1072,15 @@ stu2.saySchool(); // Nanjing University
        ‘use strict’;classPerson{  constructor(name,age,job){    this.name=name;    this.age=age;    this.job=job;  }  sayName(){    console.log(this.name);  }}classStudentextendsPerson{  constructor(name,age,school){    super(name,age,‘Student’);    this.school=school;  }  saySchool(){    console.log(this.school);  }}varstu1=newStudent(‘weiwei’,20,‘Southeast University’);varstu2=newStudent(‘lily’,22,‘Nanjing University’);stu1.sayName();// weiweistu1.saySchool();// Southeast Universitystu2.sayName();// lilystu2.saySchool();// Nanjing University
 ### 类：`class`
 
-是JavaScript中现有基于原型的继承的语法糖。ES6中的**类**并不是一种新的创建对象的方法，只不过是一种“特殊的函数”， 因此也包括[类表达式](http://www.jfox.info/go.php?url=https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/class)和[类声明](http://www.jfox.info/go.php?url=https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/class)， 但需要注意的是，与函数声明不同的是，类声明不会被[提升](http://www.jfox.info/go.php?url=http://www.sitepoint.com/back-to-basics-javascript-hoisting/)。 [参考链接](http://www.jfox.info/go.php?url=https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/class)
+是JavaScript中现有基于原型的继承的语法糖。ES6中的**类**并不是一种新的创建对象的方法，只不过是一种“特殊的函数”， 因此也包括[类表达式](https://www.jfox.info/go.php?url=https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/class)和[类声明](https://www.jfox.info/go.php?url=https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/class)， 但需要注意的是，与函数声明不同的是，类声明不会被[提升](https://www.jfox.info/go.php?url=http://www.sitepoint.com/back-to-basics-javascript-hoisting/)。 [参考链接](https://www.jfox.info/go.php?url=https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/class)
 
 ### 类构造器：`constructor`
 
-`constructor()`方法是有一种特殊的和`class`一起用于创建和初始化对象的方法。注意，在ES6类中只能有一个名称为`constructor`的方法， 否则会报错。在`constructor()`方法中可以调用`super`关键字调用父类构造器。如果你没有指定一个构造器方法， 类会自动使用一个默认的构造器。[参考链接](http://www.jfox.info/go.php?url=https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/constructor)
+`constructor()`方法是有一种特殊的和`class`一起用于创建和初始化对象的方法。注意，在ES6类中只能有一个名称为`constructor`的方法， 否则会报错。在`constructor()`方法中可以调用`super`关键字调用父类构造器。如果你没有指定一个构造器方法， 类会自动使用一个默认的构造器。[参考链接](https://www.jfox.info/go.php?url=https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/constructor)
 
 ### 类的静态方法：`static`
 
-静态方法就是可以直接使用类名调用的方法，而无需对类进行实例化，当然实例化后的类也无法调用静态方法。 静态方法常被用于创建应用的工具函数。[参考链接](http://www.jfox.info/go.php?url=https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/static)
+静态方法就是可以直接使用类名调用的方法，而无需对类进行实例化，当然实例化后的类也无法调用静态方法。 静态方法常被用于创建应用的工具函数。[参考链接](https://www.jfox.info/go.php?url=https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/static)
 
 ### 继承父类：`extends`
 
@@ -1088,7 +1088,7 @@ stu2.saySchool(); // Nanjing University
 
 ### 关键字：`super`
 
-`super`关键字用于调用父对象上的函数。 `super.prop`和`super[expr]`表达式在类和[对象字面量](http://www.jfox.info/go.php?url=https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer)中的任何[方法定义](http://www.jfox.info/go.php?url=https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Method_definitions)中都有效。
+`super`关键字用于调用父对象上的函数。 `super.prop`和`super[expr]`表达式在类和[对象字面量](https://www.jfox.info/go.php?url=https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer)中的任何[方法定义](https://www.jfox.info/go.php?url=https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Method_definitions)中都有效。
 JavaScript 
    
   
@@ -1107,7 +1107,7 @@ super.functionOnParent([arguments]); // 调用父类中的方法
          2 
         
        super([arguments]);// 调用父类构造器super.functionOnParent([arguments]);// 调用父类中的方法
-如果是在类的构造器中，需要在`this`关键字之前使用。[参考链接](http://www.jfox.info/go.php?url=https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/super)
+如果是在类的构造器中，需要在`this`关键字之前使用。[参考链接](https://www.jfox.info/go.php?url=https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/super)
 
 ## 小结
 

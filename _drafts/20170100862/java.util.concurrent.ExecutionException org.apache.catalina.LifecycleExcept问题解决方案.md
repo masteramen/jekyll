@@ -3,18 +3,18 @@ layout: post
 title:  "java.util.concurrent.ExecutionException: org.apache.catalina.LifecycleExcept问题解决方案"
 title2:  "java.util.concurrent.ExecutionException org.apache.catalina.LifecycleExcept问题解决方案"
 date:   2017-01-01 23:49:22  +0800
-source:  "http://www.jfox.info/java_util_concurrent_executionexception_org_apache_catalina_lifecycleexcept_wen_ti_jie_jue_fang_an.html"
+source:  "https://www.jfox.info/java_util_concurrent_executionexception_org_apache_catalina_lifecycleexcept_wen_ti_jie_jue_fang_an.html"
 fileName:  "20170100862"
 lang:  "zh_CN"
 published: true
-permalink: "java_util_concurrent_executionexception_org_apache_catalina_lifecycleexcept_wen_ti_jie_jue_fang_an.html"
+permalink: "2017/https://www.jfox.info/java_util_concurrent_executionexception_org_apache_catalina_lifecycleexcept_wen_ti_jie_jue_fang_an.html"
 ---
 {% raw %}
 在部署Dynamic Web Project时，如果正确配置web.xml或者标注时，仍然出现以上异常的话，可以尝试以下内容讲解的方法：
 
 　　首先，双击eclipse中的servers，位置如下图“1”所指。
 
-检查位置”2″的General Infomation是否正确，以及位置“3”处的Servlet Path路径信息是否配置正确（一般情况下，正确设置Eclipse的Tomcat配置，这两项没有问题，正确的配置方法参见[http://jingyan.baidu.com/article/870c6fc33e62bcb03fe4be90.html](http://www.jfox.info/go.php?url=http://jingyan.baidu.com/article/870c6fc33e62bcb03fe4be90.html)）
+检查位置”2″的General Infomation是否正确，以及位置“3”处的Servlet Path路径信息是否配置正确（一般情况下，正确设置Eclipse的Tomcat配置，这两项没有问题，正确的配置方法参见[http://jingyan.baidu.com/article/870c6fc33e62bcb03fe4be90.html](https://www.jfox.info/go.php?url=http://jingyan.baidu.com/article/870c6fc33e62bcb03fe4be90.html)）
 
 接下来看位置“4”处的路径是否是Tomcat路径下的webapps的匹配路径，如果不是，按照如下步骤操作：
 

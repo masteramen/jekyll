@@ -3,11 +3,11 @@ layout: post
 title:  "使用Java正则表达式删除HTML标签获取文本内容"
 title2:  "使用Java正则表达式删除HTML标签获取文本内容"
 date:   2017-01-01 23:44:28  +0800
-source:  "http://www.jfox.info/%e4%bd%bf%e7%94%a8java%e6%ad%a3%e5%88%99%e8%a1%a8%e8%be%be%e5%bc%8f%e5%88%a0%e9%99%a4html%e6%a0%87%e7%ad%be%e8%8e%b7%e5%8f%96%e6%96%87%e6%9c%ac%e5%86%85%e5%ae%b9.html"
+source:  "https://www.jfox.info/%e4%bd%bf%e7%94%a8java%e6%ad%a3%e5%88%99%e8%a1%a8%e8%be%be%e5%bc%8f%e5%88%a0%e9%99%a4html%e6%a0%87%e7%ad%be%e8%8e%b7%e5%8f%96%e6%96%87%e6%9c%ac%e5%86%85%e5%ae%b9.html"
 fileName:  "20170100568"
 lang:  "zh_CN"
 published: true
-permalink: "%e4%bd%bf%e7%94%a8java%e6%ad%a3%e5%88%99%e8%a1%a8%e8%be%be%e5%bc%8f%e5%88%a0%e9%99%a4html%e6%a0%87%e7%ad%be%e8%8e%b7%e5%8f%96%e6%96%87%e6%9c%ac%e5%86%85%e5%ae%b9.html"
+permalink: "2017/https://www.jfox.info/%e4%bd%bf%e7%94%a8java%e6%ad%a3%e5%88%99%e8%a1%a8%e8%be%be%e5%bc%8f%e5%88%a0%e9%99%a4html%e6%a0%87%e7%ad%be%e8%8e%b7%e5%8f%96%e6%96%87%e6%9c%ac%e5%86%85%e5%ae%b9.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期二, 二月 18, 2014
@@ -57,5 +57,5 @@ content = content.replaceAll(“\\<.*?>”, “”);
 return content; 
 }
 
-参考来源 [Java清除HTML标签 ](http://www.jfox.info/go.php?url=http://www.jfox.info/url.php?url=http%3A%2F%2Fxiejincheng.blog.51cto.com%2F2307724%2F722731)
+参考来源 [Java清除HTML标签 ](https://www.jfox.info/go.php?url=http://www.jfox.info/url.php?url=http%3A%2F%2Fxiejincheng.blog.51cto.com%2F2307724%2F722731)
 {% endraw %}

@@ -3,11 +3,11 @@ layout: post
 title:  "用 DOM 与 CSS 展示二叉树"
 title2:  "用 DOM 与 CSS 展示二叉树"
 date:   2017-01-01 23:50:33  +0800
-source:  "http://www.jfox.info/%e7%94%a8-dom-%e4%b8%8e-css-%e5%b1%95%e7%a4%ba%e4%ba%8c%e5%8f%89%e6%a0%91.html"
+source:  "https://www.jfox.info/%e7%94%a8-dom-%e4%b8%8e-css-%e5%b1%95%e7%a4%ba%e4%ba%8c%e5%8f%89%e6%a0%91.html"
 fileName:  "20170100933"
 lang:  "zh_CN"
 published: true
-permalink: "%e7%94%a8-dom-%e4%b8%8e-css-%e5%b1%95%e7%a4%ba%e4%ba%8c%e5%8f%89%e6%a0%91.html"
+permalink: "2017/https://www.jfox.info/%e7%94%a8-dom-%e4%b8%8e-css-%e5%b1%95%e7%a4%ba%e4%ba%8c%e5%8f%89%e6%a0%91.html"
 ---
 {% raw %}
 关于二叉树的更多内容已经超出了本文的讨论范围，有兴趣的同学可以自行维基百科或者找其它相关的资料。

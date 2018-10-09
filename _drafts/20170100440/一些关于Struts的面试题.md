@@ -3,11 +3,11 @@ layout: post
 title:  "一些关于Struts的面试题"
 title2:  "一些关于Struts的面试题"
 date:   2017-01-01 23:42:20  +0800
-source:  "http://www.jfox.info/yi-xie-guan-yu-Struts-de-mian-shi-ti.html"
+source:  "https://www.jfox.info/yi-xie-guan-yu-Struts-de-mian-shi-ti.html"
 fileName:  "20170100440"
 lang:  "zh_CN"
 published: true
-permalink: "yi-xie-guan-yu-Struts-de-mian-shi-ti.html"
+permalink: "2017/https://www.jfox.info/yi-xie-guan-yu-Struts-de-mian-shi-ti.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期三, 六月 19, 2013

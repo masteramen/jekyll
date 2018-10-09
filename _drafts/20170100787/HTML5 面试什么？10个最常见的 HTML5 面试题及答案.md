@@ -3,11 +3,11 @@ layout: post
 title:  "HTML5 面试什么？10个最常见的 HTML5 面试题及答案"
 title2:  "HTML5 面试什么？10个最常见的 HTML5 面试题及答案"
 date:   2017-01-01 23:48:07  +0800
-source:  "http://www.jfox.info/html5-mian-shi-shi-me-10-ge-zui-chang-jian-de-html5-mian-shi-ti-ji-da-an.html"
+source:  "https://www.jfox.info/html5-mian-shi-shi-me-10-ge-zui-chang-jian-de-html5-mian-shi-ti-ji-da-an.html"
 fileName:  "20170100787"
 lang:  "zh_CN"
 published: true
-permalink: "html5-mian-shi-shi-me-10-ge-zui-chang-jian-de-html5-mian-shi-ti-ji-da-an.html"
+permalink: "2017/https://www.jfox.info/html5-mian-shi-shi-me-10-ge-zui-chang-jian-de-html5-mian-shi-ti-ji-da-an.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期二, 七月 21, 2015

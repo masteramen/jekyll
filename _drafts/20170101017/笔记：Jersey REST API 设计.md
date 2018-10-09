@@ -3,11 +3,11 @@ layout: post
 title:  "笔记：Jersey REST API 设计"
 title2:  "笔记：Jersey REST API 设计"
 date:   2017-01-01 23:51:57  +0800
-source:  "http://www.jfox.info/%e7%ac%94%e8%ae%b0-jersey-rest-api-%e8%ae%be%e8%ae%a1.html"
+source:  "https://www.jfox.info/%e7%ac%94%e8%ae%b0-jersey-rest-api-%e8%ae%be%e8%ae%a1.html"
 fileName:  "20170101017"
 lang:  "zh_CN"
 published: true
-permalink: "%e7%ac%94%e8%ae%b0-jersey-rest-api-%e8%ae%be%e8%ae%a1.html"
+permalink: "2017/https://www.jfox.info/%e7%ac%94%e8%ae%b0-jersey-rest-api-%e8%ae%be%e8%ae%a1.html"
 ---
 {% raw %}
 **REST 统一接口 **
@@ -56,7 +56,7 @@ POST 方法是写操作的HTTP请求，RPC 的所有写操作均使用 POST 方�
 - **资源地址设计 **
 资源地址的设计对整个REST式的Web服务至关重要，涉及系统的可用性、可维护性和可扩展性等诸多方面的表现，资源地址的路径变量是用来表达逻辑上的层次结构的，资源和子资源的形式是自左至右、斜杠分割的名词，一个典型的URI包括协议名称、主机名称、服务端口、资源地址和查询字符串等组成，URI 组成如下： 
 
-[http://localhost:8080/rest-demo/webapi/demos/demo?id=1](http://www.jfox.info/go.php?url=http://localhost:8080/rest-demo/webapi/demos/demo?id=1)
+[http://localhost:8080/rest-demo/webapi/demos/demo?id=1](https://www.jfox.info/go.php?url=http://localhost:8080/rest-demo/webapi/demos/demo?id=1)
 
 其中 rest-demo 表示 ContextPath（上下文路径）通常和部署服务器的配置或者REST服务的web.xml配置有关；webapi 表示 ServletPath 是 Servlet 名称，与 REST 服务中定义的 @ApplicationPath 注解或者web.xml 的配置有关；demos/demo 为资源地址，与资源类、子类以及类中的方法定义的@Path注解有关。需要注意的是，资源地址并不能唯一定位一个资源，只有资源地址和HTTP方法才能唯一定位资源。 
 

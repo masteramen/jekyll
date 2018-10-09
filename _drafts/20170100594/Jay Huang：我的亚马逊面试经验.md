@@ -3,11 +3,11 @@ layout: post
 title:  "Jay Huang：我的亚马逊面试经验"
 title2:  "Jay Huang：我的亚马逊面试经验"
 date:   2017-01-01 23:44:54  +0800
-source:  "http://www.jfox.info/jay-huang-my-interview-experience-at-amazon.html"
+source:  "https://www.jfox.info/jay-huang-my-interview-experience-at-amazon.html"
 fileName:  "20170100594"
 lang:  "zh_CN"
 published: true
-permalink: "jay-huang-my-interview-experience-at-amazon.html"
+permalink: "2017/https://www.jfox.info/jay-huang-my-interview-experience-at-amazon.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期五, 二月 28, 2014
@@ -60,5 +60,5 @@ By Lee - Last updated: 星期五, 二月 28, 2014
 
 在没有得到首要招聘者的回复，以及让我到西雅图面试温哥华职位的奇怪逻辑，让所有面试官茫然的同时，面试本身也是很有意思的。现场的每个面试都测试了一个在这个职位上成功所需的特定的技能/主题，以确保这些方面的知识中没有显著的差距。我需要说的是，这是我经历过的前端职位上最好的面试之一，能够知道候选人知识和经验的全貌。
 
-参考来源 [Jay Huang：我的亚马逊面试经验 ](http://www.jfox.info/go.php?url=http://www.jfox.info/url.php?url=http%3A%2F%2Fblog.jobbole.com%2F59749%2F).
+参考来源 [Jay Huang：我的亚马逊面试经验 ](https://www.jfox.info/go.php?url=http://www.jfox.info/url.php?url=http%3A%2F%2Fblog.jobbole.com%2F59749%2F).
 {% endraw %}

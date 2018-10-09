@@ -3,11 +3,11 @@ layout: post
 title:  "Sleep ()、suspend ()和 wait ()之间有什么区别"
 title2:  "Sleep ()、suspend ()和 wait ()之间有什么区别"
 date:   2017-01-01 23:41:47  +0800
-source:  "http://www.jfox.info/sleep-suspend-he-wait-zhi-jian-you-shen-me-qu-bie.html"
+source:  "https://www.jfox.info/sleep-suspend-he-wait-zhi-jian-you-shen-me-qu-bie.html"
 fileName:  "20170100407"
 lang:  "zh_CN"
 published: true
-permalink: "sleep-suspend-he-wait-zhi-jian-you-shen-me-qu-bie.html"
+permalink: "2017/https://www.jfox.info/sleep-suspend-he-wait-zhi-jian-you-shen-me-qu-bie.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期一, 五月 27, 2013

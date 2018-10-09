@@ -3,11 +3,11 @@ layout: post
 title:  "java排列数字组合面试题"
 title2:  "java排列数字组合面试题"
 date:   2017-01-01 23:42:22  +0800
-source:  "http://www.jfox.info/java-pai-lie-shu-zi-zu-he-mian-shi-ti.html"
+source:  "https://www.jfox.info/java-pai-lie-shu-zi-zu-he-mian-shi-ti.html"
 fileName:  "20170100442"
 lang:  "zh_CN"
 published: true
-permalink: "java-pai-lie-shu-zi-zu-he-mian-shi-ti.html"
+permalink: "2017/https://www.jfox.info/java-pai-lie-shu-zi-zu-he-mian-shi-ti.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期五, 六月 21, 2013
@@ -24,7 +24,7 @@ import java.util.TreeSet;
 
 /*
 *
-* @author [java面试题](http://www.jfox.info/go.php?url=http://www.jfox.info/)
+* @author [java面试题](https://www.jfox.info/go.php?url=http://www.jfox.info/)
 *
 */
 

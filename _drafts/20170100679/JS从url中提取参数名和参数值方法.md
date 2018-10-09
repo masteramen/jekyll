@@ -3,11 +3,11 @@ layout: post
 title:  "JS从url中提取参数名和参数值方法"
 title2:  "JS从url中提取参数名和参数值方法"
 date:   2017-01-01 23:46:19  +0800
-source:  "http://www.jfox.info/js-cong-url-zhong-ti-qu-can-shu-ming-he-can-shu-zhi-fang-fa.html"
+source:  "https://www.jfox.info/js-cong-url-zhong-ti-qu-can-shu-ming-he-can-shu-zhi-fang-fa.html"
 fileName:  "20170100679"
 lang:  "zh_CN"
 published: true
-permalink: "js-cong-url-zhong-ti-qu-can-shu-ming-he-can-shu-zhi-fang-fa.html"
+permalink: "2017/https://www.jfox.info/js-cong-url-zhong-ti-qu-can-shu-ming-he-can-shu-zhi-fang-fa.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期日, 八月 24, 2014

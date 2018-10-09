@@ -3,11 +3,11 @@ layout: post
 title:  "Hibernate的10个常见面试问题及答案"
 title2:  "Hibernate的10个常见面试问题及答案"
 date:   2017-01-01 23:42:16  +0800
-source:  "http://www.jfox.info/Hibernate-de-10-ge-chang-jian-mian-shi-wen-ti-ji-da-an.html"
+source:  "https://www.jfox.info/Hibernate-de-10-ge-chang-jian-mian-shi-wen-ti-ji-da-an.html"
 fileName:  "20170100436"
 lang:  "zh_CN"
 published: true
-permalink: "Hibernate-de-10-ge-chang-jian-mian-shi-wen-ti-ji-da-an.html"
+permalink: "2017/https://www.jfox.info/Hibernate-de-10-ge-chang-jian-mian-shi-wen-ti-ji-da-an.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期六, 六月 15, 2013
@@ -73,5 +73,5 @@ SessionFactory是线程安全的吗？ 这也是Hibernate框架的常见面试�
 
 　　Java开发者的Hibernate面试问答列表就到此为止了。没人会对Hibernate作为ORM解决方案的受欢迎程度产生怀疑，如果你要申请的是Java J2EE方面的职位，你就等着人来问你Hibernate方面的面试问题吧。在JEE界，Spring和Hibernate是两个最流行的Java框架。要是你被问到了其它也值得分享的Hibernate方面的面试问题， 别忘了在Java社区中同大家分享一下。
 
-英文地址：[http://javarevisited.blogspot.com/2013/05/10-hibernate-interview-questions-answers-java-j2ee-senior.html](http://www.jfox.info/go.php?url=http://javarevisited.blogspot.com/2013/05/10-hibernate-interview-questions-answers-java-j2ee-senior.html)
+英文地址：[http://javarevisited.blogspot.com/2013/05/10-hibernate-interview-questions-answers-java-j2ee-senior.html](https://www.jfox.info/go.php?url=http://javarevisited.blogspot.com/2013/05/10-hibernate-interview-questions-answers-java-j2ee-senior.html)
 {% endraw %}

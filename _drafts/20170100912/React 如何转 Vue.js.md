@@ -3,11 +3,11 @@ layout: post
 title:  "React 如何转 Vue.js"
 title2:  "React 如何转 Vue.js"
 date:   2017-01-01 23:50:12  +0800
-source:  "http://www.jfox.info/react-%e5%a6%82%e4%bd%95%e8%bd%ac-vue-js.html"
+source:  "https://www.jfox.info/react-%e5%a6%82%e4%bd%95%e8%bd%ac-vue-js.html"
 fileName:  "20170100912"
 lang:  "zh_CN"
 published: true
-permalink: "react-%e5%a6%82%e4%bd%95%e8%bd%ac-vue-js.html"
+permalink: "2017/https://www.jfox.info/react-%e5%a6%82%e4%bd%95%e8%bd%ac-vue-js.html"
 ---
 {% raw %}
 如果你是一个 React 开发人员，并决定尝试 Vue.js。欢迎参加这场聚会。

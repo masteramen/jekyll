@@ -3,21 +3,16 @@ layout: post
 title:  "java中实现多态的机制是什么"
 title2:  "java中实现多态的机制是什么"
 date:   2017-01-01 23:40:58  +0800
-source:  "http://www.jfox.info/java-zhong-shi-xian-duo-tai-de-ji-zhi-shi-shen-me.html"
+source:  "https://www.jfox.info/java-zhong-shi-xian-duo-tai-de-ji-zhi-shi-shen-me.html"
 fileName:  "20170100358"
 lang:  "zh_CN"
 published: true
-permalink: "java-zhong-shi-xian-duo-tai-de-ji-zhi-shi-shen-me.html"
+permalink: "2017/https://www.jfox.info/java-zhong-shi-xian-duo-tai-de-ji-zhi-shi-shen-me.html"
 ---
 {% raw %}
-.catesblock h5 a{font-weight:bold;text-transform: uppercase;}
-.cates a {
-display: inline-block;
-margin: 0 3px 5px 0;
-padding: 2px 3px;
-position: relative;
-text-align: left;
-text-shadow: none;
-text-transform: lowercase;
-}
+By Lee - Last updated: 星期日, 五月 19, 2013
+
+### java中实现多态的机制是什么？
+
+靠的是父类或接口定义的引用变量可以指向子类或具体实现类的实例对象，而程序调用的方法在运行期才动态绑定，就是引用变量所指向的具体实例对象的方法，也就是内存里正在运行的那个对象的方法，而不是引用变量的类型中定义的方法
 {% endraw %}

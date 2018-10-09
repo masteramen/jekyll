@@ -3,11 +3,11 @@ layout: post
 title:  "Spring baseDao封装，Spring jdbcTemplate封装，springJdbc泛型Dao，SpringJdbc持久层封装"
 title2:  "Spring baseDao封装，Spring jdbcTemplate封装，springJdbc泛型Dao，SpringJdbc持久层封装"
 date:   2017-01-01 23:53:13  +0800
-source:  "http://www.jfox.info/springbasedao%e5%b0%81%e8%a3%85springjdbctemplate%e5%b0%81%e8%a3%85springjdbc%e6%b3%9b%e5%9e%8bdaospringjdbc%e6%8c%81%e4%b9%85%e5%b1%82%e5%b0%81%e8%a3%85.html"
+source:  "https://www.jfox.info/springbasedao%e5%b0%81%e8%a3%85springjdbctemplate%e5%b0%81%e8%a3%85springjdbc%e6%b3%9b%e5%9e%8bdaospringjdbc%e6%8c%81%e4%b9%85%e5%b1%82%e5%b0%81%e8%a3%85.html"
 fileName:  "20170101093"
 lang:  "zh_CN"
 published: true
-permalink: "springbasedao%e5%b0%81%e8%a3%85springjdbctemplate%e5%b0%81%e8%a3%85springjdbc%e6%b3%9b%e5%9e%8bdaospringjdbc%e6%8c%81%e4%b9%85%e5%b1%82%e5%b0%81%e8%a3%85.html"
+permalink: "2017/https://www.jfox.info/springbasedao%e5%b0%81%e8%a3%85springjdbctemplate%e5%b0%81%e8%a3%85springjdbc%e6%b3%9b%e5%9e%8bdaospringjdbc%e6%8c%81%e4%b9%85%e5%b1%82%e5%b0%81%e8%a3%85.html"
 ---
 {% raw %}
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>

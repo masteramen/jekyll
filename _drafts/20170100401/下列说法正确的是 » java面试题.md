@@ -3,11 +3,11 @@ layout: post
 title:  "下列说法正确的是 » java面试题"
 title2:  "下列说法正确的是 » java面试题"
 date:   2017-01-01 23:41:41  +0800
-source:  "http://www.jfox.info/xia-lie-shuo-fa-zheng-que-de-shi.html"
+source:  "https://www.jfox.info/xia-lie-shuo-fa-zheng-que-de-shi.html"
 fileName:  "20170100401"
 lang:  "zh_CN"
 published: true
-permalink: "xia-lie-shuo-fa-zheng-que-de-shi.html"
+permalink: "2017/https://www.jfox.info/xia-lie-shuo-fa-zheng-que-de-shi.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期日, 五月 26, 2013

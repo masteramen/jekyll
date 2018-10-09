@@ -3,11 +3,11 @@ layout: post
 title:  "什么是中间件？ » java面试题"
 title2:  "什么是中间件？ » java面试题"
 date:   2017-01-01 23:41:57  +0800
-source:  "http://www.jfox.info/shen-me-shi-zhong-jian-jian.html"
+source:  "https://www.jfox.info/shen-me-shi-zhong-jian-jian.html"
 fileName:  "20170100417"
 lang:  "zh_CN"
 published: true
-permalink: "shen-me-shi-zhong-jian-jian.html"
+permalink: "2017/https://www.jfox.info/shen-me-shi-zhong-jian-jian.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期三, 六月 5, 2013

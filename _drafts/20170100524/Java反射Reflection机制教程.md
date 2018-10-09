@@ -3,11 +3,11 @@ layout: post
 title:  "Java反射Reflection机制教程"
 title2:  "Java反射Reflection机制教程"
 date:   2017-01-01 23:43:44  +0800
-source:  "http://www.jfox.info/java%e5%8f%8d%e5%b0%84reflection%e6%9c%ba%e5%88%b6%e6%95%99%e7%a8%8b.html"
+source:  "https://www.jfox.info/java%e5%8f%8d%e5%b0%84reflection%e6%9c%ba%e5%88%b6%e6%95%99%e7%a8%8b.html"
 fileName:  "20170100524"
 lang:  "zh_CN"
 published: true
-permalink: "java%e5%8f%8d%e5%b0%84reflection%e6%9c%ba%e5%88%b6%e6%95%99%e7%a8%8b.html"
+permalink: "2017/https://www.jfox.info/java%e5%8f%8d%e5%b0%84reflection%e6%9c%ba%e5%88%b6%e6%95%99%e7%a8%8b.html"
 ---
 {% raw %}
 什么是反射？反射有什么用处？
@@ -392,5 +392,5 @@ http://en.wikipedia.org/wiki/Reflection_(computer_programming)
 
 http://docs.oracle.com/javase/tutorial/reflect/
 
-参考来源 [Java反射教程 – ImportNew](http://www.jfox.info/go.php?url=http://www.importnew.com/9078.html).
+参考来源 [Java反射教程 – ImportNew](https://www.jfox.info/go.php?url=http://www.importnew.com/9078.html).
 {% endraw %}

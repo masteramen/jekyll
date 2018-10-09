@@ -3,11 +3,11 @@ layout: post
 title:  "Java线程之sleep(), wait(), yield() 三个方法的作用和特点"
 title2:  "Java线程之sleep(), wait(), yield() 三个方法的作用和特点"
 date:   2017-01-01 23:51:36  +0800
-source:  "http://www.jfox.info/java%e7%ba%bf%e7%a8%8b%e4%b9%8bsleep-wait-yield-%e4%b8%89%e4%b8%aa%e6%96%b9%e6%b3%95%e7%9a%84%e4%bd%9c%e7%94%a8%e5%92%8c%e7%89%b9%e7%82%b9.html"
+source:  "https://www.jfox.info/java%e7%ba%bf%e7%a8%8b%e4%b9%8bsleep-wait-yield-%e4%b8%89%e4%b8%aa%e6%96%b9%e6%b3%95%e7%9a%84%e4%bd%9c%e7%94%a8%e5%92%8c%e7%89%b9%e7%82%b9.html"
 fileName:  "20170100996"
 lang:  "zh_CN"
 published: true
-permalink: "java%e7%ba%bf%e7%a8%8b%e4%b9%8bsleep-wait-yield-%e4%b8%89%e4%b8%aa%e6%96%b9%e6%b3%95%e7%9a%84%e4%bd%9c%e7%94%a8%e5%92%8c%e7%89%b9%e7%82%b9.html"
+permalink: "2017/https://www.jfox.info/java%e7%ba%bf%e7%a8%8b%e4%b9%8bsleep-wait-yield-%e4%b8%89%e4%b8%aa%e6%96%b9%e6%b3%95%e7%9a%84%e4%bd%9c%e7%94%a8%e5%92%8c%e7%89%b9%e7%82%b9.html"
 ---
 {% raw %}
 —恢复内容开始—

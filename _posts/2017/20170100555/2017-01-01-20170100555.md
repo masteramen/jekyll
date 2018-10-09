@@ -3,11 +3,11 @@ layout: post
 title:  "37道JavaScript前端选择题解答面试题"
 title2:  "37道JavaScript前端选择题解答面试题"
 date:   2017-01-01 23:44:15  +0800
-source:  "http://www.jfox.info/37%e9%81%93javascript%e5%89%8d%e7%ab%af%e9%80%89%e6%8b%a9%e9%a2%98%e8%a7%a3%e7%ad%94%e9%9d%a2%e8%af%95%e9%a2%98.html"
+source:  "https://www.jfox.info/37%e9%81%93javascript%e5%89%8d%e7%ab%af%e9%80%89%e6%8b%a9%e9%a2%98%e8%a7%a3%e7%ad%94%e9%9d%a2%e8%af%95%e9%a2%98.html"
 fileName:  "20170100555"
 lang:  "zh_CN"
 published: true
-permalink: "37%e9%81%93javascript%e5%89%8d%e7%ab%af%e9%80%89%e6%8b%a9%e9%a2%98%e8%a7%a3%e7%ad%94%e9%9d%a2%e8%af%95%e9%a2%98.html"
+permalink: "2017/https://www.jfox.info/37%e9%81%93javascript%e5%89%8d%e7%ab%af%e9%80%89%e6%8b%a9%e9%a2%98%e8%a7%a3%e7%ad%94%e9%9d%a2%e8%af%95%e9%a2%98.html"
 ---
 {% raw %}
 37道前端JavaScript选择题解答面试题，虽然很多题都偏而怪，但其中涉及的知识还是相当重要的。JavaScript中的糟粕和精华永远是一个话题，也是笔试面试时经常遇到的问题。
@@ -148,7 +148,7 @@ C: NaN
 
 D: other
 
-这题考的javascript中的运算符优先级，[MDN传送门](http://www.jfox.info/go.php?url=https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence)，这里’+’运算符的优先级要高于’?’所以运算符，实际上是 ‘Value is true’?’Something’ : ‘Nothing’，当字符串不为空时，转换为bool为true，所以结果为’Something’，选D
+这题考的javascript中的运算符优先级，[MDN传送门](https://www.jfox.info/go.php?url=https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence)，这里’+’运算符的优先级要高于’?’所以运算符，实际上是 ‘Value is true’?’Something’ : ‘Nothing’，当字符串不为空时，转换为bool为true，所以结果为’Something’，选D
 
 ### 第六题
 

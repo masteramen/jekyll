@@ -3,11 +3,11 @@ layout: post
 title:  "spring mvc绑定对象String转Date"
 title2:  "spring mvc绑定对象String转Date"
 date:   2017-01-01 23:43:59  +0800
-source:  "http://www.jfox.info/spring-mvc%e7%bb%91%e5%ae%9a%e5%af%b9%e8%b1%a1string%e8%bd%acdate.html"
+source:  "https://www.jfox.info/spring-mvc%e7%bb%91%e5%ae%9a%e5%af%b9%e8%b1%a1string%e8%bd%acdate.html"
 fileName:  "20170100539"
 lang:  "zh_CN"
 published: true
-permalink: "spring-mvc%e7%bb%91%e5%ae%9a%e5%af%b9%e8%b1%a1string%e8%bd%acdate.html"
+permalink: "2017/https://www.jfox.info/spring-mvc%e7%bb%91%e5%ae%9a%e5%af%b9%e8%b1%a1string%e8%bd%acdate.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期一, 二月 10, 2014
@@ -104,5 +104,5 @@ DateEditor为自定义的处理类，继承自PropertyEditorSupport，处理方�
 63.     }  
 64. }  
 
-参考来源 [spring mvc绑定对象String转Date](http://www.jfox.info/go.php?url=http://www.jfox.info/url.php?url=http%3A%2F%2Fblog.csdn.net%2Fwhumr1%2Farticle%2Fdetails%2F8056285).
+参考来源 [spring mvc绑定对象String转Date](https://www.jfox.info/go.php?url=http://www.jfox.info/url.php?url=http%3A%2F%2Fblog.csdn.net%2Fwhumr1%2Farticle%2Fdetails%2F8056285).
 {% endraw %}

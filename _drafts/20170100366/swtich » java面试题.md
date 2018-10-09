@@ -3,11 +3,11 @@ layout: post
 title:  "swtich » java面试题"
 title2:  "swtich » java面试题"
 date:   2017-01-01 23:41:06  +0800
-source:  "http://www.jfox.info/swtich.html"
+source:  "https://www.jfox.info/swtich.html"
 fileName:  "20170100366"
 lang:  "zh_CN"
 published: true
-permalink: "swtich.html"
+permalink: "2017/https://www.jfox.info/swtich.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期一, 五月 20, 2013

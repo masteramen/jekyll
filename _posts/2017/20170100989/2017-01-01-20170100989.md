@@ -3,11 +3,11 @@ layout: post
 title:  "分布式事务之——tcc-transaction分布式TCC型事务框架搭建与实战案例(基于Dubbo/Dubbox)"
 title2:  "分布式事务之——tcc-transaction分布式TCC型事务框架搭建与实战案例(基于DubboDubbox)"
 date:   2017-01-01 23:51:29  +0800
-source:  "http://www.jfox.info/%e5%88%86%e5%b8%83%e5%bc%8f%e4%ba%8b%e5%8a%a1%e4%b9%8b-tcc-transaction%e5%88%86%e5%b8%83%e5%bc%8ftcc%e5%9e%8b%e4%ba%8b%e5%8a%a1%e6%a1%86%e6%9e%b6%e6%90%ad%e5%bb%ba%e4%b8%8e%e5%ae%9e%e6%88%98%e6%a1%88.html"
+source:  "https://www.jfox.info/%e5%88%86%e5%b8%83%e5%bc%8f%e4%ba%8b%e5%8a%a1%e4%b9%8b-tcc-transaction%e5%88%86%e5%b8%83%e5%bc%8ftcc%e5%9e%8b%e4%ba%8b%e5%8a%a1%e6%a1%86%e6%9e%b6%e6%90%ad%e5%bb%ba%e4%b8%8e%e5%ae%9e%e6%88%98%e6%a1%88.html"
 fileName:  "20170100989"
 lang:  "zh_CN"
 published: true
-permalink: "%e5%88%86%e5%b8%83%e5%bc%8f%e4%ba%8b%e5%8a%a1%e4%b9%8b-tcc-transaction%e5%88%86%e5%b8%83%e5%bc%8ftcc%e5%9e%8b%e4%ba%8b%e5%8a%a1%e6%a1%86%e6%9e%b6%e6%90%ad%e5%bb%ba%e4%b8%8e%e5%ae%9e%e6%88%98%e6%a1%88.html"
+permalink: "2017/https://www.jfox.info/%e5%88%86%e5%b8%83%e5%bc%8f%e4%ba%8b%e5%8a%a1%e4%b9%8b-tcc-transaction%e5%88%86%e5%b8%83%e5%bc%8ftcc%e5%9e%8b%e4%ba%8b%e5%8a%a1%e6%a1%86%e6%9e%b6%e6%90%ad%e5%bb%ba%e4%b8%8e%e5%ae%9e%e6%88%98%e6%a1%88.html"
 ---
 {% raw %}
 有一定分布式开发经验的朋友都知道，产品/项目/系统最初为了能够快速迭代上线，往往不太注重产品/项目/系统的高可靠性、高性能与高扩展性，采用单体应用和单实例数据库的架构方式快速迭代开发；当产品/项目/系统做到一定规模的时候，原有的系统架构则不足以支撑义务发展需要，往往相同的业务则需要重复写很多次，导致代码大量冗余，难以维护和扩展，这时不得不对原有产品/项目/系统进行拆分，引入分布式的系统架构；而对原有产品/项目/系统进行拆分的过程中，对于业务和数据的拆分和迁移则成为了最为棘手的问题，尤其是在原有业务不能下线，拆分后的业务同时上线的场景下这种问题更加突出；项目拆分后，业务被拆分为多个独立的子业务分散到多个子系统中，而原有的单一数据库则被拆分到多个数据库中，拆分后的数据库则同样又面临着让人头疼的分布式事务的问题。
@@ -16,9 +16,9 @@ permalink: "%e5%88%86%e5%b8%83%e5%bc%8f%e4%ba%8b%e5%8a%a1%e4%b9%8b-tcc-transacti
 
 ### 二、tcc-transaction框架介绍
 
-介绍：tcc-transaction是开源的TCC补偿性分布式事务框架，Git地址：[https://github.com/changmingxie/tcc-transaction](http://www.jfox.info/go.php?url=https://github.com/changmingxie/tcc-transaction)
+介绍：tcc-transaction是开源的TCC补偿性分布式事务框架，Git地址：[https://github.com/changmingxie/tcc-transaction](https://www.jfox.info/go.php?url=https://github.com/changmingxie/tcc-transaction)
 TCC为Try、Confirm、Cancel的缩写：try阶段预留资源尝试提交，confirm阶段确定提交，cancel取消提交释放资源。
-1.2.x项目指南地址：[https://github.com/changmingxie/tcc-transaction/wiki/%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%971.2.x](http://www.jfox.info/go.php?url=https://github.com/changmingxie/tcc-transaction/wiki/%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%971.2.x)
+1.2.x项目指南地址：[https://github.com/changmingxie/tcc-transaction/wiki/%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%971.2.x](https://www.jfox.info/go.php?url=https://github.com/changmingxie/tcc-transaction/wiki/%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%971.2.x)
 本文的例子为引入一个本人实际工作中的一个开发场景：创建资产，将资产信息同时同步到Mongo与ES的流程(ES代码不列出了，与mongo类似)，整个流程保证数据一致
 
 ### 三、项目流程
@@ -78,7 +78,7 @@ TCC为Try、Confirm、Cancel的缩写：try阶段预留资源尝试提交，conf
     }
 
 各位也可参考如下的修改： 
-[https://github.com/changmingxie/tcc-transaction/pull/84/files](http://www.jfox.info/go.php?url=https://github.com/changmingxie/tcc-transaction/pull/84/files)
+[https://github.com/changmingxie/tcc-transaction/pull/84/files](https://www.jfox.info/go.php?url=https://github.com/changmingxie/tcc-transaction/pull/84/files)
  
 1.3 打包并发布 这里我们通过Maven进行打包发布，命令为： 
 

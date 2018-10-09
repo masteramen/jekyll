@@ -3,11 +3,11 @@ layout: post
 title:  "quartz定时执行任务，并配置web.xml"
 title2:  "quartz定时执行任务，并配置web.xml"
 date:   2017-01-01 23:52:51  +0800
-source:  "http://www.jfox.info/quartz%e5%ae%9a%e6%97%b6%e6%89%a7%e8%a1%8c%e4%bb%bb%e5%8a%a1%e5%b9%b6%e9%85%8d%e7%bd%aewebxml.html"
+source:  "https://www.jfox.info/quartz%e5%ae%9a%e6%97%b6%e6%89%a7%e8%a1%8c%e4%bb%bb%e5%8a%a1%e5%b9%b6%e9%85%8d%e7%bd%aewebxml.html"
 fileName:  "20170101071"
 lang:  "zh_CN"
 published: true
-permalink: "quartz%e5%ae%9a%e6%97%b6%e6%89%a7%e8%a1%8c%e4%bb%bb%e5%8a%a1%e5%b9%b6%e9%85%8d%e7%bd%aewebxml.html"
+permalink: "2017/https://www.jfox.info/quartz%e5%ae%9a%e6%97%b6%e6%89%a7%e8%a1%8c%e4%bb%bb%e5%8a%a1%e5%b9%b6%e9%85%8d%e7%bd%aewebxml.html"
 ---
 {% raw %}
 离职四个多月，毕业办完之后6月13日又回到公司上班，一直有想法把自己学的东西记录整理分享做出来，一直没动过，今天开始第一篇，这是今天项目上需要做个定时任务，临时学的，quartz的功能还是很强大用起来也方便，这里的demo只是实现每天定时执行一次，其他功能可以在此基础上继续深入学习，哈哈 睡觉，明天继续。

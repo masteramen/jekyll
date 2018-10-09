@@ -3,11 +3,11 @@ layout: post
 title:  "Java程序员面试失败的5大原因"
 title2:  "Java程序员面试失败的5大原因"
 date:   2017-01-01 23:47:23  +0800
-source:  "http://www.jfox.info/java-cheng-xu-yuan-mian-shi-shi-bai-de-5-da-yuan-yin.html"
+source:  "https://www.jfox.info/java-cheng-xu-yuan-mian-shi-shi-bai-de-5-da-yuan-yin.html"
 fileName:  "20170100743"
 lang:  "zh_CN"
 published: true
-permalink: "java-cheng-xu-yuan-mian-shi-shi-bai-de-5-da-yuan-yin.html"
+permalink: "2017/https://www.jfox.info/java-cheng-xu-yuan-mian-shi-shi-bai-de-5-da-yuan-yin.html"
 ---
 {% raw %}
 下面是Java程序员面试失败最有可能的5大原因，当然也许这5点原因适用于所有的程序员，所以，如果你是程序员，请认真阅读以下内容。

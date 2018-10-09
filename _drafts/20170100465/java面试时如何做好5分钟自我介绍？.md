@@ -3,11 +3,11 @@ layout: post
 title:  "java面试时如何做好5分钟自我介绍？"
 title2:  "java面试时如何做好5分钟自我介绍？"
 date:   2017-01-01 23:42:45  +0800
-source:  "http://www.jfox.info/java-mian-shi-shi-ru-he-zuo-hao-5-fen-zhong-zi-wo-jie-shao.html"
+source:  "https://www.jfox.info/java-mian-shi-shi-ru-he-zuo-hao-5-fen-zhong-zi-wo-jie-shao.html"
 fileName:  "20170100465"
 lang:  "zh_CN"
 published: true
-permalink: "java-mian-shi-shi-ru-he-zuo-hao-5-fen-zhong-zi-wo-jie-shao.html"
+permalink: "2017/https://www.jfox.info/java-mian-shi-shi-ru-he-zuo-hao-5-fen-zhong-zi-wo-jie-shao.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期一, 十月 21, 2013

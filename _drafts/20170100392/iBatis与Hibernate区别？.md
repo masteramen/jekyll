@@ -3,11 +3,11 @@ layout: post
 title:  "iBatis与Hibernate区别？"
 title2:  "iBatis与Hibernate区别？"
 date:   2017-01-01 23:41:32  +0800
-source:  "http://www.jfox.info/iBatis-yu-Hibernate-qu-bie.html"
+source:  "https://www.jfox.info/iBatis-yu-Hibernate-qu-bie.html"
 fileName:  "20170100392"
 lang:  "zh_CN"
 published: true
-permalink: "iBatis-yu-Hibernate-qu-bie.html"
+permalink: "2017/https://www.jfox.info/iBatis-yu-Hibernate-qu-bie.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期四, 五月 23, 2013

@@ -3,11 +3,11 @@ layout: post
 title:  "super.getClass()方法调用"
 title2:  "super.getClass()方法调用"
 date:   2017-01-01 23:41:02  +0800
-source:  "http://www.jfox.info/super-getClass-fang-fa-diao-yong.html"
+source:  "https://www.jfox.info/super-getClass-fang-fa-diao-yong.html"
 fileName:  "20170100362"
 lang:  "zh_CN"
 published: true
-permalink: "super-getClass-fang-fa-diao-yong.html"
+permalink: "2017/https://www.jfox.info/super-getClass-fang-fa-diao-yong.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期日, 五月 19, 2013

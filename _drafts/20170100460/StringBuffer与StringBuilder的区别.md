@@ -3,11 +3,11 @@ layout: post
 title:  "StringBuffer与StringBuilder的区别"
 title2:  "StringBuffer与StringBuilder的区别"
 date:   2017-01-01 23:42:40  +0800
-source:  "http://www.jfox.info/stringbuffer-yu-stringbuilder-de-qu-bie.html"
+source:  "https://www.jfox.info/stringbuffer-yu-stringbuilder-de-qu-bie.html"
 fileName:  "20170100460"
 lang:  "zh_CN"
 published: true
-permalink: "stringbuffer-yu-stringbuilder-de-qu-bie.html"
+permalink: "2017/https://www.jfox.info/stringbuffer-yu-stringbuilder-de-qu-bie.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期四, 十月 17, 2013

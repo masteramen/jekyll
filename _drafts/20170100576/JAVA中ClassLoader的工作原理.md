@@ -3,11 +3,11 @@ layout: post
 title:  "JAVA中ClassLoader的工作原理"
 title2:  "JAVA中ClassLoader的工作原理"
 date:   2017-01-01 23:44:36  +0800
-source:  "http://www.jfox.info/java-classloader-de-gong-zuo-yuan-li.html"
+source:  "https://www.jfox.info/java-classloader-de-gong-zuo-yuan-li.html"
 fileName:  "20170100576"
 lang:  "zh_CN"
 published: true
-permalink: "java-classloader-de-gong-zuo-yuan-li.html"
+permalink: "2017/https://www.jfox.info/java-classloader-de-gong-zuo-yuan-li.html"
 ---
 {% raw %}
 每个运行中的线程都有一个成员contextClassLoader，用来在运行时动态地载入其它类 

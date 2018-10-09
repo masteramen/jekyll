@@ -3,11 +3,11 @@ layout: post
 title:  "MySQL 主从复制原理探索"
 title2:  "MySQL 主从复制原理探索"
 date:   2017-01-01 23:56:55  +0800
-source:  "http://www.jfox.info/mysql%e4%b8%bb%e4%bb%8e%e5%a4%8d%e5%88%b6%e5%8e%9f%e7%90%86%e6%8e%a2%e7%b4%a2.html"
+source:  "https://www.jfox.info/mysql%e4%b8%bb%e4%bb%8e%e5%a4%8d%e5%88%b6%e5%8e%9f%e7%90%86%e6%8e%a2%e7%b4%a2.html"
 fileName:  "20170101315"
 lang:  "zh_CN"
 published: true
-permalink: "mysql%e4%b8%bb%e4%bb%8e%e5%a4%8d%e5%88%b6%e5%8e%9f%e7%90%86%e6%8e%a2%e7%b4%a2.html"
+permalink: "2017/https://www.jfox.info/mysql%e4%b8%bb%e4%bb%8e%e5%a4%8d%e5%88%b6%e5%8e%9f%e7%90%86%e6%8e%a2%e7%b4%a2.html"
 ---
 {% raw %}
 经历过一次mysql主从延迟之后，就开始思考，主从复制是什么东西？它是怎么实现的呢？它的原理是什么？于是乎就开始查阅资料、文章，现将自己理解到的内容总结在此，加深印象。

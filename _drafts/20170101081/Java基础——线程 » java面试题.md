@@ -3,11 +3,11 @@ layout: post
 title:  "Java基础——线程 » java面试题"
 title2:  "Java基础——线程 » java面试题"
 date:   2017-01-01 23:53:01  +0800
-source:  "http://www.jfox.info/java%e5%9f%ba%e7%a1%80%e7%ba%bf%e7%a8%8b.html"
+source:  "https://www.jfox.info/java%e5%9f%ba%e7%a1%80%e7%ba%bf%e7%a8%8b.html"
 fileName:  "20170101081"
 lang:  "zh_CN"
 published: true
-permalink: "java%e5%9f%ba%e7%a1%80%e7%ba%bf%e7%a8%8b.html"
+permalink: "2017/https://www.jfox.info/java%e5%9f%ba%e7%a1%80%e7%ba%bf%e7%a8%8b.html"
 ---
 {% raw %}
 是指一个内存中运行的应用程序，每个进程都有自己独立的一块内存空间，一个进程中可以启动多个线程。

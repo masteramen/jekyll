@@ -3,11 +3,11 @@ layout: post
 title:  "无坑畅玩minikube(利用阿里云镜像编译minikube)"
 title2:  "无坑畅玩minikube(利用阿里云镜像编译minikube)"
 date:   2017-01-01 23:51:27  +0800
-source:  "http://www.jfox.info/%e6%97%a0%e5%9d%91%e7%95%85%e7%8e%a9minikube-%e5%88%a9%e7%94%a8%e9%98%bf%e9%87%8c%e4%ba%91%e9%95%9c%e5%83%8f%e7%bc%96%e8%af%91minikube.html"
+source:  "https://www.jfox.info/%e6%97%a0%e5%9d%91%e7%95%85%e7%8e%a9minikube-%e5%88%a9%e7%94%a8%e9%98%bf%e9%87%8c%e4%ba%91%e9%95%9c%e5%83%8f%e7%bc%96%e8%af%91minikube.html"
 fileName:  "20170100987"
 lang:  "zh_CN"
 published: true
-permalink: "%e6%97%a0%e5%9d%91%e7%95%85%e7%8e%a9minikube-%e5%88%a9%e7%94%a8%e9%98%bf%e9%87%8c%e4%ba%91%e9%95%9c%e5%83%8f%e7%bc%96%e8%af%91minikube.html"
+permalink: "2017/https://www.jfox.info/%e6%97%a0%e5%9d%91%e7%95%85%e7%8e%a9minikube-%e5%88%a9%e7%94%a8%e9%98%bf%e9%87%8c%e4%ba%91%e9%95%9c%e5%83%8f%e7%bc%96%e8%af%91minikube.html"
 ---
 {% raw %}
 `Kubernetes`占据容器编排的霸主地位，我们一般都会通过`minikube`实验`kubernetes`功能，但是`minikube`是不能直接安装成功的,网上解决方案有2种：
@@ -45,7 +45,7 @@ permalink: "%e6%97%a0%e5%9d%91%e7%95%85%e7%8e%a9minikube-%e5%88%a9%e7%94%a8%e9%9
 ### 4.替换镜像
 
 用开发工具打开`minikube`目录，我使用的是`Intellij Idea`,全局替换`gcr.io/google_containers`为`registry.cn-hangzhou.aliyuncs.com/google_containers`
-因为我这次使用的`minikube`版本较新，阿里云没有最新版本的`kube-dns`和`kube-dashboard`，所以`kube-dns-controller.yaml`中的image版本由`1.14.2`改为`1.14.1`,`dashboard-rc.yaml`中的image版本由`v1.6.1`，改为`v1.6.0`,大家以后自己编译的时候可以在[https://dev.aliyun.com/search.html](http://www.jfox.info/go.php?url=https://dev.aliyun.com/search.html)检索下阿里云中最新镜像版本。
+因为我这次使用的`minikube`版本较新，阿里云没有最新版本的`kube-dns`和`kube-dashboard`，所以`kube-dns-controller.yaml`中的image版本由`1.14.2`改为`1.14.1`,`dashboard-rc.yaml`中的image版本由`v1.6.1`，改为`v1.6.0`,大家以后自己编译的时候可以在[https://dev.aliyun.com/search.html](https://www.jfox.info/go.php?url=https://dev.aliyun.com/search.html)检索下阿里云中最新镜像版本。
 
 ### 5.编译
 
@@ -72,7 +72,7 @@ permalink: "%e6%97%a0%e5%9d%91%e7%95%85%e7%8e%a9minikube-%e5%88%a9%e7%94%a8%e9%9
     Starting to serve on 127.0.0.1:8001
     
 
-浏览器访问[http://127.0.0.1:8001/ui](http://www.jfox.info/go.php?url=http://127.0.0.1:8001/ui)
+浏览器访问[http://127.0.0.1:8001/ui](https://www.jfox.info/go.php?url=http://127.0.0.1:8001/ui)
 ![](/wp-content/uploads/2017/06/dashboard.png)
 
 ### 7.源码地址与二进制文件下载

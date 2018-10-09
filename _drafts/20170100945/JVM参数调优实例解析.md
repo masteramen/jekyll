@@ -3,11 +3,11 @@ layout: post
 title:  "JVM参数调优实例解析"
 title2:  "JVM参数调优实例解析"
 date:   2017-01-01 23:50:45  +0800
-source:  "http://www.jfox.info/jvm%e5%8f%82%e6%95%b0%e8%b0%83%e4%bc%98%e5%ae%9e%e4%be%8b%e8%a7%a3%e6%9e%90.html"
+source:  "https://www.jfox.info/jvm%e5%8f%82%e6%95%b0%e8%b0%83%e4%bc%98%e5%ae%9e%e4%be%8b%e8%a7%a3%e6%9e%90.html"
 fileName:  "20170100945"
 lang:  "zh_CN"
 published: true
-permalink: "jvm%e5%8f%82%e6%95%b0%e8%b0%83%e4%bc%98%e5%ae%9e%e4%be%8b%e8%a7%a3%e6%9e%90.html"
+permalink: "2017/https://www.jfox.info/jvm%e5%8f%82%e6%95%b0%e8%b0%83%e4%bc%98%e5%ae%9e%e4%be%8b%e8%a7%a3%e6%9e%90.html"
 ---
 {% raw %}
 H2M_LI_HEADER $JAVA_ARGS .= ” -Dresin.home=$SERVER_ROOT -server -Xms6000M -Xmx6000M -Xmn500M -XX:PermSize=500M 

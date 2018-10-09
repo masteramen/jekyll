@@ -3,11 +3,11 @@ layout: post
 title:  "Spring Cloud 体验"
 title2:  "Spring Cloud 体验"
 date:   2017-01-01 23:55:49  +0800
-source:  "http://www.jfox.info/springcloud%e4%bd%93%e9%aa%8c.html"
+source:  "https://www.jfox.info/springcloud%e4%bd%93%e9%aa%8c.html"
 fileName:  "20170101249"
 lang:  "zh_CN"
 published: true
-permalink: "springcloud%e4%bd%93%e9%aa%8c.html"
+permalink: "2017/https://www.jfox.info/springcloud%e4%bd%93%e9%aa%8c.html"
 ---
 {% raw %}
 H2M_LI_HEADER 
@@ -38,7 +38,7 @@ H2M_LI_HEADER
 启动一个服务注册中心，使用注解@EnableEurekaServer，这个注解需要在springboot工程的启动application类上加
 
 - 
-访问：[http://localhost:8761](http://www.jfox.info/go.php?url=http://localhost:8761) 观察Spring Eureka服务注册中心
+访问：[http://localhost:8761](https://www.jfox.info/go.php?url=http://localhost:8761) 观察Spring Eureka服务注册中心
 
 ![](/wp-content/uploads/2017/07/1499956976.png)
 
@@ -63,7 +63,7 @@ Eureka server从每个client实例接收心跳信息，如果心跳超时则将�
 在启动类中添加测试方法：home
 
 - 
-启动并访问：[http://localhost:8762/hi?name…](http://www.jfox.info/go.php?url=http://localhost:8762/hi?name=Apolo)
+启动并访问：[http://localhost:8762/hi?name…](https://www.jfox.info/go.php?url=http://localhost:8762/hi?name=Apolo)
 
 ## ribbon
 
@@ -98,7 +98,7 @@ feign也用到了ribbon，当你使用@FeignClient，ribbon自动被应用
 新建测试类HelloControler和HelloService
 
 - 
-启动并访问：[http://localhost:8764/hi?name…](http://www.jfox.info/go.php?url=http://localhost:8764/hi?name=Apolo)
+启动并访问：[http://localhost:8764/hi?name…](https://www.jfox.info/go.php?url=http://localhost:8764/hi?name=Apolo)
 
 - 
 连续访问：页面交替出现Hi Apolo,I am from port:8762和Hi Apolo,I am from port:8763
@@ -148,7 +148,7 @@ Feign是一个声明式的web服务客户端，它使得写web服务变得更简
 定义一个feign的接口类，使用@FeignClient（“服务名”）来指定调用哪个服务
 
 - 
-启动并访问：[http://localhost:8765/hi?name…](http://www.jfox.info/go.php?url=http://localhost:8765/hi?name=Apolo) 浏览器交替显示不同端口
+启动并访问：[http://localhost:8765/hi?name…](https://www.jfox.info/go.php?url=http://localhost:8765/hi?name=Apolo) 浏览器交替显示不同端口
 
 - 
 更改feign配置

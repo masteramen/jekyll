@@ -3,11 +3,11 @@ layout: post
 title:  "JAVA双重检查锁定与延迟初始化"
 title2:  "JAVA双重检查锁定与延迟初始化"
 date:   2017-01-01 23:45:00  +0800
-source:  "http://www.jfox.info/java-double-checked-locking-and-lazy-initialization.html"
+source:  "https://www.jfox.info/java-double-checked-locking-and-lazy-initialization.html"
 fileName:  "20170100600"
 lang:  "zh_CN"
 published: true
-permalink: "java-double-checked-locking-and-lazy-initialization.html"
+permalink: "2017/https://www.jfox.info/java-double-checked-locking-and-lazy-initialization.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期二, 三月 4, 2014
@@ -52,5 +52,5 @@ return instance;
 
 由于对getInstance()做了同步处理，synchronized将导致性能开销。如果getInstance()被多个线程频繁的调用，将会导致程序执行性能的下降。反之，如果getInstance()不会被多个线程频繁的调用，那么这个延迟初始化方案将能提供令人满意的性能。
 
-参考来源 [双重检查锁定与延迟初始化](http://www.jfox.info/go.php?url=http://www.jfox.info/url.php?url=http%3A%2F%2Fwww.infoq.com%2Fcn%2Farticles%2Fdouble-checked-locking-with-delay-initialization).
+参考来源 [双重检查锁定与延迟初始化](https://www.jfox.info/go.php?url=http://www.jfox.info/url.php?url=http%3A%2F%2Fwww.infoq.com%2Fcn%2Farticles%2Fdouble-checked-locking-with-delay-initialization).
 {% endraw %}

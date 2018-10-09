@@ -3,11 +3,11 @@ layout: post
 title:  "5个常用Java 代码混淆器 助你保护你的代码"
 title2:  "5个常用Java 代码混淆器 助你保护你的代码"
 date:   2017-01-01 23:47:19  +0800
-source:  "http://www.jfox.info/5-ge-chang-yong-java-dai-ma-hun-xiao-qi-zhu-ni-bao-hu-ni-de-dai-ma.html"
+source:  "https://www.jfox.info/5-ge-chang-yong-java-dai-ma-hun-xiao-qi-zhu-ni-bao-hu-ni-de-dai-ma.html"
 fileName:  "20170100739"
 lang:  "zh_CN"
 published: true
-permalink: "5-ge-chang-yong-java-dai-ma-hun-xiao-qi-zhu-ni-bao-hu-ni-de-dai-ma.html"
+permalink: "2017/https://www.jfox.info/5-ge-chang-yong-java-dai-ma-hun-xiao-qi-zhu-ni-bao-hu-ni-de-dai-ma.html"
 ---
 {% raw %}
 Java Obfuscator的原理就是将字节码转换为一个逻辑上的对等物，这种转换后的版本极难拆散。即使有人试图去反编译，过程将极其艰难复杂，并很难绕过转换后模糊晦涩的编码。主要的过程如下：

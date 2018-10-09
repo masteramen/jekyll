@@ -3,11 +3,11 @@ layout: post
 title:  "HttpConnection 重定向后getResponseCode 不是301/302的问题解决"
 title2:  "HttpConnection 重定向后getResponseCode 不是301302的问题解决"
 date:   2017-01-01 23:46:06  +0800
-source:  "http://www.jfox.info/httpconnection-redirect-getresponsecode-not-301-302.html"
+source:  "https://www.jfox.info/httpconnection-redirect-getresponsecode-not-301-302.html"
 fileName:  "20170100666"
 lang:  "zh_CN"
 published: true
-permalink: "httpconnection-redirect-getresponsecode-not-301-302.html"
+permalink: "2017/https://www.jfox.info/httpconnection-redirect-getresponsecode-not-301-302.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期日, 八月 3, 2014
@@ -26,5 +26,5 @@ followRedirects
 
 `true` if this connection will follows redirects, false otherwise.
 
-参考引用地址:[http://keke1983.blog.51cto.com/3050676/639347](http://www.jfox.info/go.php?url=http://www.jfox.info/url.php?url=http%3A%2F%2Fkeke1983.blog.51cto.com%2F3050676%2F639347).
+参考引用地址:[http://keke1983.blog.51cto.com/3050676/639347](https://www.jfox.info/go.php?url=http://www.jfox.info/url.php?url=http%3A%2F%2Fkeke1983.blog.51cto.com%2F3050676%2F639347).
 {% endraw %}

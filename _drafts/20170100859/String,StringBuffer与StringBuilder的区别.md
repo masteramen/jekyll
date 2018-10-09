@@ -3,14 +3,14 @@ layout: post
 title:  "String,StringBuffer与StringBuilder的区别"
 title2:  "String,StringBuffer与StringBuilder的区别"
 date:   2017-01-01 23:49:19  +0800
-source:  "http://www.jfox.info/string-stringbuffer-yu-stringbuilder-de-qu-bie.html"
+source:  "https://www.jfox.info/string-stringbuffer-yu-stringbuilder-de-qu-bie.html"
 fileName:  "20170100859"
 lang:  "zh_CN"
 published: true
-permalink: "string-stringbuffer-yu-stringbuilder-de-qu-bie.html"
+permalink: "2017/https://www.jfox.info/string-stringbuffer-yu-stringbuilder-de-qu-bie.html"
 ---
 {% raw %}
-<!–[if !supportLists]–>**1.**<!–[endif]–>[String,StringBuffer与StringBuilder的区别](http://www.jfox.info/go.php?url=http://blog.csdn.net/rmn190/article/details/1492013)
+<!–[if !supportLists]–>**1.**<!–[endif]–>[String,StringBuffer与StringBuilder的区别](https://www.jfox.info/go.php?url=http://blog.csdn.net/rmn190/article/details/1492013)
 
 **String ****字符串常量******StringBuffer ******字符串变量（线程安全）******StringBuilder ******字符串变量（非线程安全）**
 

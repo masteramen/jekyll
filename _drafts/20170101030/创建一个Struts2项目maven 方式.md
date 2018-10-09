@@ -3,11 +3,11 @@ layout: post
 title:  "创建一个Struts2项目maven 方式"
 title2:  "创建一个Struts2项目maven 方式"
 date:   2017-01-01 23:52:10  +0800
-source:  "http://www.jfox.info/%e5%88%9b%e5%bb%ba%e4%b8%80%e4%b8%aastruts2%e9%a1%b9%e7%9b%aemaven-%e6%96%b9%e5%bc%8f.html"
+source:  "https://www.jfox.info/%e5%88%9b%e5%bb%ba%e4%b8%80%e4%b8%aastruts2%e9%a1%b9%e7%9b%aemaven-%e6%96%b9%e5%bc%8f.html"
 fileName:  "20170101030"
 lang:  "zh_CN"
 published: true
-permalink: "%e5%88%9b%e5%bb%ba%e4%b8%80%e4%b8%aastruts2%e9%a1%b9%e7%9b%aemaven-%e6%96%b9%e5%bc%8f.html"
+permalink: "2017/https://www.jfox.info/%e5%88%9b%e5%bb%ba%e4%b8%80%e4%b8%aastruts2%e9%a1%b9%e7%9b%aemaven-%e6%96%b9%e5%bc%8f.html"
 ---
 {% raw %}
 选择Artifact Id ：maven-archetype-webapp 那一项

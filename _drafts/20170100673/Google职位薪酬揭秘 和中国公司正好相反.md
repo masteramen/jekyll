@@ -3,18 +3,18 @@ layout: post
 title:  "Google职位薪酬揭秘 和中国公司正好相反"
 title2:  "Google职位薪酬揭秘 和中国公司正好相反"
 date:   2017-01-01 23:46:13  +0800
-source:  "http://www.jfox.info/google-zhi-wei-xin-chou-jie-mi-he-zhong-guo-gong-si-zheng-hao-xiang-fan.html"
+source:  "https://www.jfox.info/google-zhi-wei-xin-chou-jie-mi-he-zhong-guo-gong-si-zheng-hao-xiang-fan.html"
 fileName:  "20170100673"
 lang:  "zh_CN"
 published: true
-permalink: "google-zhi-wei-xin-chou-jie-mi-he-zhong-guo-gong-si-zheng-hao-xiang-fan.html"
+permalink: "2017/https://www.jfox.info/google-zhi-wei-xin-chou-jie-mi-he-zhong-guo-gong-si-zheng-hao-xiang-fan.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期三, 八月 20, 2014
 
 除了舒适看着就想去上班的办公环境，Google的员工待遇更是响彻全世界，想知道除了高层，Google什么职位薪酬最高吗？来看看Glassdoor（一家专门收集企业工作岗位与年薪信息的网站）日前公布的这份Google员工薪酬排行吧。各位，看完要淡定哦，冲动是魔鬼。
 
-[![5297036_google](http://www.jfox.info/wp-content/uploads/2014/08/5297036_google.jpg)](http://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2014/08/5297036_google.jpg)
+[![5297036_google](http://www.jfox.info/wp-content/uploads/2014/08/5297036_google.jpg)](https://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2014/08/5297036_google.jpg)
 
 　　资深软件工程师，年薪：152985美元
 
@@ -96,5 +96,5 @@ By Lee - Last updated: 星期三, 八月 20, 2014
 
 　　评注：与Google牛气哄哄的工程师相比，销售与客户经理都属于底层，而联席职位则是更低的级别。
 
-原文地址:[http://ipad.pconline.com.cn/articles/0-5297036_1_0.html](http://www.jfox.info/go.php?url=http://www.jfox.info/url.php?_v=v4&amp;_src=&amp;isencode=1&amp;content=dGltZT0xNDA4NTA2OTgxNTA5JnVybD1odHRwJTNBJTJGJTJGaXBhZC5wY29ubGluZS5jb20uY24lMkZhcnRpY2xlcyUyRjAtNTI5NzAzNl8xXzAuaHRtbA==).
+原文地址:[http://ipad.pconline.com.cn/articles/0-5297036_1_0.html](https://www.jfox.info/go.php?url=http://www.jfox.info/url.php?_v=v4&amp;_src=&amp;isencode=1&amp;content=dGltZT0xNDA4NTA2OTgxNTA5JnVybD1odHRwJTNBJTJGJTJGaXBhZC5wY29ubGluZS5jb20uY24lMkZhcnRpY2xlcyUyRjAtNTI5NzAzNl8xXzAuaHRtbA==).
 {% endraw %}

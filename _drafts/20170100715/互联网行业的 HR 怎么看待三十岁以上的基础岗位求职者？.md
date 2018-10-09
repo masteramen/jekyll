@@ -3,11 +3,11 @@ layout: post
 title:  "互联网行业的 HR 怎么看待三十岁以上的基础岗位求职者？"
 title2:  "互联网行业的 HR 怎么看待三十岁以上的基础岗位求职者？"
 date:   2017-01-01 23:46:55  +0800
-source:  "http://www.jfox.info/hu-lian-wang-xing-ye-de-h-r-zen-me-kan-dai-san-shi-sui-yi-shang-de-ji-chu-gang-wei-qiu-zhi-zhe-2.html"
+source:  "https://www.jfox.info/hu-lian-wang-xing-ye-de-h-r-zen-me-kan-dai-san-shi-sui-yi-shang-de-ji-chu-gang-wei-qiu-zhi-zhe-2.html"
 fileName:  "20170100715"
 lang:  "zh_CN"
 published: true
-permalink: "hu-lian-wang-xing-ye-de-h-r-zen-me-kan-dai-san-shi-sui-yi-shang-de-ji-chu-gang-wei-qiu-zhi-zhe-2.html"
+permalink: "2017/https://www.jfox.info/hu-lian-wang-xing-ye-de-h-r-zen-me-kan-dai-san-shi-sui-yi-shang-de-ji-chu-gang-wei-qiu-zhi-zhe-2.html"
 ---
 {% raw %}
 互联网就是一个年轻人为主力军的行业，一批批的年轻人在这个战场上奋勇战斗。
@@ -99,5 +99,5 @@ permalink: "hu-lian-wang-xing-ye-de-h-r-zen-me-kan-dai-san-shi-sui-yi-shang-de-j
 **现在待的某行业软件企业**，面试主管，很高大上的让我画下前公司技术架构，然后一番高谈阔论，意为我懂的太肤浅，然后抓着12306探讨了一番如何如何，我一听，诶你说的这篇文章我看过，他说对啊，这些就是我们做技术的该关心的。共事俩月后，公司摇摇欲坠，无核心竞争力产品，新上任一总经理，第一天拉了产品部所有人单独面谈，让人写产品方案，没人写的出来可执行的方案，我72小时没睡，码了几十页的一份项目策划书，准备怂恿公司转型互联网，现在这路死胡同走下去只有越来越差，领导表示，恩看得出来你用心了，但是这个公司的策略不是我一人能定的，还要听各大股东意见，你先干好手里的活，后续咱们再谈。我估计是黄了，毕竟互联网创业风险贼大，眼下起码还能混的下去，真金白银的还能签几个单下来赚点钱，投互联网十有八九血本无归，想想也是高层都年过半百了，哪可能冒着风险陪我个小年轻勇闯互联网呢。也是幼稚。
 看来我30岁是注定还要找基础岗位的了，求收养，谢谢。
 
-本文来源于[zhihu](http://www.jfox.info/go.php?url=http://www.zhihu.com/question/26655174/answer/34445854)
+本文来源于[zhihu](https://www.jfox.info/go.php?url=http://www.zhihu.com/question/26655174/answer/34445854)
 {% endraw %}

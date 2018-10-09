@@ -3,11 +3,11 @@ layout: post
 title:  "【comparator, comparable】小总结"
 title2:  "【comparator, comparable】小总结"
 date:   2017-01-01 23:53:52  +0800
-source:  "http://www.jfox.info/comparatorcomparable%e5%b0%8f%e6%80%bb%e7%bb%93.html"
+source:  "https://www.jfox.info/comparatorcomparable%e5%b0%8f%e6%80%bb%e7%bb%93.html"
 fileName:  "20170101132"
 lang:  "zh_CN"
 published: true
-permalink: "comparatorcomparable%e5%b0%8f%e6%80%bb%e7%bb%93.html"
+permalink: "2017/https://www.jfox.info/comparatorcomparable%e5%b0%8f%e6%80%bb%e7%bb%93.html"
 ---
 {% raw %}
 H2M_LI_HEADER 

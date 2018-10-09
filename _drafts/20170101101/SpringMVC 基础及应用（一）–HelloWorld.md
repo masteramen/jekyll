@@ -3,11 +3,11 @@ layout: post
 title:  "SpringMVC 基础及应用（一）–HelloWorld"
 title2:  "SpringMVC 基础及应用（一）–HelloWorld"
 date:   2017-01-01 23:53:21  +0800
-source:  "http://www.jfox.info/springmvc%e5%9f%ba%e7%a1%80%e5%8f%8a%e5%ba%94%e7%94%a8%e4%b8%80helloworld.html"
+source:  "https://www.jfox.info/springmvc%e5%9f%ba%e7%a1%80%e5%8f%8a%e5%ba%94%e7%94%a8%e4%b8%80helloworld.html"
 fileName:  "20170101101"
 lang:  "zh_CN"
 published: true
-permalink: "springmvc%e5%9f%ba%e7%a1%80%e5%8f%8a%e5%ba%94%e7%94%a8%e4%b8%80helloworld.html"
+permalink: "2017/https://www.jfox.info/springmvc%e5%9f%ba%e7%a1%80%e5%8f%8a%e5%ba%94%e7%94%a8%e4%b8%80helloworld.html"
 ---
 {% raw %}
 准备工具：

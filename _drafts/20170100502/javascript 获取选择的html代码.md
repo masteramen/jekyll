@@ -3,11 +3,11 @@ layout: post
 title:  "javascript 获取选择的html代码"
 title2:  "javascript 获取选择的html代码"
 date:   2017-01-01 23:43:22  +0800
-source:  "http://www.jfox.info/javascript-%e8%8e%b7%e5%8f%96%e9%80%89%e6%8b%a9%e7%9a%84html%e4%bb%a3%e7%a0%81.html"
+source:  "https://www.jfox.info/javascript-%e8%8e%b7%e5%8f%96%e9%80%89%e6%8b%a9%e7%9a%84html%e4%bb%a3%e7%a0%81.html"
 fileName:  "20170100502"
 lang:  "zh_CN"
 published: true
-permalink: "javascript-%e8%8e%b7%e5%8f%96%e9%80%89%e6%8b%a9%e7%9a%84html%e4%bb%a3%e7%a0%81.html"
+permalink: "2017/https://www.jfox.info/javascript-%e8%8e%b7%e5%8f%96%e9%80%89%e6%8b%a9%e7%9a%84html%e4%bb%a3%e7%a0%81.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期一, 一月 27, 2014

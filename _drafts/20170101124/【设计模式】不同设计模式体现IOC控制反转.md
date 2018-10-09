@@ -3,11 +3,11 @@ layout: post
 title:  "【设计模式】不同设计模式体现IOC控制反转"
 title2:  "【设计模式】不同设计模式体现IOC控制反转"
 date:   2017-01-01 23:53:44  +0800
-source:  "http://www.jfox.info/%e8%ae%be%e8%ae%a1%e6%a8%a1%e5%bc%8f%e4%b8%8d%e5%90%8c%e8%ae%be%e8%ae%a1%e6%a8%a1%e5%bc%8f%e4%bd%93%e7%8e%b0ioc%e6%8e%a7%e5%88%b6%e5%8f%8d%e8%bd%ac.html"
+source:  "https://www.jfox.info/%e8%ae%be%e8%ae%a1%e6%a8%a1%e5%bc%8f%e4%b8%8d%e5%90%8c%e8%ae%be%e8%ae%a1%e6%a8%a1%e5%bc%8f%e4%bd%93%e7%8e%b0ioc%e6%8e%a7%e5%88%b6%e5%8f%8d%e8%bd%ac.html"
 fileName:  "20170101124"
 lang:  "zh_CN"
 published: true
-permalink: "%e8%ae%be%e8%ae%a1%e6%a8%a1%e5%bc%8f%e4%b8%8d%e5%90%8c%e8%ae%be%e8%ae%a1%e6%a8%a1%e5%bc%8f%e4%bd%93%e7%8e%b0ioc%e6%8e%a7%e5%88%b6%e5%8f%8d%e8%bd%ac.html"
+permalink: "2017/https://www.jfox.info/%e8%ae%be%e8%ae%a1%e6%a8%a1%e5%bc%8f%e4%b8%8d%e5%90%8c%e8%ae%be%e8%ae%a1%e6%a8%a1%e5%bc%8f%e4%bd%93%e7%8e%b0ioc%e6%8e%a7%e5%88%b6%e5%8f%8d%e8%bd%ac.html"
 ---
 {% raw %}
 使用过Spring的开发者应该都对IOC控制反转功能有所了解，最开始学习时应该都知道使用依赖注入来实现IOC的功能，本文来介绍使用IOC控制反转思想的几种设计模式。

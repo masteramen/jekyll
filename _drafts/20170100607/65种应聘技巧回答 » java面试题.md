@@ -3,11 +3,11 @@ layout: post
 title:  "65种应聘技巧回答 » java面试题"
 title2:  "65种应聘技巧回答 » java面试题"
 date:   2017-01-01 23:45:07  +0800
-source:  "http://www.jfox.info/65-kinds-of-skills-the-candidates-to-answer.html"
+source:  "https://www.jfox.info/65-kinds-of-skills-the-candidates-to-answer.html"
 fileName:  "20170100607"
 lang:  "zh_CN"
 published: true
-permalink: "65-kinds-of-skills-the-candidates-to-answer.html"
+permalink: "2017/https://www.jfox.info/65-kinds-of-skills-the-candidates-to-answer.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期一, 三月 10, 2014

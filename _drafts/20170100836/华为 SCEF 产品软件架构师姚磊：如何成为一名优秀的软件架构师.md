@@ -3,11 +3,11 @@ layout: post
 title:  "华为 SCEF 产品软件架构师姚磊：如何成为一名优秀的软件架构师"
 title2:  "华为 SCEF 产品软件架构师姚磊：如何成为一名优秀的软件架构师"
 date:   2017-01-01 23:48:56  +0800
-source:  "http://www.jfox.info/hua-wei-scef-chan-pin-ruan-jian-jia-gou-shi-yao-le.html"
+source:  "https://www.jfox.info/hua-wei-scef-chan-pin-ruan-jian-jia-gou-shi-yao-le.html"
 fileName:  "20170100836"
 lang:  "zh_CN"
 published: true
-permalink: "hua-wei-scef-chan-pin-ruan-jian-jia-gou-shi-yao-le.html"
+permalink: "2017/https://www.jfox.info/hua-wei-scef-chan-pin-ruan-jian-jia-gou-shi-yao-le.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期日, 六月 11, 2017

@@ -3,11 +3,11 @@ layout: post
 title:  "关于烧绳子的智力题目 » java面试题"
 title2:  "关于烧绳子的智力题目 » java面试题"
 date:   2017-01-01 23:42:52  +0800
-source:  "http://www.jfox.info/guan-yu-shao-sheng-zi-de-zhi-li-ti-mu.html"
+source:  "https://www.jfox.info/guan-yu-shao-sheng-zi-de-zhi-li-ti-mu.html"
 fileName:  "20170100472"
 lang:  "zh_CN"
 published: true
-permalink: "guan-yu-shao-sheng-zi-de-zhi-li-ti-mu.html"
+permalink: "2017/https://www.jfox.info/guan-yu-shao-sheng-zi-de-zhi-li-ti-mu.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期五, 十月 25, 2013

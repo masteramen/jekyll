@@ -3,11 +3,11 @@ layout: post
 title:  "DataUtils对Connection的获取、释放和关闭的操作学习"
 title2:  "DataUtils对Connection的获取、释放和关闭的操作学习"
 date:   2017-01-01 23:56:13  +0800
-source:  "http://www.jfox.info/datautils%e5%af%b9connection%e7%9a%84%e8%8e%b7%e5%8f%96%e9%87%8a%e6%94%be%e5%92%8c%e5%85%b3%e9%97%ad%e7%9a%84%e6%93%8d%e4%bd%9c%e5%ad%a6%e4%b9%a0.html"
+source:  "https://www.jfox.info/datautils%e5%af%b9connection%e7%9a%84%e8%8e%b7%e5%8f%96%e9%87%8a%e6%94%be%e5%92%8c%e5%85%b3%e9%97%ad%e7%9a%84%e6%93%8d%e4%bd%9c%e5%ad%a6%e4%b9%a0.html"
 fileName:  "20170101273"
 lang:  "zh_CN"
 published: true
-permalink: "datautils%e5%af%b9connection%e7%9a%84%e8%8e%b7%e5%8f%96%e9%87%8a%e6%94%be%e5%92%8c%e5%85%b3%e9%97%ad%e7%9a%84%e6%93%8d%e4%bd%9c%e5%ad%a6%e4%b9%a0.html"
+permalink: "2017/https://www.jfox.info/datautils%e5%af%b9connection%e7%9a%84%e8%8e%b7%e5%8f%96%e9%87%8a%e6%94%be%e5%92%8c%e5%85%b3%e9%97%ad%e7%9a%84%e6%93%8d%e4%bd%9c%e5%ad%a6%e4%b9%a0.html"
 ---
 {% raw %}
 # DataUtils对Connection的获取、释放和关闭的操作学习 

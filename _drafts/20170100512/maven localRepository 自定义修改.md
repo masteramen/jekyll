@@ -3,11 +3,11 @@ layout: post
 title:  "maven localRepository 自定义修改"
 title2:  "maven localRepository 自定义修改"
 date:   2017-01-01 23:43:32  +0800
-source:  "http://www.jfox.info/maven-localrepository-%e8%87%aa%e5%ae%9a%e4%b9%89%e4%bf%ae%e6%94%b9.html"
+source:  "https://www.jfox.info/maven-localrepository-%e8%87%aa%e5%ae%9a%e4%b9%89%e4%bf%ae%e6%94%b9.html"
 fileName:  "20170100512"
 lang:  "zh_CN"
 published: true
-permalink: "maven-localrepository-%e8%87%aa%e5%ae%9a%e4%b9%89%e4%bf%ae%e6%94%b9.html"
+permalink: "2017/https://www.jfox.info/maven-localrepository-%e8%87%aa%e5%ae%9a%e4%b9%89%e4%bf%ae%e6%94%b9.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期五, 一月 31, 2014

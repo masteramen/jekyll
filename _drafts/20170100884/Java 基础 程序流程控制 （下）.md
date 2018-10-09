@@ -3,11 +3,11 @@ layout: post
 title:  "Java 基础 程序流程控制 （下）"
 title2:  "Java 基础 程序流程控制 （下）"
 date:   2017-01-01 23:49:44  +0800
-source:  "http://www.jfox.info/java-%e5%9f%ba%e7%a1%80-%e7%a8%8b%e5%ba%8f%e6%b5%81%e7%a8%8b%e6%8e%a7%e5%88%b6-%e4%b8%8b.html"
+source:  "https://www.jfox.info/java-%e5%9f%ba%e7%a1%80-%e7%a8%8b%e5%ba%8f%e6%b5%81%e7%a8%8b%e6%8e%a7%e5%88%b6-%e4%b8%8b.html"
 fileName:  "20170100884"
 lang:  "zh_CN"
 published: true
-permalink: "java-%e5%9f%ba%e7%a1%80-%e7%a8%8b%e5%ba%8f%e6%b5%81%e7%a8%8b%e6%8e%a7%e5%88%b6-%e4%b8%8b.html"
+permalink: "2017/https://www.jfox.info/java-%e5%9f%ba%e7%a1%80-%e7%a8%8b%e5%ba%8f%e6%b5%81%e7%a8%8b%e6%8e%a7%e5%88%b6-%e4%b8%8b.html"
 ---
 {% raw %}
 ## Java 程序流程控制 （下）

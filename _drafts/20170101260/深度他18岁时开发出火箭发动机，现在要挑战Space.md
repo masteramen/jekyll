@@ -3,11 +3,11 @@ layout: post
 title:  "深度|他18岁时开发出火箭发动机，现在要挑战Space"
 title2:  "深度他18岁时开发出火箭发动机，现在要挑战Space"
 date:   2017-01-01 23:56:00  +0800
-source:  "http://www.jfox.info/%e6%b7%b1%e5%ba%a6%e4%bb%9618%e5%b2%81%e6%97%b6%e5%bc%80%e5%8f%91%e5%87%ba%e7%81%ab%e7%ae%ad%e5%8f%91%e5%8a%a8%e6%9c%ba%e7%8e%b0%e5%9c%a8%e8%a6%81%e6%8c%91%e6%88%98space.html"
+source:  "https://www.jfox.info/%e6%b7%b1%e5%ba%a6%e4%bb%9618%e5%b2%81%e6%97%b6%e5%bc%80%e5%8f%91%e5%87%ba%e7%81%ab%e7%ae%ad%e5%8f%91%e5%8a%a8%e6%9c%ba%e7%8e%b0%e5%9c%a8%e8%a6%81%e6%8c%91%e6%88%98space.html"
 fileName:  "20170101260"
 lang:  "zh_CN"
 published: true
-permalink: "%e6%b7%b1%e5%ba%a6%e4%bb%9618%e5%b2%81%e6%97%b6%e5%bc%80%e5%8f%91%e5%87%ba%e7%81%ab%e7%ae%ad%e5%8f%91%e5%8a%a8%e6%9c%ba%e7%8e%b0%e5%9c%a8%e8%a6%81%e6%8c%91%e6%88%98space.html"
+permalink: "2017/https://www.jfox.info/%e6%b7%b1%e5%ba%a6%e4%bb%9618%e5%b2%81%e6%97%b6%e5%bc%80%e5%8f%91%e5%87%ba%e7%81%ab%e7%ae%ad%e5%8f%91%e5%8a%a8%e6%9c%ba%e7%8e%b0%e5%9c%a8%e8%a6%81%e6%8c%91%e6%88%98space.html"
 ---
 {% raw %}
 Peter Beck
@@ -16,7 +16,7 @@ Peter Beck
 
 　　Rocket Lab 的创始人 Peter Beck 是新西兰人，没有高学历的背景，但他却带领团队让火箭升空，为团队带来了美好的商业前景。近十年的修炼后，Beck 和 Roket Lab 都做好准备，让世界见证低成本火箭的升空。 
 
-[彭博周刊](http://www.jfox.info/go.php?url=https://www.bloomberg.com/news/features/2017-06-29/at-18-he-strapped-a-rocket-engine-to-his-bike-now-he-s-taking-on-spacex)最近记录的 Peter 和 Rocket Lab 成长的精彩故事，雷锋网编译如下。
+[彭博周刊](https://www.jfox.info/go.php?url=https://www.bloomberg.com/news/features/2017-06-29/at-18-he-strapped-a-rocket-engine-to-his-bike-now-he-s-taking-on-spacex)最近记录的 Peter 和 Rocket Lab 成长的精彩故事，雷锋网编译如下。
 
 　　Beck 比大多数青少年更能折腾。他大量的少年时光，都花在了新西兰小镇家中用车库改造的工作室里。他总在这里焊接、铣削一些设备。15 岁时，他东拼西凑制造了一辆铝合金自行车。16 岁时，他以 300 美元的价格购买了一辆生锈的 Austin Mini 汽车，并由里到外将其重新整修，改造发动机、悬吊系统，并将车身面板都整理固定好。
 

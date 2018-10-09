@@ -3,11 +3,11 @@ layout: post
 title:  "说说PreparedStatement和Statement具体区别?"
 title2:  "说说PreparedStatement和Statement具体区别"
 date:   2017-01-01 23:41:44  +0800
-source:  "http://www.jfox.info/shuo-shuo-preparedstatement-he-statement-ju-ti-qu-bie.html"
+source:  "https://www.jfox.info/shuo-shuo-preparedstatement-he-statement-ju-ti-qu-bie.html"
 fileName:  "20170100404"
 lang:  "zh_CN"
 published: true
-permalink: "shuo-shuo-preparedstatement-he-statement-ju-ti-qu-bie.html"
+permalink: "2017/https://www.jfox.info/shuo-shuo-preparedstatement-he-statement-ju-ti-qu-bie.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期一, 五月 27, 2013

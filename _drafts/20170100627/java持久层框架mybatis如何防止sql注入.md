@@ -3,11 +3,11 @@ layout: post
 title:  "java持久层框架mybatis如何防止sql注入"
 title2:  "java持久层框架mybatis如何防止sql注入"
 date:   2017-01-01 23:45:27  +0800
-source:  "http://www.jfox.info/ava-persistence-framework-mybatis-how-to-prevent-sql-injection.html"
+source:  "https://www.jfox.info/ava-persistence-framework-mybatis-how-to-prevent-sql-injection.html"
 fileName:  "20170100627"
 lang:  "zh_CN"
 published: true
-permalink: "ava-persistence-framework-mybatis-how-to-prevent-sql-injection.html"
+permalink: "2017/https://www.jfox.info/ava-persistence-framework-mybatis-how-to-prevent-sql-injection.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期四, 五月 1, 2014
@@ -58,5 +58,5 @@ blog order by id
 
     结论：在编写mybatis的映射语句时，尽量采用“#{xxx}”这样的格式。若不得不使用“${xxx}”这样的参数，要手工地做好过滤工作，来防止sql注入攻击。
 
-参考来源 [mybatis防止sql注入JAVA](http://www.jfox.info/go.php?url=http://www.jfox.info/url.php?url=http%3A%2F%2Fwww.rrzhai.com%2Fp%2F25420.html).
+参考来源 [mybatis防止sql注入JAVA](https://www.jfox.info/go.php?url=http://www.jfox.info/url.php?url=http%3A%2F%2Fwww.rrzhai.com%2Fp%2F25420.html).
 {% endraw %}

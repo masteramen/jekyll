@@ -3,11 +3,11 @@ layout: post
 title:  "PHP 把秒数转换成时分秒格式输出的函数"
 title2:  "PHP 把秒数转换成时分秒格式输出的函数"
 date:   2017-01-01 23:46:59  +0800
-source:  "http://www.jfox.info/php-ba-miao-shu-zhuan-huan-cheng-shi-fen-miao-ge-shi-shu-chu-de-han-shu.html"
+source:  "https://www.jfox.info/php-ba-miao-shu-zhuan-huan-cheng-shi-fen-miao-ge-shi-shu-chu-de-han-shu.html"
 fileName:  "20170100719"
 lang:  "zh_CN"
 published: true
-permalink: "php-ba-miao-shu-zhuan-huan-cheng-shi-fen-miao-ge-shi-shu-chu-de-han-shu.html"
+permalink: "2017/https://www.jfox.info/php-ba-miao-shu-zhuan-huan-cheng-shi-fen-miao-ge-shi-shu-chu-de-han-shu.html"
 ---
 {% raw %}
 gmstrftime(‘%H:%M:%S’,800);

@@ -3,11 +3,11 @@ layout: post
 title:  "Spring Boot – 自定义启动banner"
 title2:  "Spring Boot – 自定义启动banner"
 date:   2017-01-01 23:56:03  +0800
-source:  "http://www.jfox.info/springboot%e8%87%aa%e5%ae%9a%e4%b9%89%e5%90%af%e5%8a%a8banner.html"
+source:  "https://www.jfox.info/springboot%e8%87%aa%e5%ae%9a%e4%b9%89%e5%90%af%e5%8a%a8banner.html"
 fileName:  "20170101263"
 lang:  "zh_CN"
 published: true
-permalink: "springboot%e8%87%aa%e5%ae%9a%e4%b9%89%e5%90%af%e5%8a%a8banner.html"
+permalink: "2017/https://www.jfox.info/springboot%e8%87%aa%e5%ae%9a%e4%b9%89%e5%90%af%e5%8a%a8banner.html"
 ---
 {% raw %}
 这段时间较忙，有些想念“小红”，为了表达我对小红的思念之情，决定将spring boot启动的banner研究一下，看看是否能够自定义，让我天天能够看到她。
@@ -39,7 +39,7 @@ permalink: "springboot%e8%87%aa%e5%ae%9a%e4%b9%89%e5%90%af%e5%8a%a8banner.html"
 
 ### 工具
 
-[生成ASCII字符画](http://www.jfox.info/go.php?url=http://patorjk.com/software/taag/#p=display&amp;f=Big%20Money-nw&amp;t=xiaohong)
+[生成ASCII字符画](https://www.jfox.info/go.php?url=http://patorjk.com/software/taag/#p=display&amp;f=Big%20Money-nw&amp;t=xiaohong)
 
 ### 参数属性
 

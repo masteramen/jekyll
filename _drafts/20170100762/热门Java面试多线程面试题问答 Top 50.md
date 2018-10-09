@@ -3,11 +3,11 @@ layout: post
 title:  "热门Java面试多线程面试题问答 Top 50"
 title2:  "热门Java面试多线程面试题问答 Top 50"
 date:   2017-01-01 23:47:42  +0800
-source:  "http://www.jfox.info/re-men-java-mian-shi-duo-xian-cheng-mian-shi-ti-wen-da-top-50.html"
+source:  "https://www.jfox.info/re-men-java-mian-shi-duo-xian-cheng-mian-shi-ti-wen-da-top-50.html"
 fileName:  "20170100762"
 lang:  "zh_CN"
 published: true
-permalink: "re-men-java-mian-shi-duo-xian-cheng-mian-shi-ti-wen-da-top-50.html"
+permalink: "2017/https://www.jfox.info/re-men-java-mian-shi-duo-xian-cheng-mian-shi-ti-wen-da-top-50.html"
 ---
 {% raw %}
 不管你是新程序员还是老手，你一定在面试中遇到过有关线程的问题。Java语言一个重要的特点就是内置了对并发的支持，让Java大受企业和程序员的欢迎。大多数待遇丰厚的Java开发职位都要求开发者精通多线程技术并且有丰富的Java程序开发、调试、优化经验，所以线程相关的问题在面试中经常会被提到。

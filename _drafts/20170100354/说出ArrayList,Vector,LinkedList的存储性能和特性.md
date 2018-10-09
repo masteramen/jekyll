@@ -3,11 +3,11 @@ layout: post
 title:  "说出ArrayList,Vector,LinkedList的存储性能和特性"
 title2:  "说出ArrayList,Vector,LinkedList的存储性能和特性"
 date:   2017-01-01 23:40:54  +0800
-source:  "http://www.jfox.info/shuo-chu-ArrayList-Vector-LinkedList-de-cun-chu-xing-neng-he-te-xing.html"
+source:  "https://www.jfox.info/shuo-chu-ArrayList-Vector-LinkedList-de-cun-chu-xing-neng-he-te-xing.html"
 fileName:  "20170100354"
 lang:  "zh_CN"
 published: true
-permalink: "shuo-chu-ArrayList-Vector-LinkedList-de-cun-chu-xing-neng-he-te-xing.html"
+permalink: "2017/https://www.jfox.info/shuo-chu-ArrayList-Vector-LinkedList-de-cun-chu-xing-neng-he-te-xing.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期日, 六月 2, 2013

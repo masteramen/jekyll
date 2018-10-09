@@ -3,11 +3,11 @@ layout: post
 title:  "建立索引常用的规则 » java面试题"
 title2:  "建立索引常用的规则 » java面试题"
 date:   2017-01-01 23:40:47  +0800
-source:  "http://www.jfox.info/jian-li-suo-yin-chang-yong-de-gui-ze.html"
+source:  "https://www.jfox.info/jian-li-suo-yin-chang-yong-de-gui-ze.html"
 fileName:  "20170100347"
 lang:  "zh_CN"
 published: true
-permalink: "jian-li-suo-yin-chang-yong-de-gui-ze.html"
+permalink: "2017/https://www.jfox.info/jian-li-suo-yin-chang-yong-de-gui-ze.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期五, 五月 17, 2013

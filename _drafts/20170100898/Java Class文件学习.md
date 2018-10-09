@@ -3,11 +3,11 @@ layout: post
 title:  "Java Class文件学习"
 title2:  "Java Class文件学习"
 date:   2017-01-01 23:49:58  +0800
-source:  "http://www.jfox.info/java-class%e6%96%87%e4%bb%b6%e5%ad%a6%e4%b9%a0.html"
+source:  "https://www.jfox.info/java-class%e6%96%87%e4%bb%b6%e5%ad%a6%e4%b9%a0.html"
 fileName:  "20170100898"
 lang:  "zh_CN"
 published: true
-permalink: "java-class%e6%96%87%e4%bb%b6%e5%ad%a6%e4%b9%a0.html"
+permalink: "2017/https://www.jfox.info/java-class%e6%96%87%e4%bb%b6%e5%ad%a6%e4%b9%a0.html"
 ---
 {% raw %}
 数据类型：

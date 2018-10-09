@@ -3,11 +3,11 @@ layout: post
 title:  "Java解析URI字符串到Map集合"
 title2:  "Java解析URI字符串到Map集合"
 date:   2017-01-01 23:43:23  +0800
-source:  "http://www.jfox.info/java%e8%a7%a3%e6%9e%90uri%e5%ad%97%e7%ac%a6%e4%b8%b2map%e9%9b%86%e5%90%88.html"
+source:  "https://www.jfox.info/java%e8%a7%a3%e6%9e%90uri%e5%ad%97%e7%ac%a6%e4%b8%b2map%e9%9b%86%e5%90%88.html"
 fileName:  "20170100503"
 lang:  "zh_CN"
 published: true
-permalink: "java%e8%a7%a3%e6%9e%90uri%e5%ad%97%e7%ac%a6%e4%b8%b2map%e9%9b%86%e5%90%88.html"
+permalink: "2017/https://www.jfox.info/java%e8%a7%a3%e6%9e%90uri%e5%ad%97%e7%ac%a6%e4%b8%b2map%e9%9b%86%e5%90%88.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期二, 一月 28, 2014

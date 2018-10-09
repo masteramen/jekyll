@@ -3,11 +3,11 @@ layout: post
 title:  "一颗简单的JDBC栗子"
 title2:  "一颗简单的JDBC栗子"
 date:   2017-01-01 23:56:33  +0800
-source:  "http://www.jfox.info/%e4%b8%80%e9%a2%97%e7%ae%80%e5%8d%95%e7%9a%84jdbc%e6%a0%97%e5%ad%90.html"
+source:  "https://www.jfox.info/%e4%b8%80%e9%a2%97%e7%ae%80%e5%8d%95%e7%9a%84jdbc%e6%a0%97%e5%ad%90.html"
 fileName:  "20170101293"
 lang:  "zh_CN"
 published: true
-permalink: "%e4%b8%80%e9%a2%97%e7%ae%80%e5%8d%95%e7%9a%84jdbc%e6%a0%97%e5%ad%90.html"
+permalink: "2017/https://www.jfox.info/%e4%b8%80%e9%a2%97%e7%ae%80%e5%8d%95%e7%9a%84jdbc%e6%a0%97%e5%ad%90.html"
 ---
 {% raw %}
 前言：安装好数据库之后，我们编写的java程序是不能直接使用数据库的，而JDBC（Java Database Connectivity,即java数据库连接）是java语言里用来规范客户端程序访问数据库的API，有了它，我们就可以向各种关系型数据库发送SQL语句，从而实现对数据库的增删改查等操作。

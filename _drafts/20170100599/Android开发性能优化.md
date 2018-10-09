@@ -3,11 +3,11 @@ layout: post
 title:  "Android开发性能优化"
 title2:  "Android开发性能优化"
 date:   2017-01-01 23:44:59  +0800
-source:  "http://www.jfox.info/android-development-performance-optimization.html"
+source:  "https://www.jfox.info/android-development-performance-optimization.html"
 fileName:  "20170100599"
 lang:  "zh_CN"
 published: true
-permalink: "android-development-performance-optimization.html"
+permalink: "2017/https://www.jfox.info/android-development-performance-optimization.html"
 ---
 {% raw %}
 一， 内存优化：
@@ -198,7 +198,7 @@ c. android.text.format包下的Formatter类，提供了IP地址转换、文件�
 
 d. TextUtils类:
 
-对于字符串处理Android为我们提供了一个简单实用的TextUtils类，如果处理比较简单的内容不用去思考正则表达式不妨试试这个在android.text.TextUtils的类，详细请参考 [http://developer.android.com/reference/android/text/TextUtils.html](http://www.jfox.info/go.php?url=http://developer.android.com/reference/android/text/TextUtils.html)
+对于字符串处理Android为我们提供了一个简单实用的TextUtils类，如果处理比较简单的内容不用去思考正则表达式不妨试试这个在android.text.TextUtils的类，详细请参考 [http://developer.android.com/reference/android/text/TextUtils.html](https://www.jfox.info/go.php?url=http://developer.android.com/reference/android/text/TextUtils.html)
 
 e. 高性能MemoryFile类:
 
@@ -206,7 +206,7 @@ e. 高性能MemoryFile类:
 
 MemoryFile适用于哪些地方呢？对于I/O需要频繁操作的，主要是和外部存储相关的I/O操作，MemoryFile通过将 NAND或SD卡上的文件，分段映射到内存中进行修改处理，这样就用高速的RAM代替了ROM或SD卡，性能自然提高不少，对于Android手机而言同 时还减少了电量消耗。该类实现的功能不是很多，直接从Object上继承，通过JNI的方式直接在C底层执行。
 
-详细请参考 [http://developer.android.com/reference/android/os/MemoryFile.html](http://www.jfox.info/go.php?url=http://developer.android.com/reference/android/os/MemoryFile.html)
+详细请参考 [http://developer.android.com/reference/android/os/MemoryFile.html](https://www.jfox.info/go.php?url=http://developer.android.com/reference/android/os/MemoryFile.html)
 
 在此，只简单列举几个常用的类和方法，更多的是要靠平时的积累和发现。多阅读Google给的帮助文档时很有益的。
 
@@ -254,7 +254,7 @@ d. 虚引用（PhantomReference）
 
 顾名思义，就是形同虚设。与其他几种引用都不同，虚引用并不会决定对象的生命周期。如果一个对象仅持有虚引用，那么它就和没有任何引用一样，在任何时候都可能被垃圾回收器回收。了解并熟练掌握这4中引用方式，选择合适的对象应用方式，对内存的回收是很有帮助的。
 
-详细请参考 [http://blog.csdn.net/feng88724/article/details/6590064](http://www.jfox.info/go.php?url=http://blog.csdn.net/feng88724/article/details/6590064)
+详细请参考 [http://blog.csdn.net/feng88724/article/details/6590064](https://www.jfox.info/go.php?url=http://blog.csdn.net/feng88724/article/details/6590064)
 
 10. 使用实体类比接口好:
 
@@ -456,11 +456,11 @@ b. 通过HierarchyViewer查看布局结构
 
 利用HierarchyViewer来查看View的结构：~/tools/hierarchyviewer，能很清楚地看到RelativeLayout下面的扁平结构，这样能加快dom的渲染速度。
 
-详细请参考 [http://developer.android.com/guide/developing/tools/hierarchy-viewer.html](http://www.jfox.info/go.php?url=http://developer.android.com/guide/developing/tools/hierarchy-viewer.html)
+详细请参考 [http://developer.android.com/guide/developing/tools/hierarchy-viewer.html](https://www.jfox.info/go.php?url=http://developer.android.com/guide/developing/tools/hierarchy-viewer.html)
 
 c. 通过Layoutopt优化布局
 
-通过android sdk中tools目录下的layoutopt 命令查看你的布局是否需要优化。详细请参考 [http://apps.hi.baidu.com/share/detail/34247942](http://www.jfox.info/go.php?url=http://apps.hi.baidu.com/share/detail/34247942)
+通过android sdk中tools目录下的layoutopt 命令查看你的布局是否需要优化。详细请参考 [http://apps.hi.baidu.com/share/detail/34247942](https://www.jfox.info/go.php?url=http://apps.hi.baidu.com/share/detail/34247942)
 
 2. 多线程解决复杂计算:
 
@@ -504,7 +504,7 @@ bitmap = null;
 
 ViewStub 是一个隐藏的，不占用内存空间的视图对象，它可以在运行时延迟加载布局资源文件。当ViewStub可见，或者调用 inflate()函数时，才会加载这个布局资源文件。 该ViewStub在加载视图时在父容器中替换它本身。因此，ViewStub会一直存在于视图中，直到调用setVisibility(int) 或者inflate()为止。ViewStub的布局参数会随着加载的视图数一同被添加到ViewStub父容器。同样，你也可以通过使用 inflatedId属性来定义或重命名要加载的视图对象的Id值。所以我们可以使用ViewStub延迟加载某些比较复杂的layout，动态加载 View，采用ViewStub 避免一些不经常的视图长期握住引用。
 
-详细请参考[http://developer.android.com/reference/android/view/ViewStub.html](http://www.jfox.info/go.php?url=http://developer.android.com/reference/android/view/ViewStub.html)
+详细请参考[http://developer.android.com/reference/android/view/ViewStub.html](https://www.jfox.info/go.php?url=http://developer.android.com/reference/android/view/ViewStub.html)
 
 6. 针对ListView的性能优化:
 
@@ -618,5 +618,81 @@ h. View中设置缓存属性.setDrawingCache为true。
 
 1. 避免频繁网络请求：
 
-访问server端时，建立连接本身比传输需要跟多的时间，如非必要，不要将一交互可以做的事情分成多次交互（这需要与Server端协调好）。 有效�
+访问server端时，建立连接本身比传输需要跟多的时间，如非必要，不要将一交互可以做的事情分成多次交互（这需要与Server端协调好）。 有效管理Service 后台服务就相当于一个持续运行的Acitivity，如果开发的程序后台都会一个service不停的去服务器上更新数据，在不更新数据的时候就让它 sleep，这种方式是非常耗电的，通常情况下，可以使用AlarmManager来定时启动服务。如下所示，第30分钟执行一次。
+
+AlarmManager alarmManager = (AlarmManager) context.getSystemService(Context.ALARM_SERVICE);
+
+Intent intent = new Intent(context, MyService.class);
+
+PendingIntent pendingIntent = PendingIntent.getService(context, 0, intent, 0);
+
+long interval = DateUtils.MINUTE_IN_MILLIS * 30;
+
+long firstWake = System.currentTimeMillis() + interval;
+
+am.setRepeating(AlarmManager.RTC,firstWake, interval, pendingIntent);
+
+2. 数据压缩：
+
+传输数据经过压缩 目前大部门网站都支持GZIP压缩，所以在进行大数据量下载时，尽量使用GZIP方式下载，可以减少网络流量，一般是压缩前数据大小的30%左右。
+
+HttpGet request = new HttpGet(“[http://example.com/gzipcontent](https://www.jfox.info/go.php?url=http://example.com/gzipcontent)“);
+
+HttpResponse resp = new DefaultHttpClient().execute(request);
+
+HttpEntity entity = response.getEntity();
+
+InputStream compressed = entity.getContent();
+
+InputStream rawData = new GZIPInputStream(compressed);
+
+3. 使用线程池：
+
+线程池，分为核心线程池和普通线程池，下载图片等耗时任务放置在普通线程池，避免耗时任务阻塞线程池后，导致所有异步任务都必须等待。
+
+4. 选择合适的数据格式传输形式:
+
+其中Tree Parse 是DOM解析 Event/Stream是SAX方式解析。
+
+很明显，使用流的方式解析效率要高一些，因为DOM解析是在对整个文档读取完后，再根据节点层次等再组织起来。而流的方式是边读取数据边解析，数据读取完后，解析也就完毕了。在数据格式方面，JSON和Protobuf效率明显比XML好很多，XML和JSON大家都很熟悉。从上面的图中可以得出结论就是尽量使用SAX等边读取边解析的方式来解析数据，针对移动设备，最好能使用JSON之类的轻量级数据格式为佳。
+
+5. 其他:
+
+设置连接超时时间和响应超时时间。Http请求按照业务需求，分为是否可以缓存和不可缓存，那么在无网络的环境中，仍然通过缓存的HttpResponse浏览部分数据，实现离线阅读。
+
+五， 数据库相关：
+
+1. 相对于封装过的ContentProvider而言，使用原始SQL语句执行效率高，比如使用方法rawQuery、execSQL的执行效率比较高。
+
+2. 对于需要一次性修改多个数据时，可以考虑使用SQLite的事务方式批量处理。
+
+3. 批量插入多行数据使用InsertHelper或者bulkInsert方法。
+
+4. 有些能用文件操作的，尽量采用文件操作，文件操作的速度比数据库的操作要快10倍左右。
+
+六， 性能测试：
+
+对于Android平台上软件的性能测试可以通过以下几种方法来分析效率瓶颈，目前Google在android软件开发过程中已经引入了多种测试工具包，比如Unit测试工程，调试类，还有模拟器的Dev Tools都可以直接反应执行性能。
+
+1. 在模拟器上的Dev Tools可以激活屏幕显示当前的FPS，CPU使用率，可以帮助我们测试一些3D图形界面的性能。
+
+2. 一般涉及到网络应用的程序，在效率上和网速有很多关系，这里需要多次的调试才能实际了解。
+
+3. 对于逻辑算法的效率执行，我们使用Android上最普遍的，计算执行时间来查看：
+
+long start = System.currentTimeMillis(); // do something
+
+long duration = System.currentTimeMillis() – start;
+
+最终duration保存着实际处理该方法需要的毫秒数。
+
+4. 效率跟踪，如果你执行的应用比较简单，可以在DDMS中查看下Logcat的VM释放内存情况，大概模拟下那些地方可以缓存数据或改进算法的。
+
+5. 线程的使用和同步，Android平台上给我们提供了丰富的多任务同步方法，但在深层上并没有过多的比如自旋锁等高级应用，不 过对于Service和 appWidget而言，他们实际的产品中都应该以多线程的方式处理，以释放CPU时间，对于线程和堆内存的查看这些都可以在DDMS中看到。
+
+6. 利用traceview和monkey等工具测试应用。
+
+7. 利用layoutopt和ninepatch等工具优化视图。
+
+来源 [Android开发性能优化 – Ryan20120101 – eoe移动开发者社区](https://www.jfox.info/go.php?url=http://www.jfox.info/url.php?url=http%3A%2F%2Fmy.eoe.cn%2F853436%2Farchive%2F21752.html).
 {% endraw %}

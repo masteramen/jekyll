@@ -3,11 +3,11 @@ layout: post
 title:  "Akka系列（六）：Actor解决了什么问题？"
 title2:  "Akka系列（六）：Actor解决了什么问题？"
 date:   2017-01-01 23:54:39  +0800
-source:  "http://www.jfox.info/akka%e7%b3%bb%e5%88%97%e5%85%adactor%e8%a7%a3%e5%86%b3%e4%ba%86%e4%bb%80%e4%b9%88%e9%97%ae%e9%a2%98.html"
+source:  "https://www.jfox.info/akka%e7%b3%bb%e5%88%97%e5%85%adactor%e8%a7%a3%e5%86%b3%e4%ba%86%e4%bb%80%e4%b9%88%e9%97%ae%e9%a2%98.html"
 fileName:  "20170101179"
 lang:  "zh_CN"
 published: true
-permalink: "akka%e7%b3%bb%e5%88%97%e5%85%adactor%e8%a7%a3%e5%86%b3%e4%ba%86%e4%bb%80%e4%b9%88%e9%97%ae%e9%a2%98.html"
+permalink: "2017/https://www.jfox.info/akka%e7%b3%bb%e5%88%97%e5%85%adactor%e8%a7%a3%e5%86%b3%e4%ba%86%e4%bb%80%e4%b9%88%e9%97%ae%e9%a2%98.html"
 ---
 {% raw %}
 ## Actor解决了什么问题？

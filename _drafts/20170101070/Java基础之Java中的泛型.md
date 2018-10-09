@@ -3,11 +3,11 @@ layout: post
 title:  "Java基础之Java中的泛型"
 title2:  "Java基础之Java中的泛型"
 date:   2017-01-01 23:52:50  +0800
-source:  "http://www.jfox.info/java%e5%9f%ba%e7%a1%80%e4%b9%8bjava%e4%b8%ad%e7%9a%84%e6%b3%9b%e5%9e%8b.html"
+source:  "https://www.jfox.info/java%e5%9f%ba%e7%a1%80%e4%b9%8bjava%e4%b8%ad%e7%9a%84%e6%b3%9b%e5%9e%8b.html"
 fileName:  "20170101070"
 lang:  "zh_CN"
 published: true
-permalink: "java%e5%9f%ba%e7%a1%80%e4%b9%8bjava%e4%b8%ad%e7%9a%84%e6%b3%9b%e5%9e%8b.html"
+permalink: "2017/https://www.jfox.info/java%e5%9f%ba%e7%a1%80%e4%b9%8bjava%e4%b8%ad%e7%9a%84%e6%b3%9b%e5%9e%8b.html"
 ---
 {% raw %}
 List list = new ArrayList();  

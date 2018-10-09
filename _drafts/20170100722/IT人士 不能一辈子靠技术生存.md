@@ -3,11 +3,11 @@ layout: post
 title:  "IT人士 不能一辈子靠技术生存"
 title2:  "IT人士 不能一辈子靠技术生存"
 date:   2017-01-01 23:47:02  +0800
-source:  "http://www.jfox.info/i-t-ren-shi-bu-nen-yi-bei-zi-kao-ji-shu-sheng-cun.html"
+source:  "https://www.jfox.info/i-t-ren-shi-bu-nen-yi-bei-zi-kao-ji-shu-sheng-cun.html"
 fileName:  "20170100722"
 lang:  "zh_CN"
 published: true
-permalink: "i-t-ren-shi-bu-nen-yi-bei-zi-kao-ji-shu-sheng-cun.html"
+permalink: "2017/https://www.jfox.info/i-t-ren-shi-bu-nen-yi-bei-zi-kao-ji-shu-sheng-cun.html"
 ---
 {% raw %}
 我现在是自己做，但我此前有多年在从事软件开发工作，当回过头来想一想自己，觉得特别想对那些初学JAVA/DOT.NET技术的朋友说点心里话，希望你们能从我们的体会中，多少受点启发（也许我说的不好，你不赞同但看在我真心的份上别扔砖头啊）。

@@ -3,11 +3,11 @@ layout: post
 title:  "java面试题:整数高地位互换"
 title2:  "java面试题整数高地位互换"
 date:   2017-01-01 23:42:56  +0800
-source:  "http://www.jfox.info/java-mian-shi-ti-zheng-shu-gao-di-wei-hu-huan.html"
+source:  "https://www.jfox.info/java-mian-shi-ti-zheng-shu-gao-di-wei-hu-huan.html"
 fileName:  "20170100476"
 lang:  "zh_CN"
 published: true
-permalink: "java-mian-shi-ti-zheng-shu-gao-di-wei-hu-huan.html"
+permalink: "2017/https://www.jfox.info/java-mian-shi-ti-zheng-shu-gao-di-wei-hu-huan.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期一, 十月 28, 2013

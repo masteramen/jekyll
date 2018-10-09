@@ -3,11 +3,11 @@ layout: post
 title:  "类的核心特性有哪些？ » java面试题"
 title2:  "类的核心特性有哪些？ » java面试题"
 date:   2017-01-01 23:42:01  +0800
-source:  "http://www.jfox.info/lei-de-he-xin-te-xing-you-na-xie.html"
+source:  "https://www.jfox.info/lei-de-he-xin-te-xing-you-na-xie.html"
 fileName:  "20170100421"
 lang:  "zh_CN"
 published: true
-permalink: "lei-de-he-xin-te-xing-you-na-xie.html"
+permalink: "2017/https://www.jfox.info/lei-de-he-xin-te-xing-you-na-xie.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期三, 六月 5, 2013

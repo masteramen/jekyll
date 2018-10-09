@@ -3,11 +3,11 @@ layout: post
 title:  "关于数据库优化1——关于count(1)，count(*),和count(列名)的区别，和关于表中字段顺序的问题"
 title2:  "关于数据库优化1——关于count(1)，count(),和count(列名)的区别，和关于表中字段顺序的问题"
 date:   2017-01-01 23:49:00  +0800
-source:  "http://www.jfox.info/guan-yu-shu-ju-ku-you-hua-1-guan-yu-count-1-count-he-count-lie-ming-de-qu-bie.html"
+source:  "https://www.jfox.info/guan-yu-shu-ju-ku-you-hua-1-guan-yu-count-1-count-he-count-lie-ming-de-qu-bie.html"
 fileName:  "20170100840"
 lang:  "zh_CN"
 published: true
-permalink: "guan-yu-shu-ju-ku-you-hua-1-guan-yu-count-1-count-he-count-lie-ming-de-qu-bie.html"
+permalink: "2017/https://www.jfox.info/guan-yu-shu-ju-ku-you-hua-1-guan-yu-count-1-count-he-count-lie-ming-de-qu-bie.html"
 ---
 {% raw %}
 ### 1.关于count(1)，count(*),和count(列名)的区别

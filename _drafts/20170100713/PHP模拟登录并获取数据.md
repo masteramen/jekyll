@@ -3,11 +3,11 @@ layout: post
 title:  "PHP模拟登录并获取数据"
 title2:  "PHP模拟登录并获取数据"
 date:   2017-01-01 23:46:53  +0800
-source:  "http://www.jfox.info/php-mo-ni-deng-lu-bing-huo-qu-shu-ju.html"
+source:  "https://www.jfox.info/php-mo-ni-deng-lu-bing-huo-qu-shu-ju.html"
 fileName:  "20170100713"
 lang:  "zh_CN"
 published: true
-permalink: "php-mo-ni-deng-lu-bing-huo-qu-shu-ju.html"
+permalink: "2017/https://www.jfox.info/php-mo-ni-deng-lu-bing-huo-qu-shu-ju.html"
 ---
 {% raw %}
 cURL 是一个功能强大的PHP库，使用PHP的cURL库可以简单和有效地抓取网页并采集内容，设置cookie完成模拟登录网页，curl提供了丰富的函数，开发者可以从PHP手册中获取更多关于cURL信息。本文以模拟登录开源中国(oschina)为例，和大家分享cURL的使用。

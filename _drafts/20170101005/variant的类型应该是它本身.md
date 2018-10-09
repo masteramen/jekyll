@@ -3,11 +3,11 @@ layout: post
 title:  "variant的类型应该是它本身"
 title2:  "variant的类型应该是它本身"
 date:   2017-01-01 23:51:45  +0800
-source:  "http://www.jfox.info/variant%e7%9a%84%e7%b1%bb%e5%9e%8b%e5%ba%94%e8%af%a5%e6%98%af%e5%ae%83%e6%9c%ac%e8%ba%ab.html"
+source:  "https://www.jfox.info/variant%e7%9a%84%e7%b1%bb%e5%9e%8b%e5%ba%94%e8%af%a5%e6%98%af%e5%ae%83%e6%9c%ac%e8%ba%ab.html"
 fileName:  "20170101005"
 lang:  "zh_CN"
 published: true
-permalink: "variant%e7%9a%84%e7%b1%bb%e5%9e%8b%e5%ba%94%e8%af%a5%e6%98%af%e5%ae%83%e6%9c%ac%e8%ba%ab.html"
+permalink: "2017/https://www.jfox.info/variant%e7%9a%84%e7%b1%bb%e5%9e%8b%e5%ba%94%e8%af%a5%e6%98%af%e5%ae%83%e6%9c%ac%e8%ba%ab.html"
 ---
 {% raw %}
 (type list (a) (Var (:cons a (list a)) (:nil)))

@@ -3,18 +3,18 @@ layout: post
 title:  "OKHTTP拦截器RetryAndFollowUpInterceptor的简单分析"
 title2:  "OKHTTP拦截器RetryAndFollowUpInterceptor的简单分析"
 date:   2017-01-01 23:56:19  +0800
-source:  "http://www.jfox.info/okhttp%e6%8b%a6%e6%88%aa%e5%99%a8retryandfollowupinterceptor%e7%9a%84%e7%ae%80%e5%8d%95%e5%88%86%e6%9e%90.html"
+source:  "https://www.jfox.info/okhttp%e6%8b%a6%e6%88%aa%e5%99%a8retryandfollowupinterceptor%e7%9a%84%e7%ae%80%e5%8d%95%e5%88%86%e6%9e%90.html"
 fileName:  "20170101279"
 lang:  "zh_CN"
 published: true
-permalink: "okhttp%e6%8b%a6%e6%88%aa%e5%99%a8retryandfollowupinterceptor%e7%9a%84%e7%ae%80%e5%8d%95%e5%88%86%e6%9e%90.html"
+permalink: "2017/https://www.jfox.info/okhttp%e6%8b%a6%e6%88%aa%e5%99%a8retryandfollowupinterceptor%e7%9a%84%e7%ae%80%e5%8d%95%e5%88%86%e6%9e%90.html"
 ---
 {% raw %}
 # OKHTTP拦截器RetryAndFollowUpInterceptor的简单分析 
 
 
 作者[liaoweijian](/u/8173f323f5bb)2017.07.11 18:28*字数 1669
-[OKHTTP异步和同步请求简单分析](http://www.jfox.info/go.php?url=http://www.jianshu.com/p/3214ef86a52d)[OKHTTP拦截器缓存策略CacheInterceptor的简单分析](http://www.jfox.info/go.php?url=http://www.jianshu.com/p/8d0bc05104ef)[OKHTTP拦截器ConnectInterceptor的简单分析](http://www.jfox.info/go.php?url=http://www.jianshu.com/p/5472521f8d63)[OKHTTP拦截器CallServerInterceptor的简单分析](http://www.jfox.info/go.php?url=http://www.jianshu.com/p/4510ae14dbe9)[OKHTTP拦截器BridgeInterceptor的简单分析](http://www.jfox.info/go.php?url=http://www.jianshu.com/p/ede34ab5b776)[OKHTTP拦截器RetryAndFollowUpInterceptor的简单分析](http://www.jfox.info/go.php?url=http://www.jianshu.com/p/64111e0db93c)[OKHTTP结合官网示例分析两种自定义拦截器的区别](http://www.jfox.info/go.php?url=http://www.jianshu.com/p/d04b463806c8)
+[OKHTTP异步和同步请求简单分析](https://www.jfox.info/go.php?url=http://www.jianshu.com/p/3214ef86a52d)[OKHTTP拦截器缓存策略CacheInterceptor的简单分析](https://www.jfox.info/go.php?url=http://www.jianshu.com/p/8d0bc05104ef)[OKHTTP拦截器ConnectInterceptor的简单分析](https://www.jfox.info/go.php?url=http://www.jianshu.com/p/5472521f8d63)[OKHTTP拦截器CallServerInterceptor的简单分析](https://www.jfox.info/go.php?url=http://www.jianshu.com/p/4510ae14dbe9)[OKHTTP拦截器BridgeInterceptor的简单分析](https://www.jfox.info/go.php?url=http://www.jianshu.com/p/ede34ab5b776)[OKHTTP拦截器RetryAndFollowUpInterceptor的简单分析](https://www.jfox.info/go.php?url=http://www.jianshu.com/p/64111e0db93c)[OKHTTP结合官网示例分析两种自定义拦截器的区别](https://www.jfox.info/go.php?url=http://www.jianshu.com/p/d04b463806c8)
 
 # 1、RetryAndFollowUpInterceptor的作用
 

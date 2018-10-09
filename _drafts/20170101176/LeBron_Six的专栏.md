@@ -3,11 +3,11 @@ layout: post
 title:  "LeBron_Six的专栏"
 title2:  "LeBron_Six的专栏"
 date:   2017-01-01 23:54:36  +0800
-source:  "http://www.jfox.info/lebronsix%e7%9a%84%e4%b8%93%e6%a0%8f.html"
+source:  "https://www.jfox.info/lebronsix%e7%9a%84%e4%b8%93%e6%a0%8f.html"
 fileName:  "20170101176"
 lang:  "zh_CN"
 published: true
-permalink: "lebronsix%e7%9a%84%e4%b8%93%e6%a0%8f.html"
+permalink: "2017/https://www.jfox.info/lebronsix%e7%9a%84%e4%b8%93%e6%a0%8f.html"
 ---
 {% raw %}
 By  - Last updated: 星期日, 七月 9, 2017

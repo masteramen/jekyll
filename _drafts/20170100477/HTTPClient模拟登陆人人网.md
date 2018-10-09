@@ -3,11 +3,11 @@ layout: post
 title:  "HTTPClient模拟登陆人人网"
 title2:  "HTTPClient模拟登陆人人网"
 date:   2017-01-01 23:42:57  +0800
-source:  "http://www.jfox.info/httpclient-mo-ni-deng-lu-ren-ren-wang.html"
+source:  "https://www.jfox.info/httpclient-mo-ni-deng-lu-ren-ren-wang.html"
 fileName:  "20170100477"
 lang:  "zh_CN"
 published: true
-permalink: "httpclient-mo-ni-deng-lu-ren-ren-wang.html"
+permalink: "2017/https://www.jfox.info/httpclient-mo-ni-deng-lu-ren-ren-wang.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期二, 十月 29, 2013

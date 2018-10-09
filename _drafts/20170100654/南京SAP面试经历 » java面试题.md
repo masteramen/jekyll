@@ -3,11 +3,11 @@ layout: post
 title:  "南京SAP面试经历 » java面试题"
 title2:  "南京SAP面试经历 » java面试题"
 date:   2017-01-01 23:45:54  +0800
-source:  "http://www.jfox.info/nanjing-sap-interview-experience.html"
+source:  "https://www.jfox.info/nanjing-sap-interview-experience.html"
 fileName:  "20170100654"
 lang:  "zh_CN"
 published: true
-permalink: "nanjing-sap-interview-experience.html"
+permalink: "2017/https://www.jfox.info/nanjing-sap-interview-experience.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期一, 七月 7, 2014
@@ -47,5 +47,5 @@ CSS绝对布局、相对布局、float有什么区别
 
 第一次面试就这么结束了，让我回去等通知。第二次面试的情况如何？敬请期待下一篇博文。
 
-原文地址:[http://www.cnblogs.com/hiddenfox/p/3828864.html](http://www.jfox.info/go.php?url=http://www.jfox.info/url.php?url=http%3A%2F%2Fwww.cnblogs.com%2Fhiddenfox%2Fp%2F3828864.html).
+原文地址:[http://www.cnblogs.com/hiddenfox/p/3828864.html](https://www.jfox.info/go.php?url=http://www.jfox.info/url.php?url=http%3A%2F%2Fwww.cnblogs.com%2Fhiddenfox%2Fp%2F3828864.html).
 {% endraw %}

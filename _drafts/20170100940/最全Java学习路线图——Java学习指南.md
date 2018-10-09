@@ -3,11 +3,11 @@ layout: post
 title:  "最全Java学习路线图——Java学习指南"
 title2:  "最全Java学习路线图——Java学习指南"
 date:   2017-01-01 23:50:40  +0800
-source:  "http://www.jfox.info/%e6%9c%80%e5%85%a8java%e5%ad%a6%e4%b9%a0%e8%b7%af%e7%ba%bf%e5%9b%be-java%e5%ad%a6%e4%b9%a0%e6%8c%87%e5%8d%97.html"
+source:  "https://www.jfox.info/%e6%9c%80%e5%85%a8java%e5%ad%a6%e4%b9%a0%e8%b7%af%e7%ba%bf%e5%9b%be-java%e5%ad%a6%e4%b9%a0%e6%8c%87%e5%8d%97.html"
 fileName:  "20170100940"
 lang:  "zh_CN"
 published: true
-permalink: "%e6%9c%80%e5%85%a8java%e5%ad%a6%e4%b9%a0%e8%b7%af%e7%ba%bf%e5%9b%be-java%e5%ad%a6%e4%b9%a0%e6%8c%87%e5%8d%97.html"
+permalink: "2017/https://www.jfox.info/%e6%9c%80%e5%85%a8java%e5%ad%a6%e4%b9%a0%e8%b7%af%e7%ba%bf%e5%9b%be-java%e5%ad%a6%e4%b9%a0%e6%8c%87%e5%8d%97.html"
 ---
 {% raw %}
 **准备篇**

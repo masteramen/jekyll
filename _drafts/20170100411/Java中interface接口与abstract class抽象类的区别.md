@@ -3,11 +3,11 @@ layout: post
 title:  "Java中interface接口与abstract class抽象类的区别"
 title2:  "Java中interface接口与abstract class抽象类的区别"
 date:   2017-01-01 23:41:51  +0800
-source:  "http://www.jfox.info/java-zhong-interface-jie-kou-yu-abstract-class-chou-xiang-lei-de-qu-bie.html"
+source:  "https://www.jfox.info/java-zhong-interface-jie-kou-yu-abstract-class-chou-xiang-lei-de-qu-bie.html"
 fileName:  "20170100411"
 lang:  "zh_CN"
 published: true
-permalink: "java-zhong-interface-jie-kou-yu-abstract-class-chou-xiang-lei-de-qu-bie.html"
+permalink: "2017/https://www.jfox.info/java-zhong-interface-jie-kou-yu-abstract-class-chou-xiang-lei-de-qu-bie.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期三, 五月 29, 2013

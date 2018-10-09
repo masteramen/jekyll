@@ -3,11 +3,11 @@ layout: post
 title:  "bboss log4j滚动日志文件扩展插件使用介绍"
 title2:  "bboss log4j滚动日志文件扩展插件使用介绍"
 date:   2017-01-01 23:50:32  +0800
-source:  "http://www.jfox.info/bboss-log4j%e6%bb%9a%e5%8a%a8%e6%97%a5%e5%bf%97%e6%96%87%e4%bb%b6%e6%89%a9%e5%b1%95%e6%8f%92%e4%bb%b6%e4%bd%bf%e7%94%a8%e4%bb%8b%e7%bb%8d.html"
+source:  "https://www.jfox.info/bboss-log4j%e6%bb%9a%e5%8a%a8%e6%97%a5%e5%bf%97%e6%96%87%e4%bb%b6%e6%89%a9%e5%b1%95%e6%8f%92%e4%bb%b6%e4%bd%bf%e7%94%a8%e4%bb%8b%e7%bb%8d.html"
 fileName:  "20170100932"
 lang:  "zh_CN"
 published: true
-permalink: "bboss-log4j%e6%bb%9a%e5%8a%a8%e6%97%a5%e5%bf%97%e6%96%87%e4%bb%b6%e6%89%a9%e5%b1%95%e6%8f%92%e4%bb%b6%e4%bd%bf%e7%94%a8%e4%bb%8b%e7%bb%8d.html"
+permalink: "2017/https://www.jfox.info/bboss-log4j%e6%bb%9a%e5%8a%a8%e6%97%a5%e5%bf%97%e6%96%87%e4%bb%b6%e6%89%a9%e5%b1%95%e6%8f%92%e4%bb%b6%e4%bd%bf%e7%94%a8%e4%bb%8b%e7%bb%8d.html"
 ---
 {% raw %}
 bboss扩展了log4j滚动切割文件插件org.apache.log4j.NormalRollingFileAppender，NormalRollingFileAppender可以实现按照日期时间格式向前命名滚动的日志文件和当前的日志文件（默认官方滚动插件不支持按日期格式命名当前文件）,同时也可以按照整数索引方式向前命名滚动的日志文件和当前的日志文件（默认官方滚动插件不支持按日期格式命名当前文件），在滚动日志文件的同时，不会重命名已经产生的日志名称（默认插件会重命名）。通过不重命名已有文件和生成新的带日期或者整数索引的日志文件，可以很好地解决logstash、filebeat、flume等日志数据采集工具在日志文件滚动切割的时候，漏掉正在切割文件中的日志数据，因为有可能数据还没采集完，文件已经被重命名了。 

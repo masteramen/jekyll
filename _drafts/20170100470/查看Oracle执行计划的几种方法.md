@@ -3,11 +3,11 @@ layout: post
 title:  "查看Oracle执行计划的几种方法"
 title2:  "查看Oracle执行计划的几种方法"
 date:   2017-01-01 23:42:50  +0800
-source:  "http://www.jfox.info/cha-kan-oracle-zhi-xing-ji-hua-de-ji-zhong-fang-fa.html"
+source:  "https://www.jfox.info/cha-kan-oracle-zhi-xing-ji-hua-de-ji-zhong-fang-fa.html"
 fileName:  "20170100470"
 lang:  "zh_CN"
 published: true
-permalink: "cha-kan-oracle-zhi-xing-ji-hua-de-ji-zhong-fang-fa.html"
+permalink: "2017/https://www.jfox.info/cha-kan-oracle-zhi-xing-ji-hua-de-ji-zhong-fang-fa.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期五, 十月 25, 2013

@@ -3,11 +3,11 @@ layout: post
 title:  "Redis客户端简单封装"
 title2:  "Redis客户端简单封装"
 date:   2017-01-01 23:51:16  +0800
-source:  "http://www.jfox.info/redis%e5%ae%a2%e6%88%b7%e7%ab%af%e7%ae%80%e5%8d%95%e5%b0%81%e8%a3%85.html"
+source:  "https://www.jfox.info/redis%e5%ae%a2%e6%88%b7%e7%ab%af%e7%ae%80%e5%8d%95%e5%b0%81%e8%a3%85.html"
 fileName:  "20170100976"
 lang:  "zh_CN"
 published: true
-permalink: "redis%e5%ae%a2%e6%88%b7%e7%ab%af%e7%ae%80%e5%8d%95%e5%b0%81%e8%a3%85.html"
+permalink: "2017/https://www.jfox.info/redis%e5%ae%a2%e6%88%b7%e7%ab%af%e7%ae%80%e5%8d%95%e5%b0%81%e8%a3%85.html"
 ---
 {% raw %}
 Redis客户端简单封装并集成spring. spring-data-redis对redis有过度封装的嫌疑，而且也没有提供sharding模式，本文遂简单封装jedis。

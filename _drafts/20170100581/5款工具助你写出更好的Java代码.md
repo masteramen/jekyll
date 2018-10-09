@@ -3,11 +3,11 @@ layout: post
 title:  "5款工具助你写出更好的Java代码"
 title2:  "5款工具助你写出更好的Java代码"
 date:   2017-01-01 23:44:41  +0800
-source:  "http://www.jfox.info/5-tools-help-you-to-write-better-java-code.html"
+source:  "https://www.jfox.info/5-tools-help-you-to-write-better-java-code.html"
 fileName:  "20170100581"
 lang:  "zh_CN"
 published: true
-permalink: "5-tools-help-you-to-write-better-java-code.html"
+permalink: "2017/https://www.jfox.info/5-tools-help-you-to-write-better-java-code.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期六, 二月 22, 2014
@@ -16,9 +16,9 @@ By Lee - Last updated: 星期六, 二月 22, 2014
 
    在本文，将介绍5款在IDR解决方案的（开发语言为Java）中，最常用也最实用的工具给Java开发人员，希望它们帮你开发出更好的代码。
 
-**1.[FindBugs](http://www.jfox.info/go.php?url=http://findbugs.sourceforge.net/)**
+**1.[FindBugs](https://www.jfox.info/go.php?url=http://findbugs.sourceforge.net/)**
 
-[![21163631_NTdl](http://www.jfox.info/wp-content/uploads/2014/02/21163631_NTdl.png)](http://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2014/02/21163631_NTdl.png)
+[![21163631_NTdl](http://www.jfox.info/wp-content/uploads/2014/02/21163631_NTdl.png)](https://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2014/02/21163631_NTdl.png)
 
 顾名思义，FindBugs是一款帮助开发者发现bug的工具，它是一个开源项目，遵循GNU公共许可协议，运行的是Java字节码而不是源码。
 
@@ -28,15 +28,15 @@ FindBugs在发现错误后，会进行等级划分，它把发现的错误分为
 
 FindBugs是一个独立的GUI应用程序，有多种使用方式，可以作为Eclipse、NetBeans、IntelliJ IDEA插件使用，也可以从命令行、Ant、Maven使用。
 
-**2.[Apache Ant](http://www.jfox.info/go.php?url=http://ant.apache.org/)**
+**2.[Apache Ant](https://www.jfox.info/go.php?url=http://ant.apache.org/)**
 
-[![21163631_yMcT](http://www.jfox.info/wp-content/uploads/2014/02/21163631_yMcT.png)](http://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2014/02/21163631_yMcT.png)
+[![21163631_yMcT](http://www.jfox.info/wp-content/uploads/2014/02/21163631_yMcT.png)](https://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2014/02/21163631_yMcT.png)
 
 Apache Ant是由Apache软件基金会所提供的一款开源软件，是一个将软件编译、测试、部署等步骤联系在一起加以自动化的一个工具，主要用于Java环境中进行软件开发，它还可以用于构建C或C++应用程序，也可以针对目标任务运用在多种软件开发过程上。
 
 Apache Ant有大量商用或开源的“antlibs”供大家使用，它非常灵活，因为他对编码约定或目录布局都是没有任何限制的。Apache Ant被广泛运用在各种Java IDE环境中，如Eclipse、NetBeans、IntelliJ IDEA等。
 
-**3.[JProfiler](http://www.jfox.info/go.php?url=http://www.ej-technologies.com/products/jprofiler/overview.html)**
+**3.[JProfiler](https://www.jfox.info/go.php?url=http://www.ej-technologies.com/products/jprofiler/overview.html)**
 
 ![21163631_JIKk](http://www.jfox.info/wp-content/uploads/2014/02/21163631_JIKk.gif)
 
@@ -44,7 +44,7 @@ JProfiler是一个商业授权的Java剖析工具，由EJ技术有限公司开�
 
 JProfiler支持多种剖析模式：本地会话实时分析模式、远程会话实时分析模式、离线分析模式、快照比较、查看HPROF快照。此外，JProfiler既可以作为单独的应用程序使用，也可以作为一个插件使用，也可以在Adobes Coldfusion和Glassfish中作为应用服务器集成的一部分。
 
-**4.[Bash](http://www.jfox.info/go.php?url=http://www.gnu.org/software/bash/bash.html)**
+**4.[Bash](https://www.jfox.info/go.php?url=http://www.gnu.org/software/bash/bash.html)**
 
 ![21163632_xKTq](http://www.jfox.info/wp-content/uploads/2014/02/21163632_xKTq.png)
 
@@ -52,7 +52,7 @@ JProfiler支持多种剖析模式：本地会话实时分析模式、远程会�
 
 它通常被用作一个命令处理器，通常运行在一个文本窗口，它还可以从文件中读取各种命令、支持通配符的文件名、piping、命令替换、变量、控制结构等用来进行条件或迭代测试。
 
-**5.[Sonarqube](http://www.jfox.info/go.php?url=http://www.sonarqube.org/)**
+**5.[Sonarqube](https://www.jfox.info/go.php?url=http://www.sonarqube.org/)**
 
 ![21163632_f31M](http://www.jfox.info/wp-content/uploads/2014/02/21163632_f31M.png)
 
@@ -60,5 +60,5 @@ Sonarqube是一个开源平台，是一款代码质量管理和环境搭建工�
 
 它提供了完全自动化的分析工具，并且可以与Maven、Ant、Gradle和其它集成工具很好地集成，也可以与Java IDE进行很好的集成。它还可以用于报告重复的代码、编码标准、单元测试、代码覆盖率、复杂的代码、潜在的bug、评论、设计和架构。
 
-参考来源 [5款工具助你写出更好的Java代码](http://www.jfox.info/go.php?url=http://www.jfox.info/url.php?url=http%3A%2F%2Fmy.oschina.net%2Fu%2F865092%2Fblog%2F201888).
+参考来源 [5款工具助你写出更好的Java代码](https://www.jfox.info/go.php?url=http://www.jfox.info/url.php?url=http%3A%2F%2Fmy.oschina.net%2Fu%2F865092%2Fblog%2F201888).
 {% endraw %}

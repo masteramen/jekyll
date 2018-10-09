@@ -3,11 +3,11 @@ layout: post
 title:  "EJB系列 – EJB高级概念"
 title2:  "EJB系列 – EJB高级概念"
 date:   2017-01-01 23:52:49  +0800
-source:  "http://www.jfox.info/ejb%e7%b3%bb%e5%88%97ejb%e9%ab%98%e7%ba%a7%e6%a6%82%e5%bf%b5.html"
+source:  "https://www.jfox.info/ejb%e7%b3%bb%e5%88%97ejb%e9%ab%98%e7%ba%a7%e6%a6%82%e5%bf%b5.html"
 fileName:  "20170101069"
 lang:  "zh_CN"
 published: true
-permalink: "ejb%e7%b3%bb%e5%88%97ejb%e9%ab%98%e7%ba%a7%e6%a6%82%e5%bf%b5.html"
+permalink: "2017/https://www.jfox.info/ejb%e7%b3%bb%e5%88%97ejb%e9%ab%98%e7%ba%a7%e6%a6%82%e5%bf%b5.html"
 ---
 {% raw %}
 幕后的EJB:容器会为每一个bean实例自动生成称为EJB对象的代理, 由容器实现, 对使用者开发者透明

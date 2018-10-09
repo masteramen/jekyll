@@ -3,16 +3,16 @@ layout: post
 title:  "初探Webx之约定胜于配置"
 title2:  "初探Webx之约定胜于配置"
 date:   2017-01-01 23:56:57  +0800
-source:  "http://www.jfox.info/%e5%88%9d%e6%8e%a2webx%e4%b9%8b%e7%ba%a6%e5%ae%9a%e8%83%9c%e4%ba%8e%e9%85%8d%e7%bd%ae.html"
+source:  "https://www.jfox.info/%e5%88%9d%e6%8e%a2webx%e4%b9%8b%e7%ba%a6%e5%ae%9a%e8%83%9c%e4%ba%8e%e9%85%8d%e7%bd%ae.html"
 fileName:  "20170101317"
 lang:  "zh_CN"
 published: true
-permalink: "%e5%88%9d%e6%8e%a2webx%e4%b9%8b%e7%ba%a6%e5%ae%9a%e8%83%9c%e4%ba%8e%e9%85%8d%e7%bd%ae.html"
+permalink: "2017/https://www.jfox.info/%e5%88%9d%e6%8e%a2webx%e4%b9%8b%e7%ba%a6%e5%ae%9a%e8%83%9c%e4%ba%8e%e9%85%8d%e7%bd%ae.html"
 ---
 {% raw %}
 在分析之前，我们需要强调 `Webx` 的一个重要设计理念——约定胜于配置。“约定”即规则，规则是预先定义的，工程师只需要按着规则来做事，就不需要额外的“配置”。对比其它一些框架，往往每增加一个页面，都需要在配置文件中增加若干行内容。 
 
- 注意，本篇文章仅用于解答上文提出的两个疑问，更多 `Webx` 的设计理念及原理性知识请参阅 [官方文档](http://www.jfox.info/go.php?url=http://openwebx.org/docs/) 。 
+ 注意，本篇文章仅用于解答上文提出的两个疑问，更多 `Webx` 的设计理念及原理性知识请参阅 [官方文档](https://www.jfox.info/go.php?url=http://openwebx.org/docs/) 。 
 
 ## execute()为什么会被调用？ 
 

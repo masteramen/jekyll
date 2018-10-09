@@ -3,11 +3,11 @@ layout: post
 title:  "【Tomcat学习笔记】14-Cluster"
 title2:  "【Tomcat学习笔记】14-Cluster"
 date:   2017-01-01 23:56:38  +0800
-source:  "http://www.jfox.info/tomcat%e5%ad%a6%e4%b9%a0%e7%ac%94%e8%ae%b014cluster.html"
+source:  "https://www.jfox.info/tomcat%e5%ad%a6%e4%b9%a0%e7%ac%94%e8%ae%b014cluster.html"
 fileName:  "20170101298"
 lang:  "zh_CN"
 published: true
-permalink: "tomcat%e5%ad%a6%e4%b9%a0%e7%ac%94%e8%ae%b014cluster.html"
+permalink: "2017/https://www.jfox.info/tomcat%e5%ad%a6%e4%b9%a0%e7%ac%94%e8%ae%b014cluster.html"
 ---
 {% raw %}
 Tomcat Cluster 这块代码较多，就不贴代码一步步看了，这里从更宏观的视角分析和总结一下。代码主要在 org.apache.catalina.ha 和 org.apache.catalina.tribes 两个package. ha这个package主要做了两件事，或者说Tomcat cluster 主要就做了这两件事：集群间 Session 同步 和 集群War部署。tribes 则是Tomcat 集群通讯模块。

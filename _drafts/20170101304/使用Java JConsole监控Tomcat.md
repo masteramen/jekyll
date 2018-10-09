@@ -3,11 +3,11 @@ layout: post
 title:  "使用Java JConsole监控Tomcat"
 title2:  "使用Java JConsole监控Tomcat"
 date:   2017-01-01 23:56:44  +0800
-source:  "http://www.jfox.info/%e4%bd%bf%e7%94%a8javajconsole%e7%9b%91%e6%8e%a7tomcat.html"
+source:  "https://www.jfox.info/%e4%bd%bf%e7%94%a8javajconsole%e7%9b%91%e6%8e%a7tomcat.html"
 fileName:  "20170101304"
 lang:  "zh_CN"
 published: true
-permalink: "%e4%bd%bf%e7%94%a8javajconsole%e7%9b%91%e6%8e%a7tomcat.html"
+permalink: "2017/https://www.jfox.info/%e4%bd%bf%e7%94%a8javajconsole%e7%9b%91%e6%8e%a7tomcat.html"
 ---
 {% raw %}
 作者[人生_0809](/u/9da7a52eeea3)2017.07.13 17:46字数 494

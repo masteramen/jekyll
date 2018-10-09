@@ -3,11 +3,11 @@ layout: post
 title:  "【Tomcat学习笔记】13-Session"
 title2:  "【Tomcat学习笔记】13-Session"
 date:   2017-01-01 23:53:06  +0800
-source:  "http://www.jfox.info/tomcat%e5%ad%a6%e4%b9%a0%e7%ac%94%e8%ae%b013session.html"
+source:  "https://www.jfox.info/tomcat%e5%ad%a6%e4%b9%a0%e7%ac%94%e8%ae%b013session.html"
 fileName:  "20170101086"
 lang:  "zh_CN"
 published: true
-permalink: "tomcat%e5%ad%a6%e4%b9%a0%e7%ac%94%e8%ae%b013session.html"
+permalink: "2017/https://www.jfox.info/tomcat%e5%ad%a6%e4%b9%a0%e7%ac%94%e8%ae%b013session.html"
 ---
 {% raw %}
 说明，为了简洁，这里贴的代码可能有所删减。
@@ -148,7 +148,7 @@ Tomcat支持三种Session追踪模式，SSL 的方式我暂时还不了解，就
 
 ###  4. Tomcat中Session的过期机制 
 
-[【Tomcat学习笔记】10-代码变更时自动部署](http://www.jfox.info/go.php?url=https://fdx321.github.io/2017/05/30/%E3%80%90Tomcat%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E3%80%9110-%E4%BB%A3%E7%A0%81%E5%8F%98%E6%9B%B4%E6%97%B6%E8%87%AA%E5%8A%A8%E9%83%A8%E7%BD%B2/) 中有介绍过 Tomcat 每个容器都有一个后台线程，以及它们是如何工作的。 org.apache.catalina.core.StandardContext#backgroundProcess会去调用Manager的backgroundProcess. 
+[【Tomcat学习笔记】10-代码变更时自动部署](https://www.jfox.info/go.php?url=https://fdx321.github.io/2017/05/30/%E3%80%90Tomcat%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E3%80%9110-%E4%BB%A3%E7%A0%81%E5%8F%98%E6%9B%B4%E6%97%B6%E8%87%AA%E5%8A%A8%E9%83%A8%E7%BD%B2/) 中有介绍过 Tomcat 每个容器都有一个后台线程，以及它们是如何工作的。 org.apache.catalina.core.StandardContext#backgroundProcess会去调用Manager的backgroundProcess. 
 
 org.apache.catalina.session.ManagerBase#backgroundProcess，它会去遍历所有Session, 移除失效的session. 
 

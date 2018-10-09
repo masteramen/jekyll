@@ -3,21 +3,35 @@ layout: post
 title:  "Java获取项目当前请求的全部URL，Java获取Referer，Java获取完整链接地址URL"
 title2:  "Java获取项目当前请求的全部URL，Java获取Referer，Java获取完整链接地址URL"
 date:   2017-01-01 23:55:56  +0800
-source:  "http://www.jfox.info/java%e8%8e%b7%e5%8f%96%e9%a1%b9%e7%9b%ae%e5%bd%93%e5%89%8d%e8%af%b7%e6%b1%82%e7%9a%84%e5%85%a8%e9%83%a8urljava%e8%8e%b7%e5%8f%96refererjava%e8%8e%b7%e5%8f%96%e5%ae%8c%e6%95%b4%e9%93%be%e6%8e%a5.html"
+source:  "https://www.jfox.info/java%e8%8e%b7%e5%8f%96%e9%a1%b9%e7%9b%ae%e5%bd%93%e5%89%8d%e8%af%b7%e6%b1%82%e7%9a%84%e5%85%a8%e9%83%a8urljava%e8%8e%b7%e5%8f%96refererjava%e8%8e%b7%e5%8f%96%e5%ae%8c%e6%95%b4%e9%93%be%e6%8e%a5.html"
 fileName:  "20170101256"
 lang:  "zh_CN"
 published: true
-permalink: "java%e8%8e%b7%e5%8f%96%e9%a1%b9%e7%9b%ae%e5%bd%93%e5%89%8d%e8%af%b7%e6%b1%82%e7%9a%84%e5%85%a8%e9%83%a8urljava%e8%8e%b7%e5%8f%96refererjava%e8%8e%b7%e5%8f%96%e5%ae%8c%e6%95%b4%e9%93%be%e6%8e%a5.html"
+permalink: "2017/https://www.jfox.info/java%e8%8e%b7%e5%8f%96%e9%a1%b9%e7%9b%ae%e5%bd%93%e5%89%8d%e8%af%b7%e6%b1%82%e7%9a%84%e5%85%a8%e9%83%a8urljava%e8%8e%b7%e5%8f%96refererjava%e8%8e%b7%e5%8f%96%e5%ae%8c%e6%95%b4%e9%93%be%e6%8e%a5.html"
 ---
 {% raw %}
-.catesblock h5 a{font-weight:bold;text-transform: uppercase;}
-.cates a {
-display: inline-block;
-margin: 0 3px 5px 0;
-padding: 2px 3px;
-position: relative;
-text-align: left;
-text-shadow: none;
-text-transform: lowercase;
-}
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+©Copyright 蕃薯耀 2017年7月14日
+
+http://fanshuyao.iteye.com/
+
+1、获取当前项目请求URL的完整链接地址
+
+    String requestUrl = req.getScheme() //当前链接使用的协议
+        +"://" + req.getServerName()//服务器地址 
+         + ":" + req.getServerPort() //端口号 
+        + req.getContextPath() //应用名称，如果应用名称为
+        + req.getServletPath() //请求的相对url 
+        + (StrUtils.isBlank(req.getQueryString())?"":("?"+req.getQueryString())); //请求参数
+
+2、获取从别的网站发送请求时的链接地址，，Java获取Referer
+
+    String refererUrl = req.getHeader("Referer");//当没有跳转参数时，根据Referer返回
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+©Copyright 蕃薯耀 2017年7月14日
+
+http://fanshuyao.iteye.com/
 {% endraw %}

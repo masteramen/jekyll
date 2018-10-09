@@ -3,16 +3,16 @@ layout: post
 title:  "与Google Cloud Platf上的Kubernetes混合使用"
 title2:  "与Google Cloud Platf上的Kubernetes混合使用"
 date:   2017-01-01 23:55:19  +0800
-source:  "http://www.jfox.info/%e4%b8%8egooglecloudplatf%e4%b8%8a%e7%9a%84kubernetes%e6%b7%b7%e5%90%88%e4%bd%bf%e7%94%a8.html"
+source:  "https://www.jfox.info/%e4%b8%8egooglecloudplatf%e4%b8%8a%e7%9a%84kubernetes%e6%b7%b7%e5%90%88%e4%bd%bf%e7%94%a8.html"
 fileName:  "20170101219"
 lang:  "zh_CN"
 published: true
-permalink: "%e4%b8%8egooglecloudplatf%e4%b8%8a%e7%9a%84kubernetes%e6%b7%b7%e5%90%88%e4%bd%bf%e7%94%a8.html"
+permalink: "2017/https://www.jfox.info/%e4%b8%8egooglecloudplatf%e4%b8%8a%e7%9a%84kubernetes%e6%b7%b7%e5%90%88%e4%bd%bf%e7%94%a8.html"
 ---
 {% raw %}
 作者Allan Naim,产品GTM负责人,Kubernetes和集装箱发动机
 
-最近,我们宣布[战略合作伙伴关系](http://www.jfox.info/go.php?url=https://www.blog.google/topics/google-cloud/nutanix-and-google-cloud-team-simplify-hybrid-cloud/)[ Nutanix ](http://www.jfox.info/go.php?url=https://www.nutanix.com/)可以帮助企业从混合云部署中消除摩擦。您可以找到公告博客文章[ here ](/) .
+最近,我们宣布[战略合作伙伴关系](https://www.jfox.info/go.php?url=https://www.blog.google/topics/google-cloud/nutanix-and-google-cloud-team-simplify-hybrid-cloud/)[ Nutanix ](https://www.jfox.info/go.php?url=https://www.nutanix.com/)可以帮助企业从混合云部署中消除摩擦。您可以找到公告博客文章[ here ](/) .
 
 混合云允许组织在内部或公共云中运行各种应用程序。通过这种方式,企业可以:
 
@@ -27,14 +27,14 @@ permalink: "%e4%b8%8egooglecloudplatf%e4%b8%8a%e7%9a%84kubernetes%e6%b7%b7%e5%90
 混合云部署可以帮助您提供所需的安全性,合规性和计算能力,灵活性,灵活性和规模需求。我们的混合云示例将涵盖三个关键组件:
 
 1.  On-premise:  Nutanix infrastructure 
-2.  Public cloud: [ Google Cloud Platform ](http://www.jfox.info/go.php?url=https://cloud.google.com/) (GCP) 
+2.  Public cloud: [ Google Cloud Platform ](https://www.jfox.info/go.php?url=https://cloud.google.com/) (GCP) 
 3.  Open source:  Kubernetes and Containers 
 
 容器提供了一个不可变且高度可移植的基础架构,使开发人员能够在容器运行时发动机可以运行的任何环境中预测部署应用程序。这使得可以在裸机,私有云或公共云上运行相同的集装箱化应用程序.但是, 随着开发人员迈向微服务架构,他们必须解决一系列新的挑战,如扩展,滚动更新,发现,日志记录,监控和网络连接。
 
-Google运行我们自己的基于容器的内部系统的经验激励我们创建[ Kubernetes ](http://www.jfox.info/go.php?url=https://kubernetes.io/)和Google集装箱发动机,这是一个开源和Google云端管理平台,用于运行 集装箱化的应用程序跨越一个计算资源池。 Kubernetes抽象出底层基础设施,并为运行容器化应用程序提供一致的体验. Kubernetes介绍了一个声明性部署模型的概念。在这个模型中,一个ops人提供一个模板, 描述应用程序应该如何运行,而Kubernetes确保应用程序的实际状态始终等于所需状态. Kubernetes还可以管理容器调度,扩展,运行状况,生命周期,负载平衡,数据持久性,日志记录和监视。
+Google运行我们自己的基于容器的内部系统的经验激励我们创建[ Kubernetes ](https://www.jfox.info/go.php?url=https://kubernetes.io/)和Google集装箱发动机,这是一个开源和Google云端管理平台,用于运行 集装箱化的应用程序跨越一个计算资源池。 Kubernetes抽象出底层基础设施,并为运行容器化应用程序提供一致的体验. Kubernetes介绍了一个声明性部署模型的概念。在这个模型中,一个ops人提供一个模板, 描述应用程序应该如何运行,而Kubernetes确保应用程序的实际状态始终等于所需状态. Kubernetes还可以管理容器调度,扩展,运行状况,生命周期,负载平衡,数据持久性,日志记录和监视。
 
-在第一阶段,Google Cloud-Nutanix合作伙伴关注重点是使用Nutanix Calm将混合操作作为单一控制平面,用于内部部署Nutanix和GCP环境的工作负载管理,使用Kubernetes作为两个容器管理层。 Nutanix 冷静最近是在[在Nutanix .NEXT会议上宣布](http://www.jfox.info/go.php?url=https://www.nutanix.com/2017/06/28/app-centric-infrastructure-cloud/),一旦公开发布,将会 用于在混合云部署中自动配置和生命周期操作。 Nutanix Enterprise Cloud OS支持在云计算发动机上运行的混合Kubernetes环境,以及Nutanix内部的Kubernetes集群。通过此,客户可以部署便携式应用程序 在本地的Nutanix环境以及GCP.中运行的蓝图
+在第一阶段,Google Cloud-Nutanix合作伙伴关注重点是使用Nutanix Calm将混合操作作为单一控制平面,用于内部部署Nutanix和GCP环境的工作负载管理,使用Kubernetes作为两个容器管理层。 Nutanix 冷静最近是在[在Nutanix .NEXT会议上宣布](https://www.jfox.info/go.php?url=https://www.nutanix.com/2017/06/28/app-centric-infrastructure-cloud/),一旦公开发布,将会 用于在混合云部署中自动配置和生命周期操作。 Nutanix Enterprise Cloud OS支持在云计算发动机上运行的混合Kubernetes环境,以及Nutanix内部的Kubernetes集群。通过此,客户可以部署便携式应用程序 在本地的Nutanix环境以及GCP.中运行的蓝图
 
 我们来介绍使用Nutanix和GCP.设置混合环境的步骤
 
@@ -165,5 +165,5 @@ Kubectl是Kubernetes自带的命令行界面工具,用于对Kubernetes集群执�
 ### 下一步
 
 来源:[与Google云平台和Nutanix上的Kubernetes混合](//feedproxy.google.com/~r/ClPlBl/~3/d4Dn_Pqzb-8/going-Hybrid-with-Kubernetes-on-Google-Cloud-Platform-and-Nutanix.html)
-[点赞](void(0))[Google](http://www.jfox.info/go.php?url=http://ju.outofmemory.cn/tag/Google/)[cloud](http://www.jfox.info/go.php?url=http://ju.outofmemory.cn/tag/cloud/)
+[点赞](void(0))[Google](https://www.jfox.info/go.php?url=http://ju.outofmemory.cn/tag/Google/)[cloud](https://www.jfox.info/go.php?url=http://ju.outofmemory.cn/tag/cloud/)
 {% endraw %}

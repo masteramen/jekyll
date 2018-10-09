@@ -3,11 +3,11 @@ layout: post
 title:  "axis1.4开发webservice客户端(快速入门)-基于jdk1.4"
 title2:  "axis1.4开发webservice客户端(快速入门)-基于jdk1.4"
 date:   2017-01-01 23:50:46  +0800
-source:  "http://www.jfox.info/axis1-4%e5%bc%80%e5%8f%91webservice%e5%ae%a2%e6%88%b7%e7%ab%af-%e5%bf%ab%e9%80%9f%e5%85%a5%e9%97%a8-%e5%9f%ba%e4%ba%8ejdk1-4.html"
+source:  "https://www.jfox.info/axis1-4%e5%bc%80%e5%8f%91webservice%e5%ae%a2%e6%88%b7%e7%ab%af-%e5%bf%ab%e9%80%9f%e5%85%a5%e9%97%a8-%e5%9f%ba%e4%ba%8ejdk1-4.html"
 fileName:  "20170100946"
 lang:  "zh_CN"
 published: true
-permalink: "axis1-4%e5%bc%80%e5%8f%91webservice%e5%ae%a2%e6%88%b7%e7%ab%af-%e5%bf%ab%e9%80%9f%e5%85%a5%e9%97%a8-%e5%9f%ba%e4%ba%8ejdk1-4.html"
+permalink: "2017/https://www.jfox.info/axis1-4%e5%bc%80%e5%8f%91webservice%e5%ae%a2%e6%88%b7%e7%ab%af-%e5%bf%ab%e9%80%9f%e5%85%a5%e9%97%a8-%e5%9f%ba%e4%ba%8ejdk1-4.html"
 ---
 {% raw %}
 写在前面：

@@ -3,11 +3,11 @@ layout: post
 title:  "Java基础——String类（一）"
 title2:  "Java基础——String类（一）"
 date:   2017-01-01 23:50:06  +0800
-source:  "http://www.jfox.info/java%e5%9f%ba%e7%a1%80-string%e7%b1%bb-%e4%b8%80.html"
+source:  "https://www.jfox.info/java%e5%9f%ba%e7%a1%80-string%e7%b1%bb-%e4%b8%80.html"
 fileName:  "20170100906"
 lang:  "zh_CN"
 published: true
-permalink: "java%e5%9f%ba%e7%a1%80-string%e7%b1%bb-%e4%b8%80.html"
+permalink: "2017/https://www.jfox.info/java%e5%9f%ba%e7%a1%80-string%e7%b1%bb-%e4%b8%80.html"
 ---
 {% raw %}
 **`一、String` 类代表字符串**

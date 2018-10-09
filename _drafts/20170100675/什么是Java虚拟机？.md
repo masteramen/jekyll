@@ -3,11 +3,11 @@ layout: post
 title:  "什么是Java虚拟机？"
 title2:  "什么是Java虚拟机？"
 date:   2017-01-01 23:46:15  +0800
-source:  "http://www.jfox.info/shi-me-shi-java-xu-ni-ji.html"
+source:  "https://www.jfox.info/shi-me-shi-java-xu-ni-ji.html"
 fileName:  "20170100675"
 lang:  "zh_CN"
 published: true
-permalink: "shi-me-shi-java-xu-ni-ji.html"
+permalink: "2017/https://www.jfox.info/shi-me-shi-java-xu-ni-ji.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期六, 八月 23, 2014

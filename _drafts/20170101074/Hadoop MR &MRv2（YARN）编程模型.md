@@ -3,11 +3,11 @@ layout: post
 title:  "Hadoop MR &MRv2（YARN）编程模型"
 title2:  "Hadoop MR &MRv2（YARN）编程模型"
 date:   2017-01-01 23:52:54  +0800
-source:  "http://www.jfox.info/hadoopmrmrv2yarn%e7%bc%96%e7%a8%8b%e6%a8%a1%e5%9e%8b.html"
+source:  "https://www.jfox.info/hadoopmrmrv2yarn%e7%bc%96%e7%a8%8b%e6%a8%a1%e5%9e%8b.html"
 fileName:  "20170101074"
 lang:  "zh_CN"
 published: true
-permalink: "hadoopmrmrv2yarn%e7%bc%96%e7%a8%8b%e6%a8%a1%e5%9e%8b.html"
+permalink: "2017/https://www.jfox.info/hadoopmrmrv2yarn%e7%bc%96%e7%a8%8b%e6%a8%a1%e5%9e%8b.html"
 ---
 {% raw %}
 **1 MapReduce编程模型**

@@ -3,11 +3,11 @@ layout: post
 title:  "Java字符串String常见的面试问题及答案一"
 title2:  "Java字符串String常见的面试问题及答案一"
 date:   2017-01-01 23:44:21  +0800
-source:  "http://www.jfox.info/javazifuchuanstringchangjiandemianshiwentijidaanyi.html"
+source:  "https://www.jfox.info/javazifuchuanstringchangjiandemianshiwentijidaanyi.html"
 fileName:  "20170100561"
 lang:  "zh_CN"
 published: true
-permalink: "javazifuchuanstringchangjiandemianshiwentijidaanyi.html"
+permalink: "2017/https://www.jfox.info/javazifuchuanstringchangjiandemianshiwentijidaanyi.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期一, 二月 17, 2014

@@ -3,11 +3,11 @@ layout: post
 title:  "Spring Boot方式搭建自己的Spring Initializr 服务器。"
 title2:  "Spring Boot方式搭建自己的Spring Initializr 服务器。"
 date:   2017-01-01 23:53:05  +0800
-source:  "http://www.jfox.info/springboot%e6%96%b9%e5%bc%8f%e6%90%ad%e5%bb%ba%e8%87%aa%e5%b7%b1%e7%9a%84springinitializr%e6%9c%8d%e5%8a%a1%e5%99%a8.html"
+source:  "https://www.jfox.info/springboot%e6%96%b9%e5%bc%8f%e6%90%ad%e5%bb%ba%e8%87%aa%e5%b7%b1%e7%9a%84springinitializr%e6%9c%8d%e5%8a%a1%e5%99%a8.html"
 fileName:  "20170101085"
 lang:  "zh_CN"
 published: true
-permalink: "springboot%e6%96%b9%e5%bc%8f%e6%90%ad%e5%bb%ba%e8%87%aa%e5%b7%b1%e7%9a%84springinitializr%e6%9c%8d%e5%8a%a1%e5%99%a8.html"
+permalink: "2017/https://www.jfox.info/springboot%e6%96%b9%e5%bc%8f%e6%90%ad%e5%bb%ba%e8%87%aa%e5%b7%b1%e7%9a%84springinitializr%e6%9c%8d%e5%8a%a1%e5%99%a8.html"
 ---
 {% raw %}
 <dependency>
@@ -18,7 +18,7 @@ permalink: "springboot%e6%96%b9%e5%bc%8f%e6%90%ad%e5%bb%ba%e8%87%aa%e5%b7%b1%e7%
 
 ## 3. 启动运行 
 
- 运行报错，无法引入依赖。仔细查找文档， [https://github.com/spring-io/initializr](http://www.jfox.info/go.php?url=https://github.com/spring-io/initializr) README中有说明： 
+ 运行报错，无法引入依赖。仔细查找文档， [https://github.com/spring-io/initializr](https://www.jfox.info/go.php?url=https://github.com/spring-io/initializr) README中有说明： 
 ![](/wp-content/uploads/2017/07/1499349537.png)
 简单翻译下：Spring Initializr没有在Maven仓库中提供，你需要自己从源码构建。
 
@@ -94,11 +94,11 @@ permalink: "springboot%e6%96%b9%e5%bc%8f%e6%90%ad%e5%bb%ba%e8%87%aa%e5%b7%b1%e7%
 
 ## 6.自定义配置 
 
- 编辑application.yml配置文件。详见配置文件以及 [官方文档](http://www.jfox.info/go.php?url=http://docs.spring.io/initializr/docs/current-SNAPSHOT/reference/htmlsingle/)
+ 编辑application.yml配置文件。详见配置文件以及 [官方文档](https://www.jfox.info/go.php?url=http://docs.spring.io/initializr/docs/current-SNAPSHOT/reference/htmlsingle/)
 
 ## Ⅲ.项目源码 
 
-[https://github.com/CharlesSong/OwnInitializr](http://www.jfox.info/go.php?url=https://github.com/CharlesSong/OwnInitializr)
+[https://github.com/CharlesSong/OwnInitializr](https://www.jfox.info/go.php?url=https://github.com/CharlesSong/OwnInitializr)
 
 ## Ⅳ.待解决问题 
 

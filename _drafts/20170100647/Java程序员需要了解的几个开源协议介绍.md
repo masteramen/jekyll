@@ -3,11 +3,11 @@ layout: post
 title:  "Java程序员需要了解的几个开源协议介绍"
 title2:  "Java程序员需要了解的几个开源协议介绍"
 date:   2017-01-01 23:45:47  +0800
-source:  "http://www.jfox.info/java-programmers-need-konw-the-open-source-agreements.html"
+source:  "https://www.jfox.info/java-programmers-need-konw-the-open-source-agreements.html"
 fileName:  "20170100647"
 lang:  "zh_CN"
 published: true
-permalink: "java-programmers-need-konw-the-open-source-agreements.html"
+permalink: "2017/https://www.jfox.info/java-programmers-need-konw-the-open-source-agreements.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期六, 五月 31, 2014
@@ -66,5 +66,5 @@ By Lee - Last updated: 星期六, 五月 31, 2014
 
     使作者保持对进一步开发的控制。
 
-原文地址:[http://liuleijsjx.iteye.com/blog/553135](http://www.jfox.info/go.php?url=http://www.jfox.info/url.php?url=http%3A%2F%2Fliuleijsjx.iteye.com%2Fblog%2F553135).
+原文地址:[http://liuleijsjx.iteye.com/blog/553135](https://www.jfox.info/go.php?url=http://www.jfox.info/url.php?url=http%3A%2F%2Fliuleijsjx.iteye.com%2Fblog%2F553135).
 {% endraw %}

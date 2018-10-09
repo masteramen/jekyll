@@ -3,11 +3,11 @@ layout: post
 title:  "在Eclipse下使用Maven管理Android项目"
 title2:  "在Eclipse下使用Maven管理Android项目"
 date:   2017-01-01 23:45:30  +0800
-source:  "http://www.jfox.info/using-maven-for-android-project-management-in-eclipse.html"
+source:  "https://www.jfox.info/using-maven-for-android-project-management-in-eclipse.html"
 fileName:  "20170100630"
 lang:  "zh_CN"
 published: true
-permalink: "using-maven-for-android-project-management-in-eclipse.html"
+permalink: "2017/https://www.jfox.info/using-maven-for-android-project-management-in-eclipse.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期三, 五月 7, 2014
@@ -18,29 +18,29 @@ By Lee - Last updated: 星期三, 五月 7, 2014
 
 2.安装完后，就可以创建一个Maven项目了，如下：
 
-[![maven1](http://www.jfox.info/wp-content/uploads/2014/05/maven1.jpg)](http://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2014/05/maven1.jpg)
+[![maven1](http://www.jfox.info/wp-content/uploads/2014/05/maven1.jpg)](https://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2014/05/maven1.jpg)
 
 输入de.akquinet.android.archetypes
 
-[![maven2](http://www.jfox.info/wp-content/uploads/2014/05/maven2.jpg)](http://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2014/05/maven2.jpg)
+[![maven2](http://www.jfox.info/wp-content/uploads/2014/05/maven2.jpg)](https://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2014/05/maven2.jpg)
 
 如果没有显示de.akquinet.android.archetypes，则点击Add Archetype，如下：
 
-[![maven3](http://www.jfox.info/wp-content/uploads/2014/05/maven3.jpg)](http://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2014/05/maven3.jpg)
+[![maven3](http://www.jfox.info/wp-content/uploads/2014/05/maven3.jpg)](https://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2014/05/maven3.jpg)
 
 点击OK即可，然后就会出现如下：
 
-[![maven5](http://www.jfox.info/wp-content/uploads/2014/05/maven5.jpg)](http://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2014/05/maven5.jpg)
+[![maven5](http://www.jfox.info/wp-content/uploads/2014/05/maven5.jpg)](https://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2014/05/maven5.jpg)
 
 Group Id其实就是我们的包名。
 
 如果创建的项目发现有错，就右击properties查看，应该是缺少/src/test/java，如下：
 
-[![maven6](http://www.jfox.info/wp-content/uploads/2014/05/maven6.jpg)](http://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2014/05/maven6.jpg)
+[![maven6](http://www.jfox.info/wp-content/uploads/2014/05/maven6.jpg)](https://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2014/05/maven6.jpg)
 
 在项目中创建好该目录即可，如下：
 
-[![maven7](http://www.jfox.info/wp-content/uploads/2014/05/maven7.jpg)](http://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2014/05/maven7.jpg)
+[![maven7](http://www.jfox.info/wp-content/uploads/2014/05/maven7.jpg)](https://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2014/05/maven7.jpg)
 
-来源 [Maven管理Android项目](http://www.jfox.info/go.php?url=http://www.jfox.info/url.php?url=http%3A%2F%2Fwww.chenwg.com%2Fandroid%2Fmaven%25E7%25AE%25A1%25E7%2590%2586android%25E9%25A1%25B9%25E7%259B%25AE.html)
+来源 [Maven管理Android项目](https://www.jfox.info/go.php?url=http://www.jfox.info/url.php?url=http%3A%2F%2Fwww.chenwg.com%2Fandroid%2Fmaven%25E7%25AE%25A1%25E7%2590%2586android%25E9%25A1%25B9%25E7%259B%25AE.html)
 {% endraw %}

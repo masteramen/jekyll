@@ -3,11 +3,11 @@ layout: post
 title:  "调整Oracle应用系统性能的原则和方法"
 title2:  "调整Oracle应用系统性能的原则和方法"
 date:   2017-01-01 23:43:04  +0800
-source:  "http://www.jfox.info/tiao-zheng-oracle-ying-yong-xi-tong-xing-neng-de-yuan-ze-he-fang-fa.html"
+source:  "https://www.jfox.info/tiao-zheng-oracle-ying-yong-xi-tong-xing-neng-de-yuan-ze-he-fang-fa.html"
 fileName:  "20170100484"
 lang:  "zh_CN"
 published: true
-permalink: "tiao-zheng-oracle-ying-yong-xi-tong-xing-neng-de-yuan-ze-he-fang-fa.html"
+permalink: "2017/https://www.jfox.info/tiao-zheng-oracle-ying-yong-xi-tong-xing-neng-de-yuan-ze-he-fang-fa.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期二, 十一月 5, 2013

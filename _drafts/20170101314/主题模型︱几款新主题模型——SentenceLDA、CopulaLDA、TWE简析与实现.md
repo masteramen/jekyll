@@ -3,11 +3,11 @@ layout: post
 title:  "主题模型︱几款新主题模型——SentenceLDA、CopulaLDA、TWE简析与实现"
 title2:  "主题模型︱几款新主题模型——SentenceLDA、CopulaLDA、TWE简析与实现"
 date:   2017-01-01 23:56:54  +0800
-source:  "http://www.jfox.info/%e4%b8%bb%e9%a2%98%e6%a8%a1%e5%9e%8b%e5%87%a0%e6%ac%be%e6%96%b0%e4%b8%bb%e9%a2%98%e6%a8%a1%e5%9e%8bsentenceldacopulaldatwe%e7%ae%80%e6%9e%90%e4%b8%8e%e5%ae%9e%e7%8e%b0.html"
+source:  "https://www.jfox.info/%e4%b8%bb%e9%a2%98%e6%a8%a1%e5%9e%8b%e5%87%a0%e6%ac%be%e6%96%b0%e4%b8%bb%e9%a2%98%e6%a8%a1%e5%9e%8bsentenceldacopulaldatwe%e7%ae%80%e6%9e%90%e4%b8%8e%e5%ae%9e%e7%8e%b0.html"
 fileName:  "20170101314"
 lang:  "zh_CN"
 published: true
-permalink: "%e4%b8%bb%e9%a2%98%e6%a8%a1%e5%9e%8b%e5%87%a0%e6%ac%be%e6%96%b0%e4%b8%bb%e9%a2%98%e6%a8%a1%e5%9e%8bsentenceldacopulaldatwe%e7%ae%80%e6%9e%90%e4%b8%8e%e5%ae%9e%e7%8e%b0.html"
+permalink: "2017/https://www.jfox.info/%e4%b8%bb%e9%a2%98%e6%a8%a1%e5%9e%8b%e5%87%a0%e6%ac%be%e6%96%b0%e4%b8%bb%e9%a2%98%e6%a8%a1%e5%9e%8bsentenceldacopulaldatwe%e7%ae%80%e6%9e%90%e4%b8%8e%e5%ae%9e%e7%8e%b0.html"
 ---
 {% raw %}
 # 主题模型︱几款新主题模型——SentenceLDA、CopulaLDA、TWE简析与实现 
@@ -19,7 +19,7 @@ Dirichlet Allocation(LDA)、SentenceLDA 和Topical Word Embedding(TWE)。
 
 # 一、Familia简介
 
-帮Familia，打个小广告~ Familia的[github](http://www.jfox.info/go.php?url=https://github.com/baidu/Familia)
+帮Familia，打个小广告~ Familia的[github](https://www.jfox.info/go.php?url=https://github.com/baidu/Familia)
 **主题模型在工业界的应用范式可以抽象为两大类: 语义表示和语义匹配。**
 
 - 
@@ -52,7 +52,7 @@ Dirichlet Allocation(LDA)、SentenceLDA 和Topical Word Embedding(TWE)。
 
 # 二、Topical Word Embedding(TWE)
 
-Zhiyuan Liu老师的文章，[paper下载](http://www.jfox.info/go.php?url=http://www.aaai.org/ocs/index.php/AAAI/AAAI15/paper/download/9314/9535/)以及[github](http://www.jfox.info/go.php?url=https://github.com/largelymfs/topical_word_embeddings)
+Zhiyuan Liu老师的文章，[paper下载](https://www.jfox.info/go.php?url=http://www.aaai.org/ocs/index.php/AAAI/AAAI15/paper/download/9314/9535/)以及[github](https://www.jfox.info/go.php?url=https://github.com/largelymfs/topical_word_embeddings)
 In this way, contextual word embeddings can be flexibly obtained to measure contextual word similarity. We can also build document representations.
 
 ### 且有三款：TWE-1，TWE-2，TWE-3，来看看和传统的skip-gram的结构区别：
@@ -109,7 +109,7 @@ In this way, contextual word embeddings can be flexibly obtained to measure cont
 
 # 三、SentenceLDA
 
-[paper链接](http://www.jfox.info/go.php?url=https://pdfs.semanticscholar.org/c311/778adb9484c86250e915aecd9714f4206050.pdf) + [github：balikasg/topicModelling](http://www.jfox.info/go.php?url=https://github.com/balikasg/topicModelling/)
+[paper链接](https://www.jfox.info/go.php?url=https://pdfs.semanticscholar.org/c311/778adb9484c86250e915aecd9714f4206050.pdf) + [github：balikasg/topicModelling](https://www.jfox.info/go.php?url=https://github.com/balikasg/topicModelling/)
 
 ### **SentenceLDA是什么？**
 
@@ -129,7 +129,7 @@ We illustrate the advantages of sentenceLDA by comparing it with LDA using both 
 
 ### **原作者的github的结果：**
 
-[https://github.com/balikasg/topicModelling/tree/master/senLDA](http://www.jfox.info/go.php?url=https://github.com/balikasg/topicModelling/tree/master/senLDA)
+[https://github.com/balikasg/topicModelling/tree/master/senLDA](https://www.jfox.info/go.php?url=https://github.com/balikasg/topicModelling/tree/master/senLDA)
 截取一部分code：
 
     import numpy as np, vocabulary_sentenceLayer, string, nltk.data, sys, codecs, json, time

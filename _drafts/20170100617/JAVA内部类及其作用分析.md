@@ -3,11 +3,11 @@ layout: post
 title:  "JAVA内部类及其作用分析"
 title2:  "JAVA内部类及其作用分析"
 date:   2017-01-01 23:45:17  +0800
-source:  "http://www.jfox.info/about-java-internal-classes-and-their-role.html"
+source:  "https://www.jfox.info/about-java-internal-classes-and-their-role.html"
 fileName:  "20170100617"
 lang:  "zh_CN"
 published: true
-permalink: "about-java-internal-classes-and-their-role.html"
+permalink: "2017/https://www.jfox.info/about-java-internal-classes-and-their-role.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期二, 三月 25, 2014

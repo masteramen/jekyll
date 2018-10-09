@@ -3,11 +3,11 @@ layout: post
 title:  "解决前端Html5和Egret跨域请求Http数据的例子"
 title2:  "解决前端Html5和Egret跨域请求Http数据的例子"
 date:   2017-01-01 23:48:52  +0800
-source:  "http://www.jfox.info/jie-jue-qian-duan-html5-he-egret-kua-yu-qing-qiu-http-shu-ju-de-li-zi.html"
+source:  "https://www.jfox.info/jie-jue-qian-duan-html5-he-egret-kua-yu-qing-qiu-http-shu-ju-de-li-zi.html"
 fileName:  "20170100832"
 lang:  "zh_CN"
 published: true
-permalink: "jie-jue-qian-duan-html5-he-egret-kua-yu-qing-qiu-http-shu-ju-de-li-zi.html"
+permalink: "2017/https://www.jfox.info/jie-jue-qian-duan-html5-he-egret-kua-yu-qing-qiu-http-shu-ju-de-li-zi.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期五, 六月 9, 2017

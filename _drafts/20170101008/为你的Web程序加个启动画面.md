@@ -3,11 +3,11 @@ layout: post
 title:  "为你的Web程序加个启动画面"
 title2:  "为你的Web程序加个启动画面"
 date:   2017-01-01 23:51:48  +0800
-source:  "http://www.jfox.info/%e4%b8%ba%e4%bd%a0%e7%9a%84web%e7%a8%8b%e5%ba%8f%e5%8a%a0%e4%b8%aa%e5%90%af%e5%8a%a8%e7%94%bb%e9%9d%a2.html"
+source:  "https://www.jfox.info/%e4%b8%ba%e4%bd%a0%e7%9a%84web%e7%a8%8b%e5%ba%8f%e5%8a%a0%e4%b8%aa%e5%90%af%e5%8a%a8%e7%94%bb%e9%9d%a2.html"
 fileName:  "20170101008"
 lang:  "zh_CN"
 published: true
-permalink: "%e4%b8%ba%e4%bd%a0%e7%9a%84web%e7%a8%8b%e5%ba%8f%e5%8a%a0%e4%b8%aa%e5%90%af%e5%8a%a8%e7%94%bb%e9%9d%a2.html"
+permalink: "2017/https://www.jfox.info/%e4%b8%ba%e4%bd%a0%e7%9a%84web%e7%a8%8b%e5%ba%8f%e5%8a%a0%e4%b8%aa%e5%90%af%e5%8a%a8%e7%94%bb%e9%9d%a2.html"
 ---
 {% raw %}
 # 为你的Web程序加个启动画面 
@@ -25,7 +25,7 @@ permalink: "%e4%b8%ba%e4%bd%a0%e7%9a%84web%e7%a8%8b%e5%ba%8f%e5%8a%a0%e4%b8%aa%e
 
 下面我们就来为我们的Web应用加上Gmail一样的Splash Screen。程序可以很渣，若表面功夫到位了同样可以显得高端大气上档次。
 
-[效果预览请点我](http://www.jfox.info/go.php?url=http://wayou.github.io/splash-screen-example/)[浏览代码请点我](http://www.jfox.info/go.php?url=https://github.com/wayou/splash-screen-example)
+[效果预览请点我](https://www.jfox.info/go.php?url=http://wayou.github.io/splash-screen-example/)[浏览代码请点我](https://www.jfox.info/go.php?url=https://github.com/wayou/splash-screen-example)
 
 # 进度的获取
 
@@ -41,7 +41,7 @@ permalink: "%e4%b8%ba%e4%bd%a0%e7%9a%84web%e7%a8%8b%e5%ba%8f%e5%8a%a0%e4%b8%aa%e
 
 展示一个会动的进度条即可（我相信大多数带进度条的程序也是这么干的），直到页面全部加载完成时把进度条托到100%。
 
-插曲：在我探索如何获取页面真实下载进度的过程中，研究了[pace.js](http://www.jfox.info/go.php?url=https://github.com/HubSpot/pace/blob/master/pace.js)的代码，一个做得非常棒的页面加载进度插件，发现他内部也是这么干的，页面上显示的进度并不真实返回页面加载的实现进度，只是不断的增加而
+插曲：在我探索如何获取页面真实下载进度的过程中，研究了[pace.js](https://www.jfox.info/go.php?url=https://github.com/HubSpot/pace/blob/master/pace.js)的代码，一个做得非常棒的页面加载进度插件，发现他内部也是这么干的，页面上显示的进度并不真实返回页面加载的实现进度，只是不断的增加而
 
 以，等页面加载完了再拖到100%。当然该库写得比较完善，处理了各种情况比如ajax，web socket等。另外就是Gmail，经过大量（也有可能只有两三次，请不必太认真）的刷新页面尝试之后，我发现个规律，它的进
 

@@ -3,11 +3,11 @@ layout: post
 title:  "java国际化之(三)—springMVC+Freemaker demo"
 title2:  "java国际化之(三)—springMVC+Freemaker demo"
 date:   2017-01-01 23:49:34  +0800
-source:  "http://www.jfox.info/java%e5%9b%bd%e9%99%85%e5%8c%96%e4%b9%8b-%e4%b8%89-springmvc-freemaker-demo.html"
+source:  "https://www.jfox.info/java%e5%9b%bd%e9%99%85%e5%8c%96%e4%b9%8b-%e4%b8%89-springmvc-freemaker-demo.html"
 fileName:  "20170100874"
 lang:  "zh_CN"
 published: true
-permalink: "java%e5%9b%bd%e9%99%85%e5%8c%96%e4%b9%8b-%e4%b8%89-springmvc-freemaker-demo.html"
+permalink: "2017/https://www.jfox.info/java%e5%9b%bd%e9%99%85%e5%8c%96%e4%b9%8b-%e4%b8%89-springmvc-freemaker-demo.html"
 ---
 {% raw %}
 **概述**
@@ -413,7 +413,7 @@ controller包中对应的是本实例的控制器存放目录，首先来看下U
 
 3、Freemaker国际化支持，${(user.birthday?datetime)}、${(user.money?string.currency)} 会根据不同的语言国家，做不同的格式显示。比如中国，货币显示为：￥12.12；英语英国，货币显示为：￡12.12。
 
-其他关于Freemaker的标签说明，参考其官方文档：[http://freemarker.org/docs/ref_directive_local.html](http://www.jfox.info/go.php?url=http://freemarker.org/docs/ref_directive_local.html)
+其他关于Freemaker的标签说明，参考其官方文档：[http://freemarker.org/docs/ref_directive_local.html](https://www.jfox.info/go.php?url=http://freemarker.org/docs/ref_directive_local.html)
 
 日期、货币国际化处理
 
@@ -434,5 +434,46 @@ SpringMVC主要通过定义不同Formatter实现对日期、货币等国际化�
             }
         }
         @Override
-        public String print(Date date, Locale locale)
+        public String print(Date date, Locale locale) {
+            DateFormat df = DateFormat.getDateTimeInstance(DateFormat.MEDIUM, DateFormat.MEDIUM, locale);
+            System.out.println("format");
+            return df.format(date);
+    }
+    }
+     
+
+自定义的货币处理formatter，MyCurrencyFormatter，可以实现把不同国家带符号的价格转换为BigDecimal，实现如下：
+
+    public class MyCurrencyFormatter implements Formatter<BigDecimal> {
+        /**
+         * 去掉货币符号，并转换为BigDecimal
+         * @param s
+         * @param locale
+         * @return
+         * @throws ParseException
+         */
+        @Override
+        public BigDecimal parse(String s, Locale locale) throws ParseException {
+            try {
+                NumberFormat curF = NumberFormat.getCurrencyInstance(locale);
+                BigDecimal bd = new BigDecimal(curF.parse(s).toString());//去掉货币符号
+                return bd;
+            } catch (ParseException e) {
+                //如果没有带单位 转换会失败，但是如果是数字可以成功转换成BigDecimal，主要是springMVC做了兼容处理
+                throw new IllegalArgumentException(
+                        "invalid Currency format.");
+            }
+        }
+        /**
+         * 把BigDecimal 转换为对应国家带货币单位的 字符串格式
+         * @param bigDecimal
+         * @param locale
+         * @return
+         */
+        @Override
+        public String print(BigDecimal bigDecimal, Locale locale) {
+            NumberFormat curF = NumberFormat.getCurrencyInstance(locale);
+            return curF.format(bigDecimal);
+    }
+    }
 {% endraw %}

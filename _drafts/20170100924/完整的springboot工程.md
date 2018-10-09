@@ -3,11 +3,11 @@ layout: post
 title:  "完整的springboot工程"
 title2:  "完整的springboot工程"
 date:   2017-01-01 23:50:24  +0800
-source:  "http://www.jfox.info/%e5%ae%8c%e6%95%b4%e7%9a%84springboot%e5%b7%a5%e7%a8%8b.html"
+source:  "https://www.jfox.info/%e5%ae%8c%e6%95%b4%e7%9a%84springboot%e5%b7%a5%e7%a8%8b.html"
 fileName:  "20170100924"
 lang:  "zh_CN"
 published: true
-permalink: "%e5%ae%8c%e6%95%b4%e7%9a%84springboot%e5%b7%a5%e7%a8%8b.html"
+permalink: "2017/https://www.jfox.info/%e5%ae%8c%e6%95%b4%e7%9a%84springboot%e5%b7%a5%e7%a8%8b.html"
 ---
 {% raw %}
 spring-boot出乎意料的好用，本文给大家展示生产实践中怎么用spring-boot。

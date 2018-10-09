@@ -3,11 +3,11 @@ layout: post
 title:  "java面试如何自我介绍"
 title2:  "java面试如何自我介绍"
 date:   2017-01-01 23:42:08  +0800
-source:  "http://www.jfox.info/java-mian-shi-ru-he-zi-wo-jie-shao.html"
+source:  "https://www.jfox.info/java-mian-shi-ru-he-zi-wo-jie-shao.html"
 fileName:  "20170100428"
 lang:  "zh_CN"
 published: true
-permalink: "java-mian-shi-ru-he-zi-wo-jie-shao.html"
+permalink: "2017/https://www.jfox.info/java-mian-shi-ru-he-zi-wo-jie-shao.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期日, 六月 9, 2013

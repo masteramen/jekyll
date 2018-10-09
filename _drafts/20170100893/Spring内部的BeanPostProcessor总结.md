@@ -3,11 +3,11 @@ layout: post
 title:  "Spring内部的BeanPostProcessor总结"
 title2:  "Spring内部的BeanPostProcessor总结"
 date:   2017-01-01 23:49:53  +0800
-source:  "http://www.jfox.info/spring%e5%86%85%e9%83%a8%e7%9a%84beanpostprocessor%e6%80%bb%e7%bb%93.html"
+source:  "https://www.jfox.info/spring%e5%86%85%e9%83%a8%e7%9a%84beanpostprocessor%e6%80%bb%e7%bb%93.html"
 fileName:  "20170100893"
 lang:  "zh_CN"
 published: true
-permalink: "spring%e5%86%85%e9%83%a8%e7%9a%84beanpostprocessor%e6%80%bb%e7%bb%93.html"
+permalink: "2017/https://www.jfox.info/spring%e5%86%85%e9%83%a8%e7%9a%84beanpostprocessor%e6%80%bb%e7%bb%93.html"
 ---
 {% raw %}
 Spring内部提供了一个BeanPostProcessor接口，这个接口的作用在于对于新构造的实例可以做一些自定义的修改。比如如何构造、属性值的修改、构造器的选择等等。 

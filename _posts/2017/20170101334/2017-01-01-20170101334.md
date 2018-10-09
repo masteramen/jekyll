@@ -3,11 +3,11 @@ layout: post
 title:  "Struts2框架06 ValueStack"
 title2:  "Struts2框架06 ValueStack"
 date:   2017-01-01 23:57:14  +0800
-source:  "http://www.jfox.info/struts2%e6%a1%86%e6%9e%b606valuestack.html"
+source:  "https://www.jfox.info/struts2%e6%a1%86%e6%9e%b606valuestack.html"
 fileName:  "20170101334"
 lang:  "zh_CN"
 published: true
-permalink: "struts2%e6%a1%86%e6%9e%b606valuestack.html"
+permalink: "2017/https://www.jfox.info/struts2%e6%a1%86%e6%9e%b606valuestack.html"
 ---
 {% raw %}
 ## 1 什么是ValueStack

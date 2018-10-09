@@ -3,11 +3,11 @@ layout: post
 title:  "Java四大开源软件测试工具"
 title2:  "Java四大开源软件测试工具"
 date:   2017-01-01 23:44:17  +0800
-source:  "http://www.jfox.info/java%e5%9b%9b%e5%a4%a7%e5%bc%80%e6%ba%90%e8%bd%af%e4%bb%b6%e6%b5%8b%e8%af%95%e5%b7%a5%e5%85%b7.html"
+source:  "https://www.jfox.info/java%e5%9b%9b%e5%a4%a7%e5%bc%80%e6%ba%90%e8%bd%af%e4%bb%b6%e6%b5%8b%e8%af%95%e5%b7%a5%e5%85%b7.html"
 fileName:  "20170100557"
 lang:  "zh_CN"
 published: true
-permalink: "java%e5%9b%9b%e5%a4%a7%e5%bc%80%e6%ba%90%e8%bd%af%e4%bb%b6%e6%b5%8b%e8%af%95%e5%b7%a5%e5%85%b7.html"
+permalink: "2017/https://www.jfox.info/java%e5%9b%9b%e5%a4%a7%e5%bc%80%e6%ba%90%e8%bd%af%e4%bb%b6%e6%b5%8b%e8%af%95%e5%b7%a5%e5%85%b7.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期六, 二月 15, 2014
@@ -28,5 +28,5 @@ Apache JMeter——JMeter是一款开源的纯Java测试工具，其主要用于
 
 　　各位开发者，你们使用哪一款工具呢?
 
-参考来源 [基于Java的四大开源测试工具](http://www.jfox.info/go.php?url=http://www.jfox.info/url.php?url=http%3A%2F%2Fwww.javaweb.cc%2Flanguage%2Fjava%2F062675.shtml)
+参考来源 [基于Java的四大开源测试工具](https://www.jfox.info/go.php?url=http://www.jfox.info/url.php?url=http%3A%2F%2Fwww.javaweb.cc%2Flanguage%2Fjava%2F062675.shtml)
 {% endraw %}

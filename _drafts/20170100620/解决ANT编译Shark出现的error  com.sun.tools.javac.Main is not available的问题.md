@@ -3,11 +3,11 @@ layout: post
 title:  "解决ANT编译Shark出现的error : com.sun.tools.javac.Main is not available的问题"
 title2:  "解决ANT编译Shark出现的error  com.sun.tools.javac.Main is not available的问题"
 date:   2017-01-01 23:45:20  +0800
-source:  "http://www.jfox.info/solve-ant-compile-shark-error-com-sun-tools-javac-main-is-not-available-questions.html"
+source:  "https://www.jfox.info/solve-ant-compile-shark-error-com-sun-tools-javac-main-is-not-available-questions.html"
 fileName:  "20170100620"
 lang:  "zh_CN"
 published: true
-permalink: "solve-ant-compile-shark-error-com-sun-tools-javac-main-is-not-available-questions.html"
+permalink: "2017/https://www.jfox.info/solve-ant-compile-shark-error-com-sun-tools-javac-main-is-not-available-questions.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期五, 三月 28, 2014

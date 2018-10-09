@@ -3,11 +3,11 @@ layout: post
 title:  "69道java Spring面试题和答案"
 title2:  "69道java Spring面试题和答案"
 date:   2017-01-01 23:47:49  +0800
-source:  "http://www.jfox.info/69-dao-java-spring-mian-shi-ti-he-da-an.html"
+source:  "https://www.jfox.info/69-dao-java-spring-mian-shi-ti-he-da-an.html"
 fileName:  "20170100769"
 lang:  "zh_CN"
 published: true
-permalink: "69-dao-java-spring-mian-shi-ti-he-da-an.html"
+permalink: "2017/https://www.jfox.info/69-dao-java-spring-mian-shi-ti-he-da-an.html"
 ---
 {% raw %}
 ## 目录

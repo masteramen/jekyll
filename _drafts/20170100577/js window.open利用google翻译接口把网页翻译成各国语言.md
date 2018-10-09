@@ -3,11 +3,11 @@ layout: post
 title:  "js window.open利用google翻译接口把网页翻译成各国语言"
 title2:  "js window.open利用google翻译接口把网页翻译成各国语言"
 date:   2017-01-01 23:44:37  +0800
-source:  "http://www.jfox.info/js-window-open-li-yong-google-fangyi-jiekou-ba-wangye-fangyi-cheng-geguo-yiyan.html"
+source:  "https://www.jfox.info/js-window-open-li-yong-google-fangyi-jiekou-ba-wangye-fangyi-cheng-geguo-yiyan.html"
 fileName:  "20170100577"
 lang:  "zh_CN"
 published: true
-permalink: "js-window-open-li-yong-google-fangyi-jiekou-ba-wangye-fangyi-cheng-geguo-yiyan.html"
+permalink: "2017/https://www.jfox.info/js-window-open-li-yong-google-fangyi-jiekou-ba-wangye-fangyi-cheng-geguo-yiyan.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期五, 二月 21, 2014
@@ -56,5 +56,5 @@ By Lee - Last updated: 星期五, 二月 21, 2014
 
 > <a href=”javascript: void(window.open(‘http://translate.google.com/translate?u=’+escape(location.href)+’&amp;langpair=en%7Cda’, ‘English_to_Denmark’, ‘resizable,scrollbars,status’))”>网页翻译为丹麦语(Translate Page To Denmark)</a>
 
-参考来源 [js利用google翻译接口把网页翻译成各国语言 ](http://www.jfox.info/go.php?url=http://www.jfox.info/url.php?url=http%3A%2F%2Fsjolzy.cn%2Fjs-pages-use-google-translator-interface-to-be-translated-into-various-languages.html).
+参考来源 [js利用google翻译接口把网页翻译成各国语言 ](https://www.jfox.info/go.php?url=http://www.jfox.info/url.php?url=http%3A%2F%2Fsjolzy.cn%2Fjs-pages-use-google-translator-interface-to-be-translated-into-various-languages.html).
 {% endraw %}

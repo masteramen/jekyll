@@ -3,11 +3,11 @@ layout: post
 title:  "SpringMvc接收参数"
 title2:  "SpringMvc接收参数"
 date:   2017-01-01 23:48:58  +0800
-source:  "http://www.jfox.info/springmvc-jie-shou-can-shu.html"
+source:  "https://www.jfox.info/springmvc-jie-shou-can-shu.html"
 fileName:  "20170100838"
 lang:  "zh_CN"
 published: true
-permalink: "springmvc-jie-shou-can-shu.html"
+permalink: "2017/https://www.jfox.info/springmvc-jie-shou-can-shu.html"
 ---
 {% raw %}
 public ModelAndView test1(HttpServletRequest req){ 

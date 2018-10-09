@@ -3,11 +3,11 @@ layout: post
 title:  "协同过滤推荐算法详解 » java面试题"
 title2:  "协同过滤推荐算法详解 » java面试题"
 date:   2017-01-01 23:54:00  +0800
-source:  "http://www.jfox.info/%e5%8d%8f%e5%90%8c%e8%bf%87%e6%bb%a4%e6%8e%a8%e8%8d%90%e7%ae%97%e6%b3%95%e8%af%a6%e8%a7%a3.html"
+source:  "https://www.jfox.info/%e5%8d%8f%e5%90%8c%e8%bf%87%e6%bb%a4%e6%8e%a8%e8%8d%90%e7%ae%97%e6%b3%95%e8%af%a6%e8%a7%a3.html"
 fileName:  "20170101140"
 lang:  "zh_CN"
 published: true
-permalink: "%e5%8d%8f%e5%90%8c%e8%bf%87%e6%bb%a4%e6%8e%a8%e8%8d%90%e7%ae%97%e6%b3%95%e8%af%a6%e8%a7%a3.html"
+permalink: "2017/https://www.jfox.info/%e5%8d%8f%e5%90%8c%e8%bf%87%e6%bb%a4%e6%8e%a8%e8%8d%90%e7%ae%97%e6%b3%95%e8%af%a6%e8%a7%a3.html"
 ---
 {% raw %}
 ## 一、什么是协同过滤？

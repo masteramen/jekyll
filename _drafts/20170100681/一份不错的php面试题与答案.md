@@ -3,11 +3,11 @@ layout: post
 title:  "一份不错的php面试题与答案"
 title2:  "一份不错的php面试题与答案"
 date:   2017-01-01 23:46:21  +0800
-source:  "http://www.jfox.info/yi-fen-bu-cuo-de-php-mian-shi-ti-yu-da-an.html"
+source:  "https://www.jfox.info/yi-fen-bu-cuo-de-php-mian-shi-ti-yu-da-an.html"
 fileName:  "20170100681"
 lang:  "zh_CN"
 published: true
-permalink: "yi-fen-bu-cuo-de-php-mian-shi-ti-yu-da-an.html"
+permalink: "2017/https://www.jfox.info/yi-fen-bu-cuo-de-php-mian-shi-ti-yu-da-an.html"
 ---
 {% raw %}
 一份不错的php面试题,附答案,有准备换工作的同学可以参考一下.
@@ -404,5 +404,5 @@ return $new_array;
 
 }
 
-原文地址:[http://www.phpzixue.cn/detail586.shtml](http://www.jfox.info/go.php?url=http://www.jfox.info/url.php?_v=v4&amp;_src=&amp;isencode=1&amp;content=dGltZT0xNDA5MDYyNDkyNzYwJnVybD1odHRwJTNBJTJGJTJGd3d3LnBocHppeHVlLmNuJTJGZGV0YWlsNTg2LnNodG1s).
+原文地址:[http://www.phpzixue.cn/detail586.shtml](https://www.jfox.info/go.php?url=http://www.jfox.info/url.php?_v=v4&amp;_src=&amp;isencode=1&amp;content=dGltZT0xNDA5MDYyNDkyNzYwJnVybD1odHRwJTNBJTJGJTJGd3d3LnBocHppeHVlLmNuJTJGZGV0YWlsNTg2LnNodG1s).
 {% endraw %}

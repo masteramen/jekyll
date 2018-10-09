@@ -3,11 +3,11 @@ layout: post
 title:  "没有宏的pattern match"
 title2:  "没有宏的pattern match"
 date:   2017-01-01 23:54:21  +0800
-source:  "http://www.jfox.info/%e6%b2%a1%e6%9c%89%e5%ae%8f%e7%9a%84patternmatch.html"
+source:  "https://www.jfox.info/%e6%b2%a1%e6%9c%89%e5%ae%8f%e7%9a%84patternmatch.html"
 fileName:  "20170101161"
 lang:  "zh_CN"
 published: true
-permalink: "%e6%b2%a1%e6%9c%89%e5%ae%8f%e7%9a%84patternmatch.html"
+permalink: "2017/https://www.jfox.info/%e6%b2%a1%e6%9c%89%e5%ae%8f%e7%9a%84patternmatch.html"
 ---
 {% raw %}
 宏在lisp里面是一柄双刃剑，我一般是能避免使用尽量避免的，也在一直思考有没有什么能替代它。上次看到了fexpr，研究了一下，知道了fexpr和宏的区别。它们都不会对参数求值，都是把参数以原始的list形式传递。接着，它们都会调用自己的定义，对list进行展开，这一步也是相同的。最后一步才是区别：宏会对展开以后生成的表达式求值，而fexpr直接返回展开的结果。 
@@ -266,5 +266,5 @@ permalink: "%e6%b2%a1%e6%9c%89%e5%ae%8f%e7%9a%84patternmatch.html"
             (:else (lambda (x) x)))
     
 
-[点赞](void(0))[Pattern](http://www.jfox.info/go.php?url=http://ju.outofmemory.cn/tag/Pattern/)[match](http://www.jfox.info/go.php?url=http://ju.outofmemory.cn/tag/match/)[宏](http://www.jfox.info/go.php?url=http://ju.outofmemory.cn/tag/%E5%AE%8F/)
+[点赞](void(0))[Pattern](https://www.jfox.info/go.php?url=http://ju.outofmemory.cn/tag/Pattern/)[match](https://www.jfox.info/go.php?url=http://ju.outofmemory.cn/tag/match/)[宏](https://www.jfox.info/go.php?url=http://ju.outofmemory.cn/tag/%E5%AE%8F/)
 {% endraw %}

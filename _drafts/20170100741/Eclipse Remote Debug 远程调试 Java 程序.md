@@ -3,11 +3,11 @@ layout: post
 title:  "Eclipse Remote Debug 远程调试 Java 程序"
 title2:  "Eclipse Remote Debug 远程调试 Java 程序"
 date:   2017-01-01 23:47:21  +0800
-source:  "http://www.jfox.info/eclipse-remote-debug-yuan-cheng-diao-shi-java-cheng-xu.html"
+source:  "https://www.jfox.info/eclipse-remote-debug-yuan-cheng-diao-shi-java-cheng-xu.html"
 fileName:  "20170100741"
 lang:  "zh_CN"
 published: true
-permalink: "eclipse-remote-debug-yuan-cheng-diao-shi-java-cheng-xu.html"
+permalink: "2017/https://www.jfox.info/eclipse-remote-debug-yuan-cheng-diao-shi-java-cheng-xu.html"
 ---
 {% raw %}
 今天同事问我怎么远程调试 java 程序。我不会，那马上搜索看看。在被高度的程序中加个数据就行。然后 eclipse 调试时指定端口就行，太方便了。

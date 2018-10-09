@@ -3,11 +3,11 @@ layout: post
 title:  "Java国际化之（五）—自定义国际化formatter注解实现"
 title2:  "Java国际化之（五）—自定义国际化formatter注解实现"
 date:   2017-01-01 23:49:24  +0800
-source:  "http://www.jfox.info/java_guo_ji_hua_zhi_wu_-_zi_ding_yi_guo_ji_hua_formatter_zhu_jie_shi_xian.html"
+source:  "https://www.jfox.info/java_guo_ji_hua_zhi_wu_-_zi_ding_yi_guo_ji_hua_formatter_zhu_jie_shi_xian.html"
 fileName:  "20170100864"
 lang:  "zh_CN"
 published: true
-permalink: "java_guo_ji_hua_zhi_wu_-_zi_ding_yi_guo_ji_hua_formatter_zhu_jie_shi_xian.html"
+permalink: "2017/https://www.jfox.info/java_guo_ji_hua_zhi_wu_-_zi_ding_yi_guo_ji_hua_formatter_zhu_jie_shi_xian.html"
 ---
 {% raw %}
 **引言**
@@ -148,5 +148,5 @@ typeMismatch.user.regDate=Style:yyyy-MM-dd
 
 如果在同一个表单对象中，有多个Date类型，只需要对其中部分Date字段进行自定义格式化转换，另外的采用Spring MVC默认的格式化转换，这个时候就不得不用到自定义注解实现。
 
-ok，关于“自定义国际化formatter注解实现”方法讲解完毕，最后奉上代码 GitHub地址：[https://github.com/gantianxing/locale-demo2.git](http://www.jfox.info/go.php?url=https://github.com/gantianxing/locale-demo2.git)。
+ok，关于“自定义国际化formatter注解实现”方法讲解完毕，最后奉上代码 GitHub地址：[https://github.com/gantianxing/locale-demo2.git](https://www.jfox.info/go.php?url=https://github.com/gantianxing/locale-demo2.git)。
 {% endraw %}

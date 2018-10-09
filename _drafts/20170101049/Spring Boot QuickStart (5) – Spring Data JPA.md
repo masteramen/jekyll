@@ -3,11 +3,11 @@ layout: post
 title:  "Spring Boot QuickStart (5) – Spring Data JPA"
 title2:  "Spring Boot QuickStart (5) – Spring Data JPA"
 date:   2017-01-01 23:52:29  +0800
-source:  "http://www.jfox.info/springbootquickstart5springdatajpa.html"
+source:  "https://www.jfox.info/springbootquickstart5springdatajpa.html"
 fileName:  "20170101049"
 lang:  "zh_CN"
 published: true
-permalink: "springbootquickstart5springdatajpa.html"
+permalink: "2017/https://www.jfox.info/springbootquickstart5springdatajpa.html"
 ---
 {% raw %}
 接(4) – Database 系列
@@ -44,7 +44,7 @@ PagingAndSortingRepository： 继承 CrudRepository，实现了一组分页排�
 - 
 JpaRepository： 继承 PagingAndSortingRepository，实现一组JPA规范相关的方法
 
-推荐教程：Spring Data JPA实战入门训练 [https://course.tianmaying.com…](http://www.jfox.info/go.php?url=https://course.tianmaying.com/spring-data-jpa)
+推荐教程：Spring Data JPA实战入门训练 [https://course.tianmaying.com…](https://www.jfox.info/go.php?url=https://course.tianmaying.com/spring-data-jpa)
 
 ## Entity 实体和 Respository 接口
 
@@ -209,7 +209,7 @@ sort=，排序相关的信息，例如sort=firstname&sort=lastname,desc
 
 Spring Data JPA 的关联关系定义上，感觉并不是很灵活，姿势也比较难找。
 
-视频教程：[http://www.jikexueyuan.com/co…](http://www.jfox.info/go.php?url=http://www.jikexueyuan.com/course/807_4.html)
+视频教程：[http://www.jikexueyuan.com/co…](https://www.jfox.info/go.php?url=http://www.jikexueyuan.com/course/807_4.html)
 
 ## OneToOne 一对一
 

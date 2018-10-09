@@ -3,11 +3,11 @@ layout: post
 title:  "初窥Spring之容器"
 title2:  "初窥Spring之容器"
 date:   2017-01-01 23:52:23  +0800
-source:  "http://www.jfox.info/%e5%88%9d%e7%aa%a5spring%e4%b9%8b%e5%ae%b9%e5%99%a8.html"
+source:  "https://www.jfox.info/%e5%88%9d%e7%aa%a5spring%e4%b9%8b%e5%ae%b9%e5%99%a8.html"
 fileName:  "20170101043"
 lang:  "zh_CN"
 published: true
-permalink: "%e5%88%9d%e7%aa%a5spring%e4%b9%8b%e5%ae%b9%e5%99%a8.html"
+permalink: "2017/https://www.jfox.info/%e5%88%9d%e7%aa%a5spring%e4%b9%8b%e5%ae%b9%e5%99%a8.html"
 ---
 {% raw %}
 <bean id="job" class="com.jellythink.Job">
@@ -48,7 +48,7 @@ permalink: "%e5%88%9d%e7%aa%a5spring%e4%b9%8b%e5%ae%b9%e5%99%a8.html"
     FileSystemXmlApplicationContext context = new FileSystemXmlApplicationContext("file:/Users/Jelly/job.xml");
     
 
- 这里有篇文章，重点的总结了 [ Spring中ClassPathXmlApplication和FileSystemXmlApplicationContext使用区别 ](http://www.jfox.info/go.php?url=http://www.cnblogs.com/homesea/p/4711401.html) 。 
+ 这里有篇文章，重点的总结了 [ Spring中ClassPathXmlApplication和FileSystemXmlApplicationContext使用区别 ](https://www.jfox.info/go.php?url=http://www.cnblogs.com/homesea/p/4711401.html) 。 
 
  使用 ` AnnotationConfigApplicationContext ` 来配置应用上下文则比较麻烦一些，因为要单独编写一个配置类。 
 
@@ -124,7 +124,7 @@ permalink: "%e5%88%9d%e7%aa%a5spring%e4%b9%8b%e5%ae%b9%e5%99%a8.html"
 
  无聊而有趣的一天，虚度而又充实的一个周末。 
 
-[ 果冻想 ](http://www.jfox.info/go.php?url=http://www.jellythink.com) -一个原创技术文章分享网站。 
+[ 果冻想 ](https://www.jfox.info/go.php?url=http://www.jellythink.com) -一个原创技术文章分享网站。 
 
  2017年6月4日 于呼和浩特。
 {% endraw %}

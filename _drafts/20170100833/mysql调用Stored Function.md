@@ -3,11 +3,11 @@ layout: post
 title:  "mysql调用Stored Function"
 title2:  "mysql调用Stored Function"
 date:   2017-01-01 23:48:53  +0800
-source:  "http://www.jfox.info/mysql-diao-yong-stored-function.html"
+source:  "https://www.jfox.info/mysql-diao-yong-stored-function.html"
 fileName:  "20170100833"
 lang:  "zh_CN"
 published: true
-permalink: "mysql-diao-yong-stored-function.html"
+permalink: "2017/https://www.jfox.info/mysql-diao-yong-stored-function.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期六, 六月 10, 2017

@@ -3,11 +3,11 @@ layout: post
 title:  "企业用户选择 Java 多于.NET的5个原因"
 title2:  "企业用户选择 Java 多于.NET的5个原因"
 date:   2017-01-01 23:44:56  +0800
-source:  "http://www.jfox.info/business-users-to-select-more-than-java-nets-five-reasons.html"
+source:  "https://www.jfox.info/business-users-to-select-more-than-java-nets-five-reasons.html"
 fileName:  "20170100596"
 lang:  "zh_CN"
 published: true
-permalink: "business-users-to-select-more-than-java-nets-five-reasons.html"
+permalink: "2017/https://www.jfox.info/business-users-to-select-more-than-java-nets-five-reasons.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期六, 三月 1, 2014

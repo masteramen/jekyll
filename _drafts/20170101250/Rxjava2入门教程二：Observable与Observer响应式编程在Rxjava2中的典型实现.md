@@ -3,11 +3,11 @@ layout: post
 title:  "Rxjava2入门教程二：Observable与Observer响应式编程在Rxjava2中的典型实现"
 title2:  "Rxjava2入门教程二：Observable与Observer响应式编程在Rxjava2中的典型实现"
 date:   2017-01-01 23:55:50  +0800
-source:  "http://www.jfox.info/rxjava2%e5%85%a5%e9%97%a8%e6%95%99%e7%a8%8b%e4%ba%8cobservable%e4%b8%8eobserver%e5%93%8d%e5%ba%94%e5%bc%8f%e7%bc%96%e7%a8%8b%e5%9c%a8rxjava2%e4%b8%ad%e7%9a%84%e5%85%b8%e5%9e%8b%e5%ae%9e%e7%8e%b0.html"
+source:  "https://www.jfox.info/rxjava2%e5%85%a5%e9%97%a8%e6%95%99%e7%a8%8b%e4%ba%8cobservable%e4%b8%8eobserver%e5%93%8d%e5%ba%94%e5%bc%8f%e7%bc%96%e7%a8%8b%e5%9c%a8rxjava2%e4%b8%ad%e7%9a%84%e5%85%b8%e5%9e%8b%e5%ae%9e%e7%8e%b0.html"
 fileName:  "20170101250"
 lang:  "zh_CN"
 published: true
-permalink: "rxjava2%e5%85%a5%e9%97%a8%e6%95%99%e7%a8%8b%e4%ba%8cobservable%e4%b8%8eobserver%e5%93%8d%e5%ba%94%e5%bc%8f%e7%bc%96%e7%a8%8b%e5%9c%a8rxjava2%e4%b8%ad%e7%9a%84%e5%85%b8%e5%9e%8b%e5%ae%9e%e7%8e%b0.html"
+permalink: "2017/https://www.jfox.info/rxjava2%e5%85%a5%e9%97%a8%e6%95%99%e7%a8%8b%e4%ba%8cobservable%e4%b8%8eobserver%e5%93%8d%e5%ba%94%e5%bc%8f%e7%bc%96%e7%a8%8b%e5%9c%a8rxjava2%e4%b8%ad%e7%9a%84%e5%85%b8%e5%9e%8b%e5%ae%9e%e7%8e%b0.html"
 ---
 {% raw %}
 作者[冯丰枫](/u/f7176d6d53d2)2017.07.09 19:03字数 1616

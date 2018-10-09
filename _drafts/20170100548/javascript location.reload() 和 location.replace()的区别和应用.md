@@ -3,11 +3,11 @@ layout: post
 title:  "javascript location.reload() 和 location.replace()的区别和应用"
 title2:  "javascript location.reload() 和 location.replace()的区别和应用"
 date:   2017-01-01 23:44:08  +0800
-source:  "http://www.jfox.info/javascript-location-reload-%e5%92%8c-location-replace%e7%9a%84%e5%8c%ba%e5%88%ab%e5%92%8c%e5%ba%94%e7%94%a8.html"
+source:  "https://www.jfox.info/javascript-location-reload-%e5%92%8c-location-replace%e7%9a%84%e5%8c%ba%e5%88%ab%e5%92%8c%e5%ba%94%e7%94%a8.html"
 fileName:  "20170100548"
 lang:  "zh_CN"
 published: true
-permalink: "javascript-location-reload-%e5%92%8c-location-replace%e7%9a%84%e5%8c%ba%e5%88%ab%e5%92%8c%e5%ba%94%e7%94%a8.html"
+permalink: "2017/https://www.jfox.info/javascript-location-reload-%e5%92%8c-location-replace%e7%9a%84%e5%8c%ba%e5%88%ab%e5%92%8c%e5%ba%94%e7%94%a8.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期三, 二月 12, 2014
@@ -28,5 +28,5 @@ true, 则以 GET 方式，从服务端取最新的页面, 相当于客户端点�
 
 在实际应用的时候，重新刷新页面的时候，我们通常使用： location.reload() 或者是 history.go(0) 来做。因为这种做法就像是客户端点F5刷新页面，所以页面的method=”post”的时候，会出现“网页过期”的提示。那是因为Session的安全保护机制。可以想到： 当调用 location.reload() 方法的时候， aspx页面此时在服务端内存里已经存在， 因此必定是 IsPostback 的。如果有这种应用： 我们需要重新加载该页面，也就是说我们期望页面能够在服务端重新被创建， 我们期望是 Not IsPostback 的。这里，location.replace() 就可以完成此任务。被replace的页面每次都在服务端重新生成。你可以这么写： location.replace(location.href)
 
-参考来源 [location.reload() 和 location.replace()的区别和应用](http://www.jfox.info/go.php?url=http://www.jfox.info/url.php?url=http%3A%2F%2Fblog.csdn.net%2Ffangxing80%2Farticle%2Fdetails%2F604916)
+参考来源 [location.reload() 和 location.replace()的区别和应用](https://www.jfox.info/go.php?url=http://www.jfox.info/url.php?url=http%3A%2F%2Fblog.csdn.net%2Ffangxing80%2Farticle%2Fdetails%2F604916)
 {% endraw %}

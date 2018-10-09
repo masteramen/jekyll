@@ -3,11 +3,11 @@ layout: post
 title:  "关于Java static 的面试题和答案"
 title2:  "关于Java static 的面试题和答案"
 date:   2017-01-01 23:46:17  +0800
-source:  "http://www.jfox.info/guan-yu-java-static-de-mian-shi-ti-he-da-an.html"
+source:  "https://www.jfox.info/guan-yu-java-static-de-mian-shi-ti-he-da-an.html"
 fileName:  "20170100677"
 lang:  "zh_CN"
 published: true
-permalink: "guan-yu-java-static-de-mian-shi-ti-he-da-an.html"
+permalink: "2017/https://www.jfox.info/guan-yu-java-static-de-mian-shi-ti-he-da-an.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期六, 八月 23, 2014

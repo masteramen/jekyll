@@ -3,11 +3,11 @@ layout: post
 title:  "Spring Boot 日志配置(LogBack,LockBack异步日志)"
 title2:  "Spring Boot 日志配置(LogBack,LockBack异步日志)"
 date:   2017-01-01 23:54:37  +0800
-source:  "http://www.jfox.info/springboot%e6%97%a5%e5%bf%97%e9%85%8d%e7%bd%aelogbacklockback%e5%bc%82%e6%ad%a5%e6%97%a5%e5%bf%97.html"
+source:  "https://www.jfox.info/springboot%e6%97%a5%e5%bf%97%e9%85%8d%e7%bd%aelogbacklockback%e5%bc%82%e6%ad%a5%e6%97%a5%e5%bf%97.html"
 fileName:  "20170101177"
 lang:  "zh_CN"
 published: true
-permalink: "springboot%e6%97%a5%e5%bf%97%e9%85%8d%e7%bd%aelogbacklockback%e5%bc%82%e6%ad%a5%e6%97%a5%e5%bf%97.html"
+permalink: "2017/https://www.jfox.info/springboot%e6%97%a5%e5%bf%97%e9%85%8d%e7%bd%aelogbacklockback%e5%bc%82%e6%ad%a5%e6%97%a5%e5%bf%97.html"
 ---
 {% raw %}
 # Spring Boot 日志配置(LogBack,LockBack异步日志) 

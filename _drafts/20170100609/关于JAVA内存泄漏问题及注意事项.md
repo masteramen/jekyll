@@ -3,11 +3,11 @@ layout: post
 title:  "关于JAVA内存泄漏问题及注意事项"
 title2:  "关于JAVA内存泄漏问题及注意事项"
 date:   2017-01-01 23:45:09  +0800
-source:  "http://www.jfox.info/about-java-memory-leak-problem-and-precautions.html"
+source:  "https://www.jfox.info/about-java-memory-leak-problem-and-precautions.html"
 fileName:  "20170100609"
 lang:  "zh_CN"
 published: true
-permalink: "about-java-memory-leak-problem-and-precautions.html"
+permalink: "2017/https://www.jfox.info/about-java-memory-leak-problem-and-precautions.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期二, 三月 11, 2014

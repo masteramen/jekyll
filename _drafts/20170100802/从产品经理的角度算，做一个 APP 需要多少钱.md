@@ -3,11 +3,11 @@ layout: post
 title:  "从产品经理的角度算，做一个 APP 需要多少钱"
 title2:  "从产品经理的角度算，做一个 APP 需要多少钱"
 date:   2017-01-01 23:48:22  +0800
-source:  "http://www.jfox.info/cong-chan-pin-jing-li-de-jiao-du-suan-zuo-yi-ge-app-xu-yao-duo-shao-qian.html"
+source:  "https://www.jfox.info/cong-chan-pin-jing-li-de-jiao-du-suan-zuo-yi-ge-app-xu-yao-duo-shao-qian.html"
 fileName:  "20170100802"
 lang:  "zh_CN"
 published: true
-permalink: "cong-chan-pin-jing-li-de-jiao-du-suan-zuo-yi-ge-app-xu-yao-duo-shao-qian.html"
+permalink: "2017/https://www.jfox.info/cong-chan-pin-jing-li-de-jiao-du-suan-zuo-yi-ge-app-xu-yao-duo-shao-qian.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期五, 十月 16, 2015
@@ -86,5 +86,5 @@ By Lee - Last updated: 星期五, 十月 16, 2015
 
 是的，当有人问题做一个APP需要多少钱时，你可以回答一个不太复杂的APP，从无到有做出来，半年第一个版本出来，需要100万。
 
-via [程序员和产品经理](http://www.jfox.info/go.php?url=http://mp.weixin.qq.com/s?__biz=MzA4NDQzNzI1NA==&amp;mid=209853964&amp;idx=1&amp;sn=ef23714c76a1a3da3aca08c9f6ca0217&amp;scene=23&amp;srcid=1015XCZysKOYXScCq8FySldv#rd)
+via [程序员和产品经理](https://www.jfox.info/go.php?url=http://mp.weixin.qq.com/s?__biz=MzA4NDQzNzI1NA==&amp;mid=209853964&amp;idx=1&amp;sn=ef23714c76a1a3da3aca08c9f6ca0217&amp;scene=23&amp;srcid=1015XCZysKOYXScCq8FySldv#rd)
 {% endraw %}

@@ -3,16 +3,16 @@ layout: post
 title:  "Java系统调优:内存管理与垃圾回收"
 title2:  "Java系统调优内存管理与垃圾回收"
 date:   2017-01-01 23:42:59  +0800
-source:  "http://www.jfox.info/java-xi-tong-diao-you-nei-cun-guan-li-yu-la-ji-hui-shou.html"
+source:  "https://www.jfox.info/java-xi-tong-diao-you-nei-cun-guan-li-yu-la-ji-hui-shou.html"
 fileName:  "20170100479"
 lang:  "zh_CN"
 published: true
-permalink: "java-xi-tong-diao-you-nei-cun-guan-li-yu-la-ji-hui-shou.html"
+permalink: "2017/https://www.jfox.info/java-xi-tong-diao-you-nei-cun-guan-li-yu-la-ji-hui-shou.html"
 ---
 {% raw %}
 **1、Java虚拟机运行时的数据区**
 
-[![image_51](http://www.jfox.info/wp-content/uploads/2013/10/image_51.png)](http://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2013/10/image_51.png)
+[![image_51](http://www.jfox.info/wp-content/uploads/2013/10/image_51.png)](https://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2013/10/image_51.png)
 
 **2、常用的内存区域调节参数**
 
@@ -43,7 +43,7 @@ permalink: "java-xi-tong-diao-you-nei-cun-guan-li-yu-la-ji-hui-shou.html"
 
 **5）断代法可用GC汇总**
 
-[![image_31](http://www.jfox.info/wp-content/uploads/2013/10/image_31.png)](http://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2013/10/image_31.png)
+[![image_31](http://www.jfox.info/wp-content/uploads/2013/10/image_31.png)](https://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2013/10/image_31.png)
 
 一、新生代可用GC
 
@@ -114,11 +114,11 @@ permalink: "java-xi-tong-diao-you-nei-cun-guan-li-yu-la-ji-hui-shou.html"
 
 1）默认GC组合
 
-[![image_91](http://www.jfox.info/wp-content/uploads/2013/10/image_91.png)](http://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2013/10/image_91.png)
+[![image_91](http://www.jfox.info/wp-content/uploads/2013/10/image_91.png)](https://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2013/10/image_91.png)
 
 2）可选的GC组合
 
-[![image_111](http://www.jfox.info/wp-content/uploads/2013/10/image_111.png)](http://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2013/10/image_111.png)
+[![image_111](http://www.jfox.info/wp-content/uploads/2013/10/image_111.png)](https://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2013/10/image_111.png)
 
 **7、GC监测**
 

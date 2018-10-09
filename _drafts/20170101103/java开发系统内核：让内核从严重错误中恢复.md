@@ -3,11 +3,11 @@ layout: post
 title:  "java开发系统内核：让内核从严重错误中恢复"
 title2:  "java开发系统内核：让内核从严重错误中恢复"
 date:   2017-01-01 23:53:23  +0800
-source:  "http://www.jfox.info/java%e5%bc%80%e5%8f%91%e7%b3%bb%e7%bb%9f%e5%86%85%e6%a0%b8%e8%ae%a9%e5%86%85%e6%a0%b8%e4%bb%8e%e4%b8%a5%e9%87%8d%e9%94%99%e8%af%af%e4%b8%ad%e6%81%a2%e5%a4%8d.html"
+source:  "https://www.jfox.info/java%e5%bc%80%e5%8f%91%e7%b3%bb%e7%bb%9f%e5%86%85%e6%a0%b8%e8%ae%a9%e5%86%85%e6%a0%b8%e4%bb%8e%e4%b8%a5%e9%87%8d%e9%94%99%e8%af%af%e4%b8%ad%e6%81%a2%e5%a4%8d.html"
 fileName:  "20170101103"
 lang:  "zh_CN"
 published: true
-permalink: "java%e5%bc%80%e5%8f%91%e7%b3%bb%e7%bb%9f%e5%86%85%e6%a0%b8%e8%ae%a9%e5%86%85%e6%a0%b8%e4%bb%8e%e4%b8%a5%e9%87%8d%e9%94%99%e8%af%af%e4%b8%ad%e6%81%a2%e5%a4%8d.html"
+permalink: "2017/https://www.jfox.info/java%e5%bc%80%e5%8f%91%e7%b3%bb%e7%bb%9f%e5%86%85%e6%a0%b8%e8%ae%a9%e5%86%85%e6%a0%b8%e4%bb%8e%e4%b8%a5%e9%87%8d%e9%94%99%e8%af%af%e4%b8%ad%e6%81%a2%e5%a4%8d.html"
 ---
 {% raw %}
 微软早期的DOS系统，存在一个严重的问题是，如果应用程序运行出现问题，它会导致整个系统完全奔溃掉，我们当前的系统内核也存在这一的问题，例如打开api_call.asm,其内容如下：

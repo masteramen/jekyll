@@ -3,11 +3,11 @@ layout: post
 title:  "Dubbo系列-4.工厂模式的Registry"
 title2:  "Dubbo系列-4.工厂模式的Registry"
 date:   2017-01-01 23:57:04  +0800
-source:  "http://www.jfox.info/dubbo%e7%b3%bb%e5%88%974%e5%b7%a5%e5%8e%82%e6%a8%a1%e5%bc%8f%e7%9a%84registry.html"
+source:  "https://www.jfox.info/dubbo%e7%b3%bb%e5%88%974%e5%b7%a5%e5%8e%82%e6%a8%a1%e5%bc%8f%e7%9a%84registry.html"
 fileName:  "20170101324"
 lang:  "zh_CN"
 published: true
-permalink: "dubbo%e7%b3%bb%e5%88%974%e5%b7%a5%e5%8e%82%e6%a8%a1%e5%bc%8f%e7%9a%84registry.html"
+permalink: "2017/https://www.jfox.info/dubbo%e7%b3%bb%e5%88%974%e5%b7%a5%e5%8e%82%e6%a8%a1%e5%bc%8f%e7%9a%84registry.html"
 ---
 {% raw %}
 # Dubbo系列-4.工厂模式的Registry 

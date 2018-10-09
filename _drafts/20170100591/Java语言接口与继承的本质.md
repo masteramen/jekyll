@@ -3,11 +3,11 @@ layout: post
 title:  "Java语言接口与继承的本质"
 title2:  "Java语言接口与继承的本质"
 date:   2017-01-01 23:44:51  +0800
-source:  "http://www.jfox.info/the-nature-of-java-language-interface-and-inheritance.html"
+source:  "https://www.jfox.info/the-nature-of-java-language-interface-and-inheritance.html"
 fileName:  "20170100591"
 lang:  "zh_CN"
 published: true
-permalink: "the-nature-of-java-language-interface-and-inheritance.html"
+permalink: "2017/https://www.jfox.info/the-nature-of-java-language-interface-and-inheritance.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期三, 二月 26, 2014

@@ -3,11 +3,11 @@ layout: post
 title:  "java面试如何介绍做过项目情况"
 title2:  "java面试如何介绍做过项目情况"
 date:   2017-01-01 23:42:07  +0800
-source:  "http://www.jfox.info/java-mian-shi-ru-he-jie-shao-zuo-guo-xiang-mu-qing-kuang.html"
+source:  "https://www.jfox.info/java-mian-shi-ru-he-jie-shao-zuo-guo-xiang-mu-qing-kuang.html"
 fileName:  "20170100427"
 lang:  "zh_CN"
 published: true
-permalink: "java-mian-shi-ru-he-jie-shao-zuo-guo-xiang-mu-qing-kuang.html"
+permalink: "2017/https://www.jfox.info/java-mian-shi-ru-he-jie-shao-zuo-guo-xiang-mu-qing-kuang.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期日, 六月 9, 2013

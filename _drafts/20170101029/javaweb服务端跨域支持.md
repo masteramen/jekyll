@@ -3,11 +3,11 @@ layout: post
 title:  "javaweb服务端跨域支持"
 title2:  "javaweb服务端跨域支持"
 date:   2017-01-01 23:52:09  +0800
-source:  "http://www.jfox.info/javaweb%e6%9c%8d%e5%8a%a1%e7%ab%af%e8%b7%a8%e5%9f%9f%e6%94%af%e6%8c%81.html"
+source:  "https://www.jfox.info/javaweb%e6%9c%8d%e5%8a%a1%e7%ab%af%e8%b7%a8%e5%9f%9f%e6%94%af%e6%8c%81.html"
 fileName:  "20170101029"
 lang:  "zh_CN"
 published: true
-permalink: "javaweb%e6%9c%8d%e5%8a%a1%e7%ab%af%e8%b7%a8%e5%9f%9f%e6%94%af%e6%8c%81.html"
+permalink: "2017/https://www.jfox.info/javaweb%e6%9c%8d%e5%8a%a1%e7%ab%af%e8%b7%a8%e5%9f%9f%e6%94%af%e6%8c%81.html"
 ---
 {% raw %}
 项目开发为了支持web浏览器ajax的直接请求，涉及到了跨域的需求，通过学习对跨域有了更深入的认识，现在总结一下：

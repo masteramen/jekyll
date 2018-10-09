@@ -3,11 +3,11 @@ layout: post
 title:  "关于HTML5，你应该知道这些"
 title2:  "关于HTML5，你应该知道这些"
 date:   2017-01-01 23:51:41  +0800
-source:  "http://www.jfox.info/%e5%85%b3%e4%ba%8ehtml5-%e4%bd%a0%e5%ba%94%e8%af%a5%e7%9f%a5%e9%81%93%e8%bf%99%e4%ba%9b.html"
+source:  "https://www.jfox.info/%e5%85%b3%e4%ba%8ehtml5-%e4%bd%a0%e5%ba%94%e8%af%a5%e7%9f%a5%e9%81%93%e8%bf%99%e4%ba%9b.html"
 fileName:  "20170101001"
 lang:  "zh_CN"
 published: true
-permalink: "%e5%85%b3%e4%ba%8ehtml5-%e4%bd%a0%e5%ba%94%e8%af%a5%e7%9f%a5%e9%81%93%e8%bf%99%e4%ba%9b.html"
+permalink: "2017/https://www.jfox.info/%e5%85%b3%e4%ba%8ehtml5-%e4%bd%a0%e5%ba%94%e8%af%a5%e7%9f%a5%e9%81%93%e8%bf%99%e4%ba%9b.html"
 ---
 {% raw %}
 HTML5，是最新的HTML语言标准。HTML语言是一种标记语言，用于结构化和展示**World Wide Web**页面的内容。本文将对HTML5语言进行简单讲解。

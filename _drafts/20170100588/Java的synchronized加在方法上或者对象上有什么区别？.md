@@ -3,11 +3,11 @@ layout: post
 title:  "Java的synchronized加在方法上或者对象上有什么区别？"
 title2:  "Java的synchronized加在方法上或者对象上有什么区别？"
 date:   2017-01-01 23:44:48  +0800
-source:  "http://www.jfox.info/the-difference-of-java-synchronized-for-method-and-object.html"
+source:  "https://www.jfox.info/the-difference-of-java-synchronized-for-method-and-object.html"
 fileName:  "20170100588"
 lang:  "zh_CN"
 published: true
-permalink: "the-difference-of-java-synchronized-for-method-and-object.html"
+permalink: "2017/https://www.jfox.info/the-difference-of-java-synchronized-for-method-and-object.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期二, 二月 25, 2014
@@ -204,5 +204,5 @@ case2();
 
 注：如果要试验，上面的case1和case2请分开运行（可以跑两次，每次注释掉其中一个语句），这样子可以看得比较清楚。
 
-参考来源 [Java的synchronized加在方法上或者对象上有什么区别？](http://www.jfox.info/go.php?url=http://www.jfox.info/url.php?url=http%3A%2F%2Fblog.iamzsx.me%2Fshow.html%3Fid%3D126001).
+参考来源 [Java的synchronized加在方法上或者对象上有什么区别？](https://www.jfox.info/go.php?url=http://www.jfox.info/url.php?url=http%3A%2F%2Fblog.iamzsx.me%2Fshow.html%3Fid%3D126001).
 {% endraw %}

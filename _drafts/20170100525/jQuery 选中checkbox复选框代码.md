@@ -3,11 +3,11 @@ layout: post
 title:  "jQuery 选中checkbox复选框代码"
 title2:  "jQuery 选中checkbox复选框代码"
 date:   2017-01-01 23:43:45  +0800
-source:  "http://www.jfox.info/jquery-%e9%80%89%e4%b8%adcheckbox%e5%a4%8d%e9%80%89%e6%a1%86%e4%bb%a3%e7%a0%81.html"
+source:  "https://www.jfox.info/jquery-%e9%80%89%e4%b8%adcheckbox%e5%a4%8d%e9%80%89%e6%a1%86%e4%bb%a3%e7%a0%81.html"
 fileName:  "20170100525"
 lang:  "zh_CN"
 published: true
-permalink: "jquery-%e9%80%89%e4%b8%adcheckbox%e5%a4%8d%e9%80%89%e6%a1%86%e4%bb%a3%e7%a0%81.html"
+permalink: "2017/https://www.jfox.info/jquery-%e9%80%89%e4%b8%adcheckbox%e5%a4%8d%e9%80%89%e6%a1%86%e4%bb%a3%e7%a0%81.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期三, 二月 5, 2014

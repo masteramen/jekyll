@@ -3,11 +3,11 @@ layout: post
 title:  "oracle sqlplus添加新用户、赋值权限、新建表空间"
 title2:  "oracle sqlplus添加新用户、赋值权限、新建表空间"
 date:   2017-01-01 23:46:26  +0800
-source:  "http://www.jfox.info/oracle-sqlplus-tian-jia-xin-yong-hu-fu-zhi-quan-xian-xin-jian-biao-kong-jian.html"
+source:  "https://www.jfox.info/oracle-sqlplus-tian-jia-xin-yong-hu-fu-zhi-quan-xian-xin-jian-biao-kong-jian.html"
 fileName:  "20170100686"
 lang:  "zh_CN"
 published: true
-permalink: "oracle-sqlplus-tian-jia-xin-yong-hu-fu-zhi-quan-xian-xin-jian-biao-kong-jian.html"
+permalink: "2017/https://www.jfox.info/oracle-sqlplus-tian-jia-xin-yong-hu-fu-zhi-quan-xian-xin-jian-biao-kong-jian.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期三, 九月 3, 2014
@@ -145,5 +145,5 @@ select * from user_role_privs;
 ALTER   USER   test   DEFAULT   TABLESPACE   users   QUOTA   UNLIMITED   ON   users; (修改用户默认表空间)
 ALTER   USER   test   TEMPORARY   TABLESPACE   temp;(修改用户临时空间)
 
-[原文](http://www.jfox.info/go.php?url=http://www.jfox.info/url.php?_v=v4&amp;_src=&amp;isencode=1&amp;content=dGltZT0xNDA5NzE3MzYxNDEyJnVybD1odHRwJTNBJTJGJTJGZ2Vla2FueXdoZXJlLmJsb2cuMTYzLmNvbSUyRmJsb2clMkZzdGF0aWMlMkYxODk5MjAzNzMyMDExNjE4MjIzMTY3MjElMkY=)
+[原文](https://www.jfox.info/go.php?url=http://www.jfox.info/url.php?_v=v4&amp;_src=&amp;isencode=1&amp;content=dGltZT0xNDA5NzE3MzYxNDEyJnVybD1odHRwJTNBJTJGJTJGZ2Vla2FueXdoZXJlLmJsb2cuMTYzLmNvbSUyRmJsb2clMkZzdGF0aWMlMkYxODk5MjAzNzMyMDExNjE4MjIzMTY3MjElMkY=)
 {% endraw %}

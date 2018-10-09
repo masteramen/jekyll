@@ -3,11 +3,11 @@ layout: post
 title:  "解决CXF获取客户端IP(WebServiceContext为null问题)"
 title2:  "解决CXF获取客户端IP(WebServiceContext为null问题)"
 date:   2017-01-01 23:43:14  +0800
-source:  "http://www.jfox.info/jie-jue-cxf-huo-qu-ke-hu-duan-ip-webservicecontext-wei-null-wen-ti.html"
+source:  "https://www.jfox.info/jie-jue-cxf-huo-qu-ke-hu-duan-ip-webservicecontext-wei-null-wen-ti.html"
 fileName:  "20170100494"
 lang:  "zh_CN"
 published: true
-permalink: "jie-jue-cxf-huo-qu-ke-hu-duan-ip-webservicecontext-wei-null-wen-ti.html"
+permalink: "2017/https://www.jfox.info/jie-jue-cxf-huo-qu-ke-hu-duan-ip-webservicecontext-wei-null-wen-ti.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期三, 十一月 27, 2013

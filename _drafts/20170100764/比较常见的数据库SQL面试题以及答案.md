@@ -3,11 +3,11 @@ layout: post
 title:  "比较常见的数据库SQL面试题以及答案"
 title2:  "比较常见的数据库SQL面试题以及答案"
 date:   2017-01-01 23:47:44  +0800
-source:  "http://www.jfox.info/bi-jiao-chang-jian-de-shu-ju-ku-sql-mian-shi-ti-yi-ji-da-an.html"
+source:  "https://www.jfox.info/bi-jiao-chang-jian-de-shu-ju-ku-sql-mian-shi-ti-yi-ji-da-an.html"
 fileName:  "20170100764"
 lang:  "zh_CN"
 published: true
-permalink: "bi-jiao-chang-jian-de-shu-ju-ku-sql-mian-shi-ti-yi-ji-da-an.html"
+permalink: "2017/https://www.jfox.info/bi-jiao-chang-jian-de-shu-ju-ku-sql-mian-shi-ti-yi-ji-da-an.html"
 ---
 {% raw %}
 下面的SQL题目都是比较基础，比较常见的数据库SQL面试题，在技术面试环节虽然碰到相同题目的机会比较少，但解题的基本思路都是差不多的。下面是SQL面试题描述：

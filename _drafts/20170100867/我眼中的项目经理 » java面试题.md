@@ -3,11 +3,11 @@ layout: post
 title:  "我眼中的项目经理 » java面试题"
 title2:  "我眼中的项目经理 » java面试题"
 date:   2017-01-01 23:49:27  +0800
-source:  "http://www.jfox.info/%e6%88%91%e7%9c%bc%e4%b8%ad%e7%9a%84%e9%a1%b9%e7%9b%ae%e7%bb%8f%e7%90%86.html"
+source:  "https://www.jfox.info/%e6%88%91%e7%9c%bc%e4%b8%ad%e7%9a%84%e9%a1%b9%e7%9b%ae%e7%bb%8f%e7%90%86.html"
 fileName:  "20170100867"
 lang:  "zh_CN"
 published: true
-permalink: "%e6%88%91%e7%9c%bc%e4%b8%ad%e7%9a%84%e9%a1%b9%e7%9b%ae%e7%bb%8f%e7%90%86.html"
+permalink: "2017/https://www.jfox.info/%e6%88%91%e7%9c%bc%e4%b8%ad%e7%9a%84%e9%a1%b9%e7%9b%ae%e7%bb%8f%e7%90%86.html"
 ---
 {% raw %}
 在项目组待的时间久了，渐渐地跟微软的项目经理Michael熟悉起来了，跟他有过很多次深入的聊天，向他请教过很多关于人生，理想，技术上的问题，不得不说，项目经理是我神往的角色。虽然我没有亲身经历过，但是我认为做项目经理很有意思，把一个想法变成项目，服务于业务，这是我期望的工作。 佛者说：“一花一世界，一叶一菩提”，不得不说，修行是一个技术活，面对同一个世界，眼界的不同，能够看到的事物也是不同的；同样一句话，阅历不同，理解也会不同。那我就说说我眼中的项目经理，与常人不同的是，他们总是更进一步，想的更多，做的更多。

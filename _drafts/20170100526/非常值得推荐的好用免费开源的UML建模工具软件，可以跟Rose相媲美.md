@@ -3,11 +3,11 @@ layout: post
 title:  "非常值得推荐的好用免费开源的UML建模工具软件，可以跟Rose相媲美"
 title2:  "非常值得推荐的好用免费开源的UML建模工具软件，可以跟Rose相媲美"
 date:   2017-01-01 23:43:46  +0800
-source:  "http://www.jfox.info/%e5%a5%bd%e7%94%a8%e5%85%8d%e8%b4%b9%e5%bc%80%e6%ba%90%e7%9a%84uml%e5%bb%ba%e6%a8%a1%e5%b7%a5%e5%85%b7%e8%bd%af%e4%bb%b6.html"
+source:  "https://www.jfox.info/%e5%a5%bd%e7%94%a8%e5%85%8d%e8%b4%b9%e5%bc%80%e6%ba%90%e7%9a%84uml%e5%bb%ba%e6%a8%a1%e5%b7%a5%e5%85%b7%e8%bd%af%e4%bb%b6.html"
 fileName:  "20170100526"
 lang:  "zh_CN"
 published: true
-permalink: "%e5%a5%bd%e7%94%a8%e5%85%8d%e8%b4%b9%e5%bc%80%e6%ba%90%e7%9a%84uml%e5%bb%ba%e6%a8%a1%e5%b7%a5%e5%85%b7%e8%bd%af%e4%bb%b6.html"
+permalink: "2017/https://www.jfox.info/%e5%a5%bd%e7%94%a8%e5%85%8d%e8%b4%b9%e5%bc%80%e6%ba%90%e7%9a%84uml%e5%bb%ba%e6%a8%a1%e5%b7%a5%e5%85%b7%e8%bd%af%e4%bb%b6.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期四, 二月 6, 2014
@@ -20,23 +20,23 @@ UML建模，我们都是用rose，从前几天开始，我使用StarUML来替代
 
 用例图
 
-[![dbimage](http://www.jfox.info/wp-content/uploads/2014/02/dbimage.phpid48453)](http://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2014/02/dbimage.phpid48453)
+[![dbimage](http://www.jfox.info/wp-content/uploads/2014/02/dbimage.phpid48453)](https://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2014/02/dbimage.phpid48453)
 
 类图
 
-[![dbimage](http://www.jfox.info/wp-content/uploads/2014/02/dbimage.phpid48455)](http://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2014/02/dbimage.phpid48455)
+[![dbimage](http://www.jfox.info/wp-content/uploads/2014/02/dbimage.phpid48455)](https://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2014/02/dbimage.phpid48455)
 
 组件图
 
-[![dbimage](http://www.jfox.info/wp-content/uploads/2014/02/dbimage.phpid48457)](http://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2014/02/dbimage.phpid48457)
+[![dbimage](http://www.jfox.info/wp-content/uploads/2014/02/dbimage.phpid48457)](https://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2014/02/dbimage.phpid48457)
 
 ER图
 
-[![dbimage](http://www.jfox.info/wp-content/uploads/2014/02/dbimage.phpid48459)](http://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2014/02/dbimage.phpid48459)
+[![dbimage](http://www.jfox.info/wp-content/uploads/2014/02/dbimage.phpid48459)](https://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2014/02/dbimage.phpid48459)
 
 自定义的一些图
 
-[![dbimage](http://www.jfox.info/wp-content/uploads/2014/02/dbimage.phpid48461)](http://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2014/02/dbimage.phpid48461)
+[![dbimage](http://www.jfox.info/wp-content/uploads/2014/02/dbimage.phpid48461)](https://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2014/02/dbimage.phpid48461)
 
 要说明一点的是，StarUML可以像rose一样，根据序列图生成协作图。
 
@@ -44,7 +44,7 @@ ER图
 
 下载地址：
 
-[http://jaist.dl.sourceforge.net/sourceforge/staruml/staruml-5.0-with-cm.exe](http://www.jfox.info/go.php?url=http://jaist.dl.sourceforge.net/sourceforge/staruml/staruml-5.0-with-cm.exe)
+[http://jaist.dl.sourceforge.net/sourceforge/staruml/staruml-5.0-with-cm.exe](https://www.jfox.info/go.php?url=http://jaist.dl.sourceforge.net/sourceforge/staruml/staruml-5.0-with-cm.exe)
 
-参考来源 [给大家推荐一个替代Rose建模的免费软件–StarUML – 道长A的地盘 – BlogJava](http://www.jfox.info/go.php?url=http://www.jfox.info/url.php?url=http%3A%2F%2Fwww.blogjava.net%2Fdaozhanga%2Farchive%2F2009%2F03%2F28%2F262532.html).
+参考来源 [给大家推荐一个替代Rose建模的免费软件–StarUML – 道长A的地盘 – BlogJava](https://www.jfox.info/go.php?url=http://www.jfox.info/url.php?url=http%3A%2F%2Fwww.blogjava.net%2Fdaozhanga%2Farchive%2F2009%2F03%2F28%2F262532.html).
 {% endraw %}

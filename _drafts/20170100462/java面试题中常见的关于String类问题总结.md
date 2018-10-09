@@ -3,11 +3,11 @@ layout: post
 title:  "java面试题中常见的关于String类问题总结"
 title2:  "java面试题中常见的关于String类问题总结"
 date:   2017-01-01 23:42:42  +0800
-source:  "http://www.jfox.info/java-mian-shi-ti-zhong-chang-jian-de-guan-yu-string-lei-wen-ti-zong-jie.html"
+source:  "https://www.jfox.info/java-mian-shi-ti-zhong-chang-jian-de-guan-yu-string-lei-wen-ti-zong-jie.html"
 fileName:  "20170100462"
 lang:  "zh_CN"
 published: true
-permalink: "java-mian-shi-ti-zhong-chang-jian-de-guan-yu-string-lei-wen-ti-zong-jie.html"
+permalink: "2017/https://www.jfox.info/java-mian-shi-ti-zhong-chang-jian-de-guan-yu-string-lei-wen-ti-zong-jie.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期五, 十月 18, 2013

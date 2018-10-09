@@ -3,11 +3,11 @@ layout: post
 title:  "如何添加jar文件到maven构建classpath中"
 title2:  "如何添加jar文件到maven构建classpath中"
 date:   2017-01-01 23:43:34  +0800
-source:  "http://www.jfox.info/ru-he-tian-jia-jar-wen-jian-dao-maven-gou-jian-classpath-zhong.html"
+source:  "https://www.jfox.info/ru-he-tian-jia-jar-wen-jian-dao-maven-gou-jian-classpath-zhong.html"
 fileName:  "20170100514"
 lang:  "zh_CN"
 published: true
-permalink: "ru-he-tian-jia-jar-wen-jian-dao-maven-gou-jian-classpath-zhong.html"
+permalink: "2017/https://www.jfox.info/ru-he-tian-jia-jar-wen-jian-dao-maven-gou-jian-classpath-zhong.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期六, 二月 1, 2014

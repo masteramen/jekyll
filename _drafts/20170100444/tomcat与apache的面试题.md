@@ -3,11 +3,11 @@ layout: post
 title:  "tomcat与apache的面试题"
 title2:  "tomcat与apache的面试题"
 date:   2017-01-01 23:42:24  +0800
-source:  "http://www.jfox.info/tomcat-yu-apache-de-mian-shi-ti.html"
+source:  "https://www.jfox.info/tomcat-yu-apache-de-mian-shi-ti.html"
 fileName:  "20170100444"
 lang:  "zh_CN"
 published: true
-permalink: "tomcat-yu-apache-de-mian-shi-ti.html"
+permalink: "2017/https://www.jfox.info/tomcat-yu-apache-de-mian-shi-ti.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期六, 六月 22, 2013

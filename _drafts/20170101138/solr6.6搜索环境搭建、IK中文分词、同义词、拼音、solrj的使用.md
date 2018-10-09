@@ -3,15 +3,15 @@ layout: post
 title:  "solr6.6搜索环境搭建、IK中文分词、同义词、拼音、solrj的使用"
 title2:  "solr6.6搜索环境搭建、IK中文分词、同义词、拼音、solrj的使用"
 date:   2017-01-01 23:53:58  +0800
-source:  "http://www.jfox.info/solr66%e6%90%9c%e7%b4%a2%e7%8e%af%e5%a2%83%e6%90%ad%e5%bb%baik%e4%b8%ad%e6%96%87%e5%88%86%e8%af%8d%e5%90%8c%e4%b9%89%e8%af%8d%e6%8b%bc%e9%9f%b3solrj%e7%9a%84%e4%bd%bf%e7%94%a8.html"
+source:  "https://www.jfox.info/solr66%e6%90%9c%e7%b4%a2%e7%8e%af%e5%a2%83%e6%90%ad%e5%bb%baik%e4%b8%ad%e6%96%87%e5%88%86%e8%af%8d%e5%90%8c%e4%b9%89%e8%af%8d%e6%8b%bc%e9%9f%b3solrj%e7%9a%84%e4%bd%bf%e7%94%a8.html"
 fileName:  "20170101138"
 lang:  "zh_CN"
 published: true
-permalink: "solr66%e6%90%9c%e7%b4%a2%e7%8e%af%e5%a2%83%e6%90%ad%e5%bb%baik%e4%b8%ad%e6%96%87%e5%88%86%e8%af%8d%e5%90%8c%e4%b9%89%e8%af%8d%e6%8b%bc%e9%9f%b3solrj%e7%9a%84%e4%bd%bf%e7%94%a8.html"
+permalink: "2017/https://www.jfox.info/solr66%e6%90%9c%e7%b4%a2%e7%8e%af%e5%a2%83%e6%90%ad%e5%bb%baik%e4%b8%ad%e6%96%87%e5%88%86%e8%af%8d%e5%90%8c%e4%b9%89%e8%af%8d%e6%8b%bc%e9%9f%b3solrj%e7%9a%84%e4%bd%bf%e7%94%a8.html"
 ---
 {% raw %}
 2017-06-20 Apache官网发布了solr6.6版本下载地址
-    下载地址:[https://mirrors.tuna.tsinghua.edu.cn/apache/lucene/solr/6.6.0/](http://www.jfox.info/go.php?url=https://mirrors.tuna.tsinghua.edu.cn/apache/lucene/solr/6.6.0/)
+    下载地址:[https://mirrors.tuna.tsinghua.edu.cn/apache/lucene/solr/6.6.0/](https://www.jfox.info/go.php?url=https://mirrors.tuna.tsinghua.edu.cn/apache/lucene/solr/6.6.0/)
 
 **solr6.6搜索环境搭建、IK中文分词同义词拼音solrj的使用
 **
@@ -284,5 +284,18 @@ ClientUtils.escapeQueryChars(key);就可以返回转义后的字符串了.
     query.set("fq", "product_price:[0 TO 20]");//设置筛选条件,可多个
     query.setStart(0);//设置开始的条数  用于分页
     query.setRows(10);//设置显示条数  
-    query.addSort("score", ORDER.desc); //设置排序方式,可添加多个排序方式,有顺序的优先级.score为默认的排序方式,会根据结果的符�
+    query.addSort("score", ORDER.desc); //设置排序方式,可添加多个排序方式,有顺序的优先级.score为默认的排序方式,会根据结果的符合度排序.
+    //若不设置默认为score,若设置别的排序.则不会默认score,和空参构造.有参构造同理.
+    query.setHighlight(true);//设置高亮
+    query.addHighlightField("product_name");//设置高亮的field.
+    query.setHighlightSimplePre("<font color='red'>");
+    query.setHighlightSimplePost("</font>");
+    QueryResponse response = httpSolrClient.query(query);//执行查询.返回结果
+    long numFound = response.getResults().getNumFound();//查询总共条数
+    List<Map<String, Object>> resultList = response.getResults();//返回结果集
+    for (SolrDocument doc : resultList ) {
+    Map<String, Map<String, List<String>>> highlighting = response.getHighlighting();//获取高亮
+    List<String> productNames = highlighting.get((String) doc.get("id")).get("product_name");//取得高亮如果有,第一个值就是.这个地方和老版本不同,老版本是通过ID取,这里是通过ID的值区
+    .......
+    }
 {% endraw %}

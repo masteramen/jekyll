@@ -3,16 +3,16 @@ layout: post
 title:  "CIA Vault7 系列后续：新工具“Elsa”可通过WiFi对用户进行定位"
 title2:  "CIA Vault7 系列后续：新工具“Elsa”可通过WiFi对用户进行定位"
 date:   2017-01-01 23:51:40  +0800
-source:  "http://www.jfox.info/cia-vault7-%e7%b3%bb%e5%88%97%e5%90%8e%e7%bb%ad-%e6%96%b0%e5%b7%a5%e5%85%b7-elsa-%e5%8f%af%e9%80%9a%e8%bf%87wifi%e5%af%b9%e7%94%a8%e6%88%b7%e8%bf%9b%e8%a1%8c%e5%ae%9a%e4%bd%8d.html"
+source:  "https://www.jfox.info/cia-vault7-%e7%b3%bb%e5%88%97%e5%90%8e%e7%bb%ad-%e6%96%b0%e5%b7%a5%e5%85%b7-elsa-%e5%8f%af%e9%80%9a%e8%bf%87wifi%e5%af%b9%e7%94%a8%e6%88%b7%e8%bf%9b%e8%a1%8c%e5%ae%9a%e4%bd%8d.html"
 fileName:  "20170101000"
 lang:  "zh_CN"
 published: true
-permalink: "cia-vault7-%e7%b3%bb%e5%88%97%e5%90%8e%e7%bb%ad-%e6%96%b0%e5%b7%a5%e5%85%b7-elsa-%e5%8f%af%e9%80%9a%e8%bf%87wifi%e5%af%b9%e7%94%a8%e6%88%b7%e8%bf%9b%e8%a1%8c%e5%ae%9a%e4%bd%8d.html"
+permalink: "2017/https://www.jfox.info/cia-vault7-%e7%b3%bb%e5%88%97%e5%90%8e%e7%bb%ad-%e6%96%b0%e5%b7%a5%e5%85%b7-elsa-%e5%8f%af%e9%80%9a%e8%bf%87wifi%e5%af%b9%e7%94%a8%e6%88%b7%e8%bf%9b%e8%a1%8c%e5%ae%9a%e4%bd%8d.html"
 ---
 {% raw %}
 如果目标设备连接上了网络，恶意程序就会自动尝试使用谷歌或微软的公共地理位置数据库进行地理位置匹配，并将经纬度数据及时间戳一起保存下来。—— WikiLeaks
 
-ELSA 工具主要针对具备 WiFi 功能的 Windows 设备，可以通过附近的 WiFi 网络接入点的 ESS （Extended Service Set）数据匹配地理信息数据库后定位用户的位置。此次维基解密发布的 42 页[文档说明](http://www.jfox.info/go.php?url=https://wikileaks.org/vault7/document/Elsa_User_Manual/Elsa_User_Manual.pdf)中，将该工具的名字定为 ELSA 。文档手册中包含了一张图片，用以解释 CIA 人员是如何使用这个工具的。具体的操作步骤也可以从图中获知：
+ELSA 工具主要针对具备 WiFi 功能的 Windows 设备，可以通过附近的 WiFi 网络接入点的 ESS （Extended Service Set）数据匹配地理信息数据库后定位用户的位置。此次维基解密发布的 42 页[文档说明](https://www.jfox.info/go.php?url=https://wikileaks.org/vault7/document/Elsa_User_Manual/Elsa_User_Manual.pdf)中，将该工具的名字定为 ELSA 。文档手册中包含了一张图片，用以解释 CIA 人员是如何使用这个工具的。具体的操作步骤也可以从图中获知：
 
 ## 使用方法
 
@@ -58,7 +58,7 @@ CIA 人员连接到目标用户电脑获取到 ELSA log 文件。这一步依旧
 
 CIA 人员解密 log 文件，继续分析目标用户获取所需结果。有时可能为了提升查询的准确度，他们会使用其他的EES地理位置数据库来进行重复查询。
 
-ELSA 文档下载地址[点这里](http://www.jfox.info/go.php?url=https://wikileaks.org/vault7/document/Elsa_User_Manual/Elsa_User_Manual.pdf)
+ELSA 文档下载地址[点这里](https://www.jfox.info/go.php?url=https://wikileaks.org/vault7/document/Elsa_User_Manual/Elsa_User_Manual.pdf)
 
 ## Vault 7 系列文件一览
 

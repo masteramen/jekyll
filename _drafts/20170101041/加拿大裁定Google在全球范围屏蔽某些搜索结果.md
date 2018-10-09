@@ -3,11 +3,11 @@ layout: post
 title:  "加拿大裁定Google在全球范围屏蔽某些搜索结果"
 title2:  "加拿大裁定Google在全球范围屏蔽某些搜索结果"
 date:   2017-01-01 23:52:21  +0800
-source:  "http://www.jfox.info/%e5%8a%a0%e6%8b%bf%e5%a4%a7%e8%a3%81%e5%ae%9agoogle%e5%9c%a8%e5%85%a8%e7%90%83%e8%8c%83%e5%9b%b4%e5%b1%8f%e8%94%bd%e6%9f%90%e4%ba%9b%e6%90%9c%e7%b4%a2%e7%bb%93%e6%9e%9c.html"
+source:  "https://www.jfox.info/%e5%8a%a0%e6%8b%bf%e5%a4%a7%e8%a3%81%e5%ae%9agoogle%e5%9c%a8%e5%85%a8%e7%90%83%e8%8c%83%e5%9b%b4%e5%b1%8f%e8%94%bd%e6%9f%90%e4%ba%9b%e6%90%9c%e7%b4%a2%e7%bb%93%e6%9e%9c.html"
 fileName:  "20170101041"
 lang:  "zh_CN"
 published: true
-permalink: "%e5%8a%a0%e6%8b%bf%e5%a4%a7%e8%a3%81%e5%ae%9agoogle%e5%9c%a8%e5%85%a8%e7%90%83%e8%8c%83%e5%9b%b4%e5%b1%8f%e8%94%bd%e6%9f%90%e4%ba%9b%e6%90%9c%e7%b4%a2%e7%bb%93%e6%9e%9c.html"
+permalink: "2017/https://www.jfox.info/%e5%8a%a0%e6%8b%bf%e5%a4%a7%e8%a3%81%e5%ae%9agoogle%e5%9c%a8%e5%85%a8%e7%90%83%e8%8c%83%e5%9b%b4%e5%b1%8f%e8%94%bd%e6%9f%90%e4%ba%9b%e6%90%9c%e7%b4%a2%e7%bb%93%e6%9e%9c.html"
 ---
 {% raw %}
 加拿大最高法院裁定 Google 必须在全球范围屏蔽某些搜索结果，这一判决可能会有深远影响。

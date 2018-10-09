@@ -3,11 +3,11 @@ layout: post
 title:  "二十五、Elasticsearch的批量查询mget"
 title2:  "二十五、Elasticsearch的批量查询mget"
 date:   2017-01-01 23:53:34  +0800
-source:  "http://www.jfox.info/%e4%ba%8c%e5%8d%81%e4%ba%94elasticsearch%e7%9a%84%e6%89%b9%e9%87%8f%e6%9f%a5%e8%af%a2mget.html"
+source:  "https://www.jfox.info/%e4%ba%8c%e5%8d%81%e4%ba%94elasticsearch%e7%9a%84%e6%89%b9%e9%87%8f%e6%9f%a5%e8%af%a2mget.html"
 fileName:  "20170101114"
 lang:  "zh_CN"
 published: true
-permalink: "%e4%ba%8c%e5%8d%81%e4%ba%94elasticsearch%e7%9a%84%e6%89%b9%e9%87%8f%e6%9f%a5%e8%af%a2mget.html"
+permalink: "2017/https://www.jfox.info/%e4%ba%8c%e5%8d%81%e4%ba%94elasticsearch%e7%9a%84%e6%89%b9%e9%87%8f%e6%9f%a5%e8%af%a2mget.html"
 ---
 {% raw %}
 **1、什么是批量查询**

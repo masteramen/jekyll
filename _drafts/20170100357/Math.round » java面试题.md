@@ -3,11 +3,11 @@ layout: post
 title:  "Math.round » java面试题"
 title2:  "Math.round » java面试题"
 date:   2017-01-01 23:40:57  +0800
-source:  "http://www.jfox.info/Math-round.html"
+source:  "https://www.jfox.info/Math-round.html"
 fileName:  "20170100357"
 lang:  "zh_CN"
 published: true
-permalink: "Math-round.html"
+permalink: "2017/https://www.jfox.info/Math-round.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期日, 五月 19, 2013

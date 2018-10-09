@@ -3,11 +3,11 @@ layout: post
 title:  "Java入门测试题，测测你基础知识掌握程度（附答案及个人解析）"
 title2:  "Java入门测试题，测测你基础知识掌握程度（附答案及个人解析）"
 date:   2017-01-01 23:50:42  +0800
-source:  "http://www.jfox.info/java%e5%85%a5%e9%97%a8%e6%b5%8b%e8%af%95%e9%a2%98%ef%bc%8c%e6%b5%8b%e6%b5%8b%e4%bd%a0%e5%9f%ba%e7%a1%80%e7%9f%a5%e8%af%86%e6%8e%8c%e6%8f%a1%e7%a8%8b%e5%ba%a6%ef%bc%88%e9%99%84%e7%ad%94%e6%a1%88.html"
+source:  "https://www.jfox.info/java%e5%85%a5%e9%97%a8%e6%b5%8b%e8%af%95%e9%a2%98%ef%bc%8c%e6%b5%8b%e6%b5%8b%e4%bd%a0%e5%9f%ba%e7%a1%80%e7%9f%a5%e8%af%86%e6%8e%8c%e6%8f%a1%e7%a8%8b%e5%ba%a6%ef%bc%88%e9%99%84%e7%ad%94%e6%a1%88.html"
 fileName:  "20170100942"
 lang:  "zh_CN"
 published: true
-permalink: "java%e5%85%a5%e9%97%a8%e6%b5%8b%e8%af%95%e9%a2%98%ef%bc%8c%e6%b5%8b%e6%b5%8b%e4%bd%a0%e5%9f%ba%e7%a1%80%e7%9f%a5%e8%af%86%e6%8e%8c%e6%8f%a1%e7%a8%8b%e5%ba%a6%ef%bc%88%e9%99%84%e7%ad%94%e6%a1%88.html"
+permalink: "2017/https://www.jfox.info/java%e5%85%a5%e9%97%a8%e6%b5%8b%e8%af%95%e9%a2%98%ef%bc%8c%e6%b5%8b%e6%b5%8b%e4%bd%a0%e5%9f%ba%e7%a1%80%e7%9f%a5%e8%af%86%e6%8e%8c%e6%8f%a1%e7%a8%8b%e5%ba%a6%ef%bc%88%e9%99%84%e7%ad%94%e6%a1%88.html"
 ---
 {% raw %}
 class Happy {

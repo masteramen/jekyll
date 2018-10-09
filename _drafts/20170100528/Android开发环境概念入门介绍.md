@@ -3,11 +3,11 @@ layout: post
 title:  "Android开发环境概念入门介绍"
 title2:  "Android开发环境概念入门介绍"
 date:   2017-01-01 23:43:48  +0800
-source:  "http://www.jfox.info/android%e5%bc%80%e5%8f%91%e7%8e%af%e5%a2%83%e6%a6%82%e5%bf%b5%e5%85%a5%e9%97%a8%e4%bb%8b%e7%bb%8d.html"
+source:  "https://www.jfox.info/android%e5%bc%80%e5%8f%91%e7%8e%af%e5%a2%83%e6%a6%82%e5%bf%b5%e5%85%a5%e9%97%a8%e4%bb%8b%e7%bb%8d.html"
 fileName:  "20170100528"
 lang:  "zh_CN"
 published: true
-permalink: "android%e5%bc%80%e5%8f%91%e7%8e%af%e5%a2%83%e6%a6%82%e5%bf%b5%e5%85%a5%e9%97%a8%e4%bb%8b%e7%bb%8d.html"
+permalink: "2017/https://www.jfox.info/android%e5%bc%80%e5%8f%91%e7%8e%af%e5%a2%83%e6%a6%82%e5%bf%b5%e5%85%a5%e9%97%a8%e4%bb%8b%e7%bb%8d.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期五, 二月 7, 2014
@@ -16,7 +16,7 @@ By Lee - Last updated: 星期五, 二月 7, 2014
 
 Android是Google主导开发的基于Linux开源智能移动终端操作系统，当然这里说的开源，也不是说Google把所有的接口库源码都会给你共享了，还是有些关键部位我们暂时还看不到的，但就应用程序开发人员而言，已经够用的了，“几乎都是开源的”。Android架构如下（本图来源于Google官方）：
 
-[![201106032142496942](http://www.jfox.info/wp-content/uploads/2014/02/201106032142496942.jpg)](http://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2014/02/201106032142496942.jpg)
+[![201106032142496942](http://www.jfox.info/wp-content/uploads/2014/02/201106032142496942.jpg)](https://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2014/02/201106032142496942.jpg)
 
 什么是Android开发环境？Android开发环境当然是用来设计应用于移动设备的系统和软件了，由于Android本身是开源的，那么我们要做的工作就是定制、修改，Android手机厂家工作亦是如此，定制自己的驱动（或称BSP，底层）和应用程序（上层），硬件部分需自己设计这就不用多说了。
 
@@ -42,23 +42,23 @@ Java Development(JDK)是用于开发、编译和测试使用Java语言编写的�
 
 **相关参考网址：**
 
-[http://java.sun.com/](http://www.jfox.info/go.php?url=http://java.sun.com/)——包含Java 技术、产品信息、新闻和软件特性等。
+[http://java.sun.com/](https://www.jfox.info/go.php?url=http://java.sun.com/)——包含Java 技术、产品信息、新闻和软件特性等。
 
-[http://java.sun.com/docs](http://www.jfox.info/go.php?url=http://java.sun.com/docs)——JavaT平台文档，包括白皮书、教程以及相关文档。
+[http://java.sun.com/docs](https://www.jfox.info/go.php?url=http://java.sun.com/docs)——JavaT平台文档，包括白皮书、教程以及相关文档。
 
-[http://developer.java.sun.com](http://www.jfox.info/go.php?url=http://developer.java.sun.com)——开发者服务网站，技术信息、新闻、论坛等。
+[http://developer.java.sun.com](https://www.jfox.info/go.php?url=http://developer.java.sun.com)——开发者服务网站，技术信息、新闻、论坛等。
 
-[http://java.sun.com/products/](http://www.jfox.info/go.php?url=http://java.sun.com/products/)——Java 技术产品和 API。
+[http://java.sun.com/products/](https://www.jfox.info/go.php?url=http://java.sun.com/products/)——Java 技术产品和 API。
 
 ### 2、Eclipse
 
 Eclipse最初由IBM开发的跨平台集成开发环境（IDE），后来贡献给Apache开源软件基金会。最初主要用于Java语言开发，目前可通过C++、Python、PHP等语言插件支持对应语言开发，所以，Eclipse看起来更像一个框架而已，更多工作都是交给插件或上文的JDK来完成，模块化的设计，让Eclipse的定位更清晰。
 
-[![201106041519164224](http://www.jfox.info/wp-content/uploads/2014/02/201106041519164224.jpg)](http://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2014/02/201106041519164224.jpg)
+[![201106041519164224](http://www.jfox.info/wp-content/uploads/2014/02/201106041519164224.jpg)](https://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2014/02/201106041519164224.jpg)
 
-官方网址：[http://www.eclipse.org/](http://www.jfox.info/go.php?url=http://www.eclipse.org/)
+官方网址：[http://www.eclipse.org/](https://www.jfox.info/go.php?url=http://www.eclipse.org/)
 
-更多参考：[http://zh.wikipedia.org/wiki/Eclipse](http://www.jfox.info/go.php?url=http://zh.wikipedia.org/wiki/Eclipse)
+更多参考：[http://zh.wikipedia.org/wiki/Eclipse](https://www.jfox.info/go.php?url=http://zh.wikipedia.org/wiki/Eclipse)
 
 ### 3、Android Development Tools（ADT）
 
@@ -66,13 +66,13 @@ Android开发工具(ADT)，作为Eclipse工具插件，让其支持Android快速
 
 ADT开发工具，包括Android Dalvik Debug Moniter Server(Android DDMS)和Android Development Tools（ADT），上面的插图中，还有Hierarchy Viewer和TraceView两个查看器，看名称就知道功能了。DDMS可以提供调试设备时为设备截屏，查看线程及内存信息、Logcat、广播信 息、模拟呼叫、接收短消息、文件查看器等功能（该功能在安装完ADT之后，点击Eclipse工具栏右上角的那个带箭头的小窗口图标弹出菜单中打开）。 Android Development Tools（ADT）工具应该是为Eclipse支持Android项目快速编程开发和调试插件而已（也可能不太确切，天缘注）。
 
-[![201106032044202644](http://www.jfox.info/wp-content/uploads/2014/02/201106032044202644.jpg)](http://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2014/02/201106032044202644.jpg)
+[![201106032044202644](http://www.jfox.info/wp-content/uploads/2014/02/201106032044202644.jpg)](https://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2014/02/201106032044202644.jpg)
 
 ### 4、Android Software Development Kit(SDK)
 
 一般提到SDK就会想到：API接口库、帮助文档和示例源码，Android SDK似乎也不例外，它为开发者提供相关封装API接口库文件、文档资源及一些工具包整合。当然了如果你使用Eclipse作为开发工具，那么只需要安装SDK也可以，ECLIPSE和ADT也一并省略掉。下图是ADK和AVD管理器界面，可从SDK安装目录下执行SDK Manager.exe或在Eclipse中执行Window->Android SDK and AVD manager看到。
 
-[![201106032106597311](http://www.jfox.info/wp-content/uploads/2014/02/201106032106597311.jpg)](http://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2014/02/201106032106597311.jpg)
+[![201106032106597311](http://www.jfox.info/wp-content/uploads/2014/02/201106032106597311.jpg)](https://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2014/02/201106032106597311.jpg)
 
 安装后SDK目录下的帮助文档相当完善，应有尽有（位置在SDK的docs目录下）。此外，Android SDK还包含一个手机模拟器（Virtual Devices），我们开发时就可以先使用模拟器进行模拟仿真，感觉时机成熟时再下载到真机进行测试。
 
@@ -94,7 +94,7 @@ Android Compatibility package, revision x
 
 Dalvik虚拟机是Andriod平台组件的重要组成之一，同传统的Java虚拟机有些不同，可参见：
 
-[http://www.ophonesdn.com/article/show/15](http://www.jfox.info/go.php?url=http://www.ophonesdn.com/article/show/15)，这边文章写的非常好，天缘暂时还没研究这么深入。
+[http://www.ophonesdn.com/article/show/15](https://www.jfox.info/go.php?url=http://www.ophonesdn.com/article/show/15)，这边文章写的非常好，天缘暂时还没研究这么深入。
 
 ### 6、Android Native Development Kit(NDK)
 
@@ -108,5 +108,5 @@ Android原生开发套件，这里的原生似乎就是指开发语言原生，�
 
 本来本文已经写完了，由于时间太长没提交导致SESSION过期被注销，保存失败，全部内容丢失，不得不又重新写了一遍，现在全文浏览过来还是有很多差异，跟写第一遍时的心情完全不同。。。先这么着吧，以后再完善了。 
 
-文章来源 [Android开发入门之环境概念介绍 – 天缘博客](http://www.jfox.info/go.php?url=http://www.jfox.info/url.php?url=http%3A%2F%2Fwww.metsky.com%2Farchives%2F522.html).
+文章来源 [Android开发入门之环境概念介绍 – 天缘博客](https://www.jfox.info/go.php?url=http://www.jfox.info/url.php?url=http%3A%2F%2Fwww.metsky.com%2Farchives%2F522.html).
 {% endraw %}

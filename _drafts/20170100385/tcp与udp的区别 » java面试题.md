@@ -3,11 +3,11 @@ layout: post
 title:  "tcp与udp的区别 » java面试题"
 title2:  "tcp与udp的区别 » java面试题"
 date:   2017-01-01 23:41:25  +0800
-source:  "http://www.jfox.info/tcp-yu-udp-de-qu-bie.html"
+source:  "https://www.jfox.info/tcp-yu-udp-de-qu-bie.html"
 fileName:  "20170100385"
 lang:  "zh_CN"
 published: true
-permalink: "tcp-yu-udp-de-qu-bie.html"
+permalink: "2017/https://www.jfox.info/tcp-yu-udp-de-qu-bie.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期四, 五月 23, 2013

@@ -3,11 +3,11 @@ layout: post
 title:  "JYUOA项目介绍——适合刚学完SSH的朋友"
 title2:  "JYUOA项目介绍——适合刚学完SSH的朋友"
 date:   2017-01-01 23:48:51  +0800
-source:  "http://www.jfox.info/jyuoa-xiang-mu-jie-shao-shi-he-gang-xue-wan-ssh-de-peng-you.html"
+source:  "https://www.jfox.info/jyuoa-xiang-mu-jie-shao-shi-he-gang-xue-wan-ssh-de-peng-you.html"
 fileName:  "20170100831"
 lang:  "zh_CN"
 published: true
-permalink: "jyuoa-xiang-mu-jie-shao-shi-he-gang-xue-wan-ssh-de-peng-you.html"
+permalink: "2017/https://www.jfox.info/jyuoa-xiang-mu-jie-shao-shi-he-gang-xue-wan-ssh-de-peng-you.html"
 ---
 {% raw %}
 # JYUOA项目介绍——适合刚学完SSH的朋友 
@@ -16,7 +16,7 @@ By Lee - Last updated: 星期三, 六月 7, 2017
 
 # 前言
 
-我最近在复习和汇总以前学习过的知识和做过的东西，[JYUOA](http://www.jfox.info/go.php?url=https://github.com/HuangFromJYU/JYUOA)（JYU全称是Jiaying University）是我在大二刚学完SSH框架的时候，做的第一个SSH的项目。怎么说呢，这可以说是我的启蒙项目，通过这个项目，我学到很多东西，像什么框架之间的整合，还有SSH框架的具体实战使用，还有三层架构设计，以及权限管理等知识，所以我觉得这是一个十分适合刚学完SSH框架的朋友的项目。
+我最近在复习和汇总以前学习过的知识和做过的东西，[JYUOA](https://www.jfox.info/go.php?url=https://github.com/HuangFromJYU/JYUOA)（JYU全称是Jiaying University）是我在大二刚学完SSH框架的时候，做的第一个SSH的项目。怎么说呢，这可以说是我的启蒙项目，通过这个项目，我学到很多东西，像什么框架之间的整合，还有SSH框架的具体实战使用，还有三层架构设计，以及权限管理等知识，所以我觉得这是一个十分适合刚学完SSH框架的朋友的项目。
 
 # 项目简介
 
@@ -32,7 +32,7 @@ OA是Office Automation的缩写，本意为利用技术的手段提高办公的�
 
 # 项目整体架构
 
-一般这个时候就要扯到三层架构和MVC模式了，不管很多人都这两个其实会搞混，说不出个所以然来，这里我强烈建议你去看看[对三层和MVC的认识过程](http://www.jfox.info/go.php?url=http://blog.csdn.net/timheath/article/details/72887267)。
+一般这个时候就要扯到三层架构和MVC模式了，不管很多人都这两个其实会搞混，说不出个所以然来，这里我强烈建议你去看看[对三层和MVC的认识过程](https://www.jfox.info/go.php?url=http://blog.csdn.net/timheath/article/details/72887267)。
 
 现在回到我们这个项目，这个项目有采用MVC模式，至于三层嘛，其实这个项目最开始用的也是三层，但后来进行重构，直接把业务逻辑层与数据访问层合并了，所以变成了两层，为什么要这么做呢，因为这个项目的业务逻辑并不是特别复杂，普遍都是增删改查操作，这样一来的话业务逻辑层的Service类的方法只是简单地调用一下数据访问层的Dao类的方法，所以干脆把它们整合一起。
 
@@ -257,5 +257,5 @@ WEB-INF/jsp：jsp页面文件（再创建子文件夹分类存放）
 
 这个项目可能对于以后我遇到的项目来讲，是**a piece of cake**，但是这对于我来说是一个很好的开始，每次积累一点点，最后整合起来就是一大块。但是这个项目也有很多缺点，比如说日志没怎么做，异常处理也不好，有些功能没有完成，不过只要花点时间，肯定是能行的！最后需要说的是，这个项目我是学习传智播客的OA项目的，所以非常感谢传智播客将他们的教学资源分享出来。
 
-项目地址[https://github.com/HuangFromJYU/JYUOA](http://www.jfox.info/go.php?url=https://github.com/HuangFromJYU/JYUOA)
+项目地址[https://github.com/HuangFromJYU/JYUOA](https://www.jfox.info/go.php?url=https://github.com/HuangFromJYU/JYUOA)
 {% endraw %}

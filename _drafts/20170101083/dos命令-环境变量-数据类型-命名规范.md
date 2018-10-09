@@ -3,11 +3,11 @@ layout: post
 title:  "dos命令-环境变量-数据类型-命名规范"
 title2:  "dos命令-环境变量-数据类型-命名规范"
 date:   2017-01-01 23:53:03  +0800
-source:  "http://www.jfox.info/dos%e5%91%bd%e4%bb%a4%e7%8e%af%e5%a2%83%e5%8f%98%e9%87%8f%e6%95%b0%e6%8d%ae%e7%b1%bb%e5%9e%8b%e5%91%bd%e5%90%8d%e8%a7%84%e8%8c%83.html"
+source:  "https://www.jfox.info/dos%e5%91%bd%e4%bb%a4%e7%8e%af%e5%a2%83%e5%8f%98%e9%87%8f%e6%95%b0%e6%8d%ae%e7%b1%bb%e5%9e%8b%e5%91%bd%e5%90%8d%e8%a7%84%e8%8c%83.html"
 fileName:  "20170101083"
 lang:  "zh_CN"
 published: true
-permalink: "dos%e5%91%bd%e4%bb%a4%e7%8e%af%e5%a2%83%e5%8f%98%e9%87%8f%e6%95%b0%e6%8d%ae%e7%b1%bb%e5%9e%8b%e5%91%bd%e5%90%8d%e8%a7%84%e8%8c%83.html"
+permalink: "2017/https://www.jfox.info/dos%e5%91%bd%e4%bb%a4%e7%8e%af%e5%a2%83%e5%8f%98%e9%87%8f%e6%95%b0%e6%8d%ae%e7%b1%bb%e5%9e%8b%e5%91%bd%e5%90%8d%e8%a7%84%e8%8c%83.html"
 ---
 {% raw %}
 2、能够使用常见的DOS命令

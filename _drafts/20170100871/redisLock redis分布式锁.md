@@ -3,11 +3,11 @@ layout: post
 title:  "redisLock redis分布式锁"
 title2:  "redisLock redis分布式锁"
 date:   2017-01-01 23:49:31  +0800
-source:  "http://www.jfox.info/redislock-redis%e5%88%86%e5%b8%83%e5%bc%8f%e9%94%81.html"
+source:  "https://www.jfox.info/redislock-redis%e5%88%86%e5%b8%83%e5%bc%8f%e9%94%81.html"
 fileName:  "20170100871"
 lang:  "zh_CN"
 published: true
-permalink: "redislock-redis%e5%88%86%e5%b8%83%e5%bc%8f%e9%94%81.html"
+permalink: "2017/https://www.jfox.info/redislock-redis%e5%88%86%e5%b8%83%e5%bc%8f%e9%94%81.html"
 ---
 {% raw %}
 H2M_LI_HEADER redis setnx cmmand
@@ -19,7 +19,7 @@ H2M_LI_HEADER acquire lock 申请lock
 H2M_LI_HEADER release lock 释放lock
 H2M_LI_HEADER demo 演示
 H2M_LI_HEADER 锁的粒度问题，锁分解、锁分段
-H2M_LI_HEADER github [https://github.com/Plen-wang/redis-lock](http://www.jfox.info/go.php?url=https://github.com/Plen-wang/redis-lock)
+H2M_LI_HEADER github [https://github.com/Plen-wang/redis-lock](https://www.jfox.info/go.php?url=https://github.com/Plen-wang/redis-lock)
 
 ## redis setnx 命令
 

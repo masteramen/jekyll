@@ -3,11 +3,11 @@ layout: post
 title:  "Windows下的chcp命令（更改该控制台的活动控制台代码页）"
 title2:  "Windows下的chcp命令（更改该控制台的活动控制台代码页）"
 date:   2017-01-01 23:47:20  +0800
-source:  "http://www.jfox.info/windows-xia-de-chcp-ming-ling-geng-gai-gai-kong-zhi-tai-de-huo-dong-kong-zhi-tai-dai-ma-ye.html"
+source:  "https://www.jfox.info/windows-xia-de-chcp-ming-ling-geng-gai-gai-kong-zhi-tai-de-huo-dong-kong-zhi-tai-dai-ma-ye.html"
 fileName:  "20170100740"
 lang:  "zh_CN"
 published: true
-permalink: "windows-xia-de-chcp-ming-ling-geng-gai-gai-kong-zhi-tai-de-huo-dong-kong-zhi-tai-dai-ma-ye.html"
+permalink: "2017/https://www.jfox.info/windows-xia-de-chcp-ming-ling-geng-gai-gai-kong-zhi-tai-de-huo-dong-kong-zhi-tai-dai-ma-ye.html"
 ---
 {% raw %}
 Chcp 

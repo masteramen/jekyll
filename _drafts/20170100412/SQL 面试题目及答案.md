@@ -3,11 +3,11 @@ layout: post
 title:  "SQL 面试题目及答案"
 title2:  "SQL 面试题目及答案"
 date:   2017-01-01 23:41:52  +0800
-source:  "http://www.jfox.info/sql-mian-shi-ti-mu-ji-da-an.html"
+source:  "https://www.jfox.info/sql-mian-shi-ti-mu-ji-da-an.html"
 fileName:  "20170100412"
 lang:  "zh_CN"
 published: true
-permalink: "sql-mian-shi-ti-mu-ji-da-an.html"
+permalink: "2017/https://www.jfox.info/sql-mian-shi-ti-mu-ji-da-an.html"
 ---
 {% raw %}
 学生成绩表(stuscore)：

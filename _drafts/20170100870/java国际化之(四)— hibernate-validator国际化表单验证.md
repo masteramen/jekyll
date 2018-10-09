@@ -3,11 +3,11 @@ layout: post
 title:  "java国际化之(四)— hibernate-validator国际化表单验证"
 title2:  "java国际化之(四)— hibernate-validator国际化表单验证"
 date:   2017-01-01 23:49:30  +0800
-source:  "http://www.jfox.info/java%e5%9b%bd%e9%99%85%e5%8c%96%e4%b9%8b-%e5%9b%9b-hibernate-validator%e5%9b%bd%e9%99%85%e5%8c%96%e8%a1%a8%e5%8d%95%e9%aa%8c%e8%af%81.html"
+source:  "https://www.jfox.info/java%e5%9b%bd%e9%99%85%e5%8c%96%e4%b9%8b-%e5%9b%9b-hibernate-validator%e5%9b%bd%e9%99%85%e5%8c%96%e8%a1%a8%e5%8d%95%e9%aa%8c%e8%af%81.html"
 fileName:  "20170100870"
 lang:  "zh_CN"
 published: true
-permalink: "java%e5%9b%bd%e9%99%85%e5%8c%96%e4%b9%8b-%e5%9b%9b-hibernate-validator%e5%9b%bd%e9%99%85%e5%8c%96%e8%a1%a8%e5%8d%95%e9%aa%8c%e8%af%81.html"
+permalink: "2017/https://www.jfox.info/java%e5%9b%bd%e9%99%85%e5%8c%96%e4%b9%8b-%e5%9b%9b-hibernate-validator%e5%9b%bd%e9%99%85%e5%8c%96%e8%a1%a8%e5%8d%95%e9%aa%8c%e8%af%81.html"
 ---
 {% raw %}
 /**
@@ -55,7 +55,7 @@ permalink: "java%e5%9b%bd%e9%99%85%e5%8c%96%e4%b9%8b-%e5%9b%9b-hibernate-validat
 
 具体注解含义就不解释了，根据上面的规则讲解，一目了然。
 
-启动tomcat，访问[http://localhost/add](http://www.jfox.info/go.php?url=http://localhost/add)，如下：
+启动tomcat，访问[http://localhost/add](https://www.jfox.info/go.php?url=http://localhost/add)，如下：
 
 每个字段都不填写值，直接点击”添加”按钮：
 

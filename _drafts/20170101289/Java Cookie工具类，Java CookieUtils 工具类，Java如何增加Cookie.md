@@ -3,11 +3,11 @@ layout: post
 title:  "Java Cookie工具类，Java CookieUtils 工具类，Java如何增加Cookie"
 title2:  "Java Cookie工具类，Java CookieUtils 工具类，Java如何增加Cookie"
 date:   2017-01-01 23:56:29  +0800
-source:  "http://www.jfox.info/javacookie%e5%b7%a5%e5%85%b7%e7%b1%bbjavacookieutils%e5%b7%a5%e5%85%b7%e7%b1%bbjava%e5%a6%82%e4%bd%95%e5%a2%9e%e5%8a%a0cookie.html"
+source:  "https://www.jfox.info/javacookie%e5%b7%a5%e5%85%b7%e7%b1%bbjavacookieutils%e5%b7%a5%e5%85%b7%e7%b1%bbjava%e5%a6%82%e4%bd%95%e5%a2%9e%e5%8a%a0cookie.html"
 fileName:  "20170101289"
 lang:  "zh_CN"
 published: true
-permalink: "javacookie%e5%b7%a5%e5%85%b7%e7%b1%bbjavacookieutils%e5%b7%a5%e5%85%b7%e7%b1%bbjava%e5%a6%82%e4%bd%95%e5%a2%9e%e5%8a%a0cookie.html"
+permalink: "2017/https://www.jfox.info/javacookie%e5%b7%a5%e5%85%b7%e7%b1%bbjavacookieutils%e5%b7%a5%e5%85%b7%e7%b1%bbjava%e5%a6%82%e4%bd%95%e5%a2%9e%e5%8a%a0cookie.html"
 ---
 {% raw %}
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>

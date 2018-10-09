@@ -3,11 +3,11 @@ layout: post
 title:  "java 面试需要了解的几个问题"
 title2:  "java 面试需要了解的几个问题"
 date:   2017-01-01 23:44:45  +0800
-source:  "http://www.jfox.info/java-interview-require-to-know-the-questions.html"
+source:  "https://www.jfox.info/java-interview-require-to-know-the-questions.html"
 fileName:  "20170100585"
 lang:  "zh_CN"
 published: true
-permalink: "java-interview-require-to-know-the-questions.html"
+permalink: "2017/https://www.jfox.info/java-interview-require-to-know-the-questions.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期一, 二月 24, 2014

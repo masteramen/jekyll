@@ -3,11 +3,11 @@ layout: post
 title:  "JAVA面试题 请说出作用域public，private，protected，以及不写时的区别"
 title2:  "JAVA面试题 请说出作用域public，private，protected，以及不写时的区别"
 date:   2017-01-01 23:43:16  +0800
-source:  "http://www.jfox.info/java%e9%9d%a2%e8%af%95%e9%a2%98-%e8%af%b7%e8%af%b4%e5%87%ba%e4%bd%9c%e7%94%a8%e5%9f%9fpublic%ef%bc%8cprivate%ef%bc%8cprotected%ef%bc%8c%e4%bb%a5%e5%8f%8a%e4%b8%8d%e5%86%99%e6%97%b6%e7%9a%84%e5%8c%ba.html"
+source:  "https://www.jfox.info/java%e9%9d%a2%e8%af%95%e9%a2%98-%e8%af%b7%e8%af%b4%e5%87%ba%e4%bd%9c%e7%94%a8%e5%9f%9fpublic%ef%bc%8cprivate%ef%bc%8cprotected%ef%bc%8c%e4%bb%a5%e5%8f%8a%e4%b8%8d%e5%86%99%e6%97%b6%e7%9a%84%e5%8c%ba.html"
 fileName:  "20170100496"
 lang:  "zh_CN"
 published: true
-permalink: "java%e9%9d%a2%e8%af%95%e9%a2%98-%e8%af%b7%e8%af%b4%e5%87%ba%e4%bd%9c%e7%94%a8%e5%9f%9fpublic%ef%bc%8cprivate%ef%bc%8cprotected%ef%bc%8c%e4%bb%a5%e5%8f%8a%e4%b8%8d%e5%86%99%e6%97%b6%e7%9a%84%e5%8c%ba.html"
+permalink: "2017/https://www.jfox.info/java%e9%9d%a2%e8%af%95%e9%a2%98-%e8%af%b7%e8%af%b4%e5%87%ba%e4%bd%9c%e7%94%a8%e5%9f%9fpublic%ef%bc%8cprivate%ef%bc%8cprotected%ef%bc%8c%e4%bb%a5%e5%8f%8a%e4%b8%8d%e5%86%99%e6%97%b6%e7%9a%84%e5%8c%ba.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期一, 一月 27, 2014

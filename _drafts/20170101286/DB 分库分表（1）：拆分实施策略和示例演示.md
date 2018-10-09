@@ -3,11 +3,11 @@ layout: post
 title:  "DB 分库分表（1）：拆分实施策略和示例演示"
 title2:  "DB 分库分表（1）：拆分实施策略和示例演示"
 date:   2017-01-01 23:56:26  +0800
-source:  "http://www.jfox.info/db%e5%88%86%e5%ba%93%e5%88%86%e8%a1%a81%e6%8b%86%e5%88%86%e5%ae%9e%e6%96%bd%e7%ad%96%e7%95%a5%e5%92%8c%e7%a4%ba%e4%be%8b%e6%bc%94%e7%a4%ba.html"
+source:  "https://www.jfox.info/db%e5%88%86%e5%ba%93%e5%88%86%e8%a1%a81%e6%8b%86%e5%88%86%e5%ae%9e%e6%96%bd%e7%ad%96%e7%95%a5%e5%92%8c%e7%a4%ba%e4%be%8b%e6%bc%94%e7%a4%ba.html"
 fileName:  "20170101286"
 lang:  "zh_CN"
 published: true
-permalink: "db%e5%88%86%e5%ba%93%e5%88%86%e8%a1%a81%e6%8b%86%e5%88%86%e5%ae%9e%e6%96%bd%e7%ad%96%e7%95%a5%e5%92%8c%e7%a4%ba%e4%be%8b%e6%bc%94%e7%a4%ba.html"
+permalink: "2017/https://www.jfox.info/db%e5%88%86%e5%ba%93%e5%88%86%e8%a1%a81%e6%8b%86%e5%88%86%e5%ae%9e%e6%96%bd%e7%ad%96%e7%95%a5%e5%92%8c%e7%a4%ba%e4%be%8b%e6%bc%94%e7%a4%ba.html"
 ---
 {% raw %}
 对数据库进行分库分表(Sharding化)前，需要开发人员充分了解系统业务逻辑和数据库schema.一个好的建议是绘制一张数据库ER图或领域模型图，以这类图为基础划分shard,直观易行，可以确保开发人员始终保持清醒思路。对于是选择数据库ER图还是领域模型图要根据项目自身情况进行选择。如果项目使用数据驱动的开发方式，团队以数据库ER图作为业务交流的基础，则自然会选择数据库ER图，如果项目使用的是领域驱动的开发方式，并通过OR-Mapping构建了一个良好的领域模型，那么领域模型图无疑是最好的选择。就我个人来说，更加倾向使用领域模型图，因为进行切分时更多的是以业务为依据进行分析判断，领域模型无疑更加清晰和直观。

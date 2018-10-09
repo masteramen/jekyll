@@ -3,11 +3,11 @@ layout: post
 title:  "加载外部JavaScript的最佳方法"
 title2:  "加载外部JavaScript的最佳方法"
 date:   2017-01-01 23:43:53  +0800
-source:  "http://www.jfox.info/%e5%8a%a0%e8%bd%bd%e5%a4%96%e9%83%a8javascript%e7%9a%84%e6%9c%80%e4%bd%b3%e6%96%b9%e6%b3%95.html"
+source:  "https://www.jfox.info/%e5%8a%a0%e8%bd%bd%e5%a4%96%e9%83%a8javascript%e7%9a%84%e6%9c%80%e4%bd%b3%e6%96%b9%e6%b3%95.html"
 fileName:  "20170100533"
 lang:  "zh_CN"
 published: true
-permalink: "%e5%8a%a0%e8%bd%bd%e5%a4%96%e9%83%a8javascript%e7%9a%84%e6%9c%80%e4%bd%b3%e6%96%b9%e6%b3%95.html"
+permalink: "2017/https://www.jfox.info/%e5%8a%a0%e8%bd%bd%e5%a4%96%e9%83%a8javascript%e7%9a%84%e6%9c%80%e4%bd%b3%e6%96%b9%e6%b3%95.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期六, 二月 8, 2014

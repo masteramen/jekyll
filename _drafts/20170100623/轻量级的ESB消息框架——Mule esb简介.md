@@ -3,11 +3,11 @@ layout: post
 title:  "轻量级的ESB消息框架——Mule esb简介"
 title2:  "轻量级的ESB消息框架——Mule esb简介"
 date:   2017-01-01 23:45:23  +0800
-source:  "http://www.jfox.info/lightweight-esb-messaging-framework-mule-esb-profile.html"
+source:  "https://www.jfox.info/lightweight-esb-messaging-framework-mule-esb-profile.html"
 fileName:  "20170100623"
 lang:  "zh_CN"
 published: true
-permalink: "lightweight-esb-messaging-framework-mule-esb-profile.html"
+permalink: "2017/https://www.jfox.info/lightweight-esb-messaging-framework-mule-esb-profile.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期一, 四月 21, 2014

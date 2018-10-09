@@ -3,11 +3,11 @@ layout: post
 title:  "Static Nested Class 和 Inner Class的不同。"
 title2:  "Static Nested Class 和 Inner Class的不同。"
 date:   2017-01-01 23:41:17  +0800
-source:  "http://www.jfox.info/Static-Nested-Class-he-Inner-Class-de-bu-tong.html"
+source:  "https://www.jfox.info/Static-Nested-Class-he-Inner-Class-de-bu-tong.html"
 fileName:  "20170100377"
 lang:  "zh_CN"
 published: true
-permalink: "Static-Nested-Class-he-Inner-Class-de-bu-tong.html"
+permalink: "2017/https://www.jfox.info/Static-Nested-Class-he-Inner-Class-de-bu-tong.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期二, 五月 21, 2013

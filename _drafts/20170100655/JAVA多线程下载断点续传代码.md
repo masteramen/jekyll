@@ -3,11 +3,11 @@ layout: post
 title:  "JAVA多线程下载断点续传代码"
 title2:  "JAVA多线程下载断点续传代码"
 date:   2017-01-01 23:45:55  +0800
-source:  "http://www.jfox.info/java-multi-threaded-download-code.html"
+source:  "https://www.jfox.info/java-multi-threaded-download-code.html"
 fileName:  "20170100655"
 lang:  "zh_CN"
 published: true
-permalink: "java-multi-threaded-download-code.html"
+permalink: "2017/https://www.jfox.info/java-multi-threaded-download-code.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期四, 七月 10, 2014
@@ -140,9 +140,9 @@ By Lee - Last updated: 星期四, 七月 10, 2014
     }
     
 
-[![09181727_Pgd8](http://www.jfox.info/wp-content/uploads/2014/07/09181727_Pgd8.png)](http://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2014/07/09181727_Pgd8.png)
+[![09181727_Pgd8](http://www.jfox.info/wp-content/uploads/2014/07/09181727_Pgd8.png)](https://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2014/07/09181727_Pgd8.png)
 
-原文地址:[http://www.oschina.net/code/snippet_51297_37123](http://www.jfox.info/go.php?url=http://www.jfox.info/url.php?url=http%3A%2F%2Fwww.oschina.net%2Fcode%2Fsnippet_51297_37123).
+原文地址:[http://www.oschina.net/code/snippet_51297_37123](https://www.jfox.info/go.php?url=http://www.jfox.info/url.php?url=http%3A%2F%2Fwww.oschina.net%2Fcode%2Fsnippet_51297_37123).
 <!--
 </p>
 <p>				.code_report{float:right}</p>

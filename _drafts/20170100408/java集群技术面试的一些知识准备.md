@@ -3,11 +3,11 @@ layout: post
 title:  "java集群技术面试的一些知识准备"
 title2:  "java集群技术面试的一些知识准备"
 date:   2017-01-01 23:41:48  +0800
-source:  "http://www.jfox.info/java-ji-qun-ji-shu-mian-shi-de-yi-xie-zhi-shi-zhun-bei.html"
+source:  "https://www.jfox.info/java-ji-qun-ji-shu-mian-shi-de-yi-xie-zhi-shi-zhun-bei.html"
 fileName:  "20170100408"
 lang:  "zh_CN"
 published: true
-permalink: "java-ji-qun-ji-shu-mian-shi-de-yi-xie-zhi-shi-zhun-bei.html"
+permalink: "2017/https://www.jfox.info/java-ji-qun-ji-shu-mian-shi-de-yi-xie-zhi-shi-zhun-bei.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期一, 五月 27, 2013

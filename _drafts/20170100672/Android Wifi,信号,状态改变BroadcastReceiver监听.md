@@ -3,11 +3,11 @@ layout: post
 title:  "Android Wifi,信号,状态改变BroadcastReceiver监听"
 title2:  "Android Wifi,信号,状态改变BroadcastReceiver监听"
 date:   2017-01-01 23:46:12  +0800
-source:  "http://www.jfox.info/android-wifi-xin-hao-zhuang-tai-gai-bian-broadcastreceiver-jian-ting.html"
+source:  "https://www.jfox.info/android-wifi-xin-hao-zhuang-tai-gai-bian-broadcastreceiver-jian-ting.html"
 fileName:  "20170100672"
 lang:  "zh_CN"
 published: true
-permalink: "android-wifi-xin-hao-zhuang-tai-gai-bian-broadcastreceiver-jian-ting.html"
+permalink: "2017/https://www.jfox.info/android-wifi-xin-hao-zhuang-tai-gai-bian-broadcastreceiver-jian-ting.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期日, 八月 17, 2014
@@ -127,5 +127,5 @@ filter.addAction(WifiManager.WIFI_STATE_CHANGED_ACTION);
 this.registerReceiver(wifiReceiver,filter);
 要加上三个Action
 
-原文地址:[http://www.pocketdigi.com/20120704/887.html](http://www.jfox.info/go.php?url=http://www.jfox.info/url.php?url=http%3A%2F%2Fwww.pocketdigi.com%2F20120704%2F887.html).
+原文地址:[http://www.pocketdigi.com/20120704/887.html](https://www.jfox.info/go.php?url=http://www.jfox.info/url.php?url=http%3A%2F%2Fwww.pocketdigi.com%2F20120704%2F887.html).
 {% endraw %}

@@ -3,11 +3,11 @@ layout: post
 title:  "关于火狐和IE下href=”javascript:void(0)”兼容性的问题"
 title2:  "关于火狐和IE下href=”javascriptvoid(0)”兼容性的问题"
 date:   2017-01-01 23:47:22  +0800
-source:  "http://www.jfox.info/guan-yu-huo-hu-he-ie-xia-href-javascript-void-0-jian-rong-xing-de-wen-ti.html"
+source:  "https://www.jfox.info/guan-yu-huo-hu-he-ie-xia-href-javascript-void-0-jian-rong-xing-de-wen-ti.html"
 fileName:  "20170100742"
 lang:  "zh_CN"
 published: true
-permalink: "guan-yu-huo-hu-he-ie-xia-href-javascript-void-0-jian-rong-xing-de-wen-ti.html"
+permalink: "2017/https://www.jfox.info/guan-yu-huo-hu-he-ie-xia-href-javascript-void-0-jian-rong-xing-de-wen-ti.html"
 ---
 {% raw %}
 写了一个简单的幻灯，但是上下翻动按钮在火狐和IE下点击后会打开一个空白页面，而谷歌是正常的。

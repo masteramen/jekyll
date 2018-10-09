@@ -3,11 +3,11 @@ layout: post
 title:  "笔记：MyBatis XML配置详解"
 title2:  "笔记：MyBatis XML配置详解"
 date:   2017-01-01 23:50:00  +0800
-source:  "http://www.jfox.info/%e7%ac%94%e8%ae%b0-mybatis-xml%e9%85%8d%e7%bd%ae%e8%af%a6%e8%a7%a3.html"
+source:  "https://www.jfox.info/%e7%ac%94%e8%ae%b0-mybatis-xml%e9%85%8d%e7%bd%ae%e8%af%a6%e8%a7%a3.html"
 fileName:  "20170100900"
 lang:  "zh_CN"
 published: true
-permalink: "%e7%ac%94%e8%ae%b0-mybatis-xml%e9%85%8d%e7%bd%ae%e8%af%a6%e8%a7%a3.html"
+permalink: "2017/https://www.jfox.info/%e7%ac%94%e8%ae%b0-mybatis-xml%e9%85%8d%e7%bd%ae%e8%af%a6%e8%a7%a3.html"
 ---
 {% raw %}
 MyBatis 的配置文件包含了影响 MyBatis 行为甚深的设置（settings）和属性（properties）信息。文档的顶层结构如下： 

@@ -3,11 +3,11 @@ layout: post
 title:  "IOS核心动画高级三：图层几何学"
 title2:  "IOS核心动画高级三：图层几何学"
 date:   2017-01-01 23:48:59  +0800
-source:  "http://www.jfox.info/ios-he-xin-dong-hua-gao-ji-san-tu-ceng-ji-he-xue.html"
+source:  "https://www.jfox.info/ios-he-xin-dong-hua-gao-ji-san-tu-ceng-ji-he-xue.html"
 fileName:  "20170100839"
 lang:  "zh_CN"
 published: true
-permalink: "ios-he-xin-dong-hua-gao-ji-san-tu-ceng-ji-he-xue.html"
+permalink: "2017/https://www.jfox.info/ios-he-xin-dong-hua-gao-ji-san-tu-ceng-ji-he-xue.html"
 ---
 {% raw %}
 第二章里，我们介绍了图层背后的图片，和一些控制图层坐标和旋转的属性，在本章里面我们将要看一看在图层内部是如何根据父图层和兄弟图层来控制位置和尺寸的。另外我们也会涉及如何管理图层的几何结构，以及它是如何被自动调整和自动布局影响。

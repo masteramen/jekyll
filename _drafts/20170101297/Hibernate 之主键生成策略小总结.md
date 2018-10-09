@@ -3,11 +3,11 @@ layout: post
 title:  "Hibernate 之主键生成策略小总结"
 title2:  "Hibernate 之主键生成策略小总结"
 date:   2017-01-01 23:56:37  +0800
-source:  "http://www.jfox.info/hibernate%e4%b9%8b%e4%b8%bb%e9%94%ae%e7%94%9f%e6%88%90%e7%ad%96%e7%95%a5%e5%b0%8f%e6%80%bb%e7%bb%93.html"
+source:  "https://www.jfox.info/hibernate%e4%b9%8b%e4%b8%bb%e9%94%ae%e7%94%9f%e6%88%90%e7%ad%96%e7%95%a5%e5%b0%8f%e6%80%bb%e7%bb%93.html"
 fileName:  "20170101297"
 lang:  "zh_CN"
 published: true
-permalink: "hibernate%e4%b9%8b%e4%b8%bb%e9%94%ae%e7%94%9f%e6%88%90%e7%ad%96%e7%95%a5%e5%b0%8f%e6%80%bb%e7%bb%93.html"
+permalink: "2017/https://www.jfox.info/hibernate%e4%b9%8b%e4%b8%bb%e9%94%ae%e7%94%9f%e6%88%90%e7%ad%96%e7%95%a5%e5%b0%8f%e6%80%bb%e7%bb%93.html"
 ---
 {% raw %}
 # Hibernate 之主键生成策略小总结 

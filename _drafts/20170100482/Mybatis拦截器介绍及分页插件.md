@@ -3,11 +3,11 @@ layout: post
 title:  "Mybatis拦截器介绍及分页插件"
 title2:  "Mybatis拦截器介绍及分页插件"
 date:   2017-01-01 23:43:02  +0800
-source:  "http://www.jfox.info/mybatis-lan-jie-qi-jie-shao-ji-fen-ye-cha-jian.html"
+source:  "https://www.jfox.info/mybatis-lan-jie-qi-jie-shao-ji-fen-ye-cha-jian.html"
 fileName:  "20170100482"
 lang:  "zh_CN"
 published: true
-permalink: "mybatis-lan-jie-qi-jie-shao-ji-fen-ye-cha-jian.html"
+permalink: "2017/https://www.jfox.info/mybatis-lan-jie-qi-jie-shao-ji-fen-ye-cha-jian.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期四, 十月 31, 2013

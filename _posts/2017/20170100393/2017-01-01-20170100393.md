@@ -3,11 +3,11 @@ layout: post
 title:  "Ibatis中使用like ‘%#filedName#%’ 时，有什么问题？"
 title2:  "Ibatis中使用like ‘%#filedName#%’ 时，有什么问题？"
 date:   2017-01-01 23:41:33  +0800
-source:  "http://www.jfox.info/Ibatis-zhong-shi-yong-like-filedName-shi-you-shen-me-wen-ti.html"
+source:  "https://www.jfox.info/Ibatis-zhong-shi-yong-like-filedName-shi-you-shen-me-wen-ti.html"
 fileName:  "20170100393"
 lang:  "zh_CN"
 published: true
-permalink: "Ibatis-zhong-shi-yong-like-filedName-shi-you-shen-me-wen-ti.html"
+permalink: "2017/https://www.jfox.info/Ibatis-zhong-shi-yong-like-filedName-shi-you-shen-me-wen-ti.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期四, 五月 23, 2013

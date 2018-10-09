@@ -3,11 +3,11 @@ layout: post
 title:  "如何使用javascript更改DOM元素的CSS属性"
 title2:  "如何使用javascript更改DOM元素的CSS属性"
 date:   2017-01-01 23:44:13  +0800
-source:  "http://www.jfox.info/%e5%a6%82%e4%bd%95%e4%bd%bf%e7%94%a8javascript%e6%9b%b4%e6%94%b9dom%e5%85%83%e7%b4%a0%e7%9a%84css%e5%b1%9e%e6%80%a7.html"
+source:  "https://www.jfox.info/%e5%a6%82%e4%bd%95%e4%bd%bf%e7%94%a8javascript%e6%9b%b4%e6%94%b9dom%e5%85%83%e7%b4%a0%e7%9a%84css%e5%b1%9e%e6%80%a7.html"
 fileName:  "20170100553"
 lang:  "zh_CN"
 published: true
-permalink: "%e5%a6%82%e4%bd%95%e4%bd%bf%e7%94%a8javascript%e6%9b%b4%e6%94%b9dom%e5%85%83%e7%b4%a0%e7%9a%84css%e5%b1%9e%e6%80%a7.html"
+permalink: "2017/https://www.jfox.info/%e5%a6%82%e4%bd%95%e4%bd%bf%e7%94%a8javascript%e6%9b%b4%e6%94%b9dom%e5%85%83%e7%b4%a0%e7%9a%84css%e5%b1%9e%e6%80%a7.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期四, 二月 13, 2014
@@ -94,5 +94,5 @@ By Lee - Last updated: 星期四, 二月 13, 2014
     </div>
     </body>
 
-参考来源 [How to Change an Element’s CSS Properties with JavaScript – O’Reilly Answers](http://www.jfox.info/go.php?url=http://www.jfox.info/url.php?url=http%3A%2F%2Fanswers.oreilly.com%2Ftopic%2F1819-how-to-change-an-elements-css-properties-with-javascript%2F).
+参考来源 [How to Change an Element’s CSS Properties with JavaScript – O’Reilly Answers](https://www.jfox.info/go.php?url=http://www.jfox.info/url.php?url=http%3A%2F%2Fanswers.oreilly.com%2Ftopic%2F1819-how-to-change-an-elements-css-properties-with-javascript%2F).
 {% endraw %}

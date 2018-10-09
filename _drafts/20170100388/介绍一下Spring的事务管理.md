@@ -3,11 +3,11 @@ layout: post
 title:  "介绍一下Spring的事务管理"
 title2:  "介绍一下Spring的事务管理"
 date:   2017-01-01 23:41:28  +0800
-source:  "http://www.jfox.info/jie-shao-yi-xia-Spring-de-shi-wu-guan-li.html"
+source:  "https://www.jfox.info/jie-shao-yi-xia-Spring-de-shi-wu-guan-li.html"
 fileName:  "20170100388"
 lang:  "zh_CN"
 published: true
-permalink: "jie-shao-yi-xia-Spring-de-shi-wu-guan-li.html"
+permalink: "2017/https://www.jfox.info/jie-shao-yi-xia-Spring-de-shi-wu-guan-li.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期四, 五月 23, 2013

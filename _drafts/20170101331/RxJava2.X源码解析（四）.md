@@ -3,23 +3,23 @@ layout: post
 title:  "RxJava2.X源码解析（四）"
 title2:  "RxJava2.X源码解析（四）"
 date:   2017-01-01 23:57:11  +0800
-source:  "http://www.jfox.info/rxjava2x%e6%ba%90%e7%a0%81%e8%a7%a3%e6%9e%90%e5%9b%9b.html"
+source:  "https://www.jfox.info/rxjava2x%e6%ba%90%e7%a0%81%e8%a7%a3%e6%9e%90%e5%9b%9b.html"
 fileName:  "20170101331"
 lang:  "zh_CN"
 published: true
-permalink: "rxjava2x%e6%ba%90%e7%a0%81%e8%a7%a3%e6%9e%90%e5%9b%9b.html"
+permalink: "2017/https://www.jfox.info/rxjava2x%e6%ba%90%e7%a0%81%e8%a7%a3%e6%9e%90%e5%9b%9b.html"
 ---
 {% raw %}
 H2M_LI_HEADER 基于RxJava2.1.1
 H2M_LI_HEADER 
-我们在前面的 [RxJava2.0使用详解（一）](http://www.jfox.info/go.php?url=http://cherylgood.cn/articles/2017/07/10/1499671003613.html)初步分析了RxJava从创建到执行的流程。[RxJava2.0使用详解（二) ](http://www.jfox.info/go.php?url=http://cherylgood.cn/articles/2017/07/11/1499770780242.html)中分析了RxJava的随意终止Reactive流的能力的来源；也明白了`RxJava`的`onComplete();`与`onError(t);`只有一个会被执行的秘密。[RxJava2.X 源码分析（三）](http://www.jfox.info/go.php?url=http://cherylgood.cn/articles/2017/07/13/1499925392920.html)中探索了RxJava2调用subscribeOn切换被观察者线程的原理。
+我们在前面的 [RxJava2.0使用详解（一）](https://www.jfox.info/go.php?url=http://cherylgood.cn/articles/2017/07/10/1499671003613.html)初步分析了RxJava从创建到执行的流程。[RxJava2.0使用详解（二) ](https://www.jfox.info/go.php?url=http://cherylgood.cn/articles/2017/07/11/1499770780242.html)中分析了RxJava的随意终止Reactive流的能力的来源；也明白了`RxJava`的`onComplete();`与`onError(t);`只有一个会被执行的秘密。[RxJava2.X 源码分析（三）](https://www.jfox.info/go.php?url=http://cherylgood.cn/articles/2017/07/13/1499925392920.html)中探索了RxJava2调用subscribeOn切换被观察者线程的原理。
 
 H2M_LI_HEADER 
 本次我们将继续探索`RxJava2.x`切换观察者的原理，分析`observeOn`与`subscribeOn`的不同之处。继续实现我们在第一篇中定下的小目标
 
 ### 二、从Demo到原理
 
-- OK，我们的Demo还是上次的demo，忘记了的小伙伴可以点击[RxJava2.X 源码分析（三）](http://www.jfox.info/go.php?url=http://cherylgood.cn/articles/2017/07/13/1499925392920.html)，这里就不再重复了哦，我们直接进入正题。
+- OK，我们的Demo还是上次的demo，忘记了的小伙伴可以点击[RxJava2.X 源码分析（三）](https://www.jfox.info/go.php?url=http://cherylgood.cn/articles/2017/07/13/1499925392920.html)，这里就不再重复了哦，我们直接进入正题。
 - Ok，按照套路，我们从`observeOn`方法入手。
 - 
 Ok，我点～^_^

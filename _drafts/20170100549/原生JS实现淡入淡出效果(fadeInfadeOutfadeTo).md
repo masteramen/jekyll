@@ -3,11 +3,11 @@ layout: post
 title:  "原生JS实现淡入淡出效果(fadeIn/fadeOut/fadeTo)"
 title2:  "原生JS实现淡入淡出效果(fadeInfadeOutfadeTo)"
 date:   2017-01-01 23:44:09  +0800
-source:  "http://www.jfox.info/%e5%8e%9f%e7%94%9fjs%e5%ae%9e%e7%8e%b0%e6%b7%a1%e5%85%a5%e6%b7%a1%e5%87%ba%e6%95%88%e6%9e%9cfadeinfadeoutfadeto.html"
+source:  "https://www.jfox.info/%e5%8e%9f%e7%94%9fjs%e5%ae%9e%e7%8e%b0%e6%b7%a1%e5%85%a5%e6%b7%a1%e5%87%ba%e6%95%88%e6%9e%9cfadeinfadeoutfadeto.html"
 fileName:  "20170100549"
 lang:  "zh_CN"
 published: true
-permalink: "%e5%8e%9f%e7%94%9fjs%e5%ae%9e%e7%8e%b0%e6%b7%a1%e5%85%a5%e6%b7%a1%e5%87%ba%e6%95%88%e6%9e%9cfadeinfadeoutfadeto.html"
+permalink: "2017/https://www.jfox.info/%e5%8e%9f%e7%94%9fjs%e5%ae%9e%e7%8e%b0%e6%b7%a1%e5%85%a5%e6%b7%a1%e5%87%ba%e6%95%88%e6%9e%9cfadeinfadeoutfadeto.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期三, 二月 12, 2014
@@ -40,5 +40,5 @@ fadeIn()与fadeOut()均有三个参数,第一个是事件, 必填; 第二个是�
 
 `46``            ``elem.style.display = ``'none'``;`
 
-参考来源 [原生JS实现淡入淡出效果(fadeIn/fadeOut/fadeTo)](http://www.jfox.info/go.php?url=http://www.jfox.info/url.php?url=http%3A%2F%2Fmrthink.net%2Fjs-fadein-fadeout-fadeto%2F)
+参考来源 [原生JS实现淡入淡出效果(fadeIn/fadeOut/fadeTo)](https://www.jfox.info/go.php?url=http://www.jfox.info/url.php?url=http%3A%2F%2Fmrthink.net%2Fjs-fadein-fadeout-fadeto%2F)
 {% endraw %}

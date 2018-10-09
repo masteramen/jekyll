@@ -3,16 +3,16 @@ layout: post
 title:  "HTML5增加的新标记和作用介绍"
 title2:  "HTML5增加的新标记和作用介绍"
 date:   2017-01-01 23:44:40  +0800
-source:  "http://www.jfox.info/html5-zengjia-de-xin-tag-he-zuoyong-jieshao.html"
+source:  "https://www.jfox.info/html5-zengjia-de-xin-tag-he-zuoyong-jieshao.html"
 fileName:  "20170100580"
 lang:  "zh_CN"
 published: true
-permalink: "html5-zengjia-de-xin-tag-he-zuoyong-jieshao.html"
+permalink: "2017/https://www.jfox.info/html5-zengjia-de-xin-tag-he-zuoyong-jieshao.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期六, 二月 22, 2014
 
-[ ](http://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2014/02/131117zlxoio3c78qajvsl.jpg)为了适应当今的互联网标准，HTML5出了很多新的标记，这些标记可以帮助开发人员快速学习开发HTML5，下面分别为开发者们介绍这些标记的作用：
+[ ](https://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2014/02/131117zlxoio3c78qajvsl.jpg)为了适应当今的互联网标准，HTML5出了很多新的标记，这些标记可以帮助开发人员快速学习开发HTML5，下面分别为开发者们介绍这些标记的作用：
 
     <article> 标记 定义一篇文章
 <aside> 标记 定义页面内容部分的侧边栏

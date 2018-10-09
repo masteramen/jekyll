@@ -3,11 +3,11 @@ layout: post
 title:  "数组有没有length()这个方法? String有没有length()这个方法？"
 title2:  "数组有没有length()这个方法 String有没有length()这个方法？"
 date:   2017-01-01 23:41:20  +0800
-source:  "http://www.jfox.info/shu-zu-you-mei-you-length-zhe-ge-fang-fa-String-you-mei-you-length-zhe-ge-fang-fa.html"
+source:  "https://www.jfox.info/shu-zu-you-mei-you-length-zhe-ge-fang-fa-String-you-mei-you-length-zhe-ge-fang-fa.html"
 fileName:  "20170100380"
 lang:  "zh_CN"
 published: true
-permalink: "shu-zu-you-mei-you-length-zhe-ge-fang-fa-String-you-mei-you-length-zhe-ge-fang-fa.html"
+permalink: "2017/https://www.jfox.info/shu-zu-you-mei-you-length-zhe-ge-fang-fa-String-you-mei-you-length-zhe-ge-fang-fa.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期二, 五月 21, 2013

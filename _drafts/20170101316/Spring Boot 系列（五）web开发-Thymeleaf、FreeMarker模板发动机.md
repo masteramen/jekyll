@@ -3,11 +3,11 @@ layout: post
 title:  "Spring Boot 系列（五）web开发-Thymeleaf、FreeMarker模板发动机"
 title2:  "Spring Boot 系列（五）web开发-Thymeleaf、FreeMarker模板发动机"
 date:   2017-01-01 23:56:56  +0800
-source:  "http://www.jfox.info/springboot%e7%b3%bb%e5%88%97%e4%ba%94web%e5%bc%80%e5%8f%91thymeleaffreemarker%e6%a8%a1%e6%9d%bf%e5%8f%91%e5%8a%a8%e6%9c%ba-2.html"
+source:  "https://www.jfox.info/springboot%e7%b3%bb%e5%88%97%e4%ba%94web%e5%bc%80%e5%8f%91thymeleaffreemarker%e6%a8%a1%e6%9d%bf%e5%8f%91%e5%8a%a8%e6%9c%ba-2.html"
 fileName:  "20170101316"
 lang:  "zh_CN"
 published: true
-permalink: "springboot%e7%b3%bb%e5%88%97%e4%ba%94web%e5%bc%80%e5%8f%91thymeleaffreemarker%e6%a8%a1%e6%9d%bf%e5%8f%91%e5%8a%a8%e6%9c%ba-2.html"
+permalink: "2017/https://www.jfox.info/springboot%e7%b3%bb%e5%88%97%e4%ba%94web%e5%bc%80%e5%8f%91thymeleaffreemarker%e6%a8%a1%e6%9d%bf%e5%8f%91%e5%8a%a8%e6%9c%ba-2.html"
 ---
 {% raw %}
 # Spring Boot 系列（五）web开发-Thymeleaf、FreeMarker模板发动机 
@@ -60,7 +60,7 @@ Spring Boot 推荐使用Thymeleaf、FreeMarker、Velocity、Groovy、Mustache等
     }
     
 
-#### 3、编写html代码，其中th:text=”${name}” 为thymeleaf的语法，具体可参考：[Thymeleaf 官方文档](http://www.jfox.info/go.php?url=http://www.thymeleaf.org/doc/articles/standarddialect5minutes.html)
+#### 3、编写html代码，其中th:text=”${name}” 为thymeleaf的语法，具体可参考：[Thymeleaf 官方文档](https://www.jfox.info/go.php?url=http://www.thymeleaf.org/doc/articles/standarddialect5minutes.html)
 
     <!DOCTYPE html>
     <html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
@@ -118,7 +118,7 @@ Spring Boot 推荐使用Thymeleaf、FreeMarker、Velocity、Groovy、Mustache等
 
     同上。
 
-#### 3、templates 下新建 home.ftl文件编写html代码，freemarker语法 可参考：[FreeMarker 官方文档](http://www.jfox.info/go.php?url=http://freemarker.org/docs/dgui_quickstart.html)
+#### 3、templates 下新建 home.ftl文件编写html代码，freemarker语法 可参考：[FreeMarker 官方文档](https://www.jfox.info/go.php?url=http://freemarker.org/docs/dgui_quickstart.html)
  
 home.ftl 
 

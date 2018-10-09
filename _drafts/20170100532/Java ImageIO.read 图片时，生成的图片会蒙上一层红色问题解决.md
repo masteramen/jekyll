@@ -3,11 +3,11 @@ layout: post
 title:  "Java ImageIO.read 图片时，生成的图片会蒙上一层红色问题解决"
 title2:  "Java ImageIO.read 图片时，生成的图片会蒙上一层红色问题解决"
 date:   2017-01-01 23:43:52  +0800
-source:  "http://www.jfox.info/java-imageio-read-%e5%9b%be%e7%89%87%e6%97%b6%ef%bc%8c%e7%94%9f%e6%88%90%e7%9a%84%e5%9b%be%e7%89%87%e4%bc%9a%e8%92%99%e4%b8%8a%e4%b8%80%e5%b1%82%e7%ba%a2%e8%89%b2%e9%97%ae%e9%a2%98%e8%a7%a3%e5%86%b3.html"
+source:  "https://www.jfox.info/java-imageio-read-%e5%9b%be%e7%89%87%e6%97%b6%ef%bc%8c%e7%94%9f%e6%88%90%e7%9a%84%e5%9b%be%e7%89%87%e4%bc%9a%e8%92%99%e4%b8%8a%e4%b8%80%e5%b1%82%e7%ba%a2%e8%89%b2%e9%97%ae%e9%a2%98%e8%a7%a3%e5%86%b3.html"
 fileName:  "20170100532"
 lang:  "zh_CN"
 published: true
-permalink: "java-imageio-read-%e5%9b%be%e7%89%87%e6%97%b6%ef%bc%8c%e7%94%9f%e6%88%90%e7%9a%84%e5%9b%be%e7%89%87%e4%bc%9a%e8%92%99%e4%b8%8a%e4%b8%80%e5%b1%82%e7%ba%a2%e8%89%b2%e9%97%ae%e9%a2%98%e8%a7%a3%e5%86%b3.html"
+permalink: "2017/https://www.jfox.info/java-imageio-read-%e5%9b%be%e7%89%87%e6%97%b6%ef%bc%8c%e7%94%9f%e6%88%90%e7%9a%84%e5%9b%be%e7%89%87%e4%bc%9a%e8%92%99%e4%b8%8a%e4%b8%80%e5%b1%82%e7%ba%a2%e8%89%b2%e9%97%ae%e9%a2%98%e8%a7%a3%e5%86%b3.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期五, 二月 7, 2014

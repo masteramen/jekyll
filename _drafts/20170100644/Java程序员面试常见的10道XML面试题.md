@@ -3,11 +3,11 @@ layout: post
 title:  "Java程序员面试常见的10道XML面试题"
 title2:  "Java程序员面试常见的10道XML面试题"
 date:   2017-01-01 23:45:44  +0800
-source:  "http://www.jfox.info/10-common-java-programmer-interview-question-about-xml.html"
+source:  "https://www.jfox.info/10-common-java-programmer-interview-question-about-xml.html"
 fileName:  "20170100644"
 lang:  "zh_CN"
 published: true
-permalink: "10-common-java-programmer-interview-question-about-xml.html"
+permalink: "2017/https://www.jfox.info/10-common-java-programmer-interview-question-about-xml.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期四, 五月 22, 2014
@@ -69,5 +69,5 @@ By Lee - Last updated: 星期四, 五月 22, 2014
 
 以上的XML面试问答题收集自很多编程人员，但它们对于使用XML技术的每个人都是有用的。由于XML具有平台独立的特性，XPath，XSLT，XQuery等XML技术越来越重要，XML广泛用于跨平台数据传输。尽管XML有冗余和文档体积大等缺点，但它在web服务以及带宽、速率作为次要考虑因素的系统间数据传输起很大作用。
 
-原文地址:[http://www.importnew.com/10839.html](http://www.jfox.info/go.php?url=http://www.jfox.info/url.php?url=http%3A%2F%2Fwww.importnew.com%2F10839.html).
+原文地址:[http://www.importnew.com/10839.html](https://www.jfox.info/go.php?url=http://www.jfox.info/url.php?url=http%3A%2F%2Fwww.importnew.com%2F10839.html).
 {% endraw %}

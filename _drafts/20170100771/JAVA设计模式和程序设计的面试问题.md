@@ -3,11 +3,11 @@ layout: post
 title:  "JAVA设计模式和程序设计的面试问题"
 title2:  "JAVA设计模式和程序设计的面试问题"
 date:   2017-01-01 23:47:51  +0800
-source:  "http://www.jfox.info/java-she-ji-mo-shi-he-cheng-xu-she-ji-de-mian-shi-wen-ti.html"
+source:  "https://www.jfox.info/java-she-ji-mo-shi-he-cheng-xu-she-ji-de-mian-shi-wen-ti.html"
 fileName:  "20170100771"
 lang:  "zh_CN"
 published: true
-permalink: "java-she-ji-mo-shi-he-cheng-xu-she-ji-de-mian-shi-wen-ti.html"
+permalink: "2017/https://www.jfox.info/java-she-ji-mo-shi-he-cheng-xu-she-ji-de-mian-shi-wen-ti.html"
 ---
 {% raw %}
 不管是参加Java面试还是C#面试，**设计模式和软件设计**都是任何编程面试中的必问问题。实际上，编程能力和设计技巧是对彼此很好的补充。一个好的程序员通常都是一个好的软件设计人员。

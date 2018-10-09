@@ -3,11 +3,11 @@ layout: post
 title:  "Java 内存溢出（java.lang.OutOfMemoryError）的常见情况和处理方式总"
 title2:  "Java 内存溢出（java.lang.OutOfMemoryError）的常见情况和处理方式总"
 date:   2017-01-01 23:49:01  +0800
-source:  "http://www.jfox.info/java-nei-cun-yi-chu-java-lang-outofmemoryerror-de-chang-jian-qing-kuang-he-chu-l.html"
+source:  "https://www.jfox.info/java-nei-cun-yi-chu-java-lang-outofmemoryerror-de-chang-jian-qing-kuang-he-chu-l.html"
 fileName:  "20170100841"
 lang:  "zh_CN"
 published: true
-permalink: "java-nei-cun-yi-chu-java-lang-outofmemoryerror-de-chang-jian-qing-kuang-he-chu-l.html"
+permalink: "2017/https://www.jfox.info/java-nei-cun-yi-chu-java-lang-outofmemoryerror-de-chang-jian-qing-kuang-he-chu-l.html"
 ---
 {% raw %}
 # Java 内存溢出（java.lang.OutOfMemoryError）的常见情况和处理方式总 

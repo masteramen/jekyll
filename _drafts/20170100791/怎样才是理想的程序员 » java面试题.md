@@ -3,11 +3,11 @@ layout: post
 title:  "怎样才是理想的程序员 » java面试题"
 title2:  "怎样才是理想的程序员 » java面试题"
 date:   2017-01-01 23:48:11  +0800
-source:  "http://www.jfox.info/zen-yang-cai-shi-li-xiang-de-cheng-xu-yuan.html"
+source:  "https://www.jfox.info/zen-yang-cai-shi-li-xiang-de-cheng-xu-yuan.html"
 fileName:  "20170100791"
 lang:  "zh_CN"
 published: true
-permalink: "zen-yang-cai-shi-li-xiang-de-cheng-xu-yuan.html"
+permalink: "2017/https://www.jfox.info/zen-yang-cai-shi-li-xiang-de-cheng-xu-yuan.html"
 ---
 {% raw %}
 **第1个一点点：专注眼下**

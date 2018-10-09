@@ -3,11 +3,11 @@ layout: post
 title:  "java开发web使用struts2，springMVC和spring，Jquery的理由?"
 title2:  "java开发web使用struts2，springMVC和spring，Jquery的理由"
 date:   2017-01-01 23:47:54  +0800
-source:  "http://www.jfox.info/java-kai-fa-web-shi-yong-struts2-springmvc-he-spring-jquery-de-li-you.html"
+source:  "https://www.jfox.info/java-kai-fa-web-shi-yong-struts2-springmvc-he-spring-jquery-de-li-you.html"
 fileName:  "20170100774"
 lang:  "zh_CN"
 published: true
-permalink: "java-kai-fa-web-shi-yong-struts2-springmvc-he-spring-jquery-de-li-you.html"
+permalink: "2017/https://www.jfox.info/java-kai-fa-web-shi-yong-struts2-springmvc-he-spring-jquery-de-li-you.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期二, 六月 16, 2015

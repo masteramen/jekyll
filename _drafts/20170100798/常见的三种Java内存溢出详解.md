@@ -3,11 +3,11 @@ layout: post
 title:  "常见的三种Java内存溢出详解"
 title2:  "常见的三种Java内存溢出详解"
 date:   2017-01-01 23:48:18  +0800
-source:  "http://www.jfox.info/chang-jian-de-san-zhong-java-na-cun-yi-chu-xiang-jie.html"
+source:  "https://www.jfox.info/chang-jian-de-san-zhong-java-na-cun-yi-chu-xiang-jie.html"
 fileName:  "20170100798"
 lang:  "zh_CN"
 published: true
-permalink: "chang-jian-de-san-zhong-java-na-cun-yi-chu-xiang-jie.html"
+permalink: "2017/https://www.jfox.info/chang-jian-de-san-zhong-java-na-cun-yi-chu-xiang-jie.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期四, 八月 27, 2015

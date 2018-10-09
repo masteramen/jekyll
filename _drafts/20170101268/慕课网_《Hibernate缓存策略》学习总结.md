@@ -3,11 +3,11 @@ layout: post
 title:  "慕课网_《Hibernate缓存策略》学习总结"
 title2:  "慕课网_《Hibernate缓存策略》学习总结"
 date:   2017-01-01 23:56:08  +0800
-source:  "http://www.jfox.info/%e6%85%95%e8%af%be%e7%bd%91hibernate%e7%bc%93%e5%ad%98%e7%ad%96%e7%95%a5%e5%ad%a6%e4%b9%a0%e6%80%bb%e7%bb%93.html"
+source:  "https://www.jfox.info/%e6%85%95%e8%af%be%e7%bd%91hibernate%e7%bc%93%e5%ad%98%e7%ad%96%e7%95%a5%e5%ad%a6%e4%b9%a0%e6%80%bb%e7%bb%93.html"
 fileName:  "20170101268"
 lang:  "zh_CN"
 published: true
-permalink: "%e6%85%95%e8%af%be%e7%bd%91hibernate%e7%bc%93%e5%ad%98%e7%ad%96%e7%95%a5%e5%ad%a6%e4%b9%a0%e6%80%bb%e7%bb%93.html"
+permalink: "2017/https://www.jfox.info/%e6%85%95%e8%af%be%e7%bd%91hibernate%e7%bc%93%e5%ad%98%e7%ad%96%e7%95%a5%e5%ad%a6%e4%b9%a0%e6%80%bb%e7%bb%93.html"
 ---
 {% raw %}
 # 慕课网_《Hibernate缓存策略》学习总结 

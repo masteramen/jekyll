@@ -3,11 +3,11 @@ layout: post
 title:  "把Java数组转换为List时的注意事项"
 title2:  "把Java数组转换为List时的注意事项"
 date:   2017-01-01 23:46:48  +0800
-source:  "http://www.jfox.info/ba-java-shu-zu-zhuan-huan-wei-list-shi-de-zhu-yi-shi-xiang.html"
+source:  "https://www.jfox.info/ba-java-shu-zu-zhuan-huan-wei-list-shi-de-zhu-yi-shi-xiang.html"
 fileName:  "20170100708"
 lang:  "zh_CN"
 published: true
-permalink: "ba-java-shu-zu-zhuan-huan-wei-list-shi-de-zhu-yi-shi-xiang.html"
+permalink: "2017/https://www.jfox.info/ba-java-shu-zu-zhuan-huan-wei-list-shi-de-zhu-yi-shi-xiang.html"
 ---
 {% raw %}
 不幸的是并不是每件事都尽如人意。举个例子，现在将一个Java数组转换为List。当然，我们可以使用Arrays.asList方法，但是如果没有慎重思考就随便使用几乎肯定会产生令人讨厌的意外。考虑完下面这段程序并预测其输出你就明白我的意思了：

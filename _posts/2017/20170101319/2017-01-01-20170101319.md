@@ -3,11 +3,11 @@ layout: post
 title:  "springmvc(一) springmvc框架原理分析和简单入门程序"
 title2:  "springmvc(一) springmvc框架原理分析和简单入门程序"
 date:   2017-01-01 23:56:59  +0800
-source:  "http://www.jfox.info/springmvc%e4%b8%80springmvc%e6%a1%86%e6%9e%b6%e5%8e%9f%e7%90%86%e5%88%86%e6%9e%90%e5%92%8c%e7%ae%80%e5%8d%95%e5%85%a5%e9%97%a8%e7%a8%8b%e5%ba%8f-2.html"
+source:  "https://www.jfox.info/springmvc%e4%b8%80springmvc%e6%a1%86%e6%9e%b6%e5%8e%9f%e7%90%86%e5%88%86%e6%9e%90%e5%92%8c%e7%ae%80%e5%8d%95%e5%85%a5%e9%97%a8%e7%a8%8b%e5%ba%8f-2.html"
 fileName:  "20170101319"
 lang:  "zh_CN"
 published: true
-permalink: "springmvc%e4%b8%80springmvc%e6%a1%86%e6%9e%b6%e5%8e%9f%e7%90%86%e5%88%86%e6%9e%90%e5%92%8c%e7%ae%80%e5%8d%95%e5%85%a5%e9%97%a8%e7%a8%8b%e5%ba%8f-2.html"
+permalink: "2017/https://www.jfox.info/springmvc%e4%b8%80springmvc%e6%a1%86%e6%9e%b6%e5%8e%9f%e7%90%86%e5%88%86%e6%9e%90%e5%92%8c%e7%ae%80%e5%8d%95%e5%85%a5%e9%97%a8%e7%a8%8b%e5%ba%8f-2.html"
 ---
 {% raw %}
 springmvc这个框架真的非常简单，感觉比struts2还更简单，好好沉淀下来学习~

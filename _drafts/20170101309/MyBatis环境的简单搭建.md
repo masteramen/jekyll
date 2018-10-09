@@ -3,11 +3,11 @@ layout: post
 title:  "MyBatis环境的简单搭建"
 title2:  "MyBatis环境的简单搭建"
 date:   2017-01-01 23:56:49  +0800
-source:  "http://www.jfox.info/mybatis%e7%8e%af%e5%a2%83%e7%9a%84%e7%ae%80%e5%8d%95%e6%90%ad%e5%bb%ba.html"
+source:  "https://www.jfox.info/mybatis%e7%8e%af%e5%a2%83%e7%9a%84%e7%ae%80%e5%8d%95%e6%90%ad%e5%bb%ba.html"
 fileName:  "20170101309"
 lang:  "zh_CN"
 published: true
-permalink: "mybatis%e7%8e%af%e5%a2%83%e7%9a%84%e7%ae%80%e5%8d%95%e6%90%ad%e5%bb%ba.html"
+permalink: "2017/https://www.jfox.info/mybatis%e7%8e%af%e5%a2%83%e7%9a%84%e7%ae%80%e5%8d%95%e6%90%ad%e5%bb%ba.html"
 ---
 {% raw %}
 MyBatis是支持普通SQL查询，存储过程和高级映射的持久层框架。封装了几乎所有的JDBC代码和参数的手工设置以及结果集的检索。MyBatis使用简单的XML或注解做配置和定义映射关系，将接口中POJO(实体类)映射成数据库的记录。
@@ -30,7 +30,7 @@ SqlSession：该对象包含了所有执行sql的操作的方法，用于执行�
 
 此处使用开发工具MyEclipse，数据库使用的是MySql；
 
- MyBatis相关jar包可去官网自行下载最新版本(不同数据库的驱动jar包也不同)，本例中使用jar包的 [下载链接](http://www.jfox.info/go.php?url=http://pan.baidu.com/s/1qYv20dI)
+ MyBatis相关jar包可去官网自行下载最新版本(不同数据库的驱动jar包也不同)，本例中使用jar包的 [下载链接](https://www.jfox.info/go.php?url=http://pan.baidu.com/s/1qYv20dI)
 
 ### 1.首先创建一个数据表，用来测试交互。
 

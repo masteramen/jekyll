@@ -3,11 +3,11 @@ layout: post
 title:  "关于Spring框架你解多少？"
 title2:  "关于Spring框架你解多少？"
 date:   2017-01-01 23:42:27  +0800
-source:  "http://www.jfox.info/guan-yu-spring-kuang-jia-le-ni-jie-duo-shao.html"
+source:  "https://www.jfox.info/guan-yu-spring-kuang-jia-le-ni-jie-duo-shao.html"
 fileName:  "20170100447"
 lang:  "zh_CN"
 published: true
-permalink: "guan-yu-spring-kuang-jia-le-ni-jie-duo-shao.html"
+permalink: "2017/https://www.jfox.info/guan-yu-spring-kuang-jia-le-ni-jie-duo-shao.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期二, 六月 25, 2013

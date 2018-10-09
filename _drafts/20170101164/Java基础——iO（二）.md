@@ -3,11 +3,11 @@ layout: post
 title:  "Java基础——iO（二）"
 title2:  "Java基础——iO（二）"
 date:   2017-01-01 23:54:24  +0800
-source:  "http://www.jfox.info/java%e5%9f%ba%e7%a1%80io%e4%ba%8c.html"
+source:  "https://www.jfox.info/java%e5%9f%ba%e7%a1%80io%e4%ba%8c.html"
 fileName:  "20170101164"
 lang:  "zh_CN"
 published: true
-permalink: "java%e5%9f%ba%e7%a1%80io%e4%ba%8c.html"
+permalink: "2017/https://www.jfox.info/java%e5%9f%ba%e7%a1%80io%e4%ba%8c.html"
 ---
 {% raw %}
 接着上一篇，继续做学习笔记。学IO这块，突然找到一点好处，好像以后操作电脑，尤其是电脑里的文件啥的，可以很少的用鼠标了。添加、修改、删除啥的，几行代码就可以搞定了。这只是我一个初学者的一点小心思，IO背后的大用处，相信还有很多很多。继续学习ing….
@@ -289,7 +289,7 @@ OutputStreamWriter(OutputStream out, String charsetName) // 创建使用指定�
  
 
   posted @ 
- 2017-07-09 10:59[zzbd4444](http://www.jfox.info/go.php?url=http://www.cnblogs.com/1693977889zz/) 阅读( 
+ 2017-07-09 10:59[zzbd4444](https://www.jfox.info/go.php?url=http://www.cnblogs.com/1693977889zz/) 阅读( 
  …) 评论( 
  …)
 {% endraw %}

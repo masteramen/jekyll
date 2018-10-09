@@ -3,11 +3,11 @@ layout: post
 title:  "下列语句哪一个正确 » java面试题"
 title2:  "下列语句哪一个正确 » java面试题"
 date:   2017-01-01 23:41:40  +0800
-source:  "http://www.jfox.info/xia-lie-yu-ju-na-yi-ge-zheng-que.html"
+source:  "https://www.jfox.info/xia-lie-yu-ju-na-yi-ge-zheng-que.html"
 fileName:  "20170100400"
 lang:  "zh_CN"
 published: true
-permalink: "xia-lie-yu-ju-na-yi-ge-zheng-que.html"
+permalink: "2017/https://www.jfox.info/xia-lie-yu-ju-na-yi-ge-zheng-que.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期日, 五月 26, 2013

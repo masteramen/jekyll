@@ -3,11 +3,11 @@ layout: post
 title:  "StringBuilder StringBuffer –阅读源码从jdk开始"
 title2:  "StringBuilder StringBuffer –阅读源码从jdk开始"
 date:   2017-01-01 23:55:58  +0800
-source:  "http://www.jfox.info/stringbuilderstringbuffer%e9%98%85%e8%af%bb%e6%ba%90%e7%a0%81%e4%bb%8ejdk%e5%bc%80%e5%a7%8b.html"
+source:  "https://www.jfox.info/stringbuilderstringbuffer%e9%98%85%e8%af%bb%e6%ba%90%e7%a0%81%e4%bb%8ejdk%e5%bc%80%e5%a7%8b.html"
 fileName:  "20170101258"
 lang:  "zh_CN"
 published: true
-permalink: "stringbuilderstringbuffer%e9%98%85%e8%af%bb%e6%ba%90%e7%a0%81%e4%bb%8ejdk%e5%bc%80%e5%a7%8b.html"
+permalink: "2017/https://www.jfox.info/stringbuilderstringbuffer%e9%98%85%e8%af%bb%e6%ba%90%e7%a0%81%e4%bb%8ejdk%e5%bc%80%e5%a7%8b.html"
 ---
 {% raw %}
 **引言**

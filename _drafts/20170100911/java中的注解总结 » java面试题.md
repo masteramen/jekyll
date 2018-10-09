@@ -3,11 +3,11 @@ layout: post
 title:  "java中的注解总结 » java面试题"
 title2:  "java中的注解总结 » java面试题"
 date:   2017-01-01 23:50:11  +0800
-source:  "http://www.jfox.info/java%e4%b8%ad%e7%9a%84%e6%b3%a8%e8%a7%a3%e6%80%bb%e7%bb%93.html"
+source:  "https://www.jfox.info/java%e4%b8%ad%e7%9a%84%e6%b3%a8%e8%a7%a3%e6%80%bb%e7%bb%93.html"
 fileName:  "20170100911"
 lang:  "zh_CN"
 published: true
-permalink: "java%e4%b8%ad%e7%9a%84%e6%b3%a8%e8%a7%a3%e6%80%bb%e7%bb%93.html"
+permalink: "2017/https://www.jfox.info/java%e4%b8%ad%e7%9a%84%e6%b3%a8%e8%a7%a3%e6%80%bb%e7%bb%93.html"
 ---
 {% raw %}
 注解是java5引入的特性，在代码中插入一种注释化的信息，用于对代码进行说明，可以对包、类、接口、字段、方法参数、局部变量等进行注解。注解也叫元数据（meta data）。这些注解信息可以在编译期使用预编译工具进行处理（pre-compiler tools），也可以在运行期使用 Java 反射机制进行处理。

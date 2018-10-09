@@ -3,11 +3,11 @@ layout: post
 title:  "为什么使用Spring"
 title2:  "为什么使用Spring"
 date:   2017-01-01 23:41:34  +0800
-source:  "http://www.jfox.info/wei-shen-me-shi-yong-Spring.html"
+source:  "https://www.jfox.info/wei-shen-me-shi-yong-Spring.html"
 fileName:  "20170100394"
 lang:  "zh_CN"
 published: true
-permalink: "wei-shen-me-shi-yong-Spring.html"
+permalink: "2017/https://www.jfox.info/wei-shen-me-shi-yong-Spring.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期五, 五月 24, 2013

@@ -3,11 +3,11 @@ layout: post
 title:  "事务是什么？ » java面试题"
 title2:  "事务是什么？ » java面试题"
 date:   2017-01-01 23:41:13  +0800
-source:  "http://www.jfox.info/shi-wu-shi-shen-me.html"
+source:  "https://www.jfox.info/shi-wu-shi-shen-me.html"
 fileName:  "20170100373"
 lang:  "zh_CN"
 published: true
-permalink: "shi-wu-shi-shen-me.html"
+permalink: "2017/https://www.jfox.info/shi-wu-shi-shen-me.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期二, 五月 21, 2013

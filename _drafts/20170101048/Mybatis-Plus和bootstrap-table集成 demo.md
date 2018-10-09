@@ -3,11 +3,11 @@ layout: post
 title:  "Mybatis-Plus和bootstrap-table集成 demo"
 title2:  "Mybatis-Plus和bootstrap-table集成 demo"
 date:   2017-01-01 23:52:28  +0800
-source:  "http://www.jfox.info/mybatisplus%e5%92%8cbootstraptable%e9%9b%86%e6%88%90demo.html"
+source:  "https://www.jfox.info/mybatisplus%e5%92%8cbootstraptable%e9%9b%86%e6%88%90demo.html"
 fileName:  "20170101048"
 lang:  "zh_CN"
 published: true
-permalink: "mybatisplus%e5%92%8cbootstraptable%e9%9b%86%e6%88%90demo.html"
+permalink: "2017/https://www.jfox.info/mybatisplus%e5%92%8cbootstraptable%e9%9b%86%e6%88%90demo.html"
 ---
 {% raw %}
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -253,7 +253,7 @@ permalink: "mybatisplus%e5%92%8cbootstraptable%e9%9b%86%e6%88%90demo.html"
                 <version>2.0.9</version>
             </dependency>
 
-具体配置：[http://mp.baomidou.com/#/](http://www.jfox.info/go.php?url=http://mp.baomidou.com/#/)
+具体配置：[http://mp.baomidou.com/#/](https://www.jfox.info/go.php?url=http://mp.baomidou.com/#/)
 
 ## 注意事项
 

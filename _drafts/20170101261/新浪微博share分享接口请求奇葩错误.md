@@ -3,21 +3,26 @@ layout: post
 title:  "新浪微博share分享接口请求奇葩错误"
 title2:  "新浪微博share分享接口请求奇葩错误"
 date:   2017-01-01 23:56:01  +0800
-source:  "http://www.jfox.info/%e6%96%b0%e6%b5%aa%e5%be%ae%e5%8d%9ashare%e5%88%86%e4%ba%ab%e6%8e%a5%e5%8f%a3%e8%af%b7%e6%b1%82%e5%a5%87%e8%91%a9%e9%94%99%e8%af%af.html"
+source:  "https://www.jfox.info/%e6%96%b0%e6%b5%aa%e5%be%ae%e5%8d%9ashare%e5%88%86%e4%ba%ab%e6%8e%a5%e5%8f%a3%e8%af%b7%e6%b1%82%e5%a5%87%e8%91%a9%e9%94%99%e8%af%af.html"
 fileName:  "20170101261"
 lang:  "zh_CN"
 published: true
-permalink: "%e6%96%b0%e6%b5%aa%e5%be%ae%e5%8d%9ashare%e5%88%86%e4%ba%ab%e6%8e%a5%e5%8f%a3%e8%af%b7%e6%b1%82%e5%a5%87%e8%91%a9%e9%94%99%e8%af%af.html"
+permalink: "2017/https://www.jfox.info/%e6%96%b0%e6%b5%aa%e5%be%ae%e5%8d%9ashare%e5%88%86%e4%ba%ab%e6%8e%a5%e5%8f%a3%e8%af%b7%e6%b1%82%e5%a5%87%e8%91%a9%e9%94%99%e8%af%af.html"
 ---
 {% raw %}
-.catesblock h5 a{font-weight:bold;text-transform: uppercase;}
-.cates a {
-display: inline-block;
-margin: 0 3px 5px 0;
-padding: 2px 3px;
-position: relative;
-text-align: left;
-text-shadow: none;
-text-transform: lowercase;
-}
+17年6月30号，微博正式转入牛逼状态；
+
+限制原来的微博发布删除等接口；（想用就开套餐，不然别说话）
+
+开放新的分享接口share，然而，在调用这个分享接口时候，就会出现各种各样的奇葩错误；
+
+注意事项：
+
+1、配置安全域名：就如名称所说，只能配置域名（没有域名，别说话）；
+
+2、status参数里面必须有一个url地址是这个域名的； –这个有点横；
+
+　　注意：如果由于对参数编码后导致无法识别url，我这边编码后无影响。
+
+3、建议：url前后最后加上空格；
 {% endraw %}

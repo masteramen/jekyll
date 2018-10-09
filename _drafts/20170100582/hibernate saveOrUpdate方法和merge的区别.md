@@ -3,11 +3,11 @@ layout: post
 title:  "hibernate saveOrUpdate方法和merge的区别"
 title2:  "hibernate saveOrUpdate方法和merge的区别"
 date:   2017-01-01 23:44:42  +0800
-source:  "http://www.jfox.info/the-differentce-of-hibernate-saveorupdate-and-merge-method.html"
+source:  "https://www.jfox.info/the-differentce-of-hibernate-saveorupdate-and-merge-method.html"
 fileName:  "20170100582"
 lang:  "zh_CN"
 published: true
-permalink: "the-differentce-of-hibernate-saveorupdate-and-merge-method.html"
+permalink: "2017/https://www.jfox.info/the-differentce-of-hibernate-saveorupdate-and-merge-method.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期六, 二月 22, 2014
@@ -20,5 +20,5 @@ merge 在执行session.merge(a)代码后,a对象仍然不是持久化状态，a�
 
 说白了：merge()用法替代了hibernate早期版本的saveOrUpdateCopy，因此该方法的作用只是将当前对象信息保存到数据库,并且不会将对象转换成持久化状态。
 
-参考来源 [hibernate saveOrUpdate方法和merge的区别 ](http://www.jfox.info/go.php?url=http://www.jfox.info/url.php?url=http%3A%2F%2Fedisonowen.blog.163.com%2Fblog%2Fstatic%2F293840392009102832034163%2F).
+参考来源 [hibernate saveOrUpdate方法和merge的区别 ](https://www.jfox.info/go.php?url=http://www.jfox.info/url.php?url=http%3A%2F%2Fedisonowen.blog.163.com%2Fblog%2Fstatic%2F293840392009102832034163%2F).
 {% endraw %}

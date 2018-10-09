@@ -3,11 +3,11 @@ layout: post
 title:  "微服务架构：基于微服务和Docker容器技术的PaaS云平台架构设计（微服务架构实施原理）"
 title2:  "微服务架构：基于微服务和Docker容器技术的PaaS云平台架构设计（微服务架构实施原理）"
 date:   2017-01-01 23:50:10  +0800
-source:  "http://www.jfox.info/%e5%be%ae%e6%9c%8d%e5%8a%a1%e6%9e%b6%e6%9e%84-%e5%9f%ba%e4%ba%8e%e5%be%ae%e6%9c%8d%e5%8a%a1%e5%92%8cdocker%e5%ae%b9%e5%99%a8%e6%8a%80%e6%9c%af%e7%9a%84paas%e4%ba%91%e5%b9%b3%e5%8f%b0%e6%9e%b6%e6%9e%84.html"
+source:  "https://www.jfox.info/%e5%be%ae%e6%9c%8d%e5%8a%a1%e6%9e%b6%e6%9e%84-%e5%9f%ba%e4%ba%8e%e5%be%ae%e6%9c%8d%e5%8a%a1%e5%92%8cdocker%e5%ae%b9%e5%99%a8%e6%8a%80%e6%9c%af%e7%9a%84paas%e4%ba%91%e5%b9%b3%e5%8f%b0%e6%9e%b6%e6%9e%84.html"
 fileName:  "20170100910"
 lang:  "zh_CN"
 published: true
-permalink: "%e5%be%ae%e6%9c%8d%e5%8a%a1%e6%9e%b6%e6%9e%84-%e5%9f%ba%e4%ba%8e%e5%be%ae%e6%9c%8d%e5%8a%a1%e5%92%8cdocker%e5%ae%b9%e5%99%a8%e6%8a%80%e6%9c%af%e7%9a%84paas%e4%ba%91%e5%b9%b3%e5%8f%b0%e6%9e%b6%e6%9e%84.html"
+permalink: "2017/https://www.jfox.info/%e5%be%ae%e6%9c%8d%e5%8a%a1%e6%9e%b6%e6%9e%84-%e5%9f%ba%e4%ba%8e%e5%be%ae%e6%9c%8d%e5%8a%a1%e5%92%8cdocker%e5%ae%b9%e5%99%a8%e6%8a%80%e6%9c%af%e7%9a%84paas%e4%ba%91%e5%b9%b3%e5%8f%b0%e6%9e%b6%e6%9e%84.html"
 ---
 {% raw %}
 基于微服务架构和Docker容器技术的PaaS云平台建设目标是给我们的开发人员提供一套服务快速开发、部署、运维管理、持续开发持续集成的流程。平台提供基础设施、中间件、数据服务、云服务器等资源，开发人员只需要开发业务代码并提交到平台代码库，做一些必要的配置，系统会自动构建、部署，实现应用的敏捷开发、快速迭代。在系统架构上，PaaS云平台主要分为微服务架构、Docker容器技术、DveOps三部分，这篇文章重点介绍微服务架构的实施。

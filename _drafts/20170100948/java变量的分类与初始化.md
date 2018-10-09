@@ -3,11 +3,11 @@ layout: post
 title:  "java变量的分类与初始化"
 title2:  "java变量的分类与初始化"
 date:   2017-01-01 23:50:48  +0800
-source:  "http://www.jfox.info/java%e5%8f%98%e9%87%8f%e7%9a%84%e5%88%86%e7%b1%bb%e4%b8%8e%e5%88%9d%e5%a7%8b%e5%8c%96.html"
+source:  "https://www.jfox.info/java%e5%8f%98%e9%87%8f%e7%9a%84%e5%88%86%e7%b1%bb%e4%b8%8e%e5%88%9d%e5%a7%8b%e5%8c%96.html"
 fileName:  "20170100948"
 lang:  "zh_CN"
 published: true
-permalink: "java%e5%8f%98%e9%87%8f%e7%9a%84%e5%88%86%e7%b1%bb%e4%b8%8e%e5%88%9d%e5%a7%8b%e5%8c%96.html"
+permalink: "2017/https://www.jfox.info/java%e5%8f%98%e9%87%8f%e7%9a%84%e5%88%86%e7%b1%bb%e4%b8%8e%e5%88%9d%e5%a7%8b%e5%8c%96.html"
 ---
 {% raw %}
 2017/6/25

@@ -3,11 +3,11 @@ layout: post
 title:  "Java面试问题：抽象类与接口的区别"
 title2:  "Java面试问题：抽象类与接口的区别"
 date:   2017-01-01 23:46:00  +0800
-source:  "http://www.jfox.info/difference-between-abstract-class-and-interface-in-java-for-interview.html"
+source:  "https://www.jfox.info/difference-between-abstract-class-and-interface-in-java-for-interview.html"
 fileName:  "20170100660"
 lang:  "zh_CN"
 published: true
-permalink: "difference-between-abstract-class-and-interface-in-java-for-interview.html"
+permalink: "2017/https://www.jfox.info/difference-between-abstract-class-and-interface-in-java-for-interview.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期三, 七月 16, 2014
@@ -106,5 +106,5 @@ By Lee - Last updated: 星期三, 七月 16, 2014
 
 Oracle已经开始尝试向接口中引入默认方法和静态方法，以此来减少抽象类和接口之间的差异。现在，我们可以为接口提供默认实现的方法了并且不用强制子类来实现它。
 
-原文地址:[http://www.importnew.com/12399.html](http://www.jfox.info/go.php?url=http://www.jfox.info/url.php?url=http%3A%2F%2Fwww.importnew.com%2F12399.html).
+原文地址:[http://www.importnew.com/12399.html](https://www.jfox.info/go.php?url=http://www.jfox.info/url.php?url=http%3A%2F%2Fwww.importnew.com%2F12399.html).
 {% endraw %}

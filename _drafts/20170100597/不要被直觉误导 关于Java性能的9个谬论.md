@@ -3,11 +3,11 @@ layout: post
 title:  "不要被直觉误导 关于Java性能的9个谬论"
 title2:  "不要被直觉误导 关于Java性能的9个谬论"
 date:   2017-01-01 23:44:57  +0800
-source:  "http://www.jfox.info/do-not-be-misled-intuition-about-java-performance-9-fallacy.html"
+source:  "https://www.jfox.info/do-not-be-misled-intuition-about-java-performance-9-fallacy.html"
 fileName:  "20170100597"
 lang:  "zh_CN"
 published: true
-permalink: "do-not-be-misled-intuition-about-java-performance-9-fallacy.html"
+permalink: "2017/https://www.jfox.info/do-not-be-misled-intuition-about-java-performance-9-fallacy.html"
 ---
 {% raw %}
 Java的性能有某种黑魔法之称。部分原因在于Java平台非常复杂，很多情况下问题难以定位。然而在历史上还有一种趋势，人们靠智慧和经验来研究Java性能，而不是靠应用统计和实证推理。在这篇文章中，我希望拆穿一些最荒谬的技术神话。
@@ -180,9 +180,9 @@ Concurrent-Mark-Sweep (CMS)是一个备选方案，在大部分垃圾收集周�
 
 作者：Ben Evans 译者：臧秀涛
 
-原文链接：[http://www.infoq.com/articles/9_Fallacies_Java_Performance](http://www.jfox.info/go.php?url=http://www.infoq.com/articles/9_Fallacies_Java_Performance)
+原文链接：[http://www.infoq.com/articles/9_Fallacies_Java_Performance](https://www.jfox.info/go.php?url=http://www.infoq.com/articles/9_Fallacies_Java_Performance)
 
-译文链接：[http://www.infoq.com/cn/articles/9_Fallacies_Java_Performance](http://www.jfox.info/go.php?url=http://www.infoq.com/cn/articles/9_Fallacies_Java_Performance)
+译文链接：[http://www.infoq.com/cn/articles/9_Fallacies_Java_Performance](https://www.jfox.info/go.php?url=http://www.infoq.com/cn/articles/9_Fallacies_Java_Performance)
 
 关于作者
 

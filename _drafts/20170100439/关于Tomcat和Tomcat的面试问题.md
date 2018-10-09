@@ -3,11 +3,11 @@ layout: post
 title:  "关于Tomcat和Tomcat的面试问题"
 title2:  "关于Tomcat和Tomcat的面试问题"
 date:   2017-01-01 23:42:19  +0800
-source:  "http://www.jfox.info/guan-yu-Tomcat-he-Tomcat-de-mian-shi-wen-ti.html"
+source:  "https://www.jfox.info/guan-yu-Tomcat-he-Tomcat-de-mian-shi-wen-ti.html"
 fileName:  "20170100439"
 lang:  "zh_CN"
 published: true
-permalink: "guan-yu-Tomcat-he-Tomcat-de-mian-shi-wen-ti.html"
+permalink: "2017/https://www.jfox.info/guan-yu-Tomcat-he-Tomcat-de-mian-shi-wen-ti.html"
 ---
 {% raw %}
 ### 关于Tomcat和Tomcat的面试问题

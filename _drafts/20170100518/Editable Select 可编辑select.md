@@ -3,11 +3,11 @@ layout: post
 title:  "Editable Select 可编辑select"
 title2:  "Editable Select 可编辑select"
 date:   2017-01-01 23:43:38  +0800
-source:  "http://www.jfox.info/editable-select-%e5%8f%af%e7%bc%96%e8%be%91select.html"
+source:  "https://www.jfox.info/editable-select-%e5%8f%af%e7%bc%96%e8%be%91select.html"
 fileName:  "20170100518"
 lang:  "zh_CN"
 published: true
-permalink: "editable-select-%e5%8f%af%e7%bc%96%e8%be%91select.html"
+permalink: "2017/https://www.jfox.info/editable-select-%e5%8f%af%e7%bc%96%e8%be%91select.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期一, 二月 3, 2014

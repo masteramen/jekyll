@@ -3,11 +3,11 @@ layout: post
 title:  "Java JFrame在去掉标题栏后实现拉大收缩边框的功能"
 title2:  "Java JFrame在去掉标题栏后实现拉大收缩边框的功能"
 date:   2017-01-01 23:48:47  +0800
-source:  "http://www.jfox.info/java-jframe-zai-qu-diao-biao-ti-lan-hou-shi-xian-la-da-shou-suo-bian-kuang-de-gong-neng.html"
+source:  "https://www.jfox.info/java-jframe-zai-qu-diao-biao-ti-lan-hou-shi-xian-la-da-shou-suo-bian-kuang-de-gong-neng.html"
 fileName:  "20170100827"
 lang:  "zh_CN"
 published: true
-permalink: "java-jframe-zai-qu-diao-biao-ti-lan-hou-shi-xian-la-da-shou-suo-bian-kuang-de-gong-neng.html"
+permalink: "2017/https://www.jfox.info/java-jframe-zai-qu-diao-biao-ti-lan-hou-shi-xian-la-da-shou-suo-bian-kuang-de-gong-neng.html"
 ---
 {% raw %}
 By go - Last updated: 星期四, 四月 27, 2017

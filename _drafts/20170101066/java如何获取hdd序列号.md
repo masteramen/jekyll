@@ -3,11 +3,11 @@ layout: post
 title:  "java如何获取hdd序列号"
 title2:  "java如何获取hdd序列号"
 date:   2017-01-01 23:52:46  +0800
-source:  "http://www.jfox.info/java%e5%a6%82%e4%bd%95%e8%8e%b7%e5%8f%96hdd%e5%ba%8f%e5%88%97%e5%8f%b7.html"
+source:  "https://www.jfox.info/java%e5%a6%82%e4%bd%95%e8%8e%b7%e5%8f%96hdd%e5%ba%8f%e5%88%97%e5%8f%b7.html"
 fileName:  "20170101066"
 lang:  "zh_CN"
 published: true
-permalink: "java%e5%a6%82%e4%bd%95%e8%8e%b7%e5%8f%96hdd%e5%ba%8f%e5%88%97%e5%8f%b7.html"
+permalink: "2017/https://www.jfox.info/java%e5%a6%82%e4%bd%95%e8%8e%b7%e5%8f%96hdd%e5%ba%8f%e5%88%97%e5%8f%b7.html"
 ---
 {% raw %}
 在java里头如何获取硬盘的序列号呢，这里涉及了跨平台的问题，不同的操作系统的查看命令不一样，那么java里头如何去适配呢。这里使用了oshi这个项目来获取。

@@ -3,17 +3,17 @@ layout: post
 title:  "Alogic-FrameWork源码分析-1.服务开发"
 title2:  "Alogic-FrameWork源码分析-1.服务开发"
 date:   2017-01-01 23:55:42  +0800
-source:  "http://www.jfox.info/alogicframework%e6%ba%90%e7%a0%81%e5%88%86%e6%9e%901%e6%9c%8d%e5%8a%a1%e5%bc%80%e5%8f%91.html"
+source:  "https://www.jfox.info/alogicframework%e6%ba%90%e7%a0%81%e5%88%86%e6%9e%901%e6%9c%8d%e5%8a%a1%e5%bc%80%e5%8f%91.html"
 fileName:  "20170101242"
 lang:  "zh_CN"
 published: true
-permalink: "alogicframework%e6%ba%90%e7%a0%81%e5%88%86%e6%9e%901%e6%9c%8d%e5%8a%a1%e5%bc%80%e5%8f%91.html"
+permalink: "2017/https://www.jfox.info/alogicframework%e6%ba%90%e7%a0%81%e5%88%86%e6%9e%901%e6%9c%8d%e5%8a%a1%e5%bc%80%e5%8f%91.html"
 ---
 {% raw %}
 ## 1.0 Alogic-FrameWork介绍
 
-Alogic-FrameWork是一个轻量级的Java服务框架，源代码位于[Alogic-Github](http://www.jfox.info/go.php?url=https://github.com/anylogic/alogic.git)。具有快速开发服务的特点，在alogic-framework下，一个成熟的Java开发者可以快速的开发出实现自己业务逻辑的Restful服务。在这里我们不谈具体的开发逻辑，而是专注于分析该框架的源码。
-Alogic-FrameWork的一个HelloWorld级别代码如下：[Alogic的HelloWorld-Github](http://www.jfox.info/go.php?url=https://github.com/anylogic/alogic/blob/master/alogic-doc/alogic-framework/001.md)
+Alogic-FrameWork是一个轻量级的Java服务框架，源代码位于[Alogic-Github](https://www.jfox.info/go.php?url=https://github.com/anylogic/alogic.git)。具有快速开发服务的特点，在alogic-framework下，一个成熟的Java开发者可以快速的开发出实现自己业务逻辑的Restful服务。在这里我们不谈具体的开发逻辑，而是专注于分析该框架的源码。
+Alogic-FrameWork的一个HelloWorld级别代码如下：[Alogic的HelloWorld-Github](https://www.jfox.info/go.php?url=https://github.com/anylogic/alogic/blob/master/alogic-doc/alogic-framework/001.md)
 其中主要包括以下几个部分：
 
 1. 

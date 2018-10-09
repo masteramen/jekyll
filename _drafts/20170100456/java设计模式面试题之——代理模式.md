@@ -3,11 +3,11 @@ layout: post
 title:  "java设计模式面试题之——代理模式"
 title2:  "java设计模式面试题之——代理模式"
 date:   2017-01-01 23:42:36  +0800
-source:  "http://www.jfox.info/java-she-ji-mo-shi-mian-shi-ti-zhi-dai-li-mo-shi.html"
+source:  "https://www.jfox.info/java-she-ji-mo-shi-mian-shi-ti-zhi-dai-li-mo-shi.html"
 fileName:  "20170100456"
 lang:  "zh_CN"
 published: true
-permalink: "java-she-ji-mo-shi-mian-shi-ti-zhi-dai-li-mo-shi.html"
+permalink: "2017/https://www.jfox.info/java-she-ji-mo-shi-mian-shi-ti-zhi-dai-li-mo-shi.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期三, 十月 16, 2013
@@ -188,5 +188,5 @@ wangPo.happyWithMan();
 }
 说完这个故事，那我总结一下，代理模式主要使用了java的多态，干活的是被代理类，代理类主要是接活，你让我干活，好，我交给幕后的类去干，你满意就 成，那怎么知道被代理类能不能干呢？同根就成，大家知根知底，你能做啥，我能做啥都清楚得很，同样一个接口呗。好了不多说了，慢慢体会吧。
 
-本文转自 [http://yangguangfu.iteye.com/blog/815787](http://www.jfox.info/go.php?url=http://yangguangfu.iteye.com/blog/815787)
+本文转自 [http://yangguangfu.iteye.com/blog/815787](https://www.jfox.info/go.php?url=http://yangguangfu.iteye.com/blog/815787)
 {% endraw %}

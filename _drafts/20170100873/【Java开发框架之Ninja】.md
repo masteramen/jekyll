@@ -3,11 +3,11 @@ layout: post
 title:  "【Java开发框架之Ninja】"
 title2:  "【Java开发框架之Ninja】"
 date:   2017-01-01 23:49:33  +0800
-source:  "http://www.jfox.info/java%e5%bc%80%e5%8f%91%e6%a1%86%e6%9e%b6%e4%b9%8bninja.html"
+source:  "https://www.jfox.info/java%e5%bc%80%e5%8f%91%e6%a1%86%e6%9e%b6%e4%b9%8bninja.html"
 fileName:  "20170100873"
 lang:  "zh_CN"
 published: true
-permalink: "java%e5%bc%80%e5%8f%91%e6%a1%86%e6%9e%b6%e4%b9%8bninja.html"
+permalink: "2017/https://www.jfox.info/java%e5%bc%80%e5%8f%91%e6%a1%86%e6%9e%b6%e4%b9%8bninja.html"
 ---
 {% raw %}
 Ninja是一个Java全栈Web开发框架，稳定、快速、非常高效。

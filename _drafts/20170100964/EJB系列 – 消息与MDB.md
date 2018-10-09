@@ -3,11 +3,11 @@ layout: post
 title:  "EJB系列 – 消息与MDB"
 title2:  "EJB系列 – 消息与MDB"
 date:   2017-01-01 23:51:04  +0800
-source:  "http://www.jfox.info/ejb%e7%b3%bb%e5%88%97-%e6%b6%88%e6%81%af%e4%b8%8emdb.html"
+source:  "https://www.jfox.info/ejb%e7%b3%bb%e5%88%97-%e6%b6%88%e6%81%af%e4%b8%8emdb.html"
 fileName:  "20170100964"
 lang:  "zh_CN"
 published: true
-permalink: "ejb%e7%b3%bb%e5%88%97-%e6%b6%88%e6%81%af%e4%b8%8emdb.html"
+permalink: "2017/https://www.jfox.info/ejb%e7%b3%bb%e5%88%97-%e6%b6%88%e6%81%af%e4%b8%8emdb.html"
 ---
 {% raw %}
 松散耦合的异步通信过程

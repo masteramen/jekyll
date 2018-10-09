@@ -3,11 +3,11 @@ layout: post
 title:  "LocalMQ：从零构建类 RocketMQ 高性能消息队列"
 title2:  "LocalMQ：从零构建类 RocketMQ 高性能消息队列"
 date:   2017-01-01 23:52:48  +0800
-source:  "http://www.jfox.info/localmq%e4%bb%8e%e9%9b%b6%e6%9e%84%e5%bb%ba%e7%b1%bbrocketmq%e9%ab%98%e6%80%a7%e8%83%bd%e6%b6%88%e6%81%af%e9%98%9f%e5%88%97.html"
+source:  "https://www.jfox.info/localmq%e4%bb%8e%e9%9b%b6%e6%9e%84%e5%bb%ba%e7%b1%bbrocketmq%e9%ab%98%e6%80%a7%e8%83%bd%e6%b6%88%e6%81%af%e9%98%9f%e5%88%97.html"
 fileName:  "20170101068"
 lang:  "zh_CN"
 published: true
-permalink: "localmq%e4%bb%8e%e9%9b%b6%e6%9e%84%e5%bb%ba%e7%b1%bbrocketmq%e9%ab%98%e6%80%a7%e8%83%bd%e6%b6%88%e6%81%af%e9%98%9f%e5%88%97.html"
+permalink: "2017/https://www.jfox.info/localmq%e4%bb%8e%e9%9b%b6%e6%9e%84%e5%bb%ba%e7%b1%bbrocketmq%e9%ab%98%e6%80%a7%e8%83%bd%e6%b6%88%e6%81%af%e9%98%9f%e5%88%97.html"
 ---
 {% raw %}
 // 首先在这里：https://parg.co/beX 下载代码
@@ -55,7 +55,7 @@ LocalMessageQueue 最大的变化在于将消息统一存储在独立地 Message
 
 ## 顺序消费
 
-本部分图来源于[分布式开放消息系统(RocketMQ)的原理与实践](http://www.jfox.info/go.php?url=http://www.jianshu.com/p/453c6e7ff81c)
+本部分图来源于[分布式开放消息系统(RocketMQ)的原理与实践](https://www.jfox.info/go.php?url=http://www.jianshu.com/p/453c6e7ff81c)
 
 消息产品的一个重要特性是顺序保证，也就是消息消费的顺序要与发送的时间顺序保持一致；在多发送端的情况下，保证全局顺序代价比较大，只要求各个发送端的顺序有保障即可； 举个例子 P1 发送 M11, M12, M13，P2 发送 M21, M22, M23，在消费的时候，只要求保证 M11, M12, M13(M21,M22,M23)的顺序，也就是说，实际消费顺序为: M11, M21, M12, M13, M22, M23 正确； M11, M21, M22, M12, M13, M23 正确 M11, M13, M21, M22, M23, M12 错误，M12 与 M13 的顺序颠倒了；假如生产者产生了 2 条消息：M1、M2，要保证这两条消息的顺序，最直观的方式就是采取类似于 TCP 中的确认消息：
 
@@ -120,7 +120,7 @@ LocalMessageQueue 中采用了消息统一存储的方案，因此所有的消�
 
 # MemoryMessageQueue
 
-源代码参考[这里](http://www.jfox.info/go.php?url=https://parg.co/beI)
+源代码参考[这里](https://www.jfox.info/go.php?url=https://parg.co/beI)
 
 MemoryMessageQueue 是最简易的实现，不过其代码能够反映出某个消息队列的基本流程，首先在生产者我们需要创建消息并且发送给消息队列：
 
@@ -186,7 +186,7 @@ MemoryMessageQueue 是最简易的实现，不过其代码能够反映出某个�
 
 # EmbeddedMessageQueue
 
-源代码参考[这里](http://www.jfox.info/go.php?url=https://parg.co/be1)
+源代码参考[这里](https://www.jfox.info/go.php?url=https://parg.co/be1)
 
 EmbeddedMessageQueue 中引入了消息持久化支持，本部分我们也主要讨论消息序列化与底层的 MappedPartitionQueue 实现。
 
@@ -711,7 +711,7 @@ EmbeddedMessageQueue 中还包含了某个 flushAndUnmapPartitionServices 用于
 
 # LocalMessageQueue
 
-源代码参考[这里](http://www.jfox.info/go.php?url=https://parg.co/bea)
+源代码参考[这里](https://www.jfox.info/go.php?url=https://parg.co/bea)
 
 ## 消息存储
 

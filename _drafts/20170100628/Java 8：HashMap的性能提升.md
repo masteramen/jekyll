@@ -3,11 +3,11 @@ layout: post
 title:  "Java 8：HashMap的性能提升"
 title2:  "Java 8：HashMap的性能提升"
 date:   2017-01-01 23:45:28  +0800
-source:  "http://www.jfox.info/hashmap-performance-boost-in-java-8.html"
+source:  "https://www.jfox.info/hashmap-performance-boost-in-java-8.html"
 fileName:  "20170100628"
 lang:  "zh_CN"
 published: true
-permalink: "hashmap-performance-boost-in-java-8.html"
+permalink: "2017/https://www.jfox.info/hashmap-performance-boost-in-java-8.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期日, 五月 4, 2014
@@ -130,7 +130,7 @@ map.get(Keys.of(i%mapSize));
 
 }
 
-[![1](http://www.jfox.info/wp-content/uploads/2014/05/1.png)](http://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2014/05/1.png)
+[![1](http://www.jfox.info/wp-content/uploads/2014/05/1.png)](https://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2014/05/1.png)
 
 有意思的是这个简单的HashMap.get()里面，Java 8比Java 7要快20%。整体的性能也相当不错：尽管HashMap里有一百万条记录，单个查询也只花了不到10纳秒，也就是大概我机器上的大概20个CPU周期。相当令人震撼！不过这并不是我们想要测量的目标。
 
@@ -150,13 +150,13 @@ return0;
 
 }
 
-[![2](http://www.jfox.info/wp-content/uploads/2014/05/2.png)](http://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2014/05/2.png)
+[![2](http://www.jfox.info/wp-content/uploads/2014/05/2.png)](https://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2014/05/2.png)
 
 Java 7的结果是预料中的。随着HashMap的大小的增长，get()方法的开销也越来越大。由于所有的记录都在同一个桶里的超长链表内，平均查询一条记录就需要遍历一半的列表。因此从图上可以看到，它的时间复杂度是O(n)。
 
 不过Java 8的表现要好许多！它是一个log的曲线，因此它的性能要好上好几个数量级。尽管有严重的哈希碰撞，已是最坏的情况了，但这个同样的基准测试在JDK8中的时间复杂度是O(logn)。单独来看JDK 8的曲线的话会更清楚，这是一个对数线性分布：
 
-[![3](http://www.jfox.info/wp-content/uploads/2014/05/3.png)](http://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2014/05/3.png)
+[![3](http://www.jfox.info/wp-content/uploads/2014/05/3.png)](https://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2014/05/3.png)
 
 为什么会有这么大的性能提升，尽管这里用的是大O符号（大O描述的是渐近上界）？其实这个优化在JEP-180中已经提到了。如果某个桶中的记录过 大的话（当前是TREEIFY_THRESHOLD = 8），HashMap会动态的使用一个专门的treemap实现来替换掉它。这样做的结果会更好，是O(logn)，而不是糟糕的O(n)。它是如何工作 的？前面产生冲突的那些KEY对应的记录只是简单的追加到一个链表后面，这些记录只能通过遍历来进行查找。但是超过这个阈值后HashMap开始将列表升 级成一个二叉树，使用哈希值作为树的分支变量，如果两个哈希值不等，但指向同一个桶的话，较大的那个会插入到右子树里。如果哈希值相等，HashMap希 望key值最好是实现了Comparable接口的，这样它可以按照顺序来进行插入。这对HashMap的key来说并不是必须的，不过如果实现了当然最 好。如果没有实现这个接口，在出现严重的哈希碰撞的时候，你就并别指望能获得性能提升了。
 
@@ -164,5 +164,5 @@ Java 7的结果是预料中的。随着HashMap的大小的增长，get()方法�
 
 测试使用的环境是：Intel Core i7-3635QM @ 2.4 GHz，8GB内存，SSD硬盘，使用默认的JVM参数，运行在64位的Windows 8.1系统 上。
 
-原文出处：[http://java.dzone.com/articles/hashmap-performance](http://www.jfox.info/go.php?url=http://java.dzone.com/articles/hashmap-performance)   译文出处： [http://it.deepinmind.com/%E6%80%A7%E8%83%BD/2014/04/24/hashmap-performance-in-java-8.html](http://www.jfox.info/go.php?url=http://it.deepinmind.com/%E6%80%A7%E8%83%BD/2014/04/24/hashmap-performance-in-java-8.html)
+原文出处：[http://java.dzone.com/articles/hashmap-performance](https://www.jfox.info/go.php?url=http://java.dzone.com/articles/hashmap-performance)   译文出处： [http://it.deepinmind.com/%E6%80%A7%E8%83%BD/2014/04/24/hashmap-performance-in-java-8.html](https://www.jfox.info/go.php?url=http://it.deepinmind.com/%E6%80%A7%E8%83%BD/2014/04/24/hashmap-performance-in-java-8.html)
 {% endraw %}

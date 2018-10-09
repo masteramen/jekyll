@@ -3,11 +3,11 @@ layout: post
 title:  "Java之分支和循环 » java面试题"
 title2:  "Java之分支和循环 » java面试题"
 date:   2017-01-01 23:57:02  +0800
-source:  "http://www.jfox.info/java%e4%b9%8b%e5%88%86%e6%94%af%e5%92%8c%e5%be%aa%e7%8e%af.html"
+source:  "https://www.jfox.info/java%e4%b9%8b%e5%88%86%e6%94%af%e5%92%8c%e5%be%aa%e7%8e%af.html"
 fileName:  "20170101322"
 lang:  "zh_CN"
 published: true
-permalink: "java%e4%b9%8b%e5%88%86%e6%94%af%e5%92%8c%e5%be%aa%e7%8e%af.html"
+permalink: "2017/https://www.jfox.info/java%e4%b9%8b%e5%88%86%e6%94%af%e5%92%8c%e5%be%aa%e7%8e%af.html"
 ---
 {% raw %}
 # Java之分支和循环 

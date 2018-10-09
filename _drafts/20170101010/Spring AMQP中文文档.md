@@ -3,11 +3,11 @@ layout: post
 title:  "Spring AMQP中文文档"
 title2:  "Spring AMQP中文文档"
 date:   2017-01-01 23:51:50  +0800
-source:  "http://www.jfox.info/spring-amqp%e4%b8%ad%e6%96%87%e6%96%87%e6%a1%a3.html"
+source:  "https://www.jfox.info/spring-amqp%e4%b8%ad%e6%96%87%e6%96%87%e6%a1%a3.html"
 fileName:  "20170101010"
 lang:  "zh_CN"
 published: true
-permalink: "spring-amqp%e4%b8%ad%e6%96%87%e6%96%87%e6%a1%a3.html"
+permalink: "2017/https://www.jfox.info/spring-amqp%e4%b8%ad%e6%96%87%e6%96%87%e6%a1%a3.html"
 ---
 {% raw %}
 该帮助文档的第一部分是Spring AMQP以及基本概念和一些代码段的概述，可以尽快帮助您快速使用。 
@@ -18,7 +18,7 @@ permalink: "spring-amqp%e4%b8%ad%e6%96%87%e6%96%87%e6%a1%a3.html"
 
  五分钟快速使用Spring AMQP. 
 
- 先决条件：安装并运行 [ RabbitMQ ](http://www.jfox.info/go.php?url=http://www.rabbitmq.com/download.html) 。然后在您的项目中加入如下MAVEN依赖: 
+ 先决条件：安装并运行 [ RabbitMQ ](https://www.jfox.info/go.php?url=http://www.rabbitmq.com/download.html) 。然后在您的项目中加入如下MAVEN依赖: 
 
     ConnectionFactory connectionFactory = new CachingConnectionFactory();
     AmqpAdmin admin = new RabbitAdmin(connectionFactory);
@@ -920,13 +920,13 @@ xml
     }
     
 
- 该 [ 测试用例 ](http://www.jfox.info/go.php?url=https://github.com/spring-projects/spring-amqp/tree/master/spring-rabbit/src/test/java/org/springframework/amqp/rabbit/listener/JavaConfigFixedReplyQueueTests.java) 显示了一个连接了固定应答队列的RabbitTemplate的完整示例，以及处理请求并返回答复的“远程”监听器容器。 
+ 该 [ 测试用例 ](https://www.jfox.info/go.php?url=https://github.com/spring-projects/spring-amqp/tree/master/spring-rabbit/src/test/java/org/springframework/amqp/rabbit/listener/JavaConfigFixedReplyQueueTests.java) 显示了一个连接了固定应答队列的RabbitTemplate的完整示例，以及处理请求并返回答复的“远程”监听器容器。 
 
  当回复超时(replyTimeout)时，sendAndReceive()方法返回null。 
 
  在版本1.3.6之前，只是记录了超时消息的迟到回复。现在，如果收到迟到的回复，它将被拒绝(模板抛出一个 ` AmqpRejectAndDontRequeueException ` )。如果回复队列被配置为将拒绝的消息发送到dead letter exchange，则可以检索回复以供稍后分析。只需使用等于回复queue名称的routing key将队列绑定到配置的dead letter exchange中。 
 
- 有关配置dead lettering的更多信息，请参阅 [ RabbitMQ Dead Letter Documentation ](http://www.jfox.info/go.php?url=https://www.rabbitmq.com/dlx.html) 。您还可以查看一个示例的 ` FixedReplyQueueDeadLetterTests ` 测试用例。 
+ 有关配置dead lettering的更多信息，请参阅 [ RabbitMQ Dead Letter Documentation ](https://www.jfox.info/go.php?url=https://www.rabbitmq.com/dlx.html) 。您还可以查看一个示例的 ` FixedReplyQueueDeadLetterTests ` 测试用例。 
  
  AsyncRabbitTemplate  
 
@@ -1308,7 +1308,7 @@ xml
 
  在版本1.6.6之前，当回收规则添加到容器的transactionAttribute中时，使用外部事务管理器(例如JDBC)不起作用;异常总是回滚事务。 
 
- 此外，当在容器的建议链中使用 [ 事务建议 ](http://www.jfox.info/go.php?url=http://docs.spring.io/spring-framework/docs/current/spring-framework-reference/html/transaction.html#transaction-declarative) 时，条件回滚并不是非常有用，因为所有监听器异常都被包装在ListenerExecutionFailedException中。 
+ 此外，当在容器的建议链中使用 [ 事务建议 ](https://www.jfox.info/go.php?url=http://docs.spring.io/spring-framework/docs/current/spring-framework-reference/html/transaction.html#transaction-declarative) 时，条件回滚并不是非常有用，因为所有监听器异常都被包装在ListenerExecutionFailedException中。 
 
  第一个问题已得到纠正，规则现在得到适当应用。此外，现在提供了ListenerFailedRuleBasedTransactionAttribute;它是RuleBasedTransactionAttribute的一个子类，唯一的区别是它知道ListenerExecutionFailedException，并且使用规则的这种异常的原因。此事务属性可以直接在容器中使用，也可以通过事务建议使用。 
 

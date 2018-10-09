@@ -3,11 +3,11 @@ layout: post
 title:  "Java程序员面试中的多线程问题"
 title2:  "Java程序员面试中的多线程问题"
 date:   2017-01-01 23:45:50  +0800
-source:  "http://www.jfox.info/java-interview-issues-about-multi-thread.html"
+source:  "https://www.jfox.info/java-interview-issues-about-multi-thread.html"
 fileName:  "20170100650"
 lang:  "zh_CN"
 published: true
-permalink: "java-interview-issues-about-multi-thread.html"
+permalink: "2017/https://www.jfox.info/java-interview-issues-about-multi-thread.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期三, 七月 2, 2014
@@ -46,7 +46,7 @@ ThreadLocal实例通常作为静态的私有的(private static)字段出现在�
 
 ThreadLocal难于理解，下面这些引用连接有助于你更好的理解它。
 
-《[Good article on ThreadLocal on IBM DeveloperWorks](http://www.jfox.info/go.php?url=http://www-128.ibm.com/developerworks/java/library/j-threads3.html) 》、《[理解ThreadLocal](http://www.jfox.info/go.php?url=http://blog.jobbole.com/20400/)》、《[Managing data : Good example](http://www.jfox.info/go.php?url=http://javaboutique.internet.com/tutorials/localdata)》、《[Refer Java API Docs](http://www.jfox.info/go.php?url=http://java.sun.com/j2se/1.4.2/docs/api/java/lang/ThreadLocal.html)》
+《[Good article on ThreadLocal on IBM DeveloperWorks](https://www.jfox.info/go.php?url=http://www-128.ibm.com/developerworks/java/library/j-threads3.html) 》、《[理解ThreadLocal](https://www.jfox.info/go.php?url=http://blog.jobbole.com/20400/)》、《[Managing data : Good example](https://www.jfox.info/go.php?url=http://javaboutique.internet.com/tutorials/localdata)》、《[Refer Java API Docs](https://www.jfox.info/go.php?url=http://java.sun.com/j2se/1.4.2/docs/api/java/lang/ThreadLocal.html)》
 
 **5、什么时候抛出InvalidMonitorStateException异常，为什么？**
 
@@ -215,7 +215,7 @@ object.wait()使当前线程出于“不可运行”状态，和sleep()不同的
 
 这里的问题并不详尽，我相信还有很多重要的问题并未提及，您认为还有哪些问题应该包括在上面呢？欢迎在评论中分享任何形式的问题与建议。
 
-原文：[Sachin FromDev](http://www.jfox.info/go.php?url=http://www.fromdev.com/2008/05/java-collections-questions.html) 编译：[伯乐](http://www.jfox.info/go.php?url=http://www.jobbole.com/)在线 –[刘志军](http://www.jfox.info/go.php?url=http://blog.jobbole.com/18571/)
+原文：[Sachin FromDev](https://www.jfox.info/go.php?url=http://www.fromdev.com/2008/05/java-collections-questions.html) 编译：[伯乐](https://www.jfox.info/go.php?url=http://www.jobbole.com/)在线 –[刘志军](https://www.jfox.info/go.php?url=http://blog.jobbole.com/18571/)
 
-原文地址:[http://blog.jobbole.com/18571/](http://www.jfox.info/go.php?url=http://www.jfox.info/url.php?url=http%3A%2F%2Fblog.jobbole.com%2F18571%2F).
+原文地址:[http://blog.jobbole.com/18571/](https://www.jfox.info/go.php?url=http://www.jfox.info/url.php?url=http%3A%2F%2Fblog.jobbole.com%2F18571%2F).
 {% endraw %}

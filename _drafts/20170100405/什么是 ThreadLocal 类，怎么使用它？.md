@@ -3,11 +3,11 @@ layout: post
 title:  "什么是 ThreadLocal 类，怎么使用它？"
 title2:  "什么是 ThreadLocal 类，怎么使用它？"
 date:   2017-01-01 23:41:45  +0800
-source:  "http://www.jfox.info/shen-me-shi-ThreadLocal-lei-zen-me-shi-yong-ta.html"
+source:  "https://www.jfox.info/shen-me-shi-ThreadLocal-lei-zen-me-shi-yong-ta.html"
 fileName:  "20170100405"
 lang:  "zh_CN"
 published: true
-permalink: "shen-me-shi-ThreadLocal-lei-zen-me-shi-yong-ta.html"
+permalink: "2017/https://www.jfox.info/shen-me-shi-ThreadLocal-lei-zen-me-shi-yong-ta.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期一, 五月 27, 2013

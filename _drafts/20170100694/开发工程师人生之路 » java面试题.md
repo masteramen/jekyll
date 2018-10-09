@@ -3,11 +3,11 @@ layout: post
 title:  "开发工程师人生之路 » java面试题"
 title2:  "开发工程师人生之路 » java面试题"
 date:   2017-01-01 23:46:34  +0800
-source:  "http://www.jfox.info/kai-fa-gong-cheng-shi-ren-sheng-zhi-lu.html"
+source:  "https://www.jfox.info/kai-fa-gong-cheng-shi-ren-sheng-zhi-lu.html"
 fileName:  "20170100694"
 lang:  "zh_CN"
 published: true
-permalink: "kai-fa-gong-cheng-shi-ren-sheng-zhi-lu.html"
+permalink: "2017/https://www.jfox.info/kai-fa-gong-cheng-shi-ren-sheng-zhi-lu.html"
 ---
 {% raw %}
 相对同时刚出校门同学从事其它行业而言优厚的薪水，以及不断学习更新的专业知识不仅仅让你感到生活的充实，更满足了你那不让外人知的虚荣心。在刚出校门的几年中，你经常回头看看被你落在后面的同学们，在内心怜悯他们的同时，你也会对自已天天加班的努力工作感到心里平衡：“有付出才会有回报”这句话在那几年中你说的最多，不管是对自已的朋友们还是自已的爱人。第二句最常说的话是对公司的领导：“不行我就走人！”，实际上你也真的走过几回。对了，在这几年中，因为你的经济条件不错，你开始买房、开始谈恋爱、结婚、开始有了自已的小孩。有时候你会对自已说再过两年就去买车。当然其中可能有许多大件是需要分期付款的，但你对前途充满了信心，你确信认为这种日子会永远的持续下去，即使不是变得更好的话。
@@ -130,5 +130,5 @@ Borland C＋＋和Protel3.0，好不容易学会了，却发现需要学习VC和
 
 三、机会远比钱重要，挣不挣钱在年轻时并不是特别重要！不论是在实际生活中还是在网上或其它地方，如果有机会参与到除本职工作外的一些项目或产品的开发中（包括你的朋友拉你去做点小生意之类的非开发性质的工作），那怕是帮忙的性质，也要积极介入，至少你会交到很多的朋友，这样你的人生会多出很多的机会
 
-[Source](http://www.jfox.info/go.php?url=http://www.jfox.info/url.php?_v=v4&amp;_src=&amp;isencode=1&amp;content=dGltZT0xNDE0Mzc1OTY3MzgxJnVybD1odHRwJTNBJTJGJTJGYmxvZy5jc2RuLm5ldCUyRnUwMTM0Njc0NDIlMkZhcnRpY2xlJTJGZGV0YWlscyUyRjQwNDgwMzcz)
+[Source](https://www.jfox.info/go.php?url=http://www.jfox.info/url.php?_v=v4&amp;_src=&amp;isencode=1&amp;content=dGltZT0xNDE0Mzc1OTY3MzgxJnVybD1odHRwJTNBJTJGJTJGYmxvZy5jc2RuLm5ldCUyRnUwMTM0Njc0NDIlMkZhcnRpY2xlJTJGZGV0YWlscyUyRjQwNDgwMzcz)
 {% endraw %}

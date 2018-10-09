@@ -3,11 +3,11 @@ layout: post
 title:  "LinkedList原理及源码解析"
 title2:  "LinkedList原理及源码解析"
 date:   2017-01-01 23:55:04  +0800
-source:  "http://www.jfox.info/linkedlist%e5%8e%9f%e7%90%86%e5%8f%8a%e6%ba%90%e7%a0%81%e8%a7%a3%e6%9e%90.html"
+source:  "https://www.jfox.info/linkedlist%e5%8e%9f%e7%90%86%e5%8f%8a%e6%ba%90%e7%a0%81%e8%a7%a3%e6%9e%90.html"
 fileName:  "20170101204"
 lang:  "zh_CN"
 published: true
-permalink: "linkedlist%e5%8e%9f%e7%90%86%e5%8f%8a%e6%ba%90%e7%a0%81%e8%a7%a3%e6%9e%90.html"
+permalink: "2017/https://www.jfox.info/linkedlist%e5%8e%9f%e7%90%86%e5%8f%8a%e6%ba%90%e7%a0%81%e8%a7%a3%e6%9e%90.html"
 ---
 {% raw %}
 # LinkedList原理及源码解析 

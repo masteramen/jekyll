@@ -3,11 +3,11 @@ layout: post
 title:  "JAVA接口和抽象类的区别是什么？"
 title2:  "JAVA接口和抽象类的区别是什么？"
 date:   2017-01-01 23:46:20  +0800
-source:  "http://www.jfox.info/java-jie-kou-he-chou-xiang-lei-de-qu-bie-shi-shi-me.html"
+source:  "https://www.jfox.info/java-jie-kou-he-chou-xiang-lei-de-qu-bie-shi-shi-me.html"
 fileName:  "20170100680"
 lang:  "zh_CN"
 published: true
-permalink: "java-jie-kou-he-chou-xiang-lei-de-qu-bie-shi-shi-me.html"
+permalink: "2017/https://www.jfox.info/java-jie-kou-he-chou-xiang-lei-de-qu-bie-shi-shi-me.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期日, 八月 24, 2014
@@ -26,5 +26,5 @@ Java提供和支持创建抽象类和接口。它们的实现有共同点，不�
 
 - 接口是绝对抽象的，不可以被实例化。抽象类也不可以被实例化，但是，如果它包含main方法的话是可以被调用的。
 
-也可以参考[JDK8中抽象类和接口的区别](http://www.jfox.info/go.php?url=http://www.jfox.info/url.php?_src=&amp;isencode=1&amp;content=dGltZT0xNDA4ODgzMTYzNjI0JnVybD1odHRwJTNBJTJGJTJGd3d3LmphdmFjb2RlZ2Vla3MuY29tJTJGMjAxNCUyRjA0JTJGYWJzdHJhY3QtY2xhc3MtdmVyc3VzLWludGVyZmFjZS1pbi10aGUtamRrLTgtZXJhLmh0bWw=)
+也可以参考[JDK8中抽象类和接口的区别](https://www.jfox.info/go.php?url=http://www.jfox.info/url.php?_src=&amp;isencode=1&amp;content=dGltZT0xNDA4ODgzMTYzNjI0JnVybD1odHRwJTNBJTJGJTJGd3d3LmphdmFjb2RlZ2Vla3MuY29tJTJGMjAxNCUyRjA0JTJGYWJzdHJhY3QtY2xhc3MtdmVyc3VzLWludGVyZmFjZS1pbi10aGUtamRrLTgtZXJhLmh0bWw=)
 {% endraw %}

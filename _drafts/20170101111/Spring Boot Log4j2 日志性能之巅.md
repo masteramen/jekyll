@@ -3,11 +3,11 @@ layout: post
 title:  "Spring Boot Log4j2 日志性能之巅"
 title2:  "Spring Boot Log4j2 日志性能之巅"
 date:   2017-01-01 23:53:31  +0800
-source:  "http://www.jfox.info/springbootlog4j2%e6%97%a5%e5%bf%97%e6%80%a7%e8%83%bd%e4%b9%8b%e5%b7%85.html"
+source:  "https://www.jfox.info/springbootlog4j2%e6%97%a5%e5%bf%97%e6%80%a7%e8%83%bd%e4%b9%8b%e5%b7%85.html"
 fileName:  "20170101111"
 lang:  "zh_CN"
 published: true
-permalink: "springbootlog4j2%e6%97%a5%e5%bf%97%e6%80%a7%e8%83%bd%e4%b9%8b%e5%b7%85.html"
+permalink: "2017/https://www.jfox.info/springbootlog4j2%e6%97%a5%e5%bf%97%e6%80%a7%e8%83%bd%e4%b9%8b%e5%b7%85.html"
 ---
 {% raw %}
 0x01 Maven 依赖 pom.xml

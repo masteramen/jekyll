@@ -3,11 +3,11 @@ layout: post
 title:  "JAVAWEB开发之mybatis详解(一)——mybatis的入门(实现增删改查操作)、自定义别名、抽取代码块以及动态SQL的使用"
 title2:  "JAVAWEB开发之mybatis详解(一)——mybatis的入门(实现增删改查操作)、自定义别名、抽取代码块以及动态SQL的使用"
 date:   2017-01-01 23:48:50  +0800
-source:  "http://www.jfox.info/javaweb-kai-fa-zhi-mybatis-xiang-jie-yi-mybatis-de-ru-men-shi-xian-zeng-shan-gai-cha-cao-zuo-zi-ding.html"
+source:  "https://www.jfox.info/javaweb-kai-fa-zhi-mybatis-xiang-jie-yi-mybatis-de-ru-men-shi-xian-zeng-shan-gai-cha-cao-zuo-zi-ding.html"
 fileName:  "20170100830"
 lang:  "zh_CN"
 published: true
-permalink: "javaweb-kai-fa-zhi-mybatis-xiang-jie-yi-mybatis-de-ru-men-shi-xian-zeng-shan-gai-cha-cao-zuo-zi-ding.html"
+permalink: "2017/https://www.jfox.info/javaweb-kai-fa-zhi-mybatis-xiang-jie-yi-mybatis-de-ru-men-shi-xian-zeng-shan-gai-cha-cao-zuo-zi-ding.html"
 ---
 {% raw %}
 # JAVAWEB开发之mybatis详解(一)——mybatis的入门(实现增删改查操作)、自定义别名、抽取代码块以及动态SQL的使用 
@@ -254,7 +254,7 @@ mybatis架构![](/wp-content/uploads/2017/06/Center2.png)
 
 ### 导入jar包
 
-从mybatis官网下载地址是: [https://github.com/mybatis/mybatis-3/releases](http://www.jfox.info/go.php?url=https://github.com/mybatis/mybatis-3/releases)
+从mybatis官网下载地址是: [https://github.com/mybatis/mybatis-3/releases](https://www.jfox.info/go.php?url=https://github.com/mybatis/mybatis-3/releases)
 
 ![](/wp-content/uploads/2017/06/Center3.png)
 
@@ -1196,7 +1196,7 @@ resultMap：将SQL查询结果映射为Java对象。如果SQL查询列名和最�
     		userQueryVo.setIds(ids);
     		List<User> list = userMapper.findUserList(userQueryVo);
 
-最终Demo代码如下：(GitHub地址：[https://github.com/LX1993728/mybatisDemo_1](http://www.jfox.info/go.php?url=https://github.com/LX1993728/mybatisDemo_1))![](/wp-content/uploads/2017/06/Center8.png)
+最终Demo代码如下：(GitHub地址：[https://github.com/LX1993728/mybatisDemo_1](https://www.jfox.info/go.php?url=https://github.com/LX1993728/mybatisDemo_1))![](/wp-content/uploads/2017/06/Center8.png)
 UserDao
     package test.lx.mybatis.dao;
     import java.util.List;

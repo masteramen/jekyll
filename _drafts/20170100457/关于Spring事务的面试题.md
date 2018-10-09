@@ -3,11 +3,11 @@ layout: post
 title:  "关于Spring事务的面试题"
 title2:  "关于Spring事务的面试题"
 date:   2017-01-01 23:42:37  +0800
-source:  "http://www.jfox.info/guan-yu-spring-shi-wu-de-mian-shi-ti.html"
+source:  "https://www.jfox.info/guan-yu-spring-shi-wu-de-mian-shi-ti.html"
 fileName:  "20170100457"
 lang:  "zh_CN"
 published: true
-permalink: "guan-yu-spring-shi-wu-de-mian-shi-ti.html"
+permalink: "2017/https://www.jfox.info/guan-yu-spring-shi-wu-de-mian-shi-ti.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期三, 十月 16, 2013
@@ -117,7 +117,7 @@ Spring配置文件中关于事务配置总是由三个组成部分，分别是Da
 
     DataSource、TransactionManager这两部分只是会根据数据访问方式有所变化，比如使用Hibernate进行数据访问 时，DataSource实际为SessionFactory，TransactionManager的实现为 HibernateTransactionManager。
 
-[![SpringSW](http://www.jfox.info/wp-content/uploads/2013/10/SpringSW.jpg)](http://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2013/10/SpringSW.jpg)
+[![SpringSW](http://www.jfox.info/wp-content/uploads/2013/10/SpringSW.jpg)](https://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2013/10/SpringSW.jpg)
 
 根据代理机制的不同，Spring事务的配置又有几种不同的方式：
 

@@ -3,11 +3,11 @@ layout: post
 title:  "解决Eclipse Access restriction: 问题"
 title2:  "解决Eclipse Access restriction 问题"
 date:   2017-01-01 23:48:46  +0800
-source:  "http://www.jfox.info/jie-jue-eclipse-access-restriction-wen-ti.html"
+source:  "https://www.jfox.info/jie-jue-eclipse-access-restriction-wen-ti.html"
 fileName:  "20170100826"
 lang:  "zh_CN"
 published: true
-permalink: "jie-jue-eclipse-access-restriction-wen-ti.html"
+permalink: "2017/https://www.jfox.info/jie-jue-eclipse-access-restriction-wen-ti.html"
 ---
 {% raw %}
 By go - Last updated: 星期四, 四月 27, 2017

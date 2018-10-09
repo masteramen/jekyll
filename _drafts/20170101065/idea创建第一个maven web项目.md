@@ -3,11 +3,11 @@ layout: post
 title:  "idea创建第一个maven web项目"
 title2:  "idea创建第一个maven web项目"
 date:   2017-01-01 23:52:45  +0800
-source:  "http://www.jfox.info/idea%e5%88%9b%e5%bb%ba%e7%ac%ac%e4%b8%80%e4%b8%aamavenweb%e9%a1%b9%e7%9b%ae.html"
+source:  "https://www.jfox.info/idea%e5%88%9b%e5%bb%ba%e7%ac%ac%e4%b8%80%e4%b8%aamavenweb%e9%a1%b9%e7%9b%ae.html"
 fileName:  "20170101065"
 lang:  "zh_CN"
 published: true
-permalink: "idea%e5%88%9b%e5%bb%ba%e7%ac%ac%e4%b8%80%e4%b8%aamavenweb%e9%a1%b9%e7%9b%ae.html"
+permalink: "2017/https://www.jfox.info/idea%e5%88%9b%e5%bb%ba%e7%ac%ac%e4%b8%80%e4%b8%aamavenweb%e9%a1%b9%e7%9b%ae.html"
 ---
 {% raw %}
 # idea创建第一个maven web项目 

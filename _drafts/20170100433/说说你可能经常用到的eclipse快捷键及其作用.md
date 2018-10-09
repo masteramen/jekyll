@@ -3,11 +3,11 @@ layout: post
 title:  "说说你可能经常用到的eclipse快捷键及其作用"
 title2:  "说说你可能经常用到的eclipse快捷键及其作用"
 date:   2017-01-01 23:42:13  +0800
-source:  "http://www.jfox.info/shuo-shuo-ni-ke-neng-jing-chang-yong-dao-de-eclipse-kuai-jie-jian-ji-qi-zuo-yong.html"
+source:  "https://www.jfox.info/shuo-shuo-ni-ke-neng-jing-chang-yong-dao-de-eclipse-kuai-jie-jian-ji-qi-zuo-yong.html"
 fileName:  "20170100433"
 lang:  "zh_CN"
 published: true
-permalink: "shuo-shuo-ni-ke-neng-jing-chang-yong-dao-de-eclipse-kuai-jie-jian-ji-qi-zuo-yong.html"
+permalink: "2017/https://www.jfox.info/shuo-shuo-ni-ke-neng-jing-chang-yong-dao-de-eclipse-kuai-jie-jian-ji-qi-zuo-yong.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期四, 六月 13, 2013

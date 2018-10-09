@@ -3,11 +3,11 @@ layout: post
 title:  "Java OPC client开发踩坑记"
 title2:  "Java OPC client开发踩坑记"
 date:   2017-01-01 23:53:33  +0800
-source:  "http://www.jfox.info/javaopcclient%e5%bc%80%e5%8f%91%e8%b8%a9%e5%9d%91%e8%ae%b0.html"
+source:  "https://www.jfox.info/javaopcclient%e5%bc%80%e5%8f%91%e8%b8%a9%e5%9d%91%e8%ae%b0.html"
 fileName:  "20170101113"
 lang:  "zh_CN"
 published: true
-permalink: "javaopcclient%e5%bc%80%e5%8f%91%e8%b8%a9%e5%9d%91%e8%ae%b0.html"
+permalink: "2017/https://www.jfox.info/javaopcclient%e5%bc%80%e5%8f%91%e8%b8%a9%e5%9d%91%e8%ae%b0.html"
 ---
 {% raw %}
 # Java OPC client开发踩坑记 
@@ -72,7 +72,7 @@ Client端存储的格式如下:
 
 *Microsoft Distributed Component Object Model*，坑最多的一个玩意。字面意思看起来是分布式的COM，简单理解就是可以利用网络传输数据的COM协议，客户端也可以通过互联网分布在各个角落，不再限制在同一台主机上了。
 
-上面描述来看这玩意好像挺美好是吧？实际操作开发中才发现，这玩意简直是坑王之王，对于不熟悉的人来说充满了坑，十分折腾。配置过程可以参考[一些文章](http://www.jfox.info/go.php?url=https://www.softwaretoolbox.com/dcom/html/dcom_for_windows_7-_8-_-_server_2008.html)
+上面描述来看这玩意好像挺美好是吧？实际操作开发中才发现，这玩意简直是坑王之王，对于不熟悉的人来说充满了坑，十分折腾。配置过程可以参考[一些文章](https://www.jfox.info/go.php?url=https://www.softwaretoolbox.com/dcom/html/dcom_for_windows_7-_8-_-_server_2008.html)
 
 - 
 DCOM是windows上的服务，使用前需要启用
@@ -88,7 +88,7 @@ DCOM是远程连接的协议，需要配置相关的权限，以及防火墙规�
 # 开发过程
 
 收集到足够的准备知识后，就可以开工了。OPC Server是DA 2.0的，因此找到了以下两个开源类库。
-[JEasyOPC Client](http://www.jfox.info/go.php?url=https://sourceforge.net/projects/jeasyopc/)
+[JEasyOPC Client](https://www.jfox.info/go.php?url=https://sourceforge.net/projects/jeasyopc/)
 
 - 
 底层依赖JNI，只能跑在windows环境，不能跨平台
@@ -99,7 +99,7 @@ DCOM是远程连接的协议，需要配置相关的权限，以及防火墙规�
 - 
 同时支持DA 2.0与3.0协议，算是亮点
 
-[Utgard](http://www.jfox.info/go.php?url=http://openscada.org/projects/utgard/)
+[Utgard](https://www.jfox.info/go.php?url=http://openscada.org/projects/utgard/)
 
 - 
 OpenSCADA项目底下的子项目

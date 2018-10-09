@@ -3,14 +3,14 @@ layout: post
 title:  "一种解决HTTP抓取网页超时设置无效的方法"
 title2:  "一种解决HTTP抓取网页超时设置无效的方法"
 date:   2017-01-01 23:49:26  +0800
-source:  "http://www.jfox.info/yi_zhong_jie_jue_http_zhua_qu_wang_ye_chao_shi_she_zhi_wu_xiao_de_fang_fa.html"
+source:  "https://www.jfox.info/yi_zhong_jie_jue_http_zhua_qu_wang_ye_chao_shi_she_zhi_wu_xiao_de_fang_fa.html"
 fileName:  "20170100866"
 lang:  "zh_CN"
 published: true
-permalink: "yi_zhong_jie_jue_http_zhua_qu_wang_ye_chao_shi_she_zhi_wu_xiao_de_fang_fa.html"
+permalink: "2017/https://www.jfox.info/yi_zhong_jie_jue_http_zhua_qu_wang_ye_chao_shi_she_zhi_wu_xiao_de_fang_fa.html"
 ---
 {% raw %}
-今天发现[superword](http://www.jfox.info/go.php?url=https://github.com/ysc/superword)在获取单词定义的时候，对于不常见单词，网页打开很慢，超过10秒，经检查，发现是利用Jsoup来抓取单词定义的时候，设置的超时3秒无效，_getContent方法的执行时间超过10秒，代码如下：
+今天发现[superword](https://www.jfox.info/go.php?url=https://github.com/ysc/superword)在获取单词定义的时候，对于不常见单词，网页打开很慢，超过10秒，经检查，发现是利用Jsoup来抓取单词定义的时候，设置的超时3秒无效，_getContent方法的执行时间超过10秒，代码如下：
 
         public static String getContent(String url) {
             String html = _getContent(url);

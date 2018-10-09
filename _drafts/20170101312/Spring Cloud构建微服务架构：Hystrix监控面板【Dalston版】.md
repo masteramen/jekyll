@@ -3,11 +3,11 @@ layout: post
 title:  "Spring Cloud构建微服务架构：Hystrix监控面板【Dalston版】"
 title2:  "Spring Cloud构建微服务架构：Hystrix监控面板【Dalston版】"
 date:   2017-01-01 23:56:52  +0800
-source:  "http://www.jfox.info/springcloud%e6%9e%84%e5%bb%ba%e5%be%ae%e6%9c%8d%e5%8a%a1%e6%9e%b6%e6%9e%84hystrix%e7%9b%91%e6%8e%a7%e9%9d%a2%e6%9d%bfdalston%e7%89%88.html"
+source:  "https://www.jfox.info/springcloud%e6%9e%84%e5%bb%ba%e5%be%ae%e6%9c%8d%e5%8a%a1%e6%9e%b6%e6%9e%84hystrix%e7%9b%91%e6%8e%a7%e9%9d%a2%e6%9d%bfdalston%e7%89%88.html"
 fileName:  "20170101312"
 lang:  "zh_CN"
 published: true
-permalink: "springcloud%e6%9e%84%e5%bb%ba%e5%be%ae%e6%9c%8d%e5%8a%a1%e6%9e%b6%e6%9e%84hystrix%e7%9b%91%e6%8e%a7%e9%9d%a2%e6%9d%bfdalston%e7%89%88.html"
+permalink: "2017/https://www.jfox.info/springcloud%e6%9e%84%e5%bb%ba%e5%be%ae%e6%9c%8d%e5%8a%a1%e6%9e%b6%e6%9e%84hystrix%e7%9b%91%e6%8e%a7%e9%9d%a2%e6%9d%bfdalston%e7%89%88.html"
 ---
 {% raw %}
 在上一篇 《服务容错保护（hystrix断路器）》 的介绍中，我们提到断路器是根据一段时间窗内的请求情况来判断并操作断路器的打开和关闭状态的。而这些请求情况的指标信息都是HystrixCommand和HystrixObservableCommand实例在执行过程中记录的重要度量信息，它们除了Hystrix断路器实现中使用之外，对于系统运维也有非常大的帮助。这些指标信息会以“滚动时间窗”与“桶”结合的方式进行汇总，并在内存中驻留一段时间，以供内部或外部进行查询使用，Hystrix Dashboard就是这些指标内容的消费者之一。 

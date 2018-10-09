@@ -3,17 +3,17 @@ layout: post
 title:  "JQuery 定时器 (Jquery Timer 插件) 示例"
 title2:  "JQuery 定时器 (Jquery Timer 插件) 示例"
 date:   2017-01-01 23:44:11  +0800
-source:  "http://www.jfox.info/jquery-%e5%ae%9a%e6%97%b6%e5%99%a8-jquery-timer-%e6%8f%92%e4%bb%b6-%e7%a4%ba%e4%be%8b.html"
+source:  "https://www.jfox.info/jquery-%e5%ae%9a%e6%97%b6%e5%99%a8-jquery-timer-%e6%8f%92%e4%bb%b6-%e7%a4%ba%e4%be%8b.html"
 fileName:  "20170100551"
 lang:  "zh_CN"
 published: true
-permalink: "jquery-%e5%ae%9a%e6%97%b6%e5%99%a8-jquery-timer-%e6%8f%92%e4%bb%b6-%e7%a4%ba%e4%be%8b.html"
+permalink: "2017/https://www.jfox.info/jquery-%e5%ae%9a%e6%97%b6%e5%99%a8-jquery-timer-%e6%8f%92%e4%bb%b6-%e7%a4%ba%e4%be%8b.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期四, 二月 13, 2014
 
 jQuery Timers插件地址：
-[http://plugins.jquery.com/project/timers](http://www.jfox.info/go.php?url=http://plugins.jquery.com/project/timers)
+[http://plugins.jquery.com/project/timers](https://www.jfox.info/go.php?url=http://plugins.jquery.com/project/timers)
 
 JQuery Timers应用知识提供了三个函式
 1. everyTime(时间间隔, [计时器名称], 函式名称, [次数限制], [等待函式程序完成])
@@ -80,9 +80,9 @@ powers: {
 
 示例：
 
-<script src=”[http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js”](http://www.jfox.info/go.php?url=http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js&quot;) type=”text/javascript”></script>
+<script src=”[http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js”](https://www.jfox.info/go.php?url=http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js&quot;) type=”text/javascript”></script>
 
-<script src=”[http://files.cnblogs.com/dachie/jquery.timers-1.2.js”](http://www.jfox.info/go.php?url=http://files.cnblogs.com/dachie/jquery.timers-1.2.js&quot;) type=”text/javascript”></script>
+<script src=”[http://files.cnblogs.com/dachie/jquery.timers-1.2.js”](https://www.jfox.info/go.php?url=http://files.cnblogs.com/dachie/jquery.timers-1.2.js&quot;) type=”text/javascript”></script>
 
 <script>
 
@@ -99,5 +99,5 @@ $(“#Button1”).val(“测试提交”);
 
 <input id=”Button1″ onclick=”check();return false;” value=”测试提交” type=”submit” name=”Button1″>
 
-参考来源 [JQuery 定时器 (Jquery Timer 插件) 下载及示例 ](http://www.jfox.info/go.php?url=http://www.jfox.info/url.php?url=http%3A%2F%2Fwww.cnblogs.com%2Fdachie%2Farchive%2F2010%2F08%2F26%2F1808843.html)
+参考来源 [JQuery 定时器 (Jquery Timer 插件) 下载及示例 ](https://www.jfox.info/go.php?url=http://www.jfox.info/url.php?url=http%3A%2F%2Fwww.cnblogs.com%2Fdachie%2Farchive%2F2010%2F08%2F26%2F1808843.html)
 {% endraw %}

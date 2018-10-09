@@ -3,17 +3,17 @@ layout: post
 title:  "构建自己的Tomcat镜像"
 title2:  "构建自己的Tomcat镜像"
 date:   2017-01-01 23:56:11  +0800
-source:  "http://www.jfox.info/%e6%9e%84%e5%bb%ba%e8%87%aa%e5%b7%b1%e7%9a%84tomcat%e9%95%9c%e5%83%8f.html"
+source:  "https://www.jfox.info/%e6%9e%84%e5%bb%ba%e8%87%aa%e5%b7%b1%e7%9a%84tomcat%e9%95%9c%e5%83%8f.html"
 fileName:  "20170101271"
 lang:  "zh_CN"
 published: true
-permalink: "%e6%9e%84%e5%bb%ba%e8%87%aa%e5%b7%b1%e7%9a%84tomcat%e9%95%9c%e5%83%8f.html"
+permalink: "2017/https://www.jfox.info/%e6%9e%84%e5%bb%ba%e8%87%aa%e5%b7%b1%e7%9a%84tomcat%e9%95%9c%e5%83%8f.html"
 ---
 {% raw %}
 H2M_LI_HEADER 在官方提供的Tomcat镜像的基础上进行构建（以官方Tomcat镜像为父镜像）。官方的Tomcat镜像已经为我们做了很多工作，我们只需要修改部分内容即可。
 H2M_LI_HEADER 根据openjdk镜像，参考官方Tomcat镜像的Dockerfile文件进行构建。我们可以完全按照自己的需求安装和配置Tomcat。当然，通过第一种方式也能达到这个目的，这不是本文的重点。
 
-为了更好地演示Tomcat镜像的构建步骤，本文将按照第二种方式构建我们自己的Tomcat。我们构建的依据当然是官方Tomcat镜像的Dockerfile文件，有想了解该文件的内容朋友，可以移步至我的另一篇博客：[官方Tomcat镜像Dockerfile分析及镜像使用](http://www.jfox.info/go.php?url=http://www.cnblogs.com/dfengwei/p/7144937.html?_blank)。
+为了更好地演示Tomcat镜像的构建步骤，本文将按照第二种方式构建我们自己的Tomcat。我们构建的依据当然是官方Tomcat镜像的Dockerfile文件，有想了解该文件的内容朋友，可以移步至我的另一篇博客：[官方Tomcat镜像Dockerfile分析及镜像使用](https://www.jfox.info/go.php?url=http://www.cnblogs.com/dfengwei/p/7144937.html?_blank)。
 
 我们会对官方的Dockerfile进行一定的精简，去掉可有可无的指令，并添加我们自定义的指令。当然这个可有可无只是我个人认为，仅供参考。
 
@@ -70,11 +70,11 @@ Docker的build命令这里就不多做解释了，请自行百度或参考官方
 
 命令中的`-t`参数用于指定该镜像的标签。标签格式一般是是：`用户名/镜像名称:镜像版本号`。
 
-如果该镜像只是你本地使用，那么标签你可以随意取；但是如果你要使用DockerHub等托管服务托管该镜像，则必须使用托管服务商给你用户名作为标签的`用户名`，并且`镜像名称`和`镜像版本号`遵循一定的规则。官方的托管服务是[DockerHub](http://www.jfox.info/go.php?url=https://hub.docker.com/)，非官方的有很多，比如阿里云的[开发者平台](http://www.jfox.info/go.php?url=https://dev.aliyun.com)。我将在之后的文章中介绍如何操作。
+如果该镜像只是你本地使用，那么标签你可以随意取；但是如果你要使用DockerHub等托管服务托管该镜像，则必须使用托管服务商给你用户名作为标签的`用户名`，并且`镜像名称`和`镜像版本号`遵循一定的规则。官方的托管服务是[DockerHub](https://www.jfox.info/go.php?url=https://hub.docker.com/)，非官方的有很多，比如阿里云的[开发者平台](https://www.jfox.info/go.php?url=https://dev.aliyun.com)。我将在之后的文章中介绍如何操作。
 
 ## 运行容器
 
     $ docker run -d --name tomcat-test -p 8888:8080 dfengwei/tomcat:8.5.15-jre8
 
-本容器的使用方式其实和官方的Tomcat是一样的，只是不支持Tomcat的APR模式。大家可以参考我之前的一篇博客：[官方Tomcat镜像Dockerfile分析及镜像使用](http://www.jfox.info/go.php?url=http://www.cnblogs.com/dfengwei/p/7144937.html?_blank)
+本容器的使用方式其实和官方的Tomcat是一样的，只是不支持Tomcat的APR模式。大家可以参考我之前的一篇博客：[官方Tomcat镜像Dockerfile分析及镜像使用](https://www.jfox.info/go.php?url=http://www.cnblogs.com/dfengwei/p/7144937.html?_blank)
 {% endraw %}

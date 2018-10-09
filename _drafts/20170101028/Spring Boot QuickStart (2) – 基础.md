@@ -3,11 +3,11 @@ layout: post
 title:  "Spring Boot QuickStart (2) – 基础"
 title2:  "Spring Boot QuickStart (2) – 基础"
 date:   2017-01-01 23:52:08  +0800
-source:  "http://www.jfox.info/spring-boot-quickstart-2-%e5%9f%ba%e7%a1%80.html"
+source:  "https://www.jfox.info/spring-boot-quickstart-2-%e5%9f%ba%e7%a1%80.html"
 fileName:  "20170101028"
 lang:  "zh_CN"
 published: true
-permalink: "spring-boot-quickstart-2-%e5%9f%ba%e7%a1%80.html"
+permalink: "2017/https://www.jfox.info/spring-boot-quickstart-2-%e5%9f%ba%e7%a1%80.html"
 ---
 {% raw %}
 环境：Spring Boot 1.5.4
@@ -28,7 +28,7 @@ permalink: "spring-boot-quickstart-2-%e5%9f%ba%e7%a1%80.html"
 比较好的两种方法：
 
 1. 
-通过 [https://start.spring.io/](http://www.jfox.info/go.php?url=https://start.spring.io/) 网站，生成项目框架，导入到 IDE
+通过 [https://start.spring.io/](https://www.jfox.info/go.php?url=https://start.spring.io/) 网站，生成项目框架，导入到 IDE
 
 2. 
 IDEA 有Spring Boot的插件，直接按照提示创建

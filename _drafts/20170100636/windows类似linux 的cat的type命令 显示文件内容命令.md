@@ -3,11 +3,11 @@ layout: post
 title:  "windows类似linux 的cat的type命令 显示文件内容命令"
 title2:  "windows类似linux 的cat的type命令 显示文件内容命令"
 date:   2017-01-01 23:45:36  +0800
-source:  "http://www.jfox.info/windows-linux-like-cat-type-command.html"
+source:  "https://www.jfox.info/windows-linux-like-cat-type-command.html"
 fileName:  "20170100636"
 lang:  "zh_CN"
 published: true
-permalink: "windows-linux-like-cat-type-command.html"
+permalink: "2017/https://www.jfox.info/windows-linux-like-cat-type-command.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期六, 五月 17, 2014

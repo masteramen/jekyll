@@ -3,11 +3,11 @@ layout: post
 title:  "关于 Mybatis 的 $ 和 #，你真的知道他们的细节吗？"
 title2:  "关于 Mybatis 的 $ 和 #，你真的知道他们的细节吗？"
 date:   2017-01-01 23:55:40  +0800
-source:  "http://www.jfox.info/%e5%85%b3%e4%ba%8emybatis%e7%9a%84%e5%92%8c%e4%bd%a0%e7%9c%9f%e7%9a%84%e7%9f%a5%e9%81%93%e4%bb%96%e4%bb%ac%e7%9a%84%e7%bb%86%e8%8a%82%e5%90%97-2.html"
+source:  "https://www.jfox.info/%e5%85%b3%e4%ba%8emybatis%e7%9a%84%e5%92%8c%e4%bd%a0%e7%9c%9f%e7%9a%84%e7%9f%a5%e9%81%93%e4%bb%96%e4%bb%ac%e7%9a%84%e7%bb%86%e8%8a%82%e5%90%97-2.html"
 fileName:  "20170101240"
 lang:  "zh_CN"
 published: true
-permalink: "%e5%85%b3%e4%ba%8emybatis%e7%9a%84%e5%92%8c%e4%bd%a0%e7%9c%9f%e7%9a%84%e7%9f%a5%e9%81%93%e4%bb%96%e4%bb%ac%e7%9a%84%e7%bb%86%e8%8a%82%e5%90%97-2.html"
+permalink: "2017/https://www.jfox.info/%e5%85%b3%e4%ba%8emybatis%e7%9a%84%e5%92%8c%e4%bd%a0%e7%9c%9f%e7%9a%84%e7%9f%a5%e9%81%93%e4%bb%96%e4%bb%ac%e7%9a%84%e7%bb%86%e8%8a%82%e5%90%97-2.html"
 ---
 {% raw %}
 在JDBC中，主要使用的是两种语句，一种是支持参数化和预编译的PrepareStatement，能够支持原生的Sql，也支持设置占位符的方式，参数化输入的参数，防止Sql注入，一种是支持原生Sql的Statement，有Sql注入的风险。在使用Mybatis进行开发过程中，隐藏了底层具体使用哪一种语句的细节，我们通过使用#和$告诉Mybatis，我们实际上进行的是怎么样的操作，需要对语句进行参数化还是说直接保持原生状态就好。今天我们主要看一下使用两种符号使用时系统应对Sql注入的表现和Mybatis在内部是如何对他们处理的源码分析。

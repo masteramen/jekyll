@@ -3,11 +3,11 @@ layout: post
 title:  "动态代理案例1:运用Proxy动态代理来增强方法"
 title2:  "动态代理案例1运用Proxy动态代理来增强方法"
 date:   2017-01-01 23:54:12  +0800
-source:  "http://www.jfox.info/%e5%8a%a8%e6%80%81%e4%bb%a3%e7%90%86%e6%a1%88%e4%be%8b1%e8%bf%90%e7%94%a8proxy%e5%8a%a8%e6%80%81%e4%bb%a3%e7%90%86%e6%9d%a5%e5%a2%9e%e5%bc%ba%e6%96%b9%e6%b3%95.html"
+source:  "https://www.jfox.info/%e5%8a%a8%e6%80%81%e4%bb%a3%e7%90%86%e6%a1%88%e4%be%8b1%e8%bf%90%e7%94%a8proxy%e5%8a%a8%e6%80%81%e4%bb%a3%e7%90%86%e6%9d%a5%e5%a2%9e%e5%bc%ba%e6%96%b9%e6%b3%95.html"
 fileName:  "20170101152"
 lang:  "zh_CN"
 published: true
-permalink: "%e5%8a%a8%e6%80%81%e4%bb%a3%e7%90%86%e6%a1%88%e4%be%8b1%e8%bf%90%e7%94%a8proxy%e5%8a%a8%e6%80%81%e4%bb%a3%e7%90%86%e6%9d%a5%e5%a2%9e%e5%bc%ba%e6%96%b9%e6%b3%95.html"
+permalink: "2017/https://www.jfox.info/%e5%8a%a8%e6%80%81%e4%bb%a3%e7%90%86%e6%a1%88%e4%be%8b1%e8%bf%90%e7%94%a8proxy%e5%8a%a8%e6%80%81%e4%bb%a3%e7%90%86%e6%9d%a5%e5%a2%9e%e5%bc%ba%e6%96%b9%e6%b3%95.html"
 ---
 {% raw %}
 动态代理案例1:

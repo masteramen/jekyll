@@ -3,11 +3,11 @@ layout: post
 title:  "error和exception有什么区别?"
 title2:  "error和exception有什么区别"
 date:   2017-01-01 23:41:04  +0800
-source:  "http://www.jfox.info/error-he-exception-you-shen-me-qu-bie.html"
+source:  "https://www.jfox.info/error-he-exception-you-shen-me-qu-bie.html"
 fileName:  "20170100364"
 lang:  "zh_CN"
 published: true
-permalink: "error-he-exception-you-shen-me-qu-bie.html"
+permalink: "2017/https://www.jfox.info/error-he-exception-you-shen-me-qu-bie.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期一, 五月 20, 2013

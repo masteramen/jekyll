@@ -3,11 +3,11 @@ layout: post
 title:  "ArrayList和数组间的相互转换代码"
 title2:  "ArrayList和数组间的相互转换代码"
 date:   2017-01-01 23:43:39  +0800
-source:  "http://www.jfox.info/arraylist%e5%92%8c%e6%95%b0%e7%bb%84%e9%97%b4%e7%9a%84%e7%9b%b8%e4%ba%92%e8%bd%ac%e6%8d%a2%e4%bb%a3%e7%a0%81.html"
+source:  "https://www.jfox.info/arraylist%e5%92%8c%e6%95%b0%e7%bb%84%e9%97%b4%e7%9a%84%e7%9b%b8%e4%ba%92%e8%bd%ac%e6%8d%a2%e4%bb%a3%e7%a0%81.html"
 fileName:  "20170100519"
 lang:  "zh_CN"
 published: true
-permalink: "arraylist%e5%92%8c%e6%95%b0%e7%bb%84%e9%97%b4%e7%9a%84%e7%9b%b8%e4%ba%92%e8%bd%ac%e6%8d%a2%e4%bb%a3%e7%a0%81.html"
+permalink: "2017/https://www.jfox.info/arraylist%e5%92%8c%e6%95%b0%e7%bb%84%e9%97%b4%e7%9a%84%e7%9b%b8%e4%ba%92%e8%bd%ac%e6%8d%a2%e4%bb%a3%e7%a0%81.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期一, 二月 3, 2014
@@ -114,5 +114,5 @@ public class Test1 {
 
 下次遇到这样的问题，你一定会想到它，不会再for你的List对象或数组对象了吧！
 
-参考来源  [ArrayList和数组间的相互转换 – javasky – ITeye技术网站](http://www.jfox.info/go.php?url=http://wanglihu.iteye.com/blog/243238).
+参考来源  [ArrayList和数组间的相互转换 – javasky – ITeye技术网站](https://www.jfox.info/go.php?url=http://wanglihu.iteye.com/blog/243238).
 {% endraw %}

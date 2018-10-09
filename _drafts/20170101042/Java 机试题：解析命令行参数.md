@@ -3,11 +3,11 @@ layout: post
 title:  "Java 机试题：解析命令行参数"
 title2:  "Java 机试题：解析命令行参数"
 date:   2017-01-01 23:52:22  +0800
-source:  "http://www.jfox.info/java%e6%9c%ba%e8%af%95%e9%a2%98%e8%a7%a3%e6%9e%90%e5%91%bd%e4%bb%a4%e8%a1%8c%e5%8f%82%e6%95%b0.html"
+source:  "https://www.jfox.info/java%e6%9c%ba%e8%af%95%e9%a2%98%e8%a7%a3%e6%9e%90%e5%91%bd%e4%bb%a4%e8%a1%8c%e5%8f%82%e6%95%b0.html"
 fileName:  "20170101042"
 lang:  "zh_CN"
 published: true
-permalink: "java%e6%9c%ba%e8%af%95%e9%a2%98%e8%a7%a3%e6%9e%90%e5%91%bd%e4%bb%a4%e8%a1%8c%e5%8f%82%e6%95%b0.html"
+permalink: "2017/https://www.jfox.info/java%e6%9c%ba%e8%af%95%e9%a2%98%e8%a7%a3%e6%9e%90%e5%91%bd%e4%bb%a4%e8%a1%8c%e5%8f%82%e6%95%b0.html"
 ---
 {% raw %}
 ### 一、根据下面的代码，实现 Arguments 类。

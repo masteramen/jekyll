@@ -3,11 +3,11 @@ layout: post
 title:  "Java 基础 break和continue关键字的使用"
 title2:  "Java 基础 break和continue关键字的使用"
 date:   2017-01-01 23:51:20  +0800
-source:  "http://www.jfox.info/java-%e5%9f%ba%e7%a1%80-break%e5%92%8ccontinue%e5%85%b3%e9%94%ae%e5%ad%97%e7%9a%84%e4%bd%bf%e7%94%a8.html"
+source:  "https://www.jfox.info/java-%e5%9f%ba%e7%a1%80-break%e5%92%8ccontinue%e5%85%b3%e9%94%ae%e5%ad%97%e7%9a%84%e4%bd%bf%e7%94%a8.html"
 fileName:  "20170100980"
 lang:  "zh_CN"
 published: true
-permalink: "java-%e5%9f%ba%e7%a1%80-break%e5%92%8ccontinue%e5%85%b3%e9%94%ae%e5%ad%97%e7%9a%84%e4%bd%bf%e7%94%a8.html"
+permalink: "2017/https://www.jfox.info/java-%e5%9f%ba%e7%a1%80-break%e5%92%8ccontinue%e5%85%b3%e9%94%ae%e5%ad%97%e7%9a%84%e4%bd%bf%e7%94%a8.html"
 ---
 {% raw %}
 **break**：使用在switch…case语句或者循环结构语句中，表示结束当前循环。

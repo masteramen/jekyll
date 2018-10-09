@@ -3,11 +3,11 @@ layout: post
 title:  "Integer与int的区别"
 title2:  "Integer与int的区别"
 date:   2017-01-01 23:40:56  +0800
-source:  "http://www.jfox.info/Integer-yu-int-de-qu-bie.html"
+source:  "https://www.jfox.info/Integer-yu-int-de-qu-bie.html"
 fileName:  "20170100356"
 lang:  "zh_CN"
 published: true
-permalink: "Integer-yu-int-de-qu-bie.html"
+permalink: "2017/https://www.jfox.info/Integer-yu-int-de-qu-bie.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期日, 五月 19, 2013

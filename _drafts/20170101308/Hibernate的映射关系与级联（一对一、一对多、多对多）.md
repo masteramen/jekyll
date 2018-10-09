@@ -3,11 +3,11 @@ layout: post
 title:  "Hibernate的映射关系与级联（一对一、一对多、多对多）"
 title2:  "Hibernate的映射关系与级联（一对一、一对多、多对多）"
 date:   2017-01-01 23:56:48  +0800
-source:  "http://www.jfox.info/hibernate%e7%9a%84%e6%98%a0%e5%b0%84%e5%85%b3%e7%b3%bb%e4%b8%8e%e7%ba%a7%e8%81%94%e4%b8%80%e5%af%b9%e4%b8%80%e4%b8%80%e5%af%b9%e5%a4%9a%e5%a4%9a%e5%af%b9%e5%a4%9a.html"
+source:  "https://www.jfox.info/hibernate%e7%9a%84%e6%98%a0%e5%b0%84%e5%85%b3%e7%b3%bb%e4%b8%8e%e7%ba%a7%e8%81%94%e4%b8%80%e5%af%b9%e4%b8%80%e4%b8%80%e5%af%b9%e5%a4%9a%e5%a4%9a%e5%af%b9%e5%a4%9a.html"
 fileName:  "20170101308"
 lang:  "zh_CN"
 published: true
-permalink: "hibernate%e7%9a%84%e6%98%a0%e5%b0%84%e5%85%b3%e7%b3%bb%e4%b8%8e%e7%ba%a7%e8%81%94%e4%b8%80%e5%af%b9%e4%b8%80%e4%b8%80%e5%af%b9%e5%a4%9a%e5%a4%9a%e5%af%b9%e5%a4%9a.html"
+permalink: "2017/https://www.jfox.info/hibernate%e7%9a%84%e6%98%a0%e5%b0%84%e5%85%b3%e7%b3%bb%e4%b8%8e%e7%ba%a7%e8%81%94%e4%b8%80%e5%af%b9%e4%b8%80%e4%b8%80%e5%af%b9%e5%a4%9a%e5%a4%9a%e5%af%b9%e5%a4%9a.html"
 ---
 {% raw %}
 长期专业踩坑……怪物猎人要登陆switch了
@@ -971,4 +971,125 @@ b、双向一对一主键关联
 
 - 
 c、单向一对一外键关联
+
+- 简单来说，我的主键很宝贵，不给你，那么我的其他字段呢，可以作为我的外键，给你当主键用
+- 单向的意思就是，只可以我用我的外键查你，你不查我
+
+- 
+d、双向一对一外键关联
+
+- 简单来说，我的主键很宝贵，不给你，那么我的其他字段呢，可以作为我的外键，给你当主键用
+- 双向的意思就是，我可以查你，你可以查我
+
+-  e、一对一外键关联的注意点 
+
+- 因为是一对一，所以是唯一的，所以我的外键也要是唯一的，所以要设置属性unique=true
+- 那为什么一对一主键关联不需要设置这个属性呢，因为两边都是主键啊，主键本来就是唯一且非空的
+
+## 2、什么是级联
+
+- 
+比如主表改了数据，子表相关的数据也会跟着变化，这就是级联
+
+- 例如用户表里面，用户的地址改了，那么包裹的地址也要跟着变化
+- 用实体类来说，Father就是那个主表，里面有一个set集合的变量，son就是set集合中的一个元素，所以是father.getSon().add(son);
+
+## – cascade参数
+
+-  cascade=”all 
+
+- 所有情况下均进行关联操作,包括save、update、delete
+
+-  cascade=”none” 
+
+-  cascade=”save-update” 
+
+- 仅save、update、saveOrUpdate时进行关联操作
+
+-  cascade=”delete” 
+
+-  cascade=”all-delete-orphan” 
+
+- 用户对应多个包裹，其中一个包裹，用户不要了，这个包裹就被干掉了
+- 当一个节点在对象图中成为孤儿节点时，删除该节点（摘自百度）
+
+## – inverse参数
+
+-  这个参数决定谁来维护这个关联关系，它只在主表的那个配置文件里面配置 
+
+-  什么是关联关系，即是主表更新了，主表要去更新一下子表吗？还是让子表自己更新？ 
+
+-  inverse=”false”，代表指定Father维护这个关联关系，即主表更新的同时，子表也更新了，然后主表还要更新一下子表 
+
+- 比如有Father表，有f_id，Son表，也有f_id，因为两个是关联的嘛，然后更新Father表，Son表也会一起更新，但是这个时候Son表的f_id是空的，因为Father表还没更新完
+- 待Father表更新完了，然后Son表也更新完了，Father表会将新增的那个f_id扔给Son表去update一下刚才空的f_id
+
+-  inverse=”true”，代表指定Son维护这个关联关系，即主表更新后，子表再更新更新 
+
+- 比如有Father表，有f_id，Son表，也有f_id，因为两个是关联的嘛，然后更新Father表，Son表是不会有动静的，待Father表更新完了，把f_id扔给Son表，然后Son表再默默的更新自己的信息
+
+- 
+## 懂了不，再看例子
+
+- 
+ Father表配置 `<set name="son" inverse="true" cascade="all" >`
+
+    Hibernate: insert into FATHER (F_NAME) values (?)
+    
+    //inverse="true"，代表指定Son维护这个关联关系，即主表更新了，子表自己更新
+    
+    Hibernate: insert into SON (S_NAME, f_id) values (?, ?)
+    
+
+- 
+ Father表配置 `<set name="son" inverse="false" cascade="all" >`
+
+    Hibernate: insert into FATHER (F_NAME) values (?)
+    Hibernate: insert into SON (S_NAME, f_id) values (?, ?)
+    
+    //这里多了一次更新操作，为啥？
+    //因为inverse="false"，代表指定Father维护这个关联关系，即主表更新了，子表更新了，主表还要去更新一下子表
+    //所以主表更新了自己之后，又去更新了一下子表的F_ID
+    
+    Hibernate: update SON set f_id=? where S_ID=?
+
+- cascade与inverse
+- 这个时候，大家可能又懵逼了，什么鬼啊，cascade=all的时候，不是已经级联了吗，不是主表更新子表也跟着更新了吗？！！
+- 其实是这样的，主表更新，子表也跟着更新，这个是cascade级联的作用
+- 粗暴的理解：让主表还是从表去控制子表的更新，这个是inverse的作用。配合上面的例子慢慢体会
+
+## 3、主键的类别：
+
+#### Assigned
+
+- 由用户生成主键值，并且要在save()之前指定否则会抛出异常
+
+#### Hilo
+
+- 使用高低位算法生成主键，高低位算法使用一个高位值和一个低位值，然后把算法得到的两个值拼接起来作为数据库中的唯一主键
+
+#### Increment
+
+- 对主键值采取自动增长的方式生成新的主键值，但要求底层数据库的主键类型为long,int等数值型。主键按数值顺序递增，增量为1。
+- 主键值由Hibernate本身维护，适用于所有的数据库，不适合多进程并发更新数据库
+
+#### Identity
+
+- 根据底层数据库，来支持自动增长
+- 例如MySQl中是auto_increment, SQL Server 中是Identity
+
+#### Sequence
+
+#### Native
+
+- 根据不同的底层数据库自动选择Identity、Sequence、Hilo主键生成方式
+- 便于程序移植，项目中如果用到多个数据库时，可以使用这种方式。
+
+#### UUID
+
+- 使用128位UUID算法生成主键，能够保证网络环境下的主键唯一性，也就能够保证在不同数据库及不同服务器下主键的唯一性
+
+#### Foreign GUID
+
+- 用于一对一关系中。GUID主键生成方式使用了一种特殊算法，保证生成主键的唯一性，支持SQL Server和MySQL
 {% endraw %}

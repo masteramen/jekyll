@@ -3,11 +3,11 @@ layout: post
 title:  "accp8.0转换教材第1章多线程理解与练习"
 title2:  "accp8.0转换教材第1章多线程理解与练习"
 date:   2017-01-01 23:51:38  +0800
-source:  "http://www.jfox.info/accp8-0%e8%bd%ac%e6%8d%a2%e6%95%99%e6%9d%90%e7%ac%ac1%e7%ab%a0%e5%a4%9a%e7%ba%bf%e7%a8%8b%e7%90%86%e8%a7%a3%e4%b8%8e%e7%bb%83%e4%b9%a0.html"
+source:  "https://www.jfox.info/accp8-0%e8%bd%ac%e6%8d%a2%e6%95%99%e6%9d%90%e7%ac%ac1%e7%ab%a0%e5%a4%9a%e7%ba%bf%e7%a8%8b%e7%90%86%e8%a7%a3%e4%b8%8e%e7%bb%83%e4%b9%a0.html"
 fileName:  "20170100998"
 lang:  "zh_CN"
 published: true
-permalink: "accp8-0%e8%bd%ac%e6%8d%a2%e6%95%99%e6%9d%90%e7%ac%ac1%e7%ab%a0%e5%a4%9a%e7%ba%bf%e7%a8%8b%e7%90%86%e8%a7%a3%e4%b8%8e%e7%bb%83%e4%b9%a0.html"
+permalink: "2017/https://www.jfox.info/accp8-0%e8%bd%ac%e6%8d%a2%e6%95%99%e6%9d%90%e7%ac%ac1%e7%ab%a0%e5%a4%9a%e7%ba%bf%e7%a8%8b%e7%90%86%e8%a7%a3%e4%b8%8e%e7%bb%83%e4%b9%a0.html"
 ---
 {% raw %}
 一.单词部分：

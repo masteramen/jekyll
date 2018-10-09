@@ -3,11 +3,11 @@ layout: post
 title:  "java eclipse工具开发技巧总结"
 title2:  "java eclipse工具开发技巧总结"
 date:   2017-01-01 23:47:41  +0800
-source:  "http://www.jfox.info/java-eclipse-gong-ju-kai-fa-ji-qiao-zong-jie.html"
+source:  "https://www.jfox.info/java-eclipse-gong-ju-kai-fa-ji-qiao-zong-jie.html"
 fileName:  "20170100761"
 lang:  "zh_CN"
 published: true
-permalink: "java-eclipse-gong-ju-kai-fa-ji-qiao-zong-jie.html"
+permalink: "2017/https://www.jfox.info/java-eclipse-gong-ju-kai-fa-ji-qiao-zong-jie.html"
 ---
 {% raw %}
 习惯了eclipse开发java程序，公司最近的项目都是idea开发的，同时android studio也是idea原型开发的，在学android开发，所以脱离eclipse转向idea看来是一个趋势了。

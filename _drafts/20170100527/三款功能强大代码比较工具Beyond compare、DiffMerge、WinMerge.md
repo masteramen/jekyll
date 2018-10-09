@@ -3,11 +3,11 @@ layout: post
 title:  "三款功能强大代码比较工具Beyond compare、DiffMerge、WinMerge"
 title2:  "三款功能强大代码比较工具Beyond compare、DiffMerge、WinMerge"
 date:   2017-01-01 23:43:47  +0800
-source:  "http://www.jfox.info/%e4%b8%89%e6%ac%be%e5%8a%9f%e8%83%bd%e5%bc%ba%e5%a4%a7%e4%bb%a3%e7%a0%81%e6%af%94%e8%be%83%e5%b7%a5%e5%85%b7beyond-compare%e3%80%81diffmerge%e3%80%81winmerge.html"
+source:  "https://www.jfox.info/%e4%b8%89%e6%ac%be%e5%8a%9f%e8%83%bd%e5%bc%ba%e5%a4%a7%e4%bb%a3%e7%a0%81%e6%af%94%e8%be%83%e5%b7%a5%e5%85%b7beyond-compare%e3%80%81diffmerge%e3%80%81winmerge.html"
 fileName:  "20170100527"
 lang:  "zh_CN"
 published: true
-permalink: "%e4%b8%89%e6%ac%be%e5%8a%9f%e8%83%bd%e5%bc%ba%e5%a4%a7%e4%bb%a3%e7%a0%81%e6%af%94%e8%be%83%e5%b7%a5%e5%85%b7beyond-compare%e3%80%81diffmerge%e3%80%81winmerge.html"
+permalink: "2017/https://www.jfox.info/%e4%b8%89%e6%ac%be%e5%8a%9f%e8%83%bd%e5%bc%ba%e5%a4%a7%e4%bb%a3%e7%a0%81%e6%af%94%e8%be%83%e5%b7%a5%e5%85%b7beyond-compare%e3%80%81diffmerge%e3%80%81winmerge.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期四, 二月 6, 2014
@@ -30,5 +30,5 @@ By Lee - Last updated: 星期四, 二月 6, 2014
 
      在软件专为WinMerge平台设计，同样能够实现文件夹和文件的比较。文件夹的比较结果采用字段式（标签卡式）的显示方式而摒弃了左右栏显示模式。就功能来说该有的功能（高亮，合并等等）都有，非常强大。该软件也是免费的。
 
-参考来源 [代码比较工具Beyond compare、DiffMerge、WinMerge – Harry Huang – 博客频道 – CSDN.NET](http://www.jfox.info/go.php?url=http://www.jfox.info/url.php?url=http%3A%2F%2Fblog.csdn.net%2Fharryhuang1990%2Farticle%2Fdetails%2F9792699).
+参考来源 [代码比较工具Beyond compare、DiffMerge、WinMerge – Harry Huang – 博客频道 – CSDN.NET](https://www.jfox.info/go.php?url=http://www.jfox.info/url.php?url=http%3A%2F%2Fblog.csdn.net%2Fharryhuang1990%2Farticle%2Fdetails%2F9792699).
 {% endraw %}

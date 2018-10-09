@@ -3,11 +3,11 @@ layout: post
 title:  "spring boot入门操作(一)"
 title2:  "spring boot入门操作(一)"
 date:   2017-01-01 23:48:57  +0800
-source:  "http://www.jfox.info/spring-boot-ru-men-cao-zuo-yi.html"
+source:  "https://www.jfox.info/spring-boot-ru-men-cao-zuo-yi.html"
 fileName:  "20170100837"
 lang:  "zh_CN"
 published: true
-permalink: "spring-boot-ru-men-cao-zuo-yi.html"
+permalink: "2017/https://www.jfox.info/spring-boot-ru-men-cao-zuo-yi.html"
 ---
 {% raw %}
 H2M_LI_HEADER 新建maven project ，选择artifact id 为maven-archetype-quicktype

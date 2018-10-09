@@ -3,11 +3,11 @@ layout: post
 title:  "lombok使用（给自己看的，只为不要忘记自己用过的技术）"
 title2:  "lombok使用（给自己看的，只为不要忘记自己用过的技术）"
 date:   2017-01-01 23:52:59  +0800
-source:  "http://www.jfox.info/lombok%e4%bd%bf%e7%94%a8%e7%bb%99%e8%87%aa%e5%b7%b1%e7%9c%8b%e7%9a%84%e5%8f%aa%e4%b8%ba%e4%b8%8d%e8%a6%81%e5%bf%98%e8%ae%b0%e8%87%aa%e5%b7%b1%e7%94%a8%e8%bf%87%e7%9a%84%e6%8a%80%e6%9c%af.html"
+source:  "https://www.jfox.info/lombok%e4%bd%bf%e7%94%a8%e7%bb%99%e8%87%aa%e5%b7%b1%e7%9c%8b%e7%9a%84%e5%8f%aa%e4%b8%ba%e4%b8%8d%e8%a6%81%e5%bf%98%e8%ae%b0%e8%87%aa%e5%b7%b1%e7%94%a8%e8%bf%87%e7%9a%84%e6%8a%80%e6%9c%af.html"
 fileName:  "20170101079"
 lang:  "zh_CN"
 published: true
-permalink: "lombok%e4%bd%bf%e7%94%a8%e7%bb%99%e8%87%aa%e5%b7%b1%e7%9c%8b%e7%9a%84%e5%8f%aa%e4%b8%ba%e4%b8%8d%e8%a6%81%e5%bf%98%e8%ae%b0%e8%87%aa%e5%b7%b1%e7%94%a8%e8%bf%87%e7%9a%84%e6%8a%80%e6%9c%af.html"
+permalink: "2017/https://www.jfox.info/lombok%e4%bd%bf%e7%94%a8%e7%bb%99%e8%87%aa%e5%b7%b1%e7%9c%8b%e7%9a%84%e5%8f%aa%e4%b8%ba%e4%b8%8d%e8%a6%81%e5%bf%98%e8%ae%b0%e8%87%aa%e5%b7%b1%e7%94%a8%e8%bf%87%e7%9a%84%e6%8a%80%e6%9c%af.html"
 ---
 {% raw %}
 一、1）eclipse使用方法
@@ -29,7 +29,7 @@ permalink: "lombok%e4%bd%bf%e7%94%a8%e7%bb%99%e8%87%aa%e5%b7%b1%e7%9c%8b%e7%9a%8
     <groupId>org.projectlombok</groupId><artifactId>lombok</artifactId><version>1.16.6</version><scope>provided</scope></dependency>
     
 
-  下面只是介绍了几个常用的注解，更多的请参见[https://projectlombok.org/features/index.html](http://www.jfox.info/go.php?url=https://projectlombok.org/features/index.html)。
+  下面只是介绍了几个常用的注解，更多的请参见[https://projectlombok.org/features/index.html](https://www.jfox.info/go.php?url=https://projectlombok.org/features/index.html)。
 
 ### @Getter / @Setter
 

@@ -3,11 +3,11 @@ layout: post
 title:  "慕课网_《细说多线程之Thread VS Runnable》学习总结"
 title2:  "慕课网_《细说多线程之Thread VS Runnable》学习总结"
 date:   2017-01-01 23:54:35  +0800
-source:  "http://www.jfox.info/%e6%85%95%e8%af%be%e7%bd%91%e7%bb%86%e8%af%b4%e5%a4%9a%e7%ba%bf%e7%a8%8b%e4%b9%8bthreadvsrunnable%e5%ad%a6%e4%b9%a0%e6%80%bb%e7%bb%93.html"
+source:  "https://www.jfox.info/%e6%85%95%e8%af%be%e7%bd%91%e7%bb%86%e8%af%b4%e5%a4%9a%e7%ba%bf%e7%a8%8b%e4%b9%8bthreadvsrunnable%e5%ad%a6%e4%b9%a0%e6%80%bb%e7%bb%93.html"
 fileName:  "20170101175"
 lang:  "zh_CN"
 published: true
-permalink: "%e6%85%95%e8%af%be%e7%bd%91%e7%bb%86%e8%af%b4%e5%a4%9a%e7%ba%bf%e7%a8%8b%e4%b9%8bthreadvsrunnable%e5%ad%a6%e4%b9%a0%e6%80%bb%e7%bb%93.html"
+permalink: "2017/https://www.jfox.info/%e6%85%95%e8%af%be%e7%bd%91%e7%bb%86%e8%af%b4%e5%a4%9a%e7%ba%bf%e7%a8%8b%e4%b9%8bthreadvsrunnable%e5%ad%a6%e4%b9%a0%e6%80%bb%e7%bb%93.html"
 ---
 {% raw %}
 # 慕课网_《细说多线程之Thread VS Runnable》学习总结 
@@ -431,5 +431,36 @@ jstack
     
     "GC task thread#3 (ParallelGC)" os_prio=0 tid=0x00000000026cb000 nid=0xab0 runnable
     
-    "
+    "VM Periodic Task Thread" os_prio=2 tid=0x000000001d1f3000 nid=0x2b08 waiting on condition
+    
+    JNI global references: 6
+
+总结
+
+    1.如果有daemon标记，则当前线程为守护线程
+    2.通过查看线程状态（java.lang.Thread.State: TIMED_WAITING (sleeping)）
+        可以帮助我们定位到导致程序出现死锁，或者是阻塞问题的原因
+    3.tid和nid字段可以帮助我们找到CPU占有率很高的线程
+    
+
+# 第四章：课程总结
+
+## 4-1 课程总结
+
+课程总结
+
+    线程创建的两种方式回顾
+    线程创建的两种方式比较
+    线程的声明周期
+    守护线程
+    jsrack生成线程快照
+
+建议
+
+    多使用Runnable这种方式创建线程
+
+补充
+
+    1.程序中的同一资源指的是同一个Runnable对象
+    2.安全的卖票程序中需要加入同步（Synchronized）
 {% endraw %}

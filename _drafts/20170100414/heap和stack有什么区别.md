@@ -3,11 +3,11 @@ layout: post
 title:  "heap和stack有什么区别"
 title2:  "heap和stack有什么区别"
 date:   2017-01-01 23:41:54  +0800
-source:  "http://www.jfox.info/heap-he-stack-you-shen-me-qu-bie.html"
+source:  "https://www.jfox.info/heap-he-stack-you-shen-me-qu-bie.html"
 fileName:  "20170100414"
 lang:  "zh_CN"
 published: true
-permalink: "heap-he-stack-you-shen-me-qu-bie.html"
+permalink: "2017/https://www.jfox.info/heap-he-stack-you-shen-me-qu-bie.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期日, 六月 2, 2013

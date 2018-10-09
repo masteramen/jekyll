@@ -3,11 +3,11 @@ layout: post
 title:  "Reflection：Java反射机制的应用场景"
 title2:  "Reflection：Java反射机制的应用场景"
 date:   2017-01-01 23:55:47  +0800
-source:  "http://www.jfox.info/reflectionjava%e5%8f%8d%e5%b0%84%e6%9c%ba%e5%88%b6%e7%9a%84%e5%ba%94%e7%94%a8%e5%9c%ba%e6%99%af.html"
+source:  "https://www.jfox.info/reflectionjava%e5%8f%8d%e5%b0%84%e6%9c%ba%e5%88%b6%e7%9a%84%e5%ba%94%e7%94%a8%e5%9c%ba%e6%99%af.html"
 fileName:  "20170101247"
 lang:  "zh_CN"
 published: true
-permalink: "reflectionjava%e5%8f%8d%e5%b0%84%e6%9c%ba%e5%88%b6%e7%9a%84%e5%ba%94%e7%94%a8%e5%9c%ba%e6%99%af.html"
+permalink: "2017/https://www.jfox.info/reflectionjava%e5%8f%8d%e5%b0%84%e6%9c%ba%e5%88%b6%e7%9a%84%e5%ba%94%e7%94%a8%e5%9c%ba%e6%99%af.html"
 ---
 {% raw %}
 近期在维护公司项目的时候遇到一个问题，因为实体类中的 set 方法涉及到了业务逻辑，因此在给对象赋值的过程中不能够使用 set 方法，为了实现功能，所以采用了反射的机制给对象属性赋值，借此机会也了解了反射的一些具体用法和使用场景，分以下两点对反射进行分析：

@@ -3,11 +3,11 @@ layout: post
 title:  "org.apache.commons.io——FileUtils学习笔记"
 title2:  "org.apache.commons.io——FileUtils学习笔记"
 date:   2017-01-01 23:52:20  +0800
-source:  "http://www.jfox.info/orgapachecommonsiofileutils%e5%ad%a6%e4%b9%a0%e7%ac%94%e8%ae%b0.html"
+source:  "https://www.jfox.info/orgapachecommonsiofileutils%e5%ad%a6%e4%b9%a0%e7%ac%94%e8%ae%b0.html"
 fileName:  "20170101040"
 lang:  "zh_CN"
 published: true
-permalink: "orgapachecommonsiofileutils%e5%ad%a6%e4%b9%a0%e7%ac%94%e8%ae%b0.html"
+permalink: "2017/https://www.jfox.info/orgapachecommonsiofileutils%e5%ad%a6%e4%b9%a0%e7%ac%94%e8%ae%b0.html"
 ---
 {% raw %}
 FileUtils类的应用

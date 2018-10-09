@@ -3,11 +3,11 @@ layout: post
 title:  "Android调试打印函数调用栈信息"
 title2:  "Android调试打印函数调用栈信息"
 date:   2017-01-01 23:45:59  +0800
-source:  "http://www.jfox.info/android-print-call-stack-information.html"
+source:  "https://www.jfox.info/android-print-call-stack-information.html"
 fileName:  "20170100659"
 lang:  "zh_CN"
 published: true
-permalink: "android-print-call-stack-information.html"
+permalink: "2017/https://www.jfox.info/android-print-call-stack-information.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期三, 七月 16, 2014

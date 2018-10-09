@@ -3,11 +3,11 @@ layout: post
 title:  "oracle 导入导出 imp，exp与impdp，expdp的适用范围与区别"
 title2:  "oracle 导入导出 imp，exp与impdp，expdp的适用范围与区别"
 date:   2017-01-01 23:46:28  +0800
-source:  "http://www.jfox.info/oracle-dao-ru-dao-chu-imp-exp-yu-impdp-expdp-de-shi-yong-fan-wei-yu-qu-bie.html"
+source:  "https://www.jfox.info/oracle-dao-ru-dao-chu-imp-exp-yu-impdp-expdp-de-shi-yong-fan-wei-yu-qu-bie.html"
 fileName:  "20170100688"
 lang:  "zh_CN"
 published: true
-permalink: "oracle-dao-ru-dao-chu-imp-exp-yu-impdp-expdp-de-shi-yong-fan-wei-yu-qu-bie.html"
+permalink: "2017/https://www.jfox.info/oracle-dao-ru-dao-chu-imp-exp-yu-impdp-expdp-de-shi-yong-fan-wei-yu-qu-bie.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期五, 九月 5, 2014

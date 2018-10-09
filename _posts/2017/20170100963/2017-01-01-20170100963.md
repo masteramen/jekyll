@@ -3,11 +3,11 @@ layout: post
 title:  "有关LinkedList常用方法的源码解析"
 title2:  "有关LinkedList常用方法的源码解析"
 date:   2017-01-01 23:51:03  +0800
-source:  "http://www.jfox.info/%e6%9c%89%e5%85%b3linkedlist%e5%b8%b8%e7%94%a8%e6%96%b9%e6%b3%95%e7%9a%84%e6%ba%90%e7%a0%81%e8%a7%a3%e6%9e%90.html"
+source:  "https://www.jfox.info/%e6%9c%89%e5%85%b3linkedlist%e5%b8%b8%e7%94%a8%e6%96%b9%e6%b3%95%e7%9a%84%e6%ba%90%e7%a0%81%e8%a7%a3%e6%9e%90.html"
 fileName:  "20170100963"
 lang:  "zh_CN"
 published: true
-permalink: "%e6%9c%89%e5%85%b3linkedlist%e5%b8%b8%e7%94%a8%e6%96%b9%e6%b3%95%e7%9a%84%e6%ba%90%e7%a0%81%e8%a7%a3%e6%9e%90.html"
+permalink: "2017/https://www.jfox.info/%e6%9c%89%e5%85%b3linkedlist%e5%b8%b8%e7%94%a8%e6%96%b9%e6%b3%95%e7%9a%84%e6%ba%90%e7%a0%81%e8%a7%a3%e6%9e%90.html"
 ---
 {% raw %}
 第一个默认不带参数的构造方法，构造一个空链表。
@@ -35,7 +35,7 @@ permalink: "%e6%9c%89%e5%85%b3linkedlist%e5%b8%b8%e7%94%a8%e6%96%b9%e6%b3%95%e7%
         else
             l.next = newNode;    
         size++;    //链表数据总数+1
-        modCount++;    //modCount变量在[《有关ArrayList常用方法的源码解析》](http://www.jfox.info/go.php?url=http://www.cnblogs.com/yulinfeng/p/7082700.html)提到过，增删都会+1，防止一个线程在用迭代器遍历的时候，另一个线程在对其进行修改。
+        modCount++;    //modCount变量在[《有关ArrayList常用方法的源码解析》](https://www.jfox.info/go.php?url=http://www.cnblogs.com/yulinfeng/p/7082700.html)提到过，增删都会+1，防止一个线程在用迭代器遍历的时候，另一个线程在对其进行修改。
     }
 
 　　学过《数据结构》的同学相信看到链表的操作不会感到陌生，接着来看看删除指定位置的元素remove(int)方法。

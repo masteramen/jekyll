@@ -3,11 +3,11 @@ layout: post
 title:  "spring boot学习笔记：一、搭建项目 之 hello world"
 title2:  "spring boot学习笔记：一、搭建项目 之 hello world"
 date:   2017-01-01 23:53:41  +0800
-source:  "http://www.jfox.info/springboot%e5%ad%a6%e4%b9%a0%e7%ac%94%e8%ae%b0%e4%b8%80%e6%90%ad%e5%bb%ba%e9%a1%b9%e7%9b%ae%e4%b9%8bhelloworld.html"
+source:  "https://www.jfox.info/springboot%e5%ad%a6%e4%b9%a0%e7%ac%94%e8%ae%b0%e4%b8%80%e6%90%ad%e5%bb%ba%e9%a1%b9%e7%9b%ae%e4%b9%8bhelloworld.html"
 fileName:  "20170101121"
 lang:  "zh_CN"
 published: true
-permalink: "springboot%e5%ad%a6%e4%b9%a0%e7%ac%94%e8%ae%b0%e4%b8%80%e6%90%ad%e5%bb%ba%e9%a1%b9%e7%9b%ae%e4%b9%8bhelloworld.html"
+permalink: "2017/https://www.jfox.info/springboot%e5%ad%a6%e4%b9%a0%e7%ac%94%e8%ae%b0%e4%b8%80%e6%90%ad%e5%bb%ba%e9%a1%b9%e7%9b%ae%e4%b9%8bhelloworld.html"
 ---
 {% raw %}
 ### spring boot学习笔记之一：搭建项目 之 hello world
@@ -33,7 +33,7 @@ permalink: "springboot%e5%ad%a6%e4%b9%a0%e7%ac%94%e8%ae%b0%e4%b8%80%e6%90%ad%e5%
 
 #### 写一个简单的接口：
 
-在浏览器中请求：[http://localhost:8080/demo/test](http://www.jfox.info/go.php?url=http://localhost:8080/demo/test)
+在浏览器中请求：[http://localhost:8080/demo/test](https://www.jfox.info/go.php?url=http://localhost:8080/demo/test)
 
     @RestController
     @RequestMapping(value = "/demo")// 通过这里配置使下面的映射都在/demo下

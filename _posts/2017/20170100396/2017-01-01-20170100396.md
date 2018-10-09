@@ -3,11 +3,11 @@ layout: post
 title:  "Spring的事物有几种方式？谈谈spring事物的隔离级别和传播行为？"
 title2:  "Spring的事物有几种方式？谈谈spring事物的隔离级别和传播行为？"
 date:   2017-01-01 23:41:36  +0800
-source:  "http://www.jfox.info/spring-de-shi-wu-you-ji-zhong-fang-shi-tan-tan-spring-shi-wu-de-ge-li-ji-bie-he-chuan-bo-xing-wei.html"
+source:  "https://www.jfox.info/spring-de-shi-wu-you-ji-zhong-fang-shi-tan-tan-spring-shi-wu-de-ge-li-ji-bie-he-chuan-bo-xing-wei.html"
 fileName:  "20170100396"
 lang:  "zh_CN"
 published: true
-permalink: "spring-de-shi-wu-you-ji-zhong-fang-shi-tan-tan-spring-shi-wu-de-ge-li-ji-bie-he-chuan-bo-xing-wei.html"
+permalink: "2017/https://www.jfox.info/spring-de-shi-wu-you-ji-zhong-fang-shi-tan-tan-spring-shi-wu-de-ge-li-ji-bie-he-chuan-bo-xing-wei.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期五, 五月 24, 2013

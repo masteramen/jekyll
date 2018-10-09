@@ -3,11 +3,11 @@ layout: post
 title:  "Struts2国际化信息机制"
 title2:  "Struts2国际化信息机制"
 date:   2017-01-01 23:56:02  +0800
-source:  "http://www.jfox.info/struts2%e5%9b%bd%e9%99%85%e5%8c%96%e4%bf%a1%e6%81%af%e6%9c%ba%e5%88%b6.html"
+source:  "https://www.jfox.info/struts2%e5%9b%bd%e9%99%85%e5%8c%96%e4%bf%a1%e6%81%af%e6%9c%ba%e5%88%b6.html"
 fileName:  "20170101262"
 lang:  "zh_CN"
 published: true
-permalink: "struts2%e5%9b%bd%e9%99%85%e5%8c%96%e4%bf%a1%e6%81%af%e6%9c%ba%e5%88%b6.html"
+permalink: "2017/https://www.jfox.info/struts2%e5%9b%bd%e9%99%85%e5%8c%96%e4%bf%a1%e6%81%af%e6%9c%ba%e5%88%b6.html"
 ---
 {% raw %}
 ##  国际化信息机制  （三种 Action范围、 Package范围、 全局）

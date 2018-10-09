@@ -3,11 +3,11 @@ layout: post
 title:  "Oracle数据库开发需注意的16个事项问题"
 title2:  "Oracle数据库开发需注意的16个事项问题"
 date:   2017-01-01 23:44:24  +0800
-source:  "http://www.jfox.info/oracle-shu-ju-ku-kai-fa-xu-zhu-yi-de-16-ge-shi-xiang-wen-ti.html"
+source:  "https://www.jfox.info/oracle-shu-ju-ku-kai-fa-xu-zhu-yi-de-16-ge-shi-xiang-wen-ti.html"
 fileName:  "20170100564"
 lang:  "zh_CN"
 published: true
-permalink: "oracle-shu-ju-ku-kai-fa-xu-zhu-yi-de-16-ge-shi-xiang-wen-ti.html"
+permalink: "2017/https://www.jfox.info/oracle-shu-ju-ku-kai-fa-xu-zhu-yi-de-16-ge-shi-xiang-wen-ti.html"
 ---
 {% raw %}
 **1. 删除表的注意事项**
@@ -518,5 +518,5 @@ and trim(to_char(t.d, ‘Day’)) = ‘星期五’
 
 月份的前三个月中的每周五的日期
 
-参考来源 [Oracle学习过程中需注意的16个问题](http://www.jfox.info/go.php?url=http://www.jfox.info/url.php?url=http%3A%2F%2Fwww.javaweb.cc%2Fdatabase%2Foracle%2F13974.shtml).
+参考来源 [Oracle学习过程中需注意的16个问题](https://www.jfox.info/go.php?url=http://www.jfox.info/url.php?url=http%3A%2F%2Fwww.javaweb.cc%2Fdatabase%2Foracle%2F13974.shtml).
 {% endraw %}

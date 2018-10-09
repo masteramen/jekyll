@@ -3,11 +3,11 @@ layout: post
 title:  "Spring Cloud构建微服务架构：服务注册与发现（Eureka、Consul）【Dalston版】"
 title2:  "Spring Cloud构建微服务架构：服务注册与发现（Eureka、Consul）【Dalston版】"
 date:   2017-01-01 23:53:48  +0800
-source:  "http://www.jfox.info/springcloud%e6%9e%84%e5%bb%ba%e5%be%ae%e6%9c%8d%e5%8a%a1%e6%9e%b6%e6%9e%84%e6%9c%8d%e5%8a%a1%e6%b3%a8%e5%86%8c%e4%b8%8e%e5%8f%91%e7%8e%b0eurekaconsuldalston%e7%89%88.html"
+source:  "https://www.jfox.info/springcloud%e6%9e%84%e5%bb%ba%e5%be%ae%e6%9c%8d%e5%8a%a1%e6%9e%b6%e6%9e%84%e6%9c%8d%e5%8a%a1%e6%b3%a8%e5%86%8c%e4%b8%8e%e5%8f%91%e7%8e%b0eurekaconsuldalston%e7%89%88.html"
 fileName:  "20170101128"
 lang:  "zh_CN"
 published: true
-permalink: "springcloud%e6%9e%84%e5%bb%ba%e5%be%ae%e6%9c%8d%e5%8a%a1%e6%9e%b6%e6%9e%84%e6%9c%8d%e5%8a%a1%e6%b3%a8%e5%86%8c%e4%b8%8e%e5%8f%91%e7%8e%b0eurekaconsuldalston%e7%89%88.html"
+permalink: "2017/https://www.jfox.info/springcloud%e6%9e%84%e5%bb%ba%e5%be%ae%e6%9c%8d%e5%8a%a1%e6%9e%b6%e6%9e%84%e6%9c%8d%e5%8a%a1%e6%b3%a8%e5%86%8c%e4%b8%8e%e5%8f%91%e7%8e%b0eurekaconsuldalston%e7%89%88.html"
 ---
 {% raw %}
 已经有非常长的时间没有更新《Spring Cloud构建微服务架构》系列文章了，自从开始写Spring Cloud的专题内容开始就获得了不少的阅读量和认可，当然也有一些批评，其中也不乏一些很中肯的意见和深度的问题，对我来说也是进一步提高的契机，在此感谢所有关注我博客的读者们。
@@ -26,7 +26,7 @@ Spring Cloud包含了多个子项目（针对分布式系统中涉及的多个�
 
 那么什么是“微服务架构”呢？简单的说，微服务架构就是将一个完整的应用从数据存储开始垂直拆分成多个不同的服务，每个服务都能独立部署、独立维护、独立扩展，服务与服务间通过诸如RESTful API的方式互相调用。
 
-对于“微服务架构”，大家在互联网可以搜索到很多相关的介绍和研究文章来进行学习和了解。也可以阅读始祖Martin Fowler的《Microservices》（中文版翻译[点击查看](http://www.jfox.info/go.php?url=http://mp.weixin.qq.com/s/fzk-kENu0I22P3F2Vu7KBA)），本文不做更多的介绍和描述。
+对于“微服务架构”，大家在互联网可以搜索到很多相关的介绍和研究文章来进行学习和了解。也可以阅读始祖Martin Fowler的《Microservices》（中文版翻译[点击查看](https://www.jfox.info/go.php?url=http://mp.weixin.qq.com/s/fzk-kENu0I22P3F2Vu7KBA)），本文不做更多的介绍和描述。
 
 ## 服务治理
 
@@ -95,7 +95,7 @@ Spring Cloud Eureka是Spring Cloud Netflix项目下的服务治理模块。而Sp
     eureka.client.register-with-eureka=false
     eureka.client.fetch-registry=false
 
-为了与后续要进行注册的服务区分，这里将服务注册中心的端口通过server.port属性设置为1001。启动工程后，访问：[http://localhost:1001/](http://www.jfox.info/go.php?url=http://localhost:1001/)，可以看到下面的页面，其中还没有发现任何服务。
+为了与后续要进行注册的服务区分，这里将服务注册中心的端口通过server.port属性设置为1001。启动工程后，访问：[http://localhost:1001/](https://www.jfox.info/go.php?url=http://localhost:1001/)，可以看到下面的页面，其中还没有发现任何服务。
 
 ![](/wp-content/uploads/2017/07/1499445089.png)
 
@@ -172,11 +172,11 @@ Spring Cloud Eureka是Spring Cloud Netflix项目下的服务治理模块。而Sp
 
 通过`spring.application.name`属性，我们可以指定微服务的名称后续在调用的时候只需要使用该名称就可以进行服务的访问。`eureka.client.serviceUrl.defaultZone`属性对应服务注册中心的配置内容，指定服务注册中心的位置。为了在本机上测试区分服务提供方和服务注册中心，使用`server.port`属性设置不同的端口。
 
-启动该工程后，再次访问：[http://localhost:1001/](http://www.jfox.info/go.php?url=http://localhost:1001/)。可以如下图内容，我们定义的服务被成功注册了。
+启动该工程后，再次访问：[http://localhost:1001/](https://www.jfox.info/go.php?url=http://localhost:1001/)。可以如下图内容，我们定义的服务被成功注册了。
 
 ![](/wp-content/uploads/2017/07/1499445091.png)
 
-当然，我们也可以通过直接访问`eureka-client`服务提供的`/dc`接口来获取当前的服务清单，只需要访问：[http://localhost:2001/dc](http://www.jfox.info/go.php?url=http://localhost:2001/dc)，我们可以得到如下输出返回：
+当然，我们也可以通过直接访问`eureka-client`服务提供的`/dc`接口来获取当前的服务清单，只需要访问：[http://localhost:2001/dc](https://www.jfox.info/go.php?url=http://localhost:2001/dc)，我们可以得到如下输出返回：
 
     Services: [eureka-client]
 
@@ -257,7 +257,7 @@ consul服务端启动完成之后，我们再将之前改造后的consul服务�
 
 ![](/wp-content/uploads/2017/07/1499445092.png)
 
-更多关于Consul的使用指南，读者可查看官方文档：[https://www.consul.io/](http://www.jfox.info/go.php?url=https://www.consul.io/)
+更多关于Consul的使用指南，读者可查看官方文档：[https://www.consul.io/](https://www.jfox.info/go.php?url=https://www.consul.io/)
 
 **更多Spring Cloud内容请持续关注我的博客更新或在《Spring Cloud微服务实战》中获取。**
 

@@ -3,11 +3,11 @@ layout: post
 title:  "Oracle数据库面试练习题"
 title2:  "Oracle数据库面试练习题"
 date:   2017-01-01 23:45:53  +0800
-source:  "http://www.jfox.info/oracle-database-interview-exercises.html"
+source:  "https://www.jfox.info/oracle-database-interview-exercises.html"
 fileName:  "20170100653"
 lang:  "zh_CN"
 published: true
-permalink: "oracle-database-interview-exercises.html"
+permalink: "2017/https://www.jfox.info/oracle-database-interview-exercises.html"
 ---
 {% raw %}
 1．列出至少有一个员工的所有部门。

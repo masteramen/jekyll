@@ -3,11 +3,11 @@ layout: post
 title:  "不要再在 JavaScript 中写 CSS 了"
 title2:  "不要再在 JavaScript 中写 CSS 了"
 date:   2017-01-01 23:51:32  +0800
-source:  "http://www.jfox.info/%e4%b8%8d%e8%a6%81%e5%86%8d%e5%9c%a8-javascript-%e4%b8%ad%e5%86%99-css-%e4%ba%86.html"
+source:  "https://www.jfox.info/%e4%b8%8d%e8%a6%81%e5%86%8d%e5%9c%a8-javascript-%e4%b8%ad%e5%86%99-css-%e4%ba%86.html"
 fileName:  "20170100992"
 lang:  "zh_CN"
 published: true
-permalink: "%e4%b8%8d%e8%a6%81%e5%86%8d%e5%9c%a8-javascript-%e4%b8%ad%e5%86%99-css-%e4%ba%86.html"
+permalink: "2017/https://www.jfox.info/%e4%b8%8d%e8%a6%81%e5%86%8d%e5%9c%a8-javascript-%e4%b8%ad%e5%86%99-css-%e4%ba%86.html"
 ---
 {% raw %}
 # 不要再在 JavaScript 中写 CSS 了 
@@ -23,9 +23,9 @@ CSS 不应随意放置。许多项目选择将样式写在 JavaScript 中的理�
 
 本文的任何言论都没有对某个项目或人进行人身攻击的意思。`styled-components` 是 React 的目前趋势，所以我将 styled-components 定义为“JavaScript 中的 CSS”。
 
-[`styled-components`](http://www.jfox.info/go.php?url=https://styled-components.com/) 的发起人（[Max Stoiber](http://www.jfox.info/go.php?url=https://medium.com/@mxstbr)、[Glen Maddern](http://www.jfox.info/go.php?url=https://medium.com/@glenmaddern) 以及所有的贡献者）都很聪明、想法独特，出发点也是好的。
+[`styled-components`](https://www.jfox.info/go.php?url=https://styled-components.com/) 的发起人（[Max Stoiber](https://www.jfox.info/go.php?url=https://medium.com/@mxstbr)、[Glen Maddern](https://www.jfox.info/go.php?url=https://medium.com/@glenmaddern) 以及所有的贡献者）都很聪明、想法独特，出发点也是好的。
 
-为了完全透明，我还要指出我是 [react-css-modules](http://www.jfox.info/go.php?url=https://github.com/gajus/react-css-modules) 和 [babel-plugin-react-css-modules](http://www.jfox.info/go.php?url=https://github.com/gajus/babel-plugin-react-css-modules) 的作者。
+为了完全透明，我还要指出我是 [react-css-modules](https://www.jfox.info/go.php?url=https://github.com/gajus/react-css-modules) 和 [babel-plugin-react-css-modules](https://www.jfox.info/go.php?url=https://github.com/gajus/babel-plugin-react-css-modules) 的作者。
 
 小红帽
 

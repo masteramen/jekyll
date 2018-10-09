@@ -3,11 +3,11 @@ layout: post
 title:  "第六届蓝桥杯Java B组省赛试题答案"
 title2:  "第六届蓝桥杯Java B组省赛试题答案"
 date:   2017-01-01 23:54:58  +0800
-source:  "http://www.jfox.info/%e7%ac%ac%e5%85%ad%e5%b1%8a%e8%93%9d%e6%a1%a5%e6%9d%afjavab%e7%bb%84%e7%9c%81%e8%b5%9b%e8%af%95%e9%a2%98%e7%ad%94%e6%a1%88.html"
+source:  "https://www.jfox.info/%e7%ac%ac%e5%85%ad%e5%b1%8a%e8%93%9d%e6%a1%a5%e6%9d%afjavab%e7%bb%84%e7%9c%81%e8%b5%9b%e8%af%95%e9%a2%98%e7%ad%94%e6%a1%88.html"
 fileName:  "20170101198"
 lang:  "zh_CN"
 published: true
-permalink: "%e7%ac%ac%e5%85%ad%e5%b1%8a%e8%93%9d%e6%a1%a5%e6%9d%afjavab%e7%bb%84%e7%9c%81%e8%b5%9b%e8%af%95%e9%a2%98%e7%ad%94%e6%a1%88.html"
+permalink: "2017/https://www.jfox.info/%e7%ac%ac%e5%85%ad%e5%b1%8a%e8%93%9d%e6%a1%a5%e6%9d%afjavab%e7%bb%84%e7%9c%81%e8%b5%9b%e8%af%95%e9%a2%98%e7%ad%94%e6%a1%88.html"
 ---
 {% raw %}
 这题为不规则图形求面积的问题，通常的解题思路是在不规则图形中寻找规则图形：
@@ -603,5 +603,5 @@ CPU消耗 < 3000ms
         int par;
     }
 
-总体来看，省赛的题目相对来说是比较简单，如愿获得省
+总体来看，省赛的题目相对来说是比较简单，如愿获得省一等奖，5月份去北京参加决赛。另外，看起来奖项很多的样子，如果没有什么特别出色的技能，也可以给简历增加一点东西。
 {% endraw %}

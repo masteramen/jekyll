@@ -3,14 +3,14 @@ layout: post
 title:  "函数定义 Kotlin V.S. Scala"
 title2:  "函数定义 Kotlin V.S. Scala"
 date:   2017-01-01 23:49:02  +0800
-source:  "http://www.jfox.info/han-shu-ding-yi-kotlin-v-s-scala.html"
+source:  "https://www.jfox.info/han-shu-ding-yi-kotlin-v-s-scala.html"
 fileName:  "20170100842"
 lang:  "zh_CN"
 published: true
-permalink: "han-shu-ding-yi-kotlin-v-s-scala.html"
+permalink: "2017/https://www.jfox.info/han-shu-ding-yi-kotlin-v-s-scala.html"
 ---
 {% raw %}
-关注 Kotlin 已有段时日了，真是因为 Google 把它扶正而跑来跟风。因为进行想在 Java 与 Scala 间找一个折中的编程语言，也就是 Kotlin。这是一篇好几月前列的我 [想像中理想编程语言的几个特征](http://www.jfox.info/go.php?url=https://unmi.cc/features-of-ideal-programming-language/)，琢磨来去当今也就 Kotlin 比较符合我的口味。很早就想买 《Kotlin IN ACTION》这本书，因那是 Kotlin 1.1 刚出，而出版的书只涵盖到了 Kotlin, 所以未出手。看看再有一本好的那样的书估计也不是一时半会儿，所以今天还是把那本书弄到手了，至于 Kotlin 1.1 后的特性自个去补充。
+关注 Kotlin 已有段时日了，真是因为 Google 把它扶正而跑来跟风。因为进行想在 Java 与 Scala 间找一个折中的编程语言，也就是 Kotlin。这是一篇好几月前列的我 [想像中理想编程语言的几个特征](https://www.jfox.info/go.php?url=https://unmi.cc/features-of-ideal-programming-language/)，琢磨来去当今也就 Kotlin 比较符合我的口味。很早就想买 《Kotlin IN ACTION》这本书，因那是 Kotlin 1.1 刚出，而出版的书只涵盖到了 Kotlin, 所以未出手。看看再有一本好的那样的书估计也不是一时半会儿，所以今天还是把那本书弄到手了，至于 Kotlin 1.1 后的特性自个去补充。
 
 尽管书中未提及 Kotlin 语言的设计灵感来自于何种语言, 但我的直觉就是与 Scala 太多相似之处，但没有 Scala 简单，并揉合一些 Swift 的特性，因此我在阅读 《Kotlin IN ACTION》时更多的会和 Scala 相比较。
 

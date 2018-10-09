@@ -3,11 +3,11 @@ layout: post
 title:  "GC是什么? 为什么要有GC?"
 title2:  "GC是什么 为什么要有GC"
 date:   2017-01-01 23:41:05  +0800
-source:  "http://www.jfox.info/GC-shi-shen-me-wei-shen-me-yao-you-GC.html"
+source:  "https://www.jfox.info/GC-shi-shen-me-wei-shen-me-yao-you-GC.html"
 fileName:  "20170100365"
 lang:  "zh_CN"
 published: true
-permalink: "GC-shi-shen-me-wei-shen-me-yao-you-GC.html"
+permalink: "2017/https://www.jfox.info/GC-shi-shen-me-wei-shen-me-yao-you-GC.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期一, 五月 20, 2013

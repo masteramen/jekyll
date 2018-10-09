@@ -3,11 +3,11 @@ layout: post
 title:  "Spring 中的懒加载与事务 – 排坑记录"
 title2:  "Spring 中的懒加载与事务 – 排坑记录"
 date:   2017-01-01 23:54:19  +0800
-source:  "http://www.jfox.info/spring%e4%b8%ad%e7%9a%84%e6%87%92%e5%8a%a0%e8%bd%bd%e4%b8%8e%e4%ba%8b%e5%8a%a1%e6%8e%92%e5%9d%91%e8%ae%b0%e5%bd%95.html"
+source:  "https://www.jfox.info/spring%e4%b8%ad%e7%9a%84%e6%87%92%e5%8a%a0%e8%bd%bd%e4%b8%8e%e4%ba%8b%e5%8a%a1%e6%8e%92%e5%9d%91%e8%ae%b0%e5%bd%95.html"
 fileName:  "20170101159"
 lang:  "zh_CN"
 published: true
-permalink: "spring%e4%b8%ad%e7%9a%84%e6%87%92%e5%8a%a0%e8%bd%bd%e4%b8%8e%e4%ba%8b%e5%8a%a1%e6%8e%92%e5%9d%91%e8%ae%b0%e5%bd%95.html"
+permalink: "2017/https://www.jfox.info/spring%e4%b8%ad%e7%9a%84%e6%87%92%e5%8a%a0%e8%bd%bd%e4%b8%8e%e4%ba%8b%e5%8a%a1%e6%8e%92%e5%9d%91%e8%ae%b0%e5%bd%95.html"
 ---
 {% raw %}
 本文主要描述了开发中常见的几个与spring懒加载和事务相关的案例，主要描述常见的使用场景，以及如何规避他们，给出具体的代码。
@@ -210,7 +210,7 @@ quartz中打开session：
             return factoryBean;
         }
 
-也可以参考我的另一篇描述更为细致的文章，那是我还是刚刚参加工作，可能有些许疏漏之处，不过参考是够了。传送门：[解决Quartz定时器中查询懒加载数据no session的问题](http://www.jfox.info/go.php?url=http://blog.csdn.net/u013815546/article/details/53032445)
+也可以参考我的另一篇描述更为细致的文章，那是我还是刚刚参加工作，可能有些许疏漏之处，不过参考是够了。传送门：[解决Quartz定时器中查询懒加载数据no session的问题](https://www.jfox.info/go.php?url=http://blog.csdn.net/u013815546/article/details/53032445)
 
 Motan（我现在使用的rpc框架）服务端打开session 利用了motan对spi扩展的支持，编写了一个Filter，主要参考了motan的spi过滤器写法和springdata打开session/entityManager的思路。
 

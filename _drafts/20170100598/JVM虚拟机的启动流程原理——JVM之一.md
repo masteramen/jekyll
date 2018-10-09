@@ -3,11 +3,11 @@ layout: post
 title:  "JVM虚拟机的启动流程原理——JVM之一"
 title2:  "JVM虚拟机的启动流程原理——JVM之一"
 date:   2017-01-01 23:44:58  +0800
-source:  "http://www.jfox.info/start-process-virtual-machine-jvm-process-one-jvm.html"
+source:  "https://www.jfox.info/start-process-virtual-machine-jvm-process-one-jvm.html"
 fileName:  "20170100598"
 lang:  "zh_CN"
 published: true
-permalink: "start-process-virtual-machine-jvm-process-one-jvm.html"
+permalink: "2017/https://www.jfox.info/start-process-virtual-machine-jvm-process-one-jvm.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期一, 三月 3, 2014

@@ -3,11 +3,11 @@ layout: post
 title:  "Play! Framework 系列（一）：初探 play 框架"
 title2:  "Play! Framework 系列（一）：初探 play 框架"
 date:   2017-01-01 23:56:39  +0800
-source:  "http://www.jfox.info/playframework%e7%b3%bb%e5%88%97%e4%b8%80%e5%88%9d%e6%8e%a2play%e6%a1%86%e6%9e%b6.html"
+source:  "https://www.jfox.info/playframework%e7%b3%bb%e5%88%97%e4%b8%80%e5%88%9d%e6%8e%a2play%e6%a1%86%e6%9e%b6.html"
 fileName:  "20170101299"
 lang:  "zh_CN"
 published: true
-permalink: "playframework%e7%b3%bb%e5%88%97%e4%b8%80%e5%88%9d%e6%8e%a2play%e6%a1%86%e6%9e%b6.html"
+permalink: "2017/https://www.jfox.info/playframework%e7%b3%bb%e5%88%97%e4%b8%80%e5%88%9d%e6%8e%a2play%e6%a1%86%e6%9e%b6.html"
 ---
 {% raw %}
 `Play!` 是一种高效率的 Java 和 Scala Web 应用程序框架，它集成了现代 Web 应用程序开发所需的组件和 API。本文将介绍一下 `Play!` 的基本性质以及利用该框架开发 Web 程序的优势。 
@@ -22,7 +22,7 @@ permalink: "playframework%e7%b3%bb%e5%88%97%e4%b8%80%e5%88%9d%e6%8e%a2play%e6%a1
 
 ![](/wp-content/uploads/2017/07/14999548701.png)
 
- 通过上图可以对比一下 `Play!` 与传统的 `Java EE` 框架的区别，可以看到 `Play!` 在架构上更加清晰简洁。在 `Play!` 之前， 相比于 [ROR （Ruby on Rails）](http://www.jfox.info/go.php?url=https://en.wikipedia.org/wiki/Ruby_on_Rails) 风格的框架，传统的 Java Web 框架在开发网页应用的时候往往耗时比较长，原因主要有两个： 
+ 通过上图可以对比一下 `Play!` 与传统的 `Java EE` 框架的区别，可以看到 `Play!` 在架构上更加清晰简洁。在 `Play!` 之前， 相比于 [ROR （Ruby on Rails）](https://www.jfox.info/go.php?url=https://en.wikipedia.org/wiki/Ruby_on_Rails) 风格的框架，传统的 Java Web 框架在开发网页应用的时候往往耗时比较长，原因主要有两个： 
 
  1、依赖 `Servlet`
 

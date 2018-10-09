@@ -3,11 +3,11 @@ layout: post
 title:  "springboot框架maven构建fastJson启动报错"
 title2:  "springboot框架maven构建fastJson启动报错"
 date:   2017-01-01 23:49:25  +0800
-source:  "http://www.jfox.info/springboot_kuang_jia_maven_gou_jian_fastjson_qi_dong_bao_cuo.html"
+source:  "https://www.jfox.info/springboot_kuang_jia_maven_gou_jian_fastjson_qi_dong_bao_cuo.html"
 fileName:  "20170100865"
 lang:  "zh_CN"
 published: true
-permalink: "springboot_kuang_jia_maven_gou_jian_fastjson_qi_dong_bao_cuo.html"
+permalink: "2017/https://www.jfox.info/springboot_kuang_jia_maven_gou_jian_fastjson_qi_dong_bao_cuo.html"
 ---
 {% raw %}
 Exception in thread "main" java.lang.IllegalStateException: Failed to read Class-Path 

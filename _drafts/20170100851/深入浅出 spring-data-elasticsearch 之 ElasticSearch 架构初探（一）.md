@@ -3,11 +3,11 @@ layout: post
 title:  "深入浅出 spring-data-elasticsearch 之 ElasticSearch 架构初探（一）"
 title2:  "深入浅出 spring-data-elasticsearch 之 ElasticSearch 架构初探（一）"
 date:   2017-01-01 23:49:11  +0800
-source:  "http://www.jfox.info/shen-ru-qian-chu-spring-data-elasticsearch-zhi-elasticsearch-jia-gou-chu-tan-yi.html"
+source:  "https://www.jfox.info/shen-ru-qian-chu-spring-data-elasticsearch-zhi-elasticsearch-jia-gou-chu-tan-yi.html"
 fileName:  "20170100851"
 lang:  "zh_CN"
 published: true
-permalink: "shen-ru-qian-chu-spring-data-elasticsearch-zhi-elasticsearch-jia-gou-chu-tan-yi.html"
+permalink: "2017/https://www.jfox.info/shen-ru-qian-chu-spring-data-elasticsearch-zhi-elasticsearch-jia-gou-chu-tan-yi.html"
 ---
 {% raw %}
 **本文目录**
@@ -18,7 +18,7 @@ permalink: "shen-ru-qian-chu-spring-data-elasticsearch-zhi-elasticsearch-jia-gou
 2.1 文档存储的路由
 2.2 如何健康检查 2.3 如何水平扩容 三、小结
 
-    GET [http://127.0.0.1:9200/_cluster/stats](http://www.jfox.info/go.php?url=http://127.0.0.1:9200/_cluster/stats) 
+    GET [http://127.0.0.1:9200/_cluster/stats](https://www.jfox.info/go.php?url=http://127.0.0.1:9200/_cluster/stats) 
     {
        "cluster_name":          "elasticsearch",
        "status":                "green", 
@@ -67,5 +67,5 @@ unassigned_shards 已经在集群状态中存在的分片。
 深入浅出 spring-data-elasticsearch – 架构原理以及源码浅析（五）
 资料：
 官方《Elasticsearch: 权威指南》
-[https://www.elastic.co/guide/c … .html](http://www.jfox.info/go.php?url=https://www.elastic.co/guide/cn/elasticsearch/guide/current/index.html)
+[https://www.elastic.co/guide/c … .html](https://www.jfox.info/go.php?url=https://www.elastic.co/guide/cn/elasticsearch/guide/current/index.html)
 {% endraw %}

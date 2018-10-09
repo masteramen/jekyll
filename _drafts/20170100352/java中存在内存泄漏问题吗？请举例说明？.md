@@ -3,11 +3,11 @@ layout: post
 title:  "java中存在内存泄漏问题吗？请举例说明？"
 title2:  "java中存在内存泄漏问题吗？请举例说明？"
 date:   2017-01-01 23:40:52  +0800
-source:  "http://www.jfox.info/java-zhong-cun-zai-nei-cun-xie-lou-wen-ti-ma-qing-ju-li-shuo-ming.html"
+source:  "https://www.jfox.info/java-zhong-cun-zai-nei-cun-xie-lou-wen-ti-ma-qing-ju-li-shuo-ming.html"
 fileName:  "20170100352"
 lang:  "zh_CN"
 published: true
-permalink: "java-zhong-cun-zai-nei-cun-xie-lou-wen-ti-ma-qing-ju-li-shuo-ming.html"
+permalink: "2017/https://www.jfox.info/java-zhong-cun-zai-nei-cun-xie-lou-wen-ti-ma-qing-ju-li-shuo-ming.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期五, 五月 17, 2013

@@ -3,11 +3,11 @@ layout: post
 title:  "体会强大的Java正则表达式：字符串查找 匹配，替换"
 title2:  "体会强大的Java正则表达式：字符串查找 匹配，替换"
 date:   2017-01-01 23:43:10  +0800
-source:  "http://www.jfox.info/ti-hui-qiang-da-de-java-zheng-ze-biao-da-shi-zi-fu-chuan-cha-zhao-pi-pei-ti-huan.html"
+source:  "https://www.jfox.info/ti-hui-qiang-da-de-java-zheng-ze-biao-da-shi-zi-fu-chuan-cha-zhao-pi-pei-ti-huan.html"
 fileName:  "20170100490"
 lang:  "zh_CN"
 published: true
-permalink: "ti-hui-qiang-da-de-java-zheng-ze-biao-da-shi-zi-fu-chuan-cha-zhao-pi-pei-ti-huan.html"
+permalink: "2017/https://www.jfox.info/ti-hui-qiang-da-de-java-zheng-ze-biao-da-shi-zi-fu-chuan-cha-zhao-pi-pei-ti-huan.html"
 ---
 {% raw %}
 正则表达式异常强大，一直理解不深，用的也不深，这次项目中尝试，体会到了它的强大之处。字符串查找，匹配，替换，正则无不能做，特别是灵活的运用子串匹配得到的变量值$1,$2，再进行二次处理能够达到很巧妙的效果。
@@ -78,7 +78,7 @@ permalink: "ti-hui-qiang-da-de-java-zheng-ze-biao-da-shi-zi-fu-chuan-cha-zhao-pi
 
 　　pattern = Pattern.compile(emailPattern);
 
-　　matcher = pattern.matcher(“test@[qq](http://www.jfox.info/go.php?url=http://mydown.yesky.com/soft/33/31000033.shtml).com”);
+　　matcher = pattern.matcher(“test@[qq](https://www.jfox.info/go.php?url=http://mydown.yesky.com/soft/33/31000033.shtml).com”);
 
 　　//验证是否邮箱
 

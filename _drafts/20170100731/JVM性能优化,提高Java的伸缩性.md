@@ -3,11 +3,11 @@ layout: post
 title:  "JVM性能优化,提高Java的伸缩性"
 title2:  "JVM性能优化,提高Java的伸缩性"
 date:   2017-01-01 23:47:11  +0800
-source:  "http://www.jfox.info/jvm-xing-nen-you-hua-ti-gao-java-de-shen-suo-xing.html"
+source:  "https://www.jfox.info/jvm-xing-nen-you-hua-ti-gao-java-de-shen-suo-xing.html"
 fileName:  "20170100731"
 lang:  "zh_CN"
 published: true
-permalink: "jvm-xing-nen-you-hua-ti-gao-java-de-shen-suo-xing.html"
+permalink: "2017/https://www.jfox.info/jvm-xing-nen-you-hua-ti-gao-java-de-shen-suo-xing.html"
 ---
 {% raw %}
 很多程序员在解决JVM性能问题的时候，花开了很多时间去调优应用程序级别的性能瓶颈，当你读完这本系列文章之后你会发现我可能更加系统地看待这类的问题。我说过JVM的自身技术限制了Java企业级应用的伸缩性。首先我们先列举一些主导因素。

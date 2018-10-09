@@ -3,24 +3,24 @@ layout: post
 title:  "使用镜像仓库托管自己构建的Docker镜像"
 title2:  "使用镜像仓库托管自己构建的Docker镜像"
 date:   2017-01-01 23:56:07  +0800
-source:  "http://www.jfox.info/%e4%bd%bf%e7%94%a8%e9%95%9c%e5%83%8f%e4%bb%93%e5%ba%93%e6%89%98%e7%ae%a1%e8%87%aa%e5%b7%b1%e6%9e%84%e5%bb%ba%e7%9a%84docker%e9%95%9c%e5%83%8f.html"
+source:  "https://www.jfox.info/%e4%bd%bf%e7%94%a8%e9%95%9c%e5%83%8f%e4%bb%93%e5%ba%93%e6%89%98%e7%ae%a1%e8%87%aa%e5%b7%b1%e6%9e%84%e5%bb%ba%e7%9a%84docker%e9%95%9c%e5%83%8f.html"
 fileName:  "20170101267"
 lang:  "zh_CN"
 published: true
-permalink: "%e4%bd%bf%e7%94%a8%e9%95%9c%e5%83%8f%e4%bb%93%e5%ba%93%e6%89%98%e7%ae%a1%e8%87%aa%e5%b7%b1%e6%9e%84%e5%bb%ba%e7%9a%84docker%e9%95%9c%e5%83%8f.html"
+permalink: "2017/https://www.jfox.info/%e4%bd%bf%e7%94%a8%e9%95%9c%e5%83%8f%e4%bb%93%e5%ba%93%e6%89%98%e7%ae%a1%e8%87%aa%e5%b7%b1%e6%9e%84%e5%bb%ba%e7%9a%84docker%e9%95%9c%e5%83%8f.html"
 ---
 {% raw %}
 自己构建的Docker镜像，默认存储在本机中，Docker有提供某些方式分享这些镜像，但不是主流的镜像分享方式，也有违于开源社区的共享精神。
 
 本文介绍如何使用GitHub托管Dockerfile；使用DockerHub关联GitHub托管的Dockerfile，进行自动化构建，并托管构建后的镜像。
 
-GitHub地址：[https://github.com](http://www.jfox.info/go.php?url=https://github.com)。 DockerHub地址：[https://hub.docker.com](http://www.jfox.info/go.php?url=https://hub.docker.com)。
+GitHub地址：[https://github.com](https://www.jfox.info/go.php?url=https://github.com)。 DockerHub地址：[https://hub.docker.com](https://www.jfox.info/go.php?url=https://hub.docker.com)。
 
 Dockerfile及镜像构建的相关知识可参考我之前写的几篇博文：
 
-1. [Docker镜像构建的两种方式](http://www.jfox.info/go.php?url=http://www.cnblogs.com/dfengwei/p/7144788.html)。
-2. [官方Tomcat镜像Dockerfile分析及镜像使用](http://www.jfox.info/go.php?url=http://www.cnblogs.com/dfengwei/p/7144937.html)。
-3. [构建自己的Tomcat镜像](http://www.jfox.info/go.php?url=http://www.cnblogs.com/dfengwei/p/7145884.html)。
+1. [Docker镜像构建的两种方式](https://www.jfox.info/go.php?url=http://www.cnblogs.com/dfengwei/p/7144788.html)。
+2. [官方Tomcat镜像Dockerfile分析及镜像使用](https://www.jfox.info/go.php?url=http://www.cnblogs.com/dfengwei/p/7144937.html)。
+3. [构建自己的Tomcat镜像](https://www.jfox.info/go.php?url=http://www.cnblogs.com/dfengwei/p/7145884.html)。
 
 ## 准备工作
 
@@ -30,7 +30,7 @@ Dockerfile及镜像构建的相关知识可参考我之前写的几篇博文：
 
 ## 使用GitHub托管Dockerfile
 
-参考本人的一个Tomcat Dockerfile仓库：[https://github.com/dfengwei/docker-tomcat](http://www.jfox.info/go.php?url=https://github.com/dfengwei/docker-tomcat)
+参考本人的一个Tomcat Dockerfile仓库：[https://github.com/dfengwei/docker-tomcat](https://www.jfox.info/go.php?url=https://github.com/dfengwei/docker-tomcat)
 
 ### 主要步骤：
 
@@ -42,7 +42,7 @@ GitHub是个很常用的平台，具体操作这里就不细讲了，网上资�
 
 ## 使用DockerHub构建并托管镜像
 
-参考本人的一个Tomcat镜像仓库：[https://hub.docker.com/r/dfengwei/docker-tomcat](http://www.jfox.info/go.php?url=https://hub.docker.com/r/dfengwei/docker-tomcat)
+参考本人的一个Tomcat镜像仓库：[https://hub.docker.com/r/dfengwei/docker-tomcat](https://www.jfox.info/go.php?url=https://hub.docker.com/r/dfengwei/docker-tomcat)
 
 ### 主要步骤
 
@@ -75,9 +75,9 @@ DockerHub提供Http接口供有需要的用户触发构建。例如你有个自�
 
 ## 使用其他仓库托管镜像
 
-除了DockerHub外，还有很多平台提供镜像托管服务，比如我使用的阿里云容器Hub：[https://dev.aliyun.com](http://www.jfox.info/go.php?url=https://dev.aliyun.com)。
+除了DockerHub外，还有很多平台提供镜像托管服务，比如我使用的阿里云容器Hub：[https://dev.aliyun.com](https://www.jfox.info/go.php?url=https://dev.aliyun.com)。
 
-参考本人在阿里云开发者平台上托管的一个Tomcat镜像仓库：[https://dev.aliyun.com/detail.html?spm=5176.1972343.2.2.599c57159oCWBq&repoId=50185](http://www.jfox.info/go.php?url=https://dev.aliyun.com/detail.html?spm=5176.1972343.2.2.599c57159oCWBq&amp;repoId=50185)。
+参考本人在阿里云开发者平台上托管的一个Tomcat镜像仓库：[https://dev.aliyun.com/detail.html?spm=5176.1972343.2.2.599c57159oCWBq&repoId=50185](https://www.jfox.info/go.php?url=https://dev.aliyun.com/detail.html?spm=5176.1972343.2.2.599c57159oCWBq&amp;repoId=50185)。
 
 获取这个平台的镜像时，必须带上平台域名，例如：
 

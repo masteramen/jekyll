@@ -3,11 +3,11 @@ layout: post
 title:  "浅入深出之Java集合框架（中）"
 title2:  "浅入深出之Java集合框架（中）"
 date:   2017-01-01 23:55:46  +0800
-source:  "http://www.jfox.info/%e6%b5%85%e5%85%a5%e6%b7%b1%e5%87%ba%e4%b9%8bjava%e9%9b%86%e5%90%88%e6%a1%86%e6%9e%b6%e4%b8%ad-2.html"
+source:  "https://www.jfox.info/%e6%b5%85%e5%85%a5%e6%b7%b1%e5%87%ba%e4%b9%8bjava%e9%9b%86%e5%90%88%e6%a1%86%e6%9e%b6%e4%b8%ad-2.html"
 fileName:  "20170101246"
 lang:  "zh_CN"
 published: true
-permalink: "%e6%b5%85%e5%85%a5%e6%b7%b1%e5%87%ba%e4%b9%8bjava%e9%9b%86%e5%90%88%e6%a1%86%e6%9e%b6%e4%b8%ad-2.html"
+permalink: "2017/https://www.jfox.info/%e6%b5%85%e5%85%a5%e6%b7%b1%e5%87%ba%e4%b9%8bjava%e9%9b%86%e5%90%88%e6%a1%86%e6%9e%b6%e4%b8%ad-2.html"
 ---
 {% raw %}
 # 浅入深出之Java集合框架（中） 
@@ -19,13 +19,13 @@ permalink: "%e6%b5%85%e5%85%a5%e6%b7%b1%e5%87%ba%e4%b9%8bjava%e9%9b%86%e5%90%88%
 
 ### 目 录
 
-*[浅入深出之Java集合框架（上）](http://www.jfox.info/go.php?url=http://www.cnblogs.com/hysum/p/7136480.html)*
+*[浅入深出之Java集合框架（上）](https://www.jfox.info/go.php?url=http://www.cnblogs.com/hysum/p/7136480.html)*
 
 *浅入深出之Java集合框架（下）　*努力赶制中。。*关注后更新会提醒哦！***
 
 ### **前 言**
 
-在<*[浅入深出之Java集合框架（上）](http://www.jfox.info/go.php?url=http://www.cnblogs.com/hysum/p/7136480.html)*>中介绍了List接口和Set接口的基本操作，在这篇文章中，我将介绍关于Map接口的基本操作。使用的示例是在<*[浅入深出之Java集合框架（上）](http://www.jfox.info/go.php?url=http://www.cnblogs.com/hysum/p/7136480.html)*>中的模拟学生选课的小程序，不清楚的朋友可以先去阅读<*[浅入深出之Java集合框架（上）](http://www.jfox.info/go.php?url=http://www.cnblogs.com/hysum/p/7136480.html)*>。
+在<*[浅入深出之Java集合框架（上）](https://www.jfox.info/go.php?url=http://www.cnblogs.com/hysum/p/7136480.html)*>中介绍了List接口和Set接口的基本操作，在这篇文章中，我将介绍关于Map接口的基本操作。使用的示例是在<*[浅入深出之Java集合框架（上）](https://www.jfox.info/go.php?url=http://www.cnblogs.com/hysum/p/7136480.html)*>中的模拟学生选课的小程序，不清楚的朋友可以先去阅读<*[浅入深出之Java集合框架（上）](https://www.jfox.info/go.php?url=http://www.cnblogs.com/hysum/p/7136480.html)*>。
 
 ##  一、Map&HashMap简介
 

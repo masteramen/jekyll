@@ -3,11 +3,11 @@ layout: post
 title:  "After a “close call,” a coding champion"
 title2:  "After a “close call,” a coding champion"
 date:   2017-01-01 23:55:55  +0800
-source:  "http://www.jfox.info/afteraclosecallacodingchampion.html"
+source:  "https://www.jfox.info/afteraclosecallacodingchampion.html"
 fileName:  "20170101255"
 lang:  "zh_CN"
 published: true
-permalink: "afteraclosecallacodingchampion.html"
+permalink: "2017/https://www.jfox.info/afteraclosecallacodingchampion.html"
 ---
 {% raw %}
 Eighteen-year-old Cameroon resident Nji Collins had just put the finishing touches on his final submission for the Google Code-In competition when his entire town lost internet access. It stayed dark for two months. 
@@ -35,11 +35,11 @@ Eighteen-year-old Cameroon resident Nji Collins had just put the finishing touch
 
  “It wasn’t fun doing it alone; I like competition,” Collins, who learned how to code by doing his older sister’s computer science homework assignments alongside her, says. “It pushes me to work harder.” 
 
-  Learn more about the [ annual Code-In competition ](http://www.jfox.info/go.php?url=http://g.co/gci) .  
+  Learn more about the [ annual Code-In competition ](https://www.jfox.info/go.php?url=http://g.co/gci) .  
 
   By Carly Schwartz, Editor-in-Chief, Google Internal News  
 
 ![](/wp-content/uploads/2017/07/1500040547.png)
-Source: [ After a “close call,” a coding champion ](http://www.jfox.info/go.php?url=http://feedproxy.google.com/~r/GoogleOpenSourceBlog/~3/zm65g3dY838/after-close-call-coding-champion.html)
-[点赞](void(0))[close](http://www.jfox.info/go.php?url=http://ju.outofmemory.cn/tag/close/)[after](http://www.jfox.info/go.php?url=http://ju.outofmemory.cn/tag/after/)[Coding](http://www.jfox.info/go.php?url=http://ju.outofmemory.cn/tag/Coding/)
+Source: [ After a “close call,” a coding champion ](https://www.jfox.info/go.php?url=http://feedproxy.google.com/~r/GoogleOpenSourceBlog/~3/zm65g3dY838/after-close-call-coding-champion.html)
+[点赞](void(0))[close](https://www.jfox.info/go.php?url=http://ju.outofmemory.cn/tag/close/)[after](https://www.jfox.info/go.php?url=http://ju.outofmemory.cn/tag/after/)[Coding](https://www.jfox.info/go.php?url=http://ju.outofmemory.cn/tag/Coding/)
 {% endraw %}

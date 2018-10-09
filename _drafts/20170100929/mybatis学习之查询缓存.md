@@ -3,11 +3,11 @@ layout: post
 title:  "mybatis学习之查询缓存"
 title2:  "mybatis学习之查询缓存"
 date:   2017-01-01 23:50:29  +0800
-source:  "http://www.jfox.info/mybatis%e5%ad%a6%e4%b9%a0%e4%b9%8b%e6%9f%a5%e8%af%a2%e7%bc%93%e5%ad%98.html"
+source:  "https://www.jfox.info/mybatis%e5%ad%a6%e4%b9%a0%e4%b9%8b%e6%9f%a5%e8%af%a2%e7%bc%93%e5%ad%98.html"
 fileName:  "20170100929"
 lang:  "zh_CN"
 published: true
-permalink: "mybatis%e5%ad%a6%e4%b9%a0%e4%b9%8b%e6%9f%a5%e8%af%a2%e7%bc%93%e5%ad%98.html"
+permalink: "2017/https://www.jfox.info/mybatis%e5%ad%a6%e4%b9%a0%e4%b9%8b%e6%9f%a5%e8%af%a2%e7%bc%93%e5%ad%98.html"
 ---
 {% raw %}
 ### 什么是查询缓存？

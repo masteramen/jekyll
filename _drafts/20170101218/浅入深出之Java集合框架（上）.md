@@ -3,11 +3,11 @@ layout: post
 title:  "浅入深出之Java集合框架（上）"
 title2:  "浅入深出之Java集合框架（上）"
 date:   2017-01-01 23:55:18  +0800
-source:  "http://www.jfox.info/%e6%b5%85%e5%85%a5%e6%b7%b1%e5%87%ba%e4%b9%8bjava%e9%9b%86%e5%90%88%e6%a1%86%e6%9e%b6%e4%b8%8a-2.html"
+source:  "https://www.jfox.info/%e6%b5%85%e5%85%a5%e6%b7%b1%e5%87%ba%e4%b9%8bjava%e9%9b%86%e5%90%88%e6%a1%86%e6%9e%b6%e4%b8%8a-2.html"
 fileName:  "20170101218"
 lang:  "zh_CN"
 published: true
-permalink: "%e6%b5%85%e5%85%a5%e6%b7%b1%e5%87%ba%e4%b9%8bjava%e9%9b%86%e5%90%88%e6%a1%86%e6%9e%b6%e4%b8%8a-2.html"
+permalink: "2017/https://www.jfox.info/%e6%b5%85%e5%85%a5%e6%b7%b1%e5%87%ba%e4%b9%8bjava%e9%9b%86%e5%90%88%e6%a1%86%e6%9e%b6%e4%b8%8a-2.html"
 ---
 {% raw %}
 由于Java中的集合框架的内容比较多，在这里分为三个部分介绍Java的集合框架，内容是从浅到深，如果已经有java基础的小伙伴可以直接跳到<浅入深出之Java集合框架（下）>。
@@ -376,5 +376,27 @@ add方法跟ArrayList一样
     10            }
     1112         }
 
-**注意：**Set 中添加某个对象，无论添加多少次，最终只会保留一个该对象（的引用）。同时，保留的是第一次添加的那一个。**Set集合是无序**
+**注意：**Set 中添加某个对象，无论添加多少次，最终只会保留一个该对象（的引用）。同时，保留的是第一次添加的那一个。**Set集合是无序的不可重复的。**
+
+#### 2）打印输出学生选的课程
+
+    1//输出学生选的课程2for(Course c:li.stu.getCourses()){
+    3             System.out.println(c.getId()+" "+c.getName());
+    45         }
+
+**注意：**循环遍历Set中的每一个元素只能用foreach或iterator，不能像List一样用get()方法。**因为是无序的每次的输出结果都有些差别。**
+
+**>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>**
+
+**总结：**
+
+1、Set没有像List中set()方法一样就修改，因为List是有序的，可以指定位置，而Set是无序的，可以用循环遍历方式修改。
+
+2、查询遍历时，Set不能用get()方法去获取，因为无序没有指定索引ID，但可以使用foreach和iterator来遍历，但是每次遍历出来可能顺序都不一样，还是因为无序造成的。
+
+3、Set中的size(),add(),addAll(),remove(),removeAll()与List类似。
+
+4、Set还可以添加null(但只能添加一个null，因为不重复)；
+
+本篇主要讲述了List和Set的基本操作：增删改查，下一篇我将介绍Map接口的基本操作，有兴趣的小伙伴可以加一下方的**“关注”**哦！博主正在努力加载中。。。。。。
 {% endraw %}

@@ -3,16 +3,16 @@ layout: post
 title:  "audio.js – 随时随地，播放 HTML5 的声音"
 title2:  "audio.js – 随时随地，播放 HTML5 的声音"
 date:   2017-01-01 23:43:56  +0800
-source:  "http://www.jfox.info/audio-js-%e9%9a%8f%e6%97%b6%e9%9a%8f%e5%9c%b0%ef%bc%8c%e6%92%ad%e6%94%be-html5-%e7%9a%84%e5%a3%b0%e9%9f%b3.html"
+source:  "https://www.jfox.info/audio-js-%e9%9a%8f%e6%97%b6%e9%9a%8f%e5%9c%b0%ef%bc%8c%e6%92%ad%e6%94%be-html5-%e7%9a%84%e5%a3%b0%e9%9f%b3.html"
 fileName:  "20170100536"
 lang:  "zh_CN"
 published: true
-permalink: "audio-js-%e9%9a%8f%e6%97%b6%e9%9a%8f%e5%9c%b0%ef%bc%8c%e6%92%ad%e6%94%be-html5-%e7%9a%84%e5%a3%b0%e9%9f%b3.html"
+permalink: "2017/https://www.jfox.info/audio-js-%e9%9a%8f%e6%97%b6%e9%9a%8f%e5%9c%b0%ef%bc%8c%e6%92%ad%e6%94%be-html5-%e7%9a%84%e5%a3%b0%e9%9f%b3.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期日, 二月 9, 2014
 
-[audio.js](http://www.jfox.info/go.php?url=http://kolber.github.com/audiojs/)是一个HTML5标签的简易包装。但它不仅在支持HTML5的浏览器上能够轻松调用标签，并在不支持HTML5的浏览器上也能通过Flash作为B计划使用。除此之外，audio.js所提供的界面其实也还不错。
+[audio.js](https://www.jfox.info/go.php?url=http://kolber.github.com/audiojs/)是一个HTML5标签的简易包装。但它不仅在支持HTML5的浏览器上能够轻松调用标签，并在不支持HTML5的浏览器上也能通过Flash作为B计划使用。除此之外，audio.js所提供的界面其实也还不错。
 
 ## 支持情况
 
@@ -53,5 +53,5 @@ By Lee - Last updated: 星期日, 二月 9, 2014
 
 audio.js目前在MIT协议之下进行许可。这个协议算是非常宽松的协议了。
 
-文章来源地址：[http://newhtml.net/audio-js-%E9%9A%8F%E6%97%B6%E9%9A%8F%E5%9C%B0%EF%BC%8C%E6%92%AD%E6%94%BE-html5-%E7%9A%84%E5%A3%B0%E9%9F%B3/](http://www.jfox.info/go.php?url=http://newhtml.net/audio-js-%E9%9A%8F%E6%97%B6%E9%9A%8F%E5%9C%B0%EF%BC%8C%E6%92%AD%E6%94%BE-html5-%E7%9A%84%E5%A3%B0%E9%9F%B3/)
+文章来源地址：[http://newhtml.net/audio-js-%E9%9A%8F%E6%97%B6%E9%9A%8F%E5%9C%B0%EF%BC%8C%E6%92%AD%E6%94%BE-html5-%E7%9A%84%E5%A3%B0%E9%9F%B3/](https://www.jfox.info/go.php?url=http://newhtml.net/audio-js-%E9%9A%8F%E6%97%B6%E9%9A%8F%E5%9C%B0%EF%BC%8C%E6%92%AD%E6%94%BE-html5-%E7%9A%84%E5%A3%B0%E9%9F%B3/)
 {% endraw %}

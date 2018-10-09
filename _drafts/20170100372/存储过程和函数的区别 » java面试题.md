@@ -3,11 +3,11 @@ layout: post
 title:  "存储过程和函数的区别 » java面试题"
 title2:  "存储过程和函数的区别 » java面试题"
 date:   2017-01-01 23:41:12  +0800
-source:  "http://www.jfox.info/cun-chu-guo-cheng-he-han-shu-de-qu-bie.html"
+source:  "https://www.jfox.info/cun-chu-guo-cheng-he-han-shu-de-qu-bie.html"
 fileName:  "20170100372"
 lang:  "zh_CN"
 published: true
-permalink: "cun-chu-guo-cheng-he-han-shu-de-qu-bie.html"
+permalink: "2017/https://www.jfox.info/cun-chu-guo-cheng-he-han-shu-de-qu-bie.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期二, 五月 21, 2013

@@ -3,11 +3,11 @@ layout: post
 title:  "Java工程师老紫竹的华为面试之旅"
 title2:  "Java工程师老紫竹的华为面试之旅"
 date:   2017-01-01 23:45:34  +0800
-source:  "http://www.jfox.info/a-java-engineer-old-shichiku-interview-trip-in-huawei.html"
+source:  "https://www.jfox.info/a-java-engineer-old-shichiku-interview-trip-in-huawei.html"
 fileName:  "20170100634"
 lang:  "zh_CN"
 published: true
-permalink: "a-java-engineer-old-shichiku-interview-trip-in-huawei.html"
+permalink: "2017/https://www.jfox.info/a-java-engineer-old-shichiku-interview-trip-in-huawei.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期六, 五月 17, 2014
@@ -112,5 +112,5 @@ By Lee - Last updated: 星期六, 五月 17, 2014
 
 我会一直在CSDN活动，这里是我的家，我会一直关注在【Java技术版】的朋友。我希望每个喜爱技术的朋友能够在这里互相帮助，我为人人，人人为我，享受技术带给我们的快乐生活。
 
-原文地址:[http://blog.csdn.net/java2000_net/article/details/2506035](http://www.jfox.info/go.php?url=http://www.jfox.info/url.php?url=http%3A%2F%2Fblog.csdn.net%2Fjava2000_net%2Farticle%2Fdetails%2F2506035).
+原文地址:[http://blog.csdn.net/java2000_net/article/details/2506035](https://www.jfox.info/go.php?url=http://www.jfox.info/url.php?url=http%3A%2F%2Fblog.csdn.net%2Fjava2000_net%2Farticle%2Fdetails%2F2506035).
 {% endraw %}

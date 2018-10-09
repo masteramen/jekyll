@@ -3,11 +3,11 @@ layout: post
 title:  "Spring框架第二篇之Bean的装配"
 title2:  "Spring框架第二篇之Bean的装配"
 date:   2017-01-01 23:49:21  +0800
-source:  "http://www.jfox.info/spring_kuang_jia_di_er_pian_zhi_bean_de_zhuang_pei.html"
+source:  "https://www.jfox.info/spring_kuang_jia_di_er_pian_zhi_bean_de_zhuang_pei.html"
 fileName:  "20170100861"
 lang:  "zh_CN"
 published: true
-permalink: "spring_kuang_jia_di_er_pian_zhi_bean_de_zhuang_pei.html"
+permalink: "2017/https://www.jfox.info/spring_kuang_jia_di_er_pian_zhi_bean_de_zhuang_pei.html"
 ---
 {% raw %}
 代码通过getBean();方式从容器中获取指定的Bean实例，容器首先会调用Bean类的无参构造器，创建空值的实例对象。

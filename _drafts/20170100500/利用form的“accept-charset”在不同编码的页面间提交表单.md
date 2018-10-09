@@ -3,11 +3,11 @@ layout: post
 title:  "利用form的“accept-charset”在不同编码的页面间提交表单"
 title2:  "利用form的“accept-charset”在不同编码的页面间提交表单"
 date:   2017-01-01 23:43:20  +0800
-source:  "http://www.jfox.info/%e5%88%a9%e7%94%a8form%e7%9a%84accept-charset%e5%9c%a8%e4%b8%8d%e5%90%8c%e7%bc%96%e7%a0%81%e7%9a%84%e9%a1%b5%e9%9d%a2%e9%97%b4%e6%8f%90%e4%ba%a4%e8%a1%a8%e5%8d%95-q-lee-lulu.html"
+source:  "https://www.jfox.info/%e5%88%a9%e7%94%a8form%e7%9a%84accept-charset%e5%9c%a8%e4%b8%8d%e5%90%8c%e7%bc%96%e7%a0%81%e7%9a%84%e9%a1%b5%e9%9d%a2%e9%97%b4%e6%8f%90%e4%ba%a4%e8%a1%a8%e5%8d%95-q-lee-lulu.html"
 fileName:  "20170100500"
 lang:  "zh_CN"
 published: true
-permalink: "%e5%88%a9%e7%94%a8form%e7%9a%84accept-charset%e5%9c%a8%e4%b8%8d%e5%90%8c%e7%bc%96%e7%a0%81%e7%9a%84%e9%a1%b5%e9%9d%a2%e9%97%b4%e6%8f%90%e4%ba%a4%e8%a1%a8%e5%8d%95-q-lee-lulu.html"
+permalink: "2017/https://www.jfox.info/%e5%88%a9%e7%94%a8form%e7%9a%84accept-charset%e5%9c%a8%e4%b8%8d%e5%90%8c%e7%bc%96%e7%a0%81%e7%9a%84%e9%a1%b5%e9%9d%a2%e9%97%b4%e6%8f%90%e4%ba%a4%e8%a1%a8%e5%8d%95-q-lee-lulu.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期一, 一月 27, 2014
@@ -32,5 +32,5 @@ accept-charset
 
 剩下的工作浏览器会搞定。
 
-转自 [利用form的“accept-charset”在不同编码的页面间提交表单](http://www.jfox.info/go.php?url=http://www.cnblogs.com/qleelulu/archive/2009/03/17/1414064.html).
+转自 [利用form的“accept-charset”在不同编码的页面间提交表单](https://www.jfox.info/go.php?url=http://www.cnblogs.com/qleelulu/archive/2009/03/17/1414064.html).
 {% endraw %}

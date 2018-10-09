@@ -3,11 +3,11 @@ layout: post
 title:  "Java反射定义、获取Class三种方法"
 title2:  "Java反射定义、获取Class三种方法"
 date:   2017-01-01 23:50:19  +0800
-source:  "http://www.jfox.info/java%e5%8f%8d%e5%b0%84%e5%ae%9a%e4%b9%89-%e8%8e%b7%e5%8f%96class%e4%b8%89%e7%a7%8d%e6%96%b9%e6%b3%95.html"
+source:  "https://www.jfox.info/java%e5%8f%8d%e5%b0%84%e5%ae%9a%e4%b9%89-%e8%8e%b7%e5%8f%96class%e4%b8%89%e7%a7%8d%e6%96%b9%e6%b3%95.html"
 fileName:  "20170100919"
 lang:  "zh_CN"
 published: true
-permalink: "java%e5%8f%8d%e5%b0%84%e5%ae%9a%e4%b9%89-%e8%8e%b7%e5%8f%96class%e4%b8%89%e7%a7%8d%e6%96%b9%e6%b3%95.html"
+permalink: "2017/https://www.jfox.info/java%e5%8f%8d%e5%b0%84%e5%ae%9a%e4%b9%89-%e8%8e%b7%e5%8f%96class%e4%b8%89%e7%a7%8d%e6%96%b9%e6%b3%95.html"
 ---
 {% raw %}
 反射机制的定义：

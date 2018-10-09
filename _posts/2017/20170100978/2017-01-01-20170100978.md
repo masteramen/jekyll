@@ -3,11 +3,11 @@ layout: post
 title:  "用removeLast和removeFrist来模仿堆和栈"
 title2:  "用removeLast和removeFrist来模仿堆和栈"
 date:   2017-01-01 23:51:18  +0800
-source:  "http://www.jfox.info/%e7%94%a8removelast%e5%92%8cremovefrist%e6%9d%a5%e6%a8%a1%e4%bb%bf%e5%a0%86%e5%92%8c%e6%a0%88.html"
+source:  "https://www.jfox.info/%e7%94%a8removelast%e5%92%8cremovefrist%e6%9d%a5%e6%a8%a1%e4%bb%bf%e5%a0%86%e5%92%8c%e6%a0%88.html"
 fileName:  "20170100978"
 lang:  "zh_CN"
 published: true
-permalink: "%e7%94%a8removelast%e5%92%8cremovefrist%e6%9d%a5%e6%a8%a1%e4%bb%bf%e5%a0%86%e5%92%8c%e6%a0%88.html"
+permalink: "2017/https://www.jfox.info/%e7%94%a8removelast%e5%92%8cremovefrist%e6%9d%a5%e6%a8%a1%e4%bb%bf%e5%a0%86%e5%92%8c%e6%a0%88.html"
 ---
 {% raw %}
 /*

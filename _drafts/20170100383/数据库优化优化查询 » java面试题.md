@@ -3,11 +3,11 @@ layout: post
 title:  "数据库优化:优化查询 » java面试题"
 title2:  "数据库优化优化查询 » java面试题"
 date:   2017-01-01 23:41:23  +0800
-source:  "http://www.jfox.info/shu-ju-ku-you-hua-you-hua-cha-xun.html"
+source:  "https://www.jfox.info/shu-ju-ku-you-hua-you-hua-cha-xun.html"
 fileName:  "20170100383"
 lang:  "zh_CN"
 published: true
-permalink: "shu-ju-ku-you-hua-you-hua-cha-xun.html"
+permalink: "2017/https://www.jfox.info/shu-ju-ku-you-hua-you-hua-cha-xun.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期二, 五月 21, 2013

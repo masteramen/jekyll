@@ -3,11 +3,11 @@ layout: post
 title:  "JAVAWEB开发之权限管理(二)——shiro入门详解以及使用方法、shiro认证与shiro授权"
 title2:  "JAVAWEB开发之权限管理(二)——shiro入门详解以及使用方法、shiro认证与shiro授权"
 date:   2017-01-01 23:57:00  +0800
-source:  "http://www.jfox.info/javaweb%e5%bc%80%e5%8f%91%e4%b9%8b%e6%9d%83%e9%99%90%e7%ae%a1%e7%90%86%e4%ba%8cshiro%e5%85%a5%e9%97%a8%e8%af%a6%e8%a7%a3%e4%bb%a5%e5%8f%8a%e4%bd%bf%e7%94%a8%e6%96%b9%e6%b3%95shiro%e8%ae%a4%e8%af%81.html"
+source:  "https://www.jfox.info/javaweb%e5%bc%80%e5%8f%91%e4%b9%8b%e6%9d%83%e9%99%90%e7%ae%a1%e7%90%86%e4%ba%8cshiro%e5%85%a5%e9%97%a8%e8%af%a6%e8%a7%a3%e4%bb%a5%e5%8f%8a%e4%bd%bf%e7%94%a8%e6%96%b9%e6%b3%95shiro%e8%ae%a4%e8%af%81.html"
 fileName:  "20170101320"
 lang:  "zh_CN"
 published: true
-permalink: "javaweb%e5%bc%80%e5%8f%91%e4%b9%8b%e6%9d%83%e9%99%90%e7%ae%a1%e7%90%86%e4%ba%8cshiro%e5%85%a5%e9%97%a8%e8%af%a6%e8%a7%a3%e4%bb%a5%e5%8f%8a%e4%bd%bf%e7%94%a8%e6%96%b9%e6%b3%95shiro%e8%ae%a4%e8%af%81.html"
+permalink: "2017/https://www.jfox.info/javaweb%e5%bc%80%e5%8f%91%e4%b9%8b%e6%9d%83%e9%99%90%e7%ae%a1%e7%90%86%e4%ba%8cshiro%e5%85%a5%e9%97%a8%e8%af%a6%e8%a7%a3%e4%bb%a5%e5%8f%8a%e4%bd%bf%e7%94%a8%e6%96%b9%e6%b3%95shiro%e8%ae%a4%e8%af%81.html"
 ---
 {% raw %}
 # JAVAWEB开发之权限管理(二)——shiro入门详解以及使用方法、shiro认证与shiro授权 
@@ -102,7 +102,7 @@ Subject：(org.apache.shiro.subject.Subject)  即主体，简称用户，主体�
   
  
    配置MyEclipse支持ini，添加中文支持插件Properties Editor 地址是 
-  [http://propedit.sourceforge.jp/eclipse/updates/](http://www.jfox.info/go.php?url=http://propedit.sourceforge.jp/eclipse/updates/)![](/wp-content/uploads/2017/07/15002883161.png)在MyEclipse配置后，在classpath创建shiro.ini配置文件，为了方便测试将用户名和密码配置在shiro-first.ini文件中
+  [http://propedit.sourceforge.jp/eclipse/updates/](https://www.jfox.info/go.php?url=http://propedit.sourceforge.jp/eclipse/updates/)![](/wp-content/uploads/2017/07/15002883161.png)在MyEclipse配置后，在classpath创建shiro.ini配置文件，为了方便测试将用户名和密码配置在shiro-first.ini文件中
     #对用户信息进行配置
     [users]
     #用户账号和密码
@@ -596,7 +596,7 @@ shiro支持三种方式的授权：编程序、注解式、标签式方式一：
 # shiro认证和授权入门Demo
 项目结构如下：![](/wp-content/uploads/2017/07/1500288319.png)
 
-此Demo已经上传GitHub([https://github.com/LX1993728/permission_java_shiro](http://www.jfox.info/go.php?url=https://github.com/LX1993728/permission_java_shiro))
+此Demo已经上传GitHub([https://github.com/LX1993728/permission_java_shiro](https://www.jfox.info/go.php?url=https://github.com/LX1993728/permission_java_shiro))
  
   
  

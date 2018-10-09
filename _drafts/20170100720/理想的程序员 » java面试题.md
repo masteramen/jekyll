@@ -3,11 +3,11 @@ layout: post
 title:  "理想的程序员 » java面试题"
 title2:  "理想的程序员 » java面试题"
 date:   2017-01-01 23:47:00  +0800
-source:  "http://www.jfox.info/li-xiang-de-cheng-xu-yuan.html"
+source:  "https://www.jfox.info/li-xiang-de-cheng-xu-yuan.html"
 fileName:  "20170100720"
 lang:  "zh_CN"
 published: true
-permalink: "li-xiang-de-cheng-xu-yuan.html"
+permalink: "2017/https://www.jfox.info/li-xiang-de-cheng-xu-yuan.html"
 ---
 {% raw %}
 我算是靠坑蒙拐骗进了程序员的门，然后一路狂奔。26岁之前几乎没有任何写代码的经验，研究生毕业却意外选择了一家不可能提供培训的初创公司，在每日担忧公司倒闭、害怕被炒鱿鱼以及同事冷落白眼的三重压力下逆流而上，一年半后离职，已是拥有500万用户产品的后台主程。

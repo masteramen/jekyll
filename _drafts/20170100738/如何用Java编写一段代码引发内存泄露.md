@@ -3,11 +3,11 @@ layout: post
 title:  "如何用Java编写一段代码引发内存泄露"
 title2:  "如何用Java编写一段代码引发内存泄露"
 date:   2017-01-01 23:47:18  +0800
-source:  "http://www.jfox.info/ru-he-yong-java-bian-xie-yi-duan-dai-ma-yin-fa-na-cun-xie-lu.html"
+source:  "https://www.jfox.info/ru-he-yong-java-bian-xie-yi-duan-dai-ma-yin-fa-na-cun-xie-lu.html"
 fileName:  "20170100738"
 lang:  "zh_CN"
 published: true
-permalink: "ru-he-yong-java-bian-xie-yi-duan-dai-ma-yin-fa-na-cun-xie-lu.html"
+permalink: "2017/https://www.jfox.info/ru-he-yong-java-bian-xie-yi-duan-dai-ma-yin-fa-na-cun-xie-lu.html"
 ---
 {% raw %}
 本文来自StackOverflow问答网站的一个热门讨论：如何用Java编写一段会发生内存泄露的代码。

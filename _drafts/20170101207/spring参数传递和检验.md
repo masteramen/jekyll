@@ -3,11 +3,11 @@ layout: post
 title:  "spring参数传递和检验"
 title2:  "spring参数传递和检验"
 date:   2017-01-01 23:55:07  +0800
-source:  "http://www.jfox.info/spring%e5%8f%82%e6%95%b0%e4%bc%a0%e9%80%92%e5%92%8c%e6%a3%80%e9%aa%8c.html"
+source:  "https://www.jfox.info/spring%e5%8f%82%e6%95%b0%e4%bc%a0%e9%80%92%e5%92%8c%e6%a3%80%e9%aa%8c.html"
 fileName:  "20170101207"
 lang:  "zh_CN"
 published: true
-permalink: "spring%e5%8f%82%e6%95%b0%e4%bc%a0%e9%80%92%e5%92%8c%e6%a3%80%e9%aa%8c.html"
+permalink: "2017/https://www.jfox.info/spring%e5%8f%82%e6%95%b0%e4%bc%a0%e9%80%92%e5%92%8c%e6%a3%80%e9%aa%8c.html"
 ---
 {% raw %}
 在spring请求时，要对参数进行检查，以前一直使用如下方式来获取参数，在参数特别多的时候，代码很不简洁。

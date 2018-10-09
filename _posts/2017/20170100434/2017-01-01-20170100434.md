@@ -3,11 +3,11 @@ layout: post
 title:  "Hibernate面试题:说说你对Hibernate的一些了解和看法？"
 title2:  "Hibernate面试题说说你对Hibernate的一些了解和看法？"
 date:   2017-01-01 23:42:14  +0800
-source:  "http://www.jfox.info/Hibernate-mian-shi-ti-shuo-shuo-ni-dui-Hibernate-de-yi-xie-liao-jie-he-kan-fa.html"
+source:  "https://www.jfox.info/Hibernate-mian-shi-ti-shuo-shuo-ni-dui-Hibernate-de-yi-xie-liao-jie-he-kan-fa.html"
 fileName:  "20170100434"
 lang:  "zh_CN"
 published: true
-permalink: "Hibernate-mian-shi-ti-shuo-shuo-ni-dui-Hibernate-de-yi-xie-liao-jie-he-kan-fa.html"
+permalink: "2017/https://www.jfox.info/Hibernate-mian-shi-ti-shuo-shuo-ni-dui-Hibernate-de-yi-xie-liao-jie-he-kan-fa.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期五, 六月 14, 2013

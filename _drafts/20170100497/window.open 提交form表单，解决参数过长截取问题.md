@@ -3,11 +3,11 @@ layout: post
 title:  "window.open 提交form表单，解决参数过长截取问题"
 title2:  "window.open 提交form表单，解决参数过长截取问题"
 date:   2017-01-01 23:43:17  +0800
-source:  "http://www.jfox.info/window-open-%e6%8f%90%e4%ba%a4form%e8%a1%a8%e5%8d%95%ef%bc%8c%e8%a7%a3%e5%86%b3%e5%8f%82%e6%95%b0%e8%bf%87%e9%95%bf%e6%88%aa%e5%8f%96%e9%97%ae%e9%a2%98.html"
+source:  "https://www.jfox.info/window-open-%e6%8f%90%e4%ba%a4form%e8%a1%a8%e5%8d%95%ef%bc%8c%e8%a7%a3%e5%86%b3%e5%8f%82%e6%95%b0%e8%bf%87%e9%95%bf%e6%88%aa%e5%8f%96%e9%97%ae%e9%a2%98.html"
 fileName:  "20170100497"
 lang:  "zh_CN"
 published: true
-permalink: "window-open-%e6%8f%90%e4%ba%a4form%e8%a1%a8%e5%8d%95%ef%bc%8c%e8%a7%a3%e5%86%b3%e5%8f%82%e6%95%b0%e8%bf%87%e9%95%bf%e6%88%aa%e5%8f%96%e9%97%ae%e9%a2%98.html"
+permalink: "2017/https://www.jfox.info/window-open-%e6%8f%90%e4%ba%a4form%e8%a1%a8%e5%8d%95%ef%bc%8c%e8%a7%a3%e5%86%b3%e5%8f%82%e6%95%b0%e8%bf%87%e9%95%bf%e6%88%aa%e5%8f%96%e9%97%ae%e9%a2%98.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期一, 一月 27, 2014

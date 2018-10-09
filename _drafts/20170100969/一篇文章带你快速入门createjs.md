@@ -3,11 +3,11 @@ layout: post
 title:  "一篇文章带你快速入门createjs"
 title2:  "一篇文章带你快速入门createjs"
 date:   2017-01-01 23:51:09  +0800
-source:  "http://www.jfox.info/%e4%b8%80%e7%af%87%e6%96%87%e7%ab%a0%e5%b8%a6%e4%bd%a0%e5%bf%ab%e9%80%9f%e5%85%a5%e9%97%a8createjs.html"
+source:  "https://www.jfox.info/%e4%b8%80%e7%af%87%e6%96%87%e7%ab%a0%e5%b8%a6%e4%bd%a0%e5%bf%ab%e9%80%9f%e5%85%a5%e9%97%a8createjs.html"
 fileName:  "20170100969"
 lang:  "zh_CN"
 published: true
-permalink: "%e4%b8%80%e7%af%87%e6%96%87%e7%ab%a0%e5%b8%a6%e4%bd%a0%e5%bf%ab%e9%80%9f%e5%85%a5%e9%97%a8createjs.html"
+permalink: "2017/https://www.jfox.info/%e4%b8%80%e7%af%87%e6%96%87%e7%ab%a0%e5%b8%a6%e4%bd%a0%e5%bf%ab%e9%80%9f%e5%85%a5%e9%97%a8createjs.html"
 ---
 {% raw %}
 EaselJS：用于 Sprites、动画、向量和位图的绘制，创建 HTML5 Canvas 上的交互体验（包含多点触控） 

@@ -3,11 +3,11 @@ layout: post
 title:  "10个经典的Java main方法面试题"
 title2:  "10个经典的Java main方法面试题"
 date:   2017-01-01 23:48:31  +0800
-source:  "http://www.jfox.info/10-ge-jing-dian-de-java-main-fang-fa-mian-shi-ti.html"
+source:  "https://www.jfox.info/10-ge-jing-dian-de-java-main-fang-fa-mian-shi-ti.html"
 fileName:  "20170100811"
 lang:  "zh_CN"
 published: true
-permalink: "10-ge-jing-dian-de-java-main-fang-fa-mian-shi-ti.html"
+permalink: "2017/https://www.jfox.info/10-ge-jing-dian-de-java-main-fang-fa-mian-shi-ti.html"
 ---
 {% raw %}
 以下是笔者认为比较经典的关于Java main方法的面试题，与其说是Java面试题，其实也是Java的一些最基础知识问题，分享给大家，如有错误，请指出。

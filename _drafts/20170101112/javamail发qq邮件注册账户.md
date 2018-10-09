@@ -1,24 +1,23 @@
 ---
 layout: post
-title: "javamail发qq邮件注册账户"
-title2: "javamail发qq邮件注册账户"
-date: 2017-01-01 23:53:32  +0800
-source: "http://www.jfox.info/javamail%e5%8f%91qq%e9%82%ae%e4%bb%b6%e6%b3%a8%e5%86%8c%e8%b4%a6%e6%88%b7.html"
-fileName: "20170101112"
-lang: "zh_CN"
+title:  "javamail发qq邮件注册账户"
+title2:  "javamail发qq邮件注册账户"
+date:   2017-01-01 23:53:32  +0800
+source:  "https://www.jfox.info/javamail%e5%8f%91qq%e9%82%ae%e4%bb%b6%e6%b3%a8%e5%86%8c%e8%b4%a6%e6%88%b7.html"
+fileName:  "20170101112"
+lang:  "zh_CN"
 published: true
-permalink: "javamail%e5%8f%91qq%e9%82%ae%e4%bb%b6%e6%b3%a8%e5%86%8c%e8%b4%a6%e6%88%b7.html"
+permalink: "2017/https://www.jfox.info/javamail%e5%8f%91qq%e9%82%ae%e4%bb%b6%e6%b3%a8%e5%86%8c%e8%b4%a6%e6%88%b7.html"
 ---
-
 {% raw %}
+# javamail发qq邮件注册账户 
 
-# javamail 发 qq 邮件注册账户
 
 H2M_LI_HEADER 1、 建数据库、表
-H2M_LI_HEADER 2、 User 类（实体类）
-H2M_LI_HEADER 3、 UserDao 类（与数据库交互）
-H2M_LI_HEADER 4、 SendMailUtils 类（发送邮件）
-H2M_LI_HEADER 5、 UUIDUtils（生成随机字符串 code）
+H2M_LI_HEADER 2、 User类（实体类）
+H2M_LI_HEADER 3、 UserDao类（与数据库交互）
+H2M_LI_HEADER 4、 SendMailUtils类（发送邮件）
+H2M_LI_HEADER 5、 UUIDUtils（生成随机字符串code）
 H2M_LI_HEADER 6、 RegistServlet（注册账户）
 H2M_LI_HEADER 7、 ActiveServlet（激活账户）
 H2M_LI_HEADER 8、 index.jsp（输入界面）
@@ -41,10 +40,10 @@ H2M_LI_HEADER 9、 success.jsp（成功界面）
       PRIMARY KEY (`id`)
     ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-## 2、 User 类（实体类）
+## 2、 User类（实体类）
 
     package com.look.bean;
-
+    
     public class User {
         private Integer id;
         private String username;
@@ -56,9 +55,8 @@ H2M_LI_HEADER 9、 success.jsp（成功界面）
         getter and setter...
     }
 
-## 3、 UserDao 类（与数据库交互）
+## 3、 UserDao类（与数据库交互）
 
-```java
     package com.look.dao;
     import java.sql.Connection;
     import java.sql.DriverManager;
@@ -126,19 +124,17 @@ H2M_LI_HEADER 9、 success.jsp（成功界面）
             }
         }
     }
-```
 
 **注**
-mysql 的账号密码需要修改为自己的账号密码。
+mysql的账号密码需要修改为自己的账号密码。
 
-## 4、 SendMailUtils 类（发送邮件）
+## 4、 SendMailUtils类（发送邮件）
 
-```java
     package com.look.util;
-
+    
     import java.security.GeneralSecurityException;
     import java.util.Properties;
-
+    
     import javax.mail.Address;
     import javax.mail.Message;
     import javax.mail.MessagingException;
@@ -181,14 +177,12 @@ mysql 的账号密码需要修改为自己的账号密码。
             transport.close();
         }
     }
-```
 
 **注：**
-`msg.setFrom(new InternetAddress("12345678@qq.com"));`和`transport.connect("smtp.qq.com", "12345678@qq.com","hsvsqhofljqtjgdi");`中的`12345678@qq.com`需要替换为你自己的 qq 邮箱，`hsvsqhofljqtjgdi`要替换为自己的**授权码**。
+`msg.setFrom(new InternetAddress("12345678@qq.com"));`和`transport.connect("smtp.qq.com", "12345678@qq.com","hsvsqhofljqtjgdi");`中的`12345678@qq.com`需要替换为你自己的qq邮箱，`hsvsqhofljqtjgdi`要替换为自己的**授权码**。
 
-## 5、 UUIDUtils（生成随机字符串 code）
+## 5、 UUIDUtils（生成随机字符串code）
 
-```java
     package com.look.util;
     import java.util.UUID;
     public class UUIDUtils {
@@ -197,11 +191,9 @@ mysql 的账号密码需要修改为自己的账号密码。
                     + UUID.randomUUID().toString().replace("-", "");
         }
     }
-```
 
 ## 6、 RegistServlet（注册账户）
 
-```java
     package com.look.servlet;
     import java.io.IOException;
     import java.io.PrintWriter;
@@ -260,11 +252,9 @@ mysql 的账号密码需要修改为自己的账号密码。
             super.destroy();
         }
     }
-```
 
 ## 7、 ActiveServlet（激活账户）
 
-```java
     package com.look.servlet;
     import java.io.IOException;
     import javax.servlet.ServletException;
@@ -301,11 +291,9 @@ mysql 的账号密码需要修改为自己的账号密码。
             super.destroy();
         }
     }
-```
 
 ## 8、 index.jsp（输入界面）
 
-```html
     <%@ page language="java" contentType="text/html; charset=UTF-8"
         pageEncoding="UTF-8"%>
     <!DOCTYPE html PUBLIC "-//W3C//Dli HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dli">
@@ -327,11 +315,9 @@ mysql 的账号密码需要修改为自己的账号密码。
         </form>
     </body>
     </html>
-```
 
 ## 9、 success.jsp（成功界面）
 
-```html
     <%@ page language="java" contentType="text/html; charset=UTF-8"
         pageEncoding="UTF-8"%>
     <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -347,11 +333,9 @@ mysql 的账号密码需要修改为自己的账号密码。
       </script>
      </body>
     </html>
-```
 
 ## 10、web.xml
 
-```xml
     <?xml version="1.0" encoding="UTF-8"?>
     <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
       <display-name>javamail</display-name>
@@ -375,6 +359,4 @@ mysql 的账号密码需要修改为自己的账号密码。
         <url-pattern>/ActiveServlet</url-pattern>
       </servlet-mapping>
     </web-app>
-```
-
 {% endraw %}

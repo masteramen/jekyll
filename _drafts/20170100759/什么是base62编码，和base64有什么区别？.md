@@ -3,11 +3,11 @@ layout: post
 title:  "什么是base62编码，和base64有什么区别？"
 title2:  "什么是base62编码，和base64有什么区别？"
 date:   2017-01-01 23:47:39  +0800
-source:  "http://www.jfox.info/shi-me-shi-base62-bian-ma-he-base64-you-shi-me-qu-bie.html"
+source:  "https://www.jfox.info/shi-me-shi-base62-bian-ma-he-base64-you-shi-me-qu-bie.html"
 fileName:  "20170100759"
 lang:  "zh_CN"
 published: true
-permalink: "shi-me-shi-base62-bian-ma-he-base64-you-shi-me-qu-bie.html"
+permalink: "2017/https://www.jfox.info/shi-me-shi-base62-bian-ma-he-base64-you-shi-me-qu-bie.html"
 ---
 {% raw %}
 在网上冲浪的时候，阅读技术文章有时候会看到base62，你可能会问这个base62和base64有什么区别？base62有什么用，难道就是64-62=2的区别？

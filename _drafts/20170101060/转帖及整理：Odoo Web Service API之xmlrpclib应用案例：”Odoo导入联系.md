@@ -3,14 +3,14 @@ layout: post
 title:  "转帖及整理：Odoo Web Service API之xmlrpclib应用案例：”Odoo导入联系"
 title2:  "转帖及整理：Odoo Web Service API之xmlrpclib应用案例：”Odoo导入联系"
 date:   2017-01-01 23:52:40  +0800
-source:  "http://www.jfox.info/%e8%bd%ac%e5%b8%96%e5%8f%8a%e6%95%b4%e7%90%86odoowebserviceapi%e4%b9%8bxmlrpclib%e5%ba%94%e7%94%a8%e6%a1%88%e4%be%8bodoo%e5%af%bc%e5%85%a5%e8%81%94%e7%b3%bb.html"
+source:  "https://www.jfox.info/%e8%bd%ac%e5%b8%96%e5%8f%8a%e6%95%b4%e7%90%86odoowebserviceapi%e4%b9%8bxmlrpclib%e5%ba%94%e7%94%a8%e6%a1%88%e4%be%8bodoo%e5%af%bc%e5%85%a5%e8%81%94%e7%b3%bb.html"
 fileName:  "20170101060"
 lang:  "zh_CN"
 published: true
-permalink: "%e8%bd%ac%e5%b8%96%e5%8f%8a%e6%95%b4%e7%90%86odoowebserviceapi%e4%b9%8bxmlrpclib%e5%ba%94%e7%94%a8%e6%a1%88%e4%be%8bodoo%e5%af%bc%e5%85%a5%e8%81%94%e7%b3%bb.html"
+permalink: "2017/https://www.jfox.info/%e8%bd%ac%e5%b8%96%e5%8f%8a%e6%95%b4%e7%90%86odoowebserviceapi%e4%b9%8bxmlrpclib%e5%ba%94%e7%94%a8%e6%a1%88%e4%be%8bodoo%e5%af%bc%e5%85%a5%e8%81%94%e7%b3%bb.html"
 ---
 {% raw %}
-参考官方文档：https://www. [ odoo ](http://www.jfox.info/go.php?url=http://www.jointd.com/?p=54) .com/documentation/10.0/api_integration.html 
+参考官方文档：https://www. [ odoo ](https://www.jfox.info/go.php?url=http://www.jointd.com/?p=54) .com/documentation/10.0/api_integration.html 
 
 * ”XML-RPC是一个远程过程调用（remote procedure call，RPC)的分布式计算协议，通过XML将调用函数封装，并使用HTTP协议作为传送机制。“ *
 
@@ -69,9 +69,9 @@ permalink: "%e8%bd%ac%e5%b8%96%e5%8f%8a%e6%95%b4%e7%90%86odoowebserviceapi%e4%b9
 
  这句是向res.partner执行create的方法，value就是对应的参数 
 
- 因为partner 和address的关系是one2many，在OpenERP的ORM里面可以直接添加，修改这些one2many, [ many2many ](http://www.jfox.info/go.php?url=http://www.jointd.com/?tag=many2many) 和 [ many2one ](http://www.jfox.info/go.php?url=http://www.jointd.com/?tag=many2one) 的值有一个特殊的格式。 
+ 因为partner 和address的关系是one2many，在OpenERP的ORM里面可以直接添加，修改这些one2many, [ many2many ](https://www.jfox.info/go.php?url=http://www.jointd.com/?tag=many2many) 和 [ many2one ](https://www.jfox.info/go.php?url=http://www.jointd.com/?tag=many2one) 的值有一个特殊的格式。 
 
-**[ many2many ](http://www.jfox.info/go.php?url=http://www.jointd.com/?tag=many2many)**
+**[ many2many ](https://www.jfox.info/go.php?url=http://www.jointd.com/?tag=many2many)**
 
  (0,0,{values}) 根据values里面的信息新建一个记录。 
 
@@ -87,7 +87,7 @@ permalink: "%e8%bd%ac%e5%b8%96%e5%8f%8a%e6%95%b4%e7%90%86odoowebserviceapi%e4%b9
 
  (6,0,[IDs]) 用IDs里面的记录替换原来的记录（就是先执行(5)再执行循环IDs执行（4,ID）） 
 
- 例如：[(6, 0, [8, 5, 6, 4])] 设置 [ many2many ](http://www.jfox.info/go.php?url=http://www.jointd.com/?tag=many2many) to ids [8, 5, 6, 4] 
+ 例如：[(6, 0, [8, 5, 6, 4])] 设置 [ many2many ](https://www.jfox.info/go.php?url=http://www.jointd.com/?tag=many2many) to ids [8, 5, 6, 4] 
 
 ** one2many **
 

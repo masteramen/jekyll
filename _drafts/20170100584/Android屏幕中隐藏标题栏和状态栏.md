@@ -3,11 +3,11 @@ layout: post
 title:  "Android屏幕中隐藏标题栏和状态栏"
 title2:  "Android屏幕中隐藏标题栏和状态栏"
 date:   2017-01-01 23:44:44  +0800
-source:  "http://www.jfox.info/android-hide-the-title-and-statubar.html"
+source:  "https://www.jfox.info/android-hide-the-title-and-statubar.html"
 fileName:  "20170100584"
 lang:  "zh_CN"
 published: true
-permalink: "android-hide-the-title-and-statubar.html"
+permalink: "2017/https://www.jfox.info/android-hide-the-title-and-statubar.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期日, 二月 23, 2014
@@ -29,5 +29,5 @@ By Lee - Last updated: 星期日, 二月 23, 2014
 
 无标题栏和状态栏—–application 标签中添加android:theme=”@android:style/Theme.NoTitleBar.Fullscreen”
 
-参考来源 [Android屏幕中隐藏标题栏和状态栏](http://www.jfox.info/go.php?url=http://www.jfox.info/url.php?url=http%3A%2F%2Fblog.csdn.net%2Fyimo29%2Farticle%2Fdetails%2F6224110).
+参考来源 [Android屏幕中隐藏标题栏和状态栏](https://www.jfox.info/go.php?url=http://www.jfox.info/url.php?url=http%3A%2F%2Fblog.csdn.net%2Fyimo29%2Farticle%2Fdetails%2F6224110).
 {% endraw %}

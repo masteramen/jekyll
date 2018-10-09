@@ -3,11 +3,11 @@ layout: post
 title:  "搭建SSM项目框架全过程及思考"
 title2:  "搭建SSM项目框架全过程及思考"
 date:   2017-01-01 23:56:43  +0800
-source:  "http://www.jfox.info/%e6%90%ad%e5%bb%bassm%e9%a1%b9%e7%9b%ae%e6%a1%86%e6%9e%b6%e5%85%a8%e8%bf%87%e7%a8%8b%e5%8f%8a%e6%80%9d%e8%80%83.html"
+source:  "https://www.jfox.info/%e6%90%ad%e5%bb%bassm%e9%a1%b9%e7%9b%ae%e6%a1%86%e6%9e%b6%e5%85%a8%e8%bf%87%e7%a8%8b%e5%8f%8a%e6%80%9d%e8%80%83.html"
 fileName:  "20170101303"
 lang:  "zh_CN"
 published: true
-permalink: "%e6%90%ad%e5%bb%bassm%e9%a1%b9%e7%9b%ae%e6%a1%86%e6%9e%b6%e5%85%a8%e8%bf%87%e7%a8%8b%e5%8f%8a%e6%80%9d%e8%80%83.html"
+permalink: "2017/https://www.jfox.info/%e6%90%ad%e5%bb%bassm%e9%a1%b9%e7%9b%ae%e6%a1%86%e6%9e%b6%e5%85%a8%e8%bf%87%e7%a8%8b%e5%8f%8a%e6%80%9d%e8%80%83.html"
 ---
 {% raw %}
 之前都是在现有框架下进行写代码或者总是看一些别人的架构，总会眼高手低。于是打算自己完整的走一遍流程，同时把所遇到的问题，思考的问题记下来，供大家参考。由于是工作年限不高，属于新手，不足之处还请各位大牛指正。
@@ -16,7 +16,7 @@ permalink: "%e6%90%ad%e5%bb%bassm%e9%a1%b9%e7%9b%ae%e6%a1%86%e6%9e%b6%e5%85%a8%e
 
 　另说明一点的是操作系统是mac。
 
-　github项目源码在[https://github.com/sjlian/sjlian](http://www.jfox.info/go.php?url=https://github.com/sjlian/sjlian) 欢迎clone并提出意见。
+　github项目源码在[https://github.com/sjlian/sjlian](https://www.jfox.info/go.php?url=https://github.com/sjlian/sjlian) 欢迎clone并提出意见。
 
 ## 2. 创建mvn项目、完善目录结构
 
@@ -26,7 +26,7 @@ permalink: "%e6%90%ad%e5%bb%bassm%e9%a1%b9%e7%9b%ae%e6%a1%86%e6%9e%b6%e5%85%a8%e
 
 ![](/wp-content/uploads/2017/07/1499955386.png)
 
-　一个好的程序员都善于用命令行的方式解决问题，于是思考怎么用mvn命令行创建项目。最简单的方式就是mvn archetype:generate，这个命令是默认的 archetype，如果需要生成特定模板的项目呢？从maven的Repository里查找arche types发现有几百个，我们平时用的也就那么几个，由于太多就变得很不方便起来，于是搜索资料，查到 [http://maven.40175.n5.nabble.com/archetype-catalog-xml-location-archetype-crawl-versus-archetype-generate-td113741.html](http://www.jfox.info/go.php?url=http://maven.40175.n5.nabble.com/archetype-catalog-xml-location-archetype-crawl-versus-archetype-generate-td113741.html) 
+　一个好的程序员都善于用命令行的方式解决问题，于是思考怎么用mvn命令行创建项目。最简单的方式就是mvn archetype:generate，这个命令是默认的 archetype，如果需要生成特定模板的项目呢？从maven的Repository里查找arche types发现有几百个，我们平时用的也就那么几个，由于太多就变得很不方便起来，于是搜索资料，查到 [http://maven.40175.n5.nabble.com/archetype-catalog-xml-location-archetype-crawl-versus-archetype-generate-td113741.html](https://www.jfox.info/go.php?url=http://maven.40175.n5.nabble.com/archetype-catalog-xml-location-archetype-crawl-versus-archetype-generate-td113741.html) 
 
 ![](/wp-content/uploads/2017/07/14999553861.png)
 

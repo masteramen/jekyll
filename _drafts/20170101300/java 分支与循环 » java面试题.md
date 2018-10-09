@@ -3,11 +3,11 @@ layout: post
 title:  "java 分支与循环 » java面试题"
 title2:  "java 分支与循环 » java面试题"
 date:   2017-01-01 23:56:40  +0800
-source:  "http://www.jfox.info/java%e5%88%86%e6%94%af%e4%b8%8e%e5%be%aa%e7%8e%af.html"
+source:  "https://www.jfox.info/java%e5%88%86%e6%94%af%e4%b8%8e%e5%be%aa%e7%8e%af.html"
 fileName:  "20170101300"
 lang:  "zh_CN"
 published: true
-permalink: "java%e5%88%86%e6%94%af%e4%b8%8e%e5%be%aa%e7%8e%af.html"
+permalink: "2017/https://www.jfox.info/java%e5%88%86%e6%94%af%e4%b8%8e%e5%be%aa%e7%8e%af.html"
 ---
 {% raw %}
 基础数据类型（四类八种 ） 不能为null。

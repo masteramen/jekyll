@@ -3,11 +3,11 @@ layout: post
 title:  "JAVA基础——重新认识String字符串"
 title2:  "JAVA基础——重新认识String字符串"
 date:   2017-01-01 23:52:31  +0800
-source:  "http://www.jfox.info/java%e5%9f%ba%e7%a1%80%e9%87%8d%e6%96%b0%e8%ae%a4%e8%af%86string%e5%ad%97%e7%ac%a6%e4%b8%b2.html"
+source:  "https://www.jfox.info/java%e5%9f%ba%e7%a1%80%e9%87%8d%e6%96%b0%e8%ae%a4%e8%af%86string%e5%ad%97%e7%ac%a6%e4%b8%b2.html"
 fileName:  "20170101051"
 lang:  "zh_CN"
 published: true
-permalink: "java%e5%9f%ba%e7%a1%80%e9%87%8d%e6%96%b0%e8%ae%a4%e8%af%86string%e5%ad%97%e7%ac%a6%e4%b8%b2.html"
+permalink: "2017/https://www.jfox.info/java%e5%9f%ba%e7%a1%80%e9%87%8d%e6%96%b0%e8%ae%a4%e8%af%86string%e5%ad%97%e7%ac%a6%e4%b8%b2.html"
 ---
 {% raw %}
 在程序开发中字符串无处不在，如用户登陆时输入的用户名、密码等使用的就是字符串。

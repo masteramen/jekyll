@@ -3,11 +3,11 @@ layout: post
 title:  "What is a NullPointerException, and how do I fix it?"
 title2:  "What is a NullPointerException, and how do I fix it"
 date:   2017-01-01 23:54:55  +0800
-source:  "http://www.jfox.info/whatisanullpointerexceptionandhowdoifixit.html"
+source:  "https://www.jfox.info/whatisanullpointerexceptionandhowdoifixit.html"
 fileName:  "20170101195"
 lang:  "zh_CN"
 published: true
-permalink: "whatisanullpointerexceptionandhowdoifixit.html"
+permalink: "2017/https://www.jfox.info/whatisanullpointerexceptionandhowdoifixit.html"
 ---
 {% raw %}
 When you declare a reference variable (i.e. an object) you are really creating a pointer to an object. Consider the following code where you declare a variable of primitive type `int`:
@@ -58,5 +58,5 @@ Alternatively, there may be cases where the purpose of the method is not solely 
     }
     
 
-Finally, [How to pinpoint the exception location & cause using Stack Trace](http://www.jfox.info/go.php?url=https://stackoverflow.com/q/3988788/2775450)
+Finally, [How to pinpoint the exception location & cause using Stack Trace](https://www.jfox.info/go.php?url=https://stackoverflow.com/q/3988788/2775450)
 {% endraw %}

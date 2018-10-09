@@ -3,11 +3,11 @@ layout: post
 title:  "调用google cdn的jquery.js 加快网站访问速度"
 title2:  "调用google cdn的jquery.js 加快网站访问速度"
 date:   2017-01-01 23:43:37  +0800
-source:  "http://www.jfox.info/%e8%b0%83%e7%94%a8google-cdn%e7%9a%84jquery-js-%e5%8a%a0%e5%bf%ab%e7%bd%91%e7%ab%99%e8%ae%bf%e9%97%ae%e9%80%9f%e5%ba%a6.html"
+source:  "https://www.jfox.info/%e8%b0%83%e7%94%a8google-cdn%e7%9a%84jquery-js-%e5%8a%a0%e5%bf%ab%e7%bd%91%e7%ab%99%e8%ae%bf%e9%97%ae%e9%80%9f%e5%ba%a6.html"
 fileName:  "20170100517"
 lang:  "zh_CN"
 published: true
-permalink: "%e8%b0%83%e7%94%a8google-cdn%e7%9a%84jquery-js-%e5%8a%a0%e5%bf%ab%e7%bd%91%e7%ab%99%e8%ae%bf%e9%97%ae%e9%80%9f%e5%ba%a6.html"
+permalink: "2017/https://www.jfox.info/%e8%b0%83%e7%94%a8google-cdn%e7%9a%84jquery-js-%e5%8a%a0%e5%bf%ab%e7%bd%91%e7%ab%99%e8%ae%bf%e9%97%ae%e9%80%9f%e5%ba%a6.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期日, 二月 2, 2014
@@ -18,7 +18,7 @@ By Lee - Last updated: 星期日, 二月 2, 2014
 做个总和测试，谁快我就用谁的，但是肯定都比从你自己网站上调用的快。
 下面是从谷歌，微软和jquery官方调用jquery.js的速度对比：
 
-[![2465439321009931936](http://www.jfox.info/wp-content/uploads/2014/02/2465439321009931936.png)](http://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2014/02/2465439321009931936.png)
+[![2465439321009931936](http://www.jfox.info/wp-content/uploads/2014/02/2465439321009931936.png)](https://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2014/02/2465439321009931936.png)
 
 google加载最快。 虽然有2.19s，但元快于从我们自己网站上加载的速度（3.83s）。
 <script type=”text/javascript” src=”http://www.google.com/jsapi”></script>

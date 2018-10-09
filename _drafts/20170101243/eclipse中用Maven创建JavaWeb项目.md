@@ -3,18 +3,18 @@ layout: post
 title:  "eclipse中用Maven创建JavaWeb项目"
 title2:  "eclipse中用Maven创建JavaWeb项目"
 date:   2017-01-01 23:55:43  +0800
-source:  "http://www.jfox.info/eclipse%e4%b8%ad%e7%94%a8maven%e5%88%9b%e5%bb%bajavaweb%e9%a1%b9%e7%9b%ae.html"
+source:  "https://www.jfox.info/eclipse%e4%b8%ad%e7%94%a8maven%e5%88%9b%e5%bb%bajavaweb%e9%a1%b9%e7%9b%ae.html"
 fileName:  "20170101243"
 lang:  "zh_CN"
 published: true
-permalink: "eclipse%e4%b8%ad%e7%94%a8maven%e5%88%9b%e5%bb%bajavaweb%e9%a1%b9%e7%9b%ae.html"
+permalink: "2017/https://www.jfox.info/eclipse%e4%b8%ad%e7%94%a8maven%e5%88%9b%e5%bb%bajavaweb%e9%a1%b9%e7%9b%ae.html"
 ---
 {% raw %}
 最近学到在eclipse中用Maven创建java web项目，总结一下创建步骤。 
 
 ### 下载Maven压缩包和配置相关信息。 
 
-[下载地址：http://maven.apache.org/download.cgi](http://www.jfox.info/go.php?url=http://maven.apache.org/download.cgi)
+[下载地址：http://maven.apache.org/download.cgi](https://www.jfox.info/go.php?url=http://maven.apache.org/download.cgi)
 
 选择如下图所示的解压包即可
 

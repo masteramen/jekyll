@@ -3,11 +3,11 @@ layout: post
 title:  "用Python进行SQLite数据库操作"
 title2:  "用Python进行SQLite数据库操作"
 date:   2017-01-01 23:47:12  +0800
-source:  "http://www.jfox.info/yong-python-jin-xing-sqlite-shu-ju-ku-cao-zuo.html"
+source:  "https://www.jfox.info/yong-python-jin-xing-sqlite-shu-ju-ku-cao-zuo.html"
 fileName:  "20170100732"
 lang:  "zh_CN"
 published: true
-permalink: "yong-python-jin-xing-sqlite-shu-ju-ku-cao-zuo.html"
+permalink: "2017/https://www.jfox.info/yong-python-jin-xing-sqlite-shu-ju-ku-cao-zuo.html"
 ---
 {% raw %}
 SQLite数据库是一款非常小巧的嵌入式开源数据库软件，也就是说没有独立的维护进程，所有的维护都来自于程序本身。它是遵守ACID的关联式数据库管理系统，它的设计目标是嵌入式的，而且目前已经在很多嵌入式产品中使用了它，它占用资源非常的低，在嵌入式设备中，可能只需要几百K的内存就够了。

@@ -3,11 +3,11 @@ layout: post
 title:  "JMS 之 Active MQ 消息存储"
 title2:  "JMS 之 Active MQ 消息存储"
 date:   2017-01-01 23:49:20  +0800
-source:  "http://www.jfox.info/jms_zhi_active_mq_xiao_xi_cun_chu.html"
+source:  "https://www.jfox.info/jms_zhi_active_mq_xiao_xi_cun_chu.html"
 fileName:  "20170100860"
 lang:  "zh_CN"
 published: true
-permalink: "jms_zhi_active_mq_xiao_xi_cun_chu.html"
+permalink: "2017/https://www.jfox.info/jms_zhi_active_mq_xiao_xi_cun_chu.html"
 ---
 {% raw %}
 ActiveMQ支持JMS规范中的持久化消息与非持久化消息

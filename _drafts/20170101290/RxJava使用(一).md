@@ -3,11 +3,11 @@ layout: post
 title:  "RxJava使用(一)"
 title2:  "RxJava使用(一)"
 date:   2017-01-01 23:56:30  +0800
-source:  "http://www.jfox.info/rxjava%e4%bd%bf%e7%94%a8%e4%b8%80.html"
+source:  "https://www.jfox.info/rxjava%e4%bd%bf%e7%94%a8%e4%b8%80.html"
 fileName:  "20170101290"
 lang:  "zh_CN"
 published: true
-permalink: "rxjava%e4%bd%bf%e7%94%a8%e4%b8%80.html"
+permalink: "2017/https://www.jfox.info/rxjava%e4%bd%bf%e7%94%a8%e4%b8%80.html"
 ---
 {% raw %}
 RxJava刚出来的时候练习过一些，只是没有用到项目中，如今RxJava 2.x都已经出来很久了，这么好的一个框架不能了解它实在是不能安抚我这颗躁动的心。

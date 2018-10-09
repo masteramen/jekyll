@@ -3,11 +3,11 @@ layout: post
 title:  "Spring 极速集成注解 redis 实录"
 title2:  "Spring 极速集成注解 redis 实录"
 date:   2017-01-01 23:53:00  +0800
-source:  "http://www.jfox.info/spring%e6%9e%81%e9%80%9f%e9%9b%86%e6%88%90%e6%b3%a8%e8%a7%a3redis%e5%ae%9e%e5%bd%95.html"
+source:  "https://www.jfox.info/spring%e6%9e%81%e9%80%9f%e9%9b%86%e6%88%90%e6%b3%a8%e8%a7%a3redis%e5%ae%9e%e5%bd%95.html"
 fileName:  "20170101080"
 lang:  "zh_CN"
 published: true
-permalink: "spring%e6%9e%81%e9%80%9f%e9%9b%86%e6%88%90%e6%b3%a8%e8%a7%a3redis%e5%ae%9e%e5%bd%95.html"
+permalink: "2017/https://www.jfox.info/spring%e6%9e%81%e9%80%9f%e9%9b%86%e6%88%90%e6%b3%a8%e8%a7%a3redis%e5%ae%9e%e5%bd%95.html"
 ---
 {% raw %}
 Redis 做为基于内存的 Key-Value 数据库，用来做缓存服务器性价比相当高。
@@ -72,7 +72,7 @@ Redis 做为基于内存的 Key-Value 数据库，用来做缓存服务器性价
 
    其中大部分配置项都是围绕着 jedisPool ，如果你对数据库连接池比较熟，你会发现它俩的配置项有点相似。
 
-   当系统 redis 遇到问题出现故障时，理解这里的选项是个不错的选择，[更多配置项详解](http://www.jfox.info/go.php?url=http://www.2cto.com/database/201311/254449.html)。
+   当系统 redis 遇到问题出现故障时，理解这里的选项是个不错的选择，[更多配置项详解](https://www.jfox.info/go.php?url=http://www.2cto.com/database/201311/254449.html)。
 
 ### 4. 编写自定义 redis 配置类
 

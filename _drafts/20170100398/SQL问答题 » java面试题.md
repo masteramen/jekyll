@@ -3,11 +3,11 @@ layout: post
 title:  "SQL问答题 » java面试题"
 title2:  "SQL问答题 » java面试题"
 date:   2017-01-01 23:41:38  +0800
-source:  "http://www.jfox.info/SQL-wen-da-ti.html"
+source:  "https://www.jfox.info/SQL-wen-da-ti.html"
 fileName:  "20170100398"
 lang:  "zh_CN"
 published: true
-permalink: "SQL-wen-da-ti.html"
+permalink: "2017/https://www.jfox.info/SQL-wen-da-ti.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期日, 五月 26, 2013

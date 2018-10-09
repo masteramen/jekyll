@@ -3,11 +3,11 @@ layout: post
 title:  "Java单元测试(Junit+Mock+代码覆盖率)"
 title2:  "Java单元测试(Junit+Mock+代码覆盖率)"
 date:   2017-01-01 23:43:11  +0800
-source:  "http://www.jfox.info/java-dan-yuan-ce-shi-junit-mock-dai-ma-fu-gai-lv.html"
+source:  "https://www.jfox.info/java-dan-yuan-ce-shi-junit-mock-dai-ma-fu-gai-lv.html"
 fileName:  "20170100491"
 lang:  "zh_CN"
 published: true
-permalink: "java-dan-yuan-ce-shi-junit-mock-dai-ma-fu-gai-lv.html"
+permalink: "2017/https://www.jfox.info/java-dan-yuan-ce-shi-junit-mock-dai-ma-fu-gai-lv.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期四, 十一月 21, 2013
@@ -329,7 +329,7 @@ Mock和Stub是两种测试代码功能的方法。Mock测重于对功能的模�
 
 #### EasyMock
 
-IBM上有几篇介绍EasyMock使用方法和原理的文章：[EasyMock 使用方法与原理剖析](http://www.jfox.info/go.php?url=http://www.ibm.com/developerworks/cn/opensource/os-cn-easymock/)，[使用 EasyMock 更轻松地进行测试](http://www.jfox.info/go.php?url=http://www.ibm.com/developerworks/cn/java/j-easymock.html)。
+IBM上有几篇介绍EasyMock使用方法和原理的文章：[EasyMock 使用方法与原理剖析](https://www.jfox.info/go.php?url=http://www.ibm.com/developerworks/cn/opensource/os-cn-easymock/)，[使用 EasyMock 更轻松地进行测试](https://www.jfox.info/go.php?url=http://www.ibm.com/developerworks/cn/java/j-easymock.html)。
 EasyMock把测试过程分为三步：录制、运行测试代码、验证期望。
 录制过程大概就是：期望method(params)执行times次（默认一次），返回result（可选），抛出exception异常（可选）。
 验证期望过程将会检查方法的调用次数。

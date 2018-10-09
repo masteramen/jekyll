@@ -3,11 +3,11 @@ layout: post
 title:  "开源Shark工作流的常见问题及解答"
 title2:  "开源Shark工作流的常见问题及解答"
 date:   2017-01-01 23:45:21  +0800
-source:  "http://www.jfox.info/opensource-shark-workflow-faqs.html"
+source:  "https://www.jfox.info/opensource-shark-workflow-faqs.html"
 fileName:  "20170100621"
 lang:  "zh_CN"
 published: true
-permalink: "opensource-shark-workflow-faqs.html"
+permalink: "2017/https://www.jfox.info/opensource-shark-workflow-faqs.html"
 ---
 {% raw %}
 Shark 工作流的常见问题及解答。你可以从这里找到常见问题的解答。
@@ -632,7 +632,7 @@ d;
 18. 给shark提速
 19. 用简单方法实现会签功能
 20. 带不同业务数据的首页任务(工作项)列表
-shark DEMO 下载： [http://www.01g.net/download/shark.rar](http://www.jfox.info/go.php?url=http://www.01g.net/download/shark.rar)
+shark DEMO 下载： [http://www.01g.net/download/shark.rar](https://www.jfox.info/go.php?url=http://www.01g.net/download/shark.rar)
 (1)** 我的shark server为什么在启动后会一直显示这句:NameServer is (re)started!**
 答：因为你内存中有一个实例. 在任务管理器中关掉 namesrv 或者重启一次计算机就可以了。
 (2)**我想修改admin的默认密码enhydra为别的值,在哪里可以改**
@@ -670,5 +670,5 @@ shark DEMO 下载： [http://www.01g.net/download/shark.rar](http://www.jfox.inf
 
 参考来源：
 [http://blog.sina.com.cn/s/blog_6987c30c01014yub.html
-](http://www.jfox.info/go.php?url=http://blog.sina.com.cn/s/blog_6987c30c01014yub.html)[http://www.blogjava.net/rosen/archive/2005/08/12/9887.html](http://www.jfox.info/go.php?url=http://www.blogjava.net/rosen/archive/2005/08/12/9887.html)
+](https://www.jfox.info/go.php?url=http://blog.sina.com.cn/s/blog_6987c30c01014yub.html)[http://www.blogjava.net/rosen/archive/2005/08/12/9887.html](https://www.jfox.info/go.php?url=http://www.blogjava.net/rosen/archive/2005/08/12/9887.html)
 {% endraw %}

@@ -3,11 +3,11 @@ layout: post
 title:  "MyBatis源码学习（一）SqlSession创建"
 title2:  "MyBatis源码学习（一）SqlSession创建"
 date:   2017-01-01 23:49:56  +0800
-source:  "http://www.jfox.info/mybatis%e6%ba%90%e7%a0%81%e5%ad%a6%e4%b9%a0-%e4%b8%80-sqlsession%e5%88%9b%e5%bb%ba.html"
+source:  "https://www.jfox.info/mybatis%e6%ba%90%e7%a0%81%e5%ad%a6%e4%b9%a0-%e4%b8%80-sqlsession%e5%88%9b%e5%bb%ba.html"
 fileName:  "20170100896"
 lang:  "zh_CN"
 published: true
-permalink: "mybatis%e6%ba%90%e7%a0%81%e5%ad%a6%e4%b9%a0-%e4%b8%80-sqlsession%e5%88%9b%e5%bb%ba.html"
+permalink: "2017/https://www.jfox.info/mybatis%e6%ba%90%e7%a0%81%e5%ad%a6%e4%b9%a0-%e4%b8%80-sqlsession%e5%88%9b%e5%bb%ba.html"
 ---
 {% raw %}
 MyBatis封装了JDBC操作数据库的代码，通过SqlSession来执行sql语句,那么首先来看看MyBatis是怎么创建SqlSession。 

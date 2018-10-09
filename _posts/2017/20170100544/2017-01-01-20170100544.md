@@ -3,11 +3,11 @@ layout: post
 title:  "使用Java生成word文档"
 title2:  "使用Java生成word文档"
 date:   2017-01-01 23:44:04  +0800
-source:  "http://www.jfox.info/%e4%bd%bf%e7%94%a8java%e7%94%9f%e6%88%90word%e6%96%87%e6%a1%a3.html"
+source:  "https://www.jfox.info/%e4%bd%bf%e7%94%a8java%e7%94%9f%e6%88%90word%e6%96%87%e6%a1%a3.html"
 fileName:  "20170100544"
 lang:  "zh_CN"
 published: true
-permalink: "%e4%bd%bf%e7%94%a8java%e7%94%9f%e6%88%90word%e6%96%87%e6%a1%a3.html"
+permalink: "2017/https://www.jfox.info/%e4%bd%bf%e7%94%a8java%e7%94%9f%e6%88%90word%e6%96%87%e6%a1%a3.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期二, 二月 11, 2014
@@ -220,7 +220,7 @@ By Lee - Last updated: 星期二, 二月 11, 2014
 
 　　7．赶紧把这个方法，应用到自己的项目中吧。
 
-参考来源 [使用Java生成word文档（附源码） – 尘风随影的天空](http://www.jfox.info/go.php?url=http://www.jfox.info/url.php?url=http%3A%2F%2Fgenuinecx.blog.51cto.com%2F2890523%2F1331115).
+参考来源 [使用Java生成word文档（附源码） – 尘风随影的天空](https://www.jfox.info/go.php?url=http://www.jfox.info/url.php?url=http%3A%2F%2Fgenuinecx.blog.51cto.com%2F2890523%2F1331115).
 
-本文链接：[http://www.jfox.info/%e4%bd%bf%e7%94%a8java%e7%94%9f%e6%88%90word%e6%96%87%e6%a1%a3](http://www.jfox.info/go.php?url=http://www.jfox.info/%e4%bd%bf%e7%94%a8java%e7%94%9f%e6%88%90word%e6%96%87%e6%a1%a3), 转载请保留.
+本文链接：[http://www.jfox.info/%e4%bd%bf%e7%94%a8java%e7%94%9f%e6%88%90word%e6%96%87%e6%a1%a3](https://www.jfox.info/go.php?url=http://www.jfox.info/%e4%bd%bf%e7%94%a8java%e7%94%9f%e6%88%90word%e6%96%87%e6%a1%a3), 转载请保留.
 {% endraw %}

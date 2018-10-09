@@ -3,11 +3,11 @@ layout: post
 title:  "js window.open 弹出窗口设置 UTF-8编码的问题解决"
 title2:  "js window.open 弹出窗口设置 UTF-8编码的问题解决"
 date:   2017-01-01 23:44:00  +0800
-source:  "http://www.jfox.info/js-window-open-%e5%bc%b9%e5%87%ba%e7%aa%97%e5%8f%a3%e8%ae%be%e7%bd%ae-utf-8%e7%bc%96%e7%a0%81%e7%9a%84%e9%97%ae%e9%a2%98%e8%a7%a3%e5%86%b3.html"
+source:  "https://www.jfox.info/js-window-open-%e5%bc%b9%e5%87%ba%e7%aa%97%e5%8f%a3%e8%ae%be%e7%bd%ae-utf-8%e7%bc%96%e7%a0%81%e7%9a%84%e9%97%ae%e9%a2%98%e8%a7%a3%e5%86%b3.html"
 fileName:  "20170100540"
 lang:  "zh_CN"
 published: true
-permalink: "js-window-open-%e5%bc%b9%e5%87%ba%e7%aa%97%e5%8f%a3%e8%ae%be%e7%bd%ae-utf-8%e7%bc%96%e7%a0%81%e7%9a%84%e9%97%ae%e9%a2%98%e8%a7%a3%e5%86%b3.html"
+permalink: "2017/https://www.jfox.info/js-window-open-%e5%bc%b9%e5%87%ba%e7%aa%97%e5%8f%a3%e8%ae%be%e7%bd%ae-utf-8%e7%bc%96%e7%a0%81%e7%9a%84%e9%97%ae%e9%a2%98%e8%a7%a3%e5%86%b3.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期二, 二月 11, 2014

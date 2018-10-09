@@ -3,11 +3,11 @@ layout: post
 title:  "Google Chrome 快捷键"
 title2:  "Google Chrome 快捷键"
 date:   2017-01-01 23:43:21  +0800
-source:  "http://www.jfox.info/google-chrome-%e5%bf%ab%e6%8d%b7%e9%94%ae.html"
+source:  "https://www.jfox.info/google-chrome-%e5%bf%ab%e6%8d%b7%e9%94%ae.html"
 fileName:  "20170100501"
 lang:  "zh_CN"
 published: true
-permalink: "google-chrome-%e5%bf%ab%e6%8d%b7%e9%94%ae.html"
+permalink: "2017/https://www.jfox.info/google-chrome-%e5%bf%ab%e6%8d%b7%e9%94%ae.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期一, 一月 27, 2014
@@ -146,5 +146,5 @@ End 转至网页底部
 
 按住 Shift 键并滚动鼠标滚轮 在网页上水平滚动
 
-转自 [Google Chrome 快捷键知多少 « Wopus中文博客平台 – WordPress](http://www.jfox.info/go.php?url=http://www.wopus.org/blog-article/technology/1127.html).
+转自 [Google Chrome 快捷键知多少 « Wopus中文博客平台 – WordPress](https://www.jfox.info/go.php?url=http://www.wopus.org/blog-article/technology/1127.html).
 {% endraw %}

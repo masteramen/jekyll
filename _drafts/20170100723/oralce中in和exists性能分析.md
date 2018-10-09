@@ -3,11 +3,11 @@ layout: post
 title:  "oralce中in和exists性能分析"
 title2:  "oralce中in和exists性能分析"
 date:   2017-01-01 23:47:03  +0800
-source:  "http://www.jfox.info/oralce-zhong-in-he-exists-xing-nen-fen-xi.html"
+source:  "https://www.jfox.info/oralce-zhong-in-he-exists-xing-nen-fen-xi.html"
 fileName:  "20170100723"
 lang:  "zh_CN"
 published: true
-permalink: "oralce-zhong-in-he-exists-xing-nen-fen-xi.html"
+permalink: "2017/https://www.jfox.info/oralce-zhong-in-he-exists-xing-nen-fen-xi.html"
 ---
 {% raw %}
 在我们平常写sql的时候，in和exists这两个关键词会经常用到，所以我们有必要对它们的性能作一个分析。

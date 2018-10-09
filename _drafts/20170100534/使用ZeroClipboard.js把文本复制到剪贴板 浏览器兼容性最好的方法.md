@@ -3,11 +3,11 @@ layout: post
 title:  "使用ZeroClipboard.js把文本复制到剪贴板 浏览器兼容性最好的方法"
 title2:  "使用ZeroClipboard.js把文本复制到剪贴板 浏览器兼容性最好的方法"
 date:   2017-01-01 23:43:54  +0800
-source:  "http://www.jfox.info/%e4%bd%bf%e7%94%a8zeroclipboard-js%e6%8a%8a%e6%96%87%e6%9c%ac%e5%a4%8d%e5%88%b6%e5%88%b0%e5%89%aa%e8%b4%b4%e6%9d%bf-%e6%b5%8f%e8%a7%88%e5%99%a8%e5%85%bc%e5%ae%b9%e6%80%a7%e6%9c%80%e5%a5%bd%e7%9a%84.html"
+source:  "https://www.jfox.info/%e4%bd%bf%e7%94%a8zeroclipboard-js%e6%8a%8a%e6%96%87%e6%9c%ac%e5%a4%8d%e5%88%b6%e5%88%b0%e5%89%aa%e8%b4%b4%e6%9d%bf-%e6%b5%8f%e8%a7%88%e5%99%a8%e5%85%bc%e5%ae%b9%e6%80%a7%e6%9c%80%e5%a5%bd%e7%9a%84.html"
 fileName:  "20170100534"
 lang:  "zh_CN"
 published: true
-permalink: "%e4%bd%bf%e7%94%a8zeroclipboard-js%e6%8a%8a%e6%96%87%e6%9c%ac%e5%a4%8d%e5%88%b6%e5%88%b0%e5%89%aa%e8%b4%b4%e6%9d%bf-%e6%b5%8f%e8%a7%88%e5%99%a8%e5%85%bc%e5%ae%b9%e6%80%a7%e6%9c%80%e5%a5%bd%e7%9a%84.html"
+permalink: "2017/https://www.jfox.info/%e4%bd%bf%e7%94%a8zeroclipboard-js%e6%8a%8a%e6%96%87%e6%9c%ac%e5%a4%8d%e5%88%b6%e5%88%b0%e5%89%aa%e8%b4%b4%e6%9d%bf-%e6%b5%8f%e8%a7%88%e5%99%a8%e5%85%bc%e5%ae%b9%e6%80%a7%e6%9c%80%e5%a5%bd%e7%9a%84.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期日, 二月 9, 2014
@@ -19,7 +19,7 @@ By Lee - Last updated: 星期日, 二月 9, 2014
 ============准备步骤============
 
 1、 下载最新版本的 ZeroClipboard
-[http://code.google.com/p/zeroclipboard/downloads/list](http://www.jfox.info/go.php?url=http://code.google.com/p/zeroclipboard/downloads/list)
+[http://code.google.com/p/zeroclipboard/downloads/list](https://www.jfox.info/go.php?url=http://code.google.com/p/zeroclipboard/downloads/list)
 
 2、 解压缩文件，把 ZeroClipboard.js 和 ZeroClipboard.swf 两个文件加入到你的项目里，其它文件可以忽略。
 
@@ -79,7 +79,7 @@ CLIPBOARD.glue( 'd_clip_button', 'd_clip_container' );
 ============事件绑定============
 
 因为flash覆盖了div，所以你对div的hover、mouseover等事件都不会被触发， 不过ZeroClipboard为你实现了绑定js事件的方法
-请参考 [http://code.google.com/p/zeroclipboard/wiki/Instructions#Event_Handlers](http://www.jfox.info/go.php?url=http://code.google.com/p/zeroclipboard/wiki/Instructions#Event_Handlers)
+请参考 [http://code.google.com/p/zeroclipboard/wiki/Instructions#Event_Handlers](https://www.jfox.info/go.php?url=http://code.google.com/p/zeroclipboard/wiki/Instructions#Event_Handlers)
 
-参考来源 [使用ZeroClipboard.js把文本复制到剪贴板 » sdjl的想法](http://www.jfox.info/go.php?url=http://www.jfox.info/url.php?url=http%3A%2F%2Fsdjl.me%2Findex.php%2Farchives%2F174).
+参考来源 [使用ZeroClipboard.js把文本复制到剪贴板 » sdjl的想法](https://www.jfox.info/go.php?url=http://www.jfox.info/url.php?url=http%3A%2F%2Fsdjl.me%2Findex.php%2Farchives%2F174).
 {% endraw %}

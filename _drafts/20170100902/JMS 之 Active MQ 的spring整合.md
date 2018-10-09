@@ -3,11 +3,11 @@ layout: post
 title:  "JMS 之 Active MQ 的spring整合"
 title2:  "JMS 之 Active MQ 的spring整合"
 date:   2017-01-01 23:50:02  +0800
-source:  "http://www.jfox.info/jms-%e4%b9%8b-active-mq-%e7%9a%84spring%e6%95%b4%e5%90%88.html"
+source:  "https://www.jfox.info/jms-%e4%b9%8b-active-mq-%e7%9a%84spring%e6%95%b4%e5%90%88.html"
 fileName:  "20170100902"
 lang:  "zh_CN"
 published: true
-permalink: "jms-%e4%b9%8b-active-mq-%e7%9a%84spring%e6%95%b4%e5%90%88.html"
+permalink: "2017/https://www.jfox.info/jms-%e4%b9%8b-active-mq-%e7%9a%84spring%e6%95%b4%e5%90%88.html"
 ---
 {% raw %}
 ### 一、与spring整合实现ptp的同步接收消息

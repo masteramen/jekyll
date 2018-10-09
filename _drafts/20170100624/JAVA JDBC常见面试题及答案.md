@@ -3,11 +3,11 @@ layout: post
 title:  "JAVA JDBC常见面试题及答案"
 title2:  "JAVA JDBC常见面试题及答案"
 date:   2017-01-01 23:45:24  +0800
-source:  "http://www.jfox.info/java-jdbc-common-interview-questions-and-answers.html"
+source:  "https://www.jfox.info/java-jdbc-common-interview-questions-and-answers.html"
 fileName:  "20170100624"
 lang:  "zh_CN"
 published: true
-permalink: "java-jdbc-common-interview-questions-and-answers.html"
+permalink: "2017/https://www.jfox.info/java-jdbc-common-interview-questions-and-answers.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期日, 四月 27, 2014
@@ -22,7 +22,7 @@ JDBC接口让Java程序和JDBC驱动实现了松耦合，使得切换不同的�
 
 有四类JDBC驱动。和数据库进行交互的Java程序分成两个部分，一部分是JDBC的API，实际工作的驱动则是另一部分。
 
-[![JDBC-Drivers](http://www.jfox.info/wp-content/uploads/2014/04/JDBC-Drivers.png)](http://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2014/04/JDBC-Drivers.png)
+[![JDBC-Drivers](http://www.jfox.info/wp-content/uploads/2014/04/JDBC-Drivers.png)](https://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2014/04/JDBC-Drivers.png)
 
 A JDBC-ODBC Bridge plus ODBC Driver（类型1）：它使用ODBC驱动连接数据库。需要安装ODBC以便连接数据库，正因为这样，这种方式现在已经基本淘汰了。
 
@@ -36,5 +36,5 @@ D Direct-to-Database Pure Java Driver（类型4）：这个驱动把JDBC转化�
 
 JDBC API使用Java的反射机制来实现Java程序和JDBC驱动的松耦合。随便看一个简单的JDBC示例，你会发现所有操作都是通过JDBC接口完成的，而驱动只有在通过Class.forName反射机制来加载的时候才会出现。
 
-我觉得这是Java核心库里反射机制的最佳实践之一，它使得应用程序和驱动程序之间进行了隔离，让迁移数据库的工作变得更简单。在[这里](http://www.jfox.info/go.php?url=http://www.journaldev.com/2471/jdbc-example-tutorial-drivers-connection-statement-resultset)可以看到更多JDBC的使用示例。
+我觉得这是Java核心库里反射机制的最佳实践之一，它使得应用程序和驱动程序之间进行了隔离，让迁移数据库的工作变得更简单。在[这里](https://www.jfox.info/go.php?url=http://www.journaldev.com/2471/jdbc-example-tutorial-drivers-connection-statement-resultset)可以看到更多JDBC的使用示例。
 {% endraw %}

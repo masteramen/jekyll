@@ -3,11 +3,11 @@ layout: post
 title:  "Spring cloud实践之道四（消息处理）"
 title2:  "Spring cloud实践之道四（消息处理）"
 date:   2017-01-01 23:55:29  +0800
-source:  "http://www.jfox.info/springcloud%e5%ae%9e%e8%b7%b5%e4%b9%8b%e9%81%93%e5%9b%9b%e6%b6%88%e6%81%af%e5%a4%84%e7%90%86.html"
+source:  "https://www.jfox.info/springcloud%e5%ae%9e%e8%b7%b5%e4%b9%8b%e9%81%93%e5%9b%9b%e6%b6%88%e6%81%af%e5%a4%84%e7%90%86.html"
 fileName:  "20170101229"
 lang:  "zh_CN"
 published: true
-permalink: "springcloud%e5%ae%9e%e8%b7%b5%e4%b9%8b%e9%81%93%e5%9b%9b%e6%b6%88%e6%81%af%e5%a4%84%e7%90%86.html"
+permalink: "2017/https://www.jfox.info/springcloud%e5%ae%9e%e8%b7%b5%e4%b9%8b%e9%81%93%e5%9b%9b%e6%b6%88%e6%81%af%e5%a4%84%e7%90%86.html"
 ---
 {% raw %}
 作者[hutou](/u/67378d2013bb)2017.07.09 11:28字数 735
@@ -31,8 +31,8 @@ permalink: "springcloud%e5%ae%9e%e8%b7%b5%e4%b9%8b%e9%81%93%e5%9b%9b%e6%b6%88%e6
 ## 使用和验证步骤
 
 1. 使用eureka注册服务
-2. 修改配置中心应用，提供spring cloud bus的支持：[演示项目源码](http://www.jfox.info/go.php?url=https://github.com/hutou-workhouse/miscroServiceHello/tree/master/springCloudConfigBusServer)
-3. 修改各个服务，提供spring cloud bus的支持：[演示项目源码](http://www.jfox.info/go.php?url=https://github.com/hutou-workhouse/miscroServiceHello/tree/master/springCloudConfigBusClient)
+2. 修改配置中心应用，提供spring cloud bus的支持：[演示项目源码](https://www.jfox.info/go.php?url=https://github.com/hutou-workhouse/miscroServiceHello/tree/master/springCloudConfigBusServer)
+3. 修改各个服务，提供spring cloud bus的支持：[演示项目源码](https://www.jfox.info/go.php?url=https://github.com/hutou-workhouse/miscroServiceHello/tree/master/springCloudConfigBusClient)
 4. 修改配置文件，并提交到git服务器
 5. 向配置中心提交 POST /bus/refresh
 6. 查看各个服务的配置信息，正常情况下应该配置生效

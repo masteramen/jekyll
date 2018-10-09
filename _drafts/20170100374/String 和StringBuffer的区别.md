@@ -3,11 +3,11 @@ layout: post
 title:  "String 和StringBuffer的区别"
 title2:  "String 和StringBuffer的区别"
 date:   2017-01-01 23:41:14  +0800
-source:  "http://www.jfox.info/String-he-StringBuffer-de-qu-bie.html"
+source:  "https://www.jfox.info/String-he-StringBuffer-de-qu-bie.html"
 fileName:  "20170100374"
 lang:  "zh_CN"
 published: true
-permalink: "String-he-StringBuffer-de-qu-bie.html"
+permalink: "2017/https://www.jfox.info/String-he-StringBuffer-de-qu-bie.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期二, 五月 21, 2013

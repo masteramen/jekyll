@@ -3,11 +3,11 @@ layout: post
 title:  "Spring源码分析之ProxyFactoryBean方式实现Aop功能的分析"
 title2:  "Spring源码分析之ProxyFactoryBean方式实现Aop功能的分析"
 date:   2017-01-01 23:50:30  +0800
-source:  "http://www.jfox.info/spring_yuan_ma_fen_xi_zhi_proxyfactorybean_fang_shi_shi_xian_aop_gong_neng_de_fen_xi.html"
+source:  "https://www.jfox.info/spring_yuan_ma_fen_xi_zhi_proxyfactorybean_fang_shi_shi_xian_aop_gong_neng_de_fen_xi.html"
 fileName:  "20170100930"
 lang:  "zh_CN"
 published: true
-permalink: "spring_yuan_ma_fen_xi_zhi_proxyfactorybean_fang_shi_shi_xian_aop_gong_neng_de_fen_xi.html"
+permalink: "2017/https://www.jfox.info/spring_yuan_ma_fen_xi_zhi_proxyfactorybean_fang_shi_shi_xian_aop_gong_neng_de_fen_xi.html"
 ---
 {% raw %}
 实现Aop功能有两种方式，
@@ -290,5 +290,79 @@ permalink: "spring_yuan_ma_fen_xi_zhi_proxyfactorybean_fang_shi_shi_xian_aop_gon
         				// Must have come from TargetSource.
         				targetSource.releaseTarget(target);
         			}
-        			if (
+        			if (setProxyContext) {
+        				// Restore old proxy.
+        				AopContext.setCurrentProxy(oldProxy);
+        			}
+        		}
+        	}
+        }
+        
+    
+    上述getProxy方法其实就是JdkDynamicAopProxy用来给目标对象生成代码对象的方法
+
+    而invoke就是对目标方法调用时的拦截入口
+
+    其中的
+        List<Object> chain = **this**.**advised**.getInterceptorsAndDynamicInterceptionAdvice(method, targetClass);
+    
+    
+        这行代码就是获取到目标对象所有的拦截器，为什么这里是获取拦截器？其实在上面初始化通知器链的时候拿到的都是配置的通知器，这个方法是要将这些通知器用对应的适配器
+    
+    
+        适配成对应的拦截器，至于为什么要做这个步骤，在我的另外一篇博客中说的很清楚了，地址如下：
+    
+    
+
+http://blog.csdn.net/u011734144/article/details/73436539 
+
+这里转换成拦截器后，也并不是直接就要将该拦截器加入最终要执行的拦截器链中，还需要判断对应的通知是否应该执行，对应的代码片段如下：
+
+    //对配置的advisor通知器进行逐个遍历,这个通知器链都是配置在interceptorNames中的
+    		for (Advisor advisor : config.getAdvisors()) {
+    			if (advisor instanceof PointcutAdvisor) {
+    				// Add it conditionally.
+    				PointcutAdvisor pointcutAdvisor = (PointcutAdvisor) advisor;
+    				if (config.isPreFiltered() || pointcutAdvisor.getPointcut().getClassFilter().matches(actualClass)) {
+    					//registry.getInterceptors(advisor)是对从ProxyFactoryBean配置中得到的通知进行适配,从而得到相应的拦截器,再把它加入到前面设置好的list中去
+    					//从而完成所谓的拦截器注册过程
+    					MethodInterceptor[] interceptors = registry.getInterceptors(advisor);
+    					MethodMatcher mm = pointcutAdvisor.getPointcut().getMethodMatcher();
+    					if (MethodMatchers.matches(mm, method, actualClass, hasIntroductions)) {
+    						if (mm.isRuntime()) {
+    							// Creating a new object instance in the getInterceptors() method
+    							// isn't a problem as we normally cache created chains.
+    							for (MethodInterceptor interceptor : interceptors) {
+    								interceptorList.add(new InterceptorAndDynamicMethodMatcher(interceptor, mm));
+    							}
+    						}
+    						else {
+    							interceptorList.addAll(Arrays.asList(interceptors));
+    						}
+    					}
+    				}
+    			}
+    			else if (advisor instanceof IntroductionAdvisor) {
+    				IntroductionAdvisor ia = (IntroductionAdvisor) advisor;
+    				if (config.isPreFiltered() || ia.getClassFilter().matches(actualClass)) {
+    					Interceptor[] interceptors = registry.getInterceptors(advisor);
+    					interceptorList.addAll(Arrays.asList(interceptors));
+    				}
+    			}
+    			else {
+    				Interceptor[] interceptors = registry.getInterceptors(advisor);
+    				interceptorList.addAll(Arrays.asList(interceptors));
+    			}
+    		}
+    
+
+  这里需要判断通知器中配置的切入点是否匹配当前要被调用的方法，即 
+MethodMatchers.matches是否为true，只有匹配的通知才会将对应的拦截器加入到最终待执行的拦截器链中
+接下来invoke方法中比较核心的就是如下代码：
+
+    retVal = invocation.proceed();
+
+这个方法其实就是启动拦截器链的执行，依次执行每一个拦截器链，在每一个拦截器里面都会根据通知的类型来决定是先执行通知的方法还是先继续执行下一个拦截器， 
+
+拦截器中具体的执行逻辑也请参考我上面说的我的另外一篇文章
 {% endraw %}

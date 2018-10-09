@@ -3,11 +3,11 @@ layout: post
 title:  "由字符串反转(使用递归)引申出来一道Java面试题"
 title2:  "由字符串反转(使用递归)引申出来一道Java面试题"
 date:   2017-01-01 23:43:30  +0800
-source:  "http://www.jfox.info/%e7%94%b1%e5%ad%97%e7%ac%a6%e4%b8%b2%e5%8f%8d%e8%bd%ac%e4%bd%bf%e7%94%a8%e9%80%92%e5%bd%92%e5%bc%95%e7%94%b3%e5%87%ba%e6%9d%a5%e4%b8%80%e9%81%93java%e9%9d%a2%e8%af%95%e9%a2%98.html"
+source:  "https://www.jfox.info/%e7%94%b1%e5%ad%97%e7%ac%a6%e4%b8%b2%e5%8f%8d%e8%bd%ac%e4%bd%bf%e7%94%a8%e9%80%92%e5%bd%92%e5%bc%95%e7%94%b3%e5%87%ba%e6%9d%a5%e4%b8%80%e9%81%93java%e9%9d%a2%e8%af%95%e9%a2%98.html"
 fileName:  "20170100510"
 lang:  "zh_CN"
 published: true
-permalink: "%e7%94%b1%e5%ad%97%e7%ac%a6%e4%b8%b2%e5%8f%8d%e8%bd%ac%e4%bd%bf%e7%94%a8%e9%80%92%e5%bd%92%e5%bc%95%e7%94%b3%e5%87%ba%e6%9d%a5%e4%b8%80%e9%81%93java%e9%9d%a2%e8%af%95%e9%a2%98.html"
+permalink: "2017/https://www.jfox.info/%e7%94%b1%e5%ad%97%e7%ac%a6%e4%b8%b2%e5%8f%8d%e8%bd%ac%e4%bd%bf%e7%94%a8%e9%80%92%e5%bd%92%e5%bc%95%e7%94%b3%e5%87%ba%e6%9d%a5%e4%b8%80%e9%81%93java%e9%9d%a2%e8%af%95%e9%a2%98.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期五, 一月 31, 2014
@@ -162,5 +162,5 @@ public String reverse(String str) {
 
 在你决定是否雇用时，希望以上能帮上你，对自己来说，在将来的某个时候希望同样可以我帮助到自己，就像Joel说的：“疑人不用，用人不疑（when in doubt ,always no hire)。”
 
-转自 [由字符串反转(使用递归)引申出来一道Java面试题 – ImportNew](http://www.jfox.info/go.php?url=http://www.importnew.com/501.html).
+转自 [由字符串反转(使用递归)引申出来一道Java面试题 – ImportNew](https://www.jfox.info/go.php?url=http://www.importnew.com/501.html).
 {% endraw %}

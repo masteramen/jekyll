@@ -3,18 +3,18 @@ layout: post
 title:  "数据库MySQL优化的一些步骤"
 title2:  "数据库MySQL优化的一些步骤"
 date:   2017-01-01 23:42:17  +0800
-source:  "http://www.jfox.info/shu-ju-ku-MySQL-you-hua-de-yi-xie-bu-zhou.html"
+source:  "https://www.jfox.info/shu-ju-ku-MySQL-you-hua-de-yi-xie-bu-zhou.html"
 fileName:  "20170100437"
 lang:  "zh_CN"
 published: true
-permalink: "shu-ju-ku-MySQL-you-hua-de-yi-xie-bu-zhou.html"
+permalink: "2017/https://www.jfox.info/shu-ju-ku-MySQL-you-hua-de-yi-xie-bu-zhou.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期日, 六月 16, 2013
 
 ### 下面是数据库MySQL优化的一些步骤
 
-[![mysqllogo](http://www.jfox.info/wp-content/uploads/2013/06/mysqllogo-300x218.jpg)](http://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2013/06/mysqllogo.jpg)
+[![mysqllogo](http://www.jfox.info/wp-content/uploads/2013/06/mysqllogo-300x218.jpg)](https://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2013/06/mysqllogo.jpg)
 
 **一、通过show status和应用特点了解各种SQL的执行频率**
 

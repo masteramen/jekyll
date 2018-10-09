@@ -3,11 +3,11 @@ layout: post
 title:  "负载测试(Load testing)、压力测试(stress testing)和性能测试(Performance Evaluation Test)的异同"
 title2:  "负载测试(Load testing)、压力测试(stress testing)和性能测试(Performance Evaluation Test)的异同"
 date:   2017-01-01 23:43:05  +0800
-source:  "http://www.jfox.info/fu-zai-ce-shi-load-testing-ya-li-ce-shi-stress-testing-he-xing-neng-ce-shi-performance-evaluation-test-de-yi-tong.html"
+source:  "https://www.jfox.info/fu-zai-ce-shi-load-testing-ya-li-ce-shi-stress-testing-he-xing-neng-ce-shi-performance-evaluation-test-de-yi-tong.html"
 fileName:  "20170100485"
 lang:  "zh_CN"
 published: true
-permalink: "fu-zai-ce-shi-load-testing-ya-li-ce-shi-stress-testing-he-xing-neng-ce-shi-performance-evaluation-test-de-yi-tong.html"
+permalink: "2017/https://www.jfox.info/fu-zai-ce-shi-load-testing-ya-li-ce-shi-stress-testing-he-xing-neng-ce-shi-performance-evaluation-test-de-yi-tong.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期六, 十一月 9, 2013

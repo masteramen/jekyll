@@ -3,11 +3,11 @@ layout: post
 title:  "动手学dubbo之Container与SPI"
 title2:  "动手学dubbo之Container与SPI"
 date:   2017-01-01 23:56:46  +0800
-source:  "http://www.jfox.info/%e5%8a%a8%e6%89%8b%e5%ad%a6dubbo%e4%b9%8bcontainer%e4%b8%8espi.html"
+source:  "https://www.jfox.info/%e5%8a%a8%e6%89%8b%e5%ad%a6dubbo%e4%b9%8bcontainer%e4%b8%8espi.html"
 fileName:  "20170101306"
 lang:  "zh_CN"
 published: true
-permalink: "%e5%8a%a8%e6%89%8b%e5%ad%a6dubbo%e4%b9%8bcontainer%e4%b8%8espi.html"
+permalink: "2017/https://www.jfox.info/%e5%8a%a8%e6%89%8b%e5%ad%a6dubbo%e4%b9%8bcontainer%e4%b8%8espi.html"
 ---
 {% raw %}
 在动手学dubbo之初体验一文中我们了解了dubbo的架构，接下来的几篇文章我会根据阅读Quick Start里面的demo源码来深入学习dubbo的实现。这一篇主要学习Container的原理、实现和作用。 
@@ -107,7 +107,7 @@ Java SPI机制的约定如下：
 
 ## 2.2 Java SPI的Demo 
 
- 以下Demo代码已上传至github： [https://github.com/ginobefun/learning_projects/tree/master/learning-spi](http://www.jfox.info/go.php?url=https://github.com/ginobefun/learning_projects/tree/master/learning-spi)
+ 以下Demo代码已上传至github： [https://github.com/ginobefun/learning_projects/tree/master/learning-spi](https://www.jfox.info/go.php?url=https://github.com/ginobefun/learning_projects/tree/master/learning-spi)
 
 定义一个用于计算商品搜索得分的接口ScoreService ： 
 
@@ -245,7 +245,7 @@ SearchService类使用SPI获取服务实现，执行得分计算并排序：
 
 ## 2.3 dubbo的SPI 
 
- 通过查看ExtensionLoader源码发现，在dubbo里并没有直接采用Java SPI，而是参考其重新设计了一套SPI机制，在 [Dubbo的ExtensionLoader](http://www.jfox.info/go.php?url=http://www.hiwzc.com/java-spi-dubbo-extensionloader.html) 文章里列举了两者之间的差别主要有： 
+ 通过查看ExtensionLoader源码发现，在dubbo里并没有直接采用Java SPI，而是参考其重新设计了一套SPI机制，在 [Dubbo的ExtensionLoader](https://www.jfox.info/go.php?url=http://www.hiwzc.com/java-spi-dubbo-extensionloader.html) 文章里列举了两者之间的差别主要有： 
 
 1） ServiceLoader是采用迭代器遍历的方式实现的，而Dubbo为每种实现指定一个名称，由名称和服务共同确定一个实现，这样做的好处是，可以为成套的服务接口指定相同的名称，比如指定使用dubbo协议后，协议使用的其他扩展点就自动加载名称为dubbo的实现。此外，指定服务名称可以根据名称来获取扩展点实现实例，不像ServiceLoader那样在遍历过程中创建永远不会使用的服务实例。
 

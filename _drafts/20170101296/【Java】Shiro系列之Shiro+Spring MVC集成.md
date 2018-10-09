@@ -3,11 +3,11 @@ layout: post
 title:  "【Java】Shiro系列之Shiro+Spring MVC集成"
 title2:  "【Java】Shiro系列之Shiro+Spring MVC集成"
 date:   2017-01-01 23:56:36  +0800
-source:  "http://www.jfox.info/javashiro%e7%b3%bb%e5%88%97%e4%b9%8bshirospringmvc%e9%9b%86%e6%88%90.html"
+source:  "https://www.jfox.info/javashiro%e7%b3%bb%e5%88%97%e4%b9%8bshirospringmvc%e9%9b%86%e6%88%90.html"
 fileName:  "20170101296"
 lang:  "zh_CN"
 published: true
-permalink: "javashiro%e7%b3%bb%e5%88%97%e4%b9%8bshirospringmvc%e9%9b%86%e6%88%90.html"
+permalink: "2017/https://www.jfox.info/javashiro%e7%b3%bb%e5%88%97%e4%b9%8bshirospringmvc%e9%9b%86%e6%88%90.html"
 ---
 {% raw %}
 ## 第一步，Shiro Filter
@@ -31,7 +31,7 @@ permalink: "javashiro%e7%b3%bb%e5%88%97%e4%b9%8bshirospringmvc%e9%9b%86%e6%88%90
         </filter-mapping>
 
  通常将这段代码中的filter-mapping放在所有filter-mapping之前，以达到shiro是第一个对web请求进行拦截过滤之目的。这里的fileter-name应该要和第二步中配置的 
-[Java](http://www.jfox.info/go.php?url=http://lib.csdn.net/base/java)
+[Java](https://www.jfox.info/go.php?url=http://lib.csdn.net/base/java)
 bean的id一致。
 
 ## 第二步，配置各种Java Bean
@@ -120,12 +120,12 @@ bean的id一致。
             -->  
         </beans>
 
- 上述代码中已经对每个 [java](http://www.jfox.info/go.php?url=http://lib.csdn.net/base/java) bean的用途做了详细的注释说明，这里仅对FilterChain过滤链的定义详细阐述一下： 
+ 上述代码中已经对每个 [java](https://www.jfox.info/go.php?url=http://lib.csdn.net/base/java) bean的用途做了详细的注释说明，这里仅对FilterChain过滤链的定义详细阐述一下： 
 
 - 测试用例中对/security/*的访问是不需要认证控制的，这主要是用于用户登录和退出的
 - 测试用例中对/tag的访问是需要认证控制的，就是说只有通过认证的用户才可以访问该资源。如果用户直接在地址栏中访问http://localhost:8880/learning/tag，系统会自动跳转至登录页面，要求用户先进行身份认证。
 
- 完成这两步之后，我们可以Run一下程序，如果可以看到以下页面，就表明我们的配置文件没有错误，Shiro和 [spring](http://www.jfox.info/go.php?url=http://lib.csdn.net/base/javaee) MVC的集成已经完成了。后继的步骤可以视为是对集成后的框进行的一个 [测试](http://www.jfox.info/go.php?url=http://lib.csdn.net/base/softwaretest) 。 
+ 完成这两步之后，我们可以Run一下程序，如果可以看到以下页面，就表明我们的配置文件没有错误，Shiro和 [spring](https://www.jfox.info/go.php?url=http://lib.csdn.net/base/javaee) MVC的集成已经完成了。后继的步骤可以视为是对集成后的框进行的一个 [测试](https://www.jfox.info/go.php?url=http://lib.csdn.net/base/softwaretest) 。 
 
     <%@ page language="java" contentType="text/html; charset=UTF-8"  
             pageEncoding="UTF-8"%>  

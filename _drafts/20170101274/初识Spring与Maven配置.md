@@ -3,11 +3,11 @@ layout: post
 title:  "初识Spring与Maven配置"
 title2:  "初识Spring与Maven配置"
 date:   2017-01-01 23:56:14  +0800
-source:  "http://www.jfox.info/%e5%88%9d%e8%af%86spring%e4%b8%8emaven%e9%85%8d%e7%bd%ae.html"
+source:  "https://www.jfox.info/%e5%88%9d%e8%af%86spring%e4%b8%8emaven%e9%85%8d%e7%bd%ae.html"
 fileName:  "20170101274"
 lang:  "zh_CN"
 published: true
-permalink: "%e5%88%9d%e8%af%86spring%e4%b8%8emaven%e9%85%8d%e7%bd%ae.html"
+permalink: "2017/https://www.jfox.info/%e5%88%9d%e8%af%86spring%e4%b8%8emaven%e9%85%8d%e7%bd%ae.html"
 ---
 {% raw %}
 # 初识Spring与Maven配置 

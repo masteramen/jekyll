@@ -3,11 +3,11 @@ layout: post
 title:  "spring实现的2种设计模式"
 title2:  "spring实现的2种设计模式"
 date:   2017-01-01 23:41:35  +0800
-source:  "http://www.jfox.info/spring-shi-xian-de-2-zhong-she-ji-mo-shi.html"
+source:  "https://www.jfox.info/spring-shi-xian-de-2-zhong-she-ji-mo-shi.html"
 fileName:  "20170100395"
 lang:  "zh_CN"
 published: true
-permalink: "spring-shi-xian-de-2-zhong-she-ji-mo-shi.html"
+permalink: "2017/https://www.jfox.info/spring-shi-xian-de-2-zhong-she-ji-mo-shi.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期五, 五月 24, 2013

@@ -3,11 +3,11 @@ layout: post
 title:  "一个IT技术人的感叹：技术有什么未来？"
 title2:  "一个IT技术人的感叹：技术有什么未来？"
 date:   2017-01-01 23:44:27  +0800
-source:  "http://www.jfox.info/yi-ge-i-t-ji-shu-ren-de-gan-tan-ji-shu-you-shi-me-wei-lai.html"
+source:  "https://www.jfox.info/yi-ge-i-t-ji-shu-ren-de-gan-tan-ji-shu-you-shi-me-wei-lai.html"
 fileName:  "20170100567"
 lang:  "zh_CN"
 published: true
-permalink: "yi-ge-i-t-ji-shu-ren-de-gan-tan-ji-shu-you-shi-me-wei-lai.html"
+permalink: "2017/https://www.jfox.info/yi-ge-i-t-ji-shu-ren-de-gan-tan-ji-shu-you-shi-me-wei-lai.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期二, 二月 18, 2014
@@ -24,15 +24,15 @@ By Lee - Last updated: 星期二, 二月 18, 2014
 
 正当我对人民的消费热情惊叹不已的时候，就在商场楼下的人行道上，看到了一个新玩意。
 
-[![bg20140101014](http://www.jfox.info/wp-content/uploads/2014/02/bg20140101014.jpg)](http://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2014/02/bg20140101014.jpg)
+[![bg20140101014](http://www.jfox.info/wp-content/uploads/2014/02/bg20140101014.jpg)](https://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2014/02/bg20140101014.jpg)
 
-[![bg20140101023](http://www.jfox.info/wp-content/uploads/2014/02/bg20140101023.jpg)](http://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2014/02/bg20140101023.jpg)
+[![bg20140101023](http://www.jfox.info/wp-content/uploads/2014/02/bg20140101023.jpg)](https://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2014/02/bg20140101023.jpg)
 
-[![bg20140101033](http://www.jfox.info/wp-content/uploads/2014/02/bg20140101033.jpg)](http://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2014/02/bg20140101033.jpg)
+[![bg20140101033](http://www.jfox.info/wp-content/uploads/2014/02/bg20140101033.jpg)](https://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2014/02/bg20140101033.jpg)
 
-[![bg20140101043](http://www.jfox.info/wp-content/uploads/2014/02/bg20140101043.jpg)](http://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2014/02/bg20140101043.jpg)
+[![bg20140101043](http://www.jfox.info/wp-content/uploads/2014/02/bg20140101043.jpg)](https://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2014/02/bg20140101043.jpg)
 
-[![bg20140101053](http://www.jfox.info/wp-content/uploads/2014/02/bg20140101053.jpg)](http://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2014/02/bg20140101053.jpg)
+[![bg20140101053](http://www.jfox.info/wp-content/uploads/2014/02/bg20140101053.jpg)](https://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2014/02/bg20140101053.jpg)
 
 原来这是一台大型的户外移动广告播放平台。
 
@@ -50,15 +50,15 @@ By Lee - Last updated: 星期二, 二月 18, 2014
 
 电影《瓦力》描述了未来的人类世界是一个富裕社会，技术高度发达，一切生活问题都能自动解决，甚至都不用你动手。可是到了那个时候，人类都胖得站不起来了。但是也没关系，因为不用站起来，技术就都帮你搞定，所以人类也不再在乎当直立动物了。
 
-[![bg20140101063](http://www.jfox.info/wp-content/uploads/2014/02/bg20140101063.jpg)](http://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2014/02/bg20140101063.jpg)
+[![bg20140101063](http://www.jfox.info/wp-content/uploads/2014/02/bg20140101063.jpg)](https://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2014/02/bg20140101063.jpg)
 
-[![bg20140101073](http://www.jfox.info/wp-content/uploads/2014/02/bg20140101073.jpg)](http://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2014/02/bg20140101073.jpg)
+[![bg20140101073](http://www.jfox.info/wp-content/uploads/2014/02/bg20140101073.jpg)](https://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2014/02/bg20140101073.jpg)
 
-[![bg20140101083](http://www.jfox.info/wp-content/uploads/2014/02/bg20140101083.jpg)](http://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2014/02/bg20140101083.jpg)
+[![bg20140101083](http://www.jfox.info/wp-content/uploads/2014/02/bg20140101083.jpg)](https://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2014/02/bg20140101083.jpg)
 
 这就是技术的未来吗？
 
 （完）
 
-来源 [技术有什么未来？](http://www.jfox.info/go.php?url=http://www.jfox.info/url.php?url=http%3A%2F%2Fwww.ruanyifeng.com%2Fblog%2F2014%2F01%2Ftechnology_s_future.html).
+来源 [技术有什么未来？](https://www.jfox.info/go.php?url=http://www.jfox.info/url.php?url=http%3A%2F%2Fwww.ruanyifeng.com%2Fblog%2F2014%2F01%2Ftechnology_s_future.html).
 {% endraw %}

@@ -3,11 +3,11 @@ layout: post
 title:  "Spring五个事务隔离级别和七个事务传播行为"
 title2:  "Spring五个事务隔离级别和七个事务传播行为"
 date:   2017-01-01 23:42:55  +0800
-source:  "http://www.jfox.info/spring-wu-ge-shi-wu-ge-li-ji-bie-he-qi-ge-shi-wu-chuan-bo-xing-wei.html"
+source:  "https://www.jfox.info/spring-wu-ge-shi-wu-ge-li-ji-bie-he-qi-ge-shi-wu-chuan-bo-xing-wei.html"
 fileName:  "20170100475"
 lang:  "zh_CN"
 published: true
-permalink: "spring-wu-ge-shi-wu-ge-li-ji-bie-he-qi-ge-shi-wu-chuan-bo-xing-wei.html"
+permalink: "2017/https://www.jfox.info/spring-wu-ge-shi-wu-ge-li-ji-bie-he-qi-ge-shi-wu-chuan-bo-xing-wei.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期一, 十月 28, 2013

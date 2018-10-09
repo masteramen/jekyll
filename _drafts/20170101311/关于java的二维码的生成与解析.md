@@ -3,11 +3,11 @@ layout: post
 title:  "关于java的二维码的生成与解析"
 title2:  "关于java的二维码的生成与解析"
 date:   2017-01-01 23:56:51  +0800
-source:  "http://www.jfox.info/%e5%85%b3%e4%ba%8ejava%e7%9a%84%e4%ba%8c%e7%bb%b4%e7%a0%81%e7%9a%84%e7%94%9f%e6%88%90%e4%b8%8e%e8%a7%a3%e6%9e%90.html"
+source:  "https://www.jfox.info/%e5%85%b3%e4%ba%8ejava%e7%9a%84%e4%ba%8c%e7%bb%b4%e7%a0%81%e7%9a%84%e7%94%9f%e6%88%90%e4%b8%8e%e8%a7%a3%e6%9e%90.html"
 fileName:  "20170101311"
 lang:  "zh_CN"
 published: true
-permalink: "%e5%85%b3%e4%ba%8ejava%e7%9a%84%e4%ba%8c%e7%bb%b4%e7%a0%81%e7%9a%84%e7%94%9f%e6%88%90%e4%b8%8e%e8%a7%a3%e6%9e%90.html"
+permalink: "2017/https://www.jfox.info/%e5%85%b3%e4%ba%8ejava%e7%9a%84%e4%ba%8c%e7%bb%b4%e7%a0%81%e7%9a%84%e7%94%9f%e6%88%90%e4%b8%8e%e8%a7%a3%e6%9e%90.html"
 ---
 {% raw %}
 本文说的是通过zxing实现二维码的生成与解析，看着很简单，直接上代码
@@ -69,7 +69,7 @@ permalink: "%e5%85%b3%e4%ba%8ejava%e7%9a%84%e4%ba%8c%e7%bb%b4%e7%a0%81%e7%9a%84%
     publicclass TestRead {
         publicstaticvoid main(String[] args) {
             try {
-                MultiFormatReader reader=new MultiFormatReader();//[需要详细了解MultiFormatReader的小伙伴可以点我一下官方去看文档](http://www.jfox.info/go.php?url=https://zxing.github.io/zxing/apidocs/com/google/zxing/MultiFormatReader.html)
+                MultiFormatReader reader=new MultiFormatReader();//[需要详细了解MultiFormatReader的小伙伴可以点我一下官方去看文档](https://www.jfox.info/go.php?url=https://zxing.github.io/zxing/apidocs/com/google/zxing/MultiFormatReader.html)
                 File f=new File("D:/img.png");
                 BufferedImage image=ImageIO.read(f);
                 BinaryBitmap bb=new BinaryBitmap(new HybridBinarizer(new BufferedImageLuminanceSource(image)));

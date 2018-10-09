@@ -3,11 +3,11 @@ layout: post
 title:  "instanceof 面试"
 title2:  "instanceof 面试"
 date:   2017-01-01 23:42:02  +0800
-source:  "http://www.jfox.info/instanceof-mian-shi.html"
+source:  "https://www.jfox.info/instanceof-mian-shi.html"
 fileName:  "20170100422"
 lang:  "zh_CN"
 published: true
-permalink: "instanceof-mian-shi.html"
+permalink: "2017/https://www.jfox.info/instanceof-mian-shi.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期四, 六月 6, 2013

@@ -3,11 +3,11 @@ layout: post
 title:  "java面试常问ibatis和hibernate的区别"
 title2:  "java面试常问ibatis和hibernate的区别"
 date:   2017-01-01 23:41:30  +0800
-source:  "http://www.jfox.info/java-mian-shi-chang-wen-ibatis-he-hibernate-de-qu-bie.html"
+source:  "https://www.jfox.info/java-mian-shi-chang-wen-ibatis-he-hibernate-de-qu-bie.html"
 fileName:  "20170100390"
 lang:  "zh_CN"
 published: true
-permalink: "java-mian-shi-chang-wen-ibatis-he-hibernate-de-qu-bie.html"
+permalink: "2017/https://www.jfox.info/java-mian-shi-chang-wen-ibatis-he-hibernate-de-qu-bie.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期四, 五月 23, 2013

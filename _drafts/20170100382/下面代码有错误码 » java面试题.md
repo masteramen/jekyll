@@ -3,11 +3,11 @@ layout: post
 title:  "下面代码有错误码 » java面试题"
 title2:  "下面代码有错误码 » java面试题"
 date:   2017-01-01 23:41:22  +0800
-source:  "http://www.jfox.info/xia-mian-dai-ma-you-cuo-wu-ma.html"
+source:  "https://www.jfox.info/xia-mian-dai-ma-you-cuo-wu-ma.html"
 fileName:  "20170100382"
 lang:  "zh_CN"
 published: true
-permalink: "xia-mian-dai-ma-you-cuo-wu-ma.html"
+permalink: "2017/https://www.jfox.info/xia-mian-dai-ma-you-cuo-wu-ma.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期二, 五月 21, 2013
@@ -92,5 +92,55 @@ return “Do something …”;
 }
 }
 看上去很完美。
-答 案: 错。看上去在main里call doSomething没有什么问题，毕竟两个methods都在同一个class里。但仔细看，main是static的。static method�
+答 案: 错。看上去在main里call doSomething没有什么问题，毕竟两个methods都在同一个class里。但仔细看，main是static的。static method不能直接call non-static methods。可改成”System.out.println(“s.doSomething() returns ” + s.doSomething());”。同理，static method不能访问non-static instant variable。
+9.
+此处，Something类的文件名叫OtherThing.java
+class Something {
+private static void main(String[] something_to_do) { 
+System.out.println(“Do something …”);
+}
+}
+这个好像很明显。
+答案: 正确。从来没有人说过Java的Class名字必须和其文件名相同。但public class的名字必须和文件名相同。
+10．
+interface A{
+int x = 0;
+}
+class B{
+int x =1;
+}
+class C extends B implements A {
+public void pX(){
+System.out.println(x);
+}
+public static void main(String[] args) {
+new C().pX();
+}
+}
+答 案：错误。在编译时会发生错误(错误描述不同的JVM有不同的信息，意思就是未明确的x调用，两个x都匹配（就象在同时import java.util和java.sql两个包时直接声明Date一样）。对于父类的变量,可以用super.x来明确，而接口的属性默认隐含为 public static final.所以可以通过A.x来明确。
+11.
+interface Playable {
+void play();
+}
+interface Bounceable {
+void play();
+}
+interface Rollable extends Playable, Bounceable {
+Ball ball = new Ball(“PingPang”);
+}
+class Ball implements Rollable {
+private String name;
+public String getName() {
+return name;
+}
+public Ball(String name) {
+this.name = name; 
+}
+public void play() {
+ball = new Ball(“Football”);
+System.out.println(ball.getName());
+}
+}
+这个错误不容易发现。
+答 案: 错。”interface Rollable extends Playable, Bounceable”没有问题。interface可继承多个interfaces，所以这里没错。问题出在interface Rollable里的”Ball ball = new Ball(“PingPang”);”。任何在interface里声明的interface variable (接口变量，也可称成员变量)，默认为public static final。也就是说”Ball ball = new Ball(“PingPang”);”实际上是”public static final Ball ball = new Ball(“PingPang”);”。在Ball类的Play()方法中，”ball = new Ball(“Football”);”改变了ball的reference，而这里的ball来自Rollable interface，Rollable interface里的ball是public static final的，final的object是不能被改变reference的。因此编译器将在”ball = new Ball(“Football”);”这里显示有错。
 {% endraw %}

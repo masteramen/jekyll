@@ -3,11 +3,11 @@ layout: post
 title:  "JVM常见垃圾回收算法"
 title2:  "JVM常见垃圾回收算法"
 date:   2017-01-01 23:56:41  +0800
-source:  "http://www.jfox.info/jvm%e5%b8%b8%e8%a7%81%e5%9e%83%e5%9c%be%e5%9b%9e%e6%94%b6%e7%ae%97%e6%b3%95.html"
+source:  "https://www.jfox.info/jvm%e5%b8%b8%e8%a7%81%e5%9e%83%e5%9c%be%e5%9b%9e%e6%94%b6%e7%ae%97%e6%b3%95.html"
 fileName:  "20170101301"
 lang:  "zh_CN"
 published: true
-permalink: "jvm%e5%b8%b8%e8%a7%81%e5%9e%83%e5%9c%be%e5%9b%9e%e6%94%b6%e7%ae%97%e6%b3%95.html"
+permalink: "2017/https://www.jfox.info/jvm%e5%b8%b8%e8%a7%81%e5%9e%83%e5%9c%be%e5%9b%9e%e6%94%b6%e7%ae%97%e6%b3%95.html"
 ---
 {% raw %}
 ***jdk1.7.0_79***
@@ -26,7 +26,7 @@ permalink: "jvm%e5%b8%b8%e8%a7%81%e5%9e%83%e5%9c%be%e5%9b%9e%e6%94%b6%e7%ae%97%e
 
 ![](/wp-content/uploads/2017/07/14999552531.png)
 
-　　此时可以看到Java**堆上的实例对象无法再次引用它，那么它就是被GC的对象，我们称之为对象“已死”**。那虚拟机栈上的obj变量呢？上文[《](http://www.jfox.info/go.php?url=http://www.cnblogs.com/yulinfeng/p/7153391.html)[JVM入门——](http://www.jfox.info/go.php?url=http://www.cnblogs.com/yulinfeng/p/7153391.html)[运行时数据区》](http://www.jfox.info/go.php?url=http://www.cnblogs.com/yulinfeng/p/7153391.html)提到过，虚拟机栈是线程独占的，也就是说随着线程初始而初始，消亡而消亡，当线程被销毁后，虚拟机栈上的内存自然会被回收，也就是说**虚拟机栈上的这块内存空间不在虚拟机GC范围**。下图展示了垃圾回收的内存范围：
+　　此时可以看到Java**堆上的实例对象无法再次引用它，那么它就是被GC的对象，我们称之为对象“已死”**。那虚拟机栈上的obj变量呢？上文[《](https://www.jfox.info/go.php?url=http://www.cnblogs.com/yulinfeng/p/7153391.html)[JVM入门——](https://www.jfox.info/go.php?url=http://www.cnblogs.com/yulinfeng/p/7153391.html)[运行时数据区》](https://www.jfox.info/go.php?url=http://www.cnblogs.com/yulinfeng/p/7153391.html)提到过，虚拟机栈是线程独占的，也就是说随着线程初始而初始，消亡而消亡，当线程被销毁后，虚拟机栈上的内存自然会被回收，也就是说**虚拟机栈上的这块内存空间不在虚拟机GC范围**。下图展示了垃圾回收的内存范围：
 
 ![](/wp-content/uploads/2017/07/1499955254.png)
 
@@ -50,7 +50,7 @@ permalink: "jvm%e5%b8%b8%e8%a7%81%e5%9e%83%e5%9c%be%e5%9b%9e%e6%94%b6%e7%ae%97%e
 
 此GC算法实际上解决了标记–清除算法带来的“内存碎片化”问题。首先还是先标记处待回收内存和不用回收的内存，下一步将不用回收的内存复制到新的内存区域，这样旧的内存区域就可以全部回收，而新的内存区域则是连续的。它的缺点就是会损失掉部分系统内存，因为你总要腾出一部分内存用于复制。
 
-　　在上文[《JVM](http://www.jfox.info/go.php?url=http://www.cnblogs.com/yulinfeng/p/7153391.html)[入门——运行时数据区》](http://www.jfox.info/go.php?url=http://www.cnblogs.com/yulinfeng/p/7153391.html)提到过在Java堆中被分为了新生代和老年代，这样的划分是方便GC。Java堆中的新生代就使用了GC复制算法。在新生代中又分为了三个区域：Eden 空间、To Survivor空间、From Survivor空间。不妨将注意力回到这张图的左边新生代部分：
+　　在上文[《JVM](https://www.jfox.info/go.php?url=http://www.cnblogs.com/yulinfeng/p/7153391.html)[入门——运行时数据区》](https://www.jfox.info/go.php?url=http://www.cnblogs.com/yulinfeng/p/7153391.html)提到过在Java堆中被分为了新生代和老年代，这样的划分是方便GC。Java堆中的新生代就使用了GC复制算法。在新生代中又分为了三个区域：Eden 空间、To Survivor空间、From Survivor空间。不妨将注意力回到这张图的左边新生代部分：
 
 ![](/wp-content/uploads/2017/07/14999552551.png)
 

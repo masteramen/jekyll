@@ -3,11 +3,11 @@ layout: post
 title:  "Collection-Iterator-foreach"
 title2:  "Collection-Iterator-foreach"
 date:   2017-01-01 23:53:12  +0800
-source:  "http://www.jfox.info/collectioniteratorforeach.html"
+source:  "https://www.jfox.info/collectioniteratorforeach.html"
 fileName:  "20170101092"
 lang:  "zh_CN"
 published: true
-permalink: "collectioniteratorforeach.html"
+permalink: "2017/https://www.jfox.info/collectioniteratorforeach.html"
 ---
 {% raw %}
 一.Collection(java.util)

@@ -3,11 +3,11 @@ layout: post
 title:  "技术人员如何去面试？ » java面试题"
 title2:  "技术人员如何去面试？ » java面试题"
 date:   2017-01-01 23:46:39  +0800
-source:  "http://www.jfox.info/ji-shu-ren-yuan-ru-he-qu-mian-shi.html"
+source:  "https://www.jfox.info/ji-shu-ren-yuan-ru-he-qu-mian-shi.html"
 fileName:  "20170100699"
 lang:  "zh_CN"
 published: true
-permalink: "ji-shu-ren-yuan-ru-he-qu-mian-shi.html"
+permalink: "2017/https://www.jfox.info/ji-shu-ren-yuan-ru-he-qu-mian-shi.html"
 ---
 {% raw %}
 每年3月-5月的离职跳槽高峰期，不论什么level的程序员们都开始纷纷去考虑勾兑猎头跳槽投递简历应聘面试等等关乎自己工作事业等重大问题的忙碌上面了。本文探讨的主要是如何选择公司、如何面试、如何谈薪水等实际的问题，可能描述会有偏颇，仅供参考。
@@ -120,5 +120,5 @@ permalink: "ji-shu-ren-yuan-ru-he-qu-mian-shi.html"
 
 PS：东西写的零碎，有问题欢迎回复，后续可以再修改补充本文。
 
-[%E5%8E%9F%E6%96%87](http://www.jfox.info/go.php?url=http://www.jfox.info/url.php?_v=v4&amp;_src=&amp;isencode=1&amp;content=dGltZT0xNDE3ODQwODYzMzY4JnVybD1odHRwJTNBJTJGJTJGYmxvZy5jc2RuLm5ldCUyRmhlaXllc2h1d3UlMkZhcnRpY2xlJTJGZGV0YWlscyUyRjg2NTUyMzY=)
+[%E5%8E%9F%E6%96%87](https://www.jfox.info/go.php?url=http://www.jfox.info/url.php?_v=v4&amp;_src=&amp;isencode=1&amp;content=dGltZT0xNDE3ODQwODYzMzY4JnVybD1odHRwJTNBJTJGJTJGYmxvZy5jc2RuLm5ldCUyRmhlaXllc2h1d3UlMkZhcnRpY2xlJTJGZGV0YWlscyUyRjg2NTUyMzY=)
 {% endraw %}

@@ -3,11 +3,11 @@ layout: post
 title:  "System.gc()函数的作用"
 title2:  "System.gc()函数的作用"
 date:   2017-01-01 23:40:53  +0800
-source:  "http://www.jfox.info/System-gc-han-shu-de-zuo-yong.html"
+source:  "https://www.jfox.info/System-gc-han-shu-de-zuo-yong.html"
 fileName:  "20170100353"
 lang:  "zh_CN"
 published: true
-permalink: "System-gc-han-shu-de-zuo-yong.html"
+permalink: "2017/https://www.jfox.info/System-gc-han-shu-de-zuo-yong.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期五, 五月 17, 2013

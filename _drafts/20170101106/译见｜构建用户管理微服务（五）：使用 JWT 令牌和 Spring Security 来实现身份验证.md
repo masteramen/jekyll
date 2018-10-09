@@ -3,11 +3,11 @@ layout: post
 title:  "译见｜构建用户管理微服务（五）：使用 JWT 令牌和 Spring Security 来实现身份验证"
 title2:  "译见｜构建用户管理微服务（五）：使用 JWT 令牌和 Spring Security 来实现身份验证"
 date:   2017-01-01 23:53:26  +0800
-source:  "http://www.jfox.info/%e8%af%91%e8%a7%81%e6%9e%84%e5%bb%ba%e7%94%a8%e6%88%b7%e7%ae%a1%e7%90%86%e5%be%ae%e6%9c%8d%e5%8a%a1%e4%ba%94%e4%bd%bf%e7%94%a8jwt%e4%bb%a4%e7%89%8c%e5%92%8cspringsecurity%e6%9d%a5%e5%ae%9e%e7%8e%b0.html"
+source:  "https://www.jfox.info/%e8%af%91%e8%a7%81%e6%9e%84%e5%bb%ba%e7%94%a8%e6%88%b7%e7%ae%a1%e7%90%86%e5%be%ae%e6%9c%8d%e5%8a%a1%e4%ba%94%e4%bd%bf%e7%94%a8jwt%e4%bb%a4%e7%89%8c%e5%92%8cspringsecurity%e6%9d%a5%e5%ae%9e%e7%8e%b0.html"
 fileName:  "20170101106"
 lang:  "zh_CN"
 published: true
-permalink: "%e8%af%91%e8%a7%81%e6%9e%84%e5%bb%ba%e7%94%a8%e6%88%b7%e7%ae%a1%e7%90%86%e5%be%ae%e6%9c%8d%e5%8a%a1%e4%ba%94%e4%bd%bf%e7%94%a8jwt%e4%bb%a4%e7%89%8c%e5%92%8cspringsecurity%e6%9d%a5%e5%ae%9e%e7%8e%b0.html"
+permalink: "2017/https://www.jfox.info/%e8%af%91%e8%a7%81%e6%9e%84%e5%bb%ba%e7%94%a8%e6%88%b7%e7%ae%a1%e7%90%86%e5%be%ae%e6%9c%8d%e5%8a%a1%e4%ba%94%e4%bd%bf%e7%94%a8jwt%e4%bb%a4%e7%89%8c%e5%92%8cspringsecurity%e6%9d%a5%e5%ae%9e%e7%8e%b0.html"
 ---
 {% raw %}
 本期的“译见”, 将带您探索 Spring Security 是如何同 JWT 令牌一起使用的。

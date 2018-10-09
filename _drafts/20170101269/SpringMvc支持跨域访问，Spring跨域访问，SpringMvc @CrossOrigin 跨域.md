@@ -3,11 +3,11 @@ layout: post
 title:  "SpringMvc支持跨域访问，Spring跨域访问，SpringMvc @CrossOrigin 跨域"
 title2:  "SpringMvc支持跨域访问，Spring跨域访问，SpringMvc @CrossOrigin 跨域"
 date:   2017-01-01 23:56:09  +0800
-source:  "http://www.jfox.info/springmvc%e6%94%af%e6%8c%81%e8%b7%a8%e5%9f%9f%e8%ae%bf%e9%97%aespring%e8%b7%a8%e5%9f%9f%e8%ae%bf%e9%97%aespringmvccrossorigin%e8%b7%a8%e5%9f%9f.html"
+source:  "https://www.jfox.info/springmvc%e6%94%af%e6%8c%81%e8%b7%a8%e5%9f%9f%e8%ae%bf%e9%97%aespring%e8%b7%a8%e5%9f%9f%e8%ae%bf%e9%97%aespringmvccrossorigin%e8%b7%a8%e5%9f%9f.html"
 fileName:  "20170101269"
 lang:  "zh_CN"
 published: true
-permalink: "springmvc%e6%94%af%e6%8c%81%e8%b7%a8%e5%9f%9f%e8%ae%bf%e9%97%aespring%e8%b7%a8%e5%9f%9f%e8%ae%bf%e9%97%aespringmvccrossorigin%e8%b7%a8%e5%9f%9f.html"
+permalink: "2017/https://www.jfox.info/springmvc%e6%94%af%e6%8c%81%e8%b7%a8%e5%9f%9f%e8%ae%bf%e9%97%aespring%e8%b7%a8%e5%9f%9f%e8%ae%bf%e9%97%aespringmvccrossorigin%e8%b7%a8%e5%9f%9f.html"
 ---
 {% raw %}
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>

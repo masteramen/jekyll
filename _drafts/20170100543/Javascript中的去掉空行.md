@@ -3,11 +3,11 @@ layout: post
 title:  "Javascript中的去掉空行"
 title2:  "Javascript中的去掉空行"
 date:   2017-01-01 23:44:03  +0800
-source:  "http://www.jfox.info/javascript%e4%b8%ad%e7%9a%84%e5%8e%bb%e6%8e%89%e7%a9%ba%e8%a1%8c.html"
+source:  "https://www.jfox.info/javascript%e4%b8%ad%e7%9a%84%e5%8e%bb%e6%8e%89%e7%a9%ba%e8%a1%8c.html"
 fileName:  "20170100543"
 lang:  "zh_CN"
 published: true
-permalink: "javascript%e4%b8%ad%e7%9a%84%e5%8e%bb%e6%8e%89%e7%a9%ba%e8%a1%8c.html"
+permalink: "2017/https://www.jfox.info/javascript%e4%b8%ad%e7%9a%84%e5%8e%bb%e6%8e%89%e7%a9%ba%e8%a1%8c.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期二, 二月 11, 2014
@@ -23,5 +23,5 @@ By Lee - Last updated: 星期二, 二月 11, 2014
 6. UE中将'[ ]’ 替换为'[{{}}]’, find ‘^[^(*^)^]’ replace with ‘[{{^1}}]’
 7. 注释中/**   */使用懒惰的匹配方式 .*?来达到中间的注释也能被发现
 
-参考来源 [[转]Javascript中的去掉空行](http://www.jfox.info/go.php?url=http://www.jfox.info/url.php?url=http%3A%2F%2Fhi.baidu.com%2Fwm218%2Fitem%2F2694ceee90c6df2e5a7cfb26).
+参考来源 [[转]Javascript中的去掉空行](https://www.jfox.info/go.php?url=http://www.jfox.info/url.php?url=http%3A%2F%2Fhi.baidu.com%2Fwm218%2Fitem%2F2694ceee90c6df2e5a7cfb26).
 {% endraw %}

@@ -3,11 +3,11 @@ layout: post
 title:  "Linux tee双向重定向命令的使用"
 title2:  "Linux tee双向重定向命令的使用"
 date:   2017-01-01 23:45:35  +0800
-source:  "http://www.jfox.info/bidirectional-use-linux-tee-command-to-redirect.html"
+source:  "https://www.jfox.info/bidirectional-use-linux-tee-command-to-redirect.html"
 fileName:  "20170100635"
 lang:  "zh_CN"
 published: true
-permalink: "bidirectional-use-linux-tee-command-to-redirect.html"
+permalink: "2017/https://www.jfox.info/bidirectional-use-linux-tee-command-to-redirect.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期六, 五月 17, 2014
@@ -31,7 +31,7 @@ tee [选项]… [文件]…
 
 答案是有的，那就是tee命令！
 
- [![tee](http://www.jfox.info/wp-content/uploads/2014/05/tee.jpg)](http://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2014/05/tee.jpg)
+ [![tee](http://www.jfox.info/wp-content/uploads/2014/05/tee.jpg)](https://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2014/05/tee.jpg)
 
 tee命令使用很简单：
 
@@ -101,5 +101,5 @@ drwxrwxr-x 2 mars mars 4096 Mar 17 14:16 test4
 
 2709280 UpdateReportSummary
 
-参考文章:[http://www.ourunix.org/post/303.html](http://www.jfox.info/go.php?url=http://www.jfox.info/url.php?url=http%3A%2F%2Fwww.ourunix.org%2Fpost%2F303.html).
+参考文章:[http://www.ourunix.org/post/303.html](https://www.jfox.info/go.php?url=http://www.jfox.info/url.php?url=http%3A%2F%2Fwww.ourunix.org%2Fpost%2F303.html).
 {% endraw %}

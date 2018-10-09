@@ -3,20 +3,20 @@ layout: post
 title:  "SpringBoot的事务管理"
 title2:  "SpringBoot的事务管理"
 date:   2017-01-01 23:48:40  +0800
-source:  "http://www.jfox.info/springboot-de-shi-wu-guan-li.html"
+source:  "https://www.jfox.info/springboot-de-shi-wu-guan-li.html"
 fileName:  "20170100820"
 lang:  "zh_CN"
 published: true
-permalink: "springboot-de-shi-wu-guan-li.html"
+permalink: "2017/https://www.jfox.info/springboot-de-shi-wu-guan-li.html"
 ---
 {% raw %}
 By go - Last updated: 星期二, 四月 11, 2017
 
-原文出处： [fangjian0423](http://www.jfox.info/go.php?url=http://fangjian0423.github.io/2016/10/07/springboot-transaction/)
+原文出处： [fangjian0423](https://www.jfox.info/go.php?url=http://fangjian0423.github.io/2016/10/07/springboot-transaction/)
 
 Springboot内部提供的事务管理器是根据autoconfigure来进行决定的。
 
-比如当使用jpa的时候，也就是pom中加入了spring-boot-starter-data-jpa这个starter之后(之前我们分析过[springboot的自动化配置原理](http://www.jfox.info/go.php?url=http://fangjian0423.github.io/2016/06/12/springboot-autoconfig-analysis/))。
+比如当使用jpa的时候，也就是pom中加入了spring-boot-starter-data-jpa这个starter之后(之前我们分析过[springboot的自动化配置原理](https://www.jfox.info/go.php?url=http://fangjian0423.github.io/2016/06/12/springboot-autoconfig-analysis/))。
 
 Springboot会构造一个JpaTransactionManager这个事务管理器。
 
@@ -117,7 +117,7 @@ Spring给我们提供了一个TransactionManagementConfigurer接口，该接口�
 
 参考资料：
 
-[http://www.cnblogs.com/davidwang456/p/4309038.html](http://www.jfox.info/go.php?url=http://www.cnblogs.com/davidwang456/p/4309038.html)
+[http://www.cnblogs.com/davidwang456/p/4309038.html](https://www.jfox.info/go.php?url=http://www.cnblogs.com/davidwang456/p/4309038.html)
 
-[http://blog.csdn.net/chjttony/article/details/6528344](http://www.jfox.info/go.php?url=http://blog.csdn.net/chjttony/article/details/6528344)
+[http://blog.csdn.net/chjttony/article/details/6528344](https://www.jfox.info/go.php?url=http://blog.csdn.net/chjttony/article/details/6528344)
 {% endraw %}

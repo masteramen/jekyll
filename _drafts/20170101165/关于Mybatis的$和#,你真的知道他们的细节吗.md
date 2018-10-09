@@ -3,11 +3,11 @@ layout: post
 title:  "关于Mybatis的$和#,你真的知道他们的细节吗?"
 title2:  "关于Mybatis的$和#,你真的知道他们的细节吗"
 date:   2017-01-01 23:54:25  +0800
-source:  "http://www.jfox.info/%e5%85%b3%e4%ba%8emybatis%e7%9a%84%e5%92%8c%e4%bd%a0%e7%9c%9f%e7%9a%84%e7%9f%a5%e9%81%93%e4%bb%96%e4%bb%ac%e7%9a%84%e7%bb%86%e8%8a%82%e5%90%97.html"
+source:  "https://www.jfox.info/%e5%85%b3%e4%ba%8emybatis%e7%9a%84%e5%92%8c%e4%bd%a0%e7%9c%9f%e7%9a%84%e7%9f%a5%e9%81%93%e4%bb%96%e4%bb%ac%e7%9a%84%e7%bb%86%e8%8a%82%e5%90%97.html"
 fileName:  "20170101165"
 lang:  "zh_CN"
 published: true
-permalink: "%e5%85%b3%e4%ba%8emybatis%e7%9a%84%e5%92%8c%e4%bd%a0%e7%9c%9f%e7%9a%84%e7%9f%a5%e9%81%93%e4%bb%96%e4%bb%ac%e7%9a%84%e7%bb%86%e8%8a%82%e5%90%97.html"
+permalink: "2017/https://www.jfox.info/%e5%85%b3%e4%ba%8emybatis%e7%9a%84%e5%92%8c%e4%bd%a0%e7%9c%9f%e7%9a%84%e7%9f%a5%e9%81%93%e4%bb%96%e4%bb%ac%e7%9a%84%e7%bb%86%e8%8a%82%e5%90%97.html"
 ---
 {% raw %}
 在JDBC中，主要使用的是两种语句，一种是支持参数化和预编译的PrepareStatement，能够支持原生的Sql，也支持设置占位符的方式，参数化输入的参数，防止Sql注入，一种是支持原生Sql的Statement，有Sql注入的风险。

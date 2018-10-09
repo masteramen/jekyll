@@ -3,11 +3,11 @@ layout: post
 title:  "Windows10 CreatorsUpdate后，Microsoft Edge新增了那些功能"
 title2:  "Windows10 CreatorsUpdate后，Microsoft Edge新增了那些功能"
 date:   2017-01-01 23:51:43  +0800
-source:  "http://www.jfox.info/windows10-creatorsupdate%e5%90%8e-microsoft-edge%e6%96%b0%e5%a2%9e%e4%ba%86%e9%82%a3%e4%ba%9b%e5%8a%9f%e8%83%bd.html"
+source:  "https://www.jfox.info/windows10-creatorsupdate%e5%90%8e-microsoft-edge%e6%96%b0%e5%a2%9e%e4%ba%86%e9%82%a3%e4%ba%9b%e5%8a%9f%e8%83%bd.html"
 fileName:  "20170101003"
 lang:  "zh_CN"
 published: true
-permalink: "windows10-creatorsupdate%e5%90%8e-microsoft-edge%e6%96%b0%e5%a2%9e%e4%ba%86%e9%82%a3%e4%ba%9b%e5%8a%9f%e8%83%bd.html"
+permalink: "2017/https://www.jfox.info/windows10-creatorsupdate%e5%90%8e-microsoft-edge%e6%96%b0%e5%a2%9e%e4%ba%86%e9%82%a3%e4%ba%9b%e5%8a%9f%e8%83%bd.html"
 ---
 {% raw %}
 Windows 10推出Edge来取代Internet Explorer浏览器， 1511版后新增的分页预览的功能，最近更新的Windows 10 1607版后看到了人见人爱的插件功能，就插件的数量来说，与Chrome与Firefox 两位前辈比简直是小巫见大巫，但总是踏出的第一步，有总比没有好，或许Microsoft Edge浏览器慢慢会摆脱是下载Chrome的跳板，就让我们来一起看看Windows 10 1703版本（OS build 15063）后的Edge浏览器的新功能。

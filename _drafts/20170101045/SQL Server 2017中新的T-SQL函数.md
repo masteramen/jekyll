@@ -3,11 +3,11 @@ layout: post
 title:  "SQL Server 2017中新的T-SQL函数"
 title2:  "SQL Server 2017中新的T-SQL函数"
 date:   2017-01-01 23:52:25  +0800
-source:  "http://www.jfox.info/sqlserver2017%e4%b8%ad%e6%96%b0%e7%9a%84tsql%e5%87%bd%e6%95%b0.html"
+source:  "https://www.jfox.info/sqlserver2017%e4%b8%ad%e6%96%b0%e7%9a%84tsql%e5%87%bd%e6%95%b0.html"
 fileName:  "20170101045"
 lang:  "zh_CN"
 published: true
-permalink: "sqlserver2017%e4%b8%ad%e6%96%b0%e7%9a%84tsql%e5%87%bd%e6%95%b0.html"
+permalink: "2017/https://www.jfox.info/sqlserver2017%e4%b8%ad%e6%96%b0%e7%9a%84tsql%e5%87%bd%e6%95%b0.html"
 ---
 {% raw %}
 SQL Server 2017为我们带来了一些新的T-SQL函数。他们是非常简单的，可以帮助我们简化我们的T-SQL代码。现在就谈一谈这些新的T-SQL函数。

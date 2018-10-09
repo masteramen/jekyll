@@ -3,11 +3,11 @@ layout: post
 title:  "mysql大数据量高并发的数据库设计优化"
 title2:  "mysql大数据量高并发的数据库设计优化"
 date:   2017-01-01 23:42:54  +0800
-source:  "http://www.jfox.info/mysql-da-shu-ju-liang-gao-bing-fa-de-shu-ju-ku-she-ji-you-hua.html"
+source:  "https://www.jfox.info/mysql-da-shu-ju-liang-gao-bing-fa-de-shu-ju-ku-she-ji-you-hua.html"
 fileName:  "20170100474"
 lang:  "zh_CN"
 published: true
-permalink: "mysql-da-shu-ju-liang-gao-bing-fa-de-shu-ju-ku-she-ji-you-hua.html"
+permalink: "2017/https://www.jfox.info/mysql-da-shu-ju-liang-gao-bing-fa-de-shu-ju-ku-she-ji-you-hua.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期五, 十月 25, 2013

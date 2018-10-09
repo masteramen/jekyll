@@ -3,11 +3,11 @@ layout: post
 title:  "19个JavaScript编码小技巧"
 title2:  "19个JavaScript编码小技巧"
 date:   2017-01-01 23:51:26  +0800
-source:  "http://www.jfox.info/19%e4%b8%aajavascript%e7%bc%96%e7%a0%81%e5%b0%8f%e6%8a%80%e5%b7%a7.html"
+source:  "https://www.jfox.info/19%e4%b8%aajavascript%e7%bc%96%e7%a0%81%e5%b0%8f%e6%8a%80%e5%b7%a7.html"
 fileName:  "20170100986"
 lang:  "zh_CN"
 published: true
-permalink: "19%e4%b8%aajavascript%e7%bc%96%e7%a0%81%e5%b0%8f%e6%8a%80%e5%b7%a7.html"
+permalink: "2017/https://www.jfox.info/19%e4%b8%aajavascript%e7%bc%96%e7%a0%81%e5%b0%8f%e6%8a%80%e5%b7%a7.html"
 ---
 {% raw %}
 这篇文章适合任何一位基于JavaScript开发的开发者。我写这篇文章主要涉及JavaScript中一些简写的代码，帮助大家更好理解一些JavaScript的基础。希望这些代码能从不同的角度帮助你更好的理解JavaScript。 
@@ -53,7 +53,7 @@ permalink: "19%e4%b8%aajavascript%e7%bc%96%e7%a0%81%e5%b0%8f%e6%8a%80%e5%b7%a7.h
     const variable2 = variable1 || 'new';
     
 
- 不要相信我，请先相信自己的测试（可以把下面的代码粘贴在 [ es6console ](http://www.jfox.info/go.php?url=http://es6console.com/) ） 
+ 不要相信我，请先相信自己的测试（可以把下面的代码粘贴在 [ es6console ](https://www.jfox.info/go.php?url=http://es6console.com/) ） 
 
     let variable1;
     let variable2 = variable1 || '';
@@ -93,7 +93,7 @@ permalink: "19%e4%b8%aajavascript%e7%bc%96%e7%a0%81%e5%b0%8f%e6%8a%80%e5%b7%a7.h
     if (likeJavaScript)
     
 
-** 注： ** 这两种方法并不完全相同，简写检查只要 ` likeJavaScript ` 是 [` true ` 都将通过 ](http://www.jfox.info/go.php?url=http://developer.mozilla.org/en-US/docs/Glossary/Truthy) 。 
+** 注： ** 这两种方法并不完全相同，简写检查只要 ` likeJavaScript ` 是 [` true ` 都将通过 ](https://www.jfox.info/go.php?url=http://developer.mozilla.org/en-US/docs/Glossary/Truthy) 。 
 
  这有另一个示例。如果 ` a ` 不是 ` true ` ，然后做什么。 
 
@@ -466,7 +466,7 @@ permalink: "19%e4%b8%aajavascript%e7%bc%96%e7%a0%81%e5%b0%8f%e6%8a%80%e5%b7%a7.h
 
  如果你是一位JavaScript新手的话，对于逐位运算符（Bitwise Operator）你应该永远不会在任何地方使用。此外，如果你不处理二进制 ` 0 ` 和 ` 1 ` ，那就更不会想使用。 
 
- 然而，一个非常实用的用例，那就是双位操作符。你可以用它替代 ` Math.floor() ` 。Double Bitwise NOT运算符有很大的优势，它执行相同的操作要快得多。你可以在 [ 这里阅读 ](http://www.jfox.info/go.php?url=http://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Bitwise_Operators) 更多关于位运算符相关的知识。 
+ 然而，一个非常实用的用例，那就是双位操作符。你可以用它替代 ` Math.floor() ` 。Double Bitwise NOT运算符有很大的优势，它执行相同的操作要快得多。你可以在 [ 这里阅读 ](https://www.jfox.info/go.php?url=http://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Bitwise_Operators) 更多关于位运算符相关的知识。 
 
 ** Longhand: **
 

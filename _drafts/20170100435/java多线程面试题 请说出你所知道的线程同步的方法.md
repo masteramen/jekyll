@@ -3,11 +3,11 @@ layout: post
 title:  "java多线程面试题 请说出你所知道的线程同步的方法"
 title2:  "java多线程面试题 请说出你所知道的线程同步的方法"
 date:   2017-01-01 23:42:15  +0800
-source:  "http://www.jfox.info/java-duo-xian-cheng-mian-shi-ti-qing-shuo-chu-ni-suo-zhi-dao-de-xian-cheng-tong-bu-de-fang-fa.html"
+source:  "https://www.jfox.info/java-duo-xian-cheng-mian-shi-ti-qing-shuo-chu-ni-suo-zhi-dao-de-xian-cheng-tong-bu-de-fang-fa.html"
 fileName:  "20170100435"
 lang:  "zh_CN"
 published: true
-permalink: "java-duo-xian-cheng-mian-shi-ti-qing-shuo-chu-ni-suo-zhi-dao-de-xian-cheng-tong-bu-de-fang-fa.html"
+permalink: "2017/https://www.jfox.info/java-duo-xian-cheng-mian-shi-ti-qing-shuo-chu-ni-suo-zhi-dao-de-xian-cheng-tong-bu-de-fang-fa.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期五, 六月 14, 2013

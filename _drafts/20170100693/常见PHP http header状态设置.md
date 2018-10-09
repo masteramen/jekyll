@@ -3,11 +3,11 @@ layout: post
 title:  "常见PHP http header状态设置"
 title2:  "常见PHP http header状态设置"
 date:   2017-01-01 23:46:33  +0800
-source:  "http://www.jfox.info/chang-jian-php-http-header-zhuang-tai-she-zhi.html"
+source:  "https://www.jfox.info/chang-jian-php-http-header-zhuang-tai-she-zhi.html"
 fileName:  "20170100693"
 lang:  "zh_CN"
 published: true
-permalink: "chang-jian-php-http-header-zhuang-tai-she-zhi.html"
+permalink: "2017/https://www.jfox.info/chang-jian-php-http-header-zhuang-tai-she-zhi.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期三, 十月 1, 2014

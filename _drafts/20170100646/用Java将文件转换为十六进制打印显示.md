@@ -3,11 +3,11 @@ layout: post
 title:  "用Java将文件转换为十六进制打印显示"
 title2:  "用Java将文件转换为十六进制打印显示"
 date:   2017-01-01 23:45:46  +0800
-source:  "http://www.jfox.info/using-java-to-convert-the-file-to-hexadecimal-and-print-display.html"
+source:  "https://www.jfox.info/using-java-to-convert-the-file-to-hexadecimal-and-print-display.html"
 fileName:  "20170100646"
 lang:  "zh_CN"
 published: true
-permalink: "using-java-to-convert-the-file-to-hexadecimal-and-print-display.html"
+permalink: "2017/https://www.jfox.info/using-java-to-convert-the-file-to-hexadecimal-and-print-display.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期一, 五月 26, 2014
@@ -83,5 +83,5 @@ By Lee - Last updated: 星期一, 五月 26, 2014
     
     
 
-原文地址:[http://www.aptusource.org/2014/03/how-to-convert-file-to-hex-in-java/](http://www.jfox.info/go.php?url=http://www.jfox.info/url.php?url=http%3A%2F%2Fwww.aptusource.org%2F2014%2F03%2Fhow-to-convert-file-to-hex-in-java%2F).
+原文地址:[http://www.aptusource.org/2014/03/how-to-convert-file-to-hex-in-java/](https://www.jfox.info/go.php?url=http://www.jfox.info/url.php?url=http%3A%2F%2Fwww.aptusource.org%2F2014%2F03%2Fhow-to-convert-file-to-hex-in-java%2F).
 {% endraw %}

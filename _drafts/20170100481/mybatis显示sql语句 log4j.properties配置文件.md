@@ -3,11 +3,11 @@ layout: post
 title:  "mybatis显示sql语句 log4j.properties配置文件"
 title2:  "mybatis显示sql语句 log4j.properties配置文件"
 date:   2017-01-01 23:43:01  +0800
-source:  "http://www.jfox.info/mybatis-xian-shi-sql-yu-ju-log4j-properties-pei-zhi-wen-jian.html"
+source:  "https://www.jfox.info/mybatis-xian-shi-sql-yu-ju-log4j-properties-pei-zhi-wen-jian.html"
 fileName:  "20170100481"
 lang:  "zh_CN"
 published: true
-permalink: "mybatis-xian-shi-sql-yu-ju-log4j-properties-pei-zhi-wen-jian.html"
+permalink: "2017/https://www.jfox.info/mybatis-xian-shi-sql-yu-ju-log4j-properties-pei-zhi-wen-jian.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期四, 十月 31, 2013

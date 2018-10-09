@@ -3,18 +3,18 @@ layout: post
 title:  "Elasticsearch学习上手（二）"
 title2:  "Elasticsearch学习上手（二）"
 date:   2017-01-01 23:55:31  +0800
-source:  "http://www.jfox.info/elasticsearch%e5%ad%a6%e4%b9%a0%e4%b8%8a%e6%89%8b%e4%ba%8c.html"
+source:  "https://www.jfox.info/elasticsearch%e5%ad%a6%e4%b9%a0%e4%b8%8a%e6%89%8b%e4%ba%8c.html"
 fileName:  "20170101231"
 lang:  "zh_CN"
 published: true
-permalink: "elasticsearch%e5%ad%a6%e4%b9%a0%e4%b8%8a%e6%89%8b%e4%ba%8c.html"
+permalink: "2017/https://www.jfox.info/elasticsearch%e5%ad%a6%e4%b9%a0%e4%b8%8a%e6%89%8b%e4%ba%8c.html"
 ---
 {% raw %}
 在安装elasticsearch之后，我们就要开始进行操作实践，那么在实践之前，我们首先了解下elasticsearch的几个概念
 
 ### 面向文档
 
-相对关系型数据库，是采用行和列的形式进行存储数据，elasticsearch是面向文档的，意味着它存储整个对象或文档。Elasticsearch 不仅存储文档，而且 索引 每个文档的内容使之可以被检索。在 Elasticsearch 中，你对文档进行索引、检索、排序和过滤–而不是对行列数据。这是一种完全不同的思考数据的方式，也是 Elasticsearch 能支持复杂全文检索的原因。Elasticsearch 使用 JavaScript Object Notation 或者 [*JSON*](http://www.jfox.info/go.php?url=http://en.wikipedia.org/wiki/Json) 作为文档的序列化格式。JSON 序列化被大多数编程语言所支持，并且已经成为 NoSQL 领域的标准格式。 它简单、简洁、易于阅读。
+相对关系型数据库，是采用行和列的形式进行存储数据，elasticsearch是面向文档的，意味着它存储整个对象或文档。Elasticsearch 不仅存储文档，而且 索引 每个文档的内容使之可以被检索。在 Elasticsearch 中，你对文档进行索引、检索、排序和过滤–而不是对行列数据。这是一种完全不同的思考数据的方式，也是 Elasticsearch 能支持复杂全文检索的原因。Elasticsearch 使用 JavaScript Object Notation 或者 [*JSON*](https://www.jfox.info/go.php?url=http://en.wikipedia.org/wiki/Json) 作为文档的序列化格式。JSON 序列化被大多数编程语言所支持，并且已经成为 NoSQL 领域的标准格式。 它简单、简洁、易于阅读。
 
 ### 集群（cluster）
 

@@ -3,11 +3,11 @@ layout: post
 title:  "Kubernetes 1.7：安全加固、有状态应用更新和可扩展性"
 title2:  "Kubernetes 1.7：安全加固、有状态应用更新和可扩展性"
 date:   2017-01-01 23:52:26  +0800
-source:  "http://www.jfox.info/kubernetes17%e5%ae%89%e5%85%a8%e5%8a%a0%e5%9b%ba%e6%9c%89%e7%8a%b6%e6%80%81%e5%ba%94%e7%94%a8%e6%9b%b4%e6%96%b0%e5%92%8c%e5%8f%af%e6%89%a9%e5%b1%95%e6%80%a7.html"
+source:  "https://www.jfox.info/kubernetes17%e5%ae%89%e5%85%a8%e5%8a%a0%e5%9b%ba%e6%9c%89%e7%8a%b6%e6%80%81%e5%ba%94%e7%94%a8%e6%9b%b4%e6%96%b0%e5%92%8c%e5%8f%af%e6%89%a9%e5%b1%95%e6%80%a7.html"
 fileName:  "20170101046"
 lang:  "zh_CN"
 published: true
-permalink: "kubernetes17%e5%ae%89%e5%85%a8%e5%8a%a0%e5%9b%ba%e6%9c%89%e7%8a%b6%e6%80%81%e5%ba%94%e7%94%a8%e6%9b%b4%e6%96%b0%e5%92%8c%e5%8f%af%e6%89%a9%e5%b1%95%e6%80%a7.html"
+permalink: "2017/https://www.jfox.info/kubernetes17%e5%ae%89%e5%85%a8%e5%8a%a0%e5%9b%ba%e6%9c%89%e7%8a%b6%e6%80%81%e5%ba%94%e7%94%a8%e6%9b%b4%e6%96%b0%e5%92%8c%e5%8f%af%e6%89%a9%e5%b1%95%e6%80%a7.html"
 ---
 {% raw %}
 今天我们公布了Kubernetes 1.7，这一里程碑版本引入了更为强大的安全性、存储以及扩展性因素，旨在满足Kubernetes在广泛企业环境下所面临的实际需求。 

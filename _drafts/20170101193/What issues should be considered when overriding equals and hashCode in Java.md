@@ -3,18 +3,18 @@ layout: post
 title:  "What issues should be considered when overriding equals and hashCode in Java?"
 title2:  "What issues should be considered when overriding equals and hashCode in Java"
 date:   2017-01-01 23:54:53  +0800
-source:  "http://www.jfox.info/whatissuesshouldbeconsideredwhenoverridingequalsandhashcodeinjava.html"
+source:  "https://www.jfox.info/whatissuesshouldbeconsideredwhenoverridingequalsandhashcodeinjava.html"
 fileName:  "20170101193"
 lang:  "zh_CN"
 published: true
-permalink: "whatissuesshouldbeconsideredwhenoverridingequalsandhashcodeinjava.html"
+permalink: "2017/https://www.jfox.info/whatissuesshouldbeconsideredwhenoverridingequalsandhashcodeinjava.html"
 ---
 {% raw %}
 ### The theory (for the language lawyers and the mathematically inclined):
 
-`equals()` ([javadoc](http://www.jfox.info/go.php?url=http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html#equals(java.lang.Object))) must define an equivalence relation (it must be *reflexive*, *symmetric*, and *transitive*). In addition, it must be *consistent* (if the objects are not modified, then it must keep returning the same value). Furthermore, `o.equals(null)` must always return false.
+`equals()` ([javadoc](https://www.jfox.info/go.php?url=http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html#equals(java.lang.Object))) must define an equivalence relation (it must be *reflexive*, *symmetric*, and *transitive*). In addition, it must be *consistent* (if the objects are not modified, then it must keep returning the same value). Furthermore, `o.equals(null)` must always return false.
 
-`hashCode()` ([javadoc](http://www.jfox.info/go.php?url=http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html#hashCode())) must also be *consistent* (if the object is not modified in terms of `equals()`, it must keep returning the same value).
+`hashCode()` ([javadoc](https://www.jfox.info/go.php?url=http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html#hashCode())) must also be *consistent* (if the object is not modified in terms of `equals()`, it must keep returning the same value).
 
 The **relation** between the two methods is:
 
@@ -26,7 +26,7 @@ If you override one, then you should override the other.
 
 Use the same set of fields that you use to compute `equals()` to compute `hashCode()`.
 
-Use the excellent helper classes [EqualsBuilder](http://www.jfox.info/go.php?url=http://commons.apache.org/proper/commons-lang/apidocs/org/apache/commons/lang3/builder/EqualsBuilder.html) and [HashCodeBuilder](http://www.jfox.info/go.php?url=http://commons.apache.org/proper/commons-lang/apidocs/org/apache/commons/lang3/builder/HashCodeBuilder.html) from the [Apache Commons Lang](http://www.jfox.info/go.php?url=http://commons.apache.org/lang/) library. An example:
+Use the excellent helper classes [EqualsBuilder](https://www.jfox.info/go.php?url=http://commons.apache.org/proper/commons-lang/apidocs/org/apache/commons/lang3/builder/EqualsBuilder.html) and [HashCodeBuilder](https://www.jfox.info/go.php?url=http://commons.apache.org/proper/commons-lang/apidocs/org/apache/commons/lang3/builder/HashCodeBuilder.html) from the [Apache Commons Lang](https://www.jfox.info/go.php?url=http://commons.apache.org/lang/) library. An example:
 
     public class Person {
         private String name;
@@ -61,5 +61,5 @@ Use the excellent helper classes [EqualsBuilder](http://www.jfox.info/go.php?url
 
 ### Also remember:
 
-When using a hash-based [Collection](http://www.jfox.info/go.php?url=http://download.oracle.com/javase/1.4.2/docs/api/java/util/Collection.html) or [Map](http://www.jfox.info/go.php?url=http://download.oracle.com/javase/1.4.2/docs/api/java/util/Map.html) such as [HashSet](http://www.jfox.info/go.php?url=http://download.oracle.com/javase/1.4.2/docs/api/java/util/HashSet.html), [LinkedHashSet](http://www.jfox.info/go.php?url=http://download.oracle.com/javase/1.4.2/docs/api/java/util/LinkedHashSet.html), [HashMap](http://www.jfox.info/go.php?url=http://download.oracle.com/javase/1.4.2/docs/api/java/util/HashMap.html), [Hashtable](http://www.jfox.info/go.php?url=http://download.oracle.com/javase/1.4.2/docs/api/java/util/Hashtable.html), or [WeakHashMap](http://www.jfox.info/go.php?url=http://download.oracle.com/javase/1.4.2/docs/api/java/util/WeakHashMap.html), make sure that the hashCode() of the key objects that you put into the collection never changes while the object is in the collection. The bulletproof way to ensure this is to make your keys immutable, [which has also other benefits](http://www.jfox.info/go.php?url=http://www.javapractices.com/topic/TopicAction.do?Id=29).
+When using a hash-based [Collection](https://www.jfox.info/go.php?url=http://download.oracle.com/javase/1.4.2/docs/api/java/util/Collection.html) or [Map](https://www.jfox.info/go.php?url=http://download.oracle.com/javase/1.4.2/docs/api/java/util/Map.html) such as [HashSet](https://www.jfox.info/go.php?url=http://download.oracle.com/javase/1.4.2/docs/api/java/util/HashSet.html), [LinkedHashSet](https://www.jfox.info/go.php?url=http://download.oracle.com/javase/1.4.2/docs/api/java/util/LinkedHashSet.html), [HashMap](https://www.jfox.info/go.php?url=http://download.oracle.com/javase/1.4.2/docs/api/java/util/HashMap.html), [Hashtable](https://www.jfox.info/go.php?url=http://download.oracle.com/javase/1.4.2/docs/api/java/util/Hashtable.html), or [WeakHashMap](https://www.jfox.info/go.php?url=http://download.oracle.com/javase/1.4.2/docs/api/java/util/WeakHashMap.html), make sure that the hashCode() of the key objects that you put into the collection never changes while the object is in the collection. The bulletproof way to ensure this is to make your keys immutable, [which has also other benefits](https://www.jfox.info/go.php?url=http://www.javapractices.com/topic/TopicAction.do?Id=29).
 {% endraw %}

@@ -3,11 +3,11 @@ layout: post
 title:  "深入剖析ThreadPool的运行原理"
 title2:  "深入剖析ThreadPool的运行原理"
 date:   2017-01-01 23:55:27  +0800
-source:  "http://www.jfox.info/%e6%b7%b1%e5%85%a5%e5%89%96%e6%9e%90threadpool%e7%9a%84%e8%bf%90%e8%a1%8c%e5%8e%9f%e7%90%86.html"
+source:  "https://www.jfox.info/%e6%b7%b1%e5%85%a5%e5%89%96%e6%9e%90threadpool%e7%9a%84%e8%bf%90%e8%a1%8c%e5%8e%9f%e7%90%86.html"
 fileName:  "20170101227"
 lang:  "zh_CN"
 published: true
-permalink: "%e6%b7%b1%e5%85%a5%e5%89%96%e6%9e%90threadpool%e7%9a%84%e8%bf%90%e8%a1%8c%e5%8e%9f%e7%90%86.html"
+permalink: "2017/https://www.jfox.info/%e6%b7%b1%e5%85%a5%e5%89%96%e6%9e%90threadpool%e7%9a%84%e8%bf%90%e8%a1%8c%e5%8e%9f%e7%90%86.html"
 ---
 {% raw %}
 # 深入剖析ThreadPool的运行原理 

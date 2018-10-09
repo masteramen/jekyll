@@ -3,18 +3,18 @@ layout: post
 title:  "Java POI 设置Excel单元格的宽度和高度"
 title2:  "Java POI 设置Excel单元格的宽度和高度"
 date:   2017-01-01 23:43:51  +0800
-source:  "http://www.jfox.info/java-poi-%e8%ae%be%e7%bd%aeexcel%e5%8d%95%e5%85%83%e6%a0%bc%e7%9a%84%e5%ae%bd%e5%ba%a6%e5%92%8c%e9%ab%98%e5%ba%a6.html"
+source:  "https://www.jfox.info/java-poi-%e8%ae%be%e7%bd%aeexcel%e5%8d%95%e5%85%83%e6%a0%bc%e7%9a%84%e5%ae%bd%e5%ba%a6%e5%92%8c%e9%ab%98%e5%ba%a6.html"
 fileName:  "20170100531"
 lang:  "zh_CN"
 published: true
-permalink: "java-poi-%e8%ae%be%e7%bd%aeexcel%e5%8d%95%e5%85%83%e6%a0%bc%e7%9a%84%e5%ae%bd%e5%ba%a6%e5%92%8c%e9%ab%98%e5%ba%a6.html"
+permalink: "2017/https://www.jfox.info/java-poi-%e8%ae%be%e7%bd%aeexcel%e5%8d%95%e5%85%83%e6%a0%bc%e7%9a%84%e5%ae%bd%e5%ba%a6%e5%92%8c%e9%ab%98%e5%ba%a6.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期五, 二月 7, 2014
 
 作者：Tony Qu
 
-NPOI官方网站：[http://npoi.codeplex.com/](http://www.jfox.info/go.php?url=http://npoi.codeplex.com/)
+NPOI官方网站：[http://npoi.codeplex.com/](https://www.jfox.info/go.php?url=http://npoi.codeplex.com/)
 
 在Excel中，单元格的宽度其实就是列的宽度，因为Excel假设这一列的单元格的宽度肯定一致。所以要设置单元格的宽度，我们就得从列的宽度下手，HSSFSheet有个方法叫SetColumnWidth，共有两个参数：一个是列的索引（从0开始），一个是宽度。
 
@@ -52,7 +52,7 @@ sheet1.SetColumnWidth(1, 100 * 256);
 
 sheet1.DefaultRowHeight=30*20;
 
-相关范例请见[NPOI 1.2正式版](http://www.jfox.info/go.php?url=http://npoi.codeplex.com/Release/ProjectReleases.aspx?ReleaseId=21991)中的SetWidthAndHeightInXls项目
+相关范例请见[NPOI 1.2正式版](https://www.jfox.info/go.php?url=http://npoi.codeplex.com/Release/ProjectReleases.aspx?ReleaseId=21991)中的SetWidthAndHeightInXls项目
 
-参考来源 [POI 1.2教程 – 2.2.7 设置单元格的宽度和高度 ](http://www.jfox.info/go.php?url=http://www.jfox.info/url.php?url=http%3A%2F%2Fz3sm2012.iteye.com%2Fblog%2F1429239)
+参考来源 [POI 1.2教程 – 2.2.7 设置单元格的宽度和高度 ](https://www.jfox.info/go.php?url=http://www.jfox.info/url.php?url=http%3A%2F%2Fz3sm2012.iteye.com%2Fblog%2F1429239)
 {% endraw %}

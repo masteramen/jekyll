@@ -3,11 +3,11 @@ layout: post
 title:  "Spring+SpringMVC+MyBatis深入学习及搭建(十五)——SpringMVC注解开发（基础篇）"
 title2:  "Spring+SpringMVC+MyBatis深入学习及搭建(十五)——SpringMVC注解开发（基础篇）"
 date:   2017-01-01 23:51:53  +0800
-source:  "http://www.jfox.info/spring-springmvc-mybatis%e6%b7%b1%e5%85%a5%e5%ad%a6%e4%b9%a0%e5%8f%8a%e6%90%ad%e5%bb%ba-%e5%8d%81%e4%ba%94-springmvc%e6%b3%a8%e8%a7%a3%e5%bc%80%e5%8f%91-%e5%9f%ba%e7%a1%80%e7%af%87.html"
+source:  "https://www.jfox.info/spring-springmvc-mybatis%e6%b7%b1%e5%85%a5%e5%ad%a6%e4%b9%a0%e5%8f%8a%e6%90%ad%e5%bb%ba-%e5%8d%81%e4%ba%94-springmvc%e6%b3%a8%e8%a7%a3%e5%bc%80%e5%8f%91-%e5%9f%ba%e7%a1%80%e7%af%87.html"
 fileName:  "20170101013"
 lang:  "zh_CN"
 published: true
-permalink: "spring-springmvc-mybatis%e6%b7%b1%e5%85%a5%e5%ad%a6%e4%b9%a0%e5%8f%8a%e6%90%ad%e5%bb%ba-%e5%8d%81%e4%ba%94-springmvc%e6%b3%a8%e8%a7%a3%e5%bc%80%e5%8f%91-%e5%9f%ba%e7%a1%80%e7%af%87.html"
+permalink: "2017/https://www.jfox.info/spring-springmvc-mybatis%e6%b7%b1%e5%85%a5%e5%ad%a6%e4%b9%a0%e5%8f%8a%e6%90%ad%e5%bb%ba-%e5%8d%81%e4%ba%94-springmvc%e6%b3%a8%e8%a7%a3%e5%bc%80%e5%8f%91-%e5%9f%ba%e7%a1%80%e7%af%87.html"
 ---
 {% raw %}
 （1）进入商品查询列表页面；
@@ -26,7 +26,7 @@ mapper:
 
 　　根据id更新Items表的数据
 
-不用开发了，使用逆向工程生成的代码，[Spring+SpringMVC+MyBatis深入学习及搭建(十)——MyBatis逆向工程](http://www.jfox.info/go.php?url=http://www.cnblogs.com/Joanna-Yan/p/6973266.html)
+不用开发了，使用逆向工程生成的代码，[Spring+SpringMVC+MyBatis深入学习及搭建(十)——MyBatis逆向工程](https://www.jfox.info/go.php?url=http://www.cnblogs.com/Joanna-Yan/p/6973266.html)
 
 ## 1.3开发service
 
@@ -521,5 +521,29 @@ Contrller方法定义如下：
 
 对于get请求中文参数出现乱码解决方法有两个：
 
-修改Tomcat配置文件添加编码与工程
+修改Tomcat配置文件添加编码与工程编码一致，如下：
+
+    <Connector **URIEncoding="utf-8"** connectionTimeout="20000" port="8080" protocol="HTTP/1.1" redirectPort="8443"/>
+
+另外一种方法对参数进行重新编码：
+
+    String userName=new String(request.getParamter("userName").getBytes("ISO8859-1"),"utf-8");
+
+ISO8859-1是Tomcat默认编码，需要将Tomcat编码后的内容按utf-8编码。
+
+# 6.SpringMVC和Struts2的区别
+
+（1）SpringMVC的入口是一个Servlet即前端控制器，而Struts2的入口是一个filter过滤器。
+
+（2）SpringMVC是基于方法开发（一个url对应一个方法），请求参数传递到方法的形参，可以设计为单例或多例（建议单例），struts2是基于类开发，传递参数是通过类的成员变量，只能设计为多例。
+
+SpringMVC将url和Controller方法映射，映射成功后SpringMVC生成一个Handler对象，对象中止包括了一个method。方法执行结束后，形参数据销毁。
+
+SpringMVC的Controller开发类似service开发。
+
+（3）Strut采用值栈存储请求和响应的数据，通过OGNL存取数据，SpringMVC通过参数解析器将request请求内容解析，并给方法形参赋值，将数据和视图封装成ModelAndView对象，最后又将ModelAndView中的模型数据通过request域传输到页面。jsp视图解析器默认使用jstl。
+
+（4）经过实际测试，Struts2速度慢在于使用Struts标签，如果使用Struts建议使用jstl。
+
+如果此文对您有帮助，微信打赏我一下吧~
 {% endraw %}

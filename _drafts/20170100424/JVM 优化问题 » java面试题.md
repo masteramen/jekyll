@@ -3,11 +3,11 @@ layout: post
 title:  "JVM 优化问题 » java面试题"
 title2:  "JVM 优化问题 » java面试题"
 date:   2017-01-01 23:42:04  +0800
-source:  "http://www.jfox.info/JVM-you-hua-wen-ti.html"
+source:  "https://www.jfox.info/JVM-you-hua-wen-ti.html"
 fileName:  "20170100424"
 lang:  "zh_CN"
 published: true
-permalink: "JVM-you-hua-wen-ti.html"
+permalink: "2017/https://www.jfox.info/JVM-you-hua-wen-ti.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期五, 六月 7, 2013

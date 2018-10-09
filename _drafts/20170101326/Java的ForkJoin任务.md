@@ -3,11 +3,11 @@ layout: post
 title:  "Java的Fork/Join任务"
 title2:  "Java的ForkJoin任务"
 date:   2017-01-01 23:57:06  +0800
-source:  "http://www.jfox.info/java%e7%9a%84forkjoin%e4%bb%bb%e5%8a%a1.html"
+source:  "https://www.jfox.info/java%e7%9a%84forkjoin%e4%bb%bb%e5%8a%a1.html"
 fileName:  "20170101326"
 lang:  "zh_CN"
 published: true
-permalink: "java%e7%9a%84forkjoin%e4%bb%bb%e5%8a%a1.html"
+permalink: "2017/https://www.jfox.info/java%e7%9a%84forkjoin%e4%bb%bb%e5%8a%a1.html"
 ---
 {% raw %}
 H2M_LI_HEADER 

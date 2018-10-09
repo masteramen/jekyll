@@ -3,11 +3,11 @@ layout: post
 title:  "mvn clean package 错误:不兼容的类型的解决方案"
 title2:  "mvn clean package 错误不兼容的类型的解决方案"
 date:   2017-01-01 23:43:35  +0800
-source:  "http://www.jfox.info/mvn-clean-package-%e9%94%99%e8%af%af%e4%b8%8d%e5%85%bc%e5%ae%b9%e7%9a%84%e7%b1%bb%e5%9e%8b%e7%9a%84%e8%a7%a3%e5%86%b3%e6%96%b9%e6%a1%88.html"
+source:  "https://www.jfox.info/mvn-clean-package-%e9%94%99%e8%af%af%e4%b8%8d%e5%85%bc%e5%ae%b9%e7%9a%84%e7%b1%bb%e5%9e%8b%e7%9a%84%e8%a7%a3%e5%86%b3%e6%96%b9%e6%a1%88.html"
 fileName:  "20170100515"
 lang:  "zh_CN"
 published: true
-permalink: "mvn-clean-package-%e9%94%99%e8%af%af%e4%b8%8d%e5%85%bc%e5%ae%b9%e7%9a%84%e7%b1%bb%e5%9e%8b%e7%9a%84%e8%a7%a3%e5%86%b3%e6%96%b9%e6%a1%88.html"
+permalink: "2017/https://www.jfox.info/mvn-clean-package-%e9%94%99%e8%af%af%e4%b8%8d%e5%85%bc%e5%ae%b9%e7%9a%84%e7%b1%bb%e5%9e%8b%e7%9a%84%e8%a7%a3%e5%86%b3%e6%96%b9%e6%a1%88.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期六, 二月 1, 2014
@@ -64,5 +64,5 @@ public <X> X find(Class<X> clazz)；
 
 参考资料：http://maven.apache.org/plugins/maven-compiler-plugin/non-javac-compilers.html
 
-转自 [mvn clean package 错误:不兼容的类型的解决方案 | micmiu – 软件开发+生活点滴](http://www.jfox.info/go.php?url=http://www.micmiu.com/software/build/mvn-package-generics-compiles-error/).
+转自 [mvn clean package 错误:不兼容的类型的解决方案 | micmiu – 软件开发+生活点滴](https://www.jfox.info/go.php?url=http://www.micmiu.com/software/build/mvn-package-generics-compiles-error/).
 {% endraw %}

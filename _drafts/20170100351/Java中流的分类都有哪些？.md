@@ -3,11 +3,11 @@ layout: post
 title:  "Java中流的分类都有哪些？"
 title2:  "Java中流的分类都有哪些？"
 date:   2017-01-01 23:40:51  +0800
-source:  "http://www.jfox.info/java-zhong-liu-de-fen-lei-dou-you-na-xie.html"
+source:  "https://www.jfox.info/java-zhong-liu-de-fen-lei-dou-you-na-xie.html"
 fileName:  "20170100351"
 lang:  "zh_CN"
 published: true
-permalink: "java-zhong-liu-de-fen-lei-dou-you-na-xie.html"
+permalink: "2017/https://www.jfox.info/java-zhong-liu-de-fen-lei-dou-you-na-xie.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期五, 五月 17, 2013

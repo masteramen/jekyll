@@ -3,11 +3,11 @@ layout: post
 title:  "JavaScript实现继承的几种方式"
 title2:  "JavaScript实现继承的几种方式"
 date:   2017-01-01 23:44:46  +0800
-source:  "http://www.jfox.info/javascript-implements-extends-methods.html"
+source:  "https://www.jfox.info/javascript-implements-extends-methods.html"
 fileName:  "20170100586"
 lang:  "zh_CN"
 published: true
-permalink: "javascript-implements-extends-methods.html"
+permalink: "2017/https://www.jfox.info/javascript-implements-extends-methods.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期一, 二月 24, 2014

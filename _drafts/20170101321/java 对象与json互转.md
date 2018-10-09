@@ -3,11 +3,11 @@ layout: post
 title:  "java 对象与json互转"
 title2:  "java 对象与json互转"
 date:   2017-01-01 23:57:01  +0800
-source:  "http://www.jfox.info/java%e5%af%b9%e8%b1%a1%e4%b8%8ejson%e4%ba%92%e8%bd%ac.html"
+source:  "https://www.jfox.info/java%e5%af%b9%e8%b1%a1%e4%b8%8ejson%e4%ba%92%e8%bd%ac.html"
 fileName:  "20170101321"
 lang:  "zh_CN"
 published: true
-permalink: "java%e5%af%b9%e8%b1%a1%e4%b8%8ejson%e4%ba%92%e8%bd%ac.html"
+permalink: "2017/https://www.jfox.info/java%e5%af%b9%e8%b1%a1%e4%b8%8ejson%e4%ba%92%e8%bd%ac.html"
 ---
 {% raw %}
 有时为了项目需求，会将对象数据转换成json数据，以下是个人根据项目需求实现的方法。

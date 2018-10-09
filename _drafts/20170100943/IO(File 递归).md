@@ -3,11 +3,11 @@ layout: post
 title:  "IO(File 递归)"
 title2:  "IO(File 递归)"
 date:   2017-01-01 23:50:43  +0800
-source:  "http://www.jfox.info/iofile-%e9%80%92%e5%bd%92.html"
+source:  "https://www.jfox.info/iofile-%e9%80%92%e5%bd%92.html"
 fileName:  "20170100943"
 lang:  "zh_CN"
 published: true
-permalink: "iofile-%e9%80%92%e5%bd%92.html"
+permalink: "2017/https://www.jfox.info/iofile-%e9%80%92%e5%bd%92.html"
 ---
 {% raw %}
 **File概述** java.io.File类:文件和目录路径名的抽象表示形式。  用来描述电脑中文件,文件夹,以及路径类  **常用的3个和File有关的单词:** file:文件 directory:文件夹(目录) path:路径 File是一个与系统无关的类

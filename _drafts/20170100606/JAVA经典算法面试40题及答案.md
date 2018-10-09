@@ -3,11 +3,11 @@ layout: post
 title:  "JAVA经典算法面试40题及答案"
 title2:  "JAVA经典算法面试40题及答案"
 date:   2017-01-01 23:45:06  +0800
-source:  "http://www.jfox.info/java-classical-algorithm-interview-40-questions-and-answer.html"
+source:  "https://www.jfox.info/java-classical-algorithm-interview-40-questions-and-answer.html"
 fileName:  "20170100606"
 lang:  "zh_CN"
 published: true
-permalink: "java-classical-algorithm-interview-40-questions-and-answer.html"
+permalink: "2017/https://www.jfox.info/java-classical-algorithm-interview-40-questions-and-answer.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期日, 三月 9, 2014

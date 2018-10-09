@@ -3,11 +3,11 @@ layout: post
 title:  "java中stack 和 heap的区别，java中的垃圾回收机制"
 title2:  "java中stack 和 heap的区别，java中的垃圾回收机制"
 date:   2017-01-01 23:45:08  +0800
-source:  "http://www.jfox.info/the-difference-between-the-stack-and-the-heap-of-java-java-garbage-collection-mechanism.html"
+source:  "https://www.jfox.info/the-difference-between-the-stack-and-the-heap-of-java-java-garbage-collection-mechanism.html"
 fileName:  "20170100608"
 lang:  "zh_CN"
 published: true
-permalink: "the-difference-between-the-stack-and-the-heap-of-java-java-garbage-collection-mechanism.html"
+permalink: "2017/https://www.jfox.info/the-difference-between-the-stack-and-the-heap-of-java-java-garbage-collection-mechanism.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期二, 三月 11, 2014

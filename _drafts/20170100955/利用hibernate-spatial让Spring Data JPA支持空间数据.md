@@ -3,11 +3,11 @@ layout: post
 title:  "利用hibernate-spatial让Spring Data JPA支持空间数据"
 title2:  "利用hibernate-spatial让Spring Data JPA支持空间数据"
 date:   2017-01-01 23:50:55  +0800
-source:  "http://www.jfox.info/%e5%88%a9%e7%94%a8hibernate-spatial%e8%ae%a9spring-data-jpa%e6%94%af%e6%8c%81%e7%a9%ba%e9%97%b4%e6%95%b0%e6%8d%ae.html"
+source:  "https://www.jfox.info/%e5%88%a9%e7%94%a8hibernate-spatial%e8%ae%a9spring-data-jpa%e6%94%af%e6%8c%81%e7%a9%ba%e9%97%b4%e6%95%b0%e6%8d%ae.html"
 fileName:  "20170100955"
 lang:  "zh_CN"
 published: true
-permalink: "%e5%88%a9%e7%94%a8hibernate-spatial%e8%ae%a9spring-data-jpa%e6%94%af%e6%8c%81%e7%a9%ba%e9%97%b4%e6%95%b0%e6%8d%ae.html"
+permalink: "2017/https://www.jfox.info/%e5%88%a9%e7%94%a8hibernate-spatial%e8%ae%a9spring-data-jpa%e6%94%af%e6%8c%81%e7%a9%ba%e9%97%b4%e6%95%b0%e6%8d%ae.html"
 ---
 {% raw %}
 `Spring Data JPA`的极度简便的使用方式让我们爱不释手，但是我们在项目中经常会有使用空间数据的场景，而不同的数据库对空间数据实现的方式不同，而这些不仅是`JPA`或者`Spring Data JPA`都是不支持的这时我们需要引入`hibernate-spatial`来去除数据库支持的异构性。

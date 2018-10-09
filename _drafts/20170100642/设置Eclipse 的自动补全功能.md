@@ -3,11 +3,11 @@ layout: post
 title:  "设置Eclipse 的自动补全功能"
 title2:  "设置Eclipse 的自动补全功能"
 date:   2017-01-01 23:45:42  +0800
-source:  "http://www.jfox.info/how-to-set-up-eclipse-auto-complete-feature.html"
+source:  "https://www.jfox.info/how-to-set-up-eclipse-auto-complete-feature.html"
 fileName:  "20170100642"
 lang:  "zh_CN"
 published: true
-permalink: "how-to-set-up-eclipse-auto-complete-feature.html"
+permalink: "2017/https://www.jfox.info/how-to-set-up-eclipse-auto-complete-feature.html"
 ---
 {% raw %}
 Eclipse 中的自动补全功能（如自动补全“}”、补全“try-catch”等）非常强大，默认只对“.”敏感（输入“.”之后有补全提示框弹出来），其他的要通过快捷键来补全，如何设置才能让Eclipse对所有的字母和“.”都敏感？

@@ -3,11 +3,11 @@ layout: post
 title:  "Collection 和 Collections的区别"
 title2:  "Collection 和 Collections的区别"
 date:   2017-01-01 23:41:03  +0800
-source:  "http://www.jfox.info/Collection-he-Collections-de-qu-bie.html"
+source:  "https://www.jfox.info/Collection-he-Collections-de-qu-bie.html"
 fileName:  "20170100363"
 lang:  "zh_CN"
 published: true
-permalink: "Collection-he-Collections-de-qu-bie.html"
+permalink: "2017/https://www.jfox.info/Collection-he-Collections-de-qu-bie.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期一, 五月 20, 2013

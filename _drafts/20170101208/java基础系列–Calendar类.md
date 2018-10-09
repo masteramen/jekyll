@@ -3,11 +3,11 @@ layout: post
 title:  "java基础系列–Calendar类"
 title2:  "java基础系列–Calendar类"
 date:   2017-01-01 23:55:08  +0800
-source:  "http://www.jfox.info/java%e5%9f%ba%e7%a1%80%e7%b3%bb%e5%88%97calendar%e7%b1%bb.html"
+source:  "https://www.jfox.info/java%e5%9f%ba%e7%a1%80%e7%b3%bb%e5%88%97calendar%e7%b1%bb.html"
 fileName:  "20170101208"
 lang:  "zh_CN"
 published: true
-permalink: "java%e5%9f%ba%e7%a1%80%e7%b3%bb%e5%88%97calendar%e7%b1%bb.html"
+permalink: "2017/https://www.jfox.info/java%e5%9f%ba%e7%a1%80%e7%b3%bb%e5%88%97calendar%e7%b1%bb.html"
 ---
 {% raw %}
 1、Calendar概述

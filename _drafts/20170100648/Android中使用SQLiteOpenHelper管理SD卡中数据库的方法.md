@@ -3,11 +3,11 @@ layout: post
 title:  "Android中使用SQLiteOpenHelper管理SD卡中数据库的方法"
 title2:  "Android中使用SQLiteOpenHelper管理SD卡中数据库的方法"
 date:   2017-01-01 23:45:48  +0800
-source:  "http://www.jfox.info/android%e4%b8%ad%e4%bd%bf%e7%94%a8sqliteopenhelper%e7%ae%a1%e7%90%86sd%e5%8d%a1%e4%b8%ad%e6%95%b0%e6%8d%ae%e5%ba%93%e7%9a%84%e6%96%b9%e6%b3%95.html"
+source:  "https://www.jfox.info/android%e4%b8%ad%e4%bd%bf%e7%94%a8sqliteopenhelper%e7%ae%a1%e7%90%86sd%e5%8d%a1%e4%b8%ad%e6%95%b0%e6%8d%ae%e5%ba%93%e7%9a%84%e6%96%b9%e6%b3%95.html"
 fileName:  "20170100648"
 lang:  "zh_CN"
 published: true
-permalink: "android%e4%b8%ad%e4%bd%bf%e7%94%a8sqliteopenhelper%e7%ae%a1%e7%90%86sd%e5%8d%a1%e4%b8%ad%e6%95%b0%e6%8d%ae%e5%ba%93%e7%9a%84%e6%96%b9%e6%b3%95.html"
+permalink: "2017/https://www.jfox.info/android%e4%b8%ad%e4%bd%bf%e7%94%a8sqliteopenhelper%e7%ae%a1%e7%90%86sd%e5%8d%a1%e4%b8%ad%e6%95%b0%e6%8d%ae%e5%ba%93%e7%9a%84%e6%96%b9%e6%b3%95.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期六, 六月 28, 2014
@@ -214,5 +214,5 @@ SQLite桌面查看工具：sqlite administrator、sqlite man或者firefox插件s
 
 **参考资料：**
 
-原文地址:[http://www.cnblogs.com/esrichina/p/3347036.html](http://www.jfox.info/go.php?url=http://www.jfox.info/url.php?url=http%3A%2F%2Fwww.cnblogs.com%2Fesrichina%2Fp%2F3347036.html).
+原文地址:[http://www.cnblogs.com/esrichina/p/3347036.html](https://www.jfox.info/go.php?url=http://www.jfox.info/url.php?url=http%3A%2F%2Fwww.cnblogs.com%2Fesrichina%2Fp%2F3347036.html).
 {% endraw %}

@@ -3,11 +3,11 @@ layout: post
 title:  "Amazon前技术副总裁解剖完美技术面试"
 title2:  "Amazon前技术副总裁解剖完美技术面试"
 date:   2017-01-01 23:45:03  +0800
-source:  "http://www.jfox.info/amazon-vice-president-of-technical-perfection-former-technical-anatomy.html"
+source:  "https://www.jfox.info/amazon-vice-president-of-technical-perfection-former-technical-anatomy.html"
 fileName:  "20170100603"
 lang:  "zh_CN"
 published: true
-permalink: "amazon-vice-president-of-technical-perfection-former-technical-anatomy.html"
+permalink: "2017/https://www.jfox.info/amazon-vice-president-of-technical-perfection-former-technical-anatomy.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期四, 三月 6, 2014
@@ -56,7 +56,7 @@ Roseman 补充，他会去寻找那些足够有分量和深度的项目按照 ST
 
 此外，在面试前阅读简历的时候也应当弄清楚，简历上列出的这些项目或产品，无论成功与否，是否会对你自己的公司有益。
 
-[![119ccc88d6d0f23299459f5e32db6d57](http://www.jfox.info/wp-content/uploads/2014/03/119ccc88d6d0f23299459f5e32db6d57.png)](http://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2014/03/119ccc88d6d0f23299459f5e32db6d57.png)
+[![119ccc88d6d0f23299459f5e32db6d57](http://www.jfox.info/wp-content/uploads/2014/03/119ccc88d6d0f23299459f5e32db6d57.png)](https://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2014/03/119ccc88d6d0f23299459f5e32db6d57.png)
 
 **技术问题与面试**
 
@@ -84,7 +84,7 @@ Roseman 的解释是，他遇到过许多不认为自己幸运的人。那些人
 
 相反，如果这个应征者明显是这个职位的绝佳人选，结束时则应进一步增加他对职位的兴趣。在面试时，能够很好地回答应试者的问题并传达出你对公司的热忱是很重要的两点。
 
-[![5595dfd809bdce61dae7b3384f28c648](http://www.jfox.info/wp-content/uploads/2014/03/5595dfd809bdce61dae7b3384f28c648.png)](http://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2014/03/5595dfd809bdce61dae7b3384f28c648.png)
+[![5595dfd809bdce61dae7b3384f28c648](http://www.jfox.info/wp-content/uploads/2014/03/5595dfd809bdce61dae7b3384f28c648.png)](https://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2014/03/5595dfd809bdce61dae7b3384f28c648.png)
 
 **招聘团队**
 
@@ -106,5 +106,5 @@ Roseman 要求招聘团队中的每个人都和应征者见面，并在面试过
 
 - 让面试变得有难度却不失趣味。优秀的研发人员只想和聪明人对话。
 
-来源 [Amazon前技术副总裁解剖完美技术面试 ](http://www.jfox.info/go.php?url=http://www.jfox.info/url.php?url=http%3A%2F%2Fwww.36kr.com%2Fp%2F210076.html).
+来源 [Amazon前技术副总裁解剖完美技术面试 ](https://www.jfox.info/go.php?url=http://www.jfox.info/url.php?url=http%3A%2F%2Fwww.36kr.com%2Fp%2F210076.html).
 {% endraw %}

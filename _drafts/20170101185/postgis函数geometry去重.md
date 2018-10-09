@@ -3,11 +3,11 @@ layout: post
 title:  "postgis函数geometry去重"
 title2:  "postgis函数geometry去重"
 date:   2017-01-01 23:54:45  +0800
-source:  "http://www.jfox.info/postgis%e5%87%bd%e6%95%b0geometry%e5%8e%bb%e9%87%8d.html"
+source:  "https://www.jfox.info/postgis%e5%87%bd%e6%95%b0geometry%e5%8e%bb%e9%87%8d.html"
 fileName:  "20170101185"
 lang:  "zh_CN"
 published: true
-permalink: "postgis%e5%87%bd%e6%95%b0geometry%e5%8e%bb%e9%87%8d.html"
+permalink: "2017/https://www.jfox.info/postgis%e5%87%bd%e6%95%b0geometry%e5%8e%bb%e9%87%8d.html"
 ---
 {% raw %}
 postgis中多边形相交去重：

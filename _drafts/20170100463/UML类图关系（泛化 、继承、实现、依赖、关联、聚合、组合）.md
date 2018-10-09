@@ -3,11 +3,11 @@ layout: post
 title:  "UML类图关系（泛化 、继承、实现、依赖、关联、聚合、组合）"
 title2:  "UML类图关系（泛化 、继承、实现、依赖、关联、聚合、组合）"
 date:   2017-01-01 23:42:43  +0800
-source:  "http://www.jfox.info/uml-lei-tu-guan-xi-fan-hua-ji-cheng-shi-xian-yi-lai-guan-lian-ju-he-zu-he.html"
+source:  "https://www.jfox.info/uml-lei-tu-guan-xi-fan-hua-ji-cheng-shi-xian-yi-lai-guan-lian-ju-he-zu-he.html"
 fileName:  "20170100463"
 lang:  "zh_CN"
 published: true
-permalink: "uml-lei-tu-guan-xi-fan-hua-ji-cheng-shi-xian-yi-lai-guan-lian-ju-he-zu-he.html"
+permalink: "2017/https://www.jfox.info/uml-lei-tu-guan-xi-fan-hua-ji-cheng-shi-xian-yi-lai-guan-lian-ju-he-zu-he.html"
 ---
 {% raw %}
 在UML类图中，常见的有以下几种关系: 泛化（Generalization）,  实现（Realization），关联（Association)，聚合（Aggregation），组合(Composition)，依赖(Dependency)
@@ -26,7 +26,7 @@ permalink: "uml-lei-tu-guan-xi-fan-hua-ji-cheng-shi-xian-yi-lai-guan-lian-ju-he-
 
 　　【箭头指向】：带三角箭头的虚线，箭头指向接口
 
-[![l_ef735a26-8a2b-4b7f-b89d-6404839986f2](http://www.jfox.info/wp-content/uploads/2013/10/l_ef735a26-8a2b-4b7f-b89d-6404839986f2.gif)](http://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2013/10/l_ef735a26-8a2b-4b7f-b89d-6404839986f2.gif) 
+[![l_ef735a26-8a2b-4b7f-b89d-6404839986f2](http://www.jfox.info/wp-content/uploads/2013/10/l_ef735a26-8a2b-4b7f-b89d-6404839986f2.gif)](https://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2013/10/l_ef735a26-8a2b-4b7f-b89d-6404839986f2.gif) 
 
 **　　3. ****关联（****Association)**
 
@@ -36,13 +36,13 @@ permalink: "uml-lei-tu-guan-xi-fan-hua-ji-cheng-shi-xian-yi-lai-guan-lian-ju-he-
 
 　　【箭头及指向】：带普通箭头的实心线，指向被拥有者
 
-[![l_06c535d8-e111-4402-883b-eeee82a5bc5a](http://www.jfox.info/wp-content/uploads/2013/10/l_06c535d8-e111-4402-883b-eeee82a5bc5a.gif)](http://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2013/10/l_06c535d8-e111-4402-883b-eeee82a5bc5a.gif) 
+[![l_06c535d8-e111-4402-883b-eeee82a5bc5a](http://www.jfox.info/wp-content/uploads/2013/10/l_06c535d8-e111-4402-883b-eeee82a5bc5a.gif)](https://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2013/10/l_06c535d8-e111-4402-883b-eeee82a5bc5a.gif) 
 
 　　上图中，老师与学生是双向关联，老师有多名学生，学生也可能有多名老师。但学生与某课程间的关系为单向关联，一名学生可能要上多门课程，课程是个抽象的东西他不拥有学生。 
 
 　　下图为自身关联： 
 
-[![l_882842bc-2f92-4791-b87a-6230ef52d650](http://www.jfox.info/wp-content/uploads/2013/10/l_882842bc-2f92-4791-b87a-6230ef52d650.gif)](http://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2013/10/l_882842bc-2f92-4791-b87a-6230ef52d650.gif)
+[![l_882842bc-2f92-4791-b87a-6230ef52d650](http://www.jfox.info/wp-content/uploads/2013/10/l_882842bc-2f92-4791-b87a-6230ef52d650.gif)](https://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2013/10/l_882842bc-2f92-4791-b87a-6230ef52d650.gif)
 
 **　　4. ****聚合（****Aggregation****）**
 
@@ -54,7 +54,7 @@ permalink: "uml-lei-tu-guan-xi-fan-hua-ji-cheng-shi-xian-yi-lai-guan-lian-ju-he-
 
 　　【箭头及指向】：带空心菱形的实心线，菱形指向整体
 
-[![l_de3f7e1f-0cc1-438e-b9ea-67d5935d2214](http://www.jfox.info/wp-content/uploads/2013/10/l_de3f7e1f-0cc1-438e-b9ea-67d5935d2214.gif)](http://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2013/10/l_de3f7e1f-0cc1-438e-b9ea-67d5935d2214.gif) 
+[![l_de3f7e1f-0cc1-438e-b9ea-67d5935d2214](http://www.jfox.info/wp-content/uploads/2013/10/l_de3f7e1f-0cc1-438e-b9ea-67d5935d2214.gif)](https://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2013/10/l_de3f7e1f-0cc1-438e-b9ea-67d5935d2214.gif) 
 
 **　　5.**** ****组合****(Composition)**
 
@@ -66,7 +66,7 @@ permalink: "uml-lei-tu-guan-xi-fan-hua-ji-cheng-shi-xian-yi-lai-guan-lian-ju-he-
 
 【箭头及指向】：带实心菱形的实线，菱形指向整体
 
-[![l_643c4dad-7818-4224-a713-709f29369bcc](http://www.jfox.info/wp-content/uploads/2013/10/l_643c4dad-7818-4224-a713-709f29369bcc.gif)](http://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2013/10/l_643c4dad-7818-4224-a713-709f29369bcc.gif)
+[![l_643c4dad-7818-4224-a713-709f29369bcc](http://www.jfox.info/wp-content/uploads/2013/10/l_643c4dad-7818-4224-a713-709f29369bcc.gif)](https://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2013/10/l_643c4dad-7818-4224-a713-709f29369bcc.gif)
 
 **　　6. ****依赖****(Dependency)**
 
@@ -76,7 +76,7 @@ permalink: "uml-lei-tu-guan-xi-fan-hua-ji-cheng-shi-xian-yi-lai-guan-lian-ju-he-
 
 　　【箭头及指向】：带箭头的虚线，指向被使用者
 
-[![l_e6f112ca-93d1-4338-88a3-898c66f0e203](http://www.jfox.info/wp-content/uploads/2013/10/l_e6f112ca-93d1-4338-88a3-898c66f0e203.gif)](http://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2013/10/l_e6f112ca-93d1-4338-88a3-898c66f0e203.gif) 
+[![l_e6f112ca-93d1-4338-88a3-898c66f0e203](http://www.jfox.info/wp-content/uploads/2013/10/l_e6f112ca-93d1-4338-88a3-898c66f0e203.gif)](https://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2013/10/l_e6f112ca-93d1-4338-88a3-898c66f0e203.gif) 
 
 　　各种关系的强弱顺序：
 
@@ -84,5 +84,5 @@ permalink: "uml-lei-tu-guan-xi-fan-hua-ji-cheng-shi-xian-yi-lai-guan-lian-ju-he-
 
 　　下面这张UML图，比较形象地展示了各种类图关系：
 
-[![l_e49589f1-1dda-4622-85d0-88638f70871f](http://www.jfox.info/wp-content/uploads/2013/10/l_e49589f1-1dda-4622-85d0-88638f70871f-300x243.png)](http://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2013/10/l_e49589f1-1dda-4622-85d0-88638f70871f.png)
+[![l_e49589f1-1dda-4622-85d0-88638f70871f](http://www.jfox.info/wp-content/uploads/2013/10/l_e49589f1-1dda-4622-85d0-88638f70871f-300x243.png)](https://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2013/10/l_e49589f1-1dda-4622-85d0-88638f70871f.png)
 {% endraw %}

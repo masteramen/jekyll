@@ -3,11 +3,11 @@ layout: post
 title:  "NetBeans 装 Java plugin 出现 some plugins require JDK"
 title2:  "NetBeans 装 Java plugin 出现 some plugins require JDK"
 date:   2017-01-01 23:54:33  +0800
-source:  "http://www.jfox.info/netbeans%e8%a3%85javaplugin%e5%87%ba%e7%8e%b0somepluginsrequirejdk.html"
+source:  "https://www.jfox.info/netbeans%e8%a3%85javaplugin%e5%87%ba%e7%8e%b0somepluginsrequirejdk.html"
 fileName:  "20170101173"
 lang:  "zh_CN"
 published: true
-permalink: "netbeans%e8%a3%85javaplugin%e5%87%ba%e7%8e%b0somepluginsrequirejdk.html"
+permalink: "2017/https://www.jfox.info/netbeans%e8%a3%85javaplugin%e5%87%ba%e7%8e%b0somepluginsrequirejdk.html"
 ---
 {% raw %}
 安装 NetBeans 时系统没 JDK、或 JDK版本太旧，
@@ -18,7 +18,7 @@ permalink: "netbeans%e8%a3%85javaplugin%e5%87%ba%e7%8e%b0somepluginsrequirejdk.h
 ![](/wp-content/uploads/2017/07/1499445161.png)
 解决方是，先下载 Java SE JDK 安装：
 
-[http://www.oracle.com/technetwork/java/javase/downloads/index.html](http://www.jfox.info/go.php?url=http://www.oracle.com/technetwork/java/javase/downloads/index.html)
+[http://www.oracle.com/technetwork/java/javase/downloads/index.html](https://www.jfox.info/go.php?url=http://www.oracle.com/technetwork/java/javase/downloads/index.html)
 
 安装完后，修改 NetBeans 设定档“netbeans.conf”，
 

@@ -3,11 +3,11 @@ layout: post
 title:  "HTTPServer 优雅关闭"
 title2:  "HTTPServer 优雅关闭"
 date:   2017-01-01 23:55:41  +0800
-source:  "http://www.jfox.info/httpserver%e4%bc%98%e9%9b%85%e5%85%b3%e9%97%ad.html"
+source:  "https://www.jfox.info/httpserver%e4%bc%98%e9%9b%85%e5%85%b3%e9%97%ad.html"
 fileName:  "20170101241"
 lang:  "zh_CN"
 published: true
-permalink: "httpserver%e4%bc%98%e9%9b%85%e5%85%b3%e9%97%ad.html"
+permalink: "2017/https://www.jfox.info/httpserver%e4%bc%98%e9%9b%85%e5%85%b3%e9%97%ad.html"
 ---
 {% raw %}
 和同事聊到了服务在需要关闭的时候该如何优雅退出，顺藤摸瓜挖掘了Go1.8的特性。Go 1.8起新增了优雅退出 HTTPServer 的特性，也就是大家经常提到的 GraceFul ShutDown。 
@@ -103,5 +103,5 @@ permalink: "httpserver%e4%bc%98%e9%9b%85%e5%85%b3%e9%97%ad.html"
     [GIN] 2017/07/12 - 20:30:53 | 200 |  3.000360362s | 127.0.0.1 |   GET     /
     Server exist
 
-[点赞](void(0))[httpserver](http://www.jfox.info/go.php?url=http://ju.outofmemory.cn/tag/httpserver/)
+[点赞](void(0))[httpserver](https://www.jfox.info/go.php?url=http://ju.outofmemory.cn/tag/httpserver/)
 {% endraw %}

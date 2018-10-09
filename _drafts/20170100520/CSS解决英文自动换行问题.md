@@ -3,11 +3,11 @@ layout: post
 title:  "CSS解决英文自动换行问题"
 title2:  "CSS解决英文自动换行问题"
 date:   2017-01-01 23:43:40  +0800
-source:  "http://www.jfox.info/css%e8%a7%a3%e5%86%b3%e8%8b%b1%e6%96%87%e8%87%aa%e5%8a%a8%e6%8d%a2%e8%a1%8c%e9%97%ae%e9%a2%98.html"
+source:  "https://www.jfox.info/css%e8%a7%a3%e5%86%b3%e8%8b%b1%e6%96%87%e8%87%aa%e5%8a%a8%e6%8d%a2%e8%a1%8c%e9%97%ae%e9%a2%98.html"
 fileName:  "20170100520"
 lang:  "zh_CN"
 published: true
-permalink: "css%e8%a7%a3%e5%86%b3%e8%8b%b1%e6%96%87%e8%87%aa%e5%8a%a8%e6%8d%a2%e8%a1%8c%e9%97%ae%e9%a2%98.html"
+permalink: "2017/https://www.jfox.info/css%e8%a7%a3%e5%86%b3%e8%8b%b1%e6%96%87%e8%87%aa%e5%8a%a8%e6%8d%a2%e8%a1%8c%e9%97%ae%e9%a2%98.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期一, 二月 3, 2014
@@ -97,5 +97,5 @@ span{padding:10px;white–space:nowrap;}
 <span>标标</span>
 </div
 
-参考来源 [CSS解决英文自动换行_Booday_新浪博客](http://www.jfox.info/go.php?url=http://blog.sina.com.cn/s/blog_44ad44b20100tfg3.html).
+参考来源 [CSS解决英文自动换行_Booday_新浪博客](https://www.jfox.info/go.php?url=http://blog.sina.com.cn/s/blog_44ad44b20100tfg3.html).
 {% endraw %}

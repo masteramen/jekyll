@@ -3,11 +3,11 @@ layout: post
 title:  "Java数据类型(2)——自动封装拆箱"
 title2:  "Java数据类型(2)——自动封装拆箱"
 date:   2017-01-01 23:50:03  +0800
-source:  "http://www.jfox.info/java%e6%95%b0%e6%8d%ae%e7%b1%bb%e5%9e%8b-2-%e8%87%aa%e5%8a%a8%e5%b0%81%e8%a3%85%e6%8b%86%e7%ae%b1.html"
+source:  "https://www.jfox.info/java%e6%95%b0%e6%8d%ae%e7%b1%bb%e5%9e%8b-2-%e8%87%aa%e5%8a%a8%e5%b0%81%e8%a3%85%e6%8b%86%e7%ae%b1.html"
 fileName:  "20170100903"
 lang:  "zh_CN"
 published: true
-permalink: "java%e6%95%b0%e6%8d%ae%e7%b1%bb%e5%9e%8b-2-%e8%87%aa%e5%8a%a8%e5%b0%81%e8%a3%85%e6%8b%86%e7%ae%b1.html"
+permalink: "2017/https://www.jfox.info/java%e6%95%b0%e6%8d%ae%e7%b1%bb%e5%9e%8b-2-%e8%87%aa%e5%8a%a8%e5%b0%81%e8%a3%85%e6%8b%86%e7%ae%b1.html"
 ---
 {% raw %}
 **目的:**

@@ -3,11 +3,11 @@ layout: post
 title:  "sonarqube搭建"
 title2:  "sonarqube搭建"
 date:   2017-01-01 23:50:38  +0800
-source:  "http://www.jfox.info/sonarqube%e6%90%ad%e5%bb%ba.html"
+source:  "https://www.jfox.info/sonarqube%e6%90%ad%e5%bb%ba.html"
 fileName:  "20170100938"
 lang:  "zh_CN"
 published: true
-permalink: "sonarqube%e6%90%ad%e5%bb%ba.html"
+permalink: "2017/https://www.jfox.info/sonarqube%e6%90%ad%e5%bb%ba.html"
 ---
 {% raw %}
 sonar.jdbc.username=root

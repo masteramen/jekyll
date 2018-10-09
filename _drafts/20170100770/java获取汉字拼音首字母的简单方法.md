@@ -3,11 +3,11 @@ layout: post
 title:  "java获取汉字拼音首字母的简单方法"
 title2:  "java获取汉字拼音首字母的简单方法"
 date:   2017-01-01 23:47:50  +0800
-source:  "http://www.jfox.info/java-huo-qu-han-zi-pin-yin-shou-zi-mu-de-jian-dan-fang-fa.html"
+source:  "https://www.jfox.info/java-huo-qu-han-zi-pin-yin-shou-zi-mu-de-jian-dan-fang-fa.html"
 fileName:  "20170100770"
 lang:  "zh_CN"
 published: true
-permalink: "java-huo-qu-han-zi-pin-yin-shou-zi-mu-de-jian-dan-fang-fa.html"
+permalink: "2017/https://www.jfox.info/java-huo-qu-han-zi-pin-yin-shou-zi-mu-de-jian-dan-fang-fa.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期一, 六月 8, 2015

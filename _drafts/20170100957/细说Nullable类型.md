@@ -3,11 +3,11 @@ layout: post
 title:  "细说Nullable类型"
 title2:  "细说Nullable类型"
 date:   2017-01-01 23:50:57  +0800
-source:  "http://www.jfox.info/%e7%bb%86%e8%af%b4nullable-t-%e7%b1%bb%e5%9e%8b.html"
+source:  "https://www.jfox.info/%e7%bb%86%e8%af%b4nullable-t-%e7%b1%bb%e5%9e%8b.html"
 fileName:  "20170100957"
 lang:  "zh_CN"
 published: true
-permalink: "%e7%bb%86%e8%af%b4nullable-t-%e7%b1%bb%e5%9e%8b.html"
+permalink: "2017/https://www.jfox.info/%e7%bb%86%e8%af%b4nullable-t-%e7%b1%bb%e5%9e%8b.html"
 ---
 {% raw %}
 众所周知，值类型变量不能null，这也是为什么它们被称为值类型。但是，在实际的开发过程中，也需要值为`null`的一些场景。例如以下场景：

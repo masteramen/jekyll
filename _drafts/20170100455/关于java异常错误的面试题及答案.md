@@ -3,11 +3,11 @@ layout: post
 title:  "关于java异常错误的面试题及答案"
 title2:  "关于java异常错误的面试题及答案"
 date:   2017-01-01 23:42:35  +0800
-source:  "http://www.jfox.info/guan-yu-java-yi-chang-cuo-wu-de-mian-shi-ti.html"
+source:  "https://www.jfox.info/guan-yu-java-yi-chang-cuo-wu-de-mian-shi-ti.html"
 fileName:  "20170100455"
 lang:  "zh_CN"
 published: true
-permalink: "guan-yu-java-yi-chang-cuo-wu-de-mian-shi-ti.html"
+permalink: "2017/https://www.jfox.info/guan-yu-java-yi-chang-cuo-wu-de-mian-shi-ti.html"
 ---
 {% raw %}
 **1) Java中什么是Exception?**
@@ -240,5 +240,5 @@ try-with-resource块。这2个特性都可以在处理异常时减少代码量�
 
 性问题。
 
-如果你想了解更多关于java异常方面的知识，可以看一下另外一篇关于java异常机制的文章 [http://www.jfox.info/java-yi-chang-ji-zhi](http://www.jfox.info/go.php?url=http://www.jfox.info/java-yi-chang-ji-zhi)
+如果你想了解更多关于java异常方面的知识，可以看一下另外一篇关于java异常机制的文章 [http://www.jfox.info/java-yi-chang-ji-zhi](https://www.jfox.info/go.php?url=http://www.jfox.info/java-yi-chang-ji-zhi)
 {% endraw %}

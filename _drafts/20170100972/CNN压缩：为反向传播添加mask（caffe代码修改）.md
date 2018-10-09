@@ -3,11 +3,11 @@ layout: post
 title:  "CNN压缩：为反向传播添加mask（caffe代码修改）"
 title2:  "CNN压缩：为反向传播添加mask（caffe代码修改）"
 date:   2017-01-01 23:51:12  +0800
-source:  "http://www.jfox.info/cnn%e5%8e%8b%e7%bc%a9%ef%bc%9a%e4%b8%ba%e5%8f%8d%e5%90%91%e4%bc%a0%e6%92%ad%e6%b7%bb%e5%8a%a0mask%ef%bc%88caffe%e4%bb%a3%e7%a0%81%e4%bf%ae%e6%94%b9%ef%bc%89.html"
+source:  "https://www.jfox.info/cnn%e5%8e%8b%e7%bc%a9%ef%bc%9a%e4%b8%ba%e5%8f%8d%e5%90%91%e4%bc%a0%e6%92%ad%e6%b7%bb%e5%8a%a0mask%ef%bc%88caffe%e4%bb%a3%e7%a0%81%e4%bf%ae%e6%94%b9%ef%bc%89.html"
 fileName:  "20170100972"
 lang:  "zh_CN"
 published: true
-permalink: "cnn%e5%8e%8b%e7%bc%a9%ef%bc%9a%e4%b8%ba%e5%8f%8d%e5%90%91%e4%bc%a0%e6%92%ad%e6%b7%bb%e5%8a%a0mask%ef%bc%88caffe%e4%bb%a3%e7%a0%81%e4%bf%ae%e6%94%b9%ef%bc%89.html"
+permalink: "2017/https://www.jfox.info/cnn%e5%8e%8b%e7%bc%a9%ef%bc%9a%e4%b8%ba%e5%8f%8d%e5%90%91%e4%bc%a0%e6%92%ad%e6%b7%bb%e5%8a%a0mask%ef%bc%88caffe%e4%bb%a3%e7%a0%81%e4%bf%ae%e6%94%b9%ef%bc%89.html"
 ---
 {% raw %}
 1void InnerProductLayer<Dtype>::LayerSetUp(const vector<Blob<Dtype>*>& bottom,

@@ -3,11 +3,11 @@ layout: post
 title:  "Stack Overflow揭秘程式开发者15个不为人知的秘密"
 title2:  "Stack Overflow揭秘程式开发者15个不为人知的秘密"
 date:   2017-01-01 23:47:56  +0800
-source:  "http://www.jfox.info/stack-overflow-jie-mi-cheng-shi-kai-fa-zhe-15-ge-bu-wei-ren-zhi-de-mi-mi.html"
+source:  "https://www.jfox.info/stack-overflow-jie-mi-cheng-shi-kai-fa-zhe-15-ge-bu-wei-ren-zhi-de-mi-mi.html"
 fileName:  "20170100776"
 lang:  "zh_CN"
 published: true
-permalink: "stack-overflow-jie-mi-cheng-shi-kai-fa-zhe-15-ge-bu-wei-ren-zhi-de-mi-mi.html"
+permalink: "2017/https://www.jfox.info/stack-overflow-jie-mi-cheng-shi-kai-fa-zhe-15-ge-bu-wei-ren-zhi-de-mi-mi.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期四, 六月 18, 2015

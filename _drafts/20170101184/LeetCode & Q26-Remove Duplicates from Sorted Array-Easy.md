@@ -3,11 +3,11 @@ layout: post
 title:  "LeetCode & Q26-Remove Duplicates from Sorted Array-Easy"
 title2:  "LeetCode & Q26-Remove Duplicates from Sorted Array-Easy"
 date:   2017-01-01 23:54:44  +0800
-source:  "http://www.jfox.info/leetcodeq26removeduplicatesfromsortedarrayeasy.html"
+source:  "https://www.jfox.info/leetcodeq26removeduplicatesfromsortedarrayeasy.html"
 fileName:  "20170101184"
 lang:  "zh_CN"
 published: true
-permalink: "leetcodeq26removeduplicatesfromsortedarrayeasy.html"
+permalink: "2017/https://www.jfox.info/leetcodeq26removeduplicatesfromsortedarrayeasy.html"
 ---
 {% raw %}
 Given a sorted array, remove the duplicates in place such that each element appear only *once* and return the new length.

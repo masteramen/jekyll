@@ -3,11 +3,11 @@ layout: post
 title:  "Java入门——（2）面对对象（上）"
 title2:  "Java入门——（2）面对对象（上）"
 date:   2017-01-01 23:51:01  +0800
-source:  "http://www.jfox.info/java%e5%85%a5%e9%97%a8-2-%e9%9d%a2%e5%af%b9%e5%af%b9%e8%b1%a1-%e4%b8%8a.html"
+source:  "https://www.jfox.info/java%e5%85%a5%e9%97%a8-2-%e9%9d%a2%e5%af%b9%e5%af%b9%e8%b1%a1-%e4%b8%8a.html"
 fileName:  "20170100961"
 lang:  "zh_CN"
 published: true
-permalink: "java%e5%85%a5%e9%97%a8-2-%e9%9d%a2%e5%af%b9%e5%af%b9%e8%b1%a1-%e4%b8%8a.html"
+permalink: "2017/https://www.jfox.info/java%e5%85%a5%e9%97%a8-2-%e9%9d%a2%e5%af%b9%e5%af%b9%e8%b1%a1-%e4%b8%8a.html"
 ---
 {% raw %}
 一、面对对象的概念：把解决的问题安装一定规则划分为多个独立的对象，然后通过调用对象的方法来解决问题。其特点可概括为封装性、继承性、多态性。 

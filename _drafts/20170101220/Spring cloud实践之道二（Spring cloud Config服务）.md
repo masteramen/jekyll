@@ -3,11 +3,11 @@ layout: post
 title:  "Spring cloud实践之道二（Spring cloud Config服务）"
 title2:  "Spring cloud实践之道二（Spring cloud Config服务）"
 date:   2017-01-01 23:55:20  +0800
-source:  "http://www.jfox.info/springcloud%e5%ae%9e%e8%b7%b5%e4%b9%8b%e9%81%93%e4%ba%8cspringcloudconfig%e6%9c%8d%e5%8a%a1.html"
+source:  "https://www.jfox.info/springcloud%e5%ae%9e%e8%b7%b5%e4%b9%8b%e9%81%93%e4%ba%8cspringcloudconfig%e6%9c%8d%e5%8a%a1.html"
 fileName:  "20170101220"
 lang:  "zh_CN"
 published: true
-permalink: "springcloud%e5%ae%9e%e8%b7%b5%e4%b9%8b%e9%81%93%e4%ba%8cspringcloudconfig%e6%9c%8d%e5%8a%a1.html"
+permalink: "2017/https://www.jfox.info/springcloud%e5%ae%9e%e8%b7%b5%e4%b9%8b%e9%81%93%e4%ba%8cspringcloudconfig%e6%9c%8d%e5%8a%a1.html"
 ---
 {% raw %}
 spring cloud config 是一个配置管理工具包，让用户可以集中管理配置。具有中心化，版本控制，支持动态更新，平台独立，语言独立等特性。
@@ -21,8 +21,8 @@ spring cloud config 是一个配置管理工具包，让用户可以集中管理
 将所有的配置放置在专门的配置中心进行统一管理
 
 演示用代码：
-[spring cloud server](http://www.jfox.info/go.php?url=https://github.com/hutou-workhouse/miscroServiceHello/tree/master/springCloudConfigServer)
-[spring cloud client](http://www.jfox.info/go.php?url=https://github.com/hutou-workhouse/miscroServiceHello/tree/master/springCloudConfigClient)
+[spring cloud server](https://www.jfox.info/go.php?url=https://github.com/hutou-workhouse/miscroServiceHello/tree/master/springCloudConfigServer)
+[spring cloud client](https://www.jfox.info/go.php?url=https://github.com/hutou-workhouse/miscroServiceHello/tree/master/springCloudConfigClient)
 
 ## 使用
 
@@ -69,7 +69,7 @@ spring boot config支持三种存储方式：本地资源、SVN、GIT
         }
     }
 
-当我们启动服务之后，可以通过如下的方式验证一下：[http://localhost:port/myservice1/dev](http://www.jfox.info/go.php?url=http://localhost:port/myservice1/dev)
+当我们启动服务之后，可以通过如下的方式验证一下：[http://localhost:port/myservice1/dev](https://www.jfox.info/go.php?url=http://localhost:port/myservice1/dev)
 
 ### 客户端
 

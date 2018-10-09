@@ -3,11 +3,11 @@ layout: post
 title:  "Java的三大特性总结"
 title2:  "Java的三大特性总结"
 date:   2017-01-01 23:52:16  +0800
-source:  "http://www.jfox.info/java%e7%9a%84%e4%b8%89%e5%a4%a7%e7%89%b9%e6%80%a7%e6%80%bb%e7%bb%93.html"
+source:  "https://www.jfox.info/java%e7%9a%84%e4%b8%89%e5%a4%a7%e7%89%b9%e6%80%a7%e6%80%bb%e7%bb%93.html"
 fileName:  "20170101036"
 lang:  "zh_CN"
 published: true
-permalink: "java%e7%9a%84%e4%b8%89%e5%a4%a7%e7%89%b9%e6%80%a7%e6%80%bb%e7%bb%93.html"
+permalink: "2017/https://www.jfox.info/java%e7%9a%84%e4%b8%89%e5%a4%a7%e7%89%b9%e6%80%a7%e6%80%bb%e7%bb%93.html"
 ---
 {% raw %}
 在Java中，面向对象编程有三大特性：**封装**、**继承**、**多态**。

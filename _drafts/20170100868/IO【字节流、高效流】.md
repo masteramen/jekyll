@@ -3,11 +3,11 @@ layout: post
 title:  "IO【字节流、高效流】"
 title2:  "IO【字节流、高效流】"
 date:   2017-01-01 23:49:28  +0800
-source:  "http://www.jfox.info/io-%e5%ad%97%e8%8a%82%e6%b5%81-%e9%ab%98%e6%95%88%e6%b5%81.html"
+source:  "https://www.jfox.info/io-%e5%ad%97%e8%8a%82%e6%b5%81-%e9%ab%98%e6%95%88%e6%b5%81.html"
 fileName:  "20170100868"
 lang:  "zh_CN"
 published: true
-permalink: "io-%e5%ad%97%e8%8a%82%e6%b5%81-%e9%ab%98%e6%95%88%e6%b5%81.html"
+permalink: "2017/https://www.jfox.info/io-%e5%ad%97%e8%8a%82%e6%b5%81-%e9%ab%98%e6%95%88%e6%b5%81.html"
 ---
 {% raw %}
 **IO流:**

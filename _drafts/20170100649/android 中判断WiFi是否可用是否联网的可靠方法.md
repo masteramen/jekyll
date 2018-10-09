@@ -3,11 +3,11 @@ layout: post
 title:  "android 中判断WiFi是否可用是否联网的可靠方法"
 title2:  "android 中判断WiFi是否可用是否联网的可靠方法"
 date:   2017-01-01 23:45:49  +0800
-source:  "http://www.jfox.info/whether-wifi-network-is-available-and-reliable-method-in-android.html"
+source:  "https://www.jfox.info/whether-wifi-network-is-available-and-reliable-method-in-android.html"
 fileName:  "20170100649"
 lang:  "zh_CN"
 published: true
-permalink: "whether-wifi-network-is-available-and-reliable-method-in-android.html"
+permalink: "2017/https://www.jfox.info/whether-wifi-network-is-available-and-reliable-method-in-android.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期一, 六月 30, 2014
@@ -60,5 +60,5 @@ public static boolean isWiFiActive(Context inContext) {
 
     }  
 
-原文地址:[http://www.cnblogs.com/leaven/archive/2012/07/29/2613946.html](http://www.jfox.info/go.php?url=http://www.jfox.info/url.php?url=http%3A%2F%2Fwww.cnblogs.com%2Fleaven%2Farchive%2F2012%2F07%2F29%2F2613946.html).
+原文地址:[http://www.cnblogs.com/leaven/archive/2012/07/29/2613946.html](https://www.jfox.info/go.php?url=http://www.jfox.info/url.php?url=http%3A%2F%2Fwww.cnblogs.com%2Fleaven%2Farchive%2F2012%2F07%2F29%2F2613946.html).
 {% endraw %}

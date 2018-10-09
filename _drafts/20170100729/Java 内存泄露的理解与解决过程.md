@@ -3,11 +3,11 @@ layout: post
 title:  "Java 内存泄露的理解与解决过程"
 title2:  "Java 内存泄露的理解与解决过程"
 date:   2017-01-01 23:47:09  +0800
-source:  "http://www.jfox.info/java-na-cun-xie-lu-de-li-jie-yu-jie-jue-guo-cheng.html"
+source:  "https://www.jfox.info/java-na-cun-xie-lu-de-li-jie-yu-jie-jue-guo-cheng.html"
 fileName:  "20170100729"
 lang:  "zh_CN"
 published: true
-permalink: "java-na-cun-xie-lu-de-li-jie-yu-jie-jue-guo-cheng.html"
+permalink: "2017/https://www.jfox.info/java-na-cun-xie-lu-de-li-jie-yu-jie-jue-guo-cheng.html"
 ---
 {% raw %}
 本文详细地介绍了Java内存管理的原理，以及内存泄露产生的原因，同时提供了一些列解决Java内存泄露的方案，希望对各位Java开发者有所帮助。
@@ -214,5 +214,29 @@ D、  GC发现一个只有虚引用的对象内存，那么：
              Log.e( " SoftHashMap " ,  " release  "   +  sv.key);  
            }    
          }    
-          /**  Here we put the key, value pair into the HashMap using
+          /**  Here we put the key, value pair into the HashMap using   
+          a SoftValue object.  */    
+          public  Object put(Object key, Object value)  {   
+           processQueue();  //  throw out garbage collected values first    
+           Log.e( " SoftHashMap " ,  " put into  "   +  key);  
+            return  hash.put(key,  new  SoftValue(value, key, queue));   
+         }    
+          public  Object remove(Object key)  {   
+           processQueue();  //  throw out garbage collected values first    
+            return  hash.remove(key);   
+         }    
+          public   void  clear()  {   
+           hardCache.clear();   
+           processQueue();  //  throw out garbage collected values    
+          hash.clear();   
+        }    
+         public   int  size()  {   
+          processQueue();  //  throw out garbage collected values first    
+           return  hash.size();   
+        }    
+         public  Set entrySet()  {   
+           //  no, no, you may NOT do that!!! GRRR    
+           throw   new  UnsupportedOperationException();   
+        }   
+      }
 {% endraw %}

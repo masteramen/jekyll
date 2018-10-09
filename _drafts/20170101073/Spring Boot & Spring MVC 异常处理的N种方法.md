@@ -3,11 +3,11 @@ layout: post
 title:  "Spring Boot & Spring MVC 异常处理的N种方法"
 title2:  "Spring Boot & Spring MVC 异常处理的N种方法"
 date:   2017-01-01 23:52:53  +0800
-source:  "http://www.jfox.info/springbootspringmvc%e5%bc%82%e5%b8%b8%e5%a4%84%e7%90%86%e7%9a%84n%e7%a7%8d%e6%96%b9%e6%b3%95.html"
+source:  "https://www.jfox.info/springbootspringmvc%e5%bc%82%e5%b8%b8%e5%a4%84%e7%90%86%e7%9a%84n%e7%a7%8d%e6%96%b9%e6%b3%95.html"
 fileName:  "20170101073"
 lang:  "zh_CN"
 published: true
-permalink: "springbootspringmvc%e5%bc%82%e5%b8%b8%e5%a4%84%e7%90%86%e7%9a%84n%e7%a7%8d%e6%96%b9%e6%b3%95.html"
+permalink: "2017/https://www.jfox.info/springbootspringmvc%e5%bc%82%e5%b8%b8%e5%a4%84%e7%90%86%e7%9a%84n%e7%a7%8d%e6%96%b9%e6%b3%95.html"
 ---
 {% raw %}
 根据Spring Boot官方文档的说法：
@@ -42,7 +42,7 @@ For machine clients it will produce a JSON response with details of the error, t
 6. 
 `http://localhost:8080/return-json-2`
 
-会发现[FooController](http://www.jfox.info/go.php?url=https://github.com/chanjarster/spring-mvc-error-handling-example/blob/master/src/main/java/me/chanjar/controllers/FooController.java)和[FooRestController](http://www.jfox.info/go.php?url=https://github.com/chanjarster/spring-mvc-error-handling-example/blob/master/src/main/java/me/chanjar/controllers/FooRestController.java)返回的结果都是一个`Whitelabel Error Page`也就是html。
+会发现[FooController](https://www.jfox.info/go.php?url=https://github.com/chanjarster/spring-mvc-error-handling-example/blob/master/src/main/java/me/chanjar/controllers/FooController.java)和[FooRestController](https://www.jfox.info/go.php?url=https://github.com/chanjarster/spring-mvc-error-handling-example/blob/master/src/main/java/me/chanjar/controllers/FooRestController.java)返回的结果都是一个`Whitelabel Error Page`也就是html。
 
 但是如果你使用`curl`访问上述地址，那么返回的都是如下的`json`：
 
@@ -58,13 +58,13 @@ For machine clients it will produce a JSON response with details of the error, t
 
 但是有一个URL除外：`http://localhost:8080/return-text-plain`，它不会返回任何结果，原因稍后会有说明。
 
-本章节代码在[me.chanjar.boot.def](http://www.jfox.info/go.php?url=https://github.com/chanjarster/spring-mvc-error-handling-example/blob/master/src/main/java/me/chanjar/boot/def)，使用[DefaultExample](http://www.jfox.info/go.php?url=https://github.com/chanjarster/spring-mvc-error-handling-example/blob/master/src/main/java/me/chanjar/boot/def/DefaultExample.java)运行。
+本章节代码在[me.chanjar.boot.def](https://www.jfox.info/go.php?url=https://github.com/chanjarster/spring-mvc-error-handling-example/blob/master/src/main/java/me/chanjar/boot/def)，使用[DefaultExample](https://www.jfox.info/go.php?url=https://github.com/chanjarster/spring-mvc-error-handling-example/blob/master/src/main/java/me/chanjar/boot/def/DefaultExample.java)运行。
 
 注意：我们必须在`application.properties`添加`server.error.include-stacktrace=always`才能够得到stacktrace。
 
 ### 为何curl text/plain资源无法获得error
 
-如果你在[logback-spring.xml](http://www.jfox.info/go.php?url=https://github.com/chanjarster/spring-mvc-error-handling-example/blob/master/src/main/resources/logback-spring.xml)里一样配置了这么一段：
+如果你在[logback-spring.xml](https://www.jfox.info/go.php?url=https://github.com/chanjarster/spring-mvc-error-handling-example/blob/master/src/main/resources/logback-spring.xml)里一样配置了这么一段：
 
     <logger name="org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod" level="TRACE"/>
 
@@ -79,27 +79,27 @@ For machine clients it will produce a JSON response with details of the error, t
 `curl http://localhost:8080/return-text-plain`，会隐含一个请求头`Accept: */*`，会匹配到`FooController.returnTextPlain(produces=text/plain)`方法，注意：如果请求头不是`Accept: */*`或`Accept: text/plain`，那么是匹配不到`FooController.returnTextPlain`的。
 
 2. 
-[RequestMappingHandlerMapping](http://www.jfox.info/go.php?url=https://github.com/spring-projects/spring-framework/blob/v4.3.9.RELEASE/spring-webmvc/src/main/java/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerMapping.java)根据url匹配到了(见[AbstractHandlerMethodMapping.lookupHandlerMethod#L341](http://www.jfox.info/go.php?url=https://github.com/spring-projects/spring-framework/blob/v4.3.9.RELEASE/spring-webmvc/src/main/java/org/springframework/web/servlet/handler/AbstractHandlerMethodMapping.java#L341))`FooController.returnTextPlan`(`produces=text/plain`)。
+[RequestMappingHandlerMapping](https://www.jfox.info/go.php?url=https://github.com/spring-projects/spring-framework/blob/v4.3.9.RELEASE/spring-webmvc/src/main/java/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerMapping.java)根据url匹配到了(见[AbstractHandlerMethodMapping.lookupHandlerMethod#L341](https://www.jfox.info/go.php?url=https://github.com/spring-projects/spring-framework/blob/v4.3.9.RELEASE/spring-webmvc/src/main/java/org/springframework/web/servlet/handler/AbstractHandlerMethodMapping.java#L341))`FooController.returnTextPlan`(`produces=text/plain`)。
 
 3. 
 方法抛出了异常，forward到`/error`。
 
 4. 
-[RequestMappingHandlerMapping](http://www.jfox.info/go.php?url=https://github.com/spring-projects/spring-framework/blob/v4.3.9.RELEASE/spring-webmvc/src/main/java/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerMapping.java)根据url匹配到了(见[AbstractHandlerMethodMapping.lookupHandlerMethod#L341](http://www.jfox.info/go.php?url=https://github.com/spring-projects/spring-framework/blob/v4.3.9.RELEASE/spring-webmvc/src/main/java/org/springframework/web/servlet/handler/AbstractHandlerMethodMapping.java#L341))[BasicErrorController](http://www.jfox.info/go.php?url=https://github.com/spring-projects/spring-boot/blob/v1.5.4.RELEASE/spring-boot-autoconfigure/src/main/java/org/springframework/boot/autoconfigure/web/BasicErrorController.java)的两个方法[errorHtml][BasicErrorController_errorHtml](BasicErrorController_errorHtml)和[error][BasicErrorController_error](BasicErrorController_error)。
+[RequestMappingHandlerMapping](https://www.jfox.info/go.php?url=https://github.com/spring-projects/spring-framework/blob/v4.3.9.RELEASE/spring-webmvc/src/main/java/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerMapping.java)根据url匹配到了(见[AbstractHandlerMethodMapping.lookupHandlerMethod#L341](https://www.jfox.info/go.php?url=https://github.com/spring-projects/spring-framework/blob/v4.3.9.RELEASE/spring-webmvc/src/main/java/org/springframework/web/servlet/handler/AbstractHandlerMethodMapping.java#L341))[BasicErrorController](https://www.jfox.info/go.php?url=https://github.com/spring-projects/spring-boot/blob/v1.5.4.RELEASE/spring-boot-autoconfigure/src/main/java/org/springframework/boot/autoconfigure/web/BasicErrorController.java)的两个方法[errorHtml][BasicErrorController_errorHtml](BasicErrorController_errorHtml)和[error][BasicErrorController_error](BasicErrorController_error)。
 
 5. 
-因为请求头`Accept: */*`，所以会匹配[error](http://www.jfox.info/go.php?url=https://github.com/spring-projects/spring-boot/blob/v1.5.4.RELEASE/spring-boot-autoconfigure/src/main/java/org/springframework/boot/autoconfigure/web/BasicErrorController.java#L98)方法上(见[AbstractHandlerMethodMapping#L352](http://www.jfox.info/go.php?url=https://github.com/spring-projects/spring-framework/blob/v4.3.9.RELEASE/spring-webmvc/src/main/java/org/springframework/web/servlet/handler/AbstractHandlerMethodMapping.java#L352)，[RequestMappingInfo.compareTo](http://www.jfox.info/go.php?url=https://github.com/spring-projects/spring-framework/blob/v4.3.9.RELEASE/spring-webmvc/src/main/java/org/springframework/web/servlet/mvc/method/RequestMappingInfo.java#L266)，[ProducesRequestCondition.compareTo](http://www.jfox.info/go.php?url=https://github.com/spring-projects/spring-framework/blob/v4.3.9.RELEASE/spring-webmvc/src/main/java/org/springframework/web/servlet/mvc/condition/ProducesRequestCondition.java#L235))。
+因为请求头`Accept: */*`，所以会匹配[error](https://www.jfox.info/go.php?url=https://github.com/spring-projects/spring-boot/blob/v1.5.4.RELEASE/spring-boot-autoconfigure/src/main/java/org/springframework/boot/autoconfigure/web/BasicErrorController.java#L98)方法上(见[AbstractHandlerMethodMapping#L352](https://www.jfox.info/go.php?url=https://github.com/spring-projects/spring-framework/blob/v4.3.9.RELEASE/spring-webmvc/src/main/java/org/springframework/web/servlet/handler/AbstractHandlerMethodMapping.java#L352)，[RequestMappingInfo.compareTo](https://www.jfox.info/go.php?url=https://github.com/spring-projects/spring-framework/blob/v4.3.9.RELEASE/spring-webmvc/src/main/java/org/springframework/web/servlet/mvc/method/RequestMappingInfo.java#L266)，[ProducesRequestCondition.compareTo](https://www.jfox.info/go.php?url=https://github.com/spring-projects/spring-framework/blob/v4.3.9.RELEASE/spring-webmvc/src/main/java/org/springframework/web/servlet/mvc/condition/ProducesRequestCondition.java#L235))。
 
 6. 
-`error`方法返回的是`ResponseEntity<Map<String, Object>>`，会被[HttpEntityMethodProcessor.handleReturnValue](http://www.jfox.info/go.php?url=https://github.com/spring-projects/spring-framework/blob/v4.3.9.RELEASE/spring-webmvc/src/main/java/org/springframework/web/servlet/mvc/method/annotation/HttpEntityMethodProcessor.java#L159)处理。
+`error`方法返回的是`ResponseEntity<Map<String, Object>>`，会被[HttpEntityMethodProcessor.handleReturnValue](https://www.jfox.info/go.php?url=https://github.com/spring-projects/spring-framework/blob/v4.3.9.RELEASE/spring-webmvc/src/main/java/org/springframework/web/servlet/mvc/method/annotation/HttpEntityMethodProcessor.java#L159)处理。
 
 7. 
-[HttpEntityMethodProcessor](http://www.jfox.info/go.php?url=https://github.com/spring-projects/spring-framework/blob/v4.3.9.RELEASE/spring-webmvc/src/main/java/org/springframework/web/servlet/mvc/method/annotation/HttpEntityMethodProcessor.java)进入[AbstractMessageConverterMethodProcessor.writeWithMessageConverters](http://www.jfox.info/go.php?url=https://github.com/spring-projects/spring-framework/blob/v4.3.9.RELEASE/spring-webmvc/src/main/java/org/springframework/web/servlet/mvc/method/annotation/AbstractMessageConverterMethodProcessor.java#L163)，发现请求要求`*/*`(`Accept: */*`)，而能够产生`text/plain`(`FooController.returnTextPlan produces=text/plain`)，那它会去找能够将`Map`转换成`String`的[HttpMessageConverter][HttpMessageConverter](HttpMessageConverter)，结果是找不到。
+[HttpEntityMethodProcessor](https://www.jfox.info/go.php?url=https://github.com/spring-projects/spring-framework/blob/v4.3.9.RELEASE/spring-webmvc/src/main/java/org/springframework/web/servlet/mvc/method/annotation/HttpEntityMethodProcessor.java)进入[AbstractMessageConverterMethodProcessor.writeWithMessageConverters](https://www.jfox.info/go.php?url=https://github.com/spring-projects/spring-framework/blob/v4.3.9.RELEASE/spring-webmvc/src/main/java/org/springframework/web/servlet/mvc/method/annotation/AbstractMessageConverterMethodProcessor.java#L163)，发现请求要求`*/*`(`Accept: */*`)，而能够产生`text/plain`(`FooController.returnTextPlan produces=text/plain`)，那它会去找能够将`Map`转换成`String`的[HttpMessageConverter][HttpMessageConverter](HttpMessageConverter)，结果是找不到。
 
 8. 
-[AbstractMessageConverterMethodProcessor](http://www.jfox.info/go.php?url=https://github.com/spring-projects/spring-framework/blob/v4.3.9.RELEASE/spring-webmvc/src/main/java/org/springframework/web/servlet/mvc/method/annotation/AbstractMessageConverterMethodProcessor.java)抛出[HttpMediaTypeNotAcceptableException](http://www.jfox.info/go.php?url=https://github.com/spring-projects/spring-framework/blob/v4.3.9.RELEASE/spring-webmvc/src/main/java/org/springframework/web/servlet/mvc/method/annotation/AbstractMessageConverterMethodProcessor.java#L259)。
+[AbstractMessageConverterMethodProcessor](https://www.jfox.info/go.php?url=https://github.com/spring-projects/spring-framework/blob/v4.3.9.RELEASE/spring-webmvc/src/main/java/org/springframework/web/servlet/mvc/method/annotation/AbstractMessageConverterMethodProcessor.java)抛出[HttpMediaTypeNotAcceptableException](https://www.jfox.info/go.php?url=https://github.com/spring-projects/spring-framework/blob/v4.3.9.RELEASE/spring-webmvc/src/main/java/org/springframework/web/servlet/mvc/method/annotation/AbstractMessageConverterMethodProcessor.java#L259)。
 
-那么为什么浏览器访问`http://localhost:8080/return-text-plain`就可以呢？你只需打开浏览器的开发者模式看看请求头就会发现`Accept:text/html,...`，所以在第4步会匹配到[BasicErrorController.errorHtml](http://www.jfox.info/go.php?url=https://github.com/spring-projects/spring-boot/blob/v1.5.4.RELEASE/spring-boot-autoconfigure/src/main/java/org/springframework/boot/autoconfigure/web/BasicErrorController.java#L86)方法，那结果自然是没有问题了。
+那么为什么浏览器访问`http://localhost:8080/return-text-plain`就可以呢？你只需打开浏览器的开发者模式看看请求头就会发现`Accept:text/html,...`，所以在第4步会匹配到[BasicErrorController.errorHtml](https://www.jfox.info/go.php?url=https://github.com/spring-projects/spring-boot/blob/v1.5.4.RELEASE/spring-boot-autoconfigure/src/main/java/org/springframework/boot/autoconfigure/web/BasicErrorController.java#L86)方法，那结果自然是没有问题了。
 
 那么这个问题怎么解决呢？我会在*自定义ErrorController*里说明。
 
@@ -117,9 +117,9 @@ to customize it just add a `View` that resolves to ‘error’
 
 这句话讲的不是很明白，其实只要看`ErrorMvcAutoConfiguration.WhitelabelErrorViewConfiguration`的代码就知道，只需注册一个名字叫做`error`的`View`类型的`Bean`就行了。
 
-本例的[CustomDefaultErrorViewConfiguration](http://www.jfox.info/go.php?url=https://github.com/chanjarster/spring-mvc-error-handling-example/blob/master/src/main/java/me/chanjar/boot/customdefaulterrorview/CustomDefaultErrorViewConfiguration.java)注册将`error`页面改到了[templates/custom-error-page/error.html](http://www.jfox.info/go.php?url=https://github.com/chanjarster/spring-mvc-error-handling-example/blob/master/src/main/resources/templates/custom-error-page/error.html)上。
+本例的[CustomDefaultErrorViewConfiguration](https://www.jfox.info/go.php?url=https://github.com/chanjarster/spring-mvc-error-handling-example/blob/master/src/main/java/me/chanjar/boot/customdefaulterrorview/CustomDefaultErrorViewConfiguration.java)注册将`error`页面改到了[templates/custom-error-page/error.html](https://www.jfox.info/go.php?url=https://github.com/chanjarster/spring-mvc-error-handling-example/blob/master/src/main/resources/templates/custom-error-page/error.html)上。
 
-本章节代码在[me.chanjar.boot.customdefaulterrorview](http://www.jfox.info/go.php?url=https://github.com/chanjarster/spring-mvc-error-handling-example/blob/master/src/main/java/me/chanjar/boot/customdefaulterrorview)，使用[CustomDefaultErrorViewExample](http://www.jfox.info/go.php?url=https://github.com/chanjarster/spring-mvc-error-handling-example/blob/master/src/main/java/me/chanjar/boot/customdefaulterrorview/CustomDefaultErrorViewExample.java)运行。
+本章节代码在[me.chanjar.boot.customdefaulterrorview](https://www.jfox.info/go.php?url=https://github.com/chanjarster/spring-mvc-error-handling-example/blob/master/src/main/java/me/chanjar/boot/customdefaulterrorview)，使用[CustomDefaultErrorViewExample](https://www.jfox.info/go.php?url=https://github.com/chanjarster/spring-mvc-error-handling-example/blob/master/src/main/java/me/chanjar/boot/customdefaulterrorview/CustomDefaultErrorViewExample.java)运行。
 
 ### 方法2
 
@@ -137,7 +137,7 @@ to customize it just add a `View` that resolves to ‘error’
 
 simply add a bean of type `ErrorAttributes` to use the existing mechanism but replace the contents
 
-在`ErrorMvcAutoConfiguration.errorAttributes`提供了[DefaultErrorAttributes](http://www.jfox.info/go.php?url=http://docs.spring.io/spring-boot/docs/1.5.4.RELEASE/api/org/springframework/boot/autoconfigure/web/DefaultErrorAttributes.html)，我们也可以参照这个提供一个自己的[CustomErrorAttributes](http://www.jfox.info/go.php?url=https://github.com/chanjarster/spring-mvc-error-handling-example/blob/master/src/main/java/me/chanjar/boot/customerrorattributes/CustomErrorAttributes.java)覆盖掉它。
+在`ErrorMvcAutoConfiguration.errorAttributes`提供了[DefaultErrorAttributes](https://www.jfox.info/go.php?url=http://docs.spring.io/spring-boot/docs/1.5.4.RELEASE/api/org/springframework/boot/autoconfigure/web/DefaultErrorAttributes.html)，我们也可以参照这个提供一个自己的[CustomErrorAttributes](https://www.jfox.info/go.php?url=https://github.com/chanjarster/spring-mvc-error-handling-example/blob/master/src/main/java/me/chanjar/boot/customerrorattributes/CustomErrorAttributes.java)覆盖掉它。
 
 如果使用curl访问相关地址可以看到，返回的json里的出了修改过的属性，还有添加的属性：
 
@@ -152,14 +152,14 @@ simply add a bean of type `ErrorAttributes` to use the existing mechanism but re
       "status": 100
     }
 
-本章节代码在[me.chanjar.boot.customerrorattributes](http://www.jfox.info/go.php?url=https://github.com/chanjarster/spring-mvc-error-handling-example/blob/master/src/main/java/me/chanjar/boot/customerrorattributes)，使用[CustomErrorAttributesExample](http://www.jfox.info/go.php?url=https://github.com/chanjarster/spring-mvc-error-handling-example/blob/master/src/main/java/me/chanjar/boot/customerrorattributes/CustomErrorAttributesExample.java)运行。
+本章节代码在[me.chanjar.boot.customerrorattributes](https://www.jfox.info/go.php?url=https://github.com/chanjarster/spring-mvc-error-handling-example/blob/master/src/main/java/me/chanjar/boot/customerrorattributes)，使用[CustomErrorAttributesExample](https://www.jfox.info/go.php?url=https://github.com/chanjarster/spring-mvc-error-handling-example/blob/master/src/main/java/me/chanjar/boot/customerrorattributes/CustomErrorAttributesExample.java)运行。
 
 ## 自定义ErrorController
 
 在前面提到了`curl http://localhost:8080/return-text-plain`得不到error信息，解决这个问题有两个关键点：
 
 1. 
-请求的时候指定`Accept`头，避免匹配到[BasicErrorController.error](http://www.jfox.info/go.php?url=https://github.com/spring-projects/spring-boot/blob/v1.5.4.RELEASE/spring-boot-autoconfigure/src/main/java/org/springframework/boot/autoconfigure/web/BasicErrorController.java#L98)方法。比如：`curl -H 'Accept: text/plain' http://localhost:8080/return-text-plain`
+请求的时候指定`Accept`头，避免匹配到[BasicErrorController.error](https://www.jfox.info/go.php?url=https://github.com/spring-projects/spring-boot/blob/v1.5.4.RELEASE/spring-boot-autoconfigure/src/main/java/org/springframework/boot/autoconfigure/web/BasicErrorController.java#L98)方法。比如：`curl -H 'Accept: text/plain' http://localhost:8080/return-text-plain`
 
 2. 
 提供自定义的`ErrorController`。
@@ -168,15 +168,15 @@ simply add a bean of type `ErrorAttributes` to use the existing mechanism but re
 
 To do that just extend `BasicErrorController` and add a public method with a `@RequestMapping` that has a `produces` attribute, and create a bean of your new type.
 
-所以我们提供了一个[CustomErrorController](http://www.jfox.info/go.php?url=https://github.com/chanjarster/spring-mvc-error-handling-example/blob/master/src/main/java/me/chanjar/boot/customerrorcontroller/CustomErrorController.java)，并且通过[CustomErrorControllerConfiguration](http://www.jfox.info/go.php?url=https://github.com/chanjarster/spring-mvc-error-handling-example/blob/master/src/main/java/me/chanjar/boot/customerrorcontroller/CustomErrorControllerConfiguration.java)将其注册为Bean。
+所以我们提供了一个[CustomErrorController](https://www.jfox.info/go.php?url=https://github.com/chanjarster/spring-mvc-error-handling-example/blob/master/src/main/java/me/chanjar/boot/customerrorcontroller/CustomErrorController.java)，并且通过[CustomErrorControllerConfiguration](https://www.jfox.info/go.php?url=https://github.com/chanjarster/spring-mvc-error-handling-example/blob/master/src/main/java/me/chanjar/boot/customerrorcontroller/CustomErrorControllerConfiguration.java)将其注册为Bean。
 
-本章节代码在[me.chanjar.boot.customerrorcontroller](http://www.jfox.info/go.php?url=https://github.com/chanjarster/spring-mvc-error-handling-example/blob/master/src/main/java/me/chanjar/boot/customerrorcontroller)，使用[CustomErrorControllerExample](http://www.jfox.info/go.php?url=https://github.com/chanjarster/spring-mvc-error-handling-example/blob/master/src/main/java/me/chanjar/boot/customerrorcontroller/CustomErrorControllerExample.java)运行。
+本章节代码在[me.chanjar.boot.customerrorcontroller](https://www.jfox.info/go.php?url=https://github.com/chanjarster/spring-mvc-error-handling-example/blob/master/src/main/java/me/chanjar/boot/customerrorcontroller)，使用[CustomErrorControllerExample](https://www.jfox.info/go.php?url=https://github.com/chanjarster/spring-mvc-error-handling-example/blob/master/src/main/java/me/chanjar/boot/customerrorcontroller/CustomErrorControllerExample.java)运行。
 
 ## ControllerAdvice定制特定异常返回结果
 
-根据Spring Boot官方文档的例子，可以使用[@ControllerAdvice](http://www.jfox.info/go.php?url=http://docs.spring.io/spring/docs/4.3.9.RELEASE/spring-framework-reference/htmlsingle/#mvc-ann-controller-advice)和[@ExceptionHandler](http://www.jfox.info/go.php?url=http://docs.spring.io/spring/docs/4.3.9.RELEASE/spring-framework-reference/htmlsingle/#mvc-ann-exceptionhandler)对特定异常返回特定的结果。
+根据Spring Boot官方文档的例子，可以使用[@ControllerAdvice](https://www.jfox.info/go.php?url=http://docs.spring.io/spring/docs/4.3.9.RELEASE/spring-framework-reference/htmlsingle/#mvc-ann-controller-advice)和[@ExceptionHandler](https://www.jfox.info/go.php?url=http://docs.spring.io/spring/docs/4.3.9.RELEASE/spring-framework-reference/htmlsingle/#mvc-ann-exceptionhandler)对特定异常返回特定的结果。
 
-我们在这里定义了一个新的异常：AnotherException，然后在[BarControllerAdvice](http://www.jfox.info/go.php?url=https://github.com/chanjarster/spring-mvc-error-handling-example/blob/master/src/main/java/me/chanjar/boot/controlleradvice/BarControllerAdvice.java)中对SomeException和AnotherException定义了不同的[@ExceptionHandler](http://www.jfox.info/go.php?url=http://docs.spring.io/spring/docs/4.3.9.RELEASE/spring-framework-reference/htmlsingle/#mvc-ann-exceptionhandler)：
+我们在这里定义了一个新的异常：AnotherException，然后在[BarControllerAdvice](https://www.jfox.info/go.php?url=https://github.com/chanjarster/spring-mvc-error-handling-example/blob/master/src/main/java/me/chanjar/boot/controlleradvice/BarControllerAdvice.java)中对SomeException和AnotherException定义了不同的[@ExceptionHandler](https://www.jfox.info/go.php?url=http://docs.spring.io/spring/docs/4.3.9.RELEASE/spring-framework-reference/htmlsingle/#mvc-ann-exceptionhandler)：
 
 - 
 SomeException都返回到`controlleradvice/some-ex-error.html`上
@@ -184,16 +184,16 @@ SomeException都返回到`controlleradvice/some-ex-error.html`上
 - 
 AnotherException统统返回JSON
 
-在[BarController](http://www.jfox.info/go.php?url=https://github.com/chanjarster/spring-mvc-error-handling-example/blob/master/src/main/java/me/chanjar/boot/controlleradvice/BarController.java)中，所有`*-a`都抛出`SomeException`，所有`*-b`都抛出`AnotherException`。下面是用浏览器和curl访问的结果：
+在[BarController](https://www.jfox.info/go.php?url=https://github.com/chanjarster/spring-mvc-error-handling-example/blob/master/src/main/java/me/chanjar/boot/controlleradvice/BarController.java)中，所有`*-a`都抛出`SomeException`，所有`*-b`都抛出`AnotherException`。下面是用浏览器和curl访问的结果：
 
 注意上方表格的`Could not find acceptable representation`错误，产生这个的原因和之前**为何curl text/plain资源无法获得error**是一样的：
-无法将[@ExceptionHandler](http://www.jfox.info/go.php?url=http://docs.spring.io/spring/docs/4.3.9.RELEASE/spring-framework-reference/htmlsingle/#mvc-ann-exceptionhandler)返回的数据转换[@RequestMapping.produces](http://www.jfox.info/go.php?url=https://github.com/spring-projects/spring-framework/blob/master/spring-web/src/main/java/org/springframework/web/bind/annotation/RequestMapping.java#L396)所要求的格式。
+无法将[@ExceptionHandler](https://www.jfox.info/go.php?url=http://docs.spring.io/spring/docs/4.3.9.RELEASE/spring-framework-reference/htmlsingle/#mvc-ann-exceptionhandler)返回的数据转换[@RequestMapping.produces](https://www.jfox.info/go.php?url=https://github.com/spring-projects/spring-framework/blob/master/spring-web/src/main/java/org/springframework/web/bind/annotation/RequestMapping.java#L396)所要求的格式。
 
-所以你会发现如果使用[@ExceptionHandler](http://www.jfox.info/go.php?url=http://docs.spring.io/spring/docs/4.3.9.RELEASE/spring-framework-reference/htmlsingle/#mvc-ann-exceptionhandler)，那就得自己根据请求头`Accept`的不同而输出不同的结果了，办法就是定义一个`void @ExceptionHandler`，具体见[@ExceptionHandler javadoc](http://www.jfox.info/go.php?url=https://docs.spring.io/spring/docs/4.3.9.RELEASE/javadoc-api/org/springframework/web/bind/annotation/ExceptionHandler.html)。
+所以你会发现如果使用[@ExceptionHandler](https://www.jfox.info/go.php?url=http://docs.spring.io/spring/docs/4.3.9.RELEASE/spring-framework-reference/htmlsingle/#mvc-ann-exceptionhandler)，那就得自己根据请求头`Accept`的不同而输出不同的结果了，办法就是定义一个`void @ExceptionHandler`，具体见[@ExceptionHandler javadoc](https://www.jfox.info/go.php?url=https://docs.spring.io/spring/docs/4.3.9.RELEASE/javadoc-api/org/springframework/web/bind/annotation/ExceptionHandler.html)。
 
 ## 定制不同Status Code的错误页面
 
-Spring Boot 官方文档提供了一种简单的根据不同Status Code跳到不同error页面的方法，见[这里](http://www.jfox.info/go.php?url=http://docs.spring.io/spring-boot/docs/1.5.4.RELEASE/reference/htmlsingle/#boot-features-error-handling-custom-error-pages)。
+Spring Boot 官方文档提供了一种简单的根据不同Status Code跳到不同error页面的方法，见[这里](https://www.jfox.info/go.php?url=http://docs.spring.io/spring-boot/docs/1.5.4.RELEASE/reference/htmlsingle/#boot-features-error-handling-custom-error-pages)。
 
 我们可以将不同的Status Code的页面放在`classpath: public/error`或`classpath: templates/error`目录下，比如`400.html`、`5xx.html`、`400.ftl`、`5xx.ftl`。
 
@@ -211,8 +211,8 @@ Spring Boot 官方文档提供了一种简单的根据不同Status Code跳到不
     @ResponseStatus(NOT_ACCEPTABLE)
     public class Exception406 extends RuntimeException
 
-注意到这两个异常都有[@ResponseStatus](http://www.jfox.info/go.php?url=https://docs.spring.io/spring/docs/4.3.9.RELEASE/javadoc-api/org/springframework/web/bind/annotation/ResponseStatus.html)注解，这个是注解标明了这个异常所对应的Status Code。
-但是在`loo/error-600`中抛出的[SomeException](http://www.jfox.info/go.php?url=https://github.com/chanjarster/spring-mvc-error-handling-example/blob/master/src/main/java/me/chanjar/exception/SomeException.java)没有这个注解，而是尝试在`Response.setStatus(600)`来达到目的，但结果是失败的，这是为什么呢？：
+注意到这两个异常都有[@ResponseStatus](https://www.jfox.info/go.php?url=https://docs.spring.io/spring/docs/4.3.9.RELEASE/javadoc-api/org/springframework/web/bind/annotation/ResponseStatus.html)注解，这个是注解标明了这个异常所对应的Status Code。
+但是在`loo/error-600`中抛出的[SomeException](https://www.jfox.info/go.php?url=https://github.com/chanjarster/spring-mvc-error-handling-example/blob/master/src/main/java/me/chanjar/exception/SomeException.java)没有这个注解，而是尝试在`Response.setStatus(600)`来达到目的，但结果是失败的，这是为什么呢？：
 
     @RequestMapping("/error-600")
     public String error600(HttpServletRequest request, HttpServletResponse response) throws SomeException {
@@ -223,25 +223,25 @@ Spring Boot 官方文档提供了一种简单的根据不同Status Code跳到不
 
 要了解为什么就需要知道Spring MVC对于异常的处理机制，下面简单讲解一下：
 
-Spring MVC处理异常的地方在[DispatcherServlet.processHandlerException](http://www.jfox.info/go.php?url=https://github.com/spring-projects/spring-framework/blob/v4.3.9.RELEASE/spring-webmvc/src/main/java/org/springframework/web/servlet/DispatcherServlet.java#L1216)，这个方法会利用[HandlerExceptionResolver](http://www.jfox.info/go.php?url=http://docs.spring.io/spring/docs/4.3.9.RELEASE/spring-framework-reference/htmlsingle/#mvc-exceptionhandlers-resolver)来看异常应该返回什么`ModelAndView`。
+Spring MVC处理异常的地方在[DispatcherServlet.processHandlerException](https://www.jfox.info/go.php?url=https://github.com/spring-projects/spring-framework/blob/v4.3.9.RELEASE/spring-webmvc/src/main/java/org/springframework/web/servlet/DispatcherServlet.java#L1216)，这个方法会利用[HandlerExceptionResolver](https://www.jfox.info/go.php?url=http://docs.spring.io/spring/docs/4.3.9.RELEASE/spring-framework-reference/htmlsingle/#mvc-exceptionhandlers-resolver)来看异常应该返回什么`ModelAndView`。
 
-目前已知的[HandlerExceptionResolver](http://www.jfox.info/go.php?url=http://docs.spring.io/spring/docs/4.3.9.RELEASE/spring-framework-reference/htmlsingle/#mvc-exceptionhandlers-resolver)有这么几个：
+目前已知的[HandlerExceptionResolver](https://www.jfox.info/go.php?url=http://docs.spring.io/spring/docs/4.3.9.RELEASE/spring-framework-reference/htmlsingle/#mvc-exceptionhandlers-resolver)有这么几个：
 
 1. 
-[DefaultErrorAttributes](http://www.jfox.info/go.php?url=http://docs.spring.io/spring-boot/docs/1.5.4.RELEASE/api/org/springframework/boot/autoconfigure/web/DefaultErrorAttributes.html)，只负责把异常记录在Request attributes中，name是`org.springframework.boot.autoconfigure.web.DefaultErrorAttributes.ERROR`
+[DefaultErrorAttributes](https://www.jfox.info/go.php?url=http://docs.spring.io/spring-boot/docs/1.5.4.RELEASE/api/org/springframework/boot/autoconfigure/web/DefaultErrorAttributes.html)，只负责把异常记录在Request attributes中，name是`org.springframework.boot.autoconfigure.web.DefaultErrorAttributes.ERROR`
 
 2. 
-[ExceptionHandlerExceptionResolver](http://www.jfox.info/go.php?url=https://docs.spring.io/spring/docs/4.3.9.RELEASE/javadoc-api/org/springframework/web/servlet/mvc/method/annotation/ExceptionHandlerExceptionResolver.html)，根据[@ExceptionHandler](http://www.jfox.info/go.php?url=http://docs.spring.io/spring/docs/4.3.9.RELEASE/spring-framework-reference/htmlsingle/#mvc-ann-exceptionhandler) resolve
+[ExceptionHandlerExceptionResolver](https://www.jfox.info/go.php?url=https://docs.spring.io/spring/docs/4.3.9.RELEASE/javadoc-api/org/springframework/web/servlet/mvc/method/annotation/ExceptionHandlerExceptionResolver.html)，根据[@ExceptionHandler](https://www.jfox.info/go.php?url=http://docs.spring.io/spring/docs/4.3.9.RELEASE/spring-framework-reference/htmlsingle/#mvc-ann-exceptionhandler) resolve
 
 3. 
-[ResponseStatusExceptionResolver](http://www.jfox.info/go.php?url=https://docs.spring.io/spring/docs/4.3.9.RELEASE/javadoc-api/org/springframework/web/servlet/mvc/annotation/ResponseStatusExceptionResolver.html)，根据[@ResponseStatus](http://www.jfox.info/go.php?url=https://docs.spring.io/spring/docs/4.3.9.RELEASE/javadoc-api/org/springframework/web/bind/annotation/ResponseStatus.html) resolve
+[ResponseStatusExceptionResolver](https://www.jfox.info/go.php?url=https://docs.spring.io/spring/docs/4.3.9.RELEASE/javadoc-api/org/springframework/web/servlet/mvc/annotation/ResponseStatusExceptionResolver.html)，根据[@ResponseStatus](https://www.jfox.info/go.php?url=https://docs.spring.io/spring/docs/4.3.9.RELEASE/javadoc-api/org/springframework/web/bind/annotation/ResponseStatus.html) resolve
 
 4. 
-[DefaultHandlerExceptionResolver](http://www.jfox.info/go.php?url=https://docs.spring.io/spring/docs/4.3.9.RELEASE/javadoc-api/org/springframework/web/servlet/mvc/support/DefaultHandlerExceptionResolver.html)，负责处理Spring MVC标准异常
+[DefaultHandlerExceptionResolver](https://www.jfox.info/go.php?url=https://docs.spring.io/spring/docs/4.3.9.RELEASE/javadoc-api/org/springframework/web/servlet/mvc/support/DefaultHandlerExceptionResolver.html)，负责处理Spring MVC标准异常
 
-`Exception403`和`Exception406`都有被[ResponseStatusExceptionResolver](http://www.jfox.info/go.php?url=https://docs.spring.io/spring/docs/4.3.9.RELEASE/javadoc-api/org/springframework/web/servlet/mvc/annotation/ResponseStatusExceptionResolver.html)处理了，而`SomeException`没有任何Handler处理，这样`DispatcherServlet`就会将这个异常往上抛至到容器处理（见[DispatcherServlet#L1243](http://www.jfox.info/go.php?url=https://github.com/spring-projects/spring-framework/blob/v4.3.9.RELEASE/spring-webmvc/src/main/java/org/springframework/web/servlet/DispatcherServlet.java#L1243)），以Tomcat为例，它在[StandardHostValve#L317](http://www.jfox.info/go.php?url=https://github.com/apache/tomcat/blob/TONCAT_9_0_0_M23/java/org/apache/catalina/core/StandardHostValve.java#L317)、[StandardHostValve#L345](http://www.jfox.info/go.php?url=https://github.com/apache/tomcat/blob/TONCAT_9_0_0_M23/java/org/apache/catalina/core/StandardHostValve.java#L345)会将Status Code设置成500，然后跳转到`/error`，结果就是[BasicErrorController](http://www.jfox.info/go.php?url=https://github.com/spring-projects/spring-boot/blob/v1.5.4.RELEASE/spring-boot-autoconfigure/src/main/java/org/springframework/boot/autoconfigure/web/BasicErrorController.java)处理时就看到Status Code=500，然后按照500去找error page找不到，就只能返回White error page了。
+`Exception403`和`Exception406`都有被[ResponseStatusExceptionResolver](https://www.jfox.info/go.php?url=https://docs.spring.io/spring/docs/4.3.9.RELEASE/javadoc-api/org/springframework/web/servlet/mvc/annotation/ResponseStatusExceptionResolver.html)处理了，而`SomeException`没有任何Handler处理，这样`DispatcherServlet`就会将这个异常往上抛至到容器处理（见[DispatcherServlet#L1243](https://www.jfox.info/go.php?url=https://github.com/spring-projects/spring-framework/blob/v4.3.9.RELEASE/spring-webmvc/src/main/java/org/springframework/web/servlet/DispatcherServlet.java#L1243)），以Tomcat为例，它在[StandardHostValve#L317](https://www.jfox.info/go.php?url=https://github.com/apache/tomcat/blob/TONCAT_9_0_0_M23/java/org/apache/catalina/core/StandardHostValve.java#L317)、[StandardHostValve#L345](https://www.jfox.info/go.php?url=https://github.com/apache/tomcat/blob/TONCAT_9_0_0_M23/java/org/apache/catalina/core/StandardHostValve.java#L345)会将Status Code设置成500，然后跳转到`/error`，结果就是[BasicErrorController](https://www.jfox.info/go.php?url=https://github.com/spring-projects/spring-boot/blob/v1.5.4.RELEASE/spring-boot-autoconfigure/src/main/java/org/springframework/boot/autoconfigure/web/BasicErrorController.java)处理时就看到Status Code=500，然后按照500去找error page找不到，就只能返回White error page了。
 
-实际上，从Request的attributes角度来看，交给[BasicErrorController](http://www.jfox.info/go.php?url=https://github.com/spring-projects/spring-boot/blob/v1.5.4.RELEASE/spring-boot-autoconfigure/src/main/java/org/springframework/boot/autoconfigure/web/BasicErrorController.java)处理时，和容器自己处理时，有几个相关属性的内部情况时这样的：
+实际上，从Request的attributes角度来看，交给[BasicErrorController](https://www.jfox.info/go.php?url=https://github.com/spring-projects/spring-boot/blob/v1.5.4.RELEASE/spring-boot-autoconfigure/src/main/java/org/springframework/boot/autoconfigure/web/BasicErrorController.java)处理时，和容器自己处理时，有几个相关属性的内部情况时这样的：
 Attribute nameWhen throw up to TomcatHandled by HandlerExceptionResolver`DefaultErrorAttributes.ERROR`Has valueHas Value`DispatcherServlet.EXCEPTION`No valueHas Value`javax.servlet.error.exception`Has valueNo Value
 PS. `DefaultErrorAttributes.ERROR` = `org.springframework.boot.autoconfigure.web.DefaultErrorAttributes.ERROR`
 PS. `DispatcherServlet.EXCEPTION` = `org.springframework.web.servlet.DispatcherServlet.EXCEPTION`
@@ -255,10 +255,10 @@ PS. `DispatcherServlet.EXCEPTION` = `org.springframework.web.servlet.DispatcherS
 如果这个异常不是你能修改的，比如在第三方的Jar包里
 
 2. 
-如果`@ResponseStatus`使用[HttpStatus](http://www.jfox.info/go.php?url=https://docs.spring.io/spring/docs/4.3.9.RELEASE/javadoc-api/org/springframework/http/HttpStatus.html)作为参数，但是这个枚举定义的Status Code数量有限
+如果`@ResponseStatus`使用[HttpStatus](https://www.jfox.info/go.php?url=https://docs.spring.io/spring/docs/4.3.9.RELEASE/javadoc-api/org/springframework/http/HttpStatus.html)作为参数，但是这个枚举定义的Status Code数量有限
 
 2. 
-使用[@ExceptionHandler](http://www.jfox.info/go.php?url=http://docs.spring.io/spring/docs/4.3.9.RELEASE/spring-framework-reference/htmlsingle/#mvc-ann-exceptionhandler)，不过得注意自己决定view以及status code
+使用[@ExceptionHandler](https://www.jfox.info/go.php?url=http://docs.spring.io/spring/docs/4.3.9.RELEASE/spring-framework-reference/htmlsingle/#mvc-ann-exceptionhandler)，不过得注意自己决定view以及status code
 
 第二种解决办法的例子`loo/error-601`，对应的代码：
 
@@ -279,36 +279,36 @@ PS. `DispatcherServlet.EXCEPTION` = `org.springframework.web.servlet.DispatcherS
 总结：
 
 1. 
-没有被[HandlerExceptionResolver](http://www.jfox.info/go.php?url=http://docs.spring.io/spring/docs/4.3.9.RELEASE/spring-framework-reference/htmlsingle/#mvc-exceptionhandlers-resolver)resolve到的异常会交给容器处理。已知的实现有（按照顺序）：
+没有被[HandlerExceptionResolver](https://www.jfox.info/go.php?url=http://docs.spring.io/spring/docs/4.3.9.RELEASE/spring-framework-reference/htmlsingle/#mvc-exceptionhandlers-resolver)resolve到的异常会交给容器处理。已知的实现有（按照顺序）：
 
 1. 
-[DefaultErrorAttributes](http://www.jfox.info/go.php?url=http://docs.spring.io/spring-boot/docs/1.5.4.RELEASE/api/org/springframework/boot/autoconfigure/web/DefaultErrorAttributes.html)，只负责把异常记录在Request attributes中，name是`org.springframework.boot.autoconfigure.web.DefaultErrorAttributes.ERROR`
+[DefaultErrorAttributes](https://www.jfox.info/go.php?url=http://docs.spring.io/spring-boot/docs/1.5.4.RELEASE/api/org/springframework/boot/autoconfigure/web/DefaultErrorAttributes.html)，只负责把异常记录在Request attributes中，name是`org.springframework.boot.autoconfigure.web.DefaultErrorAttributes.ERROR`
 
 2. 
-[ExceptionHandlerExceptionResolver](http://www.jfox.info/go.php?url=https://docs.spring.io/spring/docs/4.3.9.RELEASE/javadoc-api/org/springframework/web/servlet/mvc/method/annotation/ExceptionHandlerExceptionResolver.html)，根据[@ExceptionHandler](http://www.jfox.info/go.php?url=http://docs.spring.io/spring/docs/4.3.9.RELEASE/spring-framework-reference/htmlsingle/#mvc-ann-exceptionhandler) resolve
+[ExceptionHandlerExceptionResolver](https://www.jfox.info/go.php?url=https://docs.spring.io/spring/docs/4.3.9.RELEASE/javadoc-api/org/springframework/web/servlet/mvc/method/annotation/ExceptionHandlerExceptionResolver.html)，根据[@ExceptionHandler](https://www.jfox.info/go.php?url=http://docs.spring.io/spring/docs/4.3.9.RELEASE/spring-framework-reference/htmlsingle/#mvc-ann-exceptionhandler) resolve
 
 3. 
-[ResponseStatusExceptionResolver](http://www.jfox.info/go.php?url=https://docs.spring.io/spring/docs/4.3.9.RELEASE/javadoc-api/org/springframework/web/servlet/mvc/annotation/ResponseStatusExceptionResolver.html)，根据[@ResponseStatus](http://www.jfox.info/go.php?url=https://docs.spring.io/spring/docs/4.3.9.RELEASE/javadoc-api/org/springframework/web/bind/annotation/ResponseStatus.html) resolve
+[ResponseStatusExceptionResolver](https://www.jfox.info/go.php?url=https://docs.spring.io/spring/docs/4.3.9.RELEASE/javadoc-api/org/springframework/web/servlet/mvc/annotation/ResponseStatusExceptionResolver.html)，根据[@ResponseStatus](https://www.jfox.info/go.php?url=https://docs.spring.io/spring/docs/4.3.9.RELEASE/javadoc-api/org/springframework/web/bind/annotation/ResponseStatus.html) resolve
 
 4. 
-[DefaultHandlerExceptionResolver](http://www.jfox.info/go.php?url=https://docs.spring.io/spring/docs/4.3.9.RELEASE/javadoc-api/org/springframework/web/servlet/mvc/support/DefaultHandlerExceptionResolver.html)，负责处理Spring MVC标准异常
+[DefaultHandlerExceptionResolver](https://www.jfox.info/go.php?url=https://docs.spring.io/spring/docs/4.3.9.RELEASE/javadoc-api/org/springframework/web/servlet/mvc/support/DefaultHandlerExceptionResolver.html)，负责处理Spring MVC标准异常
 
 2. 
-[@ResponseStatus](http://www.jfox.info/go.php?url=https://docs.spring.io/spring/docs/4.3.9.RELEASE/javadoc-api/org/springframework/web/bind/annotation/ResponseStatus.html)用来规定异常对应的Status Code，其他异常的Status Code由容器决定，在Tomcat里都认定为500（[StandardHostValve#L317](http://www.jfox.info/go.php?url=https://github.com/apache/tomcat/blob/TONCAT_9_0_0_M23/java/org/apache/catalina/core/StandardHostValve.java#L317)、[StandardHostValve#L345](http://www.jfox.info/go.php?url=https://github.com/apache/tomcat/blob/TONCAT_9_0_0_M23/java/org/apache/catalina/core/StandardHostValve.java#L345)）
+[@ResponseStatus](https://www.jfox.info/go.php?url=https://docs.spring.io/spring/docs/4.3.9.RELEASE/javadoc-api/org/springframework/web/bind/annotation/ResponseStatus.html)用来规定异常对应的Status Code，其他异常的Status Code由容器决定，在Tomcat里都认定为500（[StandardHostValve#L317](https://www.jfox.info/go.php?url=https://github.com/apache/tomcat/blob/TONCAT_9_0_0_M23/java/org/apache/catalina/core/StandardHostValve.java#L317)、[StandardHostValve#L345](https://www.jfox.info/go.php?url=https://github.com/apache/tomcat/blob/TONCAT_9_0_0_M23/java/org/apache/catalina/core/StandardHostValve.java#L345)）
 
 3. 
-[@ExceptionHandler](http://www.jfox.info/go.php?url=http://docs.spring.io/spring/docs/4.3.9.RELEASE/spring-framework-reference/htmlsingle/#mvc-ann-exceptionhandler)处理的异常不会经过[BasicErrorController](http://www.jfox.info/go.php?url=https://github.com/spring-projects/spring-boot/blob/v1.5.4.RELEASE/spring-boot-autoconfigure/src/main/java/org/springframework/boot/autoconfigure/web/BasicErrorController.java)，需要自己决定如何返回页面，并且设置Status Code（如果不设置就是200）
+[@ExceptionHandler](https://www.jfox.info/go.php?url=http://docs.spring.io/spring/docs/4.3.9.RELEASE/spring-framework-reference/htmlsingle/#mvc-ann-exceptionhandler)处理的异常不会经过[BasicErrorController](https://www.jfox.info/go.php?url=https://github.com/spring-projects/spring-boot/blob/v1.5.4.RELEASE/spring-boot-autoconfigure/src/main/java/org/springframework/boot/autoconfigure/web/BasicErrorController.java)，需要自己决定如何返回页面，并且设置Status Code（如果不设置就是200）
 
 4. 
-[BasicErrorController](http://www.jfox.info/go.php?url=https://github.com/spring-projects/spring-boot/blob/v1.5.4.RELEASE/spring-boot-autoconfigure/src/main/java/org/springframework/boot/autoconfigure/web/BasicErrorController.java)会尝试根据Status Code找error page，找不到的话就用Whitelabel error page
+[BasicErrorController](https://www.jfox.info/go.php?url=https://github.com/spring-projects/spring-boot/blob/v1.5.4.RELEASE/spring-boot-autoconfigure/src/main/java/org/springframework/boot/autoconfigure/web/BasicErrorController.java)会尝试根据Status Code找error page，找不到的话就用Whitelabel error page
 
-本章节代码在[me.chanjar.boot.customstatuserrorpage](http://www.jfox.info/go.php?url=https://github.com/chanjarster/spring-mvc-error-handling-example/blob/master/src/main/java/me/chanjar/boot/customstatuserrorpage)，使用[CustomStatusErrorPageExample](http://www.jfox.info/go.php?url=https://github.com/chanjarster/spring-mvc-error-handling-example/blob/master/src/main/java/me/chanjar/boot/customstatuserrorpage/CustomStatusErrorPageExample.java)运行。
+本章节代码在[me.chanjar.boot.customstatuserrorpage](https://www.jfox.info/go.php?url=https://github.com/chanjarster/spring-mvc-error-handling-example/blob/master/src/main/java/me/chanjar/boot/customstatuserrorpage)，使用[CustomStatusErrorPageExample](https://www.jfox.info/go.php?url=https://github.com/chanjarster/spring-mvc-error-handling-example/blob/master/src/main/java/me/chanjar/boot/customstatuserrorpage/CustomStatusErrorPageExample.java)运行。
 
 ## 利用ErrorViewResolver来定制错误页面
 
-前面讲到[BasicErrorController](http://www.jfox.info/go.php?url=https://github.com/spring-projects/spring-boot/blob/v1.5.4.RELEASE/spring-boot-autoconfigure/src/main/java/org/springframework/boot/autoconfigure/web/BasicErrorController.java)会根据Status Code来跳转对应的error页面，其实这个工作是由[DefaultErrorViewResolver](http://www.jfox.info/go.php?url=http://docs.spring.io/spring-boot/docs/1.5.4.RELEASE/api/org/springframework/boot/autoconfigure/web/DefaultErrorViewResolver.html)完成的。
+前面讲到[BasicErrorController](https://www.jfox.info/go.php?url=https://github.com/spring-projects/spring-boot/blob/v1.5.4.RELEASE/spring-boot-autoconfigure/src/main/java/org/springframework/boot/autoconfigure/web/BasicErrorController.java)会根据Status Code来跳转对应的error页面，其实这个工作是由[DefaultErrorViewResolver](https://www.jfox.info/go.php?url=http://docs.spring.io/spring-boot/docs/1.5.4.RELEASE/api/org/springframework/boot/autoconfigure/web/DefaultErrorViewResolver.html)完成的。
 
-实际上我们也可以提供自己的[ErrorViewResolver](http://www.jfox.info/go.php?url=http://docs.spring.io/spring-boot/docs/1.5.4.RELEASE/api/org/springframework/boot/autoconfigure/web/ErrorViewResolver.html)来定制特定异常的error页面。
+实际上我们也可以提供自己的[ErrorViewResolver](https://www.jfox.info/go.php?url=http://docs.spring.io/spring-boot/docs/1.5.4.RELEASE/api/org/springframework/boot/autoconfigure/web/ErrorViewResolver.html)来定制特定异常的error页面。
 
     @Component
     public class SomeExceptionErrorViewResolver implements ErrorViewResolver {
@@ -320,5 +320,21 @@ PS. `DispatcherServlet.EXCEPTION` = `org.springframework.web.servlet.DispatcherS
     
     }
 
-不过需要注意的是，无法通过[ErrorViewResolver](http://www.jfox.info/go.php?url=http://docs.spring.io/spring-boot/docs/1.5.4.RELEASE/api/org/springframework/boot/autoconfigure/web/ErrorViewResolver.html)设定Status Code，Status Code由[@ResponseStatus](http://www.jfox.info/go.php?url=https://docs.spring.io/spring/docs/4.3.9.RELEASE/javadoc-api/org/springframework/web/bind/annotation/ResponseStatus.html)或者容器决定�
+不过需要注意的是，无法通过[ErrorViewResolver](https://www.jfox.info/go.php?url=http://docs.spring.io/spring-boot/docs/1.5.4.RELEASE/api/org/springframework/boot/autoconfigure/web/ErrorViewResolver.html)设定Status Code，Status Code由[@ResponseStatus](https://www.jfox.info/go.php?url=https://docs.spring.io/spring/docs/4.3.9.RELEASE/javadoc-api/org/springframework/web/bind/annotation/ResponseStatus.html)或者容器决定（Tomcat里一律是500）。
+
+本章节代码在[me.chanjar.boot.customerrorviewresolver](https://www.jfox.info/go.php?url=https://github.com/chanjarster/spring-mvc-error-handling-example/blob/master/src/main/java/me/chanjar/boot/customerrorviewresolver)，使用[CustomErrorViewResolverExample](https://www.jfox.info/go.php?url=https://github.com/chanjarster/spring-mvc-error-handling-example/blob/master/src/main/java/me/chanjar/boot/customerrorviewresolver/CustomErrorViewResolverExample.java)运行。
+
+## @ExceptionHandler 和 @ControllerAdvice
+
+前面的例子中已经有了对[@ControllerAdvice](https://www.jfox.info/go.php?url=http://docs.spring.io/spring/docs/4.3.9.RELEASE/spring-framework-reference/htmlsingle/#mvc-ann-controller-advice)和[@ExceptionHandler](https://www.jfox.info/go.php?url=http://docs.spring.io/spring/docs/4.3.9.RELEASE/spring-framework-reference/htmlsingle/#mvc-ann-exceptionhandler)的使用，这里只是在做一些补充说明：
+
+1. 
+`@ExceptionHandler`配合`@ControllerAdvice`用时，能够应用到所有被`@ControllerAdvice`切到的Controller
+
+2. 
+`@ExceptionHandler`在Controller里的时候，就只会对那个Controller生效
+
+## 附录I
+
+下表列出哪些特性是Spring Boot的，哪些是Spring MVC的：
 {% endraw %}

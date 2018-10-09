@@ -3,11 +3,11 @@ layout: post
 title:  "什么时候用assert"
 title2:  "什么时候用assert"
 date:   2017-01-01 23:42:06  +0800
-source:  "http://www.jfox.info/shen-me-shi-hou-yong-assert.html"
+source:  "https://www.jfox.info/shen-me-shi-hou-yong-assert.html"
 fileName:  "20170100426"
 lang:  "zh_CN"
 published: true
-permalink: "shen-me-shi-hou-yong-assert.html"
+permalink: "2017/https://www.jfox.info/shen-me-shi-hou-yong-assert.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期日, 六月 9, 2013

@@ -3,11 +3,11 @@ layout: post
 title:  "4个理由让你明白：为什么Chrome浏览器特爱吃内存"
 title2:  "4个理由让你明白：为什么Chrome浏览器特爱吃内存"
 date:   2017-01-01 23:47:33  +0800
-source:  "http://www.jfox.info/4-ge-li-you-rang-ni-ming-bai-wei-shi-me-chrome-liu-lan-qi-te-ai-chi-na-cun.html"
+source:  "https://www.jfox.info/4-ge-li-you-rang-ni-ming-bai-wei-shi-me-chrome-liu-lan-qi-te-ai-chi-na-cun.html"
 fileName:  "20170100753"
 lang:  "zh_CN"
 published: true
-permalink: "4-ge-li-you-rang-ni-ming-bai-wei-shi-me-chrome-liu-lan-qi-te-ai-chi-na-cun.html"
+permalink: "2017/https://www.jfox.info/4-ge-li-you-rang-ni-ming-bai-wei-shi-me-chrome-liu-lan-qi-te-ai-chi-na-cun.html"
 ---
 {% raw %}
 微软用惯用的手法——改名——给 IE 被黑的一生画上了句号。还好，它在技术段子圈里早就有了接班人：Chrome。

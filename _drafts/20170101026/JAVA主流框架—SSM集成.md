@@ -3,11 +3,11 @@ layout: post
 title:  "JAVA主流框架—SSM集成"
 title2:  "JAVA主流框架—SSM集成"
 date:   2017-01-01 23:52:06  +0800
-source:  "http://www.jfox.info/java%e4%b8%bb%e6%b5%81%e6%a1%86%e6%9e%b6-ssm%e9%9b%86%e6%88%90.html"
+source:  "https://www.jfox.info/java%e4%b8%bb%e6%b5%81%e6%a1%86%e6%9e%b6-ssm%e9%9b%86%e6%88%90.html"
 fileName:  "20170101026"
 lang:  "zh_CN"
 published: true
-permalink: "java%e4%b8%bb%e6%b5%81%e6%a1%86%e6%9e%b6-ssm%e9%9b%86%e6%88%90.html"
+permalink: "2017/https://www.jfox.info/java%e4%b8%bb%e6%b5%81%e6%a1%86%e6%9e%b6-ssm%e9%9b%86%e6%88%90.html"
 ---
 {% raw %}
 1.通过监听器的形式引入spring

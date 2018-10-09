@@ -3,11 +3,11 @@ layout: post
 title:  "JAVA并发多线程的面试问题及答案（基础部分）"
 title2:  "JAVA并发多线程的面试问题及答案（基础部分）"
 date:   2017-01-01 23:44:35  +0800
-source:  "http://www.jfox.info/java-bing-fa-duo-xian-cheng-de-mian-shi-wen-ti-ji-da-an-ji-shu-bu-feng.html"
+source:  "https://www.jfox.info/java-bing-fa-duo-xian-cheng-de-mian-shi-wen-ti-ji-da-an-ji-shu-bu-feng.html"
 fileName:  "20170100575"
 lang:  "zh_CN"
 published: true
-permalink: "java-bing-fa-duo-xian-cheng-de-mian-shi-wen-ti-ji-da-an-ji-shu-bu-feng.html"
+permalink: "2017/https://www.jfox.info/java-bing-fa-duo-xian-cheng-de-mian-shi-wen-ti-ji-da-an-ji-shu-bu-feng.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期四, 二月 20, 2014
@@ -138,5 +138,5 @@ java.util.concurrent.Executors提供了一个 java.util.concurrent.Executor接�
 
 （未完，待续）
 
-参考来源 [JAVA多线程和并发基础面试问答 ](http://www.jfox.info/go.php?url=http://www.jfox.info/url.php?url=http%3A%2F%2Fifeve.com%2Fjava-multi-threading-concurrency-interview-questions-with-answers%2F).
+参考来源 [JAVA多线程和并发基础面试问答 ](https://www.jfox.info/go.php?url=http://www.jfox.info/url.php?url=http%3A%2F%2Fifeve.com%2Fjava-multi-threading-concurrency-interview-questions-with-answers%2F).
 {% endraw %}

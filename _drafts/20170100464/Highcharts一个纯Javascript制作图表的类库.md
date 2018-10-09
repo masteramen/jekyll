@@ -3,11 +3,11 @@ layout: post
 title:  "Highcharts:一个纯Javascript制作图表的类库"
 title2:  "Highcharts一个纯Javascript制作图表的类库"
 date:   2017-01-01 23:42:44  +0800
-source:  "http://www.jfox.info/highcharts-yi-ge-chun-javascript-zhi-zuo-tu-biao-de-lei-ku.html"
+source:  "https://www.jfox.info/highcharts-yi-ge-chun-javascript-zhi-zuo-tu-biao-de-lei-ku.html"
 fileName:  "20170100464"
 lang:  "zh_CN"
 published: true
-permalink: "highcharts-yi-ge-chun-javascript-zhi-zuo-tu-biao-de-lei-ku.html"
+permalink: "2017/https://www.jfox.info/highcharts-yi-ge-chun-javascript-zhi-zuo-tu-biao-de-lei-ku.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期日, 十月 20, 2013
@@ -24,5 +24,5 @@ Highcharts是一个制作图表的纯Javascript类库，主要特性如下：
 - 易用性：无需要特殊的开发技能，只需要设置一下选项就可以制作适合自己的图表；
 - 时间轴：可以精确到毫秒；
 
-在 RunJS 查看在线演示：[http://runjs.cn/code/ih5xzoeb](http://www.jfox.info/go.php?url=http://runjs.cn/code/ih5xzoeb)
+在 RunJS 查看在线演示：[http://runjs.cn/code/ih5xzoeb](https://www.jfox.info/go.php?url=http://runjs.cn/code/ih5xzoeb)
 {% endraw %}

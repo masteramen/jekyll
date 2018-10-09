@@ -3,11 +3,11 @@ layout: post
 title:  "慕课网_《细说Java多线程之内存可见性》学习总结"
 title2:  "慕课网_《细说Java多线程之内存可见性》学习总结"
 date:   2017-01-01 23:55:13  +0800
-source:  "http://www.jfox.info/%e6%85%95%e8%af%be%e7%bd%91%e7%bb%86%e8%af%b4java%e5%a4%9a%e7%ba%bf%e7%a8%8b%e4%b9%8b%e5%86%85%e5%ad%98%e5%8f%af%e8%a7%81%e6%80%a7%e5%ad%a6%e4%b9%a0%e6%80%bb%e7%bb%93.html"
+source:  "https://www.jfox.info/%e6%85%95%e8%af%be%e7%bd%91%e7%bb%86%e8%af%b4java%e5%a4%9a%e7%ba%bf%e7%a8%8b%e4%b9%8b%e5%86%85%e5%ad%98%e5%8f%af%e8%a7%81%e6%80%a7%e5%ad%a6%e4%b9%a0%e6%80%bb%e7%bb%93.html"
 fileName:  "20170101213"
 lang:  "zh_CN"
 published: true
-permalink: "%e6%85%95%e8%af%be%e7%bd%91%e7%bb%86%e8%af%b4java%e5%a4%9a%e7%ba%bf%e7%a8%8b%e4%b9%8b%e5%86%85%e5%ad%98%e5%8f%af%e8%a7%81%e6%80%a7%e5%ad%a6%e4%b9%a0%e6%80%bb%e7%bb%93.html"
+permalink: "2017/https://www.jfox.info/%e6%85%95%e8%af%be%e7%bd%91%e7%bb%86%e8%af%b4java%e5%a4%9a%e7%ba%bf%e7%a8%8b%e4%b9%8b%e5%86%85%e5%ad%98%e5%8f%af%e8%a7%81%e6%80%a7%e5%ad%a6%e4%b9%a0%e6%80%bb%e7%bb%93.html"
 ---
 {% raw %}
 # 慕课网_《细说Java多线程之内存可见性》学习总结 

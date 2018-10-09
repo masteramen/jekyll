@@ -3,11 +3,11 @@ layout: post
 title:  "UrlUtils工具类，Java URL工具类，Java URL链接工具类"
 title2:  "UrlUtils工具类，Java URL工具类，Java URL链接工具类"
 date:   2017-01-01 23:56:23  +0800
-source:  "http://www.jfox.info/urlutils%e5%b7%a5%e5%85%b7%e7%b1%bbjavaurl%e5%b7%a5%e5%85%b7%e7%b1%bbjavaurl%e9%93%be%e6%8e%a5%e5%b7%a5%e5%85%b7%e7%b1%bb.html"
+source:  "https://www.jfox.info/urlutils%e5%b7%a5%e5%85%b7%e7%b1%bbjavaurl%e5%b7%a5%e5%85%b7%e7%b1%bbjavaurl%e9%93%be%e6%8e%a5%e5%b7%a5%e5%85%b7%e7%b1%bb.html"
 fileName:  "20170101283"
 lang:  "zh_CN"
 published: true
-permalink: "urlutils%e5%b7%a5%e5%85%b7%e7%b1%bbjavaurl%e5%b7%a5%e5%85%b7%e7%b1%bbjavaurl%e9%93%be%e6%8e%a5%e5%b7%a5%e5%85%b7%e7%b1%bb.html"
+permalink: "2017/https://www.jfox.info/urlutils%e5%b7%a5%e5%85%b7%e7%b1%bbjavaurl%e5%b7%a5%e5%85%b7%e7%b1%bbjavaurl%e9%93%be%e6%8e%a5%e5%b7%a5%e5%85%b7%e7%b1%bb.html"
 ---
 {% raw %}
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>

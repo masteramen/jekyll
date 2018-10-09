@@ -3,11 +3,11 @@ layout: post
 title:  "springBoot基础系列–properties配置"
 title2:  "springBoot基础系列–properties配置"
 date:   2017-01-01 23:56:27  +0800
-source:  "http://www.jfox.info/springboot%e5%9f%ba%e7%a1%80%e7%b3%bb%e5%88%97properties%e9%85%8d%e7%bd%ae.html"
+source:  "https://www.jfox.info/springboot%e5%9f%ba%e7%a1%80%e7%b3%bb%e5%88%97properties%e9%85%8d%e7%bd%ae.html"
 fileName:  "20170101287"
 lang:  "zh_CN"
 published: true
-permalink: "springboot%e5%9f%ba%e7%a1%80%e7%b3%bb%e5%88%97properties%e9%85%8d%e7%bd%ae.html"
+permalink: "2017/https://www.jfox.info/springboot%e5%9f%ba%e7%a1%80%e7%b3%bb%e5%88%97properties%e9%85%8d%e7%bd%ae.html"
 ---
 {% raw %}
 SpringBoot中免除了大部分手动配置，但是对于一些特定的情况，还是需要我们进行手动配置的，SpringBoot为我们提供了application.properties配置文件，让我们可以进行自定义配置，来对默认的配置进行修改，以适应具体的生产情况，当然还包括一些第三方的配置。几乎所有配置都可以写到application.peroperties文件中，这个文件会被SpringBoot自动加载，免去了我们手动加载的烦恼。但实际上，很多时候我们却会自定义配置文件，这些文件就需要我们进行手动加载，SpringBoot是不会自动识别这些文件的，下面就来仔细看看这些方面的内容。

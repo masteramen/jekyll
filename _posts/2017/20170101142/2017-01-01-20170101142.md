@@ -3,11 +3,11 @@ layout: post
 title:  "WeakHashMap整理"
 title2:  "WeakHashMap整理"
 date:   2017-01-01 23:54:02  +0800
-source:  "http://www.jfox.info/weakhashmap%e6%95%b4%e7%90%86.html"
+source:  "https://www.jfox.info/weakhashmap%e6%95%b4%e7%90%86.html"
 fileName:  "20170101142"
 lang:  "zh_CN"
 published: true
-permalink: "weakhashmap%e6%95%b4%e7%90%86.html"
+permalink: "2017/https://www.jfox.info/weakhashmap%e6%95%b4%e7%90%86.html"
 ---
 {% raw %}
 # WeakHashMap整理 

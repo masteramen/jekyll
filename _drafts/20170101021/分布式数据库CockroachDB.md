@@ -3,11 +3,11 @@ layout: post
 title:  "分布式数据库CockroachDB"
 title2:  "分布式数据库CockroachDB"
 date:   2017-01-01 23:52:01  +0800
-source:  "http://www.jfox.info/%e5%88%86%e5%b8%83%e5%bc%8f%e6%95%b0%e6%8d%ae%e5%ba%93cockroachdb.html"
+source:  "https://www.jfox.info/%e5%88%86%e5%b8%83%e5%bc%8f%e6%95%b0%e6%8d%ae%e5%ba%93cockroachdb.html"
 fileName:  "20170101021"
 lang:  "zh_CN"
 published: true
-permalink: "%e5%88%86%e5%b8%83%e5%bc%8f%e6%95%b0%e6%8d%ae%e5%ba%93cockroachdb.html"
+permalink: "2017/https://www.jfox.info/%e5%88%86%e5%b8%83%e5%bc%8f%e6%95%b0%e6%8d%ae%e5%ba%93cockroachdb.html"
 ---
 {% raw %}
 CockroachDB（中文名蟑螂DB，所以又可以称为小强DB），是构建于事务处理及强一致性KV存储上的分布式SQL数据库，支持水平扩展、自动容错处理、强一致性事务，并且提供SQL接口用于数据处理，是Google Spanner/F1的开源实现。

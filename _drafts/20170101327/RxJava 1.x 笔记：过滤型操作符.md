@@ -3,11 +3,11 @@ layout: post
 title:  "RxJava 1.x 笔记：过滤型操作符"
 title2:  "RxJava 1.x 笔记：过滤型操作符"
 date:   2017-01-01 23:57:07  +0800
-source:  "http://www.jfox.info/rxjava1x%e7%ac%94%e8%ae%b0%e8%bf%87%e6%bb%a4%e5%9e%8b%e6%93%8d%e4%bd%9c%e7%ac%a6.html"
+source:  "https://www.jfox.info/rxjava1x%e7%ac%94%e8%ae%b0%e8%bf%87%e6%bb%a4%e5%9e%8b%e6%93%8d%e4%bd%9c%e7%ac%a6.html"
 fileName:  "20170101327"
 lang:  "zh_CN"
 published: true
-permalink: "rxjava1x%e7%ac%94%e8%ae%b0%e8%bf%87%e6%bb%a4%e5%9e%8b%e6%93%8d%e4%bd%9c%e7%ac%a6.html"
+permalink: "2017/https://www.jfox.info/rxjava1x%e7%ac%94%e8%ae%b0%e8%bf%87%e6%bb%a4%e5%9e%8b%e6%93%8d%e4%bd%9c%e7%ac%a6.html"
 ---
 {% raw %}
 过滤型操作符即对 Observable 的数据进行过滤，选择性地发射出去。

@@ -3,11 +3,11 @@ layout: post
 title:  "Java的数据类型和参数传递"
 title2:  "Java的数据类型和参数传递"
 date:   2017-01-01 23:54:30  +0800
-source:  "http://www.jfox.info/java%e7%9a%84%e6%95%b0%e6%8d%ae%e7%b1%bb%e5%9e%8b%e5%92%8c%e5%8f%82%e6%95%b0%e4%bc%a0%e9%80%92.html"
+source:  "https://www.jfox.info/java%e7%9a%84%e6%95%b0%e6%8d%ae%e7%b1%bb%e5%9e%8b%e5%92%8c%e5%8f%82%e6%95%b0%e4%bc%a0%e9%80%92.html"
 fileName:  "20170101170"
 lang:  "zh_CN"
 published: true
-permalink: "java%e7%9a%84%e6%95%b0%e6%8d%ae%e7%b1%bb%e5%9e%8b%e5%92%8c%e5%8f%82%e6%95%b0%e4%bc%a0%e9%80%92.html"
+permalink: "2017/https://www.jfox.info/java%e7%9a%84%e6%95%b0%e6%8d%ae%e7%b1%bb%e5%9e%8b%e5%92%8c%e5%8f%82%e6%95%b0%e4%bc%a0%e9%80%92.html"
 ---
 {% raw %}
 Java提供的数据类型主要分为两大类：基本数据类型和引用数据类型。
@@ -86,7 +86,7 @@ Java中的参数传递：
  
 
   posted @ 
- 2017-07-09 08:10[迷失的小菜包](http://www.jfox.info/go.php?url=http://www.cnblogs.com/cbs-writing/) 阅读( 
+ 2017-07-09 08:10[迷失的小菜包](https://www.jfox.info/go.php?url=http://www.cnblogs.com/cbs-writing/) 阅读( 
  …) 评论( 
  …)
 {% endraw %}

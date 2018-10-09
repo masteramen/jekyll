@@ -3,11 +3,11 @@ layout: post
 title:  "Java 生产环境 debug"
 title2:  "Java 生产环境 debug"
 date:   2017-01-01 23:57:03  +0800
-source:  "http://www.jfox.info/java%e7%94%9f%e4%ba%a7%e7%8e%af%e5%a2%83debug.html"
+source:  "https://www.jfox.info/java%e7%94%9f%e4%ba%a7%e7%8e%af%e5%a2%83debug.html"
 fileName:  "20170101323"
 lang:  "zh_CN"
 published: true
-permalink: "java%e7%94%9f%e4%ba%a7%e7%8e%af%e5%a2%83debug.html"
+permalink: "2017/https://www.jfox.info/java%e7%94%9f%e4%ba%a7%e7%8e%af%e5%a2%83debug.html"
 ---
 {% raw %}
 要解决的问题：生产环境是内网服务器，只提供跳板机额外网访问权限，通过 idea 对生产环境进行调试。

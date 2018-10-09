@@ -3,11 +3,11 @@ layout: post
 title:  "springJDBC01 利用springJDBC操作数据库"
 title2:  "springJDBC01 利用springJDBC操作数据库"
 date:   2017-01-01 23:56:10  +0800
-source:  "http://www.jfox.info/springjdbc01%e5%88%a9%e7%94%a8springjdbc%e6%93%8d%e4%bd%9c%e6%95%b0%e6%8d%ae%e5%ba%93.html"
+source:  "https://www.jfox.info/springjdbc01%e5%88%a9%e7%94%a8springjdbc%e6%93%8d%e4%bd%9c%e6%95%b0%e6%8d%ae%e5%ba%93.html"
 fileName:  "20170101270"
 lang:  "zh_CN"
 published: true
-permalink: "springjdbc01%e5%88%a9%e7%94%a8springjdbc%e6%93%8d%e4%bd%9c%e6%95%b0%e6%8d%ae%e5%ba%93.html"
+permalink: "2017/https://www.jfox.info/springjdbc01%e5%88%a9%e7%94%a8springjdbc%e6%93%8d%e4%bd%9c%e6%95%b0%e6%8d%ae%e5%ba%93.html"
 ---
 {% raw %}
 ## 1 什么是springJDBC

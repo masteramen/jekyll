@@ -3,11 +3,11 @@ layout: post
 title:  "Incorrect column count: expected 1, actual 5，JdbcTemplate queryForList 出错"
 title2:  "Incorrect column count expected 1, actual 5，JdbcTemplate queryForList 出错"
 date:   2017-01-01 23:54:57  +0800
-source:  "http://www.jfox.info/incorrectcolumncountexpected1actual5jdbctemplatequeryforlist%e5%87%ba%e9%94%99.html"
+source:  "https://www.jfox.info/incorrectcolumncountexpected1actual5jdbctemplatequeryforlist%e5%87%ba%e9%94%99.html"
 fileName:  "20170101197"
 lang:  "zh_CN"
 published: true
-permalink: "incorrectcolumncountexpected1actual5jdbctemplatequeryforlist%e5%87%ba%e9%94%99.html"
+permalink: "2017/https://www.jfox.info/incorrectcolumncountexpected1actual5jdbctemplatequeryforlist%e5%87%ba%e9%94%99.html"
 ---
 {% raw %}
 **spring JdbcTemplate  queryForList 出错**

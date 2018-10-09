@@ -3,18 +3,18 @@ layout: post
 title:  "从士兵到程序员再到SOHO程序员"
 title2:  "从士兵到程序员再到SOHO程序员"
 date:   2017-01-01 23:45:14  +0800
-source:  "http://www.jfox.info/then-soho-programmer-to-programmer-from-soldiers.html"
+source:  "https://www.jfox.info/then-soho-programmer-to-programmer-from-soldiers.html"
 fileName:  "20170100614"
 lang:  "zh_CN"
 published: true
-permalink: "then-soho-programmer-to-programmer-from-soldiers.html"
+permalink: "2017/https://www.jfox.info/then-soho-programmer-to-programmer-from-soldiers.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期一, 三月 17, 2014
 
 013年9月13日，我从就职了一年半的S公司正式离职，并开始了我梦寐以求的“SOHO程序员”之路。
 
-[![09531K1W-0](http://www.jfox.info/wp-content/uploads/2014/03/09531K1W-0.jpg)](http://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2014/03/09531K1W-0.jpg)
+[![09531K1W-0](http://www.jfox.info/wp-content/uploads/2014/03/09531K1W-0.jpg)](https://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2014/03/09531K1W-0.jpg)
 
 这对于我来说，是一次人生道路上的重要选择，在这里，我想分享一下我是如何选择了这条道路的，同时也是对我到目前为止的程序员生涯做一个回顾。
 

@@ -3,11 +3,11 @@ layout: post
 title:  "HTML5标签使用的常见误区"
 title2:  "HTML5标签使用的常见误区"
 date:   2017-01-01 23:44:49  +0800
-source:  "http://www.jfox.info/html5-tag-shi-yong-chang-jian-wu-qu.html"
+source:  "https://www.jfox.info/html5-tag-shi-yong-chang-jian-wu-qu.html"
 fileName:  "20170100589"
 lang:  "zh_CN"
 published: true
-permalink: "html5-tag-shi-yong-chang-jian-wu-qu.html"
+permalink: "2017/https://www.jfox.info/html5-tag-shi-yong-chang-jian-wu-qu.html"
 ---
 {% raw %}
 在这篇文章中，我将给大家分享html5构建页面的小错误和不好的实践方法，让我们在以后的工作中避免这些错误。
@@ -74,7 +74,7 @@ permalink: "html5-tag-shi-yong-chang-jian-wu-qu.html"
     </body>
     
 
-如果你还是无法确定哪一个元素更适合使用，我建议你去查看[HTML5 sectioning content element flowchart](http://www.jfox.info/go.php?url=http://html5doctor.com/flowchart)来让你继续前行。
+如果你还是无法确定哪一个元素更适合使用，我建议你去查看[HTML5 sectioning content element flowchart](https://www.jfox.info/go.php?url=http://html5doctor.com/flowchart)来让你继续前行。
 
 ### 只在需要的时候使用 <hgroup>和<header>标签
 
@@ -223,7 +223,7 @@ permalink: "html5-tag-shi-yong-chang-jian-wu-qu.html"
 #### figure只能用在标签上的误解
 
 另一个对<figure>的误解就是我们通常认为它只能用在图片上面。事实上并不是这样子的，它可以被用在 <video><audio>, 一个图标 (比如<SVG>, ), 一个引用, 一个表格, 一段代码, 一段散文, 或者任何和这些相关的组合. 不要把你的<figure>标签仅仅局限在图片上。我们网页制作师的任务就是用标签更准确的描述内容。
-这里有一篇更深入讲解 <figure>的文章[I wrote about `<figure>`](http://www.jfox.info/go.php?url=http://html5doctor.com/figure)，很值得阅读的。
+这里有一篇更深入讲解 <figure>的文章[I wrote about `<figure>`](https://www.jfox.info/go.php?url=http://html5doctor.com/figure)，很值得阅读的。
 
 ### 不要去使用那些不必要的type属性
 
@@ -279,5 +279,5 @@ permalink: "html5-tag-shi-yong-chang-jian-wu-qu.html"
 总结
 对我来说，我无法将所以得蹩脚的代码模式都展示在这里，但是上面说的这些都是我们经常遇到的。
 
-参考来源 [HTML5标签使用的常见误区](http://www.jfox.info/go.php?url=http://www.jfox.info/url.php?url=http%3A%2F%2Fued.sina.com.cn%2F%3Fp%3D726)
+参考来源 [HTML5标签使用的常见误区](https://www.jfox.info/go.php?url=http://www.jfox.info/url.php?url=http%3A%2F%2Fued.sina.com.cn%2F%3Fp%3D726)
 {% endraw %}

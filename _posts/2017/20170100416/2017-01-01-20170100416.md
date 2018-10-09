@@ -3,11 +3,11 @@ layout: post
 title:  "» java面试题"
 title2:  "» java面试题"
 date:   2017-01-01 23:41:56  +0800
-source:  "http://www.jfox.info/226.html"
+source:  "https://www.jfox.info/226.html"
 fileName:  "20170100416"
 lang:  "zh_CN"
 published: true
-permalink: "226.html"
+permalink: "2017/https://www.jfox.info/226.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期三, 六月 5, 2013

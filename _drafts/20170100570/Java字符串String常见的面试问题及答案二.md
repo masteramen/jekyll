@@ -3,11 +3,11 @@ layout: post
 title:  "Java字符串String常见的面试问题及答案二"
 title2:  "Java字符串String常见的面试问题及答案二"
 date:   2017-01-01 23:44:30  +0800
-source:  "http://www.jfox.info/java-zi-fu-chuan-string-chang-jian-de-mian-shi-wen-ti-ji-da-an-er.html"
+source:  "https://www.jfox.info/java-zi-fu-chuan-string-chang-jian-de-mian-shi-wen-ti-ji-da-an-er.html"
 fileName:  "20170100570"
 lang:  "zh_CN"
 published: true
-permalink: "java-zi-fu-chuan-string-chang-jian-de-mian-shi-wen-ti-ji-da-an-er.html"
+permalink: "2017/https://www.jfox.info/java-zi-fu-chuan-string-chang-jian-de-mian-shi-wen-ti-ji-da-an-er.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期三, 二月 19, 2014
@@ -48,5 +48,5 @@ String是不可变的并且存储在字符串池中。一旦它被创造，就�
 
 我希望在这里列出的问题及答案能帮助你在Java面试过关，如果有错误的地方，请一定告诉我。
 
-相关的链接 ：[Java字符串String常见的面试问题及答案一](http://www.jfox.info/go.php?url=http://www.jfox.info/javazifuchuanstringchangjiandemianshiwentijidaanyi)
+相关的链接 ：[Java字符串String常见的面试问题及答案一](https://www.jfox.info/go.php?url=http://www.jfox.info/javazifuchuanstringchangjiandemianshiwentijidaanyi)
 {% endraw %}

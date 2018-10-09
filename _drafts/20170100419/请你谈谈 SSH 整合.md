@@ -3,11 +3,11 @@ layout: post
 title:  "请你谈谈 SSH 整合"
 title2:  "请你谈谈 SSH 整合"
 date:   2017-01-01 23:41:59  +0800
-source:  "http://www.jfox.info/qing-ni-tan-tan-SSH-zheng-he.html"
+source:  "https://www.jfox.info/qing-ni-tan-tan-SSH-zheng-he.html"
 fileName:  "20170100419"
 lang:  "zh_CN"
 published: true
-permalink: "qing-ni-tan-tan-SSH-zheng-he.html"
+permalink: "2017/https://www.jfox.info/qing-ni-tan-tan-SSH-zheng-he.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期三, 六月 5, 2013

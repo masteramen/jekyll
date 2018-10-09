@@ -3,11 +3,11 @@ layout: post
 title:  "jquery面试题里 缓存问题如何解决？"
 title2:  "jquery面试题里 缓存问题如何解决？"
 date:   2017-01-01 23:41:49  +0800
-source:  "http://www.jfox.info/jquery-mian-shi-ti-li-huan-cun-wen-ti-ru-he-jie-jue.html"
+source:  "https://www.jfox.info/jquery-mian-shi-ti-li-huan-cun-wen-ti-ru-he-jie-jue.html"
 fileName:  "20170100409"
 lang:  "zh_CN"
 published: true
-permalink: "jquery-mian-shi-ti-li-huan-cun-wen-ti-ru-he-jie-jue.html"
+permalink: "2017/https://www.jfox.info/jquery-mian-shi-ti-li-huan-cun-wen-ti-ru-he-jie-jue.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期二, 五月 28, 2013

@@ -3,11 +3,11 @@ layout: post
 title:  "Hibernate性能调优总结"
 title2:  "Hibernate性能调优总结"
 date:   2017-01-01 23:45:12  +0800
-source:  "http://www.jfox.info/hibernate-performance-tuning-summary.html"
+source:  "https://www.jfox.info/hibernate-performance-tuning-summary.html"
 fileName:  "20170100612"
 lang:  "zh_CN"
 published: true
-permalink: "hibernate-performance-tuning-summary.html"
+permalink: "2017/https://www.jfox.info/hibernate-performance-tuning-summary.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期五, 三月 14, 2014
@@ -124,5 +124,5 @@ iBATIS：
 6、继承类使用显式多态
 7、表字段要少，表关联不要怕多，有二级缓存撑腰
 
-参考来源 [Hibernate性能调优 – 城市胡同](http://www.jfox.info/go.php?url=http://www.jfox.info/url.php?url=http%3A%2F%2Fwww.wujianrong.com%2Farchives%2F2007%2F08%2Fhibernate-12.html).
+参考来源 [Hibernate性能调优 – 城市胡同](https://www.jfox.info/go.php?url=http://www.jfox.info/url.php?url=http%3A%2F%2Fwww.wujianrong.com%2Farchives%2F2007%2F08%2Fhibernate-12.html).
 {% endraw %}

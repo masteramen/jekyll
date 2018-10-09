@@ -3,11 +3,11 @@ layout: post
 title:  "php项目开发中提供php运行速度小技巧"
 title2:  "php项目开发中提供php运行速度小技巧"
 date:   2017-01-01 23:48:54  +0800
-source:  "http://www.jfox.info/php-xiang-mu-kai-fa-zhong-ti-gong-php-yun-xing-su-du-xiao-ji-qiao.html"
+source:  "https://www.jfox.info/php-xiang-mu-kai-fa-zhong-ti-gong-php-yun-xing-su-du-xiao-ji-qiao.html"
 fileName:  "20170100834"
 lang:  "zh_CN"
 published: true
-permalink: "php-xiang-mu-kai-fa-zhong-ti-gong-php-yun-xing-su-du-xiao-ji-qiao.html"
+permalink: "2017/https://www.jfox.info/php-xiang-mu-kai-fa-zhong-ti-gong-php-yun-xing-su-du-xiao-ji-qiao.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期六, 六月 10, 2017

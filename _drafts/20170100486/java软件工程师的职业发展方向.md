@@ -3,11 +3,11 @@ layout: post
 title:  "java软件工程师的职业发展方向"
 title2:  "java软件工程师的职业发展方向"
 date:   2017-01-01 23:43:06  +0800
-source:  "http://www.jfox.info/java-ruan-jian-gong-cheng-shi-de-zhi-ye-fa-zhan-fang-xiang.html"
+source:  "https://www.jfox.info/java-ruan-jian-gong-cheng-shi-de-zhi-ye-fa-zhan-fang-xiang.html"
 fileName:  "20170100486"
 lang:  "zh_CN"
 published: true
-permalink: "java-ruan-jian-gong-cheng-shi-de-zhi-ye-fa-zhan-fang-xiang.html"
+permalink: "2017/https://www.jfox.info/java-ruan-jian-gong-cheng-shi-de-zhi-ye-fa-zhan-fang-xiang.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期一, 十一月 11, 2013

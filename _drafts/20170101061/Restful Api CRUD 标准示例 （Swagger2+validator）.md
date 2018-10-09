@@ -3,11 +3,11 @@ layout: post
 title:  "Restful Api CRUD 标准示例 （Swagger2+validator）"
 title2:  "Restful Api CRUD 标准示例 （Swagger2+validator）"
 date:   2017-01-01 23:52:41  +0800
-source:  "http://www.jfox.info/restfulapicrud%e6%a0%87%e5%87%86%e7%a4%ba%e4%be%8bswagger2validator.html"
+source:  "https://www.jfox.info/restfulapicrud%e6%a0%87%e5%87%86%e7%a4%ba%e4%be%8bswagger2validator.html"
 fileName:  "20170101061"
 lang:  "zh_CN"
 published: true
-permalink: "restfulapicrud%e6%a0%87%e5%87%86%e7%a4%ba%e4%be%8bswagger2validator.html"
+permalink: "2017/https://www.jfox.info/restfulapicrud%e6%a0%87%e5%87%86%e7%a4%ba%e4%be%8bswagger2validator.html"
 ---
 {% raw %}
 为什么要写这篇贴？

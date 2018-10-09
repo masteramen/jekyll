@@ -3,11 +3,11 @@ layout: post
 title:  "Java基础——String类（二）"
 title2:  "Java基础——String类（二）"
 date:   2017-01-01 23:49:55  +0800
-source:  "http://www.jfox.info/java%e5%9f%ba%e7%a1%80-string%e7%b1%bb-%e4%ba%8c.html"
+source:  "https://www.jfox.info/java%e5%9f%ba%e7%a1%80-string%e7%b1%bb-%e4%ba%8c.html"
 fileName:  "20170100895"
 lang:  "zh_CN"
 published: true
-permalink: "java%e5%9f%ba%e7%a1%80-string%e7%b1%bb-%e4%ba%8c.html"
+permalink: "2017/https://www.jfox.info/java%e5%9f%ba%e7%a1%80-string%e7%b1%bb-%e4%ba%8c.html"
 ---
 {% raw %}
 今天做了几道String常见操作。先来几个代码实例：

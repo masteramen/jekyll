@@ -3,11 +3,11 @@ layout: post
 title:  "ajax 面试题 » java面试题"
 title2:  "ajax 面试题 » java面试题"
 date:   2017-01-01 23:41:50  +0800
-source:  "http://www.jfox.info/ajax-mian-shi-ti.html"
+source:  "https://www.jfox.info/ajax-mian-shi-ti.html"
 fileName:  "20170100410"
 lang:  "zh_CN"
 published: true
-permalink: "ajax-mian-shi-ti.html"
+permalink: "2017/https://www.jfox.info/ajax-mian-shi-ti.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期二, 五月 28, 2013

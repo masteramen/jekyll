@@ -3,11 +3,11 @@ layout: post
 title:  "js跨域问题及解决方法汇总"
 title2:  "js跨域问题及解决方法汇总"
 date:   2017-01-01 23:46:31  +0800
-source:  "http://www.jfox.info/js-kua-yu-wen-ti-ji-jie-jue-fang-fa-hui-zong.html"
+source:  "https://www.jfox.info/js-kua-yu-wen-ti-ji-jie-jue-fang-fa-hui-zong.html"
 fileName:  "20170100691"
 lang:  "zh_CN"
 published: true
-permalink: "js-kua-yu-wen-ti-ji-jie-jue-fang-fa-hui-zong.html"
+permalink: "2017/https://www.jfox.info/js-kua-yu-wen-ti-ji-jie-jue-fang-fa-hui-zong.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期六, 九月 27, 2014
@@ -18,7 +18,7 @@ JavaScript出于安全方面的考虑，不允许跨域调用其他页面的对�
 
 首先什么是跨域，简单地理解就是因为JavaScript同源策略的限制，a.com 域名下的js无法操作b.com或是c.a.com域名下的对象。更详细的说明可以看下表：
 URL说明是否允许通信http://www.a.com/a.js http://www.a.com/b.js同一域名下允许http://www.a.com/lab/a.js http://www.a.com/script/b.js同一域名下不同文件夹允许http://www.a.com:8000/a.js http://www.a.com/b.js同一域名，不同端口不允许http://www.a.com/a.js https://www.a.com/b.js同一域名，不同协议不允许http://www.a.com/a.js http://70.32.92.74/b.js域名和域名对应ip不允许http://www.a.com/a.js http://script.a.com/b.js主域相同，子域不同不允许http://www.a.com/a.js http://a.com/b.js同一域名，不同二级域名（同上）不允许（cookie这种情况下也不允许访问）http://www.cnblogs.com/a.js http://www.a.com/b.js不同域名不允许特别注意两点：第一，如果是协议和端口造成的跨域问题“前台”是无能为力的，第二：在跨域问题上，域仅仅是通过“URL的首部”来识别而不会去尝试判断相同的ip地址对应着两个域或两个域是否在同一个ip上。 “URL的首部”指window.location.protocol +window.location.host，也可以理解为“Domains, protocols and ports must match”。
-接下来简单地总结一下在“前台”一般处理跨域的办法，后台proxy这种方案牵涉到后台配置，这里就不阐述了，有兴趣的可以看看yahoo的这篇文章：《[JavaScript: Use a Web Proxy for Cross-Domain XMLHttpRequest Calls](http://www.jfox.info/go.php?url=http://www.jfox.info/url.php?_src=&amp;isencode=1&amp;content=dGltZT0xNDExODE5NjYxOTU1JnVybD1odHRwJTNBJTJGJTJGZGV2ZWxvcGVyLnlhaG9vLmNvbSUyRmphdmFzY3JpcHQlMkZob3d0by1wcm94eS5odG1s)》
+接下来简单地总结一下在“前台”一般处理跨域的办法，后台proxy这种方案牵涉到后台配置，这里就不阐述了，有兴趣的可以看看yahoo的这篇文章：《[JavaScript: Use a Web Proxy for Cross-Domain XMLHttpRequest Calls](https://www.jfox.info/go.php?url=http://www.jfox.info/url.php?_src=&amp;isencode=1&amp;content=dGltZT0xNDExODE5NjYxOTU1JnVybD1odHRwJTNBJTJGJTJGZGV2ZWxvcGVyLnlhaG9vLmNvbSUyRmphdmFzY3JpcHQlMkZob3d0by1wcm94eS5odG1s)》
 
 ### 1、document.domain+iframe的设置
 
@@ -39,7 +39,7 @@ script.a.com上的b.html
 问题：1、安全性，当一个站点（b.a.com）被攻击后，另一个站点（c.a.com）会引起安全漏洞。2、如果一个页面中引入多个iframe，要想能够操作所有iframe，必须都得设置相同domain。
 ### 2、动态创建script
 
-虽然浏览器默认禁止了跨域访问，但并不禁止在页面中引用其他域的JS文件，并可以自由执行引入的JS文件中的function（包括操作cookie、Dom等等）。根据这一点，可以方便地通过创建script节点的方法来实现完全跨域的通信。具体的做法可以参考YUI的[Get Utility](http://www.jfox.info/go.php?url=http://www.jfox.info/url.php?_src=&amp;isencode=1&amp;content=dGltZT0xNDExODE5NjYxOTU2JnVybD1odHRwJTNBJTJGJTJGZGV2ZWxvcGVyLnlhaG9vLmNvbSUyRnl1aSUyRmdldCUyRg==)
+虽然浏览器默认禁止了跨域访问，但并不禁止在页面中引用其他域的JS文件，并可以自由执行引入的JS文件中的function（包括操作cookie、Dom等等）。根据这一点，可以方便地通过创建script节点的方法来实现完全跨域的通信。具体的做法可以参考YUI的[Get Utility](https://www.jfox.info/go.php?url=http://www.jfox.info/url.php?_src=&amp;isencode=1&amp;content=dGltZT0xNDExODE5NjYxOTU2JnVybD1odHRwJTNBJTJGJTJGZGV2ZWxvcGVyLnlhaG9vLmNvbSUyRnl1aSUyRmdldCUyRg==)
 
 这里判断script节点加载完毕还是蛮有意思的：ie只能通过script的readystatechange属性，其它浏览器是script的load事件。以下是部分判断script加载完毕的方法。
 
@@ -65,12 +65,12 @@ a.com下的域名cs3.html
 
 ### 4、window.name实现的跨域数据传输
 
-文章较长列在此处不便于阅读，详细请看 [window.name实现的跨域数据传输](http://www.jfox.info/go.php?url=http://www.jfox.info/url.php?_src=&amp;isencode=1&amp;content=dGltZT0xNDExODE5NjYxOTU2JnVybD1odHRwJTNBJTJGJTJGd3d3LmNuYmxvZ3MuY29tJTJGcmFpbm1hbiUyRmFyY2hpdmUlMkYyMDExJTJGMDIlMkYyMSUyRjE5NjAwNDQuaHRtbA==)。
+文章较长列在此处不便于阅读，详细请看 [window.name实现的跨域数据传输](https://www.jfox.info/go.php?url=http://www.jfox.info/url.php?_src=&amp;isencode=1&amp;content=dGltZT0xNDExODE5NjYxOTU2JnVybD1odHRwJTNBJTJGJTJGd3d3LmNuYmxvZ3MuY29tJTJGcmFpbm1hbiUyRmFyY2hpdmUlMkYyMDExJTJGMDIlMkYyMSUyRjE5NjAwNDQuaHRtbA==)。
 
 ### 5、使用HTML5 postMessage
 
-[HTML5](http://www.jfox.info/go.php?url=http://www.jfox.info/url.php?_src=&amp;isencode=1&amp;content=dGltZT0xNDExODE5NjYxOTU2JnVybD1odHRwJTNBJTJGJTJGZGV2LnczLm9yZyUyRmh0bWw1JTJGc3BlYyUyRg==)中最酷的新功能之一就是 [跨文档消息传输Cross Document Messaging](http://www.jfox.info/go.php?url=http://www.jfox.info/url.php?_src=&amp;isencode=1&amp;content=dGltZT0xNDExODE5NjYxOTU2JnVybD1odHRwJTNBJTJGJTJGd3d3LndoYXR3Zy5vcmclMkZzcGVjcyUyRndlYi1hcHBzJTJGY3VycmVudC13b3JrJTJGJTIzY3Jvc3NEb2N1bWVudE1lc3NhZ2Vz)。下一代浏览器都将支持这个功能：Chrome 2.0+、Internet Explorer 8.0+, Firefox 3.0+, Opera 9.6+, 和 Safari 4.0+ 。 Facebook已经使用了这个功能，用postMessage支持基于web的实时消息传递。
-otherWindow.postMessage(message, targetOrigin);otherWindow: 对接收信息页面的window的引用。可以是页面中iframe的contentWindow属性；[window.open](http://www.jfox.info/go.php?url=http://www.jfox.info/url.php?_src=&amp;isencode=1&amp;content=dGltZT0xNDExODE5NjYxOTU3JnVybD1odHRwcyUzQSUyRiUyRmRldmVsb3Blci5tb3ppbGxhLm9yZyUyRmVuJTJGRE9NJTJGd2luZG93Lm9wZW4=)的返回值；通过name或下标从[window.frames](http://www.jfox.info/go.php?url=http://www.jfox.info/url.php?_src=&amp;isencode=1&amp;content=dGltZT0xNDExODE5NjYxOTU3JnVybD1odHRwcyUzQSUyRiUyRmRldmVsb3Blci5tb3ppbGxhLm9yZyUyRmVuJTJGRE9NJTJGd2luZG93LmZyYW1lcw==)取到的值。 message: 所要发送的数据，string类型。 targetOrigin: 用于限制otherWindow，“*”表示不作限制
+[HTML5](https://www.jfox.info/go.php?url=http://www.jfox.info/url.php?_src=&amp;isencode=1&amp;content=dGltZT0xNDExODE5NjYxOTU2JnVybD1odHRwJTNBJTJGJTJGZGV2LnczLm9yZyUyRmh0bWw1JTJGc3BlYyUyRg==)中最酷的新功能之一就是 [跨文档消息传输Cross Document Messaging](https://www.jfox.info/go.php?url=http://www.jfox.info/url.php?_src=&amp;isencode=1&amp;content=dGltZT0xNDExODE5NjYxOTU2JnVybD1odHRwJTNBJTJGJTJGd3d3LndoYXR3Zy5vcmclMkZzcGVjcyUyRndlYi1hcHBzJTJGY3VycmVudC13b3JrJTJGJTIzY3Jvc3NEb2N1bWVudE1lc3NhZ2Vz)。下一代浏览器都将支持这个功能：Chrome 2.0+、Internet Explorer 8.0+, Firefox 3.0+, Opera 9.6+, 和 Safari 4.0+ 。 Facebook已经使用了这个功能，用postMessage支持基于web的实时消息传递。
+otherWindow.postMessage(message, targetOrigin);otherWindow: 对接收信息页面的window的引用。可以是页面中iframe的contentWindow属性；[window.open](https://www.jfox.info/go.php?url=http://www.jfox.info/url.php?_src=&amp;isencode=1&amp;content=dGltZT0xNDExODE5NjYxOTU3JnVybD1odHRwcyUzQSUyRiUyRmRldmVsb3Blci5tb3ppbGxhLm9yZyUyRmVuJTJGRE9NJTJGd2luZG93Lm9wZW4=)的返回值；通过name或下标从[window.frames](https://www.jfox.info/go.php?url=http://www.jfox.info/url.php?_src=&amp;isencode=1&amp;content=dGltZT0xNDExODE5NjYxOTU3JnVybD1odHRwcyUzQSUyRiUyRmRldmVsb3Blci5tb3ppbGxhLm9yZyUyRmVuJTJGRE9NJTJGd2luZG93LmZyYW1lcw==)取到的值。 message: 所要发送的数据，string类型。 targetOrigin: 用于限制otherWindow，“*”表示不作限制
 a.com/index.html中的代码：
 
     *<iframe id="ifr" src="b.com/index.html"></iframe><script type="text/javascript">window.onload = function() {    var ifr = document.getElementById('ifr');    var targetOrigin = 'http://b.com';  **// 若写成'http://b.com/c/proxy.html'效果一样**// 若写成'http://c.com'就不会执行postMessage了**    ifr.contentWindow.postMessage('I was there!', targetOrigin);};*</script>
@@ -85,7 +85,7 @@ b.com/index.html中的代码：
     }    }, false);
     </script>
 
-参考文章：[《精通HTML5编程》第五章——跨文档消息机制](http://www.jfox.info/go.php?url=http://www.jfox.info/url.php?_src=&amp;isencode=1&amp;content=dGltZT0xNDExODE5NjYxOTU3JnVybD1odHRwJTNBJTJGJTJGd3d3LmdyYXRpLm9yZyUyRiUzRnAlM0Q0Mjk=)、[https://developer.mozilla.org/en/dom/window.postmessage](http://www.jfox.info/go.php?url=http://www.jfox.info/url.php?_src=&amp;isencode=1&amp;content=dGltZT0xNDExODE5NjYxOTU3JnVybD1odHRwcyUzQSUyRiUyRmRldmVsb3Blci5tb3ppbGxhLm9yZyUyRmVuJTJGZG9tJTJGd2luZG93LnBvc3RtZXNzYWdl)
+参考文章：[《精通HTML5编程》第五章——跨文档消息机制](https://www.jfox.info/go.php?url=http://www.jfox.info/url.php?_src=&amp;isencode=1&amp;content=dGltZT0xNDExODE5NjYxOTU3JnVybD1odHRwJTNBJTJGJTJGd3d3LmdyYXRpLm9yZyUyRiUzRnAlM0Q0Mjk=)、[https://developer.mozilla.org/en/dom/window.postmessage](https://www.jfox.info/go.php?url=http://www.jfox.info/url.php?_src=&amp;isencode=1&amp;content=dGltZT0xNDExODE5NjYxOTU3JnVybD1odHRwcyUzQSUyRiUyRmRldmVsb3Blci5tb3ppbGxhLm9yZyUyRmVuJTJGZG9tJTJGd2luZG93LnBvc3RtZXNzYWdl)
 
 ### 6、利用flash
 

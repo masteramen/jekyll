@@ -3,11 +3,11 @@ layout: post
 title:  "java.util.ConcurrentModificationException原因及解决"
 title2:  "java.util.ConcurrentModificationException原因及解决"
 date:   2017-01-01 23:43:18  +0800
-source:  "http://www.jfox.info/java-util-concurrentmodificationexception%e5%8e%9f%e5%9b%a0%e5%8f%8a%e8%a7%a3%e5%86%b3.html"
+source:  "https://www.jfox.info/java-util-concurrentmodificationexception%e5%8e%9f%e5%9b%a0%e5%8f%8a%e8%a7%a3%e5%86%b3.html"
 fileName:  "20170100498"
 lang:  "zh_CN"
 published: true
-permalink: "java-util-concurrentmodificationexception%e5%8e%9f%e5%9b%a0%e5%8f%8a%e8%a7%a3%e5%86%b3.html"
+permalink: "2017/https://www.jfox.info/java-util-concurrentmodificationexception%e5%8e%9f%e5%9b%a0%e5%8f%8a%e8%a7%a3%e5%86%b3.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期一, 一月 27, 2014

@@ -3,11 +3,11 @@ layout: post
 title:  "JAVA测试工具Jmeter在Windows下的搭建安装总结"
 title2:  "JAVA测试工具Jmeter在Windows下的搭建安装总结"
 date:   2017-01-01 23:45:32  +0800
-source:  "http://www.jfox.info/java-jmeter-testing-tools-installation-summary.html"
+source:  "https://www.jfox.info/java-jmeter-testing-tools-installation-summary.html"
 fileName:  "20170100632"
 lang:  "zh_CN"
 published: true
-permalink: "java-jmeter-testing-tools-installation-summary.html"
+permalink: "2017/https://www.jfox.info/java-jmeter-testing-tools-installation-summary.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期日, 五月 11, 2014
@@ -34,13 +34,13 @@ By Lee - Last updated: 星期日, 五月 11, 2014
 
 下载Jmeter工具包 并把工具包放到C盘下
 
-[http://jmeter.apache.org/download_jmeter.cgi](http://www.jfox.info/go.php?url=http://jmeter.apache.org/download_jmeter.cgi)
+[http://jmeter.apache.org/download_jmeter.cgi](https://www.jfox.info/go.php?url=http://jmeter.apache.org/download_jmeter.cgi)
 
 2、安装JDK
 
 下载Java的JDK并安装，一般会安装在C:\Program Files\Java目录下
 
-[http://java.sun.com/javase/downloads/index.jsp](http://www.jfox.info/go.php?url=http://java.sun.com/javase/downloads/index.jsp)
+[http://java.sun.com/javase/downloads/index.jsp](https://www.jfox.info/go.php?url=http://java.sun.com/javase/downloads/index.jsp)
 
 3、Java环境变量配置
 
@@ -54,5 +54,5 @@ By Lee - Last updated: 星期日, 五月 11, 2014
 
 在“系统变量”—>“新建”, 在变量名中输入：JMETER_HOME，变量值中输入：C:\jakarta-jmeter-2.3.4 ，再修改CLASSPATH变量，变量值中添加%JMETER_HOME%\lib\ext\ApacheJMeter_core.jar;% JMETER_HOME%\lib\jorphan.jar;%JMETER_HOME%\lib\logkit-1.2.jar; 然后确定即可
 
-原文地址:[http://blog.csdn.net/lzybala/article/details/25511045](http://www.jfox.info/go.php?url=http://www.jfox.info/url.php?url=http%3A%2F%2Fblog.csdn.net%2Flzybala%2Farticle%2Fdetails%2F25511045).
+原文地址:[http://blog.csdn.net/lzybala/article/details/25511045](https://www.jfox.info/go.php?url=http://www.jfox.info/url.php?url=http%3A%2F%2Fblog.csdn.net%2Flzybala%2Farticle%2Fdetails%2F25511045).
 {% endraw %}

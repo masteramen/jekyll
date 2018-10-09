@@ -3,11 +3,11 @@ layout: post
 title:  "arduino多任务库processSchedule在线程中设置延迟的方法"
 title2:  "arduino多任务库processSchedule在线程中设置延迟的方法"
 date:   2017-01-01 23:50:23  +0800
-source:  "http://www.jfox.info/arduino%e5%a4%9a%e4%bb%bb%e5%8a%a1%e5%ba%93processschedule%e5%9c%a8%e7%ba%bf%e7%a8%8b%e4%b8%ad%e8%ae%be%e7%bd%ae%e5%bb%b6%e8%bf%9f%e7%9a%84%e6%96%b9%e6%b3%95.html"
+source:  "https://www.jfox.info/arduino%e5%a4%9a%e4%bb%bb%e5%8a%a1%e5%ba%93processschedule%e5%9c%a8%e7%ba%bf%e7%a8%8b%e4%b8%ad%e8%ae%be%e7%bd%ae%e5%bb%b6%e8%bf%9f%e7%9a%84%e6%96%b9%e6%b3%95.html"
 fileName:  "20170100923"
 lang:  "zh_CN"
 published: true
-permalink: "arduino%e5%a4%9a%e4%bb%bb%e5%8a%a1%e5%ba%93processschedule%e5%9c%a8%e7%ba%bf%e7%a8%8b%e4%b8%ad%e8%ae%be%e7%bd%ae%e5%bb%b6%e8%bf%9f%e7%9a%84%e6%96%b9%e6%b3%95.html"
+permalink: "2017/https://www.jfox.info/arduino%e5%a4%9a%e4%bb%bb%e5%8a%a1%e5%ba%93processschedule%e5%9c%a8%e7%ba%bf%e7%a8%8b%e4%b8%ad%e8%ae%be%e7%bd%ae%e5%bb%b6%e8%bf%9f%e7%9a%84%e6%96%b9%e6%b3%95.html"
 ---
 {% raw %}
 我先引用一下这个项目介绍的部分内容，然后再来说我选择的理由 
@@ -28,7 +28,7 @@ permalink: "arduino%e5%a4%9a%e4%bb%bb%e5%8a%a1%e5%ba%93processschedule%e5%9c%a8%
 -  Exception Handling (wait what?!) 
 -  Scheduler can automatically interrupt stuck processes 
 
- 上述引用是这个 [ 多任务 ](http://www.jfox.info/go.php?url=http://www.asymt.com/tag/%e5%a4%9a%e4%bb%bb%e5%8a%a1) 库的一些特点，我把每条都翻译一下 基本的 
+ 上述引用是这个 [ 多任务 ](https://www.jfox.info/go.php?url=http://www.asymt.com/tag/%e5%a4%9a%e4%bb%bb%e5%8a%a1) 库的一些特点，我把每条都翻译一下 基本的 
 
 -  控制Process如何运行（定期，迭代或尽可能多的） 
 -  支持定义Process优先级（轻松创建自定义级别） 

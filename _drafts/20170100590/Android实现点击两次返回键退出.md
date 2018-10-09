@@ -3,11 +3,11 @@ layout: post
 title:  "Android实现点击两次返回键退出"
 title2:  "Android实现点击两次返回键退出"
 date:   2017-01-01 23:44:50  +0800
-source:  "http://www.jfox.info/android-click-two-black-key-to-exit-program.html"
+source:  "https://www.jfox.info/android-click-two-black-key-to-exit-program.html"
 fileName:  "20170100590"
 lang:  "zh_CN"
 published: true
-permalink: "android-click-two-black-key-to-exit-program.html"
+permalink: "2017/https://www.jfox.info/android-click-two-black-key-to-exit-program.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期三, 二月 26, 2014
@@ -114,7 +114,7 @@ By Lee - Last updated: 星期三, 二月 26, 2014
     }
     
 
-[![515af8fce8771](http://www.jfox.info/wp-content/uploads/2014/02/515af8fce8771.png)](http://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2014/02/515af8fce8771.png)
+[![515af8fce8771](http://www.jfox.info/wp-content/uploads/2014/02/515af8fce8771.png)](https://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2014/02/515af8fce8771.png)
 
-参考来源 [Android实现点击两次返回键退出 ](http://www.jfox.info/go.php?url=http://www.jfox.info/url.php?url=http%3A%2F%2Fmy.eoe.cn%2Fleigo%2Farchive%2F2146.html).
+参考来源 [Android实现点击两次返回键退出 ](https://www.jfox.info/go.php?url=http://www.jfox.info/url.php?url=http%3A%2F%2Fmy.eoe.cn%2Fleigo%2Farchive%2F2146.html).
 {% endraw %}

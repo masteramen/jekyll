@@ -3,11 +3,11 @@ layout: post
 title:  "Java和MongoDB之Hello World"
 title2:  "Java和MongoDB之Hello World"
 date:   2017-01-01 23:45:02  +0800
-source:  "http://www.jfox.info/the-hello-world-java-and-mongodb.html"
+source:  "https://www.jfox.info/the-hello-world-java-and-mongodb.html"
 fileName:  "20170100602"
 lang:  "zh_CN"
 published: true
-permalink: "the-hello-world-java-and-mongodb.html"
+permalink: "2017/https://www.jfox.info/the-hello-world-java-and-mongodb.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期四, 三月 6, 2014
@@ -170,5 +170,5 @@ System.out.println(cursor2.next());
 
 使用mongo验证创建的数据库testdb，collection user是否存在。
 
-文章来源 [Java和MongoDB之Hello World – qiyadeng](http://www.jfox.info/go.php?url=http://www.jfox.info/url.php?url=http%3A%2F%2Fwww.cnblogs.com%2Fqiyadeng%2Farchive%2F2013%2F03%2F19%2F2970131.html).
+文章来源 [Java和MongoDB之Hello World – qiyadeng](https://www.jfox.info/go.php?url=http://www.jfox.info/url.php?url=http%3A%2F%2Fwww.cnblogs.com%2Fqiyadeng%2Farchive%2F2013%2F03%2F19%2F2970131.html).
 {% endraw %}

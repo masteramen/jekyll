@@ -3,11 +3,11 @@ layout: post
 title:  "webpack打包后使用jQuery的问题"
 title2:  "webpack打包后使用jQuery的问题"
 date:   2017-01-01 23:48:37  +0800
-source:  "http://www.jfox.info/webpack-da-bao-hou-shi-yong-jquery-de-wen-ti.html"
+source:  "https://www.jfox.info/webpack-da-bao-hou-shi-yong-jquery-de-wen-ti.html"
 fileName:  "20170100817"
 lang:  "zh_CN"
 published: true
-permalink: "webpack-da-bao-hou-shi-yong-jquery-de-wen-ti.html"
+permalink: "2017/https://www.jfox.info/webpack-da-bao-hou-shi-yong-jquery-de-wen-ti.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期二, 四月 4, 2017

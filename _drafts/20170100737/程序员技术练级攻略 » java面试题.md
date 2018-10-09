@@ -3,11 +3,11 @@ layout: post
 title:  "程序员技术练级攻略 » java面试题"
 title2:  "程序员技术练级攻略 » java面试题"
 date:   2017-01-01 23:47:17  +0800
-source:  "http://www.jfox.info/cheng-xu-yuan-ji-shu-lian-ji-gong-lue.html"
+source:  "https://www.jfox.info/cheng-xu-yuan-ji-shu-lian-ji-gong-lue.html"
 fileName:  "20170100737"
 lang:  "zh_CN"
 published: true
-permalink: "cheng-xu-yuan-ji-shu-lian-ji-gong-lue.html"
+permalink: "2017/https://www.jfox.info/cheng-xu-yuan-ji-shu-lian-ji-gong-lue.html"
 ---
 {% raw %}
 你是否觉得自己从学校毕业的时候只做过小玩具一样的程序?走入职场后哪怕没有什么经验也可以把以下这些课外练习走一遍(朋友的抱怨：学校课程总是从理论出发，作业项目都看不出有什么实际作用，不如从工作中的需求出发)

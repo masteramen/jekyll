@@ -3,16 +3,16 @@ layout: post
 title:  "MyBatis源码解析【5】工厂的构建"
 title2:  "MyBatis源码解析【5】工厂的构建"
 date:   2017-01-01 23:54:54  +0800
-source:  "http://www.jfox.info/mybatis%e6%ba%90%e7%a0%81%e8%a7%a3%e6%9e%905%e5%b7%a5%e5%8e%82%e7%9a%84%e6%9e%84%e5%bb%ba.html"
+source:  "https://www.jfox.info/mybatis%e6%ba%90%e7%a0%81%e8%a7%a3%e6%9e%905%e5%b7%a5%e5%8e%82%e7%9a%84%e6%9e%84%e5%bb%ba.html"
 fileName:  "20170101194"
 lang:  "zh_CN"
 published: true
-permalink: "mybatis%e6%ba%90%e7%a0%81%e8%a7%a3%e6%9e%905%e5%b7%a5%e5%8e%82%e7%9a%84%e6%9e%84%e5%bb%ba.html"
+permalink: "2017/https://www.jfox.info/mybatis%e6%ba%90%e7%a0%81%e8%a7%a3%e6%9e%905%e5%b7%a5%e5%8e%82%e7%9a%84%e6%9e%84%e5%bb%ba.html"
 ---
 {% raw %}
 这个分类比较连续，如果这里看不懂，或者第一次看，请回顾之前的博客
 
-[http://www.cnblogs.com/linkstar/category/1027239.html](http://www.jfox.info/go.php?url=http://www.cnblogs.com/linkstar/category/1027239.html)
+[http://www.cnblogs.com/linkstar/category/1027239.html](https://www.jfox.info/go.php?url=http://www.cnblogs.com/linkstar/category/1027239.html)
 
 终于算是把装备弄齐全了。接下来就一步步看看MyBatis是如何工作的。
 
@@ -104,5 +104,35 @@ this.configuration = configuration;
 
 最后我们来看看产品的生产，为之后的产品的执行做个准备。
 
-首先进入return new DefaultSqlSession(configuration, exe
+首先进入return new DefaultSqlSession(configuration, executor, autoCommit);
+
+![](/wp-content/uploads/2017/07/1499485337.png)
+
+我们可以看到，也是很简单的一个构造方法，也是设置了必要的参数主要我们先来大致浏览一下这个类
+
+    ![](/wp-content/uploads/2017/07/1499485338.png)
+
+可以看见，SqlSession也是一个接口，而我们的默认产品是实现了这个接口。我们看看这个接口有哪些方法其实就很明了了由于方法很多，我就不展示全部了。
+
+    ![](/wp-content/uploads/2017/07/14994853381.png)
+
+从方法名字是不是就很熟悉了，就是执行sql语句的方法嘛。所以我们的产品原来就是这样的。
+
+     
+
+## 总结
+
+最后总结一下：其实工厂的构建其实还算是简单的，我们需要注意的点是，构建过程中，读取了xml配置，把配置加载加载进了类里面，而且配置的读取是有一个顺序的。
+
+配置的不同导致了最后工厂创建的不同，导致了最后生产的产品不同。
+
+所有真正的工厂和产品都是接口，而使用的都是默认工厂和默认产品，去实现了这些接口，一般情况下我们不可能自己去实现这些接口然后去开发的。
+
+最后依然留下几个问题：
+
+1、为什么MyBatis要这样设计？为什么要设计成工厂这样的模式呢？有什么样的好处？
+
+2、接口在这里的好处是什么？
+
+3、Configuration这个类的作用是什么？仅仅是保存和提供配置信息吗？
 {% endraw %}

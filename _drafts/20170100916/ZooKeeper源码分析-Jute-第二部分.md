@@ -3,11 +3,11 @@ layout: post
 title:  "ZooKeeper源码分析-Jute-第二部分"
 title2:  "ZooKeeper源码分析-Jute-第二部分"
 date:   2017-01-01 23:50:16  +0800
-source:  "http://www.jfox.info/zookeeper%e6%ba%90%e7%a0%81%e5%88%86%e6%9e%90-jute-%e7%ac%ac%e4%ba%8c%e9%83%a8%e5%88%86.html"
+source:  "https://www.jfox.info/zookeeper%e6%ba%90%e7%a0%81%e5%88%86%e6%9e%90-jute-%e7%ac%ac%e4%ba%8c%e9%83%a8%e5%88%86.html"
 fileName:  "20170100916"
 lang:  "zh_CN"
 published: true
-permalink: "zookeeper%e6%ba%90%e7%a0%81%e5%88%86%e6%9e%90-jute-%e7%ac%ac%e4%ba%8c%e9%83%a8%e5%88%86.html"
+permalink: "2017/https://www.jfox.info/zookeeper%e6%ba%90%e7%a0%81%e5%88%86%e6%9e%90-jute-%e7%ac%ac%e4%ba%8c%e9%83%a8%e5%88%86.html"
 ---
 {% raw %}
 **数据类型和流**

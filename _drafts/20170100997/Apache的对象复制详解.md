@@ -3,11 +3,11 @@ layout: post
 title:  "Apache的对象复制详解"
 title2:  "Apache的对象复制详解"
 date:   2017-01-01 23:51:37  +0800
-source:  "http://www.jfox.info/apache%e7%9a%84%e5%af%b9%e8%b1%a1%e5%a4%8d%e5%88%b6%e8%af%a6%e8%a7%a3.html"
+source:  "https://www.jfox.info/apache%e7%9a%84%e5%af%b9%e8%b1%a1%e5%a4%8d%e5%88%b6%e8%af%a6%e8%a7%a3.html"
 fileName:  "20170100997"
 lang:  "zh_CN"
 published: true
-permalink: "apache%e7%9a%84%e5%af%b9%e8%b1%a1%e5%a4%8d%e5%88%b6%e8%af%a6%e8%a7%a3.html"
+permalink: "2017/https://www.jfox.info/apache%e7%9a%84%e5%af%b9%e8%b1%a1%e5%a4%8d%e5%88%b6%e8%af%a6%e8%a7%a3.html"
 ---
 {% raw %}
 **BeanUtils.copyProperties 和 PropertyUtils.copyProperties**

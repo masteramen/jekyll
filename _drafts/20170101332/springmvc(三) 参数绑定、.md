@@ -3,11 +3,11 @@ layout: post
 title:  "springmvc(三) 参数绑定、"
 title2:  "springmvc(三) 参数绑定、"
 date:   2017-01-01 23:57:12  +0800
-source:  "http://www.jfox.info/springmvc%e4%b8%89%e5%8f%82%e6%95%b0%e7%bb%91%e5%ae%9a.html"
+source:  "https://www.jfox.info/springmvc%e4%b8%89%e5%8f%82%e6%95%b0%e7%bb%91%e5%ae%9a.html"
 fileName:  "20170101332"
 lang:  "zh_CN"
 published: true
-permalink: "springmvc%e4%b8%89%e5%8f%82%e6%95%b0%e7%bb%91%e5%ae%9a.html"
+permalink: "2017/https://www.jfox.info/springmvc%e4%b8%89%e5%8f%82%e6%95%b0%e7%bb%91%e5%ae%9a.html"
 ---
 {% raw %}
 前面两章就介绍了什么是springmvc，springmvc的框架原理，并且会简单的使用springmvc以及ssm的集成，从这一章节来看，就开始讲解springmvc的各种功能实现，慢慢消化

@@ -3,11 +3,11 @@ layout: post
 title:  "简单实现iframe自适应高度"
 title2:  "简单实现iframe自适应高度"
 date:   2017-01-01 23:43:43  +0800
-source:  "http://www.jfox.info/%e7%ae%80%e5%8d%95%e5%ae%9e%e7%8e%b0iframe%e8%87%aa%e9%80%82%e5%ba%94%e9%ab%98%e5%ba%a6.html"
+source:  "https://www.jfox.info/%e7%ae%80%e5%8d%95%e5%ae%9e%e7%8e%b0iframe%e8%87%aa%e9%80%82%e5%ba%94%e9%ab%98%e5%ba%a6.html"
 fileName:  "20170100523"
 lang:  "zh_CN"
 published: true
-permalink: "%e7%ae%80%e5%8d%95%e5%ae%9e%e7%8e%b0iframe%e8%87%aa%e9%80%82%e5%ba%94%e9%ab%98%e5%ba%a6.html"
+permalink: "2017/https://www.jfox.info/%e7%ae%80%e5%8d%95%e5%ae%9e%e7%8e%b0iframe%e8%87%aa%e9%80%82%e5%ba%94%e9%ab%98%e5%ba%a6.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期二, 二月 4, 2014
@@ -20,5 +20,5 @@ By Lee - Last updated: 星期二, 二月 4, 2014
 
 height属性不能设置，不然就不行了。 
 
-参考来源 [实现iFrame自适应高度，原来很简单！ – Jack Niu – 博客园](http://www.jfox.info/go.php?url=http://www.cnblogs.com/skywind/archive/2007/07/24/829550.html).
+参考来源 [实现iFrame自适应高度，原来很简单！ – Jack Niu – 博客园](https://www.jfox.info/go.php?url=http://www.cnblogs.com/skywind/archive/2007/07/24/829550.html).
 {% endraw %}

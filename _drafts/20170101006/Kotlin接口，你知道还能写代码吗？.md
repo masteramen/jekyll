@@ -3,11 +3,11 @@ layout: post
 title:  "Kotlin接口，你知道还能写代码吗？"
 title2:  "Kotlin接口，你知道还能写代码吗？"
 date:   2017-01-01 23:51:46  +0800
-source:  "http://www.jfox.info/kotlin%e6%8e%a5%e5%8f%a3%ef%bc%8c%e4%bd%a0%e7%9f%a5%e9%81%93%e8%bf%98%e8%83%bd%e5%86%99%e4%bb%a3%e7%a0%81%e5%90%97%ef%bc%9f.html"
+source:  "https://www.jfox.info/kotlin%e6%8e%a5%e5%8f%a3%ef%bc%8c%e4%bd%a0%e7%9f%a5%e9%81%93%e8%bf%98%e8%83%bd%e5%86%99%e4%bb%a3%e7%a0%81%e5%90%97%ef%bc%9f.html"
 fileName:  "20170101006"
 lang:  "zh_CN"
 published: true
-permalink: "kotlin%e6%8e%a5%e5%8f%a3%ef%bc%8c%e4%bd%a0%e7%9f%a5%e9%81%93%e8%bf%98%e8%83%bd%e5%86%99%e4%bb%a3%e7%a0%81%e5%90%97%ef%bc%9f.html"
+permalink: "2017/https://www.jfox.info/kotlin%e6%8e%a5%e5%8f%a3%ef%bc%8c%e4%bd%a0%e7%9f%a5%e9%81%93%e8%bf%98%e8%83%bd%e5%86%99%e4%bb%a3%e7%a0%81%e5%90%97%ef%bc%9f.html"
 ---
 {% raw %}
 # Kotlin接口，你知道还能写代码吗？ 

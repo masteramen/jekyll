@@ -3,11 +3,11 @@ layout: post
 title:  "java Xml方面的一些面试题"
 title2:  "java Xml方面的一些面试题"
 date:   2017-01-01 23:42:28  +0800
-source:  "http://www.jfox.info/java-xml-fang-mian-de-yi-xie-mian-shi-ti.html"
+source:  "https://www.jfox.info/java-xml-fang-mian-de-yi-xie-mian-shi-ti.html"
 fileName:  "20170100448"
 lang:  "zh_CN"
 published: true
-permalink: "java-xml-fang-mian-de-yi-xie-mian-shi-ti.html"
+permalink: "2017/https://www.jfox.info/java-xml-fang-mian-de-yi-xie-mian-shi-ti.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期三, 六月 26, 2013

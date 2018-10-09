@@ -3,11 +3,11 @@ layout: post
 title:  "JAVA nio 简介"
 title2:  "JAVA nio 简介"
 date:   2017-01-01 23:44:33  +0800
-source:  "http://www.jfox.info/java-nio-jieshao.html"
+source:  "https://www.jfox.info/java-nio-jieshao.html"
 fileName:  "20170100573"
 lang:  "zh_CN"
 published: true
-permalink: "java-nio-jieshao.html"
+permalink: "2017/https://www.jfox.info/java-nio-jieshao.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期四, 二月 20, 2014
@@ -56,7 +56,7 @@ Channel:
 
 –         异步 I/O 支持
 
-[![f4a0aefc-127c-3c9e-975f-36cce5173a35](http://www.jfox.info/wp-content/uploads/2014/02/f4a0aefc-127c-3c9e-975f-36cce5173a35.jpg)](http://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2014/02/f4a0aefc-127c-3c9e-975f-36cce5173a35.jpg)
+[![f4a0aefc-127c-3c9e-975f-36cce5173a35](http://www.jfox.info/wp-content/uploads/2014/02/f4a0aefc-127c-3c9e-975f-36cce5173a35.jpg)](https://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2014/02/f4a0aefc-127c-3c9e-975f-36cce5173a35.jpg)
 
 图1：channel和buffer关系
 
@@ -103,7 +103,7 @@ Channel:
 
 其中 buffer 内部结构如下 ( 下图拷贝自资料 ):
 
- [![d6236f08-e617-34be-81f2-c53c126de3d7](http://www.jfox.info/wp-content/uploads/2014/02/d6236f08-e617-34be-81f2-c53c126de3d7.jpg)](http://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2014/02/d6236f08-e617-34be-81f2-c53c126de3d7.jpg)
+ [![d6236f08-e617-34be-81f2-c53c126de3d7](http://www.jfox.info/wp-content/uploads/2014/02/d6236f08-e617-34be-81f2-c53c126de3d7.jpg)](https://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2014/02/d6236f08-e617-34be-81f2-c53c126de3d7.jpg)
 
 图2：buffer内部结构 
 
@@ -259,7 +259,7 @@ Java.nio.charset 提供了编码解码一套解决方案。
 
 一个常见的网络 IO 通讯流程如下 :
 
-[![6fb291bd-3b9a-3067-a1e6-41cce3804409](http://www.jfox.info/wp-content/uploads/2014/02/6fb291bd-3b9a-3067-a1e6-41cce3804409.jpg)](http://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2014/02/6fb291bd-3b9a-3067-a1e6-41cce3804409.jpg)
+[![6fb291bd-3b9a-3067-a1e6-41cce3804409](http://www.jfox.info/wp-content/uploads/2014/02/6fb291bd-3b9a-3067-a1e6-41cce3804409.jpg)](https://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2014/02/6fb291bd-3b9a-3067-a1e6-41cce3804409.jpg)
 
 图3：网络通讯基本过程
 
@@ -295,7 +295,7 @@ Java.nio.charset 提供了编码解码一套解决方案。
 
 以下是异步 IO 的结构：
 
-[![7dac568f-b3bf-38f7-8392-f5b6d1fb2b3f](http://www.jfox.info/wp-content/uploads/2014/02/7dac568f-b3bf-38f7-8392-f5b6d1fb2b3f.jpg)](http://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2014/02/7dac568f-b3bf-38f7-8392-f5b6d1fb2b3f.jpg)
+[![7dac568f-b3bf-38f7-8392-f5b6d1fb2b3f](http://www.jfox.info/wp-content/uploads/2014/02/7dac568f-b3bf-38f7-8392-f5b6d1fb2b3f.jpg)](https://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2014/02/7dac568f-b3bf-38f7-8392-f5b6d1fb2b3f.jpg)
 
  图4：非阻塞基本原理
 
@@ -317,5 +317,5 @@ SelectionKey
 
 例子 2 NIO 线程协作实现资源合理利用。 (wait,notify) 。 ( 见 nio.asyn.multithread 下的例子 )
 
- [java-nio-example.rar](http://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2014/02/java-nio-example.rar)
+ [java-nio-example.rar](https://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2014/02/java-nio-example.rar)
 {% endraw %}

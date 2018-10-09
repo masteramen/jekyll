@@ -3,11 +3,11 @@ layout: post
 title:  "Java基础——泛型 » java面试题"
 title2:  "Java基础——泛型 » java面试题"
 date:   2017-01-01 23:51:35  +0800
-source:  "http://www.jfox.info/java%e5%9f%ba%e7%a1%80-%e6%b3%9b%e5%9e%8b.html"
+source:  "https://www.jfox.info/java%e5%9f%ba%e7%a1%80-%e6%b3%9b%e5%9e%8b.html"
 fileName:  "20170100995"
 lang:  "zh_CN"
 published: true
-permalink: "java%e5%9f%ba%e7%a1%80-%e6%b3%9b%e5%9e%8b.html"
+permalink: "2017/https://www.jfox.info/java%e5%9f%ba%e7%a1%80-%e6%b3%9b%e5%9e%8b.html"
 ---
 {% raw %}
 **一、定义**

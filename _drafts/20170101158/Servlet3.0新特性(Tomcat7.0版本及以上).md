@@ -3,11 +3,11 @@ layout: post
 title:  "Servlet3.0新特性(Tomcat7.0版本及以上)"
 title2:  "Servlet3.0新特性(Tomcat7.0版本及以上)"
 date:   2017-01-01 23:54:18  +0800
-source:  "http://www.jfox.info/servlet30%e6%96%b0%e7%89%b9%e6%80%a7tomcat70%e7%89%88%e6%9c%ac%e5%8f%8a%e4%bb%a5%e4%b8%8a.html"
+source:  "https://www.jfox.info/servlet30%e6%96%b0%e7%89%b9%e6%80%a7tomcat70%e7%89%88%e6%9c%ac%e5%8f%8a%e4%bb%a5%e4%b8%8a.html"
 fileName:  "20170101158"
 lang:  "zh_CN"
 published: true
-permalink: "servlet30%e6%96%b0%e7%89%b9%e6%80%a7tomcat70%e7%89%88%e6%9c%ac%e5%8f%8a%e4%bb%a5%e4%b8%8a.html"
+permalink: "2017/https://www.jfox.info/servlet30%e6%96%b0%e7%89%b9%e6%80%a7tomcat70%e7%89%88%e6%9c%ac%e5%8f%8a%e4%bb%a5%e4%b8%8a.html"
 ---
 {% raw %}
 在Eclipse中创建Servlet后，Eclipse不会自动在web.xml中生成该Servlet对应的mapping信息，而是在Servlet代码中加入注解@WebServlet。

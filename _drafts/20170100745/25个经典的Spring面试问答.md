@@ -3,11 +3,11 @@ layout: post
 title:  "25个经典的Spring面试问答"
 title2:  "25个经典的Spring面试问答"
 date:   2017-01-01 23:47:25  +0800
-source:  "http://www.jfox.info/25-ge-jing-dian-de-spring-mian-shi-wen-da.html"
+source:  "https://www.jfox.info/25-ge-jing-dian-de-spring-mian-shi-wen-da.html"
 fileName:  "20170100745"
 lang:  "zh_CN"
 published: true
-permalink: "25-ge-jing-dian-de-spring-mian-shi-wen-da.html"
+permalink: "2017/https://www.jfox.info/25-ge-jing-dian-de-spring-mian-shi-wen-da.html"
 ---
 {% raw %}
 本人收集了一些在大家在面试时被经常问及的关于Spring的主要问题，这些问题有可能在你下次面试时就会被问到。对于本文中未提及的Spring其他模块，我会单独分享面试的问题和答案。

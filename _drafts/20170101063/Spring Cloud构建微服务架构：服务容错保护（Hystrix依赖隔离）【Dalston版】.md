@@ -3,11 +3,11 @@ layout: post
 title:  "Spring Cloud构建微服务架构：服务容错保护（Hystrix依赖隔离）【Dalston版】"
 title2:  "Spring Cloud构建微服务架构：服务容错保护（Hystrix依赖隔离）【Dalston版】"
 date:   2017-01-01 23:52:43  +0800
-source:  "http://www.jfox.info/springcloud%e6%9e%84%e5%bb%ba%e5%be%ae%e6%9c%8d%e5%8a%a1%e6%9e%b6%e6%9e%84%e6%9c%8d%e5%8a%a1%e5%ae%b9%e9%94%99%e4%bf%9d%e6%8a%a4hystrix%e4%be%9d%e8%b5%96%e9%9a%94%e7%a6%bbdalston%e7%89%88.html"
+source:  "https://www.jfox.info/springcloud%e6%9e%84%e5%bb%ba%e5%be%ae%e6%9c%8d%e5%8a%a1%e6%9e%b6%e6%9e%84%e6%9c%8d%e5%8a%a1%e5%ae%b9%e9%94%99%e4%bf%9d%e6%8a%a4hystrix%e4%be%9d%e8%b5%96%e9%9a%94%e7%a6%bbdalston%e7%89%88.html"
 fileName:  "20170101063"
 lang:  "zh_CN"
 published: true
-permalink: "springcloud%e6%9e%84%e5%bb%ba%e5%be%ae%e6%9c%8d%e5%8a%a1%e6%9e%b6%e6%9e%84%e6%9c%8d%e5%8a%a1%e5%ae%b9%e9%94%99%e4%bf%9d%e6%8a%a4hystrix%e4%be%9d%e8%b5%96%e9%9a%94%e7%a6%bbdalston%e7%89%88.html"
+permalink: "2017/https://www.jfox.info/springcloud%e6%9e%84%e5%bb%ba%e5%be%ae%e6%9c%8d%e5%8a%a1%e6%9e%b6%e6%9e%84%e6%9c%8d%e5%8a%a1%e5%ae%b9%e9%94%99%e4%bf%9d%e6%8a%a4hystrix%e4%be%9d%e8%b5%96%e9%9a%94%e7%a6%bbdalston%e7%89%88.html"
 ---
 {% raw %}
 “舱壁模式”对于熟悉Docker的读者一定不陌生，Docker通过“舱壁模式”实现进程的隔离，使得容器与容器之间不会互相影响。而Hystrix则使用该模式实现线程池的隔离，它会为每一个Hystrix命令创建一个独立的线程池，这样就算某个在Hystrix命令包装下的依赖服务出现延迟过高的情况，也只是对该依赖服务的调用产生影响，而不会拖慢其他的服务。 

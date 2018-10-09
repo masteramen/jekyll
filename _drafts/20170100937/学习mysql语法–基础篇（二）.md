@@ -3,11 +3,11 @@ layout: post
 title:  "学习mysql语法–基础篇（二）"
 title2:  "学习mysql语法–基础篇（二）"
 date:   2017-01-01 23:50:37  +0800
-source:  "http://www.jfox.info/%e5%ad%a6%e4%b9%a0mysql%e8%af%ad%e6%b3%95-%e5%9f%ba%e7%a1%80%e7%af%87-%e4%ba%8c.html"
+source:  "https://www.jfox.info/%e5%ad%a6%e4%b9%a0mysql%e8%af%ad%e6%b3%95-%e5%9f%ba%e7%a1%80%e7%af%87-%e4%ba%8c.html"
 fileName:  "20170100937"
 lang:  "zh_CN"
 published: true
-permalink: "%e5%ad%a6%e4%b9%a0mysql%e8%af%ad%e6%b3%95-%e5%9f%ba%e7%a1%80%e7%af%87-%e4%ba%8c.html"
+permalink: "2017/https://www.jfox.info/%e5%ad%a6%e4%b9%a0mysql%e8%af%ad%e6%b3%95-%e5%9f%ba%e7%a1%80%e7%af%87-%e4%ba%8c.html"
 ---
 {% raw %}
 ** 前 言**

@@ -3,11 +3,11 @@ layout: post
 title:  "Oracle数据库优化:表分区与索引分区"
 title2:  "Oracle数据库优化表分区与索引分区"
 date:   2017-01-01 23:42:46  +0800
-source:  "http://www.jfox.info/oracle-shu-ju-ku-you-hua-biao-fen-qu-yu-suo-yin-fen-qu.html"
+source:  "https://www.jfox.info/oracle-shu-ju-ku-you-hua-biao-fen-qu-yu-suo-yin-fen-qu.html"
 fileName:  "20170100466"
 lang:  "zh_CN"
 published: true
-permalink: "oracle-shu-ju-ku-you-hua-biao-fen-qu-yu-suo-yin-fen-qu.html"
+permalink: "2017/https://www.jfox.info/oracle-shu-ju-ku-you-hua-biao-fen-qu-yu-suo-yin-fen-qu.html"
 ---
 {% raw %}
 一、Oracle分区简介 

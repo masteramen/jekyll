@@ -3,11 +3,11 @@ layout: post
 title:  "制作基于Google翻译的Firefox翻译书签"
 title2:  "制作基于Google翻译的Firefox翻译书签"
 date:   2017-01-01 23:43:19  +0800
-source:  "http://www.jfox.info/%e5%88%b6%e4%bd%9c%e5%9f%ba%e4%ba%8egoogle%e7%bf%bb%e8%af%91%e7%9a%84firefox%e7%bf%bb%e8%af%91%e4%b9%a6%e7%ad%be.html"
+source:  "https://www.jfox.info/%e5%88%b6%e4%bd%9c%e5%9f%ba%e4%ba%8egoogle%e7%bf%bb%e8%af%91%e7%9a%84firefox%e7%bf%bb%e8%af%91%e4%b9%a6%e7%ad%be.html"
 fileName:  "20170100499"
 lang:  "zh_CN"
 published: true
-permalink: "%e5%88%b6%e4%bd%9c%e5%9f%ba%e4%ba%8egoogle%e7%bf%bb%e8%af%91%e7%9a%84firefox%e7%bf%bb%e8%af%91%e4%b9%a6%e7%ad%be.html"
+permalink: "2017/https://www.jfox.info/%e5%88%b6%e4%bd%9c%e5%9f%ba%e4%ba%8egoogle%e7%bf%bb%e8%af%91%e7%9a%84firefox%e7%bf%bb%e8%af%91%e4%b9%a6%e7%ad%be.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期一, 一月 27, 2014
@@ -20,5 +20,5 @@ javascript:Qr=document.getSelection();if(!Qr){void(Qr=prompt(‘请输入你要�
 
 新建一个书签，代码粘贴到书签地址之中，保存到书签菜单或书签工具栏即可使用。修改#ja|zh-CN就可以实现不同语种之间的翻译。
 
-通过[制作基于Google翻译的Firefox翻译书签 ](http://www.jfox.info/go.php?url=http://blog.huky.org/archives/1258.html).
+通过[制作基于Google翻译的Firefox翻译书签 ](https://www.jfox.info/go.php?url=http://blog.huky.org/archives/1258.html).
 {% endraw %}

@@ -3,11 +3,11 @@ layout: post
 title:  "Buy 不败家，从淘宝造物节看电商营销新趋势"
 title2:  "Buy 不败家，从淘宝造物节看电商营销新趋势"
 date:   2017-01-01 23:56:04  +0800
-source:  "http://www.jfox.info/buy%e4%b8%8d%e8%b4%a5%e5%ae%b6%e4%bb%8e%e6%b7%98%e5%ae%9d%e9%80%a0%e7%89%a9%e8%8a%82%e7%9c%8b%e7%94%b5%e5%95%86%e8%90%a5%e9%94%80%e6%96%b0%e8%b6%8b%e5%8a%bf.html"
+source:  "https://www.jfox.info/buy%e4%b8%8d%e8%b4%a5%e5%ae%b6%e4%bb%8e%e6%b7%98%e5%ae%9d%e9%80%a0%e7%89%a9%e8%8a%82%e7%9c%8b%e7%94%b5%e5%95%86%e8%90%a5%e9%94%80%e6%96%b0%e8%b6%8b%e5%8a%bf.html"
 fileName:  "20170101264"
 lang:  "zh_CN"
 published: true
-permalink: "buy%e4%b8%8d%e8%b4%a5%e5%ae%b6%e4%bb%8e%e6%b7%98%e5%ae%9d%e9%80%a0%e7%89%a9%e8%8a%82%e7%9c%8b%e7%94%b5%e5%95%86%e8%90%a5%e9%94%80%e6%96%b0%e8%b6%8b%e5%8a%bf.html"
+permalink: "2017/https://www.jfox.info/buy%e4%b8%8d%e8%b4%a5%e5%ae%b6%e4%bb%8e%e6%b7%98%e5%ae%9d%e9%80%a0%e7%89%a9%e8%8a%82%e7%9c%8b%e7%94%b5%e5%95%86%e8%90%a5%e9%94%80%e6%96%b0%e8%b6%8b%e5%8a%bf.html"
 ---
 {% raw %}
 ​2017年7月如果说什么最能引起“剁手族”的关注，那肯定是马云爸爸在杭州的G20会馆举办的第二届淘宝“造物节”啦。会场上的108 家店铺，汇聚了风格各异的“神人”“神店”和“神故事”，甚至还有一个现在线下零售业最为火爆的“无人便利店”，这些都在强调淘宝今年“造物节”的主题：奇市江湖。淘宝早不单单是卖衣服卖袜子的网购平台，而是更多人能找到各种另类诉求的神奇星球。
@@ -91,5 +91,5 @@ permalink: "buy%e4%b8%8d%e8%b4%a5%e5%ae%b6%e4%bb%8e%e6%b7%98%e5%ae%9d%e9%80%a0%e
  对此淘宝借助于自身优势利用微淘、淘宝直播、淘宝头条、淘宝达人、问大家、有好货等方式，为内容创作者提供了除了微信、今日头条等之外的新机会。
 
 淘宝作为世界最大零售商，在进行产业生态化建设的道路上奋勇直前，不断进行自我进化和升级。比起直接由买和卖的行为实现短线收益，现在的淘宝更加侧重于通过用户思维来研究购物的种种新玩法，探索未来消费世界的可能性。在企业自我进化转型的过程中，淘宝的“造物节”案例无疑是做出了一个很好的探索。
-[点赞](void(0))[淘宝](http://www.jfox.info/go.php?url=http://ju.outofmemory.cn/tag/%E6%B7%98%E5%AE%9D/)[营销](http://www.jfox.info/go.php?url=http://ju.outofmemory.cn/tag/%E8%90%A5%E9%94%80/)
+[点赞](void(0))[淘宝](https://www.jfox.info/go.php?url=http://ju.outofmemory.cn/tag/%E6%B7%98%E5%AE%9D/)[营销](https://www.jfox.info/go.php?url=http://ju.outofmemory.cn/tag/%E8%90%A5%E9%94%80/)
 {% endraw %}

@@ -3,11 +3,11 @@ layout: post
 title:  "SSM框架搭建（一） JDK和MAVEN环境搭建"
 title2:  "SSM框架搭建（一） JDK和MAVEN环境搭建"
 date:   2017-01-01 23:54:47  +0800
-source:  "http://www.jfox.info/ssm%e6%a1%86%e6%9e%b6%e6%90%ad%e5%bb%ba%e4%b8%80jdk%e5%92%8cmaven%e7%8e%af%e5%a2%83%e6%90%ad%e5%bb%ba.html"
+source:  "https://www.jfox.info/ssm%e6%a1%86%e6%9e%b6%e6%90%ad%e5%bb%ba%e4%b8%80jdk%e5%92%8cmaven%e7%8e%af%e5%a2%83%e6%90%ad%e5%bb%ba.html"
 fileName:  "20170101187"
 lang:  "zh_CN"
 published: true
-permalink: "ssm%e6%a1%86%e6%9e%b6%e6%90%ad%e5%bb%ba%e4%b8%80jdk%e5%92%8cmaven%e7%8e%af%e5%a2%83%e6%90%ad%e5%bb%ba.html"
+permalink: "2017/https://www.jfox.info/ssm%e6%a1%86%e6%9e%b6%e6%90%ad%e5%bb%ba%e4%b8%80jdk%e5%92%8cmaven%e7%8e%af%e5%a2%83%e6%90%ad%e5%bb%ba.html"
 ---
 {% raw %}
 JDK配置

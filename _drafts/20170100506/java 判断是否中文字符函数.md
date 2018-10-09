@@ -3,11 +3,11 @@ layout: post
 title:  "java 判断是否中文字符函数"
 title2:  "java 判断是否中文字符函数"
 date:   2017-01-01 23:43:26  +0800
-source:  "http://www.jfox.info/java-%e5%88%a4%e6%96%ad%e6%98%af%e5%90%a6%e4%b8%ad%e6%96%87%e5%ad%97%e7%ac%a6%e5%87%bd%e6%95%b0.html"
+source:  "https://www.jfox.info/java-%e5%88%a4%e6%96%ad%e6%98%af%e5%90%a6%e4%b8%ad%e6%96%87%e5%ad%97%e7%ac%a6%e5%87%bd%e6%95%b0.html"
 fileName:  "20170100506"
 lang:  "zh_CN"
 published: true
-permalink: "java-%e5%88%a4%e6%96%ad%e6%98%af%e5%90%a6%e4%b8%ad%e6%96%87%e5%ad%97%e7%ac%a6%e5%87%bd%e6%95%b0.html"
+permalink: "2017/https://www.jfox.info/java-%e5%88%a4%e6%96%ad%e6%98%af%e5%90%a6%e4%b8%ad%e6%96%87%e5%ad%97%e7%ac%a6%e5%87%bd%e6%95%b0.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期四, 一月 30, 2014

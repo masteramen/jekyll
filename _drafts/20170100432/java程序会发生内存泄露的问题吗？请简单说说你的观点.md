@@ -3,11 +3,11 @@ layout: post
 title:  "java程序会发生内存泄露的问题吗？请简单说说你的观点"
 title2:  "java程序会发生内存泄露的问题吗？请简单说说你的观点"
 date:   2017-01-01 23:42:12  +0800
-source:  "http://www.jfox.info/java-cheng-xu-hui-fa-sheng-nei-cun-xie-lu-de-wen-ti-ma-qing-jian-dan-shuo-shuo-ni-de-guan-dian.html"
+source:  "https://www.jfox.info/java-cheng-xu-hui-fa-sheng-nei-cun-xie-lu-de-wen-ti-ma-qing-jian-dan-shuo-shuo-ni-de-guan-dian.html"
 fileName:  "20170100432"
 lang:  "zh_CN"
 published: true
-permalink: "java-cheng-xu-hui-fa-sheng-nei-cun-xie-lu-de-wen-ti-ma-qing-jian-dan-shuo-shuo-ni-de-guan-dian.html"
+permalink: "2017/https://www.jfox.info/java-cheng-xu-hui-fa-sheng-nei-cun-xie-lu-de-wen-ti-ma-qing-jian-dan-shuo-shuo-ni-de-guan-dian.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期三, 六月 12, 2013

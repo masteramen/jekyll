@@ -3,11 +3,11 @@ layout: post
 title:  "Spring学习之Bean的装配"
 title2:  "Spring学习之Bean的装配"
 date:   2017-01-01 23:54:46  +0800
-source:  "http://www.jfox.info/spring%e5%ad%a6%e4%b9%a0%e4%b9%8bbean%e7%9a%84%e8%a3%85%e9%85%8d.html"
+source:  "https://www.jfox.info/spring%e5%ad%a6%e4%b9%a0%e4%b9%8bbean%e7%9a%84%e8%a3%85%e9%85%8d.html"
 fileName:  "20170101186"
 lang:  "zh_CN"
 published: true
-permalink: "spring%e5%ad%a6%e4%b9%a0%e4%b9%8bbean%e7%9a%84%e8%a3%85%e9%85%8d.html"
+permalink: "2017/https://www.jfox.info/spring%e5%ad%a6%e4%b9%a0%e4%b9%8bbean%e7%9a%84%e8%a3%85%e9%85%8d.html"
 ---
 {% raw %}
 Java开发者一般会听过JavaBean这个概念，所谓的JavaBean，其实就是符合sun规范的一种普通的Java对象，这种对象需要有一个空构造器，为属性添加set/get方法等，之所以这么设计，是为了方便使用反射技术对其进行操作，而在Spring中的Bean的概念则相对比较广泛一些，Spring中的Bean基本上可以包括所有需要使用到的对象，也就是说，基本上在Spring中的对象，都可以称之为Bean。

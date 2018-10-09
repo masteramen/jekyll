@@ -3,18 +3,18 @@ layout: post
 title:  "Spring Cloud构建微服务架构：服务容错保护（Hystrix断路器）【Dalston版】"
 title2:  "Spring Cloud构建微服务架构：服务容错保护（Hystrix断路器）【Dalston版】"
 date:   2017-01-01 23:53:04  +0800
-source:  "http://www.jfox.info/springcloud%e6%9e%84%e5%bb%ba%e5%be%ae%e6%9c%8d%e5%8a%a1%e6%9e%b6%e6%9e%84%e6%9c%8d%e5%8a%a1%e5%ae%b9%e9%94%99%e4%bf%9d%e6%8a%a4hystrix%e6%96%ad%e8%b7%af%e5%99%a8dalston%e7%89%88.html"
+source:  "https://www.jfox.info/springcloud%e6%9e%84%e5%bb%ba%e5%be%ae%e6%9c%8d%e5%8a%a1%e6%9e%b6%e6%9e%84%e6%9c%8d%e5%8a%a1%e5%ae%b9%e9%94%99%e4%bf%9d%e6%8a%a4hystrix%e6%96%ad%e8%b7%af%e5%99%a8dalston%e7%89%88.html"
 fileName:  "20170101084"
 lang:  "zh_CN"
 published: true
-permalink: "springcloud%e6%9e%84%e5%bb%ba%e5%be%ae%e6%9c%8d%e5%8a%a1%e6%9e%b6%e6%9e%84%e6%9c%8d%e5%8a%a1%e5%ae%b9%e9%94%99%e4%bf%9d%e6%8a%a4hystrix%e6%96%ad%e8%b7%af%e5%99%a8dalston%e7%89%88.html"
+permalink: "2017/https://www.jfox.info/springcloud%e6%9e%84%e5%bb%ba%e5%be%ae%e6%9c%8d%e5%8a%a1%e6%9e%b6%e6%9e%84%e6%9c%8d%e5%8a%a1%e5%ae%b9%e9%94%99%e4%bf%9d%e6%8a%a4hystrix%e6%96%ad%e8%b7%af%e5%99%a8dalston%e7%89%88.html"
 ---
 {% raw %}
 断路器模式源于Martin Fowler的Circuit Breaker一文。“断路器”本身是一种开关装置，用于在电路上保护线路过载，当线路中有电器发生短路时，“断路器”能够及时的切断故障电路，防止发生过载、发热、甚至起火等严重后果。
 
 在分布式架构中，断路器模式的作用也是类似的，当某个服务单元发生故障（类似用电器发生短路）之后，通过断路器的故障监控（类似熔断保险丝），直接切断原来的主逻辑调用。但是，在Hystrix中的断路器除了切断主逻辑的功能之外，还有更复杂的逻辑，下面我们来看看它更为深层次的处理逻辑。
 
- 以在 [《Spring Cloud构建微服务架构：服务容错保护（Hystrix服务降级）》](http://www.jfox.info/go.php?url=http://blog.didispace.com/spring-cloud-starter-dalston-4-1) 一文中实现的服务降级例子为示例，我们来说说断路器的工作原理。当我们把服务提供者 `eureka-client` 中加入了模拟的时间延迟之后，在服务消费端的服务降级逻辑因为hystrix命令调用依赖服务超时，触发了降级逻辑，但是即使这样，受限于Hystrix超时时间的问题，我们的调用依然很有可能产生堆积。 
+ 以在 [《Spring Cloud构建微服务架构：服务容错保护（Hystrix服务降级）》](https://www.jfox.info/go.php?url=http://blog.didispace.com/spring-cloud-starter-dalston-4-1) 一文中实现的服务降级例子为示例，我们来说说断路器的工作原理。当我们把服务提供者 `eureka-client` 中加入了模拟的时间延迟之后，在服务消费端的服务降级逻辑因为hystrix命令调用依赖服务超时，触发了降级逻辑，但是即使这样，受限于Hystrix超时时间的问题，我们的调用依然很有可能产生堆积。 
 
 这个时候断路器就会发挥作用，那么断路器是在什么情况下开始起作用呢？这里涉及到断路器的三个重要参数：快照时间窗、请求总数下限、错误百分比下限。这个参数的作用分别是：
 

@@ -3,11 +3,11 @@ layout: post
 title:  "spring断言使用 » java面试题"
 title2:  "spring断言使用 » java面试题"
 date:   2017-01-01 23:51:06  +0800
-source:  "http://www.jfox.info/spring%e6%96%ad%e8%a8%80%e4%bd%bf%e7%94%a8.html"
+source:  "https://www.jfox.info/spring%e6%96%ad%e8%a8%80%e4%bd%bf%e7%94%a8.html"
 fileName:  "20170100966"
 lang:  "zh_CN"
 published: true
-permalink: "spring%e6%96%ad%e8%a8%80%e4%bd%bf%e7%94%a8.html"
+permalink: "2017/https://www.jfox.info/spring%e6%96%ad%e8%a8%80%e4%bd%bf%e7%94%a8.html"
 ---
 {% raw %}
 断言就是断定某一个实际的值为自己预期想得到的,如果不一样就抛出异常。

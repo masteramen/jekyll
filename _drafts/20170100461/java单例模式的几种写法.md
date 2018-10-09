@@ -3,11 +3,11 @@ layout: post
 title:  "java单例模式的几种写法"
 title2:  "java单例模式的几种写法"
 date:   2017-01-01 23:42:41  +0800
-source:  "http://www.jfox.info/java-dan-li-mo-shi-de-ji-zhong-xie-fa.html"
+source:  "https://www.jfox.info/java-dan-li-mo-shi-de-ji-zhong-xie-fa.html"
 fileName:  "20170100461"
 lang:  "zh_CN"
 published: true
-permalink: "java-dan-li-mo-shi-de-ji-zhong-xie-fa.html"
+permalink: "2017/https://www.jfox.info/java-dan-li-mo-shi-de-ji-zhong-xie-fa.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期四, 十月 17, 2013

@@ -3,11 +3,11 @@ layout: post
 title:  "Java类加载器浅析 » java面试题"
 title2:  "Java类加载器浅析 » java面试题"
 date:   2017-01-01 23:46:05  +0800
-source:  "http://www.jfox.info/java-classloader-xq.html"
+source:  "https://www.jfox.info/java-classloader-xq.html"
 fileName:  "20170100665"
 lang:  "zh_CN"
 published: true
-permalink: "java-classloader-xq.html"
+permalink: "2017/https://www.jfox.info/java-classloader-xq.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期四, 七月 31, 2014
@@ -113,5 +113,5 @@ ExtClassLoader———->JRE/lib/ext/*.jarAppClassLoader———->CLASSPATH指�
 
 注：自定义的类加载器通常用于解密自己写的已加密的class字节码，否则即使别人拥有该class文件也无法被系统的类加载器正常加载。
 
-原文地址:[http://express.ruanko.com/ruanko-express_41/tech-overnight4.html](http://www.jfox.info/go.php?url=http://www.jfox.info/url.php?url=http%3A%2F%2Fexpress.ruanko.com%2Fruanko-express_41%2Ftech-overnight4.html).
+原文地址:[http://express.ruanko.com/ruanko-express_41/tech-overnight4.html](https://www.jfox.info/go.php?url=http://www.jfox.info/url.php?url=http%3A%2F%2Fexpress.ruanko.com%2Fruanko-express_41%2Ftech-overnight4.html).
 {% endraw %}

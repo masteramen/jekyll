@@ -3,11 +3,11 @@ layout: post
 title:  "Jetty实战之嵌入式Jetty运行web app"
 title2:  "Jetty实战之嵌入式Jetty运行web app"
 date:   2017-01-01 23:43:33  +0800
-source:  "http://www.jfox.info/jetty%e5%ae%9e%e6%88%98%e4%b9%8b%e5%b5%8c%e5%85%a5%e5%bc%8fjetty%e8%bf%90%e8%a1%8cweb-app.html"
+source:  "https://www.jfox.info/jetty%e5%ae%9e%e6%88%98%e4%b9%8b%e5%b5%8c%e5%85%a5%e5%bc%8fjetty%e8%bf%90%e8%a1%8cweb-app.html"
 fileName:  "20170100513"
 lang:  "zh_CN"
 published: true
-permalink: "jetty%e5%ae%9e%e6%88%98%e4%b9%8b%e5%b5%8c%e5%85%a5%e5%bc%8fjetty%e8%bf%90%e8%a1%8cweb-app.html"
+permalink: "2017/https://www.jfox.info/jetty%e5%ae%9e%e6%88%98%e4%b9%8b%e5%b5%8c%e5%85%a5%e5%bc%8fjetty%e8%bf%90%e8%a1%8cweb-app.html"
 ---
 {% raw %}
 要说嵌入式运行Jetty，最常用的还应该是运行一个标准的war文件或者指定一个webapp目录。
@@ -230,5 +230,5 @@ public class WebAppContextWithFolderServer {
 
 2.3 运行WebAppContextWithFolderServer类，然后访问// http://localhost:8080/myapp/就可以看到struts2的例子界面了。
 
-转自 [Jetty实战之 嵌入式Jetty运行web app – kongxx的专栏 – 博客频道 – CSDN.NET](http://www.jfox.info/go.php?url=http://blog.csdn.net/kongxx/article/details/7237034).
+转自 [Jetty实战之 嵌入式Jetty运行web app – kongxx的专栏 – 博客频道 – CSDN.NET](https://www.jfox.info/go.php?url=http://blog.csdn.net/kongxx/article/details/7237034).
 {% endraw %}

@@ -3,11 +3,11 @@ layout: post
 title:  "运维标准（管理杂事） » java面试题"
 title2:  "运维标准（管理杂事） » java面试题"
 date:   2017-01-01 23:49:12  +0800
-source:  "http://www.jfox.info/yun-wei-biao-zhun-guan-li-za-shi.html"
+source:  "https://www.jfox.info/yun-wei-biao-zhun-guan-li-za-shi.html"
 fileName:  "20170100852"
 lang:  "zh_CN"
 published: true
-permalink: "yun-wei-biao-zhun-guan-li-za-shi.html"
+permalink: "2017/https://www.jfox.info/yun-wei-biao-zhun-guan-li-za-shi.html"
 ---
 {% raw %}
 前言： 人蠢没办法，用不惯 iteye的编辑器。

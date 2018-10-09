@@ -3,11 +3,11 @@ layout: post
 title:  "说出Servlet的生命周期，并说出Servlet和CGI的区别"
 title2:  "说出Servlet的生命周期，并说出Servlet和CGI的区别"
 date:   2017-01-01 23:41:15  +0800
-source:  "http://www.jfox.info/shuo-chu-Servlet-de-sheng-ming-zhou-qi-bing-shuo-chu-Servlet-he-CGI-de-qu-bie.html"
+source:  "https://www.jfox.info/shuo-chu-Servlet-de-sheng-ming-zhou-qi-bing-shuo-chu-Servlet-he-CGI-de-qu-bie.html"
 fileName:  "20170100375"
 lang:  "zh_CN"
 published: true
-permalink: "shuo-chu-Servlet-de-sheng-ming-zhou-qi-bing-shuo-chu-Servlet-he-CGI-de-qu-bie.html"
+permalink: "2017/https://www.jfox.info/shuo-chu-Servlet-de-sheng-ming-zhou-qi-bing-shuo-chu-Servlet-he-CGI-de-qu-bie.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期二, 五月 21, 2013

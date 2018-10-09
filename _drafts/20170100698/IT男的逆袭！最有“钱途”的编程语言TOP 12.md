@@ -3,11 +3,11 @@ layout: post
 title:  "IT男的逆袭！最有“钱途”的编程语言TOP 12"
 title2:  "IT男的逆袭！最有“钱途”的编程语言TOP 12"
 date:   2017-01-01 23:46:38  +0800
-source:  "http://www.jfox.info/it-nan-de-ni-xi-zui-you-qian-tu-de-bian-cheng-yu-yan-top-12.html"
+source:  "https://www.jfox.info/it-nan-de-ni-xi-zui-you-qian-tu-de-bian-cheng-yu-yan-top-12.html"
 fileName:  "20170100698"
 lang:  "zh_CN"
 published: true
-permalink: "it-nan-de-ni-xi-zui-you-qian-tu-de-bian-cheng-yu-yan-top-12.html"
+permalink: "2017/https://www.jfox.info/it-nan-de-ni-xi-zui-you-qian-tu-de-bian-cheng-yu-yan-top-12.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期一, 十一月 24, 2014

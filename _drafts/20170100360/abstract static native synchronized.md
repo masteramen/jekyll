@@ -3,11 +3,11 @@ layout: post
 title:  "abstract static native synchronized"
 title2:  "abstract static native synchronized"
 date:   2017-01-01 23:41:00  +0800
-source:  "http://www.jfox.info/abstract-static-native-synchronized.html"
+source:  "https://www.jfox.info/abstract-static-native-synchronized.html"
 fileName:  "20170100360"
 lang:  "zh_CN"
 published: true
-permalink: "abstract-static-native-synchronized.html"
+permalink: "2017/https://www.jfox.info/abstract-static-native-synchronized.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期日, 五月 19, 2013

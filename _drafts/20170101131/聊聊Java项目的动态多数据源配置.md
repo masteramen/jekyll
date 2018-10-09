@@ -3,11 +3,11 @@ layout: post
 title:  "聊聊Java项目的动态多数据源配置"
 title2:  "聊聊Java项目的动态多数据源配置"
 date:   2017-01-01 23:53:51  +0800
-source:  "http://www.jfox.info/%e8%81%8a%e8%81%8ajava%e9%a1%b9%e7%9b%ae%e7%9a%84%e5%8a%a8%e6%80%81%e5%a4%9a%e6%95%b0%e6%8d%ae%e6%ba%90%e9%85%8d%e7%bd%ae.html"
+source:  "https://www.jfox.info/%e8%81%8a%e8%81%8ajava%e9%a1%b9%e7%9b%ae%e7%9a%84%e5%8a%a8%e6%80%81%e5%a4%9a%e6%95%b0%e6%8d%ae%e6%ba%90%e9%85%8d%e7%bd%ae.html"
 fileName:  "20170101131"
 lang:  "zh_CN"
 published: true
-permalink: "%e8%81%8a%e8%81%8ajava%e9%a1%b9%e7%9b%ae%e7%9a%84%e5%8a%a8%e6%80%81%e5%a4%9a%e6%95%b0%e6%8d%ae%e6%ba%90%e9%85%8d%e7%bd%ae.html"
+permalink: "2017/https://www.jfox.info/%e8%81%8a%e8%81%8ajava%e9%a1%b9%e7%9b%ae%e7%9a%84%e5%8a%a8%e6%80%81%e5%a4%9a%e6%95%b0%e6%8d%ae%e6%ba%90%e9%85%8d%e7%bd%ae.html"
 ---
 {% raw %}
 在我们的项目中遇到这样一个问题：我们的项目需要连接多个数据库，而且不同的客户在每次访问中根据需要会去访问不同的数据库。所以就采用了多数据源的方式（可以根据客户的需求去连接客户所需要的真正的数据源，即提供动态切换数据源的功能）。

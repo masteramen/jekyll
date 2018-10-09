@@ -3,11 +3,11 @@ layout: post
 title:  "java 解决 Poi Excel 自动单元格高度问题"
 title2:  "java 解决 Poi Excel 自动单元格高度问题"
 date:   2017-01-01 23:44:02  +0800
-source:  "http://www.jfox.info/java-%e8%a7%a3%e5%86%b3-poi-excel-%e8%87%aa%e5%8a%a8%e5%8d%95%e5%85%83%e6%a0%bc%e9%ab%98%e5%ba%a6%e9%97%ae%e9%a2%98.html"
+source:  "https://www.jfox.info/java-%e8%a7%a3%e5%86%b3-poi-excel-%e8%87%aa%e5%8a%a8%e5%8d%95%e5%85%83%e6%a0%bc%e9%ab%98%e5%ba%a6%e9%97%ae%e9%a2%98.html"
 fileName:  "20170100542"
 lang:  "zh_CN"
 published: true
-permalink: "java-%e8%a7%a3%e5%86%b3-poi-excel-%e8%87%aa%e5%8a%a8%e5%8d%95%e5%85%83%e6%a0%bc%e9%ab%98%e5%ba%a6%e9%97%ae%e9%a2%98.html"
+permalink: "2017/https://www.jfox.info/java-%e8%a7%a3%e5%86%b3-poi-excel-%e8%87%aa%e5%8a%a8%e5%8d%95%e5%85%83%e6%a0%bc%e9%ab%98%e5%ba%a6%e9%97%ae%e9%a2%98.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期二, 二月 11, 2014
@@ -59,5 +59,5 @@ float hieght=getExcelCellAutoHeight(unitKeep2.getContent()+””, 8f);
 //根据字符串的长度设置高度
 sheet0.getRow(sheet0.getLastRowNum()).setHeightInPoints(hieght); 
 
-参考来源 [java 斌原创 解决 Poi Excel 自动单元格高度 问题 ](http://www.jfox.info/go.php?url=http://www.jfox.info/url.php?url=http%3A%2F%2Fwww.cnblogs.com%2Fhappyyou%2Farchive%2F2009%2F10%2F22%2F1588288.html)
+参考来源 [java 斌原创 解决 Poi Excel 自动单元格高度 问题 ](https://www.jfox.info/go.php?url=http://www.jfox.info/url.php?url=http%3A%2F%2Fwww.cnblogs.com%2Fhappyyou%2Farchive%2F2009%2F10%2F22%2F1588288.html)
 {% endraw %}

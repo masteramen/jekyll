@@ -3,11 +3,11 @@ layout: post
 title:  "什么是 ROC AUC"
 title2:  "什么是 ROC AUC"
 date:   2017-01-01 23:52:37  +0800
-source:  "http://www.jfox.info/%e4%bb%80%e4%b9%88%e6%98%afrocauc.html"
+source:  "https://www.jfox.info/%e4%bb%80%e4%b9%88%e6%98%afrocauc.html"
 fileName:  "20170101057"
 lang:  "zh_CN"
 published: true
-permalink: "%e4%bb%80%e4%b9%88%e6%98%afrocauc.html"
+permalink: "2017/https://www.jfox.info/%e4%bb%80%e4%b9%88%e6%98%afrocauc.html"
 ---
 {% raw %}
 ROC 曲线和 AUC 常被用来评价一个二值分类器的优劣。

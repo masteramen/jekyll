@@ -3,11 +3,11 @@ layout: post
 title:  "Java获取url中的顶级域名不包括子域名的源代码"
 title2:  "Java获取url中的顶级域名不包括子域名的源代码"
 date:   2017-01-01 23:44:23  +0800
-source:  "http://www.jfox.info/java-huo-qu-url-zhong-de-ding-ji-yu-ming-bu-bao-kuo-zi-yu-ming-de-yuan-dai-ma.html"
+source:  "https://www.jfox.info/java-huo-qu-url-zhong-de-ding-ji-yu-ming-bu-bao-kuo-zi-yu-ming-de-yuan-dai-ma.html"
 fileName:  "20170100563"
 lang:  "zh_CN"
 published: true
-permalink: "java-huo-qu-url-zhong-de-ding-ji-yu-ming-bu-bao-kuo-zi-yu-ming-de-yuan-dai-ma.html"
+permalink: "2017/https://www.jfox.info/java-huo-qu-url-zhong-de-ding-ji-yu-ming-bu-bao-kuo-zi-yu-ming-de-yuan-dai-ma.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期一, 二月 17, 2014

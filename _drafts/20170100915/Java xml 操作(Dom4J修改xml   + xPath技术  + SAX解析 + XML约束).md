@@ -3,11 +3,11 @@ layout: post
 title:  "Java xml 操作(Dom4J修改xml   + xPath技术  + SAX解析 + XML约束)"
 title2:  "Java xml 操作(Dom4J修改xml   + xPath技术  + SAX解析 + XML约束)"
 date:   2017-01-01 23:50:15  +0800
-source:  "http://www.jfox.info/java-xml-%e6%93%8d%e4%bd%9c-dom4j%e4%bf%ae%e6%94%b9xml-xpath%e6%8a%80%e6%9c%af-sax%e8%a7%a3%e6%9e%90-xml%e7%ba%a6%e6%9d%9f.html"
+source:  "https://www.jfox.info/java-xml-%e6%93%8d%e4%bd%9c-dom4j%e4%bf%ae%e6%94%b9xml-xpath%e6%8a%80%e6%9c%af-sax%e8%a7%a3%e6%9e%90-xml%e7%ba%a6%e6%9d%9f.html"
 fileName:  "20170100915"
 lang:  "zh_CN"
 published: true
-permalink: "java-xml-%e6%93%8d%e4%bd%9c-dom4j%e4%bf%ae%e6%94%b9xml-xpath%e6%8a%80%e6%9c%af-sax%e8%a7%a3%e6%9e%90-xml%e7%ba%a6%e6%9d%9f.html"
+permalink: "2017/https://www.jfox.info/java-xml-%e6%93%8d%e4%bd%9c-dom4j%e4%bf%ae%e6%94%b9xml-xpath%e6%8a%80%e6%9c%af-sax%e8%a7%a3%e6%9e%90-xml%e7%ba%a6%e6%9d%9f.html"
 ---
 {% raw %}
 # Java xml 操作(Dom4J修改xml   + xPath技术  + SAX解析 + XML约束) 
@@ -199,5 +199,61 @@ void startDocument() : 在读到文档开始时调用
 
 void endDocument() ：在读到文档结束时调用
 
-void startElement(String uri, String
+void startElement(String uri, String localName, String qName, Attributes attributes) ：读到开始标签时调用
+
+void endElement(String uri, String localName, String qName) ：读到结束标签时调用
+
+void characters(char[] ch, int start, int length) ：读到文本内容时调用
+
+**============DOM解析 vs SAX解析****========**
+
+**DOM解析**
+
+**SAX解析**
+
+原理： 一次性加载xml文档，不适合大容量的文件读取
+
+原理： 加载一点，读取一点，处理一点。适合大容量文件的读取
+
+DOM解析可以任意进行增删改成
+
+SAX解析只能读取
+
+DOM解析任意读取任何位置的数据，甚至往回读
+
+SAX解析只能从上往下，按顺序读取，不能往回读
+
+DOM解析面向对象的编程方法（Node，Element，Attribute）,Java开发者编码比较简单。
+
+SAX解析基于事件的编程方法。java开发编码相对复杂。
+
+总结：
+
+1）Dom4j修改xml文档
+
+ new XMLWrier();
+
+……
+
+2）xPath技术： 快速查询xml节点
+
+selectNodes()
+
+selectSinglNode();
+
+xpath表达式语言
+
+3) SAX解析
+
+SAXParser parse
+
+parser（）
+
+DefaultHandler类：
+
+startElement();
+
+characters();
+
+endElement();
 {% endraw %}

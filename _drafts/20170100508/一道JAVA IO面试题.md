@@ -3,11 +3,11 @@ layout: post
 title:  "一道JAVA IO面试题"
 title2:  "一道JAVA IO面试题"
 date:   2017-01-01 23:43:28  +0800
-source:  "http://www.jfox.info/%e4%b8%80%e9%81%93java-io%e9%9d%a2%e8%af%95%e9%a2%98.html"
+source:  "https://www.jfox.info/%e4%b8%80%e9%81%93java-io%e9%9d%a2%e8%af%95%e9%a2%98.html"
 fileName:  "20170100508"
 lang:  "zh_CN"
 published: true
-permalink: "%e4%b8%80%e9%81%93java-io%e9%9d%a2%e8%af%95%e9%a2%98.html"
+permalink: "2017/https://www.jfox.info/%e4%b8%80%e9%81%93java-io%e9%9d%a2%e8%af%95%e9%a2%98.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期五, 一月 31, 2014
@@ -72,5 +72,5 @@ public class ChangeEncoding {
 
 PS:BufferedWriter输出的UTF-8文件是无BOM格式编码的。
 
-转自 [一道JAVA IO面试题 – 老马睡不醒 – 博客园](http://www.jfox.info/go.php?url=http://www.cnblogs.com/maxupeng/archive/2010/12/30/1922374.html).
+转自 [一道JAVA IO面试题 – 老马睡不醒 – 博客园](https://www.jfox.info/go.php?url=http://www.cnblogs.com/maxupeng/archive/2010/12/30/1922374.html).
 {% endraw %}

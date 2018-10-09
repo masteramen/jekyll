@@ -3,11 +3,11 @@ layout: post
 title:  "MyBatis+Spring+MySql搭建配置"
 title2:  "MyBatis+Spring+MySql搭建配置"
 date:   2017-01-01 23:43:03  +0800
-source:  "http://www.jfox.info/mybatis-spring-mysql-da-jian-pei-zhi.html"
+source:  "https://www.jfox.info/mybatis-spring-mysql-da-jian-pei-zhi.html"
 fileName:  "20170100483"
 lang:  "zh_CN"
 published: true
-permalink: "mybatis-spring-mysql-da-jian-pei-zhi.html"
+permalink: "2017/https://www.jfox.info/mybatis-spring-mysql-da-jian-pei-zhi.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期日, 十一月 3, 2013

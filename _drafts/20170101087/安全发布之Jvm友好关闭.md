@@ -3,11 +3,11 @@ layout: post
 title:  "安全发布之Jvm友好关闭"
 title2:  "安全发布之Jvm友好关闭"
 date:   2017-01-01 23:53:07  +0800
-source:  "http://www.jfox.info/%e5%ae%89%e5%85%a8%e5%8f%91%e5%b8%83%e4%b9%8bjvm%e5%8f%8b%e5%a5%bd%e5%85%b3%e9%97%ad.html"
+source:  "https://www.jfox.info/%e5%ae%89%e5%85%a8%e5%8f%91%e5%b8%83%e4%b9%8bjvm%e5%8f%8b%e5%a5%bd%e5%85%b3%e9%97%ad.html"
 fileName:  "20170101087"
 lang:  "zh_CN"
 published: true
-permalink: "%e5%ae%89%e5%85%a8%e5%8f%91%e5%b8%83%e4%b9%8bjvm%e5%8f%8b%e5%a5%bd%e5%85%b3%e9%97%ad.html"
+permalink: "2017/https://www.jfox.info/%e5%ae%89%e5%85%a8%e5%8f%91%e5%b8%83%e4%b9%8bjvm%e5%8f%8b%e5%a5%bd%e5%85%b3%e9%97%ad.html"
 ---
 {% raw %}
 小伙伴们一定很熟悉kill -9 来杀某个进程了，其实这样做在生产系统中是存在安全隐患的。

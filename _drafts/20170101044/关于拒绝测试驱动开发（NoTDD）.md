@@ -3,11 +3,11 @@ layout: post
 title:  "关于拒绝测试驱动开发（NoTDD）"
 title2:  "关于拒绝测试驱动开发（NoTDD）"
 date:   2017-01-01 23:52:24  +0800
-source:  "http://www.jfox.info/%e5%85%b3%e4%ba%8e%e6%8b%92%e7%bb%9d%e6%b5%8b%e8%af%95%e9%a9%b1%e5%8a%a8%e5%bc%80%e5%8f%91notdd.html"
+source:  "https://www.jfox.info/%e5%85%b3%e4%ba%8e%e6%8b%92%e7%bb%9d%e6%b5%8b%e8%af%95%e9%a9%b1%e5%8a%a8%e5%bc%80%e5%8f%91notdd.html"
 fileName:  "20170101044"
 lang:  "zh_CN"
 published: true
-permalink: "%e5%85%b3%e4%ba%8e%e6%8b%92%e7%bb%9d%e6%b5%8b%e8%af%95%e9%a9%b1%e5%8a%a8%e5%bc%80%e5%8f%91notdd.html"
+permalink: "2017/https://www.jfox.info/%e5%85%b3%e4%ba%8e%e6%8b%92%e7%bb%9d%e6%b5%8b%e8%af%95%e9%a9%b1%e5%8a%a8%e5%bc%80%e5%8f%91notdd.html"
 ---
 {% raw %}
 下面有个很有意思的评论，说现在只要有人反对TDD的思想，别人就会鄙视他/她。那些TDD的推崇者，说TDD做不好的，是“没有按照正确的方式”来做。于是团队里某个TDD拥护者想给其他人展示“正确的方式”：写了一个小程序，包含300个测试；程序到了QA，几天内发现90个bug；都是典型的UI bug；修复前两个bug花了三天，因为很多测试要重写……

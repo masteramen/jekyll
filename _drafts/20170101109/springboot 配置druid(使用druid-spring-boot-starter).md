@@ -3,11 +3,11 @@ layout: post
 title:  "springboot 配置druid(使用druid-spring-boot-starter)"
 title2:  "springboot 配置druid(使用druid-spring-boot-starter)"
 date:   2017-01-01 23:53:29  +0800
-source:  "http://www.jfox.info/springboot%e9%85%8d%e7%bd%aedruid%e4%bd%bf%e7%94%a8druidspringbootstarter.html"
+source:  "https://www.jfox.info/springboot%e9%85%8d%e7%bd%aedruid%e4%bd%bf%e7%94%a8druidspringbootstarter.html"
 fileName:  "20170101109"
 lang:  "zh_CN"
 published: true
-permalink: "springboot%e9%85%8d%e7%bd%aedruid%e4%bd%bf%e7%94%a8druidspringbootstarter.html"
+permalink: "2017/https://www.jfox.info/springboot%e9%85%8d%e7%bd%aedruid%e4%bd%bf%e7%94%a8druidspringbootstarter.html"
 ---
 {% raw %}
 H2M_LI_HEADER 首先添加依赖
@@ -17,7 +17,7 @@ H2M_LI_HEADER 首先添加依赖
              <version>1.1.0</version>
          </dependency>
 
-H2M_LI_HEADER 然后配置[application.properties](http://www.jfox.info/go.php?url=https://github.com/x113773/testall/blob/master/src/main/resources/application.properties)
+H2M_LI_HEADER 然后配置[application.properties](https://www.jfox.info/go.php?url=https://github.com/x113773/testall/blob/master/src/main/resources/application.properties)
 
     #JDBC
     spring.datasource.url=jdbc:mysql://localhost:3306/testall?characterEncoding=utf8&useSSL=true
@@ -39,9 +39,9 @@ H2M_LI_HEADER 然后配置[application.properties](http://www.jfox.info/go.php?u
     spring.datasource.druid.StatViewServlet.loginUsername=druid
     spring.datasource.druid.StatViewServlet.loginPassword=druid
 
-更多配置，请参考[这里](http://www.jfox.info/go.php?url=https://github.com/alibaba/druid/blob/master/druid-spring-boot-starter/src/test/resources/config-template.properties)
+更多配置，请参考[这里](https://www.jfox.info/go.php?url=https://github.com/alibaba/druid/blob/master/druid-spring-boot-starter/src/test/resources/config-template.properties)
 
-接下来可以启动项目看看，访问[http://localhost:8080/druid](http://www.jfox.info/go.php?url=http://localhost:8080/druid) 首先输入上面配置的用户名和密码 druid 进行登录：
+接下来可以启动项目看看，访问[http://localhost:8080/druid](https://www.jfox.info/go.php?url=http://localhost:8080/druid) 首先输入上面配置的用户名和密码 druid 进行登录：
 
 执行一个查询请求，然后查看SQL监控页面
 {% endraw %}

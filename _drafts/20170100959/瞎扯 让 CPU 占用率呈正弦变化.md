@@ -3,11 +3,11 @@ layout: post
 title:  "瞎扯: 让 CPU 占用率呈正弦变化"
 title2:  "瞎扯 让 CPU 占用率呈正弦变化"
 date:   2017-01-01 23:50:59  +0800
-source:  "http://www.jfox.info/%e7%9e%8e%e6%89%af-%e8%ae%a9-cpu-%e5%8d%a0%e7%94%a8%e7%8e%87%e5%91%88%e6%ad%a3%e5%bc%a6%e5%8f%98%e5%8c%96.html"
+source:  "https://www.jfox.info/%e7%9e%8e%e6%89%af-%e8%ae%a9-cpu-%e5%8d%a0%e7%94%a8%e7%8e%87%e5%91%88%e6%ad%a3%e5%bc%a6%e5%8f%98%e5%8c%96.html"
 fileName:  "20170100959"
 lang:  "zh_CN"
 published: true
-permalink: "%e7%9e%8e%e6%89%af-%e8%ae%a9-cpu-%e5%8d%a0%e7%94%a8%e7%8e%87%e5%91%88%e6%ad%a3%e5%bc%a6%e5%8f%98%e5%8c%96.html"
+permalink: "2017/https://www.jfox.info/%e7%9e%8e%e6%89%af-%e8%ae%a9-cpu-%e5%8d%a0%e7%94%a8%e7%8e%87%e5%91%88%e6%ad%a3%e5%bc%a6%e5%8f%98%e5%8c%96.html"
 ---
 {% raw %}
 # 瞎扯: 让 CPU 占用率呈正弦变化 

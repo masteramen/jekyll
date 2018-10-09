@@ -3,11 +3,11 @@ layout: post
 title:  "员工部门工资SQL面试题"
 title2:  "员工部门工资SQL面试题"
 date:   2017-01-01 23:42:26  +0800
-source:  "http://www.jfox.info/yuan-gong-bu-men-gong-zi-sql-mian-shi-ti.html"
+source:  "https://www.jfox.info/yuan-gong-bu-men-gong-zi-sql-mian-shi-ti.html"
 fileName:  "20170100446"
 lang:  "zh_CN"
 published: true
-permalink: "yuan-gong-bu-men-gong-zi-sql-mian-shi-ti.html"
+permalink: "2017/https://www.jfox.info/yuan-gong-bu-men-gong-zi-sql-mian-shi-ti.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期一, 六月 24, 2013

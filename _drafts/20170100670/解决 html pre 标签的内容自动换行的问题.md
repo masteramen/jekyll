@@ -3,11 +3,11 @@ layout: post
 title:  "解决 html pre 标签的内容自动换行的问题"
 title2:  "解决 html pre 标签的内容自动换行的问题"
 date:   2017-01-01 23:46:10  +0800
-source:  "http://www.jfox.info/jie-jue-html-pre-biao-qian-de-na-rong-zi-dong-huan-xing-de-wen-ti.html"
+source:  "https://www.jfox.info/jie-jue-html-pre-biao-qian-de-na-rong-zi-dong-huan-xing-de-wen-ti.html"
 fileName:  "20170100670"
 lang:  "zh_CN"
 published: true
-permalink: "jie-jue-html-pre-biao-qian-de-na-rong-zi-dong-huan-xing-de-wen-ti.html"
+permalink: "2017/https://www.jfox.info/jie-jue-html-pre-biao-qian-de-na-rong-zi-dong-huan-xing-de-wen-ti.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期二, 八月 12, 2014
@@ -22,7 +22,7 @@ By Lee - Last updated: 星期二, 八月 12, 2014
 
 1.先尝试使用：word-wrap: break-word;将内容自动换行，IE，OP，Chrome，Safari都可以，FF就悲剧了。
 
-点击查看[demo](http://www.jfox.info/go.php?url=http://www.jfox.info/%e5%a6%82%e4%bd%95%e8%ae%a9%e6%b5%8f%e8%a7%88%e5%99%a8%e5%9c%a8%e8%ae%bf%e9%97%ae%e9%93%be%e6%8e%a5%e6%97%b6%e4%b8%8d%e8%a6%81%e5%b8%a6%e4%b8%8areferer)
+点击查看[demo](https://www.jfox.info/go.php?url=http://www.jfox.info/%e5%a6%82%e4%bd%95%e8%ae%a9%e6%b5%8f%e8%a7%88%e5%99%a8%e5%9c%a8%e8%ae%bf%e9%97%ae%e9%93%be%e6%8e%a5%e6%97%b6%e4%b8%8d%e8%a6%81%e5%b8%a6%e4%b8%8areferer)
 
 2.查看了pre的浏览器默认样式：
 

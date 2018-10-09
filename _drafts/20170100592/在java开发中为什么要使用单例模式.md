@@ -3,11 +3,11 @@ layout: post
 title:  "在java开发中为什么要使用单例模式"
 title2:  "在java开发中为什么要使用单例模式"
 date:   2017-01-01 23:44:52  +0800
-source:  "http://www.jfox.info/why-we-use-sington-in-java-development.html"
+source:  "https://www.jfox.info/why-we-use-sington-in-java-development.html"
 fileName:  "20170100592"
 lang:  "zh_CN"
 published: true
-permalink: "why-we-use-sington-in-java-development.html"
+permalink: "2017/https://www.jfox.info/why-we-use-sington-in-java-development.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期四, 二月 27, 2014

@@ -3,11 +3,11 @@ layout: post
 title:  "SpringBoot+Hibernate制作图书管理系统"
 title2:  "SpringBoot+Hibernate制作图书管理系统"
 date:   2017-01-01 23:55:06  +0800
-source:  "http://www.jfox.info/springboothibernate%e5%88%b6%e4%bd%9c%e5%9b%be%e4%b9%a6%e7%ae%a1%e7%90%86%e7%b3%bb%e7%bb%9f.html"
+source:  "https://www.jfox.info/springboothibernate%e5%88%b6%e4%bd%9c%e5%9b%be%e4%b9%a6%e7%ae%a1%e7%90%86%e7%b3%bb%e7%bb%9f.html"
 fileName:  "20170101206"
 lang:  "zh_CN"
 published: true
-permalink: "springboothibernate%e5%88%b6%e4%bd%9c%e5%9b%be%e4%b9%a6%e7%ae%a1%e7%90%86%e7%b3%bb%e7%bb%9f.html"
+permalink: "2017/https://www.jfox.info/springboothibernate%e5%88%b6%e4%bd%9c%e5%9b%be%e4%b9%a6%e7%ae%a1%e7%90%86%e7%b3%bb%e7%bb%9f.html"
 ---
 {% raw %}
 前言：让大家久等了又是两个月木有更新文章了，这几天刚忙完大部分考试所以最近才有时间来写文章。最近刚好忙完课程设计，我做了一个图书管理系统其中用到了挺多技术我觉得值得拿出来和大家分享一下，先来看看我制作好的效果图：

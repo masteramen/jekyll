@@ -3,11 +3,11 @@ layout: post
 title:  "java设计模式-观察者模式详解"
 title2:  "java设计模式-观察者模式详解"
 date:   2017-01-01 23:54:06  +0800
-source:  "http://www.jfox.info/java%e8%ae%be%e8%ae%a1%e6%a8%a1%e5%bc%8f%e8%a7%82%e5%af%9f%e8%80%85%e6%a8%a1%e5%bc%8f%e8%af%a6%e8%a7%a3.html"
+source:  "https://www.jfox.info/java%e8%ae%be%e8%ae%a1%e6%a8%a1%e5%bc%8f%e8%a7%82%e5%af%9f%e8%80%85%e6%a8%a1%e5%bc%8f%e8%af%a6%e8%a7%a3.html"
 fileName:  "20170101146"
 lang:  "zh_CN"
 published: true
-permalink: "java%e8%ae%be%e8%ae%a1%e6%a8%a1%e5%bc%8f%e8%a7%82%e5%af%9f%e8%80%85%e6%a8%a1%e5%bc%8f%e8%af%a6%e8%a7%a3.html"
+permalink: "2017/https://www.jfox.info/java%e8%ae%be%e8%ae%a1%e6%a8%a1%e5%bc%8f%e8%a7%82%e5%af%9f%e8%80%85%e6%a8%a1%e5%bc%8f%e8%af%a6%e8%a7%a3.html"
 ---
 {% raw %}
 先简单介绍一下观察者模式：在对象之间定义一对多的依赖，这样当一个对象改变状态，依赖它的对象都会收到通知,并自动更新。

@@ -3,11 +3,11 @@ layout: post
 title:  "15个必须知道的chrome开发者技巧"
 title2:  "15个必须知道的chrome开发者技巧"
 date:   2017-01-01 23:48:49  +0800
-source:  "http://www.jfox.info/15-ge-bi-xu-zhi-dao-de-chrome-kai-fa-zhe-ji-qiao.html"
+source:  "https://www.jfox.info/15-ge-bi-xu-zhi-dao-de-chrome-kai-fa-zhe-ji-qiao.html"
 fileName:  "20170100829"
 lang:  "zh_CN"
 published: true
-permalink: "15-ge-bi-xu-zhi-dao-de-chrome-kai-fa-zhe-ji-qiao.html"
+permalink: "2017/https://www.jfox.info/15-ge-bi-xu-zhi-dao-de-chrome-kai-fa-zhe-ji-qiao.html"
 ---
 {% raw %}
 By go - Last updated: 星期三, 五月 3, 2017
@@ -42,7 +42,7 @@ $()–document.querySelector()的简写，返回第一个和css选择器匹配�
 
 ![](/wp-content/uploads/2017/05/687474703a2f2f63646e2e7475746f7269616c7a696e652e636f6d2f77702d636f6e74656e742f75706c6f6164732f323031352f30332f342e2e676966.png)
 
-想要了解更多控制台命令，戳这里：[Command Line API](http://www.jfox.info/go.php?url=https://developer.chrome.com/devtools/docs/commandline-api)
+想要了解更多控制台命令，戳这里：[Command Line API](https://www.jfox.info/go.php?url=https://developer.chrome.com/devtools/docs/commandline-api)
 
 五、使用多个插入符进行选择
 
@@ -110,9 +110,9 @@ Workspaces是Chrome DevTools的一个强大功能，这使DevTools变成了一�
 
 为了配置Workspaces，只需打开Sources选项，然后右击左边面板的任何一个地方，选择Add Folder To Worskpace，或者只是把你的整个工程文件夹拖放入Developer Tool。现在，无论在哪一个文件夹，被选中的文件夹，包括其子目录和所有文件都可以被编辑。为了让Workspaces更高效，你可以将页面中用到的文件映射到相应的文件夹，允许在线编辑和简单的保存。
 
-了解更多关于Workspaces的使用，戳这里：[Workspaces](http://www.jfox.info/go.php?url=https://developer.chrome.com/devtools/docs/workspaces)
+了解更多关于Workspaces的使用，戳这里：[Workspaces](https://www.jfox.info/go.php?url=https://developer.chrome.com/devtools/docs/workspaces)
 
 参考
 
-[15 Must-Know Chrome DevTools Tips and Tricks](http://www.jfox.info/go.php?url=http://tutorialzine.com/2015/03/15-must-know-chrome-devtools-tips-tricks/)
+[15 Must-Know Chrome DevTools Tips and Tricks](https://www.jfox.info/go.php?url=http://tutorialzine.com/2015/03/15-must-know-chrome-devtools-tips-tricks/)
 {% endraw %}

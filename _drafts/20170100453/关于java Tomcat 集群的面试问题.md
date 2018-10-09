@@ -3,11 +3,11 @@ layout: post
 title:  "关于java Tomcat 集群的面试问题"
 title2:  "关于java Tomcat 集群的面试问题"
 date:   2017-01-01 23:42:33  +0800
-source:  "http://www.jfox.info/guan-yu-java-tomcat-ji-qun-de-mian-shi-wen-ti.html"
+source:  "https://www.jfox.info/guan-yu-java-tomcat-ji-qun-de-mian-shi-wen-ti.html"
 fileName:  "20170100453"
 lang:  "zh_CN"
 published: true
-permalink: "guan-yu-java-tomcat-ji-qun-de-mian-shi-wen-ti.html"
+permalink: "2017/https://www.jfox.info/guan-yu-java-tomcat-ji-qun-de-mian-shi-wen-ti.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期六, 十月 12, 2013

@@ -3,11 +3,11 @@ layout: post
 title:  "javascript在html中的单引号、双引号及其转义使用"
 title2:  "javascript在html中的单引号、双引号及其转义使用"
 date:   2017-01-01 23:46:29  +0800
-source:  "http://www.jfox.info/javascript-zai-html-zhong-de-dan-yin-hao-shuang-yin-hao-ji-qi-zhuan-yi-shi-yong.html"
+source:  "https://www.jfox.info/javascript-zai-html-zhong-de-dan-yin-hao-shuang-yin-hao-ji-qi-zhuan-yi-shi-yong.html"
 fileName:  "20170100689"
 lang:  "zh_CN"
 published: true
-permalink: "javascript-zai-html-zhong-de-dan-yin-hao-shuang-yin-hao-ji-qi-zhuan-yi-shi-yong.html"
+permalink: "2017/https://www.jfox.info/javascript-zai-html-zhong-de-dan-yin-hao-shuang-yin-hao-ji-qi-zhuan-yi-shi-yong.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期六, 九月 20, 2014

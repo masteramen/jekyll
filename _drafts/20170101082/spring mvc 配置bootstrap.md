@@ -3,11 +3,11 @@ layout: post
 title:  "spring mvc 配置bootstrap"
 title2:  "spring mvc 配置bootstrap"
 date:   2017-01-01 23:53:02  +0800
-source:  "http://www.jfox.info/springmvc%e9%85%8d%e7%bd%aebootstrap.html"
+source:  "https://www.jfox.info/springmvc%e9%85%8d%e7%bd%aebootstrap.html"
 fileName:  "20170101082"
 lang:  "zh_CN"
 published: true
-permalink: "springmvc%e9%85%8d%e7%bd%aebootstrap.html"
+permalink: "2017/https://www.jfox.info/springmvc%e9%85%8d%e7%bd%aebootstrap.html"
 ---
 {% raw %}
 1.下载bootstrap

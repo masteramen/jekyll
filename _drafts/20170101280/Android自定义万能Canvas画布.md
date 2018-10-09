@@ -3,11 +3,11 @@ layout: post
 title:  "Android自定义万能Canvas画布"
 title2:  "Android自定义万能Canvas画布"
 date:   2017-01-01 23:56:20  +0800
-source:  "http://www.jfox.info/android%e8%87%aa%e5%ae%9a%e4%b9%89%e4%b8%87%e8%83%bdcanvas%e7%94%bb%e5%b8%83.html"
+source:  "https://www.jfox.info/android%e8%87%aa%e5%ae%9a%e4%b9%89%e4%b8%87%e8%83%bdcanvas%e7%94%bb%e5%b8%83.html"
 fileName:  "20170101280"
 lang:  "zh_CN"
 published: true
-permalink: "android%e8%87%aa%e5%ae%9a%e4%b9%89%e4%b8%87%e8%83%bdcanvas%e7%94%bb%e5%b8%83.html"
+permalink: "2017/https://www.jfox.info/android%e8%87%aa%e5%ae%9a%e4%b9%89%e4%b8%87%e8%83%bdcanvas%e7%94%bb%e5%b8%83.html"
 ---
 {% raw %}
 分类：*android进阶的小步伐*
@@ -24,7 +24,7 @@ permalink: "android%e8%87%aa%e5%ae%9a%e4%b9%89%e4%b8%87%e8%83%bdcanvas%e7%94%bb%
 
 二、实现思想：
 
-1、画布的的手势缩放、控件的添加，在我的[上一篇关于画布文章](http://www.jfox.info/go.php?url=http://blog.csdn.net/wangyongyao1989/article/details/74157556)中已经实现了这个功能，这里不再赘述；
+1、画布的的手势缩放、控件的添加，在我的[上一篇关于画布文章](https://www.jfox.info/go.php?url=http://blog.csdn.net/wangyongyao1989/article/details/74157556)中已经实现了这个功能，这里不再赘述；
 
 2、要实现上述的几个功能只需要屏幕上添加两层画布，一层画布用于添加控件在这层中可以实现控件的点击、拖动、画布缩放、长按事件、整理排序控件。底层画布用于长按其他控件隐藏之后A控件的拖动和B控件的显示及A拖动到B之后的事件响应。
 
@@ -190,5 +190,46 @@ permalink: "android%e8%87%aa%e5%ae%9a%e4%b9%89%e4%b8%87%e8%83%bdcanvas%e7%94%bb%
                 @Override
                 public void onWidgetLongPress(int index, int x, int y) {
                     ActionWidget actionWidget = (ActionWidget) mCanvasView.mDrawableList.get(index);
-                    mCanvasView.setV
+                    mCanvasView.setVisibility(View.GONE);
+                    mGamePadCanvasView.setVisibility(View.VISIBLE);
+                    mGamePadWidget=new ActionWidget(x, y, mPaint);
+                    mGamePadCanvasView.addCanvasDrawable(mGamePadWidget);
+                    isGamePadCanvas=true;//把是否显示底层画布的开关开启
+                }
+            });
+
+ 7、判断A控件是否移动B控件的位置范围之上：   
+ 
+    mCanvasView.setOnWidgetMoveListener(new ActionEditorCanvasView.onWidgetMoveListener() {
+                @Override
+                public void onWidgetMove(int index, int x, int y) {
+                    if (isGamePadCanvas){
+                        if (mGamePadWidget!=null){
+                            mGamePadCanvasView.mDrawableList.get(1).setXcoords(x);
+                            mGamePadCanvasView.mDrawableList.get(1).setYcoords(y);
+                            mGamePadCanvasView.invalidate();
+                            if ((x>mXcoords&&x<mXcoords+250)&&(y>mYcoords&&y<mYcoords+250)){
+                                Toast.makeText(ActionCanvasTestActivity.this, "控件移动到控制器按钮界面！！！！！" , Toast.LENGTH_SHORT).show();
+                            }
+                        }
+                   }
+                }
+            });
+
+ 8、最后是判断抬起事件，如底层画布是显示则隐藏底层画布显示第一层画布： 
+ 
+
+          mCanvasView.setOnWidgetUpListener(new ActionEditorCanvasView.onWidgetUpListener() {
+                @Override
+                public void onWidgetUp(int index, int x, int y) {
+                    if (isGamePadCanvas){
+                        mCanvasView.setVisibility(View.VISIBLE);
+                        mGamePadCanvasView.setVisibility(View.GONE);
+                        mGamePadCanvasView.mDrawableList.remove(1);
+                        isGamePadCanvas=false;
+                    }
+                }
+            });
+
+五、Demo项目地址：
 {% endraw %}

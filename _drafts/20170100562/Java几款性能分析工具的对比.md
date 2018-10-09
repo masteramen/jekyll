@@ -3,11 +3,11 @@ layout: post
 title:  "Java几款性能分析工具的对比"
 title2:  "Java几款性能分析工具的对比"
 date:   2017-01-01 23:44:22  +0800
-source:  "http://www.jfox.info/java%e5%87%a0%e6%ac%be%e6%80%a7%e8%83%bd%e5%88%86%e6%9e%90%e5%b7%a5%e5%85%b7%e7%9a%84%e5%af%b9%e6%af%94.html"
+source:  "https://www.jfox.info/java%e5%87%a0%e6%ac%be%e6%80%a7%e8%83%bd%e5%88%86%e6%9e%90%e5%b7%a5%e5%85%b7%e7%9a%84%e5%af%b9%e6%af%94.html"
 fileName:  "20170100562"
 lang:  "zh_CN"
 published: true
-permalink: "java%e5%87%a0%e6%ac%be%e6%80%a7%e8%83%bd%e5%88%86%e6%9e%90%e5%b7%a5%e5%85%b7%e7%9a%84%e5%af%b9%e6%af%94.html"
+permalink: "2017/https://www.jfox.info/java%e5%87%a0%e6%ac%be%e6%80%a7%e8%83%bd%e5%88%86%e6%9e%90%e5%b7%a5%e5%85%b7%e7%9a%84%e5%af%b9%e6%af%94.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期一, 二月 17, 2014
@@ -54,5 +54,5 @@ By Lee - Last updated: 星期一, 二月 17, 2014
 
 　　JProfiler和YourKit已经能满足我的上述要求。JProfiler、YourKit和Spring Insight都可以跟 踪应用程序的类和方法的流向。JProfiler和YourKit可以显示内存使用情况。虽然Spring Insight不可以显示内存使用情况，但它可以很好的显示吞吐量的趋势。这三款性能分析工具功能很清楚，不混乱，而且容易使用。最后，他们都有自己的 IDE插件。希望本文能帮助你做出正确的选择。
 
-参考来源 [Java几款性能分析工具的对比](http://www.jfox.info/go.php?url=http://www.jfox.info/url.php?url=http%3A%2F%2Fwww.javaweb.cc%2Flanguage%2Fjava%2F042588.shtml).
+参考来源 [Java几款性能分析工具的对比](https://www.jfox.info/go.php?url=http://www.jfox.info/url.php?url=http%3A%2F%2Fwww.javaweb.cc%2Flanguage%2Fjava%2F042588.shtml).
 {% endraw %}

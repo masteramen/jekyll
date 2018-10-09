@@ -3,11 +3,11 @@ layout: post
 title:  "Java入门——（5）Java API"
 title2:  "Java入门——（5）Java API"
 date:   2017-01-01 23:52:19  +0800
-source:  "http://www.jfox.info/java%e5%85%a5%e9%97%a85javaapi.html"
+source:  "https://www.jfox.info/java%e5%85%a5%e9%97%a85javaapi.html"
 fileName:  "20170101039"
 lang:  "zh_CN"
 published: true
-permalink: "java%e5%85%a5%e9%97%a85javaapi.html"
+permalink: "2017/https://www.jfox.info/java%e5%85%a5%e9%97%a85javaapi.html"
 ---
 {% raw %}
 int indexOf(int ch) int lastIndexOf(int ch) char charAt(int index) boolean endsWith(String suffix) int length() boolean equals(Object anObject) boolean isEmpty() boolean startsWith(String prefix) boolean contains(CharSequence cs) String toUpperCase() String toLowerCase() String valueOf(int i) char[] toCharArray() String replace(CharSequence oldstr,CharSequence newstr) String[] split(String regex) String substring(int beginIndex) String substring(int beginIndex,int endIndex) String trim() 

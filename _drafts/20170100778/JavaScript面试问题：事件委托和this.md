@@ -3,11 +3,11 @@ layout: post
 title:  "JavaScript面试问题：事件委托和this"
 title2:  "JavaScript面试问题：事件委托和this"
 date:   2017-01-01 23:47:58  +0800
-source:  "http://www.jfox.info/javascript-mian-shi-wen-ti-shi-jian-wei-tuo-he-this.html"
+source:  "https://www.jfox.info/javascript-mian-shi-wen-ti-shi-jian-wei-tuo-he-this.html"
 fileName:  "20170100778"
 lang:  "zh_CN"
 published: true
-permalink: "javascript-mian-shi-wen-ti-shi-jian-wei-tuo-he-this.html"
+permalink: "2017/https://www.jfox.info/javascript-mian-shi-wen-ti-shi-jian-wei-tuo-he-this.html"
 ---
 {% raw %}
 JavaScript不仅门槛低，而且是一门有趣、功能强大和非常重要的语言。各行各业的人发现自己最混乱的选择是JavaSscript编程语言。由于有着各种各样的背景，所以不是每个人都对JavaScript及其基本原理有广泛的认识。

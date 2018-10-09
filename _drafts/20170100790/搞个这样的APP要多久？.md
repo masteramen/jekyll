@@ -3,11 +3,11 @@ layout: post
 title:  "搞个这样的APP要多久？"
 title2:  "搞个这样的APP要多久？"
 date:   2017-01-01 23:48:10  +0800
-source:  "http://www.jfox.info/gao-ge-zhe-yang-de-app-yao-duo-jiu.html"
+source:  "https://www.jfox.info/gao-ge-zhe-yang-de-app-yao-duo-jiu.html"
 fileName:  "20170100790"
 lang:  "zh_CN"
 published: true
-permalink: "gao-ge-zhe-yang-de-app-yao-duo-jiu.html"
+permalink: "2017/https://www.jfox.info/gao-ge-zhe-yang-de-app-yao-duo-jiu.html"
 ---
 {% raw %}
 这是一个“如有雷同，纯属巧合”的故事，外加一些废话，大家请勿对号入座。开始了……

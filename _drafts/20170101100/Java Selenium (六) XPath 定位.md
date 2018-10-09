@@ -3,11 +3,11 @@ layout: post
 title:  "Java Selenium (六) XPath 定位"
 title2:  "Java Selenium (六) XPath 定位"
 date:   2017-01-01 23:53:20  +0800
-source:  "http://www.jfox.info/javaselenium%e5%85%adxpath%e5%ae%9a%e4%bd%8d.html"
+source:  "https://www.jfox.info/javaselenium%e5%85%adxpath%e5%ae%9a%e4%bd%8d.html"
 fileName:  "20170101100"
 lang:  "zh_CN"
 published: true
-permalink: "javaselenium%e5%85%adxpath%e5%ae%9a%e4%bd%8d.html"
+permalink: "2017/https://www.jfox.info/javaselenium%e5%85%adxpath%e5%ae%9a%e4%bd%8d.html"
 ---
 {% raw %}
 xpath 的定位方法， 非常强大。 使用这种方法几乎可以定位到页面上的任意元素。 

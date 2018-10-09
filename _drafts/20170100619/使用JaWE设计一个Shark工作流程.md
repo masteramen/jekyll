@@ -3,11 +3,11 @@ layout: post
 title:  "使用JaWE设计一个Shark工作流程"
 title2:  "使用JaWE设计一个Shark工作流程"
 date:   2017-01-01 23:45:19  +0800
-source:  "http://www.jfox.info/use-jawe-design-a-shark-workflow.html"
+source:  "https://www.jfox.info/use-jawe-design-a-shark-workflow.html"
 fileName:  "20170100619"
 lang:  "zh_CN"
 published: true
-permalink: "use-jawe-design-a-shark-workflow.html"
+permalink: "2017/https://www.jfox.info/use-jawe-design-a-shark-workflow.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期五, 三月 28, 2014
@@ -20,22 +20,22 @@ XPDL描述了工作流的相关元素，如参与者、活动、活动间的转�
 
     在左侧的导航树上，右键点击新建的包，选“Properties”，设置包的一些属性：
 
-[![Shark2-1](http://www.jfox.info/wp-content/uploads/2014/03/Shark2-1.jpg)](http://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2014/03/Shark2-1.jpg)
+[![Shark2-1](http://www.jfox.info/wp-content/uploads/2014/03/Shark2-1.jpg)](https://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2014/03/Shark2-1.jpg)
 图1包的属性
 
     在包的属性页上，点击“Workflow Processes”标签页，点击新建元素按钮新建一个流程，在流程的属性页里面，设置属性：
 
-[![Shark2-2](http://www.jfox.info/wp-content/uploads/2014/03/Shark2-2.jpg)](http://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2014/03/Shark2-2.jpg)
+[![Shark2-2](http://www.jfox.info/wp-content/uploads/2014/03/Shark2-2.jpg)](https://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2014/03/Shark2-2.jpg)
 图2新建请假流程的属性
 
     在请假流程的“Workflow Variables”标签页设置以下流程上下文变量（其中biz_id代表业务系统请假单据的id）：
 
-[![Shark2-3](http://www.jfox.info/wp-content/uploads/2014/03/Shark2-3.jpg)](http://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2014/03/Shark2-3.jpg)
+[![Shark2-3](http://www.jfox.info/wp-content/uploads/2014/03/Shark2-3.jpg)](https://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2014/03/Shark2-3.jpg)
 图3请假流程的变量
 
     在右侧的流程图示区域，画出请假的流程，效果如下：
 
-[![Shark2-4](http://www.jfox.info/wp-content/uploads/2014/03/Shark2-4.jpg)](http://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2014/03/Shark2-4.jpg)
+[![Shark2-4](http://www.jfox.info/wp-content/uploads/2014/03/Shark2-4.jpg)](https://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2014/03/Shark2-4.jpg)
 图4请假流程整体图
 
     参与者“申请人”设置以下属性：
@@ -84,10 +84,10 @@ XPDL描述了工作流的相关元素，如参与者、活动、活动间的转�
 
     从“请假申请”到“审批”的Transition比较简单，连上就可以。从“审批”到“休假结束销假”或“查看拒绝原因”的转移是有条件的，下面分别给出这两个Transition的属性图示：
 
-[![Shark2-5](http://www.jfox.info/wp-content/uploads/2014/03/Shark2-5.jpg)](http://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2014/03/Shark2-5.jpg)
+[![Shark2-5](http://www.jfox.info/wp-content/uploads/2014/03/Shark2-5.jpg)](https://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2014/03/Shark2-5.jpg)
 图5“审批”到“休假结束销假”的Transition的属性
 
-[![Shark2-6](http://www.jfox.info/wp-content/uploads/2014/03/Shark2-6.jpg)](http://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2014/03/Shark2-6.jpg)
+[![Shark2-6](http://www.jfox.info/wp-content/uploads/2014/03/Shark2-6.jpg)](https://www.jfox.info/go.php?url=http://www.jfox.info/wp-content/uploads/2014/03/Shark2-6.jpg)
 图6“审批”到“查看拒绝原因”的Transition的属性
 
     这样一个简单的流程就画完了，可以再模拟器中进行模拟流程，也可以用在应用程序中。

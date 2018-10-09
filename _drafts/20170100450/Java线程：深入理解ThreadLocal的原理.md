@@ -3,11 +3,11 @@ layout: post
 title:  "Java线程：深入理解ThreadLocal的原理"
 title2:  "Java线程：深入理解ThreadLocal的原理"
 date:   2017-01-01 23:42:30  +0800
-source:  "http://www.jfox.info/java-xian-cheng-shen-ru-li-jie-threadlocal-de-yuan-li.html"
+source:  "https://www.jfox.info/java-xian-cheng-shen-ru-li-jie-threadlocal-de-yuan-li.html"
 fileName:  "20170100450"
 lang:  "zh_CN"
 published: true
-permalink: "java-xian-cheng-shen-ru-li-jie-threadlocal-de-yuan-li.html"
+permalink: "2017/https://www.jfox.info/java-xian-cheng-shen-ru-li-jie-threadlocal-de-yuan-li.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期五, 九月 6, 2013

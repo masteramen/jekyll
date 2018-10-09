@@ -3,11 +3,11 @@ layout: post
 title:  "MyBatis 插件 : 打印 SQL 及其执行时间"
 title2:  "MyBatis 插件  打印 SQL 及其执行时间"
 date:   2017-01-01 23:50:17  +0800
-source:  "http://www.jfox.info/mybatis-%e6%8f%92%e4%bb%b6-%e6%89%93%e5%8d%b0-sql-%e5%8f%8a%e5%85%b6%e6%89%a7%e8%a1%8c%e6%97%b6%e9%97%b4.html"
+source:  "https://www.jfox.info/mybatis-%e6%8f%92%e4%bb%b6-%e6%89%93%e5%8d%b0-sql-%e5%8f%8a%e5%85%b6%e6%89%a7%e8%a1%8c%e6%97%b6%e9%97%b4.html"
 fileName:  "20170100917"
 lang:  "zh_CN"
 published: true
-permalink: "mybatis-%e6%8f%92%e4%bb%b6-%e6%89%93%e5%8d%b0-sql-%e5%8f%8a%e5%85%b6%e6%89%a7%e8%a1%8c%e6%97%b6%e9%97%b4.html"
+permalink: "2017/https://www.jfox.info/mybatis-%e6%8f%92%e4%bb%b6-%e6%89%93%e5%8d%b0-sql-%e5%8f%8a%e5%85%b6%e6%89%a7%e8%a1%8c%e6%97%b6%e9%97%b4.html"
 ---
 {% raw %}
 **Plugins**

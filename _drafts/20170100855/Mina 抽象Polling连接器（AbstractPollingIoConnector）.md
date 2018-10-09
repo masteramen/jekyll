@@ -3,11 +3,11 @@ layout: post
 title:  "Mina 抽象Polling连接器（AbstractPollingIoConnector）"
 title2:  "Mina 抽象Polling连接器（AbstractPollingIoConnector）"
 date:   2017-01-01 23:49:15  +0800
-source:  "http://www.jfox.info/mina_chou_xiang_polling_lian_jie_qi_abstractpollingioconnector.html"
+source:  "https://www.jfox.info/mina_chou_xiang_polling_lian_jie_qi_abstractpollingioconnector.html"
 fileName:  "20170100855"
 lang:  "zh_CN"
 published: true
-permalink: "mina_chou_xiang_polling_lian_jie_qi_abstractpollingioconnector.html"
+permalink: "2017/https://www.jfox.info/mina_chou_xiang_polling_lian_jie_qi_abstractpollingioconnector.html"
 ---
 {% raw %}
 By  - Last updated: 星期二, 六月 20, 2017

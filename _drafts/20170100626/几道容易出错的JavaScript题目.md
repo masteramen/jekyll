@@ -3,11 +3,11 @@ layout: post
 title:  "几道容易出错的JavaScript题目"
 title2:  "几道容易出错的JavaScript题目"
 date:   2017-01-01 23:45:26  +0800
-source:  "http://www.jfox.info/error-prone-javascript-question.html"
+source:  "https://www.jfox.info/error-prone-javascript-question.html"
 fileName:  "20170100626"
 lang:  "zh_CN"
 published: true
-permalink: "error-prone-javascript-question.html"
+permalink: "2017/https://www.jfox.info/error-prone-javascript-question.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期二, 四月 29, 2014
@@ -93,5 +93,5 @@ JavaScript因为是单线程工作的，因此虽然回调函数设置了1000毫
 
 应该打印的是false，其实原因很简单，new a()的时候，因为return语句，得到的不是a的实例，而是a本身，a instanceof a当然是false啦。
 
-来源 [几道容易出错的JavaScript题目 | 四火的唠叨](http://www.jfox.info/go.php?url=http://www.jfox.info/url.php?url=http%3A%2F%2Fwww.raychase.net%2F1485).
+来源 [几道容易出错的JavaScript题目 | 四火的唠叨](https://www.jfox.info/go.php?url=http://www.jfox.info/url.php?url=http%3A%2F%2Fwww.raychase.net%2F1485).
 {% endraw %}

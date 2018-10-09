@@ -3,11 +3,11 @@ layout: post
 title:  "JDK和JRE的区别是什么？"
 title2:  "JDK和JRE的区别是什么？"
 date:   2017-01-01 23:46:16  +0800
-source:  "http://www.jfox.info/j-d-k-he-j-r-e-de-qu-bie-shi-shi-me.html"
+source:  "https://www.jfox.info/j-d-k-he-j-r-e-de-qu-bie-shi-shi-me.html"
 fileName:  "20170100676"
 lang:  "zh_CN"
 published: true
-permalink: "j-d-k-he-j-r-e-de-qu-bie-shi-shi-me.html"
+permalink: "2017/https://www.jfox.info/j-d-k-he-j-r-e-de-qu-bie-shi-shi-me.html"
 ---
 {% raw %}
 By Lee - Last updated: 星期六, 八月 23, 2014

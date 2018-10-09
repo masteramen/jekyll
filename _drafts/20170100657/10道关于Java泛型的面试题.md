@@ -3,11 +3,11 @@ layout: post
 title:  "10道关于Java泛型的面试题"
 title2:  "10道关于Java泛型的面试题"
 date:   2017-01-01 23:45:57  +0800
-source:  "http://www.jfox.info/10-interview-questions-relative-with-java-generics.html"
+source:  "https://www.jfox.info/10-interview-questions-relative-with-java-generics.html"
 fileName:  "20170100657"
 lang:  "zh_CN"
 published: true
-permalink: "10-interview-questions-relative-with-java-generics.html"
+permalink: "2017/https://www.jfox.info/10-interview-questions-relative-with-java-generics.html"
 ---
 {% raw %}
 **1. Java中的泛型是什么 ? 使用泛型的好处是什么?**
@@ -120,5 +120,5 @@ item = listOfString.get(0); //不需要显式的类型转换 – 编译器自动
 
 这些都是Java泛型面试中 频繁出现的问题及其答案。所有这些面试题都不困难，其实它们都是基于泛型的基础知识。任何对泛型有不错了解的Java程序员都肯定熟知这些泛型题目。如果你有任何好的面试题，不管是在什么面试中碰到的，或者如果你想知道任何Java泛型面试题的答案。
 
-原文地址:[http://www.oschina.net/translate/10-interview-questions-on-java-generics](http://www.jfox.info/go.php?url=http://www.jfox.info/url.php?url=http%3A%2F%2Fwww.oschina.net%2Ftranslate%2F10-interview-questions-on-java-generics).
+原文地址:[http://www.oschina.net/translate/10-interview-questions-on-java-generics](https://www.jfox.info/go.php?url=http://www.jfox.info/url.php?url=http%3A%2F%2Fwww.oschina.net%2Ftranslate%2F10-interview-questions-on-java-generics).
 {% endraw %}
