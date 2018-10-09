@@ -3,11 +3,11 @@ layout: post
 title:  "移花接木：针对OAuth2的攻击"
 title2:  "移花接木：针对OAuth2的攻击"
 date:   2017-01-01 23:57:49  +0800
-source:  "http://www.jfox.info/%e7%a7%bb%e8%8a%b1%e6%8e%a5%e6%9c%a8%e9%92%88%e5%af%b9oauth2%e7%9a%84%e6%94%bb%e5%87%bb.html"
+source:  "https://www.jfox.info/%e7%a7%bb%e8%8a%b1%e6%8e%a5%e6%9c%a8%e9%92%88%e5%af%b9oauth2%e7%9a%84%e6%94%bb%e5%87%bb.html"
 fileName:  "20170101369"
 lang:  "zh_CN"
 published: true
-permalink: "%e7%a7%bb%e8%8a%b1%e6%8e%a5%e6%9c%a8%e9%92%88%e5%af%b9oauth2%e7%9a%84%e6%94%bb%e5%87%bb.html"
+permalink: "2017/https://www.jfox.info/%e7%a7%bb%e8%8a%b1%e6%8e%a5%e6%9c%a8%e9%92%88%e5%af%b9oauth2%e7%9a%84%e6%94%bb%e5%87%bb.html"
 ---
 {% raw %}
 作为第三方应用，为了提升用户体验，往往会提供第三方社交账号登录或者绑定的功能，这背后使用到的关键技术是OAuth认证。想要在自己的应用里集成OAuth不是难事儿，各大社交网站都提供了详尽的文档指南。

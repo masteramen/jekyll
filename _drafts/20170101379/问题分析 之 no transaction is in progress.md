@@ -3,11 +3,11 @@ layout: post
 title:  "问题分析 之 no transaction is in progress"
 title2:  "问题分析 之 no transaction is in progress"
 date:   2017-01-01 23:57:59  +0800
-source:  "http://www.jfox.info/%e9%97%ae%e9%a2%98%e5%88%86%e6%9e%90%e4%b9%8bnotransactionisinprogress.html"
+source:  "https://www.jfox.info/%e9%97%ae%e9%a2%98%e5%88%86%e6%9e%90%e4%b9%8bnotransactionisinprogress.html"
 fileName:  "20170101379"
 lang:  "zh_CN"
 published: true
-permalink: "%e9%97%ae%e9%a2%98%e5%88%86%e6%9e%90%e4%b9%8bnotransactionisinprogress.html"
+permalink: "2017/https://www.jfox.info/%e9%97%ae%e9%a2%98%e5%88%86%e6%9e%90%e4%b9%8bnotransactionisinprogress.html"
 ---
 {% raw %}
 javax.persistence.TransactionRequiredException: no transaction is in progress

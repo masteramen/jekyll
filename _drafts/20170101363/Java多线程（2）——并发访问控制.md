@@ -3,14 +3,14 @@ layout: post
 title:  "Java多线程（2）——并发访问控制"
 title2:  "Java多线程（2）——并发访问控制"
 date:   2017-01-01 23:57:43  +0800
-source:  "http://www.jfox.info/java%e5%a4%9a%e7%ba%bf%e7%a8%8b2%e5%b9%b6%e5%8f%91%e8%ae%bf%e9%97%ae%e6%8e%a7%e5%88%b6.html"
+source:  "https://www.jfox.info/java%e5%a4%9a%e7%ba%bf%e7%a8%8b2%e5%b9%b6%e5%8f%91%e8%ae%bf%e9%97%ae%e6%8e%a7%e5%88%b6.html"
 fileName:  "20170101363"
 lang:  "zh_CN"
 published: true
-permalink: "java%e5%a4%9a%e7%ba%bf%e7%a8%8b2%e5%b9%b6%e5%8f%91%e8%ae%bf%e9%97%ae%e6%8e%a7%e5%88%b6.html"
+permalink: "2017/https://www.jfox.info/java%e5%a4%9a%e7%ba%bf%e7%a8%8b2%e5%b9%b6%e5%8f%91%e8%ae%bf%e9%97%ae%e6%8e%a7%e5%88%b6.html"
 ---
 {% raw %}
-这章主要介绍一下synchronized关键字相关的用法，顺带也介绍一下volatile关键字。这两个关键字在 [java](http://www.jfox.info/go.php?url=http://irfen.me/tag/java) 的并发访问控制中都很重要。 
+这章主要介绍一下synchronized关键字相关的用法，顺带也介绍一下volatile关键字。这两个关键字在 [java](https://www.jfox.info/go.php?url=http://irfen.me/tag/java) 的并发访问控制中都很重要。 
 
 ## 1、synchronized使用范围及加锁规则
 
@@ -103,7 +103,7 @@ c、同步语句块，这块分两种，一种是使用对象，一种是使用c
 
 接下来我们来介绍同步语句块，为什么可以修饰在方法的关键字上之后，还要同步语句块呢？首先synchronized修饰在方法上其实易用性很强，我们不用管太多东西，只要方法结束或者方法中间抛出异常，这个同步锁就会解开结束。缺点是什么呢，不灵活、效率低。由于这个关键字加在了方法上，所以锁的是整个方法。加入一个方法a需要运行2s，那么同时过来3个线程，就是6s。
 
- 假如有个投票的方法，这个方法会加票、写库、然后各种记录操作、扣钱（假设投票需要虚拟币）、通知 [前端](http://www.jfox.info/go.php?url=http://irfen.me/tag/%e5%89%8d%e7%ab%af) 、发消息什么的。一堆操作肯定很耗时，但是为了保持我们的投票数据准确不能出现脏读的情况，所以我们还必须加锁。假设这个投票方法要运行2s，那么在投票的快要结束的时间，同时1000个人来投票就要2000s时间来处理啊，半个多小时。 
+ 假如有个投票的方法，这个方法会加票、写库、然后各种记录操作、扣钱（假设投票需要虚拟币）、通知 [前端](https://www.jfox.info/go.php?url=http://irfen.me/tag/%e5%89%8d%e7%ab%af) 、发消息什么的。一堆操作肯定很耗时，但是为了保持我们的投票数据准确不能出现脏读的情况，所以我们还必须加锁。假设这个投票方法要运行2s，那么在投票的快要结束的时间，同时1000个人来投票就要2000s时间来处理啊，半个多小时。 
 
 实际上我们真正需要加锁的地方在哪，并不是上面提到的所有的情况都要锁起来，我们只需要在增加投票数那一块锁起来，后面的一些无关的操作并不一定需要是同步的。所以synchronized在方法上修饰就没那么灵活了。
 
@@ -154,7 +154,7 @@ c、同步语句块，这块分两种，一种是使用对象，一种是使用c
 
 ## 1.5、死锁
 
-[多线程](http://www.jfox.info/go.php?url=http://irfen.me/tag/%e5%a4%9a%e7%ba%bf%e7%a8%8b) 的锁，很容易产生死锁问题，下面举个例子。 
+[多线程](https://www.jfox.info/go.php?url=http://irfen.me/tag/%e5%a4%9a%e7%ba%bf%e7%a8%8b) 的锁，很容易产生死锁问题，下面举个例子。 
 
     public synchronized static void a() {
         // ...
@@ -177,7 +177,7 @@ c、同步语句块，这块分两种，一种是使用对象，一种是使用c
 
 其实对于同步来说，见的最多的双重校验单例的实现。里面其实也有用到了volatile关键字。这个关键字一般还是挺少用的，他有两个作用，一个是可见性，一个是禁止指令重排序。
 
- 可见性这个问题，在一般情况下不容易见到，但是当运行server版Java进行的话，就会出现。当然也可以通过 [jvm](http://www.jfox.info/go.php?url=http://irfen.me/tag/jvm) 增加-server参数来实现。 
+ 可见性这个问题，在一般情况下不容易见到，但是当运行server版Java进行的话，就会出现。当然也可以通过 [jvm](https://www.jfox.info/go.php?url=http://irfen.me/tag/jvm) 增加-server参数来实现。 
 
 线程内都会保存一个变量的内存副本，这个内存副本只会在初始化的时候读取，之后就是在线程内做了修改，回去写入和更新。但是如果外部去修改了这个变量，那么线程内的副本是不会主动更新的，这就是可见性的问题。所以如果给变量增加了volatile的关键字，那么就可以保证这个变量每次都去主内存中读写变量，不管内存副本了。
 
@@ -185,5 +185,5 @@ c、同步语句块，这块分两种，一种是使用对象，一种是使用c
 
 3、小结
 
- 其实多线程的问题有点类似于我们一开始学习 [数据库](http://www.jfox.info/go.php?url=http://irfen.me/tag/%e6%95%b0%e6%8d%ae%e5%ba%93) ，脏读啊，不可重复读什么的，都是并发引起的。当然这里就涉及到锁了。本次介绍了synchronized关键字的处理锁和同步的问题，其实Java中还有更灵活的方式也就是lock来处理锁和同步的问题，这个我们之后会讲到。
+ 其实多线程的问题有点类似于我们一开始学习 [数据库](https://www.jfox.info/go.php?url=http://irfen.me/tag/%e6%95%b0%e6%8d%ae%e5%ba%93) ，脏读啊，不可重复读什么的，都是并发引起的。当然这里就涉及到锁了。本次介绍了synchronized关键字的处理锁和同步的问题，其实Java中还有更灵活的方式也就是lock来处理锁和同步的问题，这个我们之后会讲到。
 {% endraw %}

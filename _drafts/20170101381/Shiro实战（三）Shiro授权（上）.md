@@ -3,11 +3,11 @@ layout: post
 title:  "Shiro实战（三）Shiro授权（上）"
 title2:  "Shiro实战（三）Shiro授权（上）"
 date:   2017-01-01 23:58:01  +0800
-source:  "http://www.jfox.info/shiro%e5%ae%9e%e6%88%98%e4%b8%89shiro%e6%8e%88%e6%9d%83%e4%b8%8a.html"
+source:  "https://www.jfox.info/shiro%e5%ae%9e%e6%88%98%e4%b8%89shiro%e6%8e%88%e6%9d%83%e4%b8%8a.html"
 fileName:  "20170101381"
 lang:  "zh_CN"
 published: true
-permalink: "shiro%e5%ae%9e%e6%88%98%e4%b8%89shiro%e6%8e%88%e6%9d%83%e4%b8%8a.html"
+permalink: "2017/https://www.jfox.info/shiro%e5%ae%9e%e6%88%98%e4%b8%89shiro%e6%8e%88%e6%9d%83%e4%b8%8a.html"
 ---
 {% raw %}
 ① Permissions

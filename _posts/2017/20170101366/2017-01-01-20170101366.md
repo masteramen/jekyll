@@ -3,11 +3,11 @@ layout: post
 title:  "为什么Java中字符串被设计成不可变的？"
 title2:  "为什么Java中字符串被设计成不可变的？"
 date:   2017-01-01 23:57:46  +0800
-source:  "http://www.jfox.info/%e4%b8%ba%e4%bb%80%e4%b9%88java%e4%b8%ad%e5%ad%97%e7%ac%a6%e4%b8%b2%e8%a2%ab%e8%ae%be%e8%ae%a1%e6%88%90%e4%b8%8d%e5%8f%af%e5%8f%98%e7%9a%84.html"
+source:  "https://www.jfox.info/%e4%b8%ba%e4%bb%80%e4%b9%88java%e4%b8%ad%e5%ad%97%e7%ac%a6%e4%b8%b2%e8%a2%ab%e8%ae%be%e8%ae%a1%e6%88%90%e4%b8%8d%e5%8f%af%e5%8f%98%e7%9a%84.html"
 fileName:  "20170101366"
 lang:  "zh_CN"
 published: true
-permalink: "%e4%b8%ba%e4%bb%80%e4%b9%88java%e4%b8%ad%e5%ad%97%e7%ac%a6%e4%b8%b2%e8%a2%ab%e8%ae%be%e8%ae%a1%e6%88%90%e4%b8%8d%e5%8f%af%e5%8f%98%e7%9a%84.html"
+permalink: "2017/https://www.jfox.info/%e4%b8%ba%e4%bb%80%e4%b9%88java%e4%b8%ad%e5%ad%97%e7%ac%a6%e4%b8%b2%e8%a2%ab%e8%ae%be%e8%ae%a1%e6%88%90%e4%b8%8d%e5%8f%af%e5%8f%98%e7%9a%84.html"
 ---
 {% raw %}
 String是Java中一个不可变的类，所以他一旦被实例化就无法被修改。不可变类的实例一旦创建，其成员变量的值就不能被修改。不可变类有很多优势。本文总结了为什么字符串被设计成不可变的。

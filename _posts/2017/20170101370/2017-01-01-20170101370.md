@@ -3,11 +3,11 @@ layout: post
 title:  "Spring 的官方的事务控制"
 title2:  "Spring 的官方的事务控制"
 date:   2017-01-01 23:57:50  +0800
-source:  "http://www.jfox.info/spring%e7%9a%84%e5%ae%98%e6%96%b9%e7%9a%84%e4%ba%8b%e5%8a%a1%e6%8e%a7%e5%88%b6.html"
+source:  "https://www.jfox.info/spring%e7%9a%84%e5%ae%98%e6%96%b9%e7%9a%84%e4%ba%8b%e5%8a%a1%e6%8e%a7%e5%88%b6.html"
 fileName:  "20170101370"
 lang:  "zh_CN"
 published: true
-permalink: "spring%e7%9a%84%e5%ae%98%e6%96%b9%e7%9a%84%e4%ba%8b%e5%8a%a1%e6%8e%a7%e5%88%b6.html"
+permalink: "2017/https://www.jfox.info/spring%e7%9a%84%e5%ae%98%e6%96%b9%e7%9a%84%e4%ba%8b%e5%8a%a1%e6%8e%a7%e5%88%b6.html"
 ---
 {% raw %}
 事务是数据库（RDB）保证业务操作完整性的一种机制（强一致性）

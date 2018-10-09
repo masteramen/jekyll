@@ -3,11 +3,11 @@ layout: post
 title:  "关于springmvc配置validator的注意事项"
 title2:  "关于springmvc配置validator的注意事项"
 date:   2017-01-01 23:57:55  +0800
-source:  "http://www.jfox.info/%e5%85%b3%e4%ba%8espringmvc%e9%85%8d%e7%bd%aevalidator%e7%9a%84%e6%b3%a8%e6%84%8f%e4%ba%8b%e9%a1%b9.html"
+source:  "https://www.jfox.info/%e5%85%b3%e4%ba%8espringmvc%e9%85%8d%e7%bd%aevalidator%e7%9a%84%e6%b3%a8%e6%84%8f%e4%ba%8b%e9%a1%b9.html"
 fileName:  "20170101375"
 lang:  "zh_CN"
 published: true
-permalink: "%e5%85%b3%e4%ba%8espringmvc%e9%85%8d%e7%bd%aevalidator%e7%9a%84%e6%b3%a8%e6%84%8f%e4%ba%8b%e9%a1%b9.html"
+permalink: "2017/https://www.jfox.info/%e5%85%b3%e4%ba%8espringmvc%e9%85%8d%e7%bd%aevalidator%e7%9a%84%e6%b3%a8%e6%84%8f%e4%ba%8b%e9%a1%b9.html"
 ---
 {% raw %}
 1<mvc:annotation-driven validator="validator"/>

@@ -3,11 +3,11 @@ layout: post
 title:  "【Motan源码学习】2-与Spring集成"
 title2:  "【Motan源码学习】2-与Spring集成"
 date:   2017-01-01 23:57:48  +0800
-source:  "http://www.jfox.info/motan%e6%ba%90%e7%a0%81%e5%ad%a6%e4%b9%a02%e4%b8%8espring%e9%9b%86%e6%88%90.html"
+source:  "https://www.jfox.info/motan%e6%ba%90%e7%a0%81%e5%ad%a6%e4%b9%a02%e4%b8%8espring%e9%9b%86%e6%88%90.html"
 fileName:  "20170101368"
 lang:  "zh_CN"
 published: true
-permalink: "motan%e6%ba%90%e7%a0%81%e5%ad%a6%e4%b9%a02%e4%b8%8espring%e9%9b%86%e6%88%90.html"
+permalink: "2017/https://www.jfox.info/motan%e6%ba%90%e7%a0%81%e5%ad%a6%e4%b9%a02%e4%b8%8espring%e9%9b%86%e6%88%90.html"
 ---
 {% raw %}
 ServiceConfig<MotanDemoService> motanDemoService = new ServiceConfig<MotanDemoService>();
@@ -58,7 +58,7 @@ ServiceConfig<MotanDemoService> motanDemoService = new ServiceConfig<MotanDemoSe
 
 ###  与 Spring 集成的 XML 配置 
 
- 接下来看下上面这两段 [ 代码 ](http://www.jfox.info/go.php?url=http://www.liuhaihua.cn/archives/tag/%e4%bb%a3%e7%a0%81) 是如何通过XML来玩的. 
+ 接下来看下上面这两段 [ 代码 ](https://www.jfox.info/go.php?url=http://www.liuhaihua.cn/archives/tag/%e4%bb%a3%e7%a0%81) 是如何通过XML来玩的. 
 
  1. 服务发布 
 
@@ -97,5 +97,5 @@ ServiceConfig<MotanDemoService> motanDemoService = new ServiceConfig<MotanDemoSe
   MotanNamespaceHandler 中定义了 
   
   
-[点赞](void(0))[ACE](http://www.jfox.info/go.php?url=http://ju.outofmemory.cn/tag/ACE/)[Spring](http://www.jfox.info/go.php?url=http://ju.outofmemory.cn/tag/Spring/)[App](http://www.jfox.info/go.php?url=http://ju.outofmemory.cn/tag/App/)[cat](http://www.jfox.info/go.php?url=http://ju.outofmemory.cn/tag/cat/)[bean](http://www.jfox.info/go.php?url=http://ju.outofmemory.cn/tag/bean/)[API](http://www.jfox.info/go.php?url=http://ju.outofmemory.cn/tag/API/)
+[点赞](void(0))[ACE](https://www.jfox.info/go.php?url=http://ju.outofmemory.cn/tag/ACE/)[Spring](https://www.jfox.info/go.php?url=http://ju.outofmemory.cn/tag/Spring/)[App](https://www.jfox.info/go.php?url=http://ju.outofmemory.cn/tag/App/)[cat](https://www.jfox.info/go.php?url=http://ju.outofmemory.cn/tag/cat/)[bean](https://www.jfox.info/go.php?url=http://ju.outofmemory.cn/tag/bean/)[API](https://www.jfox.info/go.php?url=http://ju.outofmemory.cn/tag/API/)
 {% endraw %}

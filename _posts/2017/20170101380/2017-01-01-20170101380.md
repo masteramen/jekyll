@@ -3,11 +3,11 @@ layout: post
 title:  "JDK 1.8之 HashMap 源码分析"
 title2:  "JDK 1.8之 HashMap 源码分析"
 date:   2017-01-01 23:58:00  +0800
-source:  "http://www.jfox.info/jdk18%e4%b9%8bhashmap%e6%ba%90%e7%a0%81%e5%88%86%e6%9e%90.html"
+source:  "https://www.jfox.info/jdk18%e4%b9%8bhashmap%e6%ba%90%e7%a0%81%e5%88%86%e6%9e%90.html"
 fileName:  "20170101380"
 lang:  "zh_CN"
 published: true
-permalink: "jdk18%e4%b9%8bhashmap%e6%ba%90%e7%a0%81%e5%88%86%e6%9e%90.html"
+permalink: "2017/https://www.jfox.info/jdk18%e4%b9%8bhashmap%e6%ba%90%e7%a0%81%e5%88%86%e6%9e%90.html"
 ---
 {% raw %}
 与JDK1.7中HashMap的实现相比，JDK1.8做了如下改动：

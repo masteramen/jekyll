@@ -3,20 +3,20 @@ layout: post
 title:  "lombok的简单介绍和使用方法"
 title2:  "lombok的简单介绍和使用方法"
 date:   2017-01-01 23:57:53  +0800
-source:  "http://www.jfox.info/lombok%e7%9a%84%e7%ae%80%e5%8d%95%e4%bb%8b%e7%bb%8d%e5%92%8c%e4%bd%bf%e7%94%a8%e6%96%b9%e6%b3%95-2.html"
+source:  "https://www.jfox.info/lombok%e7%9a%84%e7%ae%80%e5%8d%95%e4%bb%8b%e7%bb%8d%e5%92%8c%e4%bd%bf%e7%94%a8%e6%96%b9%e6%b3%95-2.html"
 fileName:  "20170101373"
 lang:  "zh_CN"
 published: true
-permalink: "lombok%e7%9a%84%e7%ae%80%e5%8d%95%e4%bb%8b%e7%bb%8d%e5%92%8c%e4%bd%bf%e7%94%a8%e6%96%b9%e6%b3%95-2.html"
+permalink: "2017/https://www.jfox.info/lombok%e7%9a%84%e7%ae%80%e5%8d%95%e4%bb%8b%e7%bb%8d%e5%92%8c%e4%bd%bf%e7%94%a8%e6%96%b9%e6%b3%95-2.html"
 ---
 {% raw %}
 这是上周在群里发现有人推荐lombok，他说是神器，当时就引起了我的好奇，然后下班回来我就看了看官网介绍（菜鸟英语水平），这就是难点了，然后就是大概了解了一下，就在网上查了查相关资料，周末的时候自己试了试，现在来做个总结：
 
-　　官网：[http://projectlombok.org/](http://www.jfox.info/go.php?url=http://projectlombok.org/)  ；进去就有一个几分钟的视频介绍，不过是英语；还有相关的文档等。
+　　官网：[http://projectlombok.org/](https://www.jfox.info/go.php?url=http://projectlombok.org/)  ；进去就有一个几分钟的视频介绍，不过是英语；还有相关的文档等。
 
 　　lombok简介：就是通过@Data注解的方式省去了我们平时开发定义JavaBean之后，生成其属性的构造器、getter、setter、equals、hashcode、toString方法；但是，在编译时会自动生成这些方法，在.class文件中。（我就不多介绍了。。。）
 
-　　要使用lombok，我们需要安装配置lombok，首先下载lombok.jar包：[https://projectlombok.org/download.html](http://www.jfox.info/go.php?url=https://projectlombok.org/download.html)
+　　要使用lombok，我们需要安装配置lombok，首先下载lombok.jar包：[https://projectlombok.org/download.html](https://www.jfox.info/go.php?url=https://projectlombok.org/download.html)
 
 **安装：**
 
@@ -31,7 +31,7 @@ permalink: "lombok%e7%9a%84%e7%ae%80%e5%8d%95%e4%bb%8b%e7%bb%8d%e5%92%8c%e4%bd%b
 
 **lombok 注解：**
 lombok 提供的注解不多，可以参考官方视频的讲解和官方文档。
-文档地址：[http://projectlombok.org/features/index.](http://www.jfox.info/go.php?url=http://projectlombok.org/features/index.html)
+文档地址：[http://projectlombok.org/features/index.](https://www.jfox.info/go.php?url=http://projectlombok.org/features/index.html)
 
  　　下面介绍几个常用的 lombok 注解：
 @Data ：注解在类上；提供类所有属性的 getting 和 setting 方法，此外还提供了equals、canEqual、hashCode、toString 方法

@@ -3,11 +3,11 @@ layout: post
 title:  "Spring MVC 源码解析：Web环境下容器的初始化过程"
 title2:  "Spring MVC 源码解析：Web环境下容器的初始化过程"
 date:   2017-01-01 23:57:56  +0800
-source:  "http://www.jfox.info/springmvc%e6%ba%90%e7%a0%81%e8%a7%a3%e6%9e%90web%e7%8e%af%e5%a2%83%e4%b8%8b%e5%ae%b9%e5%99%a8%e7%9a%84%e5%88%9d%e5%a7%8b%e5%8c%96%e8%bf%87%e7%a8%8b.html"
+source:  "https://www.jfox.info/springmvc%e6%ba%90%e7%a0%81%e8%a7%a3%e6%9e%90web%e7%8e%af%e5%a2%83%e4%b8%8b%e5%ae%b9%e5%99%a8%e7%9a%84%e5%88%9d%e5%a7%8b%e5%8c%96%e8%bf%87%e7%a8%8b.html"
 fileName:  "20170101376"
 lang:  "zh_CN"
 published: true
-permalink: "springmvc%e6%ba%90%e7%a0%81%e8%a7%a3%e6%9e%90web%e7%8e%af%e5%a2%83%e4%b8%8b%e5%ae%b9%e5%99%a8%e7%9a%84%e5%88%9d%e5%a7%8b%e5%8c%96%e8%bf%87%e7%a8%8b.html"
+permalink: "2017/https://www.jfox.info/springmvc%e6%ba%90%e7%a0%81%e8%a7%a3%e6%9e%90web%e7%8e%af%e5%a2%83%e4%b8%8b%e5%ae%b9%e5%99%a8%e7%9a%84%e5%88%9d%e5%a7%8b%e5%8c%96%e8%bf%87%e7%a8%8b.html"
 ---
 {% raw %}
 Spring MVC 是目前最流行的 java web 框架（之一），是对传统 java servlet 的高级封装，以提升 servlet 的灵活性和易用性。从广义上来说，Spring MVC 的执行过程可以分为 **容器初始化** 和 **请求响应处理** 两大部分，前者在 servlet 容器启动过程中完成，为后者的执行提供基本的运行环境，而后者则是 Spring MVC 的核心所在，负责接收请求到最终返回响应数据的复杂处理过程。 

@@ -3,11 +3,11 @@ layout: post
 title:  "sbc(二)高可用Eureka+声明式服务调用"
 title2:  "sbc(二)高可用Eureka+声明式服务调用"
 date:   2017-01-01 23:57:54  +0800
-source:  "http://www.jfox.info/sbc%e4%ba%8c%e9%ab%98%e5%8f%af%e7%94%a8eureka%e5%a3%b0%e6%98%8e%e5%bc%8f%e6%9c%8d%e5%8a%a1%e8%b0%83%e7%94%a8.html"
+source:  "https://www.jfox.info/sbc%e4%ba%8c%e9%ab%98%e5%8f%af%e7%94%a8eureka%e5%a3%b0%e6%98%8e%e5%bc%8f%e6%9c%8d%e5%8a%a1%e8%b0%83%e7%94%a8.html"
 fileName:  "20170101374"
 lang:  "zh_CN"
 published: true
-permalink: "sbc%e4%ba%8c%e9%ab%98%e5%8f%af%e7%94%a8eureka%e5%a3%b0%e6%98%8e%e5%bc%8f%e6%9c%8d%e5%8a%a1%e8%b0%83%e7%94%a8.html"
+permalink: "2017/https://www.jfox.info/sbc%e4%ba%8c%e9%ab%98%e5%8f%af%e7%94%a8eureka%e5%a3%b0%e6%98%8e%e5%bc%8f%e6%9c%8d%e5%8a%a1%e8%b0%83%e7%94%a8.html"
 ---
 {% raw %}
 这次会按照实际生产要求来搭建这套服务。
@@ -347,7 +347,7 @@ application-node2.properties:
 
  后续还会继续谈到 `zuul网关，容错，断路器` 等内容，欢迎拍砖讨论。 
 
- 项目： [https://github.com/crossoverJie/springboot-cloud](http://www.jfox.info/go.php?url=https://link.juejin.im?target=https%3A%2F%2Fgithub.com%2FcrossoverJie%2Fspringboot-cloud)
+ 项目： [https://github.com/crossoverJie/springboot-cloud](https://www.jfox.info/go.php?url=https://link.juejin.im?target=https%3A%2F%2Fgithub.com%2FcrossoverJie%2Fspringboot-cloud)
 
- 博客： [http://crossoverjie.top](http://www.jfox.info/go.php?url=https://link.juejin.im?target=http%3A%2F%2Fcrossoverjie.top) 。
+ 博客： [http://crossoverjie.top](https://www.jfox.info/go.php?url=https://link.juejin.im?target=http%3A%2F%2Fcrossoverjie.top) 。
 {% endraw %}

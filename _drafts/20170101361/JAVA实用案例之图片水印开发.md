@@ -3,11 +3,11 @@ layout: post
 title:  "JAVA实用案例之图片水印开发"
 title2:  "JAVA实用案例之图片水印开发"
 date:   2017-01-01 23:57:41  +0800
-source:  "http://www.jfox.info/java%e5%ae%9e%e7%94%a8%e6%a1%88%e4%be%8b%e4%b9%8b%e5%9b%be%e7%89%87%e6%b0%b4%e5%8d%b0%e5%bc%80%e5%8f%91.html"
+source:  "https://www.jfox.info/java%e5%ae%9e%e7%94%a8%e6%a1%88%e4%be%8b%e4%b9%8b%e5%9b%be%e7%89%87%e6%b0%b4%e5%8d%b0%e5%bc%80%e5%8f%91.html"
 fileName:  "20170101361"
 lang:  "zh_CN"
 published: true
-permalink: "java%e5%ae%9e%e7%94%a8%e6%a1%88%e4%be%8b%e4%b9%8b%e5%9b%be%e7%89%87%e6%b0%b4%e5%8d%b0%e5%bc%80%e5%8f%91.html"
+permalink: "2017/https://www.jfox.info/java%e5%ae%9e%e7%94%a8%e6%a1%88%e4%be%8b%e4%b9%8b%e5%9b%be%e7%89%87%e6%b0%b4%e5%8d%b0%e5%bc%80%e5%8f%91.html"
 ---
 {% raw %}
 # JAVA实用案例之图片水印开发 
@@ -15,9 +15,9 @@ permalink: "java%e5%ae%9e%e7%94%a8%e6%a1%88%e4%be%8b%e4%b9%8b%e5%9b%be%e7%89%87%
 
 上周零零碎碎花了一周的时间研究水印的开发，现在终于写了个入门级的Demo，做下笔记同时分享出来供大家参考。
 
-Demo是在我上次写的 [JAVA实用案例之文件导入导出（POI方式）](http://www.jfox.info/go.php?url=http://www.cnblogs.com/allanzhang/p/6938889.html) 框架基础上搭建的，基于Spring+SpringMVC。如果有错误还请大家指正。
+Demo是在我上次写的 [JAVA实用案例之文件导入导出（POI方式）](https://www.jfox.info/go.php?url=http://www.cnblogs.com/allanzhang/p/6938889.html) 框架基础上搭建的，基于Spring+SpringMVC。如果有错误还请大家指正。
 
-最后源码地址在：[https://github.com/allanzhuo/myport.git](http://www.jfox.info/go.php?url=https://github.com/allanzhuo/myport.git) 。转载还请注明出处：[http://www.cnblogs.com/allanzhang/p/7193309.html](http://www.jfox.info/go.php?url=http://www.cnblogs.com/allanzhang/p/7193309.html)。
+最后源码地址在：[https://github.com/allanzhuo/myport.git](https://www.jfox.info/go.php?url=https://github.com/allanzhuo/myport.git) 。转载还请注明出处：[http://www.cnblogs.com/allanzhang/p/7193309.html](https://www.jfox.info/go.php?url=http://www.cnblogs.com/allanzhang/p/7193309.html)。
 
 # 简单介绍
 
