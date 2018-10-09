@@ -3,15 +3,15 @@ layout: post
 title:  "RxJava源码分析之线程调度（二）"
 title2:  "RxJava源码分析之线程调度（二）"
 date:   2017-01-01 23:59:42  +0800
-source:  "http://www.jfox.info/rxjava%e6%ba%90%e7%a0%81%e5%88%86%e6%9e%90%e4%b9%8b%e7%ba%bf%e7%a8%8b%e8%b0%83%e5%ba%a6%e4%ba%8c.html"
+source:  "https://www.jfox.info/rxjava%e6%ba%90%e7%a0%81%e5%88%86%e6%9e%90%e4%b9%8b%e7%ba%bf%e7%a8%8b%e8%b0%83%e5%ba%a6%e4%ba%8c.html"
 fileName:  "20170101482"
 lang:  "zh_CN"
 published: true
-permalink: "rxjava%e6%ba%90%e7%a0%81%e5%88%86%e6%9e%90%e4%b9%8b%e7%ba%bf%e7%a8%8b%e8%b0%83%e5%ba%a6%e4%ba%8c.html"
+permalink: "2017/https://www.jfox.info/rxjava%e6%ba%90%e7%a0%81%e5%88%86%e6%9e%90%e4%b9%8b%e7%ba%bf%e7%a8%8b%e8%b0%83%e5%ba%a6%e4%ba%8c.html"
 ---
 {% raw %}
 作者[TripleZ](/u/adb7c6deb713)2017.08.04 16:13*字数 942
-在上一篇文章当中我们把RxJava的上游线程切换的源码都大致梳理了一遍，如果还没有看的[请猛戳这里](http://www.jfox.info/go.php?url=http://www.jianshu.com/p/dfd1a8df6fe0)，但是光有上游的线程切换是不足以让我们完成在实际项目中的应用的，绝大多数时候我们都需要在下游进行线程的切换来处理上游在其他线程中得到的结果。所以现在我们就来分析一下RxJava源码中是如何实现对下游线程的切换控制管理的。
+在上一篇文章当中我们把RxJava的上游线程切换的源码都大致梳理了一遍，如果还没有看的[请猛戳这里](https://www.jfox.info/go.php?url=http://www.jianshu.com/p/dfd1a8df6fe0)，但是光有上游的线程切换是不足以让我们完成在实际项目中的应用的，绝大多数时候我们都需要在下游进行线程的切换来处理上游在其他线程中得到的结果。所以现在我们就来分析一下RxJava源码中是如何实现对下游线程的切换控制管理的。
 
 这里我们一切换到Android主线程为例：
 

@@ -3,11 +3,11 @@ layout: post
 title:  "XA 分布式事务【推荐阅读】"
 title2:  "XA 分布式事务【推荐阅读】"
 date:   2017-01-01 23:59:15  +0800
-source:  "http://www.jfox.info/xa%e5%88%86%e5%b8%83%e5%bc%8f%e4%ba%8b%e5%8a%a1%e6%8e%a8%e8%8d%90%e9%98%85%e8%af%bb.html"
+source:  "https://www.jfox.info/xa%e5%88%86%e5%b8%83%e5%bc%8f%e4%ba%8b%e5%8a%a1%e6%8e%a8%e8%8d%90%e9%98%85%e8%af%bb.html"
 fileName:  "20170101455"
 lang:  "zh_CN"
 published: true
-permalink: "xa%e5%88%86%e5%b8%83%e5%bc%8f%e4%ba%8b%e5%8a%a1%e6%8e%a8%e8%8d%90%e9%98%85%e8%af%bb.html"
+permalink: "2017/https://www.jfox.info/xa%e5%88%86%e5%b8%83%e5%bc%8f%e4%ba%8b%e5%8a%a1%e6%8e%a8%e8%8d%90%e9%98%85%e8%af%bb.html"
 ---
 {% raw %}
 # XA 分布式事务【推荐阅读】 
@@ -39,8 +39,8 @@ permalink: "xa%e5%88%86%e5%b8%83%e5%bc%8f%e4%ba%8b%e5%8a%a1%e6%8e%a8%e8%8d%90%e9
 
 建议你看过这两篇文章（_非必须_）：
 
-1. [《MyCAT 源码分析 —— 【单库单表】插入》](http://www.jfox.info/go.php?url=http://www.yunai.me/MyCAT/single-db-single-table-insert/?self)
-2. [《MyCAT 源码分析 —— 【单库单表】查询》](http://www.jfox.info/go.php?url=http://www.yunai.me/MyCAT/single-db-single-table-select/?self)
+1. [《MyCAT 源码分析 —— 【单库单表】插入》](https://www.jfox.info/go.php?url=http://www.yunai.me/MyCAT/single-db-single-table-insert/?self)
+2. [《MyCAT 源码分析 —— 【单库单表】查询》](https://www.jfox.info/go.php?url=http://www.yunai.me/MyCAT/single-db-single-table-select/?self)
 
 # 2. 主流程
 

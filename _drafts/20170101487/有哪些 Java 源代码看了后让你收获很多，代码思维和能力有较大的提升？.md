@@ -3,11 +3,11 @@ layout: post
 title:  "有哪些 Java 源代码看了后让你收获很多，代码思维和能力有较大的提升？"
 title2:  "有哪些 Java 源代码看了后让你收获很多，代码思维和能力有较大的提升？"
 date:   2017-01-01 23:59:47  +0800
-source:  "http://www.jfox.info/%e6%9c%89%e5%93%aa%e4%ba%9bjava%e6%ba%90%e4%bb%a3%e7%a0%81%e7%9c%8b%e4%ba%86%e5%90%8e%e8%ae%a9%e4%bd%a0%e6%94%b6%e8%8e%b7%e5%be%88%e5%a4%9a%e4%bb%a3%e7%a0%81%e6%80%9d%e7%bb%b4%e5%92%8c%e8%83%bd.html"
+source:  "https://www.jfox.info/%e6%9c%89%e5%93%aa%e4%ba%9bjava%e6%ba%90%e4%bb%a3%e7%a0%81%e7%9c%8b%e4%ba%86%e5%90%8e%e8%ae%a9%e4%bd%a0%e6%94%b6%e8%8e%b7%e5%be%88%e5%a4%9a%e4%bb%a3%e7%a0%81%e6%80%9d%e7%bb%b4%e5%92%8c%e8%83%bd.html"
 fileName:  "20170101487"
 lang:  "zh_CN"
 published: true
-permalink: "%e6%9c%89%e5%93%aa%e4%ba%9bjava%e6%ba%90%e4%bb%a3%e7%a0%81%e7%9c%8b%e4%ba%86%e5%90%8e%e8%ae%a9%e4%bd%a0%e6%94%b6%e8%8e%b7%e5%be%88%e5%a4%9a%e4%bb%a3%e7%a0%81%e6%80%9d%e7%bb%b4%e5%92%8c%e8%83%bd.html"
+permalink: "2017/https://www.jfox.info/%e6%9c%89%e5%93%aa%e4%ba%9bjava%e6%ba%90%e4%bb%a3%e7%a0%81%e7%9c%8b%e4%ba%86%e5%90%8e%e8%ae%a9%e4%bd%a0%e6%94%b6%e8%8e%b7%e5%be%88%e5%a4%9a%e4%bb%a3%e7%a0%81%e6%80%9d%e7%bb%b4%e5%92%8c%e8%83%bd.html"
 ---
 {% raw %}
 作者[阿阳啊啊](/u/386208c5c211)2017.07.31 14:19*字数 1856

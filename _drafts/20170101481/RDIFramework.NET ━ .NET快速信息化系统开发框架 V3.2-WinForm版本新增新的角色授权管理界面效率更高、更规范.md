@@ -3,11 +3,11 @@ layout: post
 title:  "RDIFramework.NET ━ .NET快速信息化系统开发框架 V3.2->WinForm版本新增新的角色授权管理界面效率更高、更规范"
 title2:  "RDIFramework.NET ━ .NET快速信息化系统开发框架 V3.2-WinForm版本新增新的角色授权管理界面效率更高、更规范"
 date:   2017-01-01 23:59:41  +0800
-source:  "http://www.jfox.info/rdiframeworknetnet%e5%bf%ab%e9%80%9f%e4%bf%a1%e6%81%af%e5%8c%96%e7%b3%bb%e7%bb%9f%e5%bc%80%e5%8f%91%e6%a1%86%e6%9e%b6v32winform%e7%89%88%e6%9c%ac%e6%96%b0%e5%a2%9e%e6%96%b0%e7%9a%84%e8%a7%92%e8%89%b2.html"
+source:  "https://www.jfox.info/rdiframeworknetnet%e5%bf%ab%e9%80%9f%e4%bf%a1%e6%81%af%e5%8c%96%e7%b3%bb%e7%bb%9f%e5%bc%80%e5%8f%91%e6%a1%86%e6%9e%b6v32winform%e7%89%88%e6%9c%ac%e6%96%b0%e5%a2%9e%e6%96%b0%e7%9a%84%e8%a7%92%e8%89%b2.html"
 fileName:  "20170101481"
 lang:  "zh_CN"
 published: true
-permalink: "rdiframeworknetnet%e5%bf%ab%e9%80%9f%e4%bf%a1%e6%81%af%e5%8c%96%e7%b3%bb%e7%bb%9f%e5%bc%80%e5%8f%91%e6%a1%86%e6%9e%b6v32winform%e7%89%88%e6%9c%ac%e6%96%b0%e5%a2%9e%e6%96%b0%e7%9a%84%e8%a7%92%e8%89%b2.html"
+permalink: "2017/https://www.jfox.info/rdiframeworknetnet%e5%bf%ab%e9%80%9f%e4%bf%a1%e6%81%af%e5%8c%96%e7%b3%bb%e7%bb%9f%e5%bc%80%e5%8f%91%e6%a1%86%e6%9e%b6v32winform%e7%89%88%e6%9c%ac%e6%96%b0%e5%a2%9e%e6%96%b0%e7%9a%84%e8%a7%92%e8%89%b2.html"
 ---
 {% raw %}
 角色授权管理模块主要是对角色的相应权限进行集中设置。在角色权限管理模块中，管理员可以添加或移除指定角色所包含的用户、可以分配或授予指定角色的模块（菜单）的访问权限、可以收回或分配指定角色的操作（功能）权限、可以对所有角色、用户、模块（菜单）、操作（功能）权限进行集中批量设置，角色户授权范围的设置（类似于用户授权范围的设置），表字段权限的设置以及表约束条件权限的设置等。
@@ -54,7 +54,7 @@ permalink: "rdiframeworknetnet%e5%bf%ab%e9%80%9f%e4%bf%a1%e6%81%af%e5%8c%96%e7%b
 
 **　　4、角色授权范围设置**
 
-　　角色授权范围设置可以很好的实现授权的再分配，对于大的集团企业可以明显的减少管理员权限分配的负担与压力，角色授权范围可以在当前角色拥有的权限下，再次有选择的分配给其他的操作人员。通俗点讲就是，某些岗位上工作的人是管理员，但不是所有业务的管理员，只是某个业务领域内的管理员，他在这个业务领域内应该有所有的权限，而且还可以委托别人来管理、可以授权给别人来管理某个业务，这就是角色授权范围管理，类似于[数据库](http://www.jfox.info/go.php?url=http://lib.csdn.net/base/mysql)权限中的级联授权，角色授权范围如下图所示。
+　　角色授权范围设置可以很好的实现授权的再分配，对于大的集团企业可以明显的减少管理员权限分配的负担与压力，角色授权范围可以在当前角色拥有的权限下，再次有选择的分配给其他的操作人员。通俗点讲就是，某些岗位上工作的人是管理员，但不是所有业务的管理员，只是某个业务领域内的管理员，他在这个业务领域内应该有所有的权限，而且还可以委托别人来管理、可以授权给别人来管理某个业务，这就是角色授权范围管理，类似于[数据库](https://www.jfox.info/go.php?url=http://lib.csdn.net/base/mysql)权限中的级联授权，角色授权范围如下图所示。
 
 ![](/wp-content/uploads/2017/08/1502011731.png)
 
@@ -100,27 +100,27 @@ permalink: "rdiframeworknetnet%e5%bf%ab%e9%80%9f%e4%bf%a1%e6%81%af%e5%8c%96%e7%b
 
  **相关文章：** 　 
 
-**  　  [RDIFramework 平台代码生成器V3.2 发布版](http://www.jfox.info/go.php?url=http://files.cnblogs.com/files/huyong/RDIFrameworkCodeMarkerV3.2Bin.rar)** 
+**  　  [RDIFramework 平台代码生成器V3.2 发布版](https://www.jfox.info/go.php?url=http://files.cnblogs.com/files/huyong/RDIFrameworkCodeMarkerV3.2Bin.rar)** 
 
-**　　 **[RDIFramework.NET — 基于.NET的快速信息化系统开发框架 — 系列目录](http://www.jfox.info/go.php?url=http://www.cnblogs.com/huyong/p/3202024.html)  
+**　　 **[RDIFramework.NET — 基于.NET的快速信息化系统开发框架 — 系列目录](https://www.jfox.info/go.php?url=http://www.cnblogs.com/huyong/p/3202024.html)  
 
-　　 [RDIFramework.NET ━ .NET快速信息化系统开发框架 ━ 工作流程组件介绍](http://www.jfox.info/go.php?url=http://blog.rdiframework.net/90.html) 
+　　 [RDIFramework.NET ━ .NET快速信息化系统开发框架 ━ 工作流程组件介绍](https://www.jfox.info/go.php?url=http://blog.rdiframework.net/90.html) 
 
-[RDIFramework.NET ━ .NET快速信息化系统开发框架 V3.2-> Web版本新增新的用户权限设置界面效率更高、更规范](http://www.jfox.info/go.php?url=http://blog.csdn.net/chinahuyong/article/details/74027764)
+[RDIFramework.NET ━ .NET快速信息化系统开发框架 V3.2-> Web版本新增新的用户权限设置界面效率更高、更规范](https://www.jfox.info/go.php?url=http://blog.csdn.net/chinahuyong/article/details/74027764)
 
-[RDIFramework.NET ━ .NET快速信息化系统开发框架 V3.2->WinForm版本新增新的用户权限设置界面效率更高、更规范](http://www.jfox.info/go.php?url=http://blog.csdn.net/chinahuyong/article/details/74035451)
+[RDIFramework.NET ━ .NET快速信息化系统开发框架 V3.2->WinForm版本新增新的用户权限设置界面效率更高、更规范](https://www.jfox.info/go.php?url=http://blog.csdn.net/chinahuyong/article/details/74035451)
 
-       [RDIFramework.NET ━ .NET快速信息化系统开发框架 V3.2->Web版本新增新的角色授权管理界面效率更高、更规范](http://www.jfox.info/go.php?url=http://blog.csdn.net/chinahuyong/article/details/76422377)
+       [RDIFramework.NET ━ .NET快速信息化系统开发框架 V3.2->Web版本新增新的角色授权管理界面效率更高、更规范](https://www.jfox.info/go.php?url=http://blog.csdn.net/chinahuyong/article/details/76422377)
 
-**　　一路走来数个年头，感谢RDIFramework[.NET](http://www.jfox.info/go.php?url=http://lib.csdn.net/base/dotnet)框架的支持者与使用者，大家可以通过下面的地址了解详情。** 
+**　　一路走来数个年头，感谢RDIFramework[.NET](https://www.jfox.info/go.php?url=http://lib.csdn.net/base/dotnet)框架的支持者与使用者，大家可以通过下面的地址了解详情。** 
 
-**      RDIFramework[.net](http://www.jfox.info/go.php?url=http://lib.csdn.net/base/dotnet)官方网站：**[http://www.rdiframework.net/](http://www.jfox.info/go.php?url=http://www.rdiframework.net/) 
+**      RDIFramework[.net](https://www.jfox.info/go.php?url=http://lib.csdn.net/base/dotnet)官方网站：**[http://www.rdiframework.net/](https://www.jfox.info/go.php?url=http://www.rdiframework.net/) 
 
-**      RDIFramework[.Net](http://www.jfox.info/go.php?url=http://lib.csdn.net/base/dotnet)官方博客：**[http://blog.rdiframework.net/](http://www.jfox.info/go.php?url=http://blog.rdiframework.net/) 
+**      RDIFramework[.Net](https://www.jfox.info/go.php?url=http://lib.csdn.net/base/dotnet)官方博客：**[http://blog.rdiframework.net/](https://www.jfox.info/go.php?url=http://blog.rdiframework.net/) 
 
       同时需要说明的，以后的所有技术文章以官方网站为准，欢迎大家收藏！ 
 
-      **RDIFramework[.NET](http://www.jfox.info/go.php?url=http://lib.csdn.net/base/dotnet)框架由专业团队长期打造、一直在更新、一直在升级，请放心使用！**  
+      **RDIFramework[.NET](https://www.jfox.info/go.php?url=http://lib.csdn.net/base/dotnet)框架由专业团队长期打造、一直在更新、一直在升级，请放心使用！**  
 
-　　欢迎关注RDIFramework[.net](http://www.jfox.info/go.php?url=http://lib.csdn.net/base/dotnet)框架官方公众[微信](http://www.jfox.info/go.php?url=http://lib.csdn.net/base/wechat)（[微信](http://www.jfox.info/go.php?url=http://lib.csdn.net/base/wechat)号：**rdiframework-net**），及时了解最新动态。
+　　欢迎关注RDIFramework[.net](https://www.jfox.info/go.php?url=http://lib.csdn.net/base/dotnet)框架官方公众[微信](https://www.jfox.info/go.php?url=http://lib.csdn.net/base/wechat)（[微信](https://www.jfox.info/go.php?url=http://lib.csdn.net/base/wechat)号：**rdiframework-net**），及时了解最新动态。
 {% endraw %}

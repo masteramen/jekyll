@@ -3,11 +3,11 @@ layout: post
 title:  "华为软件开发云对比Jenkins-JavaWeb项目持续部署方式"
 title2:  "华为软件开发云对比Jenkins-JavaWeb项目持续部署方式"
 date:   2017-01-01 23:59:16  +0800
-source:  "http://www.jfox.info/%e5%8d%8e%e4%b8%ba%e8%bd%af%e4%bb%b6%e5%bc%80%e5%8f%91%e4%ba%91%e5%af%b9%e6%af%94jenkinsjavaweb%e9%a1%b9%e7%9b%ae%e6%8c%81%e7%bb%ad%e9%83%a8%e7%bd%b2%e6%96%b9%e5%bc%8f.html"
+source:  "https://www.jfox.info/%e5%8d%8e%e4%b8%ba%e8%bd%af%e4%bb%b6%e5%bc%80%e5%8f%91%e4%ba%91%e5%af%b9%e6%af%94jenkinsjavaweb%e9%a1%b9%e7%9b%ae%e6%8c%81%e7%bb%ad%e9%83%a8%e7%bd%b2%e6%96%b9%e5%bc%8f.html"
 fileName:  "20170101456"
 lang:  "zh_CN"
 published: true
-permalink: "%e5%8d%8e%e4%b8%ba%e8%bd%af%e4%bb%b6%e5%bc%80%e5%8f%91%e4%ba%91%e5%af%b9%e6%af%94jenkinsjavaweb%e9%a1%b9%e7%9b%ae%e6%8c%81%e7%bb%ad%e9%83%a8%e7%bd%b2%e6%96%b9%e5%bc%8f.html"
+permalink: "2017/https://www.jfox.info/%e5%8d%8e%e4%b8%ba%e8%bd%af%e4%bb%b6%e5%bc%80%e5%8f%91%e4%ba%91%e5%af%b9%e6%af%94jenkinsjavaweb%e9%a1%b9%e7%9b%ae%e6%8c%81%e7%bb%ad%e9%83%a8%e7%bd%b2%e6%96%b9%e5%bc%8f.html"
 ---
 {% raw %}
 作者[程序员的那点事](/u/e03fc43b507b)2017.08.02 14:58字数 2531
@@ -161,7 +161,7 @@ nohup java -jarjenkins.war –httpPort=8081 &
 
 （1）发布容器插件
 ![](/wp-content/uploads/2017/08/15016833731.png)![](/wp-content/uploads/2017/08/15016833732.png)
-选择可选插件，过滤搜索Deploy to[Container](http://www.jfox.info/go.php?url=http://lib.csdn.net/base/docker)Plugin插件（这个是支持将代码部署到tomcat容器的）
+选择可选插件，过滤搜索Deploy to[Container](https://www.jfox.info/go.php?url=http://lib.csdn.net/base/docker)Plugin插件（这个是支持将代码部署到tomcat容器的）
 
 勾选，点击下边的按钮：直接安装，这个可能时间较久，等待即可。
 ![](/wp-content/uploads/2017/08/15016833733.png)
@@ -241,7 +241,7 @@ Jenkins★★☆☆
 
 依靠插件调用Git、Maven、Ant等工具，所用到的工具都需要本地安装
 
-[华为软件开发云](http://www.jfox.info/go.php?url=https://www.hwclouds.com/devcloud/)★★★★
+[华为软件开发云](https://www.jfox.info/go.php?url=https://www.hwclouds.com/devcloud/)★★★★
 
 工具全部内置到了云端服务上，无需安装，直接使用
 
@@ -281,7 +281,7 @@ Jenkins★★★☆
 
 发送邮件进行通知，邮件内容可配置
 
-[华为软件开发云](http://www.jfox.info/go.php?url=https://www.hwclouds.com/devcloud/)★★★☆
+[华为软件开发云](https://www.jfox.info/go.php?url=https://www.hwclouds.com/devcloud/)★★★☆
 
 通过邮件和站内消息两种方式进行通知
 {% endraw %}

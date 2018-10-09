@@ -3,15 +3,15 @@ layout: post
 title:  "netty 异步任务-ChannelFuture"
 title2:  "netty 异步任务-ChannelFuture"
 date:   2017-01-01 23:59:24  +0800
-source:  "http://www.jfox.info/netty%e5%bc%82%e6%ad%a5%e4%bb%bb%e5%8a%a1channelfuture.html"
+source:  "https://www.jfox.info/netty%e5%bc%82%e6%ad%a5%e4%bb%bb%e5%8a%a1channelfuture.html"
 fileName:  "20170101464"
 lang:  "zh_CN"
 published: true
-permalink: "netty%e5%bc%82%e6%ad%a5%e4%bb%bb%e5%8a%a1channelfuture.html"
+permalink: "2017/https://www.jfox.info/netty%e5%bc%82%e6%ad%a5%e4%bb%bb%e5%8a%a1channelfuture.html"
 ---
 {% raw %}
 netty Inboudn/Outbound通道Invoker: 
-[http://donald-draper.iteye.com/blog/2388233](http://www.jfox.info/go.php?url=http://donald-draper.iteye.com/blog/2388233)**引言：**
+[http://donald-draper.iteye.com/blog/2388233](https://www.jfox.info/go.php?url=http://donald-draper.iteye.com/blog/2388233)**引言：**
 上一篇看了Channel管道线的父类接口Inboudn/Outbound通道Invoker定义，先来回顾一下： 
 
 每个通道Channel拥有自己的管道Pipeline，当通道创建时，管道自动创建,默认为DefaultChannelPipeline。Inbound通道Invoker ChannelInboundInvoker主要是触发管道线ChannelPipeline上的下一个Inbound通道处理器ChannelInboundHandler的相关方法。ChannelInboundInvoker有点Mina过滤器的意味。Outbound通道Invoker ChannelOutboundInvoker主要是触发触发管道线ChannelPipeline上的下一个Outbound通道处理器ChannelOnboundHandler的相关方法，同时增加了一下通道任务创建方法， 

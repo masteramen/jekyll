@@ -3,11 +3,11 @@ layout: post
 title:  "【jOOQ中文】2. jOOQ与Spring和Druid集成"
 title2:  "【jOOQ中文】2. jOOQ与Spring和Druid集成"
 date:   2017-01-01 23:59:25  +0800
-source:  "http://www.jfox.info/jooq%e4%b8%ad%e6%96%872jooq%e4%b8%8espring%e5%92%8cdruid%e9%9b%86%e6%88%90.html"
+source:  "https://www.jfox.info/jooq%e4%b8%ad%e6%96%872jooq%e4%b8%8espring%e5%92%8cdruid%e9%9b%86%e6%88%90.html"
 fileName:  "20170101465"
 lang:  "zh_CN"
 published: true
-permalink: "jooq%e4%b8%ad%e6%96%872jooq%e4%b8%8espring%e5%92%8cdruid%e9%9b%86%e6%88%90.html"
+permalink: "2017/https://www.jfox.info/jooq%e4%b8%ad%e6%96%872jooq%e4%b8%8espring%e5%92%8cdruid%e9%9b%86%e6%88%90.html"
 ---
 {% raw %}
 jOOQ和Spring很容易整合。 在这个例子中，我们将整合：

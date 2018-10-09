@@ -3,11 +3,11 @@ layout: post
 title:  "容器化Jenkins 2.0——第一部分：借助SonarQube分析的声明式创建管道"
 title2:  "容器化Jenkins 2.0——第一部分：借助SonarQube分析的声明式创建管道"
 date:   2017-01-01 23:58:57  +0800
-source:  "http://www.jfox.info/%e5%ae%b9%e5%99%a8%e5%8c%96jenkins20%e7%ac%ac%e4%b8%80%e9%83%a8%e5%88%86%e5%80%9f%e5%8a%a9sonarqube%e5%88%86%e6%9e%90%e7%9a%84%e5%a3%b0%e6%98%8e%e5%bc%8f%e5%88%9b%e5%bb%ba%e7%ae%a1%e9%81%93.html"
+source:  "https://www.jfox.info/%e5%ae%b9%e5%99%a8%e5%8c%96jenkins20%e7%ac%ac%e4%b8%80%e9%83%a8%e5%88%86%e5%80%9f%e5%8a%a9sonarqube%e5%88%86%e6%9e%90%e7%9a%84%e5%a3%b0%e6%98%8e%e5%bc%8f%e5%88%9b%e5%bb%ba%e7%ae%a1%e9%81%93.html"
 fileName:  "20170101437"
 lang:  "zh_CN"
 published: true
-permalink: "%e5%ae%b9%e5%99%a8%e5%8c%96jenkins20%e7%ac%ac%e4%b8%80%e9%83%a8%e5%88%86%e5%80%9f%e5%8a%a9sonarqube%e5%88%86%e6%9e%90%e7%9a%84%e5%a3%b0%e6%98%8e%e5%bc%8f%e5%88%9b%e5%bb%ba%e7%ae%a1%e9%81%93.html"
+permalink: "2017/https://www.jfox.info/%e5%ae%b9%e5%99%a8%e5%8c%96jenkins20%e7%ac%ac%e4%b8%80%e9%83%a8%e5%88%86%e5%80%9f%e5%8a%a9sonarqube%e5%88%86%e6%9e%90%e7%9a%84%e5%a3%b0%e6%98%8e%e5%bc%8f%e5%88%9b%e5%bb%ba%e7%ae%a1%e9%81%93.html"
 ---
 {% raw %}
 作者 | Kayan Azimov

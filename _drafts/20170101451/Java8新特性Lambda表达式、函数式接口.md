@@ -3,11 +3,11 @@ layout: post
 title:  "Java8新特性Lambda表达式、函数式接口"
 title2:  "Java8新特性Lambda表达式、函数式接口"
 date:   2017-01-01 23:59:11  +0800
-source:  "http://www.jfox.info/java8%e6%96%b0%e7%89%b9%e6%80%a7lambda%e8%a1%a8%e8%be%be%e5%bc%8f%e5%87%bd%e6%95%b0%e5%bc%8f%e6%8e%a5%e5%8f%a3.html"
+source:  "https://www.jfox.info/java8%e6%96%b0%e7%89%b9%e6%80%a7lambda%e8%a1%a8%e8%be%be%e5%bc%8f%e5%87%bd%e6%95%b0%e5%bc%8f%e6%8e%a5%e5%8f%a3.html"
 fileName:  "20170101451"
 lang:  "zh_CN"
 published: true
-permalink: "java8%e6%96%b0%e7%89%b9%e6%80%a7lambda%e8%a1%a8%e8%be%be%e5%bc%8f%e5%87%bd%e6%95%b0%e5%bc%8f%e6%8e%a5%e5%8f%a3.html"
+permalink: "2017/https://www.jfox.info/java8%e6%96%b0%e7%89%b9%e6%80%a7lambda%e8%a1%a8%e8%be%be%e5%bc%8f%e5%87%bd%e6%95%b0%e5%bc%8f%e6%8e%a5%e5%8f%a3.html"
 ---
 {% raw %}
 ### 什么是Lambda表达式，java8为什么使用Lambda表达式？

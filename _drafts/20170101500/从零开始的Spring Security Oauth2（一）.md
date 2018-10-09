@@ -7,7 +7,7 @@ source:  "https://www.jfox.info/%e4%bb%8e%e9%9b%b6%e5%bc%80%e5%a7%8b%e7%9a%84spr
 fileName:  "20170101500"
 lang:  "zh_CN"
 published: true
-permalink: "https://www.jfox.info/%e4%bb%8e%e9%9b%b6%e5%bc%80%e5%a7%8b%e7%9a%84springsecurityoauth2%e4%b8%80.html"
+permalink: "2017/https://www.jfox.info/%e4%bb%8e%e9%9b%b6%e5%bc%80%e5%a7%8b%e7%9a%84springsecurityoauth2%e4%b8%80.html"
 ---
 {% raw %}
 今天来聊聊一个接口对接的场景，A厂家有一套HTTP接口需要提供给B厂家使用，由于是外网环境，所以需要有一套安全机制保障，这个时候oauth2就可以作为一个方案。

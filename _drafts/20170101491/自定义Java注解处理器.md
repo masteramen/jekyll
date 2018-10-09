@@ -3,11 +3,11 @@ layout: post
 title:  "自定义Java注解处理器"
 title2:  "自定义Java注解处理器"
 date:   2017-01-01 23:59:51  +0800
-source:  "http://www.jfox.info/%e8%87%aa%e5%ae%9a%e4%b9%89java%e6%b3%a8%e8%a7%a3%e5%a4%84%e7%90%86%e5%99%a8.html"
+source:  "https://www.jfox.info/%e8%87%aa%e5%ae%9a%e4%b9%89java%e6%b3%a8%e8%a7%a3%e5%a4%84%e7%90%86%e5%99%a8.html"
 fileName:  "20170101491"
 lang:  "zh_CN"
 published: true
-permalink: "%e8%87%aa%e5%ae%9a%e4%b9%89java%e6%b3%a8%e8%a7%a3%e5%a4%84%e7%90%86%e5%99%a8.html"
+permalink: "2017/https://www.jfox.info/%e8%87%aa%e5%ae%9a%e4%b9%89java%e6%b3%a8%e8%a7%a3%e5%a4%84%e7%90%86%e5%99%a8.html"
 ---
 {% raw %}
 作者[yuweiguo](/u/4cb0c84627c4)2017.08.06 12:10字数 2666
@@ -18,9 +18,9 @@ permalink: "%e8%87%aa%e5%ae%9a%e4%b9%89java%e6%b3%a8%e8%a7%a3%e5%a4%84%e7%90%86%
 春色满园关不住 ，一枝红杏出墙来 。
 -宋，叶绍翁
 
-本文首发：[http://yuweiguocn.github.io/](http://www.jfox.info/go.php?url=http://yuweiguocn.github.io/)
+本文首发：[http://yuweiguocn.github.io/](https://www.jfox.info/go.php?url=http://yuweiguocn.github.io/)
 
-关于自定义Java注解请查看[自定义注解](http://www.jfox.info/go.php?url=http://yuweiguocn.github.io/java-annotation/)。
+关于自定义Java注解请查看[自定义注解](https://www.jfox.info/go.php?url=http://yuweiguocn.github.io/java-annotation/)。
 
 ## 基本实现
 
@@ -84,7 +84,7 @@ permalink: "%e8%87%aa%e5%ae%9a%e4%b9%89java%e6%b3%a8%e8%a7%a3%e5%a4%84%e7%90%86%
     
 
 上面这种注册的方式太麻烦了，谷歌帮我们写了一个注解处理器来生成这个文件。
-github地址：[https://github.com/google/auto](http://www.jfox.info/go.php?url=https://github.com/google/auto)
+github地址：[https://github.com/google/auto](https://www.jfox.info/go.php?url=https://github.com/google/auto)
 添加依赖：
 
     compile 'com.google.auto.service:auto-service:1.0-rc2'
@@ -171,7 +171,7 @@ Filer接口支持通过注解处理器创建新文件。可以创建三种文件
 
 创建一个用于写入操作的新辅助资源文件，并为它返回一个文件对象。该文件可以与新创建的源文件、新创建的二进制文件或者其他受支持的位置一起被查找。位置 CLASS_OUTPUT 和 SOURCE_OUTPUT 必须受支持。资源可以是相对于某个包（该包是源文件和类文件）指定的，并通过相对路径名从中取出。从不太严格的角度说，新文件的完全路径名将是 location、 pkg 和 relativeName 的串联。
 
-对于生成Java文件，还可以使用Square公司的开源类库[JavaPoet](http://www.jfox.info/go.php?url=https://github.com/square/javapoet)，感兴趣的同学可以了解下。
+对于生成Java文件，还可以使用Square公司的开源类库[JavaPoet](https://www.jfox.info/go.php?url=https://github.com/square/javapoet)，感兴趣的同学可以了解下。
 
 ### 打印错误信息
 
@@ -364,9 +364,9 @@ Java官方文档给出的注解处理过程的定义：注解处理过程是一�
     Note: round 3 process over true
     
 
-获取完整代码：[https://github.com/yuweiguocn/CustomAnnotation](http://www.jfox.info/go.php?url=https://github.com/yuweiguocn/CustomAnnotation)
+获取完整代码：[https://github.com/yuweiguocn/CustomAnnotation](https://www.jfox.info/go.php?url=https://github.com/yuweiguocn/CustomAnnotation)
 
-关于上传自定义注解处理器到jcenter中，请查看[上传类库到jcenter](http://www.jfox.info/go.php?url=http://yuweiguocn.github.io/publishing-lib-to-jcenter/)。
+关于上传自定义注解处理器到jcenter中，请查看[上传类库到jcenter](https://www.jfox.info/go.php?url=http://yuweiguocn.github.io/publishing-lib-to-jcenter/)。
 
 很高兴你能阅读到这里，此时再去看EventBus 3.0中的注解处理器的源码，相信你可以很轻松地理解它的原理。
 

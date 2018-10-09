@@ -3,11 +3,11 @@ layout: post
 title:  "Spring5源码解析-论Spring DispatcherServlet的生命周期"
 title2:  "Spring5源码解析-论Spring DispatcherServlet的生命周期"
 date:   2017-01-01 23:59:19  +0800
-source:  "http://www.jfox.info/spring5%e6%ba%90%e7%a0%81%e8%a7%a3%e6%9e%90%e8%ae%baspringdispatcherservlet%e7%9a%84%e7%94%9f%e5%91%bd%e5%91%a8%e6%9c%9f.html"
+source:  "https://www.jfox.info/spring5%e6%ba%90%e7%a0%81%e8%a7%a3%e6%9e%90%e8%ae%baspringdispatcherservlet%e7%9a%84%e7%94%9f%e5%91%bd%e5%91%a8%e6%9c%9f.html"
 fileName:  "20170101459"
 lang:  "zh_CN"
 published: true
-permalink: "spring5%e6%ba%90%e7%a0%81%e8%a7%a3%e6%9e%90%e8%ae%baspringdispatcherservlet%e7%9a%84%e7%94%9f%e5%91%bd%e5%91%a8%e6%9c%9f.html"
+permalink: "2017/https://www.jfox.info/spring5%e6%ba%90%e7%a0%81%e8%a7%a3%e6%9e%90%e8%ae%baspringdispatcherservlet%e7%9a%84%e7%94%9f%e5%91%bd%e5%91%a8%e6%9c%9f.html"
 ---
 {% raw %}
 Spring Web框架架构的主要部分是 `DispatcherServlet` 。也就是本文中重点介绍的对象。 

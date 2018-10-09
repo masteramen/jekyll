@@ -3,11 +3,11 @@ layout: post
 title:  "我的网站之struts2笔记1"
 title2:  "我的网站之struts2笔记1"
 date:   2017-01-01 23:59:43  +0800
-source:  "http://www.jfox.info/%e6%88%91%e7%9a%84%e7%bd%91%e7%ab%99%e4%b9%8bstruts2%e7%ac%94%e8%ae%b01.html"
+source:  "https://www.jfox.info/%e6%88%91%e7%9a%84%e7%bd%91%e7%ab%99%e4%b9%8bstruts2%e7%ac%94%e8%ae%b01.html"
 fileName:  "20170101483"
 lang:  "zh_CN"
 published: true
-permalink: "%e6%88%91%e7%9a%84%e7%bd%91%e7%ab%99%e4%b9%8bstruts2%e7%ac%94%e8%ae%b01.html"
+permalink: "2017/https://www.jfox.info/%e6%88%91%e7%9a%84%e7%bd%91%e7%ab%99%e4%b9%8bstruts2%e7%ac%94%e8%ae%b01.html"
 ---
 {% raw %}
 作者[金字塔的蜗牛](/u/a8ae22295f18)2017.08.05 10:53*字数 1129
@@ -28,7 +28,7 @@ struts2解决的问题
       
      
 
-**2. 我的网站采用的struts2版本是2.3.24，所以接下来讲解的都是2.3.24版本的，可能和最新版不太一样，大家注意一下。网站已开源，可以在我的网站上下载所有源码，地址：[代码库网站4.0源码下载](http://www.jfox.info/go.php?url=https://admintwo.com/resource_detail?id=185)**
+**2. 我的网站采用的struts2版本是2.3.24，所以接下来讲解的都是2.3.24版本的，可能和最新版不太一样，大家注意一下。网站已开源，可以在我的网站上下载所有源码，地址：[代码库网站4.0源码下载](https://www.jfox.info/go.php?url=https://admintwo.com/resource_detail?id=185)**
 ![](/wp-content/uploads/2017/08/1501912625.png) 
    
      struts2版本 

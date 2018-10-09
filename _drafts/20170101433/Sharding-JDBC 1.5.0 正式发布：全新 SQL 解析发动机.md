@@ -3,11 +3,11 @@ layout: post
 title:  "Sharding-JDBC 1.5.0 正式发布：全新 SQL 解析发动机"
 title2:  "Sharding-JDBC 1.5.0 正式发布：全新 SQL 解析发动机"
 date:   2017-01-01 23:58:53  +0800
-source:  "http://www.jfox.info/shardingjdbc150%e6%ad%a3%e5%bc%8f%e5%8f%91%e5%b8%83%e5%85%a8%e6%96%b0sql%e8%a7%a3%e6%9e%90%e5%8f%91%e5%8a%a8%e6%9c%ba.html"
+source:  "https://www.jfox.info/shardingjdbc150%e6%ad%a3%e5%bc%8f%e5%8f%91%e5%b8%83%e5%85%a8%e6%96%b0sql%e8%a7%a3%e6%9e%90%e5%8f%91%e5%8a%a8%e6%9c%ba.html"
 fileName:  "20170101433"
 lang:  "zh_CN"
 published: true
-permalink: "shardingjdbc150%e6%ad%a3%e5%bc%8f%e5%8f%91%e5%b8%83%e5%85%a8%e6%96%b0sql%e8%a7%a3%e6%9e%90%e5%8f%91%e5%8a%a8%e6%9c%ba.html"
+permalink: "2017/https://www.jfox.info/shardingjdbc150%e6%ad%a3%e5%bc%8f%e5%8f%91%e5%b8%83%e5%85%a8%e6%96%b0sql%e8%a7%a3%e6%9e%90%e5%8f%91%e5%8a%a8%e6%9c%ba.html"
 ---
 {% raw %}
 经过了 1.5.0.M1-1.5.0.M3 这 3 次里程碑版本的发布，Sharding-JDBC 1.5.0 稳定版终于正式发布。 

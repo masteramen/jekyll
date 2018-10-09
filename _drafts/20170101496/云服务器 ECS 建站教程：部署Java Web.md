@@ -3,11 +3,11 @@ layout: post
 title:  "云服务器 ECS 建站教程：部署Java Web"
 title2:  "云服务器 ECS 建站教程：部署Java Web"
 date:   2017-01-01 23:59:56  +0800
-source:  "http://www.jfox.info/%e4%ba%91%e6%9c%8d%e5%8a%a1%e5%99%a8ecs%e5%bb%ba%e7%ab%99%e6%95%99%e7%a8%8b%e9%83%a8%e7%bd%b2javaweb.html"
+source:  "https://www.jfox.info/%e4%ba%91%e6%9c%8d%e5%8a%a1%e5%99%a8ecs%e5%bb%ba%e7%ab%99%e6%95%99%e7%a8%8b%e9%83%a8%e7%bd%b2javaweb.html"
 fileName:  "20170101496"
 lang:  "zh_CN"
 published: true
-permalink: "%e4%ba%91%e6%9c%8d%e5%8a%a1%e5%99%a8ecs%e5%bb%ba%e7%ab%99%e6%95%99%e7%a8%8b%e9%83%a8%e7%bd%b2javaweb.html"
+permalink: "2017/https://www.jfox.info/%e4%ba%91%e6%9c%8d%e5%8a%a1%e5%99%a8ecs%e5%bb%ba%e7%ab%99%e6%95%99%e7%a8%8b%e9%83%a8%e7%bd%b2javaweb.html"
 ---
 {% raw %}
 浏览91评论0 发表于： [ 阿里云文档中心](/teams/125)
@@ -25,11 +25,11 @@ Tomcat 作为一个开源且免费的 Java Web 服务器，常用来作为 web �
 - 一键安装包部署
 - 手动部署（源码编译安装/YUM安装）
 
-一般推荐使用镜像部署，尤其适合新手，使用更加快捷方便（阿里云的云市场提供了丰富的镜像软件，[点击查看](http://www.jfox.info/go.php?url=https://market.aliyun.com/software?spm=5176.doc52806.2.4.PeZ1Vj)）。而安装包部署以及手动部署适合对 Linux 命令有基本了解的用户，可以满足用户个性化部署的要求。本文主要介绍镜像和手工部署的方式。
+一般推荐使用镜像部署，尤其适合新手，使用更加快捷方便（阿里云的云市场提供了丰富的镜像软件，[点击查看](https://www.jfox.info/go.php?url=https://market.aliyun.com/software?spm=5176.doc52806.2.4.PeZ1Vj)）。而安装包部署以及手动部署适合对 Linux 命令有基本了解的用户，可以满足用户个性化部署的要求。本文主要介绍镜像和手工部署的方式。
 
 镜像部署
 
-1.单击 [JAVA 环境（CentOS7.2 Nginx Tomcat8 JDK）](http://www.jfox.info/go.php?url=https://market.aliyun.com/products/53400005/cmjj016483.html?spm=5176.doc52806.2.5.YvejUm)进入镜像详情页。
+1.单击 [JAVA 环境（CentOS7.2 Nginx Tomcat8 JDK）](https://www.jfox.info/go.php?url=https://market.aliyun.com/products/53400005/cmjj016483.html?spm=5176.doc52806.2.5.YvejUm)进入镜像详情页。
 
 2.单击 立即购买，按提示步骤购买 ECS 实例。
 
@@ -99,10 +99,10 @@ CentOS 7.3 系统默认开启了防火墙，需关闭后外部才可访问本机
 **源代码下载**
 
 wget
-[https://mirrors.aliyun.com/apache/tomcat/tomcat-8/v8.5.13/bin/apache-tomcat-8.5.13.tar.gz](http://www.jfox.info/go.php?url=https://mirrors.aliyun.com/apache/tomcat/tomcat-8/v8.5.13/bin/apache-tomcat-8.5.13.tar.gz)
+[https://mirrors.aliyun.com/apache/tomcat/tomcat-8/v8.5.13/bin/apache-tomcat-8.5.13.tar.gz](https://www.jfox.info/go.php?url=https://mirrors.aliyun.com/apache/tomcat/tomcat-8/v8.5.13/bin/apache-tomcat-8.5.13.tar.gz)
 
 wget
-[http://mirrors.linuxeye.com/jdk/jdk-8u121-linux-x64.tar.gz](http://www.jfox.info/go.php?url=http://mirrors.linuxeye.com/jdk/jdk-8u121-linux-x64.tar.gz)
+[http://mirrors.linuxeye.com/jdk/jdk-8u121-linux-x64.tar.gz](https://www.jfox.info/go.php?url=http://mirrors.linuxeye.com/jdk/jdk-8u121-linux-x64.tar.gz)
 
 **安装 JDK**
 
@@ -223,7 +223,7 @@ vi server.xml 添加如下内容：
 
 ![](/wp-content/uploads/2017/08/1502353916.png)
 
-[原文链接](http://www.jfox.info/go.php?url=https://help.aliyun.com/document_detail/52806.html?spm=5176.doc50700.6.708.7XQbZ7)
+[原文链接](https://www.jfox.info/go.php?url=https://help.aliyun.com/document_detail/52806.html?spm=5176.doc50700.6.708.7XQbZ7)
  
  
 

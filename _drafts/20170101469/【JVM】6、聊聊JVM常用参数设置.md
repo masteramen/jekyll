@@ -3,11 +3,11 @@ layout: post
 title:  "【JVM】6、聊聊JVM常用参数设置"
 title2:  "【JVM】6、聊聊JVM常用参数设置"
 date:   2017-01-01 23:59:29  +0800
-source:  "http://www.jfox.info/jvm6%e8%81%8a%e8%81%8ajvm%e5%b8%b8%e7%94%a8%e5%8f%82%e6%95%b0%e8%ae%be%e7%bd%ae.html"
+source:  "https://www.jfox.info/jvm6%e8%81%8a%e8%81%8ajvm%e5%b8%b8%e7%94%a8%e5%8f%82%e6%95%b0%e8%ae%be%e7%bd%ae.html"
 fileName:  "20170101469"
 lang:  "zh_CN"
 published: true
-permalink: "jvm6%e8%81%8a%e8%81%8ajvm%e5%b8%b8%e7%94%a8%e5%8f%82%e6%95%b0%e8%ae%be%e7%bd%ae.html"
+permalink: "2017/https://www.jfox.info/jvm6%e8%81%8a%e8%81%8ajvm%e5%b8%b8%e7%94%a8%e5%8f%82%e6%95%b0%e8%ae%be%e7%bd%ae.html"
 ---
 {% raw %}
 -Xms3550m， 初始化堆大小。通常情况和-Xmx大小设置一样，避免虚拟机频繁自动计算后调整堆大小。 
@@ -34,7 +34,7 @@ permalink: "jvm6%e8%81%8a%e8%81%8ajvm%e5%b8%b8%e7%94%a8%e5%8f%82%e6%95%b0%e8%ae%
 
 ## 考虑本机直接内存
 
--XX:MaxDirectMemorySize=100M。默认与[Java](http://www.jfox.info/go.php?url=http://lib.csdn.net/base/java)堆大最大值(-Xmx)
+-XX:MaxDirectMemorySize=100M。默认与[Java](https://www.jfox.info/go.php?url=http://lib.csdn.net/base/java)堆大最大值(-Xmx)
 
 ## 考虑虚拟机栈
 
@@ -72,7 +72,7 @@ CMS作为老年代收集器，不能与Parallel Scavenge并存。可能会有内
 
 ### G1(Garbage First)
 
--XX:+UseG1GC，谨慎使用，需要经过线上[测试](http://www.jfox.info/go.php?url=http://lib.csdn.net/base/softwaretest)，还没有被设置为默认垃圾收集器。 
+-XX:+UseG1GC，谨慎使用，需要经过线上[测试](https://www.jfox.info/go.php?url=http://lib.csdn.net/base/softwaretest)，还没有被设置为默认垃圾收集器。 
 之前的垃圾收集器收集的范围是新生代或者老年代，而G1垃圾收集器收集的范围包括新生代和老年代整个堆。G1将Java堆划为多个大小相同的独立区域(Region)，垃圾收集单位是Region。G1垃圾收集适合至少大于4G内存得系统。并且不会产生内存空间碎片。
 
 ### 其他参数

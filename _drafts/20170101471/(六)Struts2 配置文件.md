@@ -3,11 +3,11 @@ layout: post
 title:  "(六)Struts2 配置文件"
 title2:  "(六)Struts2 配置文件"
 date:   2017-01-01 23:59:31  +0800
-source:  "http://www.jfox.info/%e5%85%adstruts2%e9%85%8d%e7%bd%ae%e6%96%87%e4%bb%b6.html"
+source:  "https://www.jfox.info/%e5%85%adstruts2%e9%85%8d%e7%bd%ae%e6%96%87%e4%bb%b6.html"
 fileName:  "20170101471"
 lang:  "zh_CN"
 published: true
-permalink: "%e5%85%adstruts2%e9%85%8d%e7%bd%ae%e6%96%87%e4%bb%b6.html"
+permalink: "2017/https://www.jfox.info/%e5%85%adstruts2%e9%85%8d%e7%bd%ae%e6%96%87%e4%bb%b6.html"
 ---
 {% raw %}
 本章节将带你学习Struts2 应用程序所需的基本配置。在这里可以看到哪些将被配置到一些重要的配置文件中：**web.xml**、**struts.xml**、**struts-config.xml**以及**struts.properties**。

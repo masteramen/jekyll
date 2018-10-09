@@ -3,18 +3,18 @@ layout: post
 title:  "我的网站之struts2笔记2"
 title2:  "我的网站之struts2笔记2"
 date:   2017-01-01 23:59:57  +0800
-source:  "http://www.jfox.info/%e6%88%91%e7%9a%84%e7%bd%91%e7%ab%99%e4%b9%8bstruts2%e7%ac%94%e8%ae%b02.html"
+source:  "https://www.jfox.info/%e6%88%91%e7%9a%84%e7%bd%91%e7%ab%99%e4%b9%8bstruts2%e7%ac%94%e8%ae%b02.html"
 fileName:  "20170101497"
 lang:  "zh_CN"
 published: true
-permalink: "%e6%88%91%e7%9a%84%e7%bd%91%e7%ab%99%e4%b9%8bstruts2%e7%ac%94%e8%ae%b02.html"
+permalink: "2017/https://www.jfox.info/%e6%88%91%e7%9a%84%e7%bd%91%e7%ab%99%e4%b9%8bstruts2%e7%ac%94%e8%ae%b02.html"
 ---
 {% raw %}
 作者[金字塔的蜗牛](/u/a8ae22295f18)2017.08.07 10:24*字数 842
 越学习，越发现自己的无知。
 （法国）笛卡尔
 
-上一篇笔记总结了struts的版本、入门案例和相关的配置说明，链接：[我的网站之struts2笔记1](http://www.jfox.info/go.php?url=http://www.jianshu.com/p/a40a60ed4681)，这篇总结一下struts2中action配置的三种方式以及三种可用的类方法配置。
+上一篇笔记总结了struts的版本、入门案例和相关的配置说明，链接：[我的网站之struts2笔记1](https://www.jfox.info/go.php?url=http://www.jianshu.com/p/a40a60ed4681)，这篇总结一下struts2中action配置的三种方式以及三种可用的类方法配置。
 
 **1、struts2中action配置的三种方式**
  

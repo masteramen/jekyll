@@ -3,17 +3,17 @@ layout: post
 title:  "终极锁实战：单JVM锁+分布式锁"
 title2:  "终极锁实战：单JVM锁+分布式锁"
 date:   2017-01-01 23:58:54  +0800
-source:  "http://www.jfox.info/%e7%bb%88%e6%9e%81%e9%94%81%e5%ae%9e%e6%88%98%e5%8d%95jvm%e9%94%81%e5%88%86%e5%b8%83%e5%bc%8f%e9%94%81.html"
+source:  "https://www.jfox.info/%e7%bb%88%e6%9e%81%e9%94%81%e5%ae%9e%e6%88%98%e5%8d%95jvm%e9%94%81%e5%88%86%e5%b8%83%e5%bc%8f%e9%94%81.html"
 fileName:  "20170101434"
 lang:  "zh_CN"
 published: true
-permalink: "%e7%bb%88%e6%9e%81%e9%94%81%e5%ae%9e%e6%88%98%e5%8d%95jvm%e9%94%81%e5%88%86%e5%b8%83%e5%bc%8f%e9%94%81.html"
+permalink: "2017/https://www.jfox.info/%e7%bb%88%e6%9e%81%e9%94%81%e5%ae%9e%e6%88%98%e5%8d%95jvm%e9%94%81%e5%88%86%e5%b8%83%e5%bc%8f%e9%94%81.html"
 ---
 {% raw %}
-[只会一点java](http://www.jfox.info/go.php?url=http://www.cnblogs.com/dennyzhangdd/) 阅读( 
+[只会一点java](https://www.jfox.info/go.php?url=http://www.cnblogs.com/dennyzhangdd/) 阅读( 
 …) 评论( 
 …) 
-[编辑](http://www.jfox.info/go.php?url=https://i.cnblogs.com/EditPosts.aspx?postid=7133653)[收藏](#)
+[编辑](https://www.jfox.info/go.php?url=https://i.cnblogs.com/EditPosts.aspx?postid=7133653)[收藏](#)
 目录
 
 1.前言
@@ -44,7 +44,7 @@ permalink: "%e7%bb%88%e6%9e%81%e9%94%81%e5%ae%9e%e6%88%98%e5%8d%95jvm%e9%94%81%e
 
 4.StampedLock戳锁
 
-由于之前已经详细分析过原理+使用，各位直接坐飞机吧：[同步中的四种锁synchronized、ReentrantLock、ReadWriteLock、StampedLock](http://www.jfox.info/go.php?url=http://www.cnblogs.com/dennyzhangdd/p/6925473.html)
+由于之前已经详细分析过原理+使用，各位直接坐飞机吧：[同步中的四种锁synchronized、ReentrantLock、ReadWriteLock、StampedLock](https://www.jfox.info/go.php?url=http://www.cnblogs.com/dennyzhangdd/p/6925473.html)
 
 ## 3.分布式锁（多服务节点，多进程）
 

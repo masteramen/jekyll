@@ -3,14 +3,14 @@ layout: post
 title:  "赢在面试之Java框架篇（9）"
 title2:  "赢在面试之Java框架篇（9）"
 date:   2017-01-01 23:59:46  +0800
-source:  "http://www.jfox.info/%e8%b5%a2%e5%9c%a8%e9%9d%a2%e8%af%95%e4%b9%8bjava%e6%a1%86%e6%9e%b6%e7%af%879.html"
+source:  "https://www.jfox.info/%e8%b5%a2%e5%9c%a8%e9%9d%a2%e8%af%95%e4%b9%8bjava%e6%a1%86%e6%9e%b6%e7%af%879.html"
 fileName:  "20170101486"
 lang:  "zh_CN"
 published: true
-permalink: "%e8%b5%a2%e5%9c%a8%e9%9d%a2%e8%af%95%e4%b9%8bjava%e6%a1%86%e6%9e%b6%e7%af%879.html"
+permalink: "2017/https://www.jfox.info/%e8%b5%a2%e5%9c%a8%e9%9d%a2%e8%af%95%e4%b9%8bjava%e6%a1%86%e6%9e%b6%e7%af%879.html"
 ---
 {% raw %}
-*（感谢微信名为“哼”的朋友留言纠错，在*[*赢在面试之Java基础篇（1）*](http://www.jfox.info/go.php?url=http://mp.weixin.qq.com/s?__biz=MzI4Njc5NjM1NQ==&amp;mid=2247483653&amp;idx=1&amp;sn=006c7510542d5ea29c3afb4ce14cbc64&amp;chksm=ebd63e29dca1b73f12d1adaab65a484c5eef94180df5fcac93fabde691c6d26a689c45f63bcf&amp;scene=21#wechat_redirect)*中，switch语句能否作用在String上说错了，Java1.7之后已经支持这种写法了，再次感谢！）*
+*（感谢微信名为“哼”的朋友留言纠错，在*[*赢在面试之Java基础篇（1）*](https://www.jfox.info/go.php?url=http://mp.weixin.qq.com/s?__biz=MzI4Njc5NjM1NQ==&amp;mid=2247483653&amp;idx=1&amp;sn=006c7510542d5ea29c3afb4ce14cbc64&amp;chksm=ebd63e29dca1b73f12d1adaab65a484c5eef94180df5fcac93fabde691c6d26a689c45f63bcf&amp;scene=21#wechat_redirect)*中，switch语句能否作用在String上说错了，Java1.7之后已经支持这种写法了，再次感谢！）*
 
  spring现在无疑是Java中最火的框架，使用范围广，几乎每个公司面试都会涉及spring和数据库，你可以对Struts不熟悉，但一定不能表现出对spring不了解。 *第九篇赢在面试全篇介绍spring常考点。数据库重中之重会在后面花五篇介绍常问题型*
 

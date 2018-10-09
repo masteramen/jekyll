@@ -3,16 +3,16 @@ layout: post
 title:  "storm从入门到放弃(一)，storm介绍"
 title2:  "storm从入门到放弃(一)，storm介绍"
 date:   2017-01-01 23:59:12  +0800
-source:  "http://www.jfox.info/storm%e4%bb%8e%e5%85%a5%e9%97%a8%e5%88%b0%e6%94%be%e5%bc%83%e4%b8%80storm%e4%bb%8b%e7%bb%8d.html"
+source:  "https://www.jfox.info/storm%e4%bb%8e%e5%85%a5%e9%97%a8%e5%88%b0%e6%94%be%e5%bc%83%e4%b8%80storm%e4%bb%8b%e7%bb%8d.html"
 fileName:  "20170101452"
 lang:  "zh_CN"
 published: true
-permalink: "storm%e4%bb%8e%e5%85%a5%e9%97%a8%e5%88%b0%e6%94%be%e5%bc%83%e4%b8%80storm%e4%bb%8b%e7%bb%8d.html"
+permalink: "2017/https://www.jfox.info/storm%e4%bb%8e%e5%85%a5%e9%97%a8%e5%88%b0%e6%94%be%e5%bc%83%e4%b8%80storm%e4%bb%8b%e7%bb%8d.html"
 ---
 {% raw %}
 背景:目前就职于国内最大的IT咨询公司，恰巧又是毕业季，所在部门招了100多个应届毕业生，本人要跟部门新人进行为期一个月的大数据入职培训，特此将整理的文档分享出来。
 
-原文和作者一起讨论:[http://www.cnblogs.com/intsmaze/p/7274361.html](http://www.jfox.info/go.php?url=http://www.cnblogs.com/intsmaze/p/7274361.html)
+原文和作者一起讨论:[http://www.cnblogs.com/intsmaze/p/7274361.html](https://www.jfox.info/go.php?url=http://www.cnblogs.com/intsmaze/p/7274361.html)
 
 微信：intsmaze
 
@@ -50,5 +50,84 @@ Storm是一个开源的分布式实时计算系统，可以简单、可靠的处
  
  
   
-  **Storm中的Stream**  消息流stream是storm里的关键抽象；一个消息流是一个没有边界的tuple序列， 而这些tuple序列会以一种分布式的方式并行地创建和处理；通过对stream中tuple序列中每个字段命名来定义stream。  在默认的情况下，tuple的字段类型可以是：integer，long，short， byte，string，double，float，boolean和byte array；可以自定义类型（只要实现相应的序列化器）。![](/wp-content/uploads/2017/08/1501683246.png)　　数据从一个节点传到另一个节点，数据是要被序列化的，但在storm中，数据序列化
+  **Storm中的Stream**  消息流stream是storm里的关键抽象；一个消息流是一个没有边界的tuple序列， 而这些tuple序列会以一种分布式的方式并行地创建和处理；通过对stream中tuple序列中每个字段命名来定义stream。  在默认的情况下，tuple的字段类型可以是：integer，long，short， byte，string，double，float，boolean和byte array；可以自定义类型（只要实现相应的序列化器）。![](/wp-content/uploads/2017/08/1501683246.png)　　数据从一个节点传到另一个节点，数据是要被序列化的，但在storm中，数据序列化之前，消息必须按照一定的格式传递，这个格式就是一个一个的消息元组。消息元组是源源不断的发送的，这个元组就类似一个list，里面有若干个字段。 
+  
+ 
+     
+  
+ 
+ 
+ 
+**Storm编程模型**
+有向无环图![](/wp-content/uploads/2017/08/1501683247.png)
+    publicclass RandomSentenceSpout extends BaseRichSpout {
+    
+        publicvoid nextTuple() {
+            collector.emit(new Values("+ - * % /"));
+            Utils.sleep(50000);
+        }
+        ......
+    }
+    publicclass SplitSentenceBolt extends BaseBasicBolt {
+        
+        publicvoid execute(Tuple input, BasicOutputCollector collector) {
+            String sentence = (String)input.getValueByField("intsmaze");
+            System.out.println(Thread.currentThread().getId()+"    "+sentence);        
+        }
+        ......
+    }
+    publicclass TwoBolt extends BaseBasicBolt { 
+        publicvoid execute(Tuple input, BasicOutputCollector collector) {
+            String sentence = (String)input.getValueByField("intsmaze");
+            System.out.println(Thread.currentThread().getId()+"    "+sentence);
+        }
+          ......
+    }
+    publicclass WordCountTopologyMain {
+        publicstaticvoid main(String[] args) throws Exception {
+            TopologyBuilder builder = new TopologyBuilder();
+            builder.setSpout("spout1", new RandomSentenceSpout(),1);
+            builder.setBolt("two", new TwoBolt(),1).shuffleGrouping("spout1");
+            builder.setBolt("split1", new SplitSentenceBolt(),2).shuffleGrouping("spout1");
+    
+            Config conf = new Config();
+            conf.setDebug(false);
+            conf.setMaxTaskParallelism(3);
+            LocalCluster cluster = new LocalCluster();
+            cluster.submitTopology("word-count", conf, builder.createTopology());
+            }
+        }
+    }
+
+可以发现spout每隔一段时间间隔发一份数据，这份数据会被两个bolt同时接收，而不是说这次A bolt接收下次B bolt接收。 同一个bolt业务逻辑如果设置了并行度，他们才会根据分组策略依次接收上游发来的消息。
+
+    ----------------84     + - * % /  这个是tow bolt接收
+    ----------------78     + - * % /  这个是split1 bolt 中78线程接收的
+    ----------------80     + - * % /  这个是split1 bolt中线程80接收的。
+    ----------------84     + - * % /
+    ----------------78     + - * % /
+    ----------------84     + - * % /  
+
+ 
+   
+  
+      
+   
+   
+   **Storm7种stream grouping**　　Shuffle Grouping: 随机分组,随机派发stream里面的tuple，保证每个bolt接收到的tuple数目大致相同。
+Fields Grouping：按字段分组，比如按userid来分组，具有同样userid的tuple会被分到相同的Bolts里的一个task，而不同的userid则会被分配到不同的bolts里的task。
+　　All Grouping：广播发送，对于每一个tuple，所有的bolts都会收到。
+Global Grouping：全局分组， 这个tuple被分配到storm中的一个bolt的其中一个task。再具体一点就是分配给id值最低的那个task。
+Non Grouping：不分组，这stream grouping个分组的意思是说stream不关心到底谁会收到它的tuple。目前这种分组和Shuffle grouping是一样的效果， 有一点不同的是storm会把这个bolt放到这个bolt的订阅者同一个线程里面去执行。
+　　Direct Grouping： 直接分组， 这是一种比较特别的分组方法，用这种分组意味着消息的发送者指定由消息接收者的哪个task处理这个消息。只有被声明为Direct Stream的消息流可以声明这种分组方法。而且这种消息tuple必须使用emitDirect方法来发射。消息处理者可以通过TopologyContext来获取处理它的消息的task的id （OutputCollector.emit方法也会返回task的id）。
+Local or shuffle grouping：如果目标bolt有一个或者多个task在同一个工作进程中，tuple将会被随机发生给这些tasks。否则，和普通的Shuffle Grouping行为一致。
+    conf.setNumWorkers(4) 表示设置了4个worker来执行整个topology的所有组件
+    builder.setBolt("boltA-intsmaze",new BoltA(),  4)  ---->指明 boltA组件的线程数excutors总共有4个
+    builder.setBolt("boltB-intsmaze",new BoltB(),  4) ---->指明 boltB组件的线程数excutors总共有4个
+    builder.setSpout("randomSpout-intsmaze",new RandomSpout(),  2) ---->指明randomSpout组件的线程数excutors总共有2个
+    -----意味着整个topology中执行所有组件的总线程数为4+4+2=10个
+    ----worker数量是4个，有可能会出现这样的负载情况，worker-1有2个线程，worker-2有2个线程，worker-3有3个线程，worker-4有3个线程
+    如果指定某个组件的具体task并发实例数
+    builder.setSpout("randomspout-intsmaze", new RandomWordSpout(), 4).setNumTasks(8);
+    ----意味着对于这个组件的执行线程excutor来说，一个excutor将执行8/4=2个task，默认情况一个线程执行一个task.
 {% endraw %}

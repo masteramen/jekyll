@@ -3,11 +3,11 @@ layout: post
 title:  "程序级的AOP到底好不好？"
 title2:  "程序级的AOP到底好不好？"
 date:   2017-01-01 23:59:09  +0800
-source:  "http://www.jfox.info/%e7%a8%8b%e5%ba%8f%e7%ba%a7%e7%9a%84aop%e5%88%b0%e5%ba%95%e5%a5%bd%e4%b8%8d%e5%a5%bd.html"
+source:  "https://www.jfox.info/%e7%a8%8b%e5%ba%8f%e7%ba%a7%e7%9a%84aop%e5%88%b0%e5%ba%95%e5%a5%bd%e4%b8%8d%e5%a5%bd.html"
 fileName:  "20170101449"
 lang:  "zh_CN"
 published: true
-permalink: "%e7%a8%8b%e5%ba%8f%e7%ba%a7%e7%9a%84aop%e5%88%b0%e5%ba%95%e5%a5%bd%e4%b8%8d%e5%a5%bd.html"
+permalink: "2017/https://www.jfox.info/%e7%a8%8b%e5%ba%8f%e7%ba%a7%e7%9a%84aop%e5%88%b0%e5%ba%95%e5%a5%bd%e4%b8%8d%e5%a5%bd.html"
 ---
 {% raw %}
 很多年前模拟过Spring的AOP机制，简单的实现其实不难，但真正要保证切入代码符合预期的设计，不会引起负面影响，特别是要保证原来逻辑的稳定性，即AOP的强壮性。个人感觉还是很难，如果横切的代码过多，就更难管理了。在后面的实际应用中，虽然知道这种AOP架构，但一般除了预设的横切代码，都没有采用这种架构，更多的是将这种架构设计的需求后移到数据库或者日志层面。在单一应用模式下，AOP至少还可以用，而在分布式应用中，个人感觉AOP在程序级应用不应被滥用，而是应该后移到数据库或者日志文件，以实现原逻辑的稳定和性能，使得切入需求的逻辑代码彻底与原逻辑代码分离。本质就是将这种AOP的程序架构思想提升到更高的层面进行架构和处理。

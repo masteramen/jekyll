@@ -3,11 +3,11 @@ layout: post
 title:  "java对excel表格的上传和下载处理"
 title2:  "java对excel表格的上传和下载处理"
 date:   2017-01-01 23:59:49  +0800
-source:  "http://www.jfox.info/java%e5%af%b9excel%e8%a1%a8%e6%a0%bc%e7%9a%84%e4%b8%8a%e4%bc%a0%e5%92%8c%e4%b8%8b%e8%bd%bd%e5%a4%84%e7%90%86.html"
+source:  "https://www.jfox.info/java%e5%af%b9excel%e8%a1%a8%e6%a0%bc%e7%9a%84%e4%b8%8a%e4%bc%a0%e5%92%8c%e4%b8%8b%e8%bd%bd%e5%a4%84%e7%90%86.html"
 fileName:  "20170101489"
 lang:  "zh_CN"
 published: true
-permalink: "java%e5%af%b9excel%e8%a1%a8%e6%a0%bc%e7%9a%84%e4%b8%8a%e4%bc%a0%e5%92%8c%e4%b8%8b%e8%bd%bd%e5%a4%84%e7%90%86.html"
+permalink: "2017/https://www.jfox.info/java%e5%af%b9excel%e8%a1%a8%e6%a0%bc%e7%9a%84%e4%b8%8a%e4%bc%a0%e5%92%8c%e4%b8%8b%e8%bd%bd%e5%a4%84%e7%90%86.html"
 ---
 {% raw %}
 Excel表格文件的上传和下载，java中涉及到文件肯定会有io流的知识。

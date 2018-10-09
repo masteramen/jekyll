@@ -3,11 +3,11 @@ layout: post
 title:  "HashMap实现原理分析（Java源码剖析）"
 title2:  "HashMap实现原理分析（Java源码剖析）"
 date:   2017-01-01 23:59:52  +0800
-source:  "http://www.jfox.info/hashmap%e5%ae%9e%e7%8e%b0%e5%8e%9f%e7%90%86%e5%88%86%e6%9e%90java%e6%ba%90%e7%a0%81%e5%89%96%e6%9e%90.html"
+source:  "https://www.jfox.info/hashmap%e5%ae%9e%e7%8e%b0%e5%8e%9f%e7%90%86%e5%88%86%e6%9e%90java%e6%ba%90%e7%a0%81%e5%89%96%e6%9e%90.html"
 fileName:  "20170101492"
 lang:  "zh_CN"
 published: true
-permalink: "hashmap%e5%ae%9e%e7%8e%b0%e5%8e%9f%e7%90%86%e5%88%86%e6%9e%90java%e6%ba%90%e7%a0%81%e5%89%96%e6%9e%90.html"
+permalink: "2017/https://www.jfox.info/hashmap%e5%ae%9e%e7%8e%b0%e5%8e%9f%e7%90%86%e5%88%86%e6%9e%90java%e6%ba%90%e7%a0%81%e5%89%96%e6%9e%90.html"
 ---
 {% raw %}
 HashMap是Java程序员使用频率最高的用于映射(键值对)处理的数据类型。随着JDK（Java Developmet Kit）版本的更新，JDK1.8对HashMap底层的实现进行了优化，例如引入红黑树的数据结构和扩容的优化等。本文结合JDK1.7和JDK1.8的区别，深入探讨HashMap的结构实现和功能原理。
@@ -48,7 +48,7 @@ Node是HashMap的一个内部类，实现了Map.Entry接口，本质是就是一
 
 HashMap就是使用哈希表来存储的。哈希表为解决冲突，可以采用开放地址法和链地址法等来解决问题，Java中HashMap采用了链地址法。链地址法，简单来说，就是数组加链表的结合。在每个数组元素上都一个链表结构，当数据被Hash后，得到数组下标，把数据放在对应下标元素的链表上。
 
-具体hash算法的原理我们不深入讨论，有兴趣的同学可以参考[https://tech.meituan.com/java-hashmap.html](http://www.jfox.info/go.php?url=https://tech.meituan.com/java-hashmap.html)我们只要知道我们通过hash方法可以得到对象所在数组的下标。
+具体hash算法的原理我们不深入讨论，有兴趣的同学可以参考[https://tech.meituan.com/java-hashmap.html](https://www.jfox.info/go.php?url=https://tech.meituan.com/java-hashmap.html)我们只要知道我们通过hash方法可以得到对象所在数组的下标。
 
 我们得先了解下HashMap的几个字段。从HashMap的默认构造函数源码可知，构造函数就是对下面几个字段进行初始化，源码如下：
 
@@ -90,7 +90,7 @@ HashMap就是使用哈希表来存储的。哈希表为解决冲突，可以采�
 size这个字段其实很好理解，就是HashMap中实际存在的键值对数量。注意和table的长度length、容纳最大键值对数量threshold的区别。而modCount字段主要用来记录HashMap内部结构发生变化的次数，主要用于迭代的快速失败。强调一点，内部结构发生变化指的是结构发生变化，例如put新键值对，但是某个key对应的value值被覆盖不属于结构变化。
 
 这里存在一个问题，即使负载因子和Hash算法设计的再合理，也免不了会出现拉链过长的情况，一旦出现拉链过长，则会严重影响HashMap的性能。于是，在JDK1.8版本中，对数据结构做了进一步的优化，引入了红黑树。而当链表长度太长（默认超过8）时，链表就转换为红黑树，利用红黑树快速增删改查的特点提高HashMap的性能，其中会用到红黑树的插入、删除、查找等算法。本文不再对红黑树展开讨论，想了解更多红黑树数据结构的工作原理可以参考笔者的文章
-[一篇文章搞懂红黑树的原理及实现](http://www.jfox.info/go.php?url=http://www.jianshu.com/p/37c845a5add6)
+[一篇文章搞懂红黑树的原理及实现](https://www.jfox.info/go.php?url=http://www.jianshu.com/p/37c845a5add6)
 
 # 功能实现-方法
 
@@ -227,7 +227,7 @@ JDK1.8HashMap的put方法源码如下:
   
  
 
-JDK8中对扩容机制又进行了优化，涉及比较复杂的位操作，本文不深入讨论，有兴趣的读者参考文章[https://tech.meituan.com/java-hashmap.html](http://www.jfox.info/go.php?url=https://tech.meituan.com/java-hashmap.html)
+JDK8中对扩容机制又进行了优化，涉及比较复杂的位操作，本文不深入讨论，有兴趣的读者参考文章[https://tech.meituan.com/java-hashmap.html](https://www.jfox.info/go.php?url=https://tech.meituan.com/java-hashmap.html)
 
 # Map中各实现类的总结
 
@@ -266,11 +266,11 @@ Java为数据结构中的映射定义了一个接口java.util.Map，此接口主
 
 **参考**
 JDK1.7&JDK1.8 源码。
-[Java 8系列之重新认识HashMap](http://www.jfox.info/go.php?url=https://tech.meituan.com/java-hashmap.html)
-CSDN博客频道，[HashMap多线程死循环问题](http://www.jfox.info/go.php?url=http://blog.csdn.net/xuefeng0707/article/details/40797085)，2014。
-红黑联盟，[Java类集框架之HashMap(JDK1.8)源码剖析](http://www.jfox.info/go.php?url=http://www.2cto.com/kf/201505/401433.html)，2015。
-CSDN博客频道，[ 教你初步了解红黑树](http://www.jfox.info/go.php?url=http://blog.csdn.net/v_july_v/article/details/6105630)，2010。
-Java Code Geeks，[HashMap performance improvements in Java 8](http://www.jfox.info/go.php?url=http://www.javacodegeeks.com/2014/04/hashmap-performance-improvements-in-java-8.html)，2014。
-Importnew，[危险！在HashMap中将可变对象用作Key](http://www.jfox.info/go.php?url=http://www.importnew.com/13384.html)，2014。
-CSDN博客频道，[为什么一般hashtable的桶数会取一个素数](http://www.jfox.info/go.php?url=http://blog.csdn.net/liuqiyao_01/article/details/14475159)，2013。
+[Java 8系列之重新认识HashMap](https://www.jfox.info/go.php?url=https://tech.meituan.com/java-hashmap.html)
+CSDN博客频道，[HashMap多线程死循环问题](https://www.jfox.info/go.php?url=http://blog.csdn.net/xuefeng0707/article/details/40797085)，2014。
+红黑联盟，[Java类集框架之HashMap(JDK1.8)源码剖析](https://www.jfox.info/go.php?url=http://www.2cto.com/kf/201505/401433.html)，2015。
+CSDN博客频道，[ 教你初步了解红黑树](https://www.jfox.info/go.php?url=http://blog.csdn.net/v_july_v/article/details/6105630)，2010。
+Java Code Geeks，[HashMap performance improvements in Java 8](https://www.jfox.info/go.php?url=http://www.javacodegeeks.com/2014/04/hashmap-performance-improvements-in-java-8.html)，2014。
+Importnew，[危险！在HashMap中将可变对象用作Key](https://www.jfox.info/go.php?url=http://www.importnew.com/13384.html)，2014。
+CSDN博客频道，[为什么一般hashtable的桶数会取一个素数](https://www.jfox.info/go.php?url=http://blog.csdn.net/liuqiyao_01/article/details/14475159)，2013。
 {% endraw %}

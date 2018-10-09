@@ -3,11 +3,11 @@ layout: post
 title:  "SpringMVC+MyBatis 事务管理一"
 title2:  "SpringMVC+MyBatis 事务管理一"
 date:   2017-01-01 23:59:06  +0800
-source:  "http://www.jfox.info/springmvcmybatis%e4%ba%8b%e5%8a%a1%e7%ae%a1%e7%90%86%e4%b8%80.html"
+source:  "https://www.jfox.info/springmvcmybatis%e4%ba%8b%e5%8a%a1%e7%ae%a1%e7%90%86%e4%b8%80.html"
 fileName:  "20170101446"
 lang:  "zh_CN"
 published: true
-permalink: "springmvcmybatis%e4%ba%8b%e5%8a%a1%e7%ae%a1%e7%90%86%e4%b8%80.html"
+permalink: "2017/https://www.jfox.info/springmvcmybatis%e4%ba%8b%e5%8a%a1%e7%ae%a1%e7%90%86%e4%b8%80.html"
 ---
 {% raw %}
 spring事务管理包含两种情况，编程式事务、声明式事务。而声明式事务又包括基于注解@Transactional和tx+aop的方式。那么本文先分析编程式注解事务和基于注解的声明式事务。 编程式事务管理使用TransactionTemplate或者PlatformTransactionManager。对于编程式事务spring推荐使用TransactionTemplate。

@@ -3,11 +3,11 @@ layout: post
 title:  "深入了解Java虚拟机（2）垃圾收集器与内存分配策略"
 title2:  "深入了解Java虚拟机（2）垃圾收集器与内存分配策略"
 date:   2017-01-01 23:59:02  +0800
-source:  "http://www.jfox.info/%e6%b7%b1%e5%85%a5%e4%ba%86%e8%a7%a3java%e8%99%9a%e6%8b%9f%e6%9c%ba2%e5%9e%83%e5%9c%be%e6%94%b6%e9%9b%86%e5%99%a8%e4%b8%8e%e5%86%85%e5%ad%98%e5%88%86%e9%85%8d%e7%ad%96%e7%95%a5.html"
+source:  "https://www.jfox.info/%e6%b7%b1%e5%85%a5%e4%ba%86%e8%a7%a3java%e8%99%9a%e6%8b%9f%e6%9c%ba2%e5%9e%83%e5%9c%be%e6%94%b6%e9%9b%86%e5%99%a8%e4%b8%8e%e5%86%85%e5%ad%98%e5%88%86%e9%85%8d%e7%ad%96%e7%95%a5.html"
 fileName:  "20170101442"
 lang:  "zh_CN"
 published: true
-permalink: "%e6%b7%b1%e5%85%a5%e4%ba%86%e8%a7%a3java%e8%99%9a%e6%8b%9f%e6%9c%ba2%e5%9e%83%e5%9c%be%e6%94%b6%e9%9b%86%e5%99%a8%e4%b8%8e%e5%86%85%e5%ad%98%e5%88%86%e9%85%8d%e7%ad%96%e7%95%a5.html"
+permalink: "2017/https://www.jfox.info/%e6%b7%b1%e5%85%a5%e4%ba%86%e8%a7%a3java%e8%99%9a%e6%8b%9f%e6%9c%ba2%e5%9e%83%e5%9c%be%e6%94%b6%e9%9b%86%e5%99%a8%e4%b8%8e%e5%86%85%e5%ad%98%e5%88%86%e9%85%8d%e7%ad%96%e7%95%a5.html"
 ---
 {% raw %}
 由于JVM中对象的频繁操作是在堆中，所以主要回收的是堆内存，方法区中的回收也有，但是比较谨慎
@@ -54,7 +54,7 @@ permalink: "%e6%b7%b1%e5%85%a5%e4%ba%86%e8%a7%a3java%e8%99%9a%e6%8b%9f%e6%9c%ba2
 
 　　　　无论通过什么方式，都是通过“引用”来判断！
 
-　　　　在JVM中引用分为四种：强、软、弱、虚（具体参考这篇文章：[http://www.cnblogs.com/zhangxinly/p/6978355.html](http://www.jfox.info/go.php?url=http://www.cnblogs.com/zhangxinly/p/6978355.html)）
+　　　　在JVM中引用分为四种：强、软、弱、虚（具体参考这篇文章：[http://www.cnblogs.com/zhangxinly/p/6978355.html](https://www.jfox.info/go.php?url=http://www.cnblogs.com/zhangxinly/p/6978355.html)）
 
 #### 　　4.finalize方法
 

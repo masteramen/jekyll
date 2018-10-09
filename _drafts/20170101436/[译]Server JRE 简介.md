@@ -3,20 +3,20 @@ layout: post
 title:  "[译]Server JRE 简介"
 title2:  "[译]Server JRE 简介"
 date:   2017-01-01 23:58:56  +0800
-source:  "http://www.jfox.info/%e8%af%91serverjre%e7%ae%80%e4%bb%8b.html"
+source:  "https://www.jfox.info/%e8%af%91serverjre%e7%ae%80%e4%bb%8b.html"
 fileName:  "20170101436"
 lang:  "zh_CN"
 published: true
-permalink: "%e8%af%91serverjre%e7%ae%80%e4%bb%8b.html"
+permalink: "2017/https://www.jfox.info/%e8%af%91serverjre%e7%ae%80%e4%bb%8b.html"
 ---
 {% raw %}
 Server JRE, 服务器版JRE
 
- JRE安装包, JDK安装包, 以及 Server JRE 压缩包, 在 Java SE Download 页面都可以下载: [http://www.oracle.com/technetwork/java/javase/downloads/index.html](http://www.jfox.info/go.php?url=http://www.oracle.com/technetwork/java/javase/downloads/index.html) ; 
+ JRE安装包, JDK安装包, 以及 Server JRE 压缩包, 在 Java SE Download 页面都可以下载: [http://www.oracle.com/technetwork/java/javase/downloads/index.html](https://www.jfox.info/go.php?url=http://www.oracle.com/technetwork/java/javase/downloads/index.html) ; 
 
 ![](/wp-content/uploads/2017/07/1501509251.png)
 
- Java 相关的术语请参考: [http://www.oracle.com/technetwork/java/glossary-135216.html](http://www.jfox.info/go.php?url=http://www.oracle.com/technetwork/java/glossary-135216.html) . 
+ Java 相关的术语请参考: [http://www.oracle.com/technetwork/java/glossary-135216.html](https://www.jfox.info/go.php?url=http://www.oracle.com/technetwork/java/glossary-135216.html) . 
 
 JRE 可以运行各种Java程序, 包括服务端和桌面端Java程序。
 
@@ -44,5 +44,5 @@ No. 如果应用程序需要用到 Server JRE 不支持的功能,如额外的开
 
 是的。Server JRE 的目标, 是为大部分服务端程序提供必要的工具。我们会不断地重新评估到底需要包含哪些组件。
 
- 原文链接: [https://blogs.oracle.com/java-platform-group/understanding-the-server-jre](http://www.jfox.info/go.php?url=https://blogs.oracle.com/java-platform-group/understanding-the-server-jre)
+ 原文链接: [https://blogs.oracle.com/java-platform-group/understanding-the-server-jre](https://www.jfox.info/go.php?url=https://blogs.oracle.com/java-platform-group/understanding-the-server-jre)
 {% endraw %}

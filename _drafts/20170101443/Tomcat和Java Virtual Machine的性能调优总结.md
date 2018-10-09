@@ -3,11 +3,11 @@ layout: post
 title:  "Tomcat和Java Virtual Machine的性能调优总结"
 title2:  "Tomcat和Java Virtual Machine的性能调优总结"
 date:   2017-01-01 23:59:03  +0800
-source:  "http://www.jfox.info/tomcat%e5%92%8cjavavirtualmachine%e7%9a%84%e6%80%a7%e8%83%bd%e8%b0%83%e4%bc%98%e6%80%bb%e7%bb%93.html"
+source:  "https://www.jfox.info/tomcat%e5%92%8cjavavirtualmachine%e7%9a%84%e6%80%a7%e8%83%bd%e8%b0%83%e4%bc%98%e6%80%bb%e7%bb%93.html"
 fileName:  "20170101443"
 lang:  "zh_CN"
 published: true
-permalink: "tomcat%e5%92%8cjavavirtualmachine%e7%9a%84%e6%80%a7%e8%83%bd%e8%b0%83%e4%bc%98%e6%80%bb%e7%bb%93.html"
+permalink: "2017/https://www.jfox.info/tomcat%e5%92%8cjavavirtualmachine%e7%9a%84%e6%80%a7%e8%83%bd%e8%b0%83%e4%bc%98%e6%80%bb%e7%bb%93.html"
 ---
 {% raw %}
 就算生不逢时，也该理解理解了。对于一些性能调优的话题我是一直插不上嘴，只是针对昨晚看到的一篇性能调优的文章，我忍不住了。

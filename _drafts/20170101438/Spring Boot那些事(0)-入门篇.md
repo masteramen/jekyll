@@ -3,11 +3,11 @@ layout: post
 title:  "Spring Boot那些事(0)-入门篇"
 title2:  "Spring Boot那些事(0)-入门篇"
 date:   2017-01-01 23:58:58  +0800
-source:  "http://www.jfox.info/springboot%e9%82%a3%e4%ba%9b%e4%ba%8b0%e5%85%a5%e9%97%a8%e7%af%87.html"
+source:  "https://www.jfox.info/springboot%e9%82%a3%e4%ba%9b%e4%ba%8b0%e5%85%a5%e9%97%a8%e7%af%87.html"
 fileName:  "20170101438"
 lang:  "zh_CN"
 published: true
-permalink: "springboot%e9%82%a3%e4%ba%9b%e4%ba%8b0%e5%85%a5%e9%97%a8%e7%af%87.html"
+permalink: "2017/https://www.jfox.info/springboot%e9%82%a3%e4%ba%9b%e4%ba%8b0%e5%85%a5%e9%97%a8%e7%af%87.html"
 ---
 {% raw %}
 读研期间主要写的是Java后端，工作之后开始更多地接触Node.js写后端程序，有对比才有伤害，让我深深的感受到了Java的重量级，开发的时候各种配置，部署的时候还有一堆要忙活，相对而言Node.js之类的新兴的后端语言显得格外的清新小巧。如果你觉得既然如此就可以就此放弃Java了，那就太草率了，毕竟Java作为后端主流语言不会就这么自甘堕落，Spring Boot应运而生，虽然很早之前就听过Spring Boot的大名，但是碍于当时论文的压力，一直没有深入地去了解，最近项目需要正好可以搞一搞熟悉一下。
@@ -51,11 +51,11 @@ Spring 4.x里已经可以通过注解来实现配置了，而Spring Boot则把�
 
 #### 从哪里开始 
 
- 1. [https://start.spring.io/](http://www.jfox.info/go.php?url=https://start.spring.io/)
+ 1. [https://start.spring.io/](https://www.jfox.info/go.php?url=https://start.spring.io/)
 
 说了那么多Spring Boot的好处，怎么开始呢？这一点也充分体现了其简单的特点，非常方便。
 
- 访问 [https://start.spring.io/](http://www.jfox.info/go.php?url=https://start.spring.io/) ，就可以看到Spring Boot官方的项目生成页面，你只需要填写项目的信息，选择一下依赖，然后点击 `Generate Project` 就可以生成项目文件并下载zip包。 
+ 访问 [https://start.spring.io/](https://www.jfox.info/go.php?url=https://start.spring.io/) ，就可以看到Spring Boot官方的项目生成页面，你只需要填写项目的信息，选择一下依赖，然后点击 `Generate Project` 就可以生成项目文件并下载zip包。 
 
 在这里可以选择使用Maven管理还是Gradle管理项目依赖，使用Java、Kotlin还是Groovy，还有Spring Boot的版本，打包方式，Java版本，等等，其他的可以自行查看。当然即使生成项目的时候填错了也没关系，后面还可以改嘛。
 

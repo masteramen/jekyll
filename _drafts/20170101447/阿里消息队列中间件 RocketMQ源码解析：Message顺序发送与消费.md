@@ -3,11 +3,11 @@ layout: post
 title:  "阿里消息队列中间件 RocketMQ源码解析：Message顺序发送与消费"
 title2:  "阿里消息队列中间件 RocketMQ源码解析：Message顺序发送与消费"
 date:   2017-01-01 23:59:07  +0800
-source:  "http://www.jfox.info/%e9%98%bf%e9%87%8c%e6%b6%88%e6%81%af%e9%98%9f%e5%88%97%e4%b8%ad%e9%97%b4%e4%bb%b6rocketmq%e6%ba%90%e7%a0%81%e8%a7%a3%e6%9e%90message%e9%a1%ba%e5%ba%8f%e5%8f%91%e9%80%81%e4%b8%8e%e6%b6%88%e8%b4%b9.html"
+source:  "https://www.jfox.info/%e9%98%bf%e9%87%8c%e6%b6%88%e6%81%af%e9%98%9f%e5%88%97%e4%b8%ad%e9%97%b4%e4%bb%b6rocketmq%e6%ba%90%e7%a0%81%e8%a7%a3%e6%9e%90message%e9%a1%ba%e5%ba%8f%e5%8f%91%e9%80%81%e4%b8%8e%e6%b6%88%e8%b4%b9.html"
 fileName:  "20170101447"
 lang:  "zh_CN"
 published: true
-permalink: "%e9%98%bf%e9%87%8c%e6%b6%88%e6%81%af%e9%98%9f%e5%88%97%e4%b8%ad%e9%97%b4%e4%bb%b6rocketmq%e6%ba%90%e7%a0%81%e8%a7%a3%e6%9e%90message%e9%a1%ba%e5%ba%8f%e5%8f%91%e9%80%81%e4%b8%8e%e6%b6%88%e8%b4%b9.html"
+permalink: "2017/https://www.jfox.info/%e9%98%bf%e9%87%8c%e6%b6%88%e6%81%af%e9%98%9f%e5%88%97%e4%b8%ad%e9%97%b4%e4%bb%b6rocketmq%e6%ba%90%e7%a0%81%e8%a7%a3%e6%9e%90message%e9%a1%ba%e5%ba%8f%e5%8f%91%e9%80%81%e4%b8%8e%e6%b6%88%e8%b4%b9.html"
 ---
 {% raw %}
 # 阿里消息队列中间件 RocketMQ源码解析：Message顺序发送与消费 
@@ -346,7 +346,7 @@ permalink: "%e9%98%bf%e9%87%8c%e6%b6%88%e6%81%af%e9%98%9f%e5%88%97%e4%b8%ad%e9%9
 
 ## 3.3 消费消息队列
 
-😏本节会类比**并发消费消费队列**，建议对照 [PushConsumer并发消费消息](http://www.jfox.info/go.php?url=http://www.yunai.me/RocketMQ/message-pull-and-consume-second/#6) 一起理解。
+😏本节会类比**并发消费消费队列**，建议对照 [PushConsumer并发消费消息](https://www.jfox.info/go.php?url=http://www.yunai.me/RocketMQ/message-pull-and-consume-second/#6) 一起理解。
 
 ### 3.1.1 消费消息
 

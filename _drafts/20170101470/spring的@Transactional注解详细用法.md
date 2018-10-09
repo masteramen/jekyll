@@ -3,11 +3,11 @@ layout: post
 title:  "spring的@Transactional注解详细用法"
 title2:  "spring的@Transactional注解详细用法"
 date:   2017-01-01 23:59:30  +0800
-source:  "http://www.jfox.info/spring%e7%9a%84transactional%e6%b3%a8%e8%a7%a3%e8%af%a6%e7%bb%86%e7%94%a8%e6%b3%95.html"
+source:  "https://www.jfox.info/spring%e7%9a%84transactional%e6%b3%a8%e8%a7%a3%e8%af%a6%e7%bb%86%e7%94%a8%e6%b3%95.html"
 fileName:  "20170101470"
 lang:  "zh_CN"
 published: true
-permalink: "spring%e7%9a%84transactional%e6%b3%a8%e8%a7%a3%e8%af%a6%e7%bb%86%e7%94%a8%e6%b3%95.html"
+permalink: "2017/https://www.jfox.info/spring%e7%9a%84transactional%e6%b3%a8%e8%a7%a3%e8%af%a6%e7%bb%86%e7%94%a8%e6%b3%95.html"
 ---
 {% raw %}
 事务管理对于企业应用来说是至关重要的，即使出现异常情况，它也可以保证数据的一致性。
@@ -105,7 +105,7 @@ spring-servlet.xml
 
 MyBatis自动参与到spring事务管理中，无需额外配置，只要org.mybatis.spring.SqlSessionFactoryBean引用的数据源与DataSourceTransactionManager引用的数据源一致即可，否则事务管理会不起作用。
 
- 另外需要下载依赖包 [aopalliance](http://www.jfox.info/go.php?url=http://aopalliance.sourceforge.net/) .jar放置到WEB-INF/lib目录下。否则spring初始化时会报异常 
+ 另外需要下载依赖包 [aopalliance](https://www.jfox.info/go.php?url=http://aopalliance.sourceforge.net/) .jar放置到WEB-INF/lib目录下。否则spring初始化时会报异常 
 
 java.lang.NoClassDefFoundError: org/aopalliance/intercept/MethodInterceptor
 

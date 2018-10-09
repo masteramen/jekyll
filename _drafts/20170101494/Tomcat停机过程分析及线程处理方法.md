@@ -3,11 +3,11 @@ layout: post
 title:  "Tomcat停机过程分析及线程处理方法"
 title2:  "Tomcat停机过程分析及线程处理方法"
 date:   2017-01-01 23:59:54  +0800
-source:  "http://www.jfox.info/tomcat%e5%81%9c%e6%9c%ba%e8%bf%87%e7%a8%8b%e5%88%86%e6%9e%90%e5%8f%8a%e7%ba%bf%e7%a8%8b%e5%a4%84%e7%90%86%e6%96%b9%e6%b3%95.html"
+source:  "https://www.jfox.info/tomcat%e5%81%9c%e6%9c%ba%e8%bf%87%e7%a8%8b%e5%88%86%e6%9e%90%e5%8f%8a%e7%ba%bf%e7%a8%8b%e5%a4%84%e7%90%86%e6%96%b9%e6%b3%95.html"
 fileName:  "20170101494"
 lang:  "zh_CN"
 published: true
-permalink: "tomcat%e5%81%9c%e6%9c%ba%e8%bf%87%e7%a8%8b%e5%88%86%e6%9e%90%e5%8f%8a%e7%ba%bf%e7%a8%8b%e5%a4%84%e7%90%86%e6%96%b9%e6%b3%95.html"
+permalink: "2017/https://www.jfox.info/tomcat%e5%81%9c%e6%9c%ba%e8%bf%87%e7%a8%8b%e5%88%86%e6%9e%90%e5%8f%8a%e7%ba%bf%e7%a8%8b%e5%a4%84%e7%90%86%e6%96%b9%e6%b3%95.html"
 ---
 {% raw %}
 工作中经常遇到因为Tomcat shutdown时自己创建的线程因没有及时停止而引起的各种莫名其妙的报错，这篇文章将通过对Tomcat停机过程的梳理讨论产生这些错误的原因,同时提出了两个可行的解决办法。
@@ -269,7 +269,7 @@ Server、Service、Connector、Context等容器都实现了Lifecycle接口，同
 
 ### 使用Spring提供的TaskExecutor 
 
- 为了应对在webapp中管理自己的线程的目的，Spring提供了一套TaskExcutor的工具。其中的ThreadPoolTaskExecutor与Java5中的ThreadPoolExecutor非常类似，只是生命周期会被Spring管理，Spring框架停止时，Executor也会被停止，用户线程会收到中断异常。同时Spring还提供了ScheduledThreadPoolExecutor，对于定时任务或者要创建自己线程的需求可以用这个类。对于线程管理，Spring提供了非常丰富的支持， [具体可以看这里](http://www.jfox.info/go.php?url=https://docs.spring.io/spring/docs/current/spring-framework-reference/html/scheduling.html) 。 
+ 为了应对在webapp中管理自己的线程的目的，Spring提供了一套TaskExcutor的工具。其中的ThreadPoolTaskExecutor与Java5中的ThreadPoolExecutor非常类似，只是生命周期会被Spring管理，Spring框架停止时，Executor也会被停止，用户线程会收到中断异常。同时Spring还提供了ScheduledThreadPoolExecutor，对于定时任务或者要创建自己线程的需求可以用这个类。对于线程管理，Spring提供了非常丰富的支持， [具体可以看这里](https://www.jfox.info/go.php?url=https://docs.spring.io/spring/docs/current/spring-framework-reference/html/scheduling.html) 。 
 
 使用Spring框架的优点是对代码侵入性小，对代码依赖性也相对较小。
 

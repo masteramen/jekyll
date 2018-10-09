@@ -3,11 +3,11 @@ layout: post
 title:  "Java架构学习路线图"
 title2:  "Java架构学习路线图"
 date:   2017-01-01 23:59:36  +0800
-source:  "http://www.jfox.info/java%e6%9e%b6%e6%9e%84%e5%ad%a6%e4%b9%a0%e8%b7%af%e7%ba%bf%e5%9b%be.html"
+source:  "https://www.jfox.info/java%e6%9e%b6%e6%9e%84%e5%ad%a6%e4%b9%a0%e8%b7%af%e7%ba%bf%e5%9b%be.html"
 fileName:  "20170101476"
 lang:  "zh_CN"
 published: true
-permalink: "java%e6%9e%b6%e6%9e%84%e5%ad%a6%e4%b9%a0%e8%b7%af%e7%ba%bf%e5%9b%be.html"
+permalink: "2017/https://www.jfox.info/java%e6%9e%b6%e6%9e%84%e5%ad%a6%e4%b9%a0%e8%b7%af%e7%ba%bf%e5%9b%be.html"
 ---
 {% raw %}
 **JAVA学习路线图：**

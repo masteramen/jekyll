@@ -3,11 +3,11 @@ layout: post
 title:  "微服务架构-Spring Cloud"
 title2:  "微服务架构-Spring Cloud"
 date:   2017-01-01 23:59:18  +0800
-source:  "http://www.jfox.info/%e5%be%ae%e6%9c%8d%e5%8a%a1%e6%9e%b6%e6%9e%84springcloud.html"
+source:  "https://www.jfox.info/%e5%be%ae%e6%9c%8d%e5%8a%a1%e6%9e%b6%e6%9e%84springcloud.html"
 fileName:  "20170101458"
 lang:  "zh_CN"
 published: true
-permalink: "%e5%be%ae%e6%9c%8d%e5%8a%a1%e6%9e%b6%e6%9e%84springcloud.html"
+permalink: "2017/https://www.jfox.info/%e5%be%ae%e6%9c%8d%e5%8a%a1%e6%9e%b6%e6%9e%84springcloud.html"
 ---
 {% raw %}
 1 为什么需要服务发现

@@ -3,28 +3,28 @@ layout: post
 title:  "使用Spring Cloud和Docker构建微服务架构"
 title2:  "使用Spring Cloud和Docker构建微服务架构"
 date:   2017-01-01 23:59:50  +0800
-source:  "http://www.jfox.info/%e4%bd%bf%e7%94%a8springcloud%e5%92%8cdocker%e6%9e%84%e5%bb%ba%e5%be%ae%e6%9c%8d%e5%8a%a1%e6%9e%b6%e6%9e%84.html"
+source:  "https://www.jfox.info/%e4%bd%bf%e7%94%a8springcloud%e5%92%8cdocker%e6%9e%84%e5%bb%ba%e5%be%ae%e6%9c%8d%e5%8a%a1%e6%9e%b6%e6%9e%84.html"
 fileName:  "20170101490"
 lang:  "zh_CN"
 published: true
-permalink: "%e4%bd%bf%e7%94%a8springcloud%e5%92%8cdocker%e6%9e%84%e5%bb%ba%e5%be%ae%e6%9c%8d%e5%8a%a1%e6%9e%b6%e6%9e%84.html"
+permalink: "2017/https://www.jfox.info/%e4%bd%bf%e7%94%a8springcloud%e5%92%8cdocker%e6%9e%84%e5%bb%ba%e5%be%ae%e6%9c%8d%e5%8a%a1%e6%9e%b6%e6%9e%84.html"
 ---
 {% raw %}
 H2M_LI_HEADER 每一个微服务拥有自己的数据库，因此没有办法绕过API直接访问持久数据。
 H2M_LI_HEADER 在这个项目中，我使用MongoDB作为每一个服务的主数据库。拥有一个多种类持久化架构（polyglot persistence architecture）也是很有意义的。
-H2M_LI_HEADER  服务间（Service-to-service）通信是非常简单的：微服务仅使用同步的REST API进行通信。现实中的系统的常见做法是使用互动风格的组合。例如，执行同步的GET请求检索数据，并通过消息代理（broker）使用异步方法执行创建/更新操作，以便解除服务和缓冲消息之间的耦合。然而，这带给我们是 [最终的一致性](http://www.jfox.info/go.php?url=http://martinfowler.com/articles/microservice-trade-offs.html#consistency) 。 
+H2M_LI_HEADER  服务间（Service-to-service）通信是非常简单的：微服务仅使用同步的REST API进行通信。现实中的系统的常见做法是使用互动风格的组合。例如，执行同步的GET请求检索数据，并通过消息代理（broker）使用异步方法执行创建/更新操作，以便解除服务和缓冲消息之间的耦合。然而，这带给我们是 [最终的一致性](https://www.jfox.info/go.php?url=http://martinfowler.com/articles/microservice-trade-offs.html#consistency) 。 
 
 ### 基础设施服务 
 
- 分布式系统中常见的模式，可以帮助我们描述核心服务是怎样工作的。 [Spring Cloud](http://www.jfox.info/go.php?url=http://projects.spring.io/spring-cloud/) 提供了强大的工具，可以增强Spring Boot应用的行为来实现这些模式。我会简要介绍一下： 
+ 分布式系统中常见的模式，可以帮助我们描述核心服务是怎样工作的。 [Spring Cloud](https://www.jfox.info/go.php?url=http://projects.spring.io/spring-cloud/) 提供了强大的工具，可以增强Spring Boot应用的行为来实现这些模式。我会简要介绍一下： 
 
 ![](/wp-content/uploads/2017/08/1502009957.png)
 
 ### 配置服务 
 
-[Spring Cloud Config](http://www.jfox.info/go.php?url=http://cloud.spring.io/spring-cloud-config/spring-cloud-config.html) 是分布式系统的水平扩展集中式配置服务。它使用了当前支持的本地存储、Git和Subversion等可拔插存储库层（repository layer）。 
+[Spring Cloud Config](https://www.jfox.info/go.php?url=http://cloud.spring.io/spring-cloud-config/spring-cloud-config.html) 是分布式系统的水平扩展集中式配置服务。它使用了当前支持的本地存储、Git和Subversion等可拔插存储库层（repository layer）。 
 
- 在此项目中，我使用了 `native profile` ，它简单地从本地classpath下加载配置文件。您可以在 [配置服务资源](http://www.jfox.info/go.php?url=https://github.com/sqshq/PiggyMetrics/tree/master/config/src/main/resources) 中查看 `shared` 目录。现在，当通知服务请求它的配置时，配置服务将响应回 `shared/notification-service.yml` 和 `shared/application.yml` （所有客户端应用之间共享）。 
+ 在此项目中，我使用了 `native profile` ，它简单地从本地classpath下加载配置文件。您可以在 [配置服务资源](https://www.jfox.info/go.php?url=https://github.com/sqshq/PiggyMetrics/tree/master/config/src/main/resources) 中查看 `shared` 目录。现在，当通知服务请求它的配置时，配置服务将响应回 `shared/notification-service.yml` 和 `shared/application.yml` （所有客户端应用之间共享）。 
 
 #### 客户端使用 
 
@@ -43,11 +43,11 @@ H2M_LI_HEADER  服务间（Service-to-service）通信是非常简单的：微�
 
 #### 使用Spring Cloud Config，您可以动态更改应用配置 
 
- 比如， [EmailService bean](http://www.jfox.info/go.php?url=https://github.com/sqshq/PiggyMetrics/blob/master/notification-service/src/main/java/com/piggymetrics/notification/service/EmailServiceImpl.java) 使用了 `@RefreshScope` 注解。这意味着您可以更改电子邮件的内容和主题，而无需重新构建和重启通知服务应用。 
+ 比如， [EmailService bean](https://www.jfox.info/go.php?url=https://github.com/sqshq/PiggyMetrics/blob/master/notification-service/src/main/java/com/piggymetrics/notification/service/EmailServiceImpl.java) 使用了 `@RefreshScope` 注解。这意味着您可以更改电子邮件的内容和主题，而无需重新构建和重启通知服务应用。 
 
  首先，在配置服务器中更改必要的属性。然后，对通知服务执行刷新请求： `curl -H "Authorization: Bearer #token#" -XPOST http://127.0.0.1:8000/notifications/refresh` 。 
 
- 您也可以 [使用webhook来自动执行此过程](http://www.jfox.info/go.php?url=http://cloud.spring.io/spring-cloud-config/spring-cloud-config.html#_push_notifications_and_spring_cloud_bus) 。 
+ 您也可以 [使用webhook来自动执行此过程](https://www.jfox.info/go.php?url=http://cloud.spring.io/spring-cloud-config/spring-cloud-config.html#_push_notifications_and_spring_cloud_bus) 。 
 
 #### 注意
 
@@ -57,11 +57,11 @@ H2M_LI_HEADER  服务间（Service-to-service）通信是非常简单的：微�
 
 ### 授权服务 
 
- 负责授权的部分被完全提取到单独的服务器，它为后端资源服务提供 [OAuth2令牌](http://www.jfox.info/go.php?url=https://tools.ietf.org/html/rfc6749) 。授权服务器用于用户授权以及在周边内进行安全的机器间通信。 
+ 负责授权的部分被完全提取到单独的服务器，它为后端资源服务提供 [OAuth2令牌](https://www.jfox.info/go.php?url=https://tools.ietf.org/html/rfc6749) 。授权服务器用于用户授权以及在周边内进行安全的机器间通信。 
 
 在此项目中，我使用密码凭据作为用户授权的授权类型（因为它仅由本地应用UI使用）和客户端凭据作为微服务授权的授权类型。
 
- Spring Cloud Security提供了方便的注解和自动配置，使其在服务器端或者客户端都可以很容易地实现。您可以在 [文档](http://www.jfox.info/go.php?url=http://cloud.spring.io/spring-cloud-security/spring-cloud-security.html) 中了解到更多信息，并在 [授权服务器代码](http://www.jfox.info/go.php?url=https://github.com/sqshq/PiggyMetrics/tree/master/auth-service/src/main/java/com/piggymetrics/auth) 中检查配置明细。 
+ Spring Cloud Security提供了方便的注解和自动配置，使其在服务器端或者客户端都可以很容易地实现。您可以在 [文档](https://www.jfox.info/go.php?url=http://cloud.spring.io/spring-cloud-security/spring-cloud-security.html) 中了解到更多信息，并在 [授权服务器代码](https://www.jfox.info/go.php?url=https://github.com/sqshq/PiggyMetrics/tree/master/auth-service/src/main/java/com/piggymetrics/auth) 中检查配置明细。 
 
  从客户端来看，一切都与传统的基于会话的授权完全相同。您可以从请求中检索Principal对象、检查用户角色和其它基于表达式访问控制和 `@PreAuthorize` 注解的内容。 
 
@@ -80,9 +80,9 @@ H2M_LI_HEADER  服务间（Service-to-service）通信是非常简单的：微�
 
 理论上，客户端可以直接向每个微服务直接发送请求。但是这种方式是存在挑战和限制的，如果需要知道所有端点的地址，分别对每一段信息执行http请求，将结果合并到客户端。另一个问题是，这不是web友好协议，可能只在后端使用。
 
- 通常一个更好的方法是使用API网关。它是系统的单个入口点，用于通过将请求路由到适当的后端服务或者通过调用多个后端服务并 [聚合结果](http://www.jfox.info/go.php?url=http://techblog.netflix.com/2013/01/optimizing-netflix-api.html) 来处理请求。此外，它还可以用于认证、insights、压力测试、金丝雀测试（canary testing）、服务迁移、静态响应处理和主动变换管理。 
+ 通常一个更好的方法是使用API网关。它是系统的单个入口点，用于通过将请求路由到适当的后端服务或者通过调用多个后端服务并 [聚合结果](https://www.jfox.info/go.php?url=http://techblog.netflix.com/2013/01/optimizing-netflix-api.html) 来处理请求。此外，它还可以用于认证、insights、压力测试、金丝雀测试（canary testing）、服务迁移、静态响应处理和主动变换管理。 
 
- Netflix开源 [这样的边缘服务](http://www.jfox.info/go.php?url=http://techblog.netflix.com/2013/06/announcing-zuul-edge-service-in-cloud.html) ，现在用Spring Cloud，我们可以用一个 `@EnabledZuulProxy` 注解来启用它。在这个项目中，我使用Zuul存储静态内容（UI应用），并将请求路由到适当的微服务。以下是一个简单的基于前缀（prefix-based）路由的通知服务配置： 
+ Netflix开源 [这样的边缘服务](https://www.jfox.info/go.php?url=http://techblog.netflix.com/2013/06/announcing-zuul-edge-service-in-cloud.html) ，现在用Spring Cloud，我们可以用一个 `@EnabledZuulProxy` 注解来启用它。在这个项目中，我使用Zuul存储静态内容（UI应用），并将请求路由到适当的微服务。以下是一个简单的基于前缀（prefix-based）路由的通知服务配置： 
 
     zuul:
      routes:
@@ -92,7 +92,7 @@ H2M_LI_HEADER  服务间（Service-to-service）通信是非常简单的：微�
      stripPrefix: false
     
 
- 这意味着所有以 `/notification` 开头的请求将被路由到通知服务。您可以看到，里面没有硬编码的地址。Zuul使用 [服务发现](http://www.jfox.info/go.php?url=https://github.com/sqshq/PiggyMetrics/blob/master/README.md#service-discovery) 机制来定位通知服务实例以及 [断路器和负载均衡器](http://www.jfox.info/go.php?url=https://github.com/sqshq/PiggyMetrics/blob/master/README.md#http-client-load-balancer-and-circuit-breaker) ，如下所述。 
+ 这意味着所有以 `/notification` 开头的请求将被路由到通知服务。您可以看到，里面没有硬编码的地址。Zuul使用 [服务发现](https://www.jfox.info/go.php?url=https://github.com/sqshq/PiggyMetrics/blob/master/README.md#service-discovery) 机制来定位通知服务实例以及 [断路器和负载均衡器](https://www.jfox.info/go.php?url=https://github.com/sqshq/PiggyMetrics/blob/master/README.md#http-client-load-balancer-and-circuit-breaker) ，如下所述。 
 
 ### 服务发现 
 
@@ -123,15 +123,15 @@ Netflix OSS提供了另一套很棒的工具。
 
 Ribbon是一个客户端负载均衡器，可以很好地控制HTTP和TCP客户端的行为。与传统的负载均衡器相比，每次线上调用都不需要额外的跳跃——您可以直接联系所需的服务。
 
- 它与Spring Cloud和服务发现是集成在一起的，可开箱即用。 [Eureka客户端](http://www.jfox.info/go.php?url=https://github.com/sqshq/PiggyMetrics#service-discovery) 提供了可用服务器的动态列表，因此Ribbon可以在它们之间进行平衡。 
+ 它与Spring Cloud和服务发现是集成在一起的，可开箱即用。 [Eureka客户端](https://www.jfox.info/go.php?url=https://github.com/sqshq/PiggyMetrics#service-discovery) 提供了可用服务器的动态列表，因此Ribbon可以在它们之间进行平衡。 
 
 #### Hystrix 
 
- Hystrix是 [断路器模式](http://www.jfox.info/go.php?url=http://martinfowler.com/bliki/CircuitBreaker.html) 的一种实现，它可以通过网络访问依赖来控制延迟和故障。中心思想是在具有大量微服务的分布式环境中停止级联故障。这有助于快速失败并尽快恢复——自我修复在容错系统中是非常重要的。 
+ Hystrix是 [断路器模式](https://www.jfox.info/go.php?url=http://martinfowler.com/bliki/CircuitBreaker.html) 的一种实现，它可以通过网络访问依赖来控制延迟和故障。中心思想是在具有大量微服务的分布式环境中停止级联故障。这有助于快速失败并尽快恢复——自我修复在容错系统中是非常重要的。 
 
 除了断路器控制，在使用Hystrix，您可以添加一个备用方法，在主命令失败的情况下，该方法将被调用以获取默认值。
 
- 此外，Hystrix生成每个命令的执行结果和延迟的度量，我们可以用它来 [监视系统的行为](http://www.jfox.info/go.php?url=https://github.com/sqshq/PiggyMetrics#monitor-dashboard) 。 
+ 此外，Hystrix生成每个命令的执行结果和延迟的度量，我们可以用它来 [监视系统的行为](https://www.jfox.info/go.php?url=https://github.com/sqshq/PiggyMetrics#monitor-dashboard) 。 
 
 #### Feign 
 
@@ -152,7 +152,7 @@ Ribbon是一个客户端负载均衡器，可以很好地控制HTTP和TCP客户�
 
 ### 监控仪表盘 
 
- 在这个项目配置中，Hystrix的每一个微服务都通过Spring Cloud Bus（通过AMQP broker）将指标推送到Turbine。监控项目只是一个使用了 [Turbine](http://www.jfox.info/go.php?url=https://github.com/Netflix/Turbine) 和 [Hystrix仪表盘](http://www.jfox.info/go.php?url=https://github.com/Netflix/Hystrix/tree/master/hystrix-dashboard) 的小型Spring Boot应用。 
+ 在这个项目配置中，Hystrix的每一个微服务都通过Spring Cloud Bus（通过AMQP broker）将指标推送到Turbine。监控项目只是一个使用了 [Turbine](https://www.jfox.info/go.php?url=https://github.com/Netflix/Turbine) 和 [Hystrix仪表盘](https://www.jfox.info/go.php?url=https://github.com/Netflix/Hystrix/tree/master/hystrix-dashboard) 的小型Spring Boot应用。 
 
 让我们看看系统行为在负载下：账户服务调用统计服务和它在一个变化的模拟延迟下的响应。响应超时阈值设置为1秒。
 
@@ -160,11 +160,11 @@ Ribbon是一个客户端负载均衡器，可以很好地控制HTTP和TCP客户�
 
 ### 日志分析 
 
- 集中式日志记录在尝试查找分布式环境中的问题时非常有用。Elasticsearch、Logstash和Kibana技术栈可让您轻松搜索和分析您的日志、利用率和网络活动数据。在我的 [另一个项目](http://www.jfox.info/go.php?url=http://github.com/sqshq/ELK-docker) 中已经有现成的Docker配置。 
+ 集中式日志记录在尝试查找分布式环境中的问题时非常有用。Elasticsearch、Logstash和Kibana技术栈可让您轻松搜索和分析您的日志、利用率和网络活动数据。在我的 [另一个项目](https://www.jfox.info/go.php?url=http://github.com/sqshq/ELK-docker) 中已经有现成的Docker配置。 
 
 ## 安全 
 
- 高级安全配置已经超过了此概念性项目的范围。为了更真实地模拟真实系统，请考虑使用https和JCE密钥库来加密微服务密码和配置服务器的properties内容（有关详细信息，请参阅 [文档](http://www.jfox.info/go.php?url=http://cloud.spring.io/spring-cloud-config/spring-cloud-config.html#_security) ）。 
+ 高级安全配置已经超过了此概念性项目的范围。为了更真实地模拟真实系统，请考虑使用https和JCE密钥库来加密微服务密码和配置服务器的properties内容（有关详细信息，请参阅 [文档](https://www.jfox.info/go.php?url=http://cloud.spring.io/spring-cloud-config/spring-cloud-config.html#_security) ）。 
 
 ## 基础设施自动化 
 
@@ -176,7 +176,7 @@ Ribbon是一个客户端负载均衡器，可以很好地控制HTTP和TCP客户�
 
 这是一个简单的持续交付工作流程，在这个项目的实现：
 
- 在此 [配置](http://www.jfox.info/go.php?url=https://github.com/sqshq/PiggyMetrics/blob/master/.travis.yml) 中，Travis CI为每一个成功的Git推送创建了标记镜像。因此，每一个微服务在 [Docker Hub](http://www.jfox.info/go.php?url=https://hub.docker.com/r/sqshq/) 上的都会有一个 `latest` 镜像，而较旧的镜像则使用Git提交的哈希进行标记。如果有需要，可以轻松部署任何一个，并快速回滚。 
+ 在此 [配置](https://www.jfox.info/go.php?url=https://github.com/sqshq/PiggyMetrics/blob/master/.travis.yml) 中，Travis CI为每一个成功的Git推送创建了标记镜像。因此，每一个微服务在 [Docker Hub](https://www.jfox.info/go.php?url=https://hub.docker.com/r/sqshq/) 上的都会有一个 `latest` 镜像，而较旧的镜像则使用Git提交的哈希进行标记。如果有需要，可以轻松部署任何一个，并快速回滚。 
 
 ![](/wp-content/uploads/2017/08/15020099591.png)
 
@@ -209,7 +209,7 @@ Ribbon是一个客户端负载均衡器，可以很好地控制HTTP和TCP客户�
 
 #### 注意
 
- 所有Spring Boot应用都需要运行 [配置服务器](http://www.jfox.info/go.php?url=https://github.com/sqshq/PiggyMetrics#config-service) 才能启动。得益于Spring Boot的 `fail-fast` 属性和docker-compsoe的 `restart:always` 选项，我们可以同时启动所有容器。这意味着所有依赖的容器将尝试重新启动，直到配置服务器启动运行为止。 
+ 所有Spring Boot应用都需要运行 [配置服务器](https://www.jfox.info/go.php?url=https://github.com/sqshq/PiggyMetrics#config-service) 才能启动。得益于Spring Boot的 `fail-fast` 属性和docker-compsoe的 `restart:always` 选项，我们可以同时启动所有容器。这意味着所有依赖的容器将尝试重新启动，直到配置服务器启动运行为止。 
 
 此外，服务发现机制在所有应用启动后需要一段时间。在实例、Eureka服务器和客户端在其本地缓存中都具有相同的元数据之前，任何服务都不可用于客户端发现，因此可能需要3次心跳。默认的心跳周期为30秒。
 {% endraw %}

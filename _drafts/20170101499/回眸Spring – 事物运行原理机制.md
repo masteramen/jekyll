@@ -3,11 +3,11 @@ layout: post
 title:  "回眸Spring – 事物运行原理机制"
 title2:  "回眸Spring – 事物运行原理机制"
 date:   2017-01-01 23:59:59  +0800
-source:  "http://www.jfox.info/%e5%9b%9e%e7%9c%b8spring%e4%ba%8b%e7%89%a9%e8%bf%90%e8%a1%8c%e5%8e%9f%e7%90%86%e6%9c%ba%e5%88%b6.html"
+source:  "https://www.jfox.info/%e5%9b%9e%e7%9c%b8spring%e4%ba%8b%e7%89%a9%e8%bf%90%e8%a1%8c%e5%8e%9f%e7%90%86%e6%9c%ba%e5%88%b6.html"
 fileName:  "20170101499"
 lang:  "zh_CN"
 published: true
-permalink: "%e5%9b%9e%e7%9c%b8spring%e4%ba%8b%e7%89%a9%e8%bf%90%e8%a1%8c%e5%8e%9f%e7%90%86%e6%9c%ba%e5%88%b6.html"
+permalink: "2017/https://www.jfox.info/%e5%9b%9e%e7%9c%b8spring%e4%ba%8b%e7%89%a9%e8%bf%90%e8%a1%8c%e5%8e%9f%e7%90%86%e6%9c%ba%e5%88%b6.html"
 ---
 {% raw %}
 H2M_LI_HEADER Spring的事物是通过哪些原理实现的?
@@ -511,5 +511,175 @@ ObjenesisCglibAopProxy 的 父类是 CglibAopProxy 所以初始化ObjenesisCglib
                 } 
                 // Validate the class, writing log messages as necessary.
                 validateClassIfNecessary(proxySuperClass, classLoader); 
-                //
+                // Configure CGLIB Enhancer...
+                // 这一部分是创建一个Enhancer 对象
+                Enhancer enhancer = createEnhancer();
+                if (classLoader != null) {
+                    enhancer.setClassLoader(classLoader);
+                    if (classLoader instanceof SmartClassLoader &&
+                            ((SmartClassLoader) classLoader).isClassReloadable(proxySuperClass)) {
+                        enhancer.setUseCache(false);
+                    }
+                }
+                enhancer.setSuperclass(proxySuperClass);
+                enhancer.setInterfaces(AopProxyUtils.completeProxiedInterfaces(this.advised));
+                enhancer.setNamingPolicy(SpringNamingPolicy.INSTANCE);
+                enhancer.setStrategy(new UndeclaredThrowableStrategy(UndeclaredThrowableException.class));
+                
+                // 这部分代码非常关键,里面会创建一个DynamicAdvisedInterceptor对象,这个就是责任链的头端,所有的切入点都需要经过这个拦截器一步步执行到最终的方法
+                Callback[] callbacks = getCallbacks(rootClass);
+                Class<?>[] types = new Class<?>[callbacks.length];
+                for (int x = 0; x < types.length; x++) {
+                    types[x] = callbacks[x].getClass();
+                }
+                // fixedInterceptorMap only populated at this point, after getCallbacks call above
+                enhancer.setCallbackFilter(new ProxyCallbackFilter(
+                        this.advised.getConfigurationOnlyCopy(), this.fixedInterceptorMap, this.fixedInterceptorOffset));
+                enhancer.setCallbackTypes(types);
+    
+                // Generate the proxy class and create a proxy instance.
+                // 生成代理类并且创建实例,里面做的应该就是把DynamicAdvisedInterceptor对象和serviceImpl对象做了一个代理绑定,先进入DynamicAdvisedInterceptor,经过责任链模式一步步到达最终方法
+                return createProxyClassAndInstance(enhancer, callbacks);
+            }
+            catch (CodeGenerationException ex) {
+                throw new AopConfigException("Could not generate CGLIB subclass of class [" +
+                        this.advised.getTargetClass() + "]: " +
+                        "Common causes of this problem include using a final class or a non-visible class",
+                        ex);
+            }
+            catch (IllegalArgumentException ex) {
+                throw new AopConfigException("Could not generate CGLIB subclass of class [" +
+                        this.advised.getTargetClass() + "]: " +
+                        "Common causes of this problem include using a final class or a non-visible class",
+                        ex);
+            }
+            catch (Exception ex) {
+                // TargetSource.getTarget() failed
+                throw new AopConfigException("Unexpected AOP exception", ex);
+            }
+        }
+    
+    private Callback[] getCallbacks(Class<?> rootClass) throws Exception {
+            // Parameters used for optimisation choices...
+            boolean exposeProxy = this.advised.isExposeProxy();
+            boolean isFrozen = this.advised.isFrozen();
+            boolean isStatic = this.advised.getTargetSource().isStatic();
+    
+            // Choose an "aop" interceptor (used for AOP calls).
+            // 创建一个拦截器对象,所有被代理的类都走这个对象,最终返回的bean执行的起始方法
+            Callback aopInterceptor = new DynamicAdvisedInterceptor(this.advised);
+    
+            // Choose a "straight to target" interceptor. (used for calls that are
+            // unadvised but can return this). May be required to expose the proxy.
+            Callback targetInterceptor;
+            if (exposeProxy) {
+                targetInterceptor = isStatic ?
+                        new StaticUnadvisedExposedInterceptor(this.advised.getTargetSource().getTarget()) :
+                        new DynamicUnadvisedExposedInterceptor(this.advised.getTargetSource());
+            }
+            else {
+                targetInterceptor = isStatic ?
+                        new StaticUnadvisedInterceptor(this.advised.getTargetSource().getTarget()) :
+                        new DynamicUnadvisedInterceptor(this.advised.getTargetSource());
+            }
+    
+            // Choose a "direct to target" dispatcher (used for
+            // unadvised calls to static targets that cannot return this).
+            Callback targetDispatcher = isStatic ?
+                    new StaticDispatcher(this.advised.getTargetSource().getTarget()) : new SerializableNoOp();
+    
+            Callback[] mainCallbacks = new Callback[]{
+                aopInterceptor, // for normal advice
+                targetInterceptor, // invoke target without considering advice, if optimized
+                new SerializableNoOp(), // no override for methods mapped to this
+                targetDispatcher, this.advisedDispatcher,
+                new EqualsInterceptor(this.advised),
+                new HashCodeInterceptor(this.advised)
+            };
+    
+            Callback[] callbacks;
+    
+            // If the target is a static one and the advice chain is frozen,
+            // then we can make some optimisations by sending the AOP calls
+            // direct to the target using the fixed chain for that method.
+            if (isStatic && isFrozen) {
+                Method[] methods = rootClass.getMethods();
+                Callback[] fixedCallbacks = new Callback[methods.length];
+                this.fixedInterceptorMap = new HashMap<String, Integer>(methods.length);
+    
+                // TODO: small memory optimisation here (can skip creation for methods with no advice)
+                for (int x = 0; x < methods.length; x++) {
+                    List<Object> chain = this.advised.getInterceptorsAndDynamicInterceptionAdvice(methods[x], rootClass);
+                    fixedCallbacks[x] = new FixedChainStaticTargetInterceptor(
+                            chain, this.advised.getTargetSource().getTarget(), this.advised.getTargetClass());
+                    this.fixedInterceptorMap.put(methods[x].toString(), x);
+                }
+    
+                // Now copy both the callbacks from mainCallbacks
+                // and fixedCallbacks into the callbacks array.
+                callbacks = new Callback[mainCallbacks.length + fixedCallbacks.length];
+                System.arraycopy(mainCallbacks, 0, callbacks, 0, mainCallbacks.length);
+                System.arraycopy(fixedCallbacks, 0, callbacks, mainCallbacks.length, fixedCallbacks.length);
+                this.fixedInterceptorOffset = mainCallbacks.length;
+            }
+            else {
+                callbacks = mainCallbacks;
+            }
+            return callbacks;
+        }
+    
+
+     最终生成了代理对象,将这个对象放入ioc容器当中,当调用这个对象时,ioc会直接取出代理对象,也就是先进入DynamicAdvisedInterceptor的intercept方法。
+    
+
+大概梳理一下事物的流程
+一. 初始化流程
+
+    1.首先开始初始化配置文件
+    
+    2.然后执行到<context:component-scan base-package="com.service"></context:component-scan>这里时,会开始扫描注解
+    
+    3.当循环扫描到ServiceImpl的时候,会扫描每个方法,经过getAdvicesAndAdvisorsForBean这个方法时会判断每个方法是否触发代理的条件, 怎么触发代理条件, 这里以事物为例:
+    <!--
+    这里注册了一个事物管理器,也就是说每个类都会经过这个事物管理器判断,是否有@Transactional方法;
+    需要注意的是,这个驱动相当于新加了一个方法环绕类型的切入点.
+    -->
+        <tx:annotation-driven transaction-manager="transactionManager"
+    proxy-target-class="true"></tx:annotation-driven>   
+    
+      getAdvicesAndAdvisorsForBean如果返回有值时,则表示需要生成代理类
+    
+    因为我们service中已经定义好了@Transactional方法了,所以触发了执行生成代理类的条件.
+    
+    4. 生成代理类时,他主要做了两个步骤: 实现一个责任链的类[DynamicAdvisedInterceptor],然后将这个责任链类和service的实现类做绑定生成一个代理,然后返回这个代理对象到IOC容器中,初始化完成
+    
+
+二. 调用service的过程
+
+    1. 当调用service这个实现类的时候,会从ioc容器里面去查找,找到了这个bean类则直接返回,注意这里的bean是一个代理类
+    2. 直接进入代理类DynamicAdvisedInterceptor的intercept方法里面;
+    3.  开始执行责任链机制,查找与这个类绑定的切入点
+    
+
+    // 这里是直接查找与这个类相关的切入点,然后一个个执行完之后到达最终的service方法
+    List<Object> chain = this.advised.getInterceptorsAndDynamicInterceptionAdvice(method, targetClass);
+    
+
+    4. 需要注意的是这个责任链中有一个TransactionAspectSupport类,这是一个事物的切入点类,这个类中的invokeWithinTransaction方法,它里面详细包含了事物的一系列操作,包括事物开启、提交、回滚等等一系列操作
+    5.  执行切入点后,直接到达目标方法,也就是service层的方法,service层的方法处理完毕,在回到invokeWithinTransaction判断是否报错,没有报错则事物提交,报错则进入到它的try/catch方法中进行回滚,最终执行完成;
+    
+
+最终我们总结上面的问题:
+
+#### Spring的事物是通过哪些原理实现的?
+
+动态代理 以及 切入点配合责任链组成的拦截器机制
+
+#### Spring的事物机制是如何提交和回滚的?
+
+Spring提供了一个事物管理器,这个事物管理器专门扫描所有方法的@Transactional注解,一旦扫描到了,则会为这个方法的类设置代理,这个事物管理器可以理解为一个环绕类型的切入点,配合责任链模式,当方法执行的时候,会被拦截到TransactionAspectSupport的invokeWithinTransaction方法中,这个里面包含了事物的一系列操作。
+
+### 编后语
+
+由于spring里面代码层次划分很细,导致贴出来的代码特别多,可能会影响你们阅读,不过Spring里面的很多东西封装的都是很完善的,几乎全部都是组件化,导致很多方法很深,不过我们只要了解它大概的原理就行了,至少能够在我们遇到问题时能够推断出从哪个步骤进行下手.可能这篇文章代码和图片比较凌乱,最好是大家有spring的一些基本原理基础,比如bean的实例化啊等等,不然有的地方会看不懂,好了就说这么多了… 希望对大家有帮助.. 也非常欢迎大家提意见!!! 谢谢
 {% endraw %}

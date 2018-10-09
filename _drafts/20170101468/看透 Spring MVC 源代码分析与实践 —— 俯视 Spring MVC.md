@@ -3,11 +3,11 @@ layout: post
 title:  "看透 Spring MVC 源代码分析与实践 —— 俯视 Spring MVC"
 title2:  "看透 Spring MVC 源代码分析与实践 —— 俯视 Spring MVC"
 date:   2017-01-01 23:59:28  +0800
-source:  "http://www.jfox.info/%e7%9c%8b%e9%80%8fspringmvc%e6%ba%90%e4%bb%a3%e7%a0%81%e5%88%86%e6%9e%90%e4%b8%8e%e5%ae%9e%e8%b7%b5%e4%bf%af%e8%a7%86springmvc.html"
+source:  "https://www.jfox.info/%e7%9c%8b%e9%80%8fspringmvc%e6%ba%90%e4%bb%a3%e7%a0%81%e5%88%86%e6%9e%90%e4%b8%8e%e5%ae%9e%e8%b7%b5%e4%bf%af%e8%a7%86springmvc.html"
 fileName:  "20170101468"
 lang:  "zh_CN"
 published: true
-permalink: "%e7%9c%8b%e9%80%8fspringmvc%e6%ba%90%e4%bb%a3%e7%a0%81%e5%88%86%e6%9e%90%e4%b8%8e%e5%ae%9e%e8%b7%b5%e4%bf%af%e8%a7%86springmvc.html"
+permalink: "2017/https://www.jfox.info/%e7%9c%8b%e9%80%8fspringmvc%e6%ba%90%e4%bb%a3%e7%a0%81%e5%88%86%e6%9e%90%e4%b8%8e%e5%ae%9e%e8%b7%b5%e4%bf%af%e8%a7%86springmvc.html"
 ---
 {% raw %}
 spring-mvc
@@ -68,7 +68,7 @@ Spring MVC 核心 Servlet 架构图如下：
 ![](/wp-content/uploads/2017/08/1501895044.png)
 spring-mvc1
 
-Java 中常用的 Servlet 我在另外一篇文章写的很清楚了，有兴趣的请看：[通过源码详解 Servlet](http://www.jfox.info/go.php?url=https://link.juejin.im/?target=http%3A%2F%2Fwww.54tianzhisheng.cn%2F2017%2F07%2F09%2Fservlet%2F)，这里我就不再解释了。
+Java 中常用的 Servlet 我在另外一篇文章写的很清楚了，有兴趣的请看：[通过源码详解 Servlet](https://www.jfox.info/go.php?url=https://link.juejin.im/?target=http%3A%2F%2Fwww.54tianzhisheng.cn%2F2017%2F07%2F09%2Fservlet%2F)，这里我就不再解释了。
 
 这里主要讲 Spring 中的 HttpServletBean、FrameworkServlet、DispatcherServlet 这三个类的创建过程。
 
@@ -88,7 +88,7 @@ public interface ApplicationContextAware extends Aware {    //设置运行对象
 
 怎么使用这个这个接口呢？
 
-参考文章：[org.springframework.context.ApplicationContextAware使用理解](http://www.jfox.info/go.php?url=https://link.juejin.im/?target=http%3A%2F%2Fblog.csdn.net%2Fkaiwii%2Farticle%2Fdetails%2F6872642)
+参考文章：[org.springframework.context.ApplicationContextAware使用理解](https://www.jfox.info/go.php?url=https://link.juejin.im/?target=http%3A%2F%2Fblog.csdn.net%2Fkaiwii%2Farticle%2Fdetails%2F6872642)
 
 HttpServletBean
 

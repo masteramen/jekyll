@@ -3,11 +3,11 @@ layout: post
 title:  "使用 JPA 实现乐观锁"
 title2:  "使用 JPA 实现乐观锁"
 date:   2017-01-01 23:59:26  +0800
-source:  "http://www.jfox.info/%e4%bd%bf%e7%94%a8jpa%e5%ae%9e%e7%8e%b0%e4%b9%90%e8%a7%82%e9%94%81.html"
+source:  "https://www.jfox.info/%e4%bd%bf%e7%94%a8jpa%e5%ae%9e%e7%8e%b0%e4%b9%90%e8%a7%82%e9%94%81.html"
 fileName:  "20170101466"
 lang:  "zh_CN"
 published: true
-permalink: "%e4%bd%bf%e7%94%a8jpa%e5%ae%9e%e7%8e%b0%e4%b9%90%e8%a7%82%e9%94%81.html"
+permalink: "2017/https://www.jfox.info/%e4%bd%bf%e7%94%a8jpa%e5%ae%9e%e7%8e%b0%e4%b9%90%e8%a7%82%e9%94%81.html"
 ---
 {% raw %}
 乐观锁的概念就不再赘述了，不了解的朋友请自行百度谷歌之，今天主要说的是在项目中如何使用乐观锁，做成一个小demo。

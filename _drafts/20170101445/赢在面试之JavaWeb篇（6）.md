@@ -3,11 +3,11 @@ layout: post
 title:  "赢在面试之JavaWeb篇（6）"
 title2:  "赢在面试之JavaWeb篇（6）"
 date:   2017-01-01 23:59:05  +0800
-source:  "http://www.jfox.info/%e8%b5%a2%e5%9c%a8%e9%9d%a2%e8%af%95%e4%b9%8bjavaweb%e7%af%876.html"
+source:  "https://www.jfox.info/%e8%b5%a2%e5%9c%a8%e9%9d%a2%e8%af%95%e4%b9%8bjavaweb%e7%af%876.html"
 fileName:  "20170101445"
 lang:  "zh_CN"
 published: true
-permalink: "%e8%b5%a2%e5%9c%a8%e9%9d%a2%e8%af%95%e4%b9%8bjavaweb%e7%af%876.html"
+permalink: "2017/https://www.jfox.info/%e8%b5%a2%e5%9c%a8%e9%9d%a2%e8%af%95%e4%b9%8bjavaweb%e7%af%876.html"
 ---
 {% raw %}
 #### 51、说一说Servlet的生命周期?

@@ -3,11 +3,11 @@ layout: post
 title:  "关于SpringMVC和Struts2的区别"
 title2:  "关于SpringMVC和Struts2的区别"
 date:   2017-01-01 23:59:27  +0800
-source:  "http://www.jfox.info/%e5%85%b3%e4%ba%8espringmvc%e5%92%8cstruts2%e7%9a%84%e5%8c%ba%e5%88%ab.html"
+source:  "https://www.jfox.info/%e5%85%b3%e4%ba%8espringmvc%e5%92%8cstruts2%e7%9a%84%e5%8c%ba%e5%88%ab.html"
 fileName:  "20170101467"
 lang:  "zh_CN"
 published: true
-permalink: "%e5%85%b3%e4%ba%8espringmvc%e5%92%8cstruts2%e7%9a%84%e5%8c%ba%e5%88%ab.html"
+permalink: "2017/https://www.jfox.info/%e5%85%b3%e4%ba%8espringmvc%e5%92%8cstruts2%e7%9a%84%e5%8c%ba%e5%88%ab.html"
 ---
 {% raw %}
 作者[Sinnsei](/u/1d06a26fbffe)2017.08.04 17:59字数 1564

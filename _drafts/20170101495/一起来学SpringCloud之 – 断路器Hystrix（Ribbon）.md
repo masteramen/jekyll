@@ -3,11 +3,11 @@ layout: post
 title:  "一起来学SpringCloud之 – 断路器Hystrix（Ribbon）"
 title2:  "一起来学SpringCloud之 – 断路器Hystrix（Ribbon）"
 date:   2017-01-01 23:59:55  +0800
-source:  "http://www.jfox.info/%e4%b8%80%e8%b5%b7%e6%9d%a5%e5%ad%a6springcloud%e4%b9%8b%e6%96%ad%e8%b7%af%e5%99%a8hystrixribbon.html"
+source:  "https://www.jfox.info/%e4%b8%80%e8%b5%b7%e6%9d%a5%e5%ad%a6springcloud%e4%b9%8b%e6%96%ad%e8%b7%af%e5%99%a8hystrixribbon.html"
 fileName:  "20170101495"
 lang:  "zh_CN"
 published: true
-permalink: "%e4%b8%80%e8%b5%b7%e6%9d%a5%e5%ad%a6springcloud%e4%b9%8b%e6%96%ad%e8%b7%af%e5%99%a8hystrixribbon.html"
+permalink: "2017/https://www.jfox.info/%e4%b8%80%e8%b5%b7%e6%9d%a5%e5%ad%a6springcloud%e4%b9%8b%e6%96%ad%e8%b7%af%e5%99%a8hystrixribbon.html"
 ---
 {% raw %}
 微服务架构中，根据业务划分成若干个服务，各单元应用间通过服务注册与订阅的方式互相依赖，依赖通过远程调用的方式执行，该方式难以避免因网络或自身原因而出现故障或者延迟，从而并不能保证服务的100%可用，此时若有大量的网络涌入，会形成任务累计，导致服务瘫痪，甚至导致服务“雪崩”。
@@ -22,7 +22,7 @@ permalink: "%e4%b8%80%e8%b5%b7%e6%9d%a5%e5%ad%a6springcloud%e4%b9%8b%e6%96%ad%e8
 
 ![](/wp-content/uploads/2017/08/1502353740.png)
 
- 官方文档： [http://cloud.spring.io/spring-cloud-static/Dalston.SR2/#_circuit_breaker_hystrix_clients](http://www.jfox.info/go.php?url=http://cloud.spring.io/spring-cloud-static/Dalston.SR2/#_circuit_breaker_hystrix_clients)
+ 官方文档： [http://cloud.spring.io/spring-cloud-static/Dalston.SR2/#_circuit_breaker_hystrix_clients](https://www.jfox.info/go.php?url=http://cloud.spring.io/spring-cloud-static/Dalston.SR2/#_circuit_breaker_hystrix_clients)
 
 ## – 准备工作 
 
@@ -321,11 +321,11 @@ permalink: "%e4%b8%80%e8%b5%b7%e6%9d%a5%e5%ad%a6springcloud%e4%b9%8b%e6%96%ad%e8
 
 启动：battcn-consumer
 
- 访问： [http://localhost:8500/](http://www.jfox.info/go.php?url=http://localhost:8500/) 显示如下代表服务注册成功 
+ 访问： [http://localhost:8500/](https://www.jfox.info/go.php?url=http://localhost:8500/) 显示如下代表服务注册成功 
 
 ![](/wp-content/uploads/2017/08/1502353741.png)
 
- 访问： [http://localhost:8766/hi](http://www.jfox.info/go.php?url=http://localhost:8766/hi)
+ 访问： [http://localhost:8766/hi](https://www.jfox.info/go.php?url=http://localhost:8766/hi)
 
     My Name's :battcn-provider Email:1837307557@qq.com    #正确情况
     
@@ -364,11 +364,11 @@ permalink: "%e4%b8%80%e8%b5%b7%e6%9d%a5%e5%ad%a6springcloud%e4%b9%8b%e6%96%ad%e8
         <artifactId>spring-cloud-starter-hystrix-dashboard</artifactId>
     </dependency>
 
- 3.访问： [http://localhost:8766/hystrix](http://www.jfox.info/go.php?url=http://localhost:8766/hystrix)
+ 3.访问： [http://localhost:8766/hystrix](https://www.jfox.info/go.php?url=http://localhost:8766/hystrix)
 
 ![](/wp-content/uploads/2017/08/1502353742.png)
 
- 4.访问N次： [http://localhost:8766/hi](http://www.jfox.info/go.php?url=http://localhost:8766/hi)
+ 4.访问N次： [http://localhost:8766/hi](https://www.jfox.info/go.php?url=http://localhost:8766/hi)
 
 ![](/wp-content/uploads/2017/08/1502353743.png)
 
@@ -376,7 +376,7 @@ permalink: "%e4%b8%80%e8%b5%b7%e6%9d%a5%e5%ad%a6springcloud%e4%b9%8b%e6%96%ad%e8
 
 ## – 说点什么 
 
- 本章代码（battcn-provider/consumer）： [https://git.oschina.net/battcn/battcn-cloud/tree/master/battcn-cloud-hystrix-ribbon](http://www.jfox.info/go.php?url=https://git.oschina.net/battcn/battcn-cloud/tree/master/battcn-cloud-hystrix-ribbon)
+ 本章代码（battcn-provider/consumer）： [https://git.oschina.net/battcn/battcn-cloud/tree/master/battcn-cloud-hystrix-ribbon](https://www.jfox.info/go.php?url=https://git.oschina.net/battcn/battcn-cloud/tree/master/battcn-cloud-hystrix-ribbon)
 
 如有问题请及时与我联系
 

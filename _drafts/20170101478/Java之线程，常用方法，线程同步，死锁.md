@@ -3,11 +3,11 @@ layout: post
 title:  "Java之线程，常用方法，线程同步，死锁"
 title2:  "Java之线程，常用方法，线程同步，死锁"
 date:   2017-01-01 23:59:38  +0800
-source:  "http://www.jfox.info/java%e4%b9%8b%e7%ba%bf%e7%a8%8b%e5%b8%b8%e7%94%a8%e6%96%b9%e6%b3%95%e7%ba%bf%e7%a8%8b%e5%90%8c%e6%ad%a5%e6%ad%bb%e9%94%81.html"
+source:  "https://www.jfox.info/java%e4%b9%8b%e7%ba%bf%e7%a8%8b%e5%b8%b8%e7%94%a8%e6%96%b9%e6%b3%95%e7%ba%bf%e7%a8%8b%e5%90%8c%e6%ad%a5%e6%ad%bb%e9%94%81.html"
 fileName:  "20170101478"
 lang:  "zh_CN"
 published: true
-permalink: "java%e4%b9%8b%e7%ba%bf%e7%a8%8b%e5%b8%b8%e7%94%a8%e6%96%b9%e6%b3%95%e7%ba%bf%e7%a8%8b%e5%90%8c%e6%ad%a5%e6%ad%bb%e9%94%81.html"
+permalink: "2017/https://www.jfox.info/java%e4%b9%8b%e7%ba%bf%e7%a8%8b%e5%b8%b8%e7%94%a8%e6%96%b9%e6%b3%95%e7%ba%bf%e7%a8%8b%e5%90%8c%e6%ad%a5%e6%ad%bb%e9%94%81.html"
 ---
 {% raw %}
 1, 线程的概念
