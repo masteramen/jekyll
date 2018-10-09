@@ -3,18 +3,18 @@ layout: post
 title:  "从零开始的Spring Security Oauth2（一）"
 title2:  "从零开始的Spring Security Oauth2（一）"
 date:   2017-01-01 00:00:00  +0800
-source:  "http://www.jfox.info/%e4%bb%8e%e9%9b%b6%e5%bc%80%e5%a7%8b%e7%9a%84springsecurityoauth2%e4%b8%80.html"
+source:  "https://www.jfox.info/%e4%bb%8e%e9%9b%b6%e5%bc%80%e5%a7%8b%e7%9a%84springsecurityoauth2%e4%b8%80.html"
 fileName:  "20170101500"
 lang:  "zh_CN"
 published: true
-permalink: "%e4%bb%8e%e9%9b%b6%e5%bc%80%e5%a7%8b%e7%9a%84springsecurityoauth2%e4%b8%80.html"
+permalink: "https://www.jfox.info/%e4%bb%8e%e9%9b%b6%e5%bc%80%e5%a7%8b%e7%9a%84springsecurityoauth2%e4%b8%80.html"
 ---
 {% raw %}
 今天来聊聊一个接口对接的场景，A厂家有一套HTTP接口需要提供给B厂家使用，由于是外网环境，所以需要有一套安全机制保障，这个时候oauth2就可以作为一个方案。
 
- 关于oauth2，其实是一个规范，本文重点讲解 [spring](http://www.jfox.info/go.php?url=http://lib.csdn.net/base/javaee) 对他进行的实现，如果你还不清楚授权服务器，资源服务器，认证授权等基础概念，可以移步 [理解OAuth 2.0 – 阮一峰](http://www.jfox.info/go.php?url=http://www.ruanyifeng.com/blog/2014/05/oauth_2_0.html) ，这是一篇对于oauth2很好的科普文章。 
+ 关于oauth2，其实是一个规范，本文重点讲解 [spring](https://www.jfox.info/go.php?url=http://lib.csdn.net/base/javaee) 对他进行的实现，如果你还不清楚授权服务器，资源服务器，认证授权等基础概念，可以移步 [理解OAuth 2.0 – 阮一峰](https://www.jfox.info/go.php?url=http://www.ruanyifeng.com/blog/2014/05/oauth_2_0.html) ，这是一篇对于oauth2很好的科普文章。 
 
- 需要对spring security有一定的配置使用经验，用户认证这一块，spring security oauth2建立在spring security的基础之上。第一篇文章主要是讲解使用springboot搭建一个简易的授权，资源服务器，在文末会给出具体代码的github地址。后续文章会进行spring security oauth2的相关源码分析。 [Java](http://www.jfox.info/go.php?url=http://lib.csdn.net/base/java) 中的安全框架如shrio，已经有 [跟我学shiro – 开涛](http://www.jfox.info/go.php?url=http://jinnianshilongnian.iteye.com/blog/2018936) ，非常成体系地，深入浅出地讲解了apache的这个开源安全框架，但是spring security包括oauth2一直没有成体系的文章，学习它们大多依赖于较少的官方文档，理解一下基本的使用配置；通过零散的博客，了解一下他人的使用经验；打断点，分析内部的工作流程；看源码中的接口设计，以及注释，了解设计者的用意。spring的各个框架都运用了很多的设计模式，在学习源码的过程中，也大概了解了一些套路。spring也在必要的地方添加了适当的注释，避免了源码阅读者对于一些细节设计的理解产生偏差，让我更加感叹，spring不仅仅是一个工具框架，更像是一个艺术品。 
+ 需要对spring security有一定的配置使用经验，用户认证这一块，spring security oauth2建立在spring security的基础之上。第一篇文章主要是讲解使用springboot搭建一个简易的授权，资源服务器，在文末会给出具体代码的github地址。后续文章会进行spring security oauth2的相关源码分析。 [Java](https://www.jfox.info/go.php?url=http://lib.csdn.net/base/java) 中的安全框架如shrio，已经有 [跟我学shiro – 开涛](https://www.jfox.info/go.php?url=http://jinnianshilongnian.iteye.com/blog/2018936) ，非常成体系地，深入浅出地讲解了apache的这个开源安全框架，但是spring security包括oauth2一直没有成体系的文章，学习它们大多依赖于较少的官方文档，理解一下基本的使用配置；通过零散的博客，了解一下他人的使用经验；打断点，分析内部的工作流程；看源码中的接口设计，以及注释，了解设计者的用意。spring的各个框架都运用了很多的设计模式，在学习源码的过程中，也大概了解了一些套路。spring也在必要的地方添加了适当的注释，避免了源码阅读者对于一些细节设计的理解产生偏差，让我更加感叹，spring不仅仅是一个工具框架，更像是一个艺术品。 
 
 ## 概述 
 
@@ -88,7 +88,7 @@ oauth2根据使用场景不同，分成了4种模式
 
 由于是两个oauth2的核心配置，我们放到一个配置类中。
 
- 为了方便下载代码直接运行，我这里将客户端信息放到了内存中，生产中可以配置到 [数据库](http://www.jfox.info/go.php?url=http://lib.csdn.net/base/mysql) 中。token的存储一般选择使用 [Redis](http://www.jfox.info/go.php?url=http://lib.csdn.net/base/redis) ，一是性能比较好，二是自动过期的机制，符合token的特性。 
+ 为了方便下载代码直接运行，我这里将客户端信息放到了内存中，生产中可以配置到 [数据库](https://www.jfox.info/go.php?url=http://lib.csdn.net/base/mysql) 中。token的存储一般选择使用 [Redis](https://www.jfox.info/go.php?url=http://lib.csdn.net/base/redis) ，一是性能比较好，二是自动过期的机制，符合token的特性。 
 
     @Configuration
     public class OAuth2ServerConfig{
@@ -323,6 +323,6 @@ client模式：
 ## 示例代码下载 
 
 全部的代码可以在我的github上进行下载，项目使用springboot+maven构建：
-[https://github.com/lexburner/oauth2-demo](http://www.jfox.info/go.php?url=https://github.com/lexburner/oauth2-demo)
+[https://github.com/lexburner/oauth2-demo](https://www.jfox.info/go.php?url=https://github.com/lexburner/oauth2-demo)
  如果您有任何想法或问题需要讨论或交流，可进入交流区发表您的想法或问题。
 {% endraw %}
