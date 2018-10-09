@@ -3,11 +3,11 @@ layout: post
 title:  "谈谈Java线程状态 » java面试题"
 title2:  "谈谈Java线程状态 » java面试题"
 date:   2017-01-01 23:58:31  +0800
-source:  "http://www.jfox.info/%e8%b0%88%e8%b0%88java%e7%ba%bf%e7%a8%8b%e7%8a%b6%e6%80%81.html"
+source:  "https://www.jfox.info/%e8%b0%88%e8%b0%88java%e7%ba%bf%e7%a8%8b%e7%8a%b6%e6%80%81.html"
 fileName:  "20170101411"
 lang:  "zh_CN"
 published: true
-permalink: "%e8%b0%88%e8%b0%88java%e7%ba%bf%e7%a8%8b%e7%8a%b6%e6%80%81.html"
+permalink: "2017/https://www.jfox.info/%e8%b0%88%e8%b0%88java%e7%ba%bf%e7%a8%8b%e7%8a%b6%e6%80%81.html"
 ---
 {% raw %}
 作者[凌风郎少](/u/1d96ba4c1912)2017.07.29 09:07*字数 1329

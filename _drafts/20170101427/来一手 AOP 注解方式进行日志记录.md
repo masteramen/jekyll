@@ -3,11 +3,11 @@ layout: post
 title:  "来一手 AOP 注解方式进行日志记录"
 title2:  "来一手 AOP 注解方式进行日志记录"
 date:   2017-01-01 23:58:47  +0800
-source:  "http://www.jfox.info/%e6%9d%a5%e4%b8%80%e6%89%8baop%e6%b3%a8%e8%a7%a3%e6%96%b9%e5%bc%8f%e8%bf%9b%e8%a1%8c%e6%97%a5%e5%bf%97%e8%ae%b0%e5%bd%95.html"
+source:  "https://www.jfox.info/%e6%9d%a5%e4%b8%80%e6%89%8baop%e6%b3%a8%e8%a7%a3%e6%96%b9%e5%bc%8f%e8%bf%9b%e8%a1%8c%e6%97%a5%e5%bf%97%e8%ae%b0%e5%bd%95.html"
 fileName:  "20170101427"
 lang:  "zh_CN"
 published: true
-permalink: "%e6%9d%a5%e4%b8%80%e6%89%8baop%e6%b3%a8%e8%a7%a3%e6%96%b9%e5%bc%8f%e8%bf%9b%e8%a1%8c%e6%97%a5%e5%bf%97%e8%ae%b0%e5%bd%95.html"
+permalink: "2017/https://www.jfox.info/%e6%9d%a5%e4%b8%80%e6%89%8baop%e6%b3%a8%e8%a7%a3%e6%96%b9%e5%bc%8f%e8%bf%9b%e8%a1%8c%e6%97%a5%e5%bf%97%e8%ae%b0%e5%bd%95.html"
 ---
 {% raw %}
 系统日志对于定位/排查问题的重要性不言而喻，相信许多开发和运维都深有体会。
@@ -69,7 +69,7 @@ permalink: "%e6%9d%a5%e4%b8%80%e6%89%8baop%e6%b3%a8%e8%a7%a3%e6%96%b9%e5%bc%8f%e
 
    切入点的姿势有很多，不仅是正则同样也支持组合表达式，强大的表达式能让你精准的切入到任何你想要的地方。
 
-   更多详情：[http://blog.csdn.net/zhengchao1991/article/details/53391244](http://www.jfox.info/go.php?url=http://blog.csdn.net/zhengchao1991/article/details/53391244)
+   更多详情：[http://blog.csdn.net/zhengchao1991/article/details/53391244](https://www.jfox.info/go.php?url=http://blog.csdn.net/zhengchao1991/article/details/53391244)
 
         @Before("operationLogAspect()")
         publicvoid doBefore(JoinPoint joinPoint) {
@@ -257,5 +257,28 @@ permalink: "%e6%9d%a5%e4%b8%80%e6%89%8baop%e6%b3%a8%e8%a7%a3%e6%96%b9%e5%bc%8f%e
     
         privatevoid gePointMsg(JoinPoint joinPoint) {
             logger.info("切点所在位置:{}", joinPoint.toString());
-            logger.info("切点所在位置
+            logger.info("切点所在位置的简短信息:{}", joinPoint.toShortString());
+            logger.info("切点所在位置的全部信息:{}", joinPoint.toLongString());
+            logger.info("切点AOP代理对象:{}", joinPoint.getThis());
+            logger.info("切点目标对象:{}", joinPoint.getTarget());
+            logger.info("切点被通知方法参数列表:{}", joinPoint.getArgs());
+            logger.info("切点签名:{}", joinPoint.getSignature());
+            logger.info("切点方法所在类文件中位置:{}", joinPoint.getSourceLocation());
+            logger.info("切点类型:{}", joinPoint.getKind());
+            logger.info("切点静态部分:{}", joinPoint.getStaticPart());
+        }
+    
+        private HttpServletRequest getHttpReq() {
+            RequestAttributes requestAttributes = RequestContextHolder.getRequestAttributes();
+            ServletRequestAttributes servletRequestAttributes = (ServletRequestAttributes) requestAttributes;
+            return servletRequestAttributes.getRequest();
+        }
+    }
+
+View Code
+   上述三步骤之后，你就可以在想记录日志的方法上面添加注解来进行记录操作日志，像下面这样。
+
+![](/wp-content/uploads/2017/07/1501508455.png)
+
+    源码托管地址：[https://git.oschina.net/LanboEx/spmvc-mybatis.git](https://www.jfox.info/go.php?url=https://git.oschina.net/LanboEx/spmvc-mybatis.git)  有这方面需求和兴趣的可以检出到本地跑一跑。
 {% endraw %}

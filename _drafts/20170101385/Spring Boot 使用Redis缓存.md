@@ -3,11 +3,11 @@ layout: post
 title:  "Spring Boot 使用Redis缓存"
 title2:  "Spring Boot 使用Redis缓存"
 date:   2017-01-01 23:58:05  +0800
-source:  "http://www.jfox.info/springboot%e4%bd%bf%e7%94%a8redis%e7%bc%93%e5%ad%98.html"
+source:  "https://www.jfox.info/springboot%e4%bd%bf%e7%94%a8redis%e7%bc%93%e5%ad%98.html"
 fileName:  "20170101385"
 lang:  "zh_CN"
 published: true
-permalink: "springboot%e4%bd%bf%e7%94%a8redis%e7%bc%93%e5%ad%98.html"
+permalink: "2017/https://www.jfox.info/springboot%e4%bd%bf%e7%94%a8redis%e7%bc%93%e5%ad%98.html"
 ---
 {% raw %}
 Spring 提供了很多缓存管理器，例如：
@@ -106,7 +106,7 @@ Spring提供了如下注解来声明缓存规则：
 - If only one param is given, return that instance.
 - If more the one param is given, return a SimpleKey containing all parameters.
 
-从上面的生成策略可以知道，上面的缓存testallCache使用的key是整形的userId参数，但是我们之前在redisTemplate里设置了template.setKeySerializer(new StringRedisSerializer());，所以导致类型转换错误。虽然也可以使用SpEL表达式生成Key（详见[这里](http://www.jfox.info/go.php?url=http://docs.spring.io/spring/docs/current/spring-framework-reference/html/cache.html#cache-spel-context)），但是返回结果还是需要是string类型（比如#root.methodName就是，#root.method就不是），更通用的办法是重写keyGenerator定制Key生成策略。
+从上面的生成策略可以知道，上面的缓存testallCache使用的key是整形的userId参数，但是我们之前在redisTemplate里设置了template.setKeySerializer(new StringRedisSerializer());，所以导致类型转换错误。虽然也可以使用SpEL表达式生成Key（详见[这里](https://www.jfox.info/go.php?url=http://docs.spring.io/spring/docs/current/spring-framework-reference/html/cache.html#cache-spel-context)），但是返回结果还是需要是string类型（比如#root.methodName就是，#root.method就不是），更通用的办法是重写keyGenerator定制Key生成策略。
 
 1. 
 修改RedisConfig类，重写keyGenerator方法：

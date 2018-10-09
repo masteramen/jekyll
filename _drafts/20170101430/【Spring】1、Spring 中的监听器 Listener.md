@@ -3,11 +3,11 @@ layout: post
 title:  "【Spring】1、Spring 中的监听器 Listener"
 title2:  "【Spring】1、Spring 中的监听器 Listener"
 date:   2017-01-01 23:58:50  +0800
-source:  "http://www.jfox.info/spring1spring%e4%b8%ad%e7%9a%84%e7%9b%91%e5%90%ac%e5%99%a8listener.html"
+source:  "https://www.jfox.info/spring1spring%e4%b8%ad%e7%9a%84%e7%9b%91%e5%90%ac%e5%99%a8listener.html"
 fileName:  "20170101430"
 lang:  "zh_CN"
 published: true
-permalink: "spring1spring%e4%b8%ad%e7%9a%84%e7%9b%91%e5%90%ac%e5%99%a8listener.html"
+permalink: "2017/https://www.jfox.info/spring1spring%e4%b8%ad%e7%9a%84%e7%9b%91%e5%90%ac%e5%99%a8listener.html"
 ---
 {% raw %}
 1、EventListener
@@ -235,7 +235,7 @@ HttpSessionListener监听 HttpSession的操作。当创建一个Session时，激
 
 有的listener可用于统计网站在线人数及访问量。 如下：
 
-服务器启动时（实现ServletContextListener监听器contextInitialized方法），读取[数据库](http://www.jfox.info/go.php?url=http://lib.csdn.net/base/mysql)，并将其用一个计数变量保存在application范围内
+服务器启动时（实现ServletContextListener监听器contextInitialized方法），读取[数据库](https://www.jfox.info/go.php?url=http://lib.csdn.net/base/mysql)，并将其用一个计数变量保存在application范围内
 
 session创建时（实现HttpSessionListener监听器sessionCreated方法），读取计数变量加1并重新保存
 

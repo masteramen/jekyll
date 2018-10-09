@@ -3,11 +3,11 @@ layout: post
 title:  "【jOOQ中文】1. 七个步骤快速入门"
 title2:  "【jOOQ中文】1. 七个步骤快速入门"
 date:   2017-01-01 23:58:41  +0800
-source:  "http://www.jfox.info/jooq%e4%b8%ad%e6%96%871%e4%b8%83%e4%b8%aa%e6%ad%a5%e9%aa%a4%e5%bf%ab%e9%80%9f%e5%85%a5%e9%97%a8.html"
+source:  "https://www.jfox.info/jooq%e4%b8%ad%e6%96%871%e4%b8%83%e4%b8%aa%e6%ad%a5%e9%aa%a4%e5%bf%ab%e9%80%9f%e5%85%a5%e9%97%a8.html"
 fileName:  "20170101421"
 lang:  "zh_CN"
 published: true
-permalink: "jooq%e4%b8%ad%e6%96%871%e4%b8%83%e4%b8%aa%e6%ad%a5%e9%aa%a4%e5%bf%ab%e9%80%9f%e5%85%a5%e9%97%a8.html"
+permalink: "2017/https://www.jfox.info/jooq%e4%b8%ad%e6%96%871%e4%b8%83%e4%b8%aa%e6%ad%a5%e9%aa%a4%e5%bf%ab%e9%80%9f%e5%85%a5%e9%97%a8.html"
 ---
 {% raw %}
 jOOQ: The easiest way to write SQL in Java
@@ -47,7 +47,7 @@ jOOQ是一个基于Java编写SQL的工具包，具有：简单、轻量、函数
 ## 一、准备
 
 如果还没有下载，请下载jOOQ：
-[http://www.jooq.org/download](http://www.jfox.info/go.php?url=http://www.jooq.org/download)
+[http://www.jooq.org/download](https://www.jfox.info/go.php?url=http://www.jooq.org/download)
 或者，可是使用Maven：
 
     <dependency>
@@ -87,7 +87,7 @@ jOOQ是一个基于Java编写SQL的工具包，具有：简单、轻量、函数
 
 在这一步中，我们将使用jOOQ的命令行工具生成映射到`author`表的Java类。 
 有关jOOQ代码生成器的更详细信息，请参见：
-[jOOQ manual pages about setting up the code generator](http://www.jfox.info/go.php?url=http://www.jooq.org/doc/3.9/manual-single-page/#code-generation)
+[jOOQ manual pages about setting up the code generator](https://www.jfox.info/go.php?url=http://www.jooq.org/doc/3.9/manual-single-page/#code-generation)
 代码生成的最简单的方法是将`jOOQ的3个jar`文件和`MySQL Connector jar`文件复制到一个临时目录（本示例中目录是`test-generated`）， 然后创建一个如下所示的`library.xml`*（名字随意修改）*：
 
     <?xml version="1.0" encoding="UTF-8" standalone="yes"?>

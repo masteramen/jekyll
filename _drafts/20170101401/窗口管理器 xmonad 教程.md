@@ -3,11 +3,11 @@ layout: post
 title:  "窗口管理器 xmonad 教程"
 title2:  "窗口管理器 xmonad 教程"
 date:   2017-01-01 23:58:21  +0800
-source:  "http://www.jfox.info/%e7%aa%97%e5%8f%a3%e7%ae%a1%e7%90%86%e5%99%a8xmonad%e6%95%99%e7%a8%8b.html"
+source:  "https://www.jfox.info/%e7%aa%97%e5%8f%a3%e7%ae%a1%e7%90%86%e5%99%a8xmonad%e6%95%99%e7%a8%8b.html"
 fileName:  "20170101401"
 lang:  "zh_CN"
 published: true
-permalink: "%e7%aa%97%e5%8f%a3%e7%ae%a1%e7%90%86%e5%99%a8xmonad%e6%95%99%e7%a8%8b.html"
+permalink: "2017/https://www.jfox.info/%e7%aa%97%e5%8f%a3%e7%ae%a1%e7%90%86%e5%99%a8xmonad%e6%95%99%e7%a8%8b.html"
 ---
 {% raw %}
 开发者最需要的，就是一个顺手的开发环境。 
@@ -16,7 +16,7 @@ permalink: "%e7%aa%97%e5%8f%a3%e7%ae%a1%e7%90%86%e5%99%a8xmonad%e6%95%99%e7%a8%8
 
  每个人的偏好不一样，我的开发环境是 Fish Shell + Xfce + xmonad + Vim，已经用了好多年，非常满意。 
 
- 三个月前，我介绍了 [ Fish Shell ](http://www.jfox.info/go.php?url=http://ju.outofmemory.cn/entry/312911) ，今天就来介绍 [ xmonad ](http://www.jfox.info/go.php?url=http://xmonad.org/) 。根据本文，读者可以从零开始配置并使用 xmonad。 
+ 三个月前，我介绍了 [ Fish Shell ](https://www.jfox.info/go.php?url=http://ju.outofmemory.cn/entry/312911) ，今天就来介绍 [ xmonad ](https://www.jfox.info/go.php?url=http://xmonad.org/) 。根据本文，读者可以从零开始配置并使用 xmonad。 
 
 ![](/wp-content/uploads/2017/07/1501315235.png)
 
@@ -38,11 +38,11 @@ permalink: "%e7%aa%97%e5%8f%a3%e7%ae%a1%e7%90%86%e5%99%a8xmonad%e6%95%99%e7%a8%8
 
  桌面环境通常很重，窗口管理器就很轻，不仅体积小，资源占用也少，用户可以配置各种细节，释放出系统的最大性能。 
 
- Linux 系统允许用户更换窗口管理器，有 [ 很多种 ](http://www.jfox.info/go.php?url=https://www.slant.co/topics/390/~best-window-managers-for-linux) 可以选择。xmonad 一直是最受欢迎的前三名，它使用 Haskell 语言编写，是世界上使用人数最多的 Haskell 软件。它的特点就是极简化，性能高。 
+ Linux 系统允许用户更换窗口管理器，有 [ 很多种 ](https://www.jfox.info/go.php?url=https://www.slant.co/topics/390/~best-window-managers-for-linux) 可以选择。xmonad 一直是最受欢迎的前三名，它使用 Haskell 语言编写，是世界上使用人数最多的 Haskell 软件。它的特点就是极简化，性能高。 
 
 ##  二、安装 
 
- xmonad 的官网提供 [ 二进制包 ](http://www.jfox.info/go.php?url=http://xmonad.org/download.html) ，各个发行版都有。如果想自己编译，也可以下载源码。 
+ xmonad 的官网提供 [ 二进制包 ](https://www.jfox.info/go.php?url=http://xmonad.org/download.html) ，各个发行版都有。如果想自己编译，也可以下载源码。 
 
  我的发行版是 Debian，安装就是一行命令。 
 
@@ -168,7 +168,7 @@ permalink: "%e7%aa%97%e5%8f%a3%e7%ae%a1%e7%90%86%e5%99%a8xmonad%e6%95%99%e7%a8%8
     $ xrandr -q
     
 
- 具体的配置教程可以看 [ 这里 ](http://www.jfox.info/go.php?url=https://wiki.archlinux.org/index.php/xrandr) 。 
+ 具体的配置教程可以看 [ 这里 ](https://www.jfox.info/go.php?url=https://wiki.archlinux.org/index.php/xrandr) 。 
 
  使用多显示器时，每个显示器会分配到一个工作区。默认情况下，1号工作区显示在主显示器，2号工作区显示在第二个显示器。如果要将4号工作区显示在当前显示器，那么按下 ` mod + 4 ` ，4号工作就会与当前屏幕中的工作区互换位置。 
 
@@ -178,7 +178,7 @@ permalink: "%e7%aa%97%e5%8f%a3%e7%ae%a1%e7%90%86%e5%99%a8xmonad%e6%95%99%e7%a8%8
 
 ##  六、配置文件 
 
- xmonad 的配置文件是 ` ～/.xmonad/xmonad.hs ` 。该文件需要用户自己新建， [ 这里 ](http://www.jfox.info/go.php?url=https://gist.github.com/ruanyf/65893d5d5916bb2ffefd8ea69ff869f7) 是一个简单的范例，详细的解释可以看 [ 官网 ](http://www.jfox.info/go.php?url=https://wiki.haskell.org/Xmonad/Config_archive/John_Goerzen's_Configuration) 。 
+ xmonad 的配置文件是 ` ～/.xmonad/xmonad.hs ` 。该文件需要用户自己新建， [ 这里 ](https://www.jfox.info/go.php?url=https://gist.github.com/ruanyf/65893d5d5916bb2ffefd8ea69ff869f7) 是一个简单的范例，详细的解释可以看 [ 官网 ](https://www.jfox.info/go.php?url=https://wiki.haskell.org/Xmonad/Config_archive/John_Goerzen's_Configuration) 。 
 
  这个文件里面， ` modMask ` 决定了 ` mod ` 到底是哪一个键。 
 
@@ -198,7 +198,7 @@ permalink: "%e7%aa%97%e5%8f%a3%e7%ae%a1%e7%90%86%e5%99%a8xmonad%e6%95%99%e7%a8%8
 
  （图片说明：顶部状态栏就是 xmobar。） 
 
- 它的配置文件是 ` ~/.xmobarrc ` （教程 [ 1 ](http://www.jfox.info/go.php?url=https://wiki.archlinux.org/index.php/Xmobar) ， [ 2 ](http://www.jfox.info/go.php?url=http://projects.haskell.org/xmobar/) ， [ 3 ](http://www.jfox.info/go.php?url=http://beginners-guide-to-xmonad.readthedocs.io/configure_xmobar.html) ）。 [ 这里 ](http://www.jfox.info/go.php?url=https://gist.github.com/ruanyf/9d234b57ad1894d559abe57449fec65c) 是一个最简单配置， [ 这里 ](http://www.jfox.info/go.php?url=https://gist.github.com/ruanyf/a640a98d41383387d3a6401796f54710) 是我的笔记本电脑使用的配置。 
+ 它的配置文件是 ` ~/.xmobarrc ` （教程 [ 1 ](https://www.jfox.info/go.php?url=https://wiki.archlinux.org/index.php/Xmobar) ， [ 2 ](https://www.jfox.info/go.php?url=http://projects.haskell.org/xmobar/) ， [ 3 ](https://www.jfox.info/go.php?url=http://beginners-guide-to-xmonad.readthedocs.io/configure_xmobar.html) ）。 [ 这里 ](https://www.jfox.info/go.php?url=https://gist.github.com/ruanyf/9d234b57ad1894d559abe57449fec65c) 是一个最简单配置， [ 这里 ](https://www.jfox.info/go.php?url=https://gist.github.com/ruanyf/a640a98d41383387d3a6401796f54710) 是我的笔记本电脑使用的配置。 
 
 ##  八、dmenu 
 

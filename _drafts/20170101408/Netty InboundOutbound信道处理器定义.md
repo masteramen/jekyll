@@ -3,16 +3,16 @@ layout: post
 title:  "Netty Inbound/Outbound信道处理器定义"
 title2:  "Netty InboundOutbound信道处理器定义"
 date:   2017-01-01 23:58:28  +0800
-source:  "http://www.jfox.info/nettyinboundoutbound%e4%bf%a1%e9%81%93%e5%a4%84%e7%90%86%e5%99%a8%e5%ae%9a%e4%b9%89.html"
+source:  "https://www.jfox.info/nettyinboundoutbound%e4%bf%a1%e9%81%93%e5%a4%84%e7%90%86%e5%99%a8%e5%ae%9a%e4%b9%89.html"
 fileName:  "20170101408"
 lang:  "zh_CN"
 published: true
-permalink: "nettyinboundoutbound%e4%bf%a1%e9%81%93%e5%a4%84%e7%90%86%e5%99%a8%e5%ae%9a%e4%b9%89.html"
+permalink: "2017/https://www.jfox.info/nettyinboundoutbound%e4%bf%a1%e9%81%93%e5%a4%84%e7%90%86%e5%99%a8%e5%ae%9a%e4%b9%89.html"
 ---
 {% raw %}
 Netty 通道处理器ChannelHandler和适配器定义ChannelHandlerAdapter： 
 
-[http://donald-draper.iteye.com/blog/2386891](http://www.jfox.info/go.php?url=http://donald-draper.iteye.com/blog/2386891)**引言：**
+[http://donald-draper.iteye.com/blog/2386891](https://www.jfox.info/go.php?url=http://donald-draper.iteye.com/blog/2386891)**引言：**
 前面一篇文章我们看了通道处理器及适配器的定义，先来回顾一下： 
 
     通道处理器ChannelHandler，主要有两个事件方法分别为handlerAdded和handlerRemoved，handlerAdded在通道处理器添加到实际上下文后调用，通道处理器准备处理IO事件；handlerRemoved在通道处理器从实际上下文中移除后调用，通道处理器不再处理IO事件。 

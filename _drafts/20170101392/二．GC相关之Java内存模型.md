@@ -3,11 +3,11 @@ layout: post
 title:  "二．GC相关之Java内存模型"
 title2:  "二．GC相关之Java内存模型"
 date:   2017-01-01 23:58:12  +0800
-source:  "http://www.jfox.info/%e4%ba%8cgc%e7%9b%b8%e5%85%b3%e4%b9%8bjava%e5%86%85%e5%ad%98%e6%a8%a1%e5%9e%8b.html"
+source:  "https://www.jfox.info/%e4%ba%8cgc%e7%9b%b8%e5%85%b3%e4%b9%8bjava%e5%86%85%e5%ad%98%e6%a8%a1%e5%9e%8b.html"
 fileName:  "20170101392"
 lang:  "zh_CN"
 published: true
-permalink: "%e4%ba%8cgc%e7%9b%b8%e5%85%b3%e4%b9%8bjava%e5%86%85%e5%ad%98%e6%a8%a1%e5%9e%8b.html"
+permalink: "2017/https://www.jfox.info/%e4%ba%8cgc%e7%9b%b8%e5%85%b3%e4%b9%8bjava%e5%86%85%e5%ad%98%e6%a8%a1%e5%9e%8b.html"
 ---
 {% raw %}
 根据上节描述的问题，我们知道其最终原因是GC导致的。本节我们就先详细探讨下与GC息息相关的Java内存模型。

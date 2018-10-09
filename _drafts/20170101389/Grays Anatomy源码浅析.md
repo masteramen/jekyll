@@ -3,11 +3,11 @@ layout: post
 title:  "Grays Anatomy源码浅析"
 title2:  "Grays Anatomy源码浅析"
 date:   2017-01-01 23:58:09  +0800
-source:  "http://www.jfox.info/graysanatomy%e6%ba%90%e7%a0%81%e6%b5%85%e6%9e%90.html"
+source:  "https://www.jfox.info/graysanatomy%e6%ba%90%e7%a0%81%e6%b5%85%e6%9e%90.html"
 fileName:  "20170101389"
 lang:  "zh_CN"
 published: true
-permalink: "graysanatomy%e6%ba%90%e7%a0%81%e6%b5%85%e6%9e%90.html"
+permalink: "2017/https://www.jfox.info/graysanatomy%e6%ba%90%e7%a0%81%e6%b5%85%e6%9e%90.html"
 ---
 {% raw %}
 标签（空格分隔）：JAVA JVM 问题排查

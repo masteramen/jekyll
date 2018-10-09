@@ -3,15 +3,15 @@ layout: post
 title:  "java开发系统内核：防范缓冲区溢出和强杀死循环程序"
 title2:  "java开发系统内核：防范缓冲区溢出和强杀死循环程序"
 date:   2017-01-01 23:58:33  +0800
-source:  "http://www.jfox.info/java%e5%bc%80%e5%8f%91%e7%b3%bb%e7%bb%9f%e5%86%85%e6%a0%b8%e9%98%b2%e8%8c%83%e7%bc%93%e5%86%b2%e5%8c%ba%e6%ba%a2%e5%87%ba%e5%92%8c%e5%bc%ba%e6%9d%80%e6%ad%bb%e5%be%aa%e7%8e%af%e7%a8%8b%e5%ba%8f.html"
+source:  "https://www.jfox.info/java%e5%bc%80%e5%8f%91%e7%b3%bb%e7%bb%9f%e5%86%85%e6%a0%b8%e9%98%b2%e8%8c%83%e7%bc%93%e5%86%b2%e5%8c%ba%e6%ba%a2%e5%87%ba%e5%92%8c%e5%bc%ba%e6%9d%80%e6%ad%bb%e5%be%aa%e7%8e%af%e7%a8%8b%e5%ba%8f.html"
 fileName:  "20170101413"
 lang:  "zh_CN"
 published: true
-permalink: "java%e5%bc%80%e5%8f%91%e7%b3%bb%e7%bb%9f%e5%86%85%e6%a0%b8%e9%98%b2%e8%8c%83%e7%bc%93%e5%86%b2%e5%8c%ba%e6%ba%a2%e5%87%ba%e5%92%8c%e5%bc%ba%e6%9d%80%e6%ad%bb%e5%be%aa%e7%8e%af%e7%a8%8b%e5%ba%8f.html"
+permalink: "2017/https://www.jfox.info/java%e5%bc%80%e5%8f%91%e7%b3%bb%e7%bb%9f%e5%86%85%e6%a0%b8%e9%98%b2%e8%8c%83%e7%bc%93%e5%86%b2%e5%8c%ba%e6%ba%a2%e5%87%ba%e5%92%8c%e5%bc%ba%e6%9d%80%e6%ad%bb%e5%be%aa%e7%8e%af%e7%a8%8b%e5%ba%8f.html"
 ---
 {% raw %}
 作者[望月从良](/u/a3f323caf646)2017.07.29 16:54字数 2477
-[更详细的讲解和代码调试演示过程，请查看视频，当前点击链接](http://www.jfox.info/go.php?url=http://study.163.com/provider-search?keyword=Coding%E8%BF%AA%E6%96%AF%E5%B0%BC)
+[更详细的讲解和代码调试演示过程，请查看视频，当前点击链接](https://www.jfox.info/go.php?url=http://study.163.com/provider-search?keyword=Coding%E8%BF%AA%E6%96%AF%E5%B0%BC)
 
 很多系统或程序之所以被破解被攻击，很大程度上是攻击者利用缓冲区溢出导致的漏洞，例如以下代码：
 

@@ -3,11 +3,11 @@ layout: post
 title:  "赢在面试之Java集合框架篇（3）"
 title2:  "赢在面试之Java集合框架篇（3）"
 date:   2017-01-01 23:58:44  +0800
-source:  "http://www.jfox.info/%e8%b5%a2%e5%9c%a8%e9%9d%a2%e8%af%95%e4%b9%8bjava%e9%9b%86%e5%90%88%e6%a1%86%e6%9e%b6%e7%af%873.html"
+source:  "https://www.jfox.info/%e8%b5%a2%e5%9c%a8%e9%9d%a2%e8%af%95%e4%b9%8bjava%e9%9b%86%e5%90%88%e6%a1%86%e6%9e%b6%e7%af%873.html"
 fileName:  "20170101424"
 lang:  "zh_CN"
 published: true
-permalink: "%e8%b5%a2%e5%9c%a8%e9%9d%a2%e8%af%95%e4%b9%8bjava%e9%9b%86%e5%90%88%e6%a1%86%e6%9e%b6%e7%af%873.html"
+permalink: "2017/https://www.jfox.info/%e8%b5%a2%e5%9c%a8%e9%9d%a2%e8%af%95%e4%b9%8bjava%e9%9b%86%e5%90%88%e6%a1%86%e6%9e%b6%e7%af%873.html"
 ---
 {% raw %}
 #### 21、ArrayList和Vector的区别

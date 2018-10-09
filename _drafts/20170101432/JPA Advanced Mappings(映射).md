@@ -3,18 +3,18 @@ layout: post
 title:  "JPA Advanced Mappings(映射)"
 title2:  "JPA Advanced Mappings(映射)"
 date:   2017-01-01 23:58:52  +0800
-source:  "http://www.jfox.info/jpaadvancedmappings%e6%98%a0%e5%b0%84.html"
+source:  "https://www.jfox.info/jpaadvancedmappings%e6%98%a0%e5%b0%84.html"
 fileName:  "20170101432"
 lang:  "zh_CN"
 published: true
-permalink: "jpaadvancedmappings%e6%98%a0%e5%b0%84.html"
+permalink: "2017/https://www.jfox.info/jpaadvancedmappings%e6%98%a0%e5%b0%84.html"
 ---
 {% raw %}
 JPA是一个使用java规范发布的库。因此，它支持所有面向对象的实体持久性概念。
 
 ![](/wp-content/uploads/2017/07/1501508566.png)
 
-原文链接：[http://blogxinxiucan.sh1.newtouch.com/2017/07/30/JPA-Advanced-Mappings-映射/](http://www.jfox.info/go.php?url=http://blogxinxiucan.sh1.newtouch.com/2017/07/30/JPA-Advanced-Mappings-%E6%98%A0%E5%B0%84/)
+原文链接：[http://blogxinxiucan.sh1.newtouch.com/2017/07/30/JPA-Advanced-Mappings-映射/](https://www.jfox.info/go.php?url=http://blogxinxiucan.sh1.newtouch.com/2017/07/30/JPA-Advanced-Mappings-%E6%98%A0%E5%B0%84/)
 
 ### 继承策略
 

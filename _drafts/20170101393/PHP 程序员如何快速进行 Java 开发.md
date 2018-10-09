@@ -3,11 +3,11 @@ layout: post
 title:  "PHP 程序员如何快速进行 Java 开发"
 title2:  "PHP 程序员如何快速进行 Java 开发"
 date:   2017-01-01 23:58:13  +0800
-source:  "http://www.jfox.info/php%e7%a8%8b%e5%ba%8f%e5%91%98%e5%a6%82%e4%bd%95%e5%bf%ab%e9%80%9f%e8%bf%9b%e8%a1%8cjava%e5%bc%80%e5%8f%91.html"
+source:  "https://www.jfox.info/php%e7%a8%8b%e5%ba%8f%e5%91%98%e5%a6%82%e4%bd%95%e5%bf%ab%e9%80%9f%e8%bf%9b%e8%a1%8cjava%e5%bc%80%e5%8f%91.html"
 fileName:  "20170101393"
 lang:  "zh_CN"
 published: true
-permalink: "php%e7%a8%8b%e5%ba%8f%e5%91%98%e5%a6%82%e4%bd%95%e5%bf%ab%e9%80%9f%e8%bf%9b%e8%a1%8cjava%e5%bc%80%e5%8f%91.html"
+permalink: "2017/https://www.jfox.info/php%e7%a8%8b%e5%ba%8f%e5%91%98%e5%a6%82%e4%bd%95%e5%bf%ab%e9%80%9f%e8%bf%9b%e8%a1%8cjava%e5%bc%80%e5%8f%91.html"
 ---
 {% raw %}
 ## 入门不要拿着放大镜去学
@@ -83,9 +83,9 @@ HashMap 以哈希表数据结构实现，查找对象时通过哈希函数计算
 
 **这不就是我们的 PHP 里面常用的关联数组么？**
 
-[http://www.cnblogs.com/ITtang…](http://www.jfox.info/go.php?url=http://www.cnblogs.com/ITtangtang/p/3948786.html)
-[http://www.jianshu.com/p/b54f…](http://www.jfox.info/go.php?url=http://www.jianshu.com/p/b54f1df33f84)
-[http://www.cnblogs.com/xiaoxi…](http://www.jfox.info/go.php?url=http://www.cnblogs.com/xiaoxi/p/6089984.html)
+[http://www.cnblogs.com/ITtang…](https://www.jfox.info/go.php?url=http://www.cnblogs.com/ITtangtang/p/3948786.html)
+[http://www.jianshu.com/p/b54f…](https://www.jfox.info/go.php?url=http://www.jianshu.com/p/b54f1df33f84)
+[http://www.cnblogs.com/xiaoxi…](https://www.jfox.info/go.php?url=http://www.cnblogs.com/xiaoxi/p/6089984.html)
 
 ### 初识 maven
 
@@ -142,7 +142,7 @@ Maven的基本原理很简单，采用远程仓库和本地仓库以及一个核
 
     https://github.com/zhoumengkang/netty-http-demo/tree/web-server-init
 
-当我们运行`api.mengkang.net.netty.HttpServer.main`方法，服务器就跑起来了，当在浏览器里访问 [http://localhost:9009/](http://www.jfox.info/go.php?url=http://localhost:9009/) 就会返回`Hello World`。
+当我们运行`api.mengkang.net.netty.HttpServer.main`方法，服务器就跑起来了，当在浏览器里访问 [http://localhost:9009/](https://www.jfox.info/go.php?url=http://localhost:9009/) 就会返回`Hello World`。
 
 这是第一步，netty 这里就充当了一个 web server 的角色。而我们就可以直接在 netty 提供的接口的基础上做编程，而不需要想 nginx + php-fpm 还需要一次反向代理，性能高了许多。（swoole 的方式就很像 netty 了）。
 
@@ -158,5 +158,5 @@ Maven的基本原理很简单，采用远程仓库和本地仓库以及一个核
 因为这里需要一次路由的映射和 http method 的匹配，考虑到学习的成本呢，我没有选择这种方式。
 我们今天的目标是以最简单有效的方式实现我们的功能。
 我们首先从最简单的方式来实现（其实没有路由的 api 反而是最快的，毕竟需要做的判断少嘛）。
-后面大家有兴趣可以参考我写的一个 restful api 的 demo [https://github.com/zhoumengka…](http://www.jfox.info/go.php?url=https://github.com/zhoumengkang/netty-restful-server)
+后面大家有兴趣可以参考我写的一个 restful api 的 demo [https://github.com/zhoumengka…](https://www.jfox.info/go.php?url=https://github.com/zhoumengkang/netty-restful-server)
 {% endraw %}

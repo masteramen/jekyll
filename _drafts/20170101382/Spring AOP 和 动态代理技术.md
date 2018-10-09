@@ -3,11 +3,11 @@ layout: post
 title:  "Spring AOP 和 动态代理技术"
 title2:  "Spring AOP 和 动态代理技术"
 date:   2017-01-01 23:58:02  +0800
-source:  "http://www.jfox.info/springaop%e5%92%8c%e5%8a%a8%e6%80%81%e4%bb%a3%e7%90%86%e6%8a%80%e6%9c%af.html"
+source:  "https://www.jfox.info/springaop%e5%92%8c%e5%8a%a8%e6%80%81%e4%bb%a3%e7%90%86%e6%8a%80%e6%9c%af.html"
 fileName:  "20170101382"
 lang:  "zh_CN"
 published: true
-permalink: "springaop%e5%92%8c%e5%8a%a8%e6%80%81%e4%bb%a3%e7%90%86%e6%8a%80%e6%9c%af.html"
+permalink: "2017/https://www.jfox.info/springaop%e5%92%8c%e5%8a%a8%e6%80%81%e4%bb%a3%e7%90%86%e6%8a%80%e6%9c%af.html"
 ---
 {% raw %}
 ## AOP 是什么东西

@@ -3,11 +3,11 @@ layout: post
 title:  "Java synchronized 中的 while 和 notifyAll"
 title2:  "Java synchronized 中的 while 和 notifyAll"
 date:   2017-01-01 23:58:16  +0800
-source:  "http://www.jfox.info/javasynchronized%e4%b8%ad%e7%9a%84while%e5%92%8cnotifyall.html"
+source:  "https://www.jfox.info/javasynchronized%e4%b8%ad%e7%9a%84while%e5%92%8cnotifyall.html"
 fileName:  "20170101396"
 lang:  "zh_CN"
 published: true
-permalink: "javasynchronized%e4%b8%ad%e7%9a%84while%e5%92%8cnotifyall.html"
+permalink: "2017/https://www.jfox.info/javasynchronized%e4%b8%ad%e7%9a%84while%e5%92%8cnotifyall.html"
 ---
 {% raw %}
 ## 问题1 为什么是while 而不是if

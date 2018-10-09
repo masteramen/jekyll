@@ -3,11 +3,11 @@ layout: post
 title:  "java线程数过高原因分析"
 title2:  "java线程数过高原因分析"
 date:   2017-01-01 23:58:20  +0800
-source:  "http://www.jfox.info/java%e7%ba%bf%e7%a8%8b%e6%95%b0%e8%bf%87%e9%ab%98%e5%8e%9f%e5%9b%a0%e5%88%86%e6%9e%90.html"
+source:  "https://www.jfox.info/java%e7%ba%bf%e7%a8%8b%e6%95%b0%e8%bf%87%e9%ab%98%e5%8e%9f%e5%9b%a0%e5%88%86%e6%9e%90.html"
 fileName:  "20170101400"
 lang:  "zh_CN"
 published: true
-permalink: "java%e7%ba%bf%e7%a8%8b%e6%95%b0%e8%bf%87%e9%ab%98%e5%8e%9f%e5%9b%a0%e5%88%86%e6%9e%90.html"
+permalink: "2017/https://www.jfox.info/java%e7%ba%bf%e7%a8%8b%e6%95%b0%e8%bf%87%e9%ab%98%e5%8e%9f%e5%9b%a0%e5%88%86%e6%9e%90.html"
 ---
 {% raw %}
 前阵子我们因为B机房故障，将所有的流量切到了A机房，在经历了推送+自然高峰之后，A机房所有服务器都出现java线程数接近1000的情况（1000是设置的max值），在晚上7点多观察，java线程数略有下降，但还是有900+的样子，而此时，单台服务器的TPS维持在400/s，并不是一个特别大的量。然后将A机房一台机器下线，继续观察，到了晚上9点多，那台下线的机器，jetty进程的java线程数还是7、800的样子。同时，同一机房的另外一台还在线的机器在重启jetty之后，在同样tps400+的情况，线程数一直保持在只有300多。这就很奇怪了，下线的机器都没有请求了，java线程数怎么还是这么多？会不会是多线程竞争资源，导致阻塞？开始研究这个问题。

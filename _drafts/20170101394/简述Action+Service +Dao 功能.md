@@ -3,11 +3,11 @@ layout: post
 title:  "简述Action+Service +Dao 功能"
 title2:  "简述Action+Service +Dao 功能"
 date:   2017-01-01 23:58:14  +0800
-source:  "http://www.jfox.info/%e7%ae%80%e8%bf%b0actionservicedao%e5%8a%9f%e8%83%bd.html"
+source:  "https://www.jfox.info/%e7%ae%80%e8%bf%b0actionservicedao%e5%8a%9f%e8%83%bd.html"
 fileName:  "20170101394"
 lang:  "zh_CN"
 published: true
-permalink: "%e7%ae%80%e8%bf%b0actionservicedao%e5%8a%9f%e8%83%bd.html"
+permalink: "2017/https://www.jfox.info/%e7%ae%80%e8%bf%b0actionservicedao%e5%8a%9f%e8%83%bd.html"
 ---
 {% raw %}
 **转载：http://blog.csdn.net/inter_peng/article/details/41021727**

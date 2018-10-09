@@ -3,11 +3,11 @@ layout: post
 title:  "Spring Data 增删改查事务的使用（七）"
 title2:  "Spring Data 增删改查事务的使用（七）"
 date:   2017-01-01 23:58:27  +0800
-source:  "http://www.jfox.info/springdata%e5%a2%9e%e5%88%a0%e6%94%b9%e6%9f%a5%e4%ba%8b%e5%8a%a1%e7%9a%84%e4%bd%bf%e7%94%a8%e4%b8%83.html"
+source:  "https://www.jfox.info/springdata%e5%a2%9e%e5%88%a0%e6%94%b9%e6%9f%a5%e4%ba%8b%e5%8a%a1%e7%9a%84%e4%bd%bf%e7%94%a8%e4%b8%83.html"
 fileName:  "20170101407"
 lang:  "zh_CN"
 published: true
-permalink: "springdata%e5%a2%9e%e5%88%a0%e6%94%b9%e6%9f%a5%e4%ba%8b%e5%8a%a1%e7%9a%84%e4%bd%bf%e7%94%a8%e4%b8%83.html"
+permalink: "2017/https://www.jfox.info/springdata%e5%a2%9e%e5%88%a0%e6%94%b9%e6%9f%a5%e4%ba%8b%e5%8a%a1%e7%9a%84%e4%bd%bf%e7%94%a8%e4%b8%83.html"
 ---
 {% raw %}
 @Modifying 注解使用

@@ -3,11 +3,11 @@ layout: post
 title:  "一种基于kafka+storm实现的日志记录方法(三)"
 title2:  "一种基于kafka+storm实现的日志记录方法(三)"
 date:   2017-01-01 23:58:34  +0800
-source:  "http://www.jfox.info/%e4%b8%80%e7%a7%8d%e5%9f%ba%e4%ba%8ekafkastorm%e5%ae%9e%e7%8e%b0%e7%9a%84%e6%97%a5%e5%bf%97%e8%ae%b0%e5%bd%95%e6%96%b9%e6%b3%95%e4%b8%89.html"
+source:  "https://www.jfox.info/%e4%b8%80%e7%a7%8d%e5%9f%ba%e4%ba%8ekafkastorm%e5%ae%9e%e7%8e%b0%e7%9a%84%e6%97%a5%e5%bf%97%e8%ae%b0%e5%bd%95%e6%96%b9%e6%b3%95%e4%b8%89.html"
 fileName:  "20170101414"
 lang:  "zh_CN"
 published: true
-permalink: "%e4%b8%80%e7%a7%8d%e5%9f%ba%e4%ba%8ekafkastorm%e5%ae%9e%e7%8e%b0%e7%9a%84%e6%97%a5%e5%bf%97%e8%ae%b0%e5%bd%95%e6%96%b9%e6%b3%95%e4%b8%89.html"
+permalink: "2017/https://www.jfox.info/%e4%b8%80%e7%a7%8d%e5%9f%ba%e4%ba%8ekafkastorm%e5%ae%9e%e7%8e%b0%e7%9a%84%e6%97%a5%e5%bf%97%e8%ae%b0%e5%bd%95%e6%96%b9%e6%b3%95%e4%b8%89.html"
 ---
 {% raw %}
 主要过程分为三部分：
@@ -40,7 +40,7 @@ permalink: "%e4%b8%80%e7%a7%8d%e5%9f%ba%e4%ba%8ekafkastorm%e5%ae%9e%e7%8e%b0%e7%
 
 **Zookeeper、ZeroMQ、Netty：**Nimbus和Supervisor之间的不会直接交互，而是通过Zookeeper来协调并维持心跳信息，Zookeeper是storm实现分布式的核心组成。在Storm 0.8之前数据传递是通过ZeroMQ实现，即上述流程中spout发射消息到bolt，bolt发射消息到下一个bolt，这些都是通过ZeroMQ。从 storm 0.9开始改用netty实现，（这也是我个人比较喜欢netty的原因）。
 
-关于storm就总结这么多吧，更多信息可以浏览storm官网：[http://storm.apache.org/](http://www.jfox.info/go.php?url=http://storm.apache.org/) 在Documentation菜单下可以了解各个版本相关信息。下面进入正题，讲述文章开头记录日志的“三个阶段”核心代码实现。
+关于storm就总结这么多吧，更多信息可以浏览storm官网：[http://storm.apache.org/](https://www.jfox.info/go.php?url=http://storm.apache.org/) 在Documentation菜单下可以了解各个版本相关信息。下面进入正题，讲述文章开头记录日志的“三个阶段”核心代码实现。
 
 **1、storm从kafka消费日志消息**
 

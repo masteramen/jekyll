@@ -3,11 +3,11 @@ layout: post
 title:  "mybatis的简单使用调用mapper接口"
 title2:  "mybatis的简单使用调用mapper接口"
 date:   2017-01-01 23:58:36  +0800
-source:  "http://www.jfox.info/mybatis%e7%9a%84%e7%ae%80%e5%8d%95%e4%bd%bf%e7%94%a8%e8%b0%83%e7%94%a8mapper%e6%8e%a5%e5%8f%a3.html"
+source:  "https://www.jfox.info/mybatis%e7%9a%84%e7%ae%80%e5%8d%95%e4%bd%bf%e7%94%a8%e8%b0%83%e7%94%a8mapper%e6%8e%a5%e5%8f%a3.html"
 fileName:  "20170101416"
 lang:  "zh_CN"
 published: true
-permalink: "mybatis%e7%9a%84%e7%ae%80%e5%8d%95%e4%bd%bf%e7%94%a8%e8%b0%83%e7%94%a8mapper%e6%8e%a5%e5%8f%a3.html"
+permalink: "2017/https://www.jfox.info/mybatis%e7%9a%84%e7%ae%80%e5%8d%95%e4%bd%bf%e7%94%a8%e8%b0%83%e7%94%a8mapper%e6%8e%a5%e5%8f%a3.html"
 ---
 {% raw %}
 mybatis 是apache下的一个面向sql编程的半自动化的ORM持久层的框架。特点：面向sql编程，达到高性能的使用目的。

@@ -3,11 +3,11 @@ layout: post
 title:  "四步准备Android面试"
 title2:  "四步准备Android面试"
 date:   2017-01-01 23:58:07  +0800
-source:  "http://www.jfox.info/%e5%9b%9b%e6%ad%a5%e5%87%86%e5%a4%87android%e9%9d%a2%e8%af%95.html"
+source:  "https://www.jfox.info/%e5%9b%9b%e6%ad%a5%e5%87%86%e5%a4%87android%e9%9d%a2%e8%af%95.html"
 fileName:  "20170101387"
 lang:  "zh_CN"
 published: true
-permalink: "%e5%9b%9b%e6%ad%a5%e5%87%86%e5%a4%87android%e9%9d%a2%e8%af%95.html"
+permalink: "2017/https://www.jfox.info/%e5%9b%9b%e6%ad%a5%e5%87%86%e5%a4%87android%e9%9d%a2%e8%af%95.html"
 ---
 {% raw %}
 各大公司内推进行的如火如荼，再过一段时间就是校招。

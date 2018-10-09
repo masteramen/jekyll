@@ -3,11 +3,11 @@ layout: post
 title:  "分布式云调度处理系统 » java面试题"
 title2:  "分布式云调度处理系统 » java面试题"
 date:   2017-01-01 23:58:26  +0800
-source:  "http://www.jfox.info/%e5%88%86%e5%b8%83%e5%bc%8f%e4%ba%91%e8%b0%83%e5%ba%a6%e5%a4%84%e7%90%86%e7%b3%bb%e7%bb%9f.html"
+source:  "https://www.jfox.info/%e5%88%86%e5%b8%83%e5%bc%8f%e4%ba%91%e8%b0%83%e5%ba%a6%e5%a4%84%e7%90%86%e7%b3%bb%e7%bb%9f.html"
 fileName:  "20170101406"
 lang:  "zh_CN"
 published: true
-permalink: "%e5%88%86%e5%b8%83%e5%bc%8f%e4%ba%91%e8%b0%83%e5%ba%a6%e5%a4%84%e7%90%86%e7%b3%bb%e7%bb%9f.html"
+permalink: "2017/https://www.jfox.info/%e5%88%86%e5%b8%83%e5%bc%8f%e4%ba%91%e8%b0%83%e5%ba%a6%e5%a4%84%e7%90%86%e7%b3%bb%e7%bb%9f.html"
 ---
 {% raw %}
 项目参考xxl-job进行若干改动。

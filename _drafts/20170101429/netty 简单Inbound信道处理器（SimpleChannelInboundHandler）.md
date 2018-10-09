@@ -3,17 +3,17 @@ layout: post
 title:  "netty 简单Inbound信道处理器（SimpleChannelInboundHandler）"
 title2:  "netty 简单Inbound信道处理器（SimpleChannelInboundHandler）"
 date:   2017-01-01 23:58:49  +0800
-source:  "http://www.jfox.info/netty%e7%ae%80%e5%8d%95inbound%e4%bf%a1%e9%81%93%e5%a4%84%e7%90%86%e5%99%a8simplechannelinboundhandler.html"
+source:  "https://www.jfox.info/netty%e7%ae%80%e5%8d%95inbound%e4%bf%a1%e9%81%93%e5%a4%84%e7%90%86%e5%99%a8simplechannelinboundhandler.html"
 fileName:  "20170101429"
 lang:  "zh_CN"
 published: true
-permalink: "netty%e7%ae%80%e5%8d%95inbound%e4%bf%a1%e9%81%93%e5%a4%84%e7%90%86%e5%99%a8simplechannelinboundhandler.html"
+permalink: "2017/https://www.jfox.info/netty%e7%ae%80%e5%8d%95inbound%e4%bf%a1%e9%81%93%e5%a4%84%e7%90%86%e5%99%a8simplechannelinboundhandler.html"
 ---
 {% raw %}
 Netty 通道处理器ChannelHandler和适配器定义ChannelHandlerAdapter： 
 
-[http://donald-draper.iteye.com/blog/2386891](http://www.jfox.info/go.php?url=http://donald-draper.iteye.com/blog/2386891)Netty Inbound/Outbound通道处理器定义： 
-[http://donald-draper.iteye.com/blog/2387019](http://www.jfox.info/go.php?url=http://donald-draper.iteye.com/blog/2387019)**引言：**
+[http://donald-draper.iteye.com/blog/2386891](https://www.jfox.info/go.php?url=http://donald-draper.iteye.com/blog/2386891)Netty Inbound/Outbound通道处理器定义： 
+[http://donald-draper.iteye.com/blog/2387019](https://www.jfox.info/go.php?url=http://donald-draper.iteye.com/blog/2387019)**引言：**
 前面一篇文章我们看了Inbound/Outbound通道处理器定义先来回顾一下先： 
 
        通道Inbound处理器，主要是处理从peer发送过来的字节流；通道处理器上下文关联的通道注册到事件循环EventLoop时，触发channelRegistered方法；通道处理器上下文关联的通道激活时，触发channelActive方法；通道从peer读取消息时，触发channelRead方法；当上一消息通过#channelRead方法，并被当先读操作消费时，触发channelReadComplete方法，如果通道配置项 
@@ -265,14 +265,14 @@ Netty 通道处理器ChannelHandler和适配器定义ChannelHandlerAdapter：
 学习了一下java Type体系结构，在往下看之前，需要了解java Type体系结构，具体可以参考一下连接: 
 
 Type —— Java类型: 
-[http://blog.csdn.net/a327369238/article/details/52621043](http://www.jfox.info/go.php?url=http://blog.csdn.net/a327369238/article/details/52621043)详解Java泛型type体系整理: 
-[http://developer.51cto.com/art/201103/250028.htm](http://www.jfox.info/go.php?url=http://developer.51cto.com/art/201103/250028.htm)
+[http://blog.csdn.net/a327369238/article/details/52621043](https://www.jfox.info/go.php?url=http://blog.csdn.net/a327369238/article/details/52621043)详解Java泛型type体系整理: 
+[http://developer.51cto.com/art/201103/250028.htm](https://www.jfox.info/go.php?url=http://developer.51cto.com/art/201103/250028.htm)
  黑马程序员–Java基础加强–13.利用反射操作泛型II【TypeVariable】【GenericArrayType】【WildcardType】【Type及其子接口的来历】【个人总结】 
 
 : 
-[http://blog.csdn.net/benjaminzhang666/article/details/9839007](http://www.jfox.info/go.php?url=http://blog.csdn.net/benjaminzhang666/article/details/9839007)泛型通配符extends与super的区别: 
-[http://www.cnblogs.com/yepei/p/6591289.html](http://www.jfox.info/go.php?url=http://www.cnblogs.com/yepei/p/6591289.html)另外附上java Type体系结构的示例地址： 
-[https://github.com/Donaldhan/java-base-demo](http://www.jfox.info/go.php?url=https://github.com/Donaldhan/java-base-demo)
+[http://blog.csdn.net/benjaminzhang666/article/details/9839007](https://www.jfox.info/go.php?url=http://blog.csdn.net/benjaminzhang666/article/details/9839007)泛型通配符extends与super的区别: 
+[http://www.cnblogs.com/yepei/p/6591289.html](https://www.jfox.info/go.php?url=http://www.cnblogs.com/yepei/p/6591289.html)另外附上java Type体系结构的示例地址： 
+[https://github.com/Donaldhan/java-base-demo](https://www.jfox.info/go.php?url=https://github.com/Donaldhan/java-base-demo)
 本身这篇文章应该上个星期就出来呢？由于对java Type体系结构不熟，难以理解参数类型匹配器TypeParameterMatcher，所以推迟到现在，本身同时想写一篇java Type体系结构相关的文章，后来一想算了，网上很多资料，再加上自己写Demo里面有相关的说明，就不写了，一个字懒…… 
 
 言归正传，下面我们来看TypeParameterMatcher 

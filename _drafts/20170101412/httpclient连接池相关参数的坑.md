@@ -3,11 +3,11 @@ layout: post
 title:  "httpclient连接池相关参数的坑"
 title2:  "httpclient连接池相关参数的坑"
 date:   2017-01-01 23:58:32  +0800
-source:  "http://www.jfox.info/httpclient%e8%bf%9e%e6%8e%a5%e6%b1%a0%e7%9b%b8%e5%85%b3%e5%8f%82%e6%95%b0%e7%9a%84%e5%9d%91.html"
+source:  "https://www.jfox.info/httpclient%e8%bf%9e%e6%8e%a5%e6%b1%a0%e7%9b%b8%e5%85%b3%e5%8f%82%e6%95%b0%e7%9a%84%e5%9d%91.html"
 fileName:  "20170101412"
 lang:  "zh_CN"
 published: true
-permalink: "httpclient%e8%bf%9e%e6%8e%a5%e6%b1%a0%e7%9b%b8%e5%85%b3%e5%8f%82%e6%95%b0%e7%9a%84%e5%9d%91.html"
+permalink: "2017/https://www.jfox.info/httpclient%e8%bf%9e%e6%8e%a5%e6%b1%a0%e7%9b%b8%e5%85%b3%e5%8f%82%e6%95%b0%e7%9a%84%e5%9d%91.html"
 ---
 {% raw %}
 今天早上UIOC，现象是发现调用某个服务的接口总是超时，这个环境昨晚没有发版本无缘无故就出问题很是奇怪。到公司各种查，最终通过问题服务重启前打印的堆栈信息看到几乎所有的线程都在等待连接池释放连接后获取空闲连接。错误如下：

@@ -3,11 +3,11 @@ layout: post
 title:  "dubbo 注解方式集成 springmvc"
 title2:  "dubbo 注解方式集成 springmvc"
 date:   2017-01-01 23:58:18  +0800
-source:  "http://www.jfox.info/dubbo%e6%b3%a8%e8%a7%a3%e6%96%b9%e5%bc%8f%e9%9b%86%e6%88%90springmvc.html"
+source:  "https://www.jfox.info/dubbo%e6%b3%a8%e8%a7%a3%e6%96%b9%e5%bc%8f%e9%9b%86%e6%88%90springmvc.html"
 fileName:  "20170101398"
 lang:  "zh_CN"
 published: true
-permalink: "dubbo%e6%b3%a8%e8%a7%a3%e6%96%b9%e5%bc%8f%e9%9b%86%e6%88%90springmvc.html"
+permalink: "2017/https://www.jfox.info/dubbo%e6%b3%a8%e8%a7%a3%e6%96%b9%e5%bc%8f%e9%9b%86%e6%88%90springmvc.html"
 ---
 {% raw %}
 创建一个 maven 多模块项目，结构如下：
@@ -479,7 +479,7 @@ user-module-consumer/src/main/resources/spring-mvc.xml 配置如下：
 
 示例项目开发环境：Java-8、Maven-3、IntelliJ IDEA-2017、Spring-4.7、Dubbo-2.5.3
 
- 完整示例项目链接： [dubbo-annotation-with-springmvc-sample](http://www.jfox.info/go.php?url=https://github.com/fanlychie/dubbo-samples/tree/master/dubbo-annotation-with-springmvc-sample)
+ 完整示例项目链接： [dubbo-annotation-with-springmvc-sample](https://www.jfox.info/go.php?url=https://github.com/fanlychie/dubbo-samples/tree/master/dubbo-annotation-with-springmvc-sample)
 
- 参考文档文献链接： [dubbo用户指南](http://www.jfox.info/go.php?url=http://dubbo.io/User+Guide-zh.htm)
+ 参考文档文献链接： [dubbo用户指南](https://www.jfox.info/go.php?url=http://dubbo.io/User+Guide-zh.htm)
 {% endraw %}

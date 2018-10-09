@@ -3,11 +3,11 @@ layout: post
 title:  "《深入理解Java虚拟机》（二）"
 title2:  "《深入理解Java虚拟机》（二）"
 date:   2017-01-01 23:58:39  +0800
-source:  "http://www.jfox.info/%e6%b7%b1%e5%85%a5%e7%90%86%e8%a7%a3java%e8%99%9a%e6%8b%9f%e6%9c%ba%e4%ba%8c.html"
+source:  "https://www.jfox.info/%e6%b7%b1%e5%85%a5%e7%90%86%e8%a7%a3java%e8%99%9a%e6%8b%9f%e6%9c%ba%e4%ba%8c.html"
 fileName:  "20170101419"
 lang:  "zh_CN"
 published: true
-permalink: "%e6%b7%b1%e5%85%a5%e7%90%86%e8%a7%a3java%e8%99%9a%e6%8b%9f%e6%9c%ba%e4%ba%8c.html"
+permalink: "2017/https://www.jfox.info/%e6%b7%b1%e5%85%a5%e7%90%86%e8%a7%a3java%e8%99%9a%e6%8b%9f%e6%9c%ba%e4%ba%8c.html"
 ---
 {% raw %}
 # 《深入理解Java虚拟机》（二） 
@@ -82,7 +82,7 @@ Java虚拟机栈是线程私有的，它的生命周期与线程相同。
 局部变量表所需的内存空间在编译期间完成分配，当进入一个方法时，这个方法需要在帧中分配多大的局部变量空间是完全确定的。
 
 2. 
-在方法运行期间不会改变局部变量表的大小。主要存放了编译期可知的各种基本数据类型、对象引用 [（reference类型）、returnAddress类型）](http://www.jfox.info/go.php?url=http://www.runoob.com/java/java-basic-datatypes.html)。
+在方法运行期间不会改变局部变量表的大小。主要存放了编译期可知的各种基本数据类型、对象引用 [（reference类型）、returnAddress类型）](https://www.jfox.info/go.php?url=http://www.runoob.com/java/java-basic-datatypes.html)。
 
 #### java虚拟机栈,规定了两种异常状况：
 
@@ -248,5 +248,5 @@ Java程序通过栈上的reference数据来操作堆上的具体对象。
 
 **《深入理解Java虚拟机：JVM高级特性与最佳实践_周志明.高清扫描版.pdf》**
 
-下载地址：链接：[http://pan.baidu.com/s/1miBQCBY](http://www.jfox.info/go.php?url=http://pan.baidu.com/s/1miBQCBY) 密码：9kbn
+下载地址：链接：[http://pan.baidu.com/s/1miBQCBY](https://www.jfox.info/go.php?url=http://pan.baidu.com/s/1miBQCBY) 密码：9kbn
 {% endraw %}

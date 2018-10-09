@@ -3,16 +3,16 @@ layout: post
 title:  "注解库之ButterKnife"
 title2:  "注解库之ButterKnife"
 date:   2017-01-01 23:58:35  +0800
-source:  "http://www.jfox.info/%e6%b3%a8%e8%a7%a3%e5%ba%93%e4%b9%8bbutterknife.html"
+source:  "https://www.jfox.info/%e6%b3%a8%e8%a7%a3%e5%ba%93%e4%b9%8bbutterknife.html"
 fileName:  "20170101415"
 lang:  "zh_CN"
 published: true
-permalink: "%e6%b3%a8%e8%a7%a3%e5%ba%93%e4%b9%8bbutterknife.html"
+permalink: "2017/https://www.jfox.info/%e6%b3%a8%e8%a7%a3%e5%ba%93%e4%b9%8bbutterknife.html"
 ---
 {% raw %}
 ## butterknife解决的问题
 
-项目地址: [https://github.com/JakeWharton/butterknife ](http://www.jfox.info/go.php?url=https://github.com/JakeWharton/butterknife)
+项目地址: [https://github.com/JakeWharton/butterknife ](https://www.jfox.info/go.php?url=https://github.com/JakeWharton/butterknife)
 
 github原文是这样介绍的
 
@@ -159,7 +159,7 @@ Fragment的生命周期与Activity不同。在Fragment中，如果你在onCreate
 
 这里大致介绍下APT原理
 
-声明注解的生命周期为CLASS，然后继承`AbstractProcessor`类，在编译时编译器会扫描所有带有你要处理的注解的类，然后再调用AbstractProcessor#process 方法，对注解进行处理，在注解处理的时候使用javappoet动态生成固定的模板代码(findviewById、onClick)然后在运行时直接调用bind方法完成绑定就可以了。 详细的APT介绍参看[http://blog.csdn.net/xsf50717/article/details/54318874](http://www.jfox.info/go.php?url=http://blog.csdn.net/xsf50717/article/details/54318874)
+声明注解的生命周期为CLASS，然后继承`AbstractProcessor`类，在编译时编译器会扫描所有带有你要处理的注解的类，然后再调用AbstractProcessor#process 方法，对注解进行处理，在注解处理的时候使用javappoet动态生成固定的模板代码(findviewById、onClick)然后在运行时直接调用bind方法完成绑定就可以了。 详细的APT介绍参看[http://blog.csdn.net/xsf50717/article/details/54318874](https://www.jfox.info/go.php?url=http://blog.csdn.net/xsf50717/article/details/54318874)
 
 **Java Annotation Processing**
 
@@ -180,7 +180,7 @@ Fragment的生命周期与Activity不同。在Fragment中，如果你在onCreate
 - 这个ViewBinder类中包含了所有对应的代码，比如@Bind注解对应findViewById(), @OnClick对应了view.setOnClickListener()等等
 - 最后当Activity启动ButterKnife.bind(this)执行时，ButterKnife会去加载对应的ViewBinder类调用它们的bind()方法
 
-在butterknife源码 `butterknife-compiler#ButterKnifeProcessor`[https://github.com/JakeWharton/butterknife/blob/e9cfe921bbb03d40f619d8c86ce49f9e1bc711c5/butterknife-compiler/src/main/java/butterknife/compiler/ButterKnifeProcessor.java](http://www.jfox.info/go.php?url=https://github.com/JakeWharton/butterknife/blob/e9cfe921bbb03d40f619d8c86ce49f9e1bc711c5/butterknife-compiler/src/main/java/butterknife/compiler/ButterKnifeProcessor.java)
+在butterknife源码 `butterknife-compiler#ButterKnifeProcessor`[https://github.com/JakeWharton/butterknife/blob/e9cfe921bbb03d40f619d8c86ce49f9e1bc711c5/butterknife-compiler/src/main/java/butterknife/compiler/ButterKnifeProcessor.java](https://www.jfox.info/go.php?url=https://github.com/JakeWharton/butterknife/blob/e9cfe921bbb03d40f619d8c86ce49f9e1bc711c5/butterknife-compiler/src/main/java/butterknife/compiler/ButterKnifeProcessor.java)
 
 注解处理器
 
@@ -334,5 +334,5 @@ Fragment的生命周期与Activity不同。在Fragment中，如果你在onCreate
 
 parseBindView先检测是否有错误，然后将name(变量名，例如tvTitle)、type(类名，例如TextView)、required(是否有@nullable注解)封装成FieldViewBinding放到builder里面。
 
-最后使用JavaPoet框架生成代码，关于javaPoet的使用可以参考[http://blog.csdn.net/XSF50717/article/details/54318891](http://www.jfox.info/go.php?url=http://blog.csdn.net/XSF50717/article/details/54318891)
+最后使用JavaPoet框架生成代码，关于javaPoet的使用可以参考[http://blog.csdn.net/XSF50717/article/details/54318891](https://www.jfox.info/go.php?url=http://blog.csdn.net/XSF50717/article/details/54318891)
 {% endraw %}

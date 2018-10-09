@@ -3,11 +3,11 @@ layout: post
 title:  "Quartz2D –> 二维绘图发动机(一)"
 title2:  "Quartz2D – 二维绘图发动机(一)"
 date:   2017-01-01 23:58:06  +0800
-source:  "http://www.jfox.info/quartz2d%e4%ba%8c%e7%bb%b4%e7%bb%98%e5%9b%be%e5%8f%91%e5%8a%a8%e6%9c%ba%e4%b8%80.html"
+source:  "https://www.jfox.info/quartz2d%e4%ba%8c%e7%bb%b4%e7%bb%98%e5%9b%be%e5%8f%91%e5%8a%a8%e6%9c%ba%e4%b8%80.html"
 fileName:  "20170101386"
 lang:  "zh_CN"
 published: true
-permalink: "quartz2d%e4%ba%8c%e7%bb%b4%e7%bb%98%e5%9b%be%e5%8f%91%e5%8a%a8%e6%9c%ba%e4%b8%80.html"
+permalink: "2017/https://www.jfox.info/quartz2d%e4%ba%8c%e7%bb%b4%e7%bb%98%e5%9b%be%e5%8f%91%e5%8a%a8%e6%9c%ba%e4%b8%80.html"
 ---
 {% raw %}
 ![](/wp-content/uploads/2017/07/1500908131.png)作者[寻形觅影](/u/3af65dbeed74)2017.07.21 13:29字数 4455
@@ -114,7 +114,7 @@ Parameters参数Current transformation matrix (CTM)当前装换矩阵Clipping ar
   
  
  因为不同的设备有不同的潜在成像能力，所以图形位置和尺寸必须在定义时使用与设备无关的方式。例如，一个显示设备的屏幕可能显示不超过每英寸96个像素,而打印机可能能够显示每英寸300个像素。如果您定义坐标系统在设备层面(在这个例子中,96像素或300像素),那么绘制于该空间的对象不可能在没有明显的失真的情况下复制在其他设备中，他们会出现太大或太小的情况。这显然不是我们想要的。
-Quartz使用当前变换矩阵（current transformation matrix又称为 CTM）将一个独立坐标系统（用户空间）映射到输出设备的坐标系统（设备空间）来实现设备独立性。矩阵是用于高效的描述一组相关方程的数学架构，CTM是一种被称为 *affine transform* （仿射变换）的特殊矩阵。[关于仿射变换可以看一下这篇文章](http://www.jfox.info/go.php?url=http://www.jianshu.com/p/5c6d1e64686d)。但是CTM与文章中的略有不同，CTM主要变换的是 **坐标系**！
+Quartz使用当前变换矩阵（current transformation matrix又称为 CTM）将一个独立坐标系统（用户空间）映射到输出设备的坐标系统（设备空间）来实现设备独立性。矩阵是用于高效的描述一组相关方程的数学架构，CTM是一种被称为 *affine transform* （仿射变换）的特殊矩阵。[关于仿射变换可以看一下这篇文章](https://www.jfox.info/go.php?url=http://www.jianshu.com/p/5c6d1e64686d)。但是CTM与文章中的略有不同，CTM主要变换的是 **坐标系**！
 CTM还有一个次要目的：允许你通过转换来决定对象如何被绘制。例如，为了绘制一个旋转了45度的盒子，我们可以在绘制盒子之前旋转Page的坐标系统。Quartz使用旋转过的坐标系统来将盒子绘制到输出设备中。
 有一些技术在设置它们的graphics context时使用了不同于Quartz的默认坐标系统。当在这些坐标系统中显示Quartz绘制的图形时，Quartz的默认坐标系统必须进行转换。最常见的一种修改的坐标系统是原点位于左上角，而沿着y轴从上到下坐标值逐渐增大（即UIKit坐标系）。例如：UIView的`-(void)drawRect:`方法（*这个方法在loadView、viewDidLoad方法后执行*）中直接获取上下文的方法`UIGraphicsGetCurrentContext()`返回的图形上下文就是用的是这种坐标系。**这是因为UIKit类已经对上下文进行了额外的修改以匹配UIKit的约定**。但是有一些方法在录入 graphics context 时是使用的Quartz的默认坐标系统，例如`CG_EXTERN void CGContextDrawImage(CGContextRef cg_nullable c, CGRect rect, CGImageRef cg_nullable image)`方法将图片绘制于上下文中时就是使用的Quartz的默认坐标系统。特别的，patterns和shadows不被CTM影响，是单独进行调整以来匹配UIKit坐标系统。
 **注意:***转换坐标系前，应使用`CG_EXTERN void CGContextSaveGState(CGContextRef cg_nullable c)`保存当前上下文状态;然后当转换后一系列操作完成后再使用`CG_EXTERN void CGContextRestoreGState(CGContextRef cg_nullable c)`恢复之前保存的上下文状态*。

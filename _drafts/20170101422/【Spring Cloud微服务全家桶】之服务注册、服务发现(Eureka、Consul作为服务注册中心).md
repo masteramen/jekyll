@@ -3,15 +3,15 @@ layout: post
 title:  "【Spring Cloud微服务全家桶】之服务注册、服务发现(Eureka、Consul作为服务注册中心)"
 title2:  "【Spring Cloud微服务全家桶】之服务注册、服务发现(Eureka、Consul作为服务注册中心)"
 date:   2017-01-01 23:58:42  +0800
-source:  "http://www.jfox.info/springcloud%e5%be%ae%e6%9c%8d%e5%8a%a1%e5%85%a8%e5%ae%b6%e6%a1%b6%e4%b9%8b%e6%9c%8d%e5%8a%a1%e6%b3%a8%e5%86%8c%e6%9c%8d%e5%8a%a1%e5%8f%91%e7%8e%b0eurekaconsul%e4%bd%9c%e4%b8%ba%e6%9c%8d%e5%8a%a1.html"
+source:  "https://www.jfox.info/springcloud%e5%be%ae%e6%9c%8d%e5%8a%a1%e5%85%a8%e5%ae%b6%e6%a1%b6%e4%b9%8b%e6%9c%8d%e5%8a%a1%e6%b3%a8%e5%86%8c%e6%9c%8d%e5%8a%a1%e5%8f%91%e7%8e%b0eurekaconsul%e4%bd%9c%e4%b8%ba%e6%9c%8d%e5%8a%a1.html"
 fileName:  "20170101422"
 lang:  "zh_CN"
 published: true
-permalink: "springcloud%e5%be%ae%e6%9c%8d%e5%8a%a1%e5%85%a8%e5%ae%b6%e6%a1%b6%e4%b9%8b%e6%9c%8d%e5%8a%a1%e6%b3%a8%e5%86%8c%e6%9c%8d%e5%8a%a1%e5%8f%91%e7%8e%b0eurekaconsul%e4%bd%9c%e4%b8%ba%e6%9c%8d%e5%8a%a1.html"
+permalink: "2017/https://www.jfox.info/springcloud%e5%be%ae%e6%9c%8d%e5%8a%a1%e5%85%a8%e5%ae%b6%e6%a1%b6%e4%b9%8b%e6%9c%8d%e5%8a%a1%e6%b3%a8%e5%86%8c%e6%9c%8d%e5%8a%a1%e5%8f%91%e7%8e%b0eurekaconsul%e4%bd%9c%e4%b8%ba%e6%9c%8d%e5%8a%a1.html"
 ---
 {% raw %}
 **Spring Cloud简介**** **springcloud官方文档： 
- [http://projects.spring.io/spring-cloud/spring-cloud.html](http://www.jfox.info/go.php?url=http://projects.spring.io/spring-cloud/spring-cloud.html)** **Spring Cloud是一个基于Spring Boot实现的云应用开发工具，它为基于JVM的云应用开发中涉及的配置管理、服务发现、断路器、智能路由、微代理、控制总线、全局锁、决策竞选、分布式会话和集群状态管理等操作提供了一种简单的开发方式。 Spring Cloud包含了多个子项目（针对分布式系统中涉及的多个不同开源产品），比如：Spring Cloud Config、Spring Cloud Netflix、Spring Cloud CloudFoundry、Spring Cloud AWS、Spring Cloud Security、Spring Cloud Commons、Spring Cloud Zookeeper、Spring Cloud CLI等项目。 Eureka：实际上在整个过程中维护者每个服务的生命周期。每一个服务都要被注册到Eureka服务器上，这里被注册到Eureka的服务又称为Client。Eureka通过心跳来确定服务是否正常。Eureka只做请求转发。同时Eureka是支持集群的呦！！！ （当然用其他的也是可以如consul,zookeeper）Zuul：类似于网关，反向代理。为外部请求提供统一入口。Ribbon/Feign：可以理解为调用服务的客户端。Hystrix：断路器，服务调用通常是深层的，一个底层服务通常为多个上层服务提供服务，那么如果底层服务失败则会造成大面积失败，Hystrix就是就调用失败后触发定义好的处理方法，从而更友好的解决出错。也是微服务的容错机制。 **创建服务注册中心**** **** **![](/wp-content/uploads/2017/07/1501341760.png)  
+ [http://projects.spring.io/spring-cloud/spring-cloud.html](https://www.jfox.info/go.php?url=http://projects.spring.io/spring-cloud/spring-cloud.html)** **Spring Cloud是一个基于Spring Boot实现的云应用开发工具，它为基于JVM的云应用开发中涉及的配置管理、服务发现、断路器、智能路由、微代理、控制总线、全局锁、决策竞选、分布式会话和集群状态管理等操作提供了一种简单的开发方式。 Spring Cloud包含了多个子项目（针对分布式系统中涉及的多个不同开源产品），比如：Spring Cloud Config、Spring Cloud Netflix、Spring Cloud CloudFoundry、Spring Cloud AWS、Spring Cloud Security、Spring Cloud Commons、Spring Cloud Zookeeper、Spring Cloud CLI等项目。 Eureka：实际上在整个过程中维护者每个服务的生命周期。每一个服务都要被注册到Eureka服务器上，这里被注册到Eureka的服务又称为Client。Eureka通过心跳来确定服务是否正常。Eureka只做请求转发。同时Eureka是支持集群的呦！！！ （当然用其他的也是可以如consul,zookeeper）Zuul：类似于网关，反向代理。为外部请求提供统一入口。Ribbon/Feign：可以理解为调用服务的客户端。Hystrix：断路器，服务调用通常是深层的，一个底层服务通常为多个上层服务提供服务，那么如果底层服务失败则会造成大面积失败，Hystrix就是就调用失败后触发定义好的处理方法，从而更友好的解决出错。也是微服务的容错机制。 **创建服务注册中心**** **** **![](/wp-content/uploads/2017/07/1501341760.png)  
  
 
     
@@ -591,7 +591,7 @@ permalink: "springcloud%e5%be%ae%e6%9c%8d%e5%8a%a1%e5%85%a8%e5%ae%b6%e6%a1%b6%e4
     
  
  
- 由于Spring Cloud 对于DiscoveryClient已经做了一层抽象，我们无需关心eureka与consul不同的实现细节。而我们需要做的只是更改springcloud封装的不同服务治理依赖，以及在配置文件中配置不同的属性 将consul用dev模式启动。由于consul已经为我们提供了服务，无需像之前创建eureka那样创建服务注册中心，直接从consul官网下载服务端即可,[https://www.consul.io/](http://www.jfox.info/go.php?url=https://www.consul.io/)![](/wp-content/uploads/2017/07/1501341773.png)  
+ 由于Spring Cloud 对于DiscoveryClient已经做了一层抽象，我们无需关心eureka与consul不同的实现细节。而我们需要做的只是更改springcloud封装的不同服务治理依赖，以及在配置文件中配置不同的属性 将consul用dev模式启动。由于consul已经为我们提供了服务，无需像之前创建eureka那样创建服务注册中心，直接从consul官网下载服务端即可,[https://www.consul.io/](https://www.jfox.info/go.php?url=https://www.consul.io/)![](/wp-content/uploads/2017/07/1501341773.png)  
  
  
  重新启动ProviderApplication 观察Consul UI（http://127.0.0.1:8500/ui/），是否有服务上线，可以看到PROVIDER-MS已经注册到consul了![](/wp-content/uploads/2017/07/1501341774.png)  

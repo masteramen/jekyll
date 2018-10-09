@@ -3,11 +3,11 @@ layout: post
 title:  "ReentrantLock实现原理及源码分析"
 title2:  "ReentrantLock实现原理及源码分析"
 date:   2017-01-01 23:58:45  +0800
-source:  "http://www.jfox.info/reentrantlock%e5%ae%9e%e7%8e%b0%e5%8e%9f%e7%90%86%e5%8f%8a%e6%ba%90%e7%a0%81%e5%88%86%e6%9e%90.html"
+source:  "https://www.jfox.info/reentrantlock%e5%ae%9e%e7%8e%b0%e5%8e%9f%e7%90%86%e5%8f%8a%e6%ba%90%e7%a0%81%e5%88%86%e6%9e%90.html"
 fileName:  "20170101425"
 lang:  "zh_CN"
 published: true
-permalink: "reentrantlock%e5%ae%9e%e7%8e%b0%e5%8e%9f%e7%90%86%e5%8f%8a%e6%ba%90%e7%a0%81%e5%88%86%e6%9e%90.html"
+permalink: "2017/https://www.jfox.info/reentrantlock%e5%ae%9e%e7%8e%b0%e5%8e%9f%e7%90%86%e5%8f%8a%e6%ba%90%e7%a0%81%e5%88%86%e6%9e%90.html"
 ---
 {% raw %}
 # ReentrantLock实现原理及源码分析 
@@ -36,7 +36,7 @@ permalink: "reentrantlock%e5%ae%9e%e7%8e%b0%e5%8e%9f%e7%90%86%e5%8f%8a%e6%ba%90%
 
 **　ReentrantLock是基于AQS的，AQS是Java并发包中众多同步组件的构建基础，它通过一个int类型的状态变量state和一个FIFO队列来完成共享资源的获取，线程的排队等待等。AQS是个底层框架，采用模板方法模式，它定义了通用的较为复杂的逻辑骨架，比如线程的排队，阻塞，唤醒等，将这些复杂但实质通用的部分抽取出来，这些都是需要构建同步组件的使用者无需关心的，使用者仅需重写一些简单的指定的方法即可（其实就是对于共享变量state的一些简单的获取释放的操作）。**
 
-　　上面简单介绍了下AQS，详细内容可参考本人的另一篇文章《**[Java并发包基石-AQS详解](http://www.jfox.info/go.php?url=http://www.cnblogs.com/chengxiao/p/7141160.html)**》，此处就不再赘述了。先来看常用的几个方法，我们从上往下推。
+　　上面简单介绍了下AQS，详细内容可参考本人的另一篇文章《**[Java并发包基石-AQS详解](https://www.jfox.info/go.php?url=http://www.cnblogs.com/chengxiao/p/7141160.html)**》，此处就不再赘述了。先来看常用的几个方法，我们从上往下推。
 
 **无参构造器（默认为公平锁）**
 

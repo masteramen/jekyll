@@ -3,11 +3,11 @@ layout: post
 title:  "开始编写寄几的 CSS 基础库"
 title2:  "开始编写寄几的 CSS 基础库"
 date:   2017-01-01 23:58:08  +0800
-source:  "http://www.jfox.info/%e5%bc%80%e5%a7%8b%e7%bc%96%e5%86%99%e5%af%84%e5%87%a0%e7%9a%84css%e5%9f%ba%e7%a1%80%e5%ba%93.html"
+source:  "https://www.jfox.info/%e5%bc%80%e5%a7%8b%e7%bc%96%e5%86%99%e5%af%84%e5%87%a0%e7%9a%84css%e5%9f%ba%e7%a1%80%e5%ba%93.html"
 fileName:  "20170101388"
 lang:  "zh_CN"
 published: true
-permalink: "%e5%bc%80%e5%a7%8b%e7%bc%96%e5%86%99%e5%af%84%e5%87%a0%e7%9a%84css%e5%9f%ba%e7%a1%80%e5%ba%93.html"
+permalink: "2017/https://www.jfox.info/%e5%bc%80%e5%a7%8b%e7%bc%96%e5%86%99%e5%af%84%e5%87%a0%e7%9a%84css%e5%9f%ba%e7%a1%80%e5%ba%93.html"
 ---
 {% raw %}
 **前言**
@@ -102,7 +102,7 @@ permalink: "%e5%bc%80%e5%a7%8b%e7%bc%96%e5%86%99%e5%af%84%e5%87%a0%e7%9a%84css%e
 
 **抛砖引玉**
 
-上面说了那么多，下面列举下我个人在平常用的比较多的公共样式，先付上[源码](http://www.jfox.info/go.php?url=https://github.com/Darylxyx/css-collection/blob/master/base.css)。
+上面说了那么多，下面列举下我个人在平常用的比较多的公共样式，先付上[源码](https://www.jfox.info/go.php?url=https://github.com/Darylxyx/css-collection/blob/master/base.css)。
 
 **内外边距初始化**
 
