@@ -3,11 +3,11 @@ layout: post
 title:  "Java 数据类型在实际开发中应用二枚举"
 title2:  "Java 数据类型在实际开发中应用二枚举"
 date:   2017-01-01 23:57:39  +0800
-source:  "http://www.jfox.info/java%e6%95%b0%e6%8d%ae%e7%b1%bb%e5%9e%8b%e5%9c%a8%e5%ae%9e%e9%99%85%e5%bc%80%e5%8f%91%e4%b8%ad%e5%ba%94%e7%94%a8%e4%ba%8c%e6%9e%9a%e4%b8%be.html"
+source:  "https://www.jfox.info/java%e6%95%b0%e6%8d%ae%e7%b1%bb%e5%9e%8b%e5%9c%a8%e5%ae%9e%e9%99%85%e5%bc%80%e5%8f%91%e4%b8%ad%e5%ba%94%e7%94%a8%e4%ba%8c%e6%9e%9a%e4%b8%be.html"
 fileName:  "20170101359"
 lang:  "zh_CN"
 published: true
-permalink: "java%e6%95%b0%e6%8d%ae%e7%b1%bb%e5%9e%8b%e5%9c%a8%e5%ae%9e%e9%99%85%e5%bc%80%e5%8f%91%e4%b8%ad%e5%ba%94%e7%94%a8%e4%ba%8c%e6%9e%9a%e4%b8%be.html"
+permalink: "2017/https://www.jfox.info/java%e6%95%b0%e6%8d%ae%e7%b1%bb%e5%9e%8b%e5%9c%a8%e5%ae%9e%e9%99%85%e5%bc%80%e5%8f%91%e4%b8%ad%e5%ba%94%e7%94%a8%e4%ba%8c%e6%9e%9a%e4%b8%be.html"
 ---
 {% raw %}
 在实际编程中，往往存在着这样的“数据集”，它们的数值在程序中是稳定的，而且“数据集”中的元素是有限的。在JDK1.5之前，人们用接口来描述这一种数据类型。
@@ -116,7 +116,7 @@ permalink: "java%e6%95%b0%e6%8d%ae%e7%b1%bb%e5%9e%8b%e5%9c%a8%e5%ae%9e%e9%99%85%
 
 ## 三 ：原理分析
 
-　　　参照了[java enum(枚举)使用详解 + 总结](http://www.jfox.info/go.php?url=http://www.cnblogs.com/hemingwang0902/archive/2011/12/29/2306263.html)，非常感谢
+　　　参照了[java enum(枚举)使用详解 + 总结](https://www.jfox.info/go.php?url=http://www.cnblogs.com/hemingwang0902/archive/2011/12/29/2306263.html)，非常感谢
 
 　　　enum 的语法结构尽管和 class 的语法不一样，但是经过编译器编译之后产生的是一个class文件。该class文件经过反编译实际上是生成了一个类，该类继承了java.lang.Enum<E>。所以， enum本质上 java 编译器帮我们做了语法的解析和编译的一个普通的类。
 
@@ -126,7 +126,7 @@ permalink: "java%e6%95%b0%e6%8d%ae%e7%b1%bb%e5%9e%8b%e5%9c%a8%e5%ae%9e%e9%99%85%
 
 ## 四：EnumSet，EnumMap 的应用
 
-　　　EnumSet和EnumMap是枚举的比较重要的用处。他们是操作枚举对象的工具类。具体的细节推荐去看一下[Java 枚举用法详解](http://www.jfox.info/go.php?url=http://www.cnblogs.com/jingmoxukong/p/6098351.html)，在这里，我简单的总结一下：
+　　　EnumSet和EnumMap是枚举的比较重要的用处。他们是操作枚举对象的工具类。具体的细节推荐去看一下[Java 枚举用法详解](https://www.jfox.info/go.php?url=http://www.cnblogs.com/jingmoxukong/p/6098351.html)，在这里，我简单的总结一下：
 
 `　　EnumSet` 是枚举类型的高性能`Set`实现。它要求放入它的枚举常量必须属于同一枚举类型。
 `　　EnumMap` 是专门为枚举类型量身定做的`Map`实现。虽然使用其它的Map实现（如HashMap）也能完成枚举类型实例到值得映射，但是使用EnumMap会更加高效：它只能接收同一枚举类型的实例作为键值，并且由于枚举类型实例的数量相对固定并且有限，所以EnumMap使用数组来存放与枚举类型对应的值。这使得EnumMap的效率非常高。

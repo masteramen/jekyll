@@ -3,11 +3,11 @@ layout: post
 title:  "SpringMVC：SpringMVC启动初始化过程"
 title2:  "SpringMVC：SpringMVC启动初始化过程"
 date:   2017-01-01 23:57:37  +0800
-source:  "http://www.jfox.info/springmvcspringmvc%e5%90%af%e5%8a%a8%e5%88%9d%e5%a7%8b%e5%8c%96%e8%bf%87%e7%a8%8b.html"
+source:  "https://www.jfox.info/springmvcspringmvc%e5%90%af%e5%8a%a8%e5%88%9d%e5%a7%8b%e5%8c%96%e8%bf%87%e7%a8%8b.html"
 fileName:  "20170101357"
 lang:  "zh_CN"
 published: true
-permalink: "springmvcspringmvc%e5%90%af%e5%8a%a8%e5%88%9d%e5%a7%8b%e5%8c%96%e8%bf%87%e7%a8%8b.html"
+permalink: "2017/https://www.jfox.info/springmvcspringmvc%e5%90%af%e5%8a%a8%e5%88%9d%e5%a7%8b%e5%8c%96%e8%bf%87%e7%a8%8b.html"
 ---
 {% raw %}
 公司项目使用 struts2 作为控制层框架，为了实现前后端分离，计划将 struts2 切换为 SpringMVC ，因此，这段时间都在学习新的框架，《Spring实战》是一本好书，里面对 Spring 的原理实现以及应用都说得很透彻，强烈推荐，但是如果想深挖 Spring 的实现，还是要从他的源码入手，这次，就先从 SpringMVC 初始化开始。

@@ -3,15 +3,15 @@ layout: post
 title:  "java开发操作系统内核：实现进程的优先级切换"
 title2:  "java开发操作系统内核：实现进程的优先级切换"
 date:   2017-01-01 23:57:25  +0800
-source:  "http://www.jfox.info/java%e5%bc%80%e5%8f%91%e6%93%8d%e4%bd%9c%e7%b3%bb%e7%bb%9f%e5%86%85%e6%a0%b8%e5%ae%9e%e7%8e%b0%e8%bf%9b%e7%a8%8b%e7%9a%84%e4%bc%98%e5%85%88%e7%ba%a7%e5%88%87%e6%8d%a2.html"
+source:  "https://www.jfox.info/java%e5%bc%80%e5%8f%91%e6%93%8d%e4%bd%9c%e7%b3%bb%e7%bb%9f%e5%86%85%e6%a0%b8%e5%ae%9e%e7%8e%b0%e8%bf%9b%e7%a8%8b%e7%9a%84%e4%bc%98%e5%85%88%e7%ba%a7%e5%88%87%e6%8d%a2.html"
 fileName:  "20170101345"
 lang:  "zh_CN"
 published: true
-permalink: "java%e5%bc%80%e5%8f%91%e6%93%8d%e4%bd%9c%e7%b3%bb%e7%bb%9f%e5%86%85%e6%a0%b8%e5%ae%9e%e7%8e%b0%e8%bf%9b%e7%a8%8b%e7%9a%84%e4%bc%98%e5%85%88%e7%ba%a7%e5%88%87%e6%8d%a2.html"
+permalink: "2017/https://www.jfox.info/java%e5%bc%80%e5%8f%91%e6%93%8d%e4%bd%9c%e7%b3%bb%e7%bb%9f%e5%86%85%e6%a0%b8%e5%ae%9e%e7%8e%b0%e8%bf%9b%e7%a8%8b%e7%9a%84%e4%bc%98%e5%85%88%e7%ba%a7%e5%88%87%e6%8d%a2.html"
 ---
 {% raw %}
 作者[望月从良](/u/a3f323caf646)2017.07.15 17:46字数 2641
-[更详细的讲解和代码调试演示过程，请点击链接](http://www.jfox.info/go.php?url=http://study.163.com/provider-search?keyword=Coding%E8%BF%AA%E6%96%AF%E5%B0%BC)
+[更详细的讲解和代码调试演示过程，请点击链接](https://www.jfox.info/go.php?url=http://study.163.com/provider-search?keyword=Coding%E8%BF%AA%E6%96%AF%E5%B0%BC)
 
 为了保护系统内核不受恶意程序的破坏，我们原来的做法是专门为应用程序分配单独使用的内存，使得应用程序对数据的读写都限制在内核给他分配的内存段内。程序对内存段的读写，完全是由DS寄存器指向的全局描述符决定的，如果恶意程序通过修改DS寄存器的值，使得它在运行时，让DS寄存器指向内核数据段的全局描述符，那么恶意程序就可以读写内核的数据了，为了防范出现这种情况，我们要做的是让应用程序没有读写段寄存器的权力，因此我们就必须设定应有程序的优先级。
 

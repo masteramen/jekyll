@@ -3,11 +3,11 @@ layout: post
 title:  "【Tomcat学习笔记】15-Connector"
 title2:  "【Tomcat学习笔记】15-Connector"
 date:   2017-01-01 23:57:28  +0800
-source:  "http://www.jfox.info/tomcat%e5%ad%a6%e4%b9%a0%e7%ac%94%e8%ae%b015connector.html"
+source:  "https://www.jfox.info/tomcat%e5%ad%a6%e4%b9%a0%e7%ac%94%e8%ae%b015connector.html"
 fileName:  "20170101348"
 lang:  "zh_CN"
 published: true
-permalink: "tomcat%e5%ad%a6%e4%b9%a0%e7%ac%94%e8%ae%b015connector.html"
+permalink: "2017/https://www.jfox.info/tomcat%e5%ad%a6%e4%b9%a0%e7%ac%94%e8%ae%b015connector.html"
 ---
 {% raw %}
 Connector 属于 StandardService 里的一个组件，可以在 server.xml 中配置，指定协议、端口、超时时间等。 
@@ -43,7 +43,7 @@ protocol=”org.apache.coyote.http11.Http11Nio2Protocol”.
 - org.apache.coyote.http11.Ajp11Nio2Protocol
 - org.apache.coyote.http11.Ajp11AprProtocol
 
- AJP 的处理我并没有去细看，但大的代码结构基本和 HTTP 的处理类似。后面重点看下 HTTP 1.1 连接的几种处理方式( [我看的这个版本还不支持Http 2.0](http://www.jfox.info/go.php?url=https://stackoverflow.com/questions/30855281/tomcat-support-for-http-2-0/37889873#37889873) )。 
+ AJP 的处理我并没有去细看，但大的代码结构基本和 HTTP 的处理类似。后面重点看下 HTTP 1.1 连接的几种处理方式( [我看的这个版本还不支持Http 2.0](https://www.jfox.info/go.php?url=https://stackoverflow.com/questions/30855281/tomcat-support-for-http-2-0/37889873#37889873) )。 
 
 ###  HTTP BIO，同步阻塞 
 
@@ -71,7 +71,7 @@ protocol=”org.apache.coyote.http11.Http11Nio2Protocol”.
 
 ###  HTTP APR 
 
-[APR](http://www.jfox.info/go.php?url=http://apr.apache.org/) ，讲真，没仔细研究过，就不瞎BB了。 
+[APR](https://www.jfox.info/go.php?url=http://apr.apache.org/) ，讲真，没仔细研究过，就不瞎BB了。 
 
  关于BIO/NIO/NIO2(AIO)，已及网络编程的线程模型，更详细的可以看Netty学习笔记. 关于这几种模式的性能比较，网上也有很多测试数据。 
 

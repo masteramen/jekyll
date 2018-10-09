@@ -3,11 +3,11 @@ layout: post
 title:  "Java位运算之简单了解"
 title2:  "Java位运算之简单了解"
 date:   2017-01-01 23:57:24  +0800
-source:  "http://www.jfox.info/java%e4%bd%8d%e8%bf%90%e7%ae%97%e4%b9%8b%e7%ae%80%e5%8d%95%e4%ba%86%e8%a7%a3.html"
+source:  "https://www.jfox.info/java%e4%bd%8d%e8%bf%90%e7%ae%97%e4%b9%8b%e7%ae%80%e5%8d%95%e4%ba%86%e8%a7%a3.html"
 fileName:  "20170101344"
 lang:  "zh_CN"
 published: true
-permalink: "java%e4%bd%8d%e8%bf%90%e7%ae%97%e4%b9%8b%e7%ae%80%e5%8d%95%e4%ba%86%e8%a7%a3.html"
+permalink: "2017/https://www.jfox.info/java%e4%bd%8d%e8%bf%90%e7%ae%97%e4%b9%8b%e7%ae%80%e5%8d%95%e4%ba%86%e8%a7%a3.html"
 ---
 {% raw %}
 1.十进制转化为二进制
@@ -34,5 +34,5 @@ permalink: "java%e4%bd%8d%e8%bf%90%e7%ae%97%e4%b9%8b%e7%ae%80%e5%8d%95%e4%ba%86%
 
 位运算的处理速度快。
 
-**本文永久更新链接地址** ： [http://www.linuxidc.com/Linux/2017-07/145709.htm](http://www.jfox.info/go.php?url=http://www.linuxidc.com/Linux/2017-07/../../Linux/2017-07/145709.htm)
+**本文永久更新链接地址** ： [http://www.linuxidc.com/Linux/2017-07/145709.htm](https://www.jfox.info/go.php?url=http://www.linuxidc.com/Linux/2017-07/../../Linux/2017-07/145709.htm)
 {% endraw %}

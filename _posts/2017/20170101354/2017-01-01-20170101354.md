@@ -3,11 +3,11 @@ layout: post
 title:  "Testing Spring Boot with TestNG – 附录I Mock Objects"
 title2:  "Testing Spring Boot with TestNG – 附录I Mock Objects"
 date:   2017-01-01 23:57:34  +0800
-source:  "http://www.jfox.info/testingspringbootwithtestng%e9%99%84%e5%bd%95imockobjects.html"
+source:  "https://www.jfox.info/testingspringbootwithtestng%e9%99%84%e5%bd%95imockobjects.html"
 fileName:  "20170101354"
 lang:  "zh_CN"
 published: true
-permalink: "testingspringbootwithtestng%e9%99%84%e5%bd%95imockobjects.html"
+permalink: "2017/https://www.jfox.info/testingspringbootwithtestng%e9%99%84%e5%bd%95imockobjects.html"
 ---
 {% raw %}
 # Testing Spring Boot with TestNG – 附录I Mock Objects 
@@ -15,7 +15,7 @@ permalink: "testingspringbootwithtestng%e9%99%84%e5%bd%95imockobjects.html"
 
 # 附录I Spring Mock Objects
 
-Spring提供的[Mock Objects](http://www.jfox.info/go.php?url=https://docs.spring.io/spring/docs/4.3.9.RELEASE/spring-framework-reference/html/unit-testing.html#mock-objects)有以下这些：
+Spring提供的[Mock Objects](https://www.jfox.info/go.php?url=https://docs.spring.io/spring/docs/4.3.9.RELEASE/spring-framework-reference/html/unit-testing.html#mock-objects)有以下这些：
 
 ## package org.springframework.mock.env
 

@@ -3,11 +3,11 @@ layout: post
 title:  "【十遗补缺】java ArrayList的不当使用导致的ConcurrentModificationException问题"
 title2:  "【十遗补缺】java ArrayList的不当使用导致的ConcurrentModificationException问题"
 date:   2017-01-01 23:57:36  +0800
-source:  "http://www.jfox.info/%e5%8d%81%e9%81%97%e8%a1%a5%e7%bc%bajavaarraylist%e7%9a%84%e4%b8%8d%e5%bd%93%e4%bd%bf%e7%94%a8%e5%af%bc%e8%87%b4%e7%9a%84concurrentmodificationexception%e9%97%ae%e9%a2%98.html"
+source:  "https://www.jfox.info/%e5%8d%81%e9%81%97%e8%a1%a5%e7%bc%bajavaarraylist%e7%9a%84%e4%b8%8d%e5%bd%93%e4%bd%bf%e7%94%a8%e5%af%bc%e8%87%b4%e7%9a%84concurrentmodificationexception%e9%97%ae%e9%a2%98.html"
 fileName:  "20170101356"
 lang:  "zh_CN"
 published: true
-permalink: "%e5%8d%81%e9%81%97%e8%a1%a5%e7%bc%bajavaarraylist%e7%9a%84%e4%b8%8d%e5%bd%93%e4%bd%bf%e7%94%a8%e5%af%bc%e8%87%b4%e7%9a%84concurrentmodificationexception%e9%97%ae%e9%a2%98.html"
+permalink: "2017/https://www.jfox.info/%e5%8d%81%e9%81%97%e8%a1%a5%e7%bc%bajavaarraylist%e7%9a%84%e4%b8%8d%e5%bd%93%e4%bd%bf%e7%94%a8%e5%af%bc%e8%87%b4%e7%9a%84concurrentmodificationexception%e9%97%ae%e9%a2%98.html"
 ---
 {% raw %}
 # 【十遗补缺】java ArrayList的不当使用导致的ConcurrentModificationException问题 
@@ -44,9 +44,9 @@ permalink: "%e5%8d%81%e9%81%97%e8%a1%a5%e7%bc%bajavaarraylist%e7%9a%84%e4%b8%8d%
 
 ArrayList中有三个迭代器相关的函数，返回两种迭代器实现，分别是ListIterator和Iterator。看名字就知道前者只能用于List的遍历，后者可用于所有Collection的遍历，对于for循环来说，使用的是后者。这点参考这两个页面。
 
-[http://beginnersbook.com/2014…](http://www.jfox.info/go.php?url=http://beginnersbook.com/2014/06/difference-between-iterator-and-listiterator-in-java/)
+[http://beginnersbook.com/2014…](https://www.jfox.info/go.php?url=http://beginnersbook.com/2014/06/difference-between-iterator-and-listiterator-in-java/)
 
-[https://stackoverflow.com/que…](http://www.jfox.info/go.php?url=https://stackoverflow.com/questions/85190/how-does-the-java-for-each-loop-work)
+[https://stackoverflow.com/que…](https://www.jfox.info/go.php?url=https://stackoverflow.com/questions/85190/how-does-the-java-for-each-loop-work)
 
 Iterator相关代码如下
 

@@ -3,11 +3,11 @@ layout: post
 title:  "还在为画“类Word文档报表”而发愁吗？"
 title2:  "还在为画“类Word文档报表”而发愁吗？"
 date:   2017-01-01 23:57:23  +0800
-source:  "http://www.jfox.info/%e8%bf%98%e5%9c%a8%e4%b8%ba%e7%94%bb%e7%b1%bbword%e6%96%87%e6%a1%a3%e6%8a%a5%e8%a1%a8%e8%80%8c%e5%8f%91%e6%84%81%e5%90%97.html"
+source:  "https://www.jfox.info/%e8%bf%98%e5%9c%a8%e4%b8%ba%e7%94%bb%e7%b1%bbword%e6%96%87%e6%a1%a3%e6%8a%a5%e8%a1%a8%e8%80%8c%e5%8f%91%e6%84%81%e5%90%97.html"
 fileName:  "20170101343"
 lang:  "zh_CN"
 published: true
-permalink: "%e8%bf%98%e5%9c%a8%e4%b8%ba%e7%94%bb%e7%b1%bbword%e6%96%87%e6%a1%a3%e6%8a%a5%e8%a1%a8%e8%80%8c%e5%8f%91%e6%84%81%e5%90%97.html"
+permalink: "2017/https://www.jfox.info/%e8%bf%98%e5%9c%a8%e4%b8%ba%e7%94%bb%e7%b1%bbword%e6%96%87%e6%a1%a3%e6%8a%a5%e8%a1%a8%e8%80%8c%e5%8f%91%e6%84%81%e5%90%97.html"
 ---
 {% raw %}
 # 还在为画“类Word文档报表”而发愁吗？ 
@@ -17,7 +17,7 @@ permalink: "%e8%bf%98%e5%9c%a8%e4%b8%ba%e7%94%bb%e7%b1%bbword%e6%96%87%e6%a1%a3%
 
 我们通常选择使用 Word 来创建这些文档，因为它有着极强的图文混排的能力能够实现集图表，表格，图片等组成的一个混合布局的复杂报表。但使用Word越是创建这些复杂的结构，越需要耗费过多的时间来“画”出这些复杂的样式， 且所有的数据都需要手动输入，无法与业务数据连接，所以更新也会更加困难。
 
-在现代 BI 系统中绝不容忍如此低效，且非实时性的数据分析，因此我们必须寻求与时俱进的现代化数据分析工具，以助于高效的创建数据分析汇总的报表项。[葡萄城报表](http://www.jfox.info/go.php?url=http://www.grapecity.com.cn/enterprise-solutions/activereports_server/)可以很好的解决类Word文档类的报表创建，可快速创建复杂的图文混排样式，而且能够实时的进行数据更新。
+在现代 BI 系统中绝不容忍如此低效，且非实时性的数据分析，因此我们必须寻求与时俱进的现代化数据分析工具，以助于高效的创建数据分析汇总的报表项。[葡萄城报表](https://www.jfox.info/go.php?url=http://www.grapecity.com.cn/enterprise-solutions/activereports_server/)可以很好的解决类Word文档类的报表创建，可快速创建复杂的图文混排样式，而且能够实时的进行数据更新。
 
 # （一）类Word文档类报表特点
 

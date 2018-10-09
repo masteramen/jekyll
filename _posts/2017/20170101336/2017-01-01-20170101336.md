@@ -3,11 +3,11 @@ layout: post
 title:  "让自己的jar包支持spring-boot的配置文件自动提示"
 title2:  "让自己的jar包支持spring-boot的配置文件自动提示"
 date:   2017-01-01 23:57:16  +0800
-source:  "http://www.jfox.info/%e8%ae%a9%e8%87%aa%e5%b7%b1%e7%9a%84jar%e5%8c%85%e6%94%af%e6%8c%81springboot%e7%9a%84%e9%85%8d%e7%bd%ae%e6%96%87%e4%bb%b6%e8%87%aa%e5%8a%a8%e6%8f%90%e7%a4%ba.html"
+source:  "https://www.jfox.info/%e8%ae%a9%e8%87%aa%e5%b7%b1%e7%9a%84jar%e5%8c%85%e6%94%af%e6%8c%81springboot%e7%9a%84%e9%85%8d%e7%bd%ae%e6%96%87%e4%bb%b6%e8%87%aa%e5%8a%a8%e6%8f%90%e7%a4%ba.html"
 fileName:  "20170101336"
 lang:  "zh_CN"
 published: true
-permalink: "%e8%ae%a9%e8%87%aa%e5%b7%b1%e7%9a%84jar%e5%8c%85%e6%94%af%e6%8c%81springboot%e7%9a%84%e9%85%8d%e7%bd%ae%e6%96%87%e4%bb%b6%e8%87%aa%e5%8a%a8%e6%8f%90%e7%a4%ba.html"
+permalink: "2017/https://www.jfox.info/%e8%ae%a9%e8%87%aa%e5%b7%b1%e7%9a%84jar%e5%8c%85%e6%94%af%e6%8c%81springboot%e7%9a%84%e9%85%8d%e7%bd%ae%e6%96%87%e4%bb%b6%e8%87%aa%e5%8a%a8%e6%8f%90%e7%a4%ba.html"
 ---
 {% raw %}
 在使用IDEA编写spring-boot的配置文件的时候，如果是框架再带的配置项，在深入.的时候会有自动提示。虽然，没有自动提示，在使用的时候，也不会有问题，但是，如果有提示的话，会更加稳妥些。

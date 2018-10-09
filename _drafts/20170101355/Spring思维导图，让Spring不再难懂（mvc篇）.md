@@ -3,11 +3,11 @@ layout: post
 title:  "Spring思维导图，让Spring不再难懂（mvc篇）"
 title2:  "Spring思维导图，让Spring不再难懂（mvc篇）"
 date:   2017-01-01 23:57:35  +0800
-source:  "http://www.jfox.info/spring%e6%80%9d%e7%bb%b4%e5%af%bc%e5%9b%be%e8%ae%a9spring%e4%b8%8d%e5%86%8d%e9%9a%be%e6%87%82mvc%e7%af%87.html"
+source:  "https://www.jfox.info/spring%e6%80%9d%e7%bb%b4%e5%af%bc%e5%9b%be%e8%ae%a9spring%e4%b8%8d%e5%86%8d%e9%9a%be%e6%87%82mvc%e7%af%87.html"
 fileName:  "20170101355"
 lang:  "zh_CN"
 published: true
-permalink: "spring%e6%80%9d%e7%bb%b4%e5%af%bc%e5%9b%be%e8%ae%a9spring%e4%b8%8d%e5%86%8d%e9%9a%be%e6%87%82mvc%e7%af%87.html"
+permalink: "2017/https://www.jfox.info/spring%e6%80%9d%e7%bb%b4%e5%af%bc%e5%9b%be%e8%ae%a9spring%e4%b8%8d%e5%86%8d%e9%9a%be%e6%87%82mvc%e7%af%87.html"
 ---
 {% raw %}
 生活就像海洋，只有意志坚强的人才能到达彼岸。

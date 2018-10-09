@@ -3,11 +3,11 @@ layout: post
 title:  "Java访问权限详述 » java面试题"
 title2:  "Java访问权限详述 » java面试题"
 date:   2017-01-01 23:57:27  +0800
-source:  "http://www.jfox.info/java%e8%ae%bf%e9%97%ae%e6%9d%83%e9%99%90%e8%af%a6%e8%bf%b0.html"
+source:  "https://www.jfox.info/java%e8%ae%bf%e9%97%ae%e6%9d%83%e9%99%90%e8%af%a6%e8%bf%b0.html"
 fileName:  "20170101347"
 lang:  "zh_CN"
 published: true
-permalink: "java%e8%ae%bf%e9%97%ae%e6%9d%83%e9%99%90%e8%af%a6%e8%bf%b0.html"
+permalink: "2017/https://www.jfox.info/java%e8%ae%bf%e9%97%ae%e6%9d%83%e9%99%90%e8%af%a6%e8%bf%b0.html"
 ---
 {% raw %}
 1.什么是访问权限？
@@ -61,5 +61,5 @@ public protectedprivate包范围√√×其他包√××能否被继承√√×
 
 一个被设计成不可以被外界直接访问的变量通常用作本类运算的中间过程，辅助其他可见的变量与方法。
 
-**本文永久更新链接地址** ： [http://www.linuxidc.com/Linux/2017-07/145707.htm](http://www.jfox.info/go.php?url=http://www.linuxidc.com/Linux/2017-07/../../Linux/2017-07/145707.htm)
+**本文永久更新链接地址** ： [http://www.linuxidc.com/Linux/2017-07/145707.htm](https://www.jfox.info/go.php?url=http://www.linuxidc.com/Linux/2017-07/../../Linux/2017-07/145707.htm)
 {% endraw %}

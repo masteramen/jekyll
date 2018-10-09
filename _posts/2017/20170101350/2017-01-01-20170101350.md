@@ -3,11 +3,11 @@ layout: post
 title:  "Spring学习之编程序事务管理"
 title2:  "Spring学习之编程序事务管理"
 date:   2017-01-01 23:57:30  +0800
-source:  "http://www.jfox.info/spring%e5%ad%a6%e4%b9%a0%e4%b9%8b%e7%bc%96%e7%a8%8b%e5%ba%8f%e4%ba%8b%e5%8a%a1%e7%ae%a1%e7%90%86.html"
+source:  "https://www.jfox.info/spring%e5%ad%a6%e4%b9%a0%e4%b9%8b%e7%bc%96%e7%a8%8b%e5%ba%8f%e4%ba%8b%e5%8a%a1%e7%ae%a1%e7%90%86.html"
 fileName:  "20170101350"
 lang:  "zh_CN"
 published: true
-permalink: "spring%e5%ad%a6%e4%b9%a0%e4%b9%8b%e7%bc%96%e7%a8%8b%e5%ba%8f%e4%ba%8b%e5%8a%a1%e7%ae%a1%e7%90%86.html"
+permalink: "2017/https://www.jfox.info/spring%e5%ad%a6%e4%b9%a0%e4%b9%8b%e7%bc%96%e7%a8%8b%e5%ba%8f%e4%ba%8b%e5%8a%a1%e7%ae%a1%e7%90%86.html"
 ---
 {% raw %}
 # Spring学习之编程序事务管理 

@@ -3,11 +3,11 @@ layout: post
 title:  "jboot 1.0-beta1 发布，基于 Jfinal 类似 Springboot 的框架"
 title2:  "jboot 1.0-beta1 发布，基于 Jfinal 类似 Springboot 的框架"
 date:   2017-01-01 23:57:17  +0800
-source:  "http://www.jfox.info/jboot10beta1%e5%8f%91%e5%b8%83%e5%9f%ba%e4%ba%8ejfinal%e7%b1%bb%e4%bc%bcspringboot%e7%9a%84%e6%a1%86%e6%9e%b6.html"
+source:  "https://www.jfox.info/jboot10beta1%e5%8f%91%e5%b8%83%e5%9f%ba%e4%ba%8ejfinal%e7%b1%bb%e4%bc%bcspringboot%e7%9a%84%e6%a1%86%e6%9e%b6.html"
 fileName:  "20170101337"
 lang:  "zh_CN"
 published: true
-permalink: "jboot10beta1%e5%8f%91%e5%b8%83%e5%9f%ba%e4%ba%8ejfinal%e7%b1%bb%e4%bc%bcspringboot%e7%9a%84%e6%a1%86%e6%9e%b6.html"
+permalink: "2017/https://www.jfox.info/jboot10beta1%e5%8f%91%e5%b8%83%e5%9f%ba%e4%ba%8ejfinal%e7%b1%bb%e4%bc%bcspringboot%e7%9a%84%e6%a1%86%e6%9e%b6.html"
 ---
 {% raw %}
 jboot 1.0-beta1 changes更新如下： 

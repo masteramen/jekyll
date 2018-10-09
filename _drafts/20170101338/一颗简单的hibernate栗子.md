@@ -3,11 +3,11 @@ layout: post
 title:  "一颗简单的hibernate栗子"
 title2:  "一颗简单的hibernate栗子"
 date:   2017-01-01 23:57:18  +0800
-source:  "http://www.jfox.info/%e4%b8%80%e9%a2%97%e7%ae%80%e5%8d%95%e7%9a%84hibernate%e6%a0%97%e5%ad%90.html"
+source:  "https://www.jfox.info/%e4%b8%80%e9%a2%97%e7%ae%80%e5%8d%95%e7%9a%84hibernate%e6%a0%97%e5%ad%90.html"
 fileName:  "20170101338"
 lang:  "zh_CN"
 published: true
-permalink: "%e4%b8%80%e9%a2%97%e7%ae%80%e5%8d%95%e7%9a%84hibernate%e6%a0%97%e5%ad%90.html"
+permalink: "2017/https://www.jfox.info/%e4%b8%80%e9%a2%97%e7%ae%80%e5%8d%95%e7%9a%84hibernate%e6%a0%97%e5%ad%90.html"
 ---
 {% raw %}
 # 一颗简单的hibernate栗子 

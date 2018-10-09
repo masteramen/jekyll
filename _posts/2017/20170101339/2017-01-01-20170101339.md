@@ -3,11 +3,11 @@ layout: post
 title:  "Kotlin和Java EE: 让二者的转换更顺畅"
 title2:  "Kotlin和Java EE 让二者的转换更顺畅"
 date:   2017-01-01 23:57:19  +0800
-source:  "http://www.jfox.info/kotlin%e5%92%8cjavaee%e8%ae%a9%e4%ba%8c%e8%80%85%e7%9a%84%e8%bd%ac%e6%8d%a2%e6%9b%b4%e9%a1%ba%e7%95%85.html"
+source:  "https://www.jfox.info/kotlin%e5%92%8cjavaee%e8%ae%a9%e4%ba%8c%e8%80%85%e7%9a%84%e8%bd%ac%e6%8d%a2%e6%9b%b4%e9%a1%ba%e7%95%85.html"
 fileName:  "20170101339"
 lang:  "zh_CN"
 published: true
-permalink: "kotlin%e5%92%8cjavaee%e8%ae%a9%e4%ba%8c%e8%80%85%e7%9a%84%e8%bd%ac%e6%8d%a2%e6%9b%b4%e9%a1%ba%e7%95%85.html"
+permalink: "2017/https://www.jfox.info/kotlin%e5%92%8cjavaee%e8%ae%a9%e4%ba%8c%e8%80%85%e7%9a%84%e8%bd%ac%e6%8d%a2%e6%9b%b4%e9%a1%ba%e7%95%85.html"
 ---
 {% raw %}
 翻译：mycstar 
@@ -18,9 +18,9 @@ permalink: "kotlin%e5%92%8cjavaee%e8%ae%a9%e4%ba%8c%e8%80%85%e7%9a%84%e8%bd%ac%e
 
 如果您没有阅读本系列的前两部分，可以在这里找到：
 
-[Kotlin和Java EE：第一部分 – 从Java到Kotlin](http://www.jfox.info/go.php?url=https://dzone.com/articles/kotlin-jee-part-one-from-java-to-kotlin)
+[Kotlin和Java EE：第一部分 – 从Java到Kotlin](https://www.jfox.info/go.php?url=https://dzone.com/articles/kotlin-jee-part-one-from-java-to-kotlin)
 
-[Kotlin和Java EE：第二部分 – 插件的乐趣](http://www.jfox.info/go.php?url=https://dzone.com/articles/kotlin-and-java-ee-part-2-having-fun-with-plugins)
+[Kotlin和Java EE：第二部分 – 插件的乐趣](https://www.jfox.info/go.php?url=https://dzone.com/articles/kotlin-and-java-ee-part-2-having-fun-with-plugins)
 
 经过对前面两部分的回顾及修改，这里补充最后一些内容。
 
@@ -100,7 +100,7 @@ Method
 
 Operator
 service.find(id)service[id]service.add(kittenEntity)service += kittenEntity
- 我发现它不只是更短，而且更可读，因为代码不再是一大堆方法调用。小心只使用知名和易理解的操作符，否则，您将会遇到像Scala库一样大的混乱，然后您将需要一个 [操作符周期表](http://www.jfox.info/go.php?url=http://www.flotsam.nl/dispatch-periodic-table.html) 。在数据存储库的情况下，类似MutableMap的接口工作得很好。请注意，我使用“plus assign”（+ =）运算符来持久化一个实体，因为原始集合包含它已经拥有的内容以及一个附加项。 
+ 我发现它不只是更短，而且更可读，因为代码不再是一大堆方法调用。小心只使用知名和易理解的操作符，否则，您将会遇到像Scala库一样大的混乱，然后您将需要一个 [操作符周期表](https://www.jfox.info/go.php?url=http://www.flotsam.nl/dispatch-periodic-table.html) 。在数据存储库的情况下，类似MutableMap的接口工作得很好。请注意，我使用“plus assign”（+ =）运算符来持久化一个实体，因为原始集合包含它已经拥有的内容以及一个附加项。 
 
 以下是如何声明它们：
 
