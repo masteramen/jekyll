@@ -16,32 +16,34 @@ published: true
 
 第一步，下载 jquery 包
 
-              命令：npm install jquery
+命令：npm install jquery
 
 第二步 , 下载 jsdom 包
 
-              命令：npm install jsdom
+命令：npm install jsdom
 
 第三步，我们新建一个 index.js
 
-             代码如下：
+代码如下：
 
-** const**jsdom=require("jsdom");
+```js
+const jsdom = require("jsdom");
 
-** const** { JSDOM } =jsdom;
+const { JSDOM } = jsdom;
 
-** const** { window } =newJSDOM(`<!DOCTYPE html>`);
+const { window } = newJSDOM(`<!DOCTYPE html>`);
 
-** const**$=require('jQuery')(window);
+const $ = require("jQuery")(window);
 
-        console.log($); //测试jquery是否可以正常工作
+console.log($); //测试 jquery 是否可以正常工作
+```
 
 第四步：执行命令 node index.js
 
-             查看输出信息：
+查看输出信息：
 
-              ![](https://img-blog.csdn.net/20180316010313104?watermark/2/text/Ly9ibG9nLmNzZG4ubmV0L2N2cGVy/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+![](https://img-blog.csdn.net/20180316010313104?watermark/2/text/Ly9ibG9nLmNzZG4ubmV0L2N2cGVy/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
 
-              证明jquery可以正常使用了；
+证明 jquery 可以正常使用了；
 
 {% endraw %}
