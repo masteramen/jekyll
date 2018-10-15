@@ -11,7 +11,7 @@ published: true
 
 {% raw %}
 某天突然发现一个 Oracle 数据库中 system 表空间大小有点异常，经过统计，原来是启用了 Oracle 的 Audit 功能，并将审计的信息存放在系统表空间。
-
+test
 数据文件大小
 
     [[email protected] DEV]$ ll -h
