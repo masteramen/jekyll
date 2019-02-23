@@ -9,17 +9,19 @@ System Analyst
 
 # 2. Summary of Relevant Experiences
 
-- Over 9+ years working experience in Java, Spring , SpringMVC, Web programming (HTML,CSS, Ajax, JavaScript, Jquery,bootstrap),SQL development
-- Familiar with SpringBoot application development.
+- Over 9+ years working experience in Java, Spring , SpringMVC, Web programming (HTML,CSS, Ajax, JavaScript, Jquery,Bootstrap),SQL development
+- Familiar with Spring,SpringBoot application development.
+- Familiar with Oracle, SQL Server, MySQL Databases development
 - Familiar with Jasper Report development
-- Familiar with Cordova, NodeJs,ReactJS development
 - Familiar with development tools such as eclipse , sqldeveloper,vscode,git, svn ,docker, npm etc
-- Familiar with Oracle, SQL Server, MySQL storeprcedure statement development
-- Familiar with linux bash script
+- Familiar with Linux , Windows
+- Knowledge of Cordova, NodeJs,ReactJS development
 
-# 3. Detail Working/Project Experiences
+# 3. Work Experiences
 
 ## 05/2016 – Present , System Analyst, Seamatch Asia Limited
+
+### Responsibilities
 
 - Perform system analysis , design, build and implement systems in Java which meet desired business requirements
 - Perform reports design and implementation to meet desired business requirements.
@@ -32,6 +34,8 @@ System Analyst
 
 ## 04/2014 – 12/2015 Analyst Programmer, Automated Systems (HK) Limited
 
+### Responsibilities
+
 - Involve in the system development life cycle, ensuring deliverable are met with the requirements.
 - Analyse the requirement and design the implementation the system in Java to ensure the implements meet the requirements.
 - Perform database SQL development and analyze existing SQL queries for performance improvements.
@@ -41,11 +45,15 @@ System Analyst
 
 ## 12/2012 – 02/2014 Senior Software Engineer, Red Gate Software Technologies Co., Ltd. (Shenzhen, China)
 
+### Responsibilities
+
 - System analyst, collect requirements and analyse and design the implementation in JAVA.
 - Perform coding,testing,deployment,documentation.
 - Help write and optimize in-application SQL statements.
 
 ## 05/2011 – 12/2012 Senior Software Engineer, Century Dragon Multimedia Technology Co., Ltd. (ShenZhen, China)
+
+### Responsibilities
 
 - Analyse the requirement to design and implement the application in Java.
 - Coding,testing,deployment.
